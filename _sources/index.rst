@@ -19,11 +19,11 @@ material, as well as problems that assess your understanding.
 
 .. admonition:: Acknowledgments
 
-    This book uses the open source tools made available by [Runestone Interactive](http://interactivepython.org/runestone/static/overview/overview.html) and is based off the course notes developed by [Dr. Tisha Hooks](http://course1.winona.edu/thooks/STAT_110.html).
+    This book uses the open source tools made available by `Runestone Interactive`_ and is based off the course notes developed by `Tisha Hooks`_ .
 
 
-SECTION 2: An Overview of the extensions
-::::::::::::::::::::::::::::::::::::::::
+SECTION 2: Table of Contents
+::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -39,8 +39,5 @@ SECTION 2: An Overview of the extensions
    chp6_2/chp6_2.rst
    chp7/chp7.rst
 
-
-SECTION 2: Add more stuff here
-::::::::::::::::::::::::::::::
-
-You can add more stuff here.
+.. _Runestone Interactive: http://interactivepython.org/runestone/static/overview/overview.html
+.. _Tisha Hooks: http://course1.winona.edu/thooks/STAT_110.html
