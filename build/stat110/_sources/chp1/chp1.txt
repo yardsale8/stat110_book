@@ -51,12 +51,14 @@ the blue lightbulb.
 
     Journal of Consulting and Clinical Psychology, 1975, Vol. 43, pg. 421-422.
 
-Identify the following in the context of this example:
+Match each description to the correct statistics concept:
 
-*  Population of interest:
-*  Sample:
-*  Variable of interest:
-*  Data type:
+.. dragndrop:: question1.1_1
+    :feedback: At least one of your items is matched incorrectly.  Please try again.
+    :match_1:  All trials of the experiment for a hearing impaired individual|||Population of interest
+    :match_2:  The 100 trials of a hearing impaired person that were observed|||Sample
+    :match_3:  Whether or not the hearing impaired person answered correctly|||Variable of interest
+    :match_4:  Categorical|||Data type
 
 Recall that we carried out a simulation study to determine whether this
 patient who was suspected of malingering had obtained too few correct
@@ -67,13 +69,44 @@ expect from a guessing subject:
 | |image1|   |
 +------------+
 
-.. admonition:: *Questions*
+
+.. mchoice:: mc1.1_1
+    :answer_a: One set of 100 trials
+    :answer_b: One correct guess
+    :answer_c: One trial
+    :answer_d: The number of correct guesses in 100 trials
+    :correct: d
+    :feedback_a: HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?
+    :feedback_b: HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?
+    :feedback_c: HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?
+    :feedback_d: Each dot represents to the number of correct guesses in 100 trials
+
+    What does each dot/star represent?
+
+.. mchoice:: mc1.1_2
+    :answer_a: Consistent with guessing
+    :answer_b: Answering incorrectly on purpose
+    :correct: a
+    :feedback_a: This answer would not be consistent with guessing, as the number of times that a hearing impaired person would guess 36 or fewer correct is very low.
+    :feedback_b: Guessing 36 correct is not a typical result.  Notice that it is very rare to guess 36 or fewer correct. If someone is guessing, it would be much more likely to between 40 and 60 answers correct.
 
     Based on the results of this simulation study, do you
     believe the patient’s outcome of 36 correct out of 100 was consistent
     with guessing, or do these results indicate that he may have been
     answering incorrectly on purpose in order to mislead the researchers
     into believing he was hearing impaired?
+
+.. mchoice:: mc1.1_3
+    :answer_a: Yes
+    :answer_b: No
+    :correct: b
+    :feedback_a: To <i>confidently</i> establish that the person was answering incorrectly on purpose, we would need the person to get an <i>unusually</i> small number of correct answers.  In this case, 48 correct would **not** be unusual as it happened fairly frequently in the simultion.
+    :feedback_b: While the person may have been answering incorrectly on purpose, their results were not unusual when compaired to someone that was guessing.  Therefore we cannot <i>confidently</i> conclude that this person was making mistakes on purpose.
+
+    Now suppose that another person was tested in the same way, and this person
+    answered 48 out of the 100 trials correctly.  Can we **confidently** conclude
+    that this person was purposefully answering the questions
+    incorrectly?
 
 Example 1.2 Helper vs. Hinderer?
 --------------------------------
@@ -362,7 +395,7 @@ Sketch in your results below:
    :scale: 47 %
 .. |image1| image:: img/media/image1.png
    :width: 6.49136in
-   :height: 2.70755in
+   :height: 4.70755in
 .. |image2| image:: img/media/image2.png
    :width: 6.50000in
    :height: 0.27153in

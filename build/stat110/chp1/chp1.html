@@ -101,7 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Chapter 1" href="chp1_with_questions.html" />
+    <link rel="next" title="Chapter 2 Part 1" href="../chp2_1/chp2_1.html" />
     <link rel="prev" title="STAT 110 Textbook" href="../index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -287,8 +287,8 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Chapter 1' data-toggle="tooltip" >
-    <a href="chp1_with_questions.html" >
+  <li id="relations-next" title='Next Chapter - Chapter 2 Part 1' data-toggle="tooltip" >
+    <a href="../chp2_1/chp2_1.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -357,14 +357,24 @@ the blue lightbulb.</p>
 <p class="first admonition-title">Source</p>
 <p class="last">Journal of Consulting and Clinical Psychology, 1975, Vol. 43, pg. 421-422.</p>
 </div>
-<p>Identify the following in the context of this example:</p>
-<ul class="simple">
-<li>Population of interest:</li>
-<li>Sample:</li>
-<li>Variable of interest:</li>
-<li>Data type:</li>
-</ul>
-<p>Recall that we carried out a simulation study to determine whether this
+<p>Match each description to the correct statistics concept:</p>
+<ul data-component="dragndrop" id="question1.1_1">
+    <span data-component="question">
+</span>
+	<span data-component=feedback>At least one of your items is matched incorrectly.  Please try again.</span>
+
+    <li data-component="draggable" id="question1.1_1_drag1">All trials of the experiment for a hearing impaired individual</li>
+    <li data-component="dropzone" for="question1.1_1_drag1">Population of interest</li>
+
+    <li data-component="draggable" id="question1.1_1_drag2">The 100 trials of a hearing impaired person that were observed</li>
+    <li data-component="dropzone" for="question1.1_1_drag2">Sample</li>
+
+    <li data-component="draggable" id="question1.1_1_drag3">Whether or not the hearing impaired person answered correctly</li>
+    <li data-component="dropzone" for="question1.1_1_drag3">Variable of interest</li>
+
+    <li data-component="draggable" id="question1.1_1_drag4">Categorical</li>
+    <li data-component="dropzone" for="question1.1_1_drag4">Data type</li>
+</ul><p>Recall that we carried out a simulation study to determine whether this
 patient who was suspected of malingering had obtained too few correct
 answers. The results of the simulation study indicate what outcomes we
 expect from a guessing subject:</p>
@@ -373,19 +383,49 @@ expect from a guessing subject:</p>
 <col width="100%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../_images/image1.png"><img alt="image1" src="../_images/image1.png" style="width: 6.49136in; height: 2.70755in;" /></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_images/image1.png"><img alt="image1" src="../_images/image1.png" style="width: 6.49136in; height: 4.70755in;" /></a></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition-questions admonition">
-<p class="first admonition-title"><em>Questions</em></p>
-<p class="last">Based on the results of this simulation study, do you
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc1.1_1">
+            Q-34: What does each dot/star represent?
+            <li data-component="answer"  id="mc1.1_1_opt_a">(A) One set of 100 trials</li><li data-component="feedback" id="mc1.1_1_opt_a">HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?</li>
+            
+            <li data-component="answer"  id="mc1.1_1_opt_b">(B) One correct guess</li><li data-component="feedback" id="mc1.1_1_opt_b">HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?</li>
+            
+            <li data-component="answer"  id="mc1.1_1_opt_c">(C) One trial</li><li data-component="feedback" id="mc1.1_1_opt_c">HINT: Last class we recorded the number of correct guesses in 12 trials, but now we are doing 100 trials.  What should we record?</li>
+            
+            <li data-component="answer" data-correct id="mc1.1_1_opt_d">(D) The number of correct guesses in 100 trials</li><li data-component="feedback" id="mc1.1_1_opt_d">Each dot represents to the number of correct guesses in 100 trials</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc1.1_2">
+            Q-35: Based on the results of this simulation study, do you
 believe the patient’s outcome of 36 correct out of 100 was consistent
 with guessing, or do these results indicate that he may have been
 answering incorrectly on purpose in order to mislead the researchers
-into believing he was hearing impaired?</p>
-</div>
-</div>
+into believing he was hearing impaired?
+            <li data-component="answer" data-correct id="mc1.1_2_opt_a">(A) Consistent with guessing</li><li data-component="feedback" id="mc1.1_2_opt_a">This answer would not be consistent with guessing, as the number of times that a hearing impaired person would guess 36 or fewer correct is very low.</li>
+            
+            <li data-component="answer"  id="mc1.1_2_opt_b">(B) Answering incorrectly on purpose</li><li data-component="feedback" id="mc1.1_2_opt_b">Guessing 36 correct is not a typical result.  Notice that it is very rare to guess 36 or fewer correct. If someone is guessing, it would be much more likely to between 40 and 60 answers correct.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc1.1_3">
+            Q-36: Now suppose that another person was tested in the same way, and this person
+answered 48 out of the 100 trials correctly.  Can we <strong>confidently</strong> conclude
+that this person was purposefully answering the questions
+incorrectly?
+            <li data-component="answer"  id="mc1.1_3_opt_a">(A) Yes</li><li data-component="feedback" id="mc1.1_3_opt_a">To <i>confidently</i> establish that the person was answering incorrectly on purpose, we would need the person to get an <i>unusually</i> small number of correct answers.  In this case, 48 correct would **not** be unusual as it happened fairly frequently in the simultion.</li>
+            
+            <li data-component="answer" data-correct id="mc1.1_3_opt_b">(B) No</li><li data-component="feedback" id="mc1.1_3_opt_b">While the person may have been answering incorrectly on purpose, their results were not unusual when compaired to someone that was guessing.  Therefore we cannot <i>confidently</i> conclude that this person was making mistakes on purpose.</li>
+            
+
+            </ul>
+            </div>
 <div class="section" id="example-1-2-helper-vs-hinderer">
 <h2>Example 1.2 Helper vs. Hinderer?<a class="headerlink" href="#example-1-2-helper-vs-hinderer" title="Permalink to this headline">¶</a></h2>
 <p>In a study reported in a November 2007 issue of <em>Nature</em>, researchers
@@ -668,12 +708,12 @@ over the other? Why or why not?</li>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../index.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Chapter 1' data-toggle="tooltip" >
-    <a href="chp1_with_questions.html" >
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 2 Part 1' data-toggle="tooltip" >
+    <a href="../chp2_1/chp2_1.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="chp1_with_questions.html" >Next Section - Chapter 1</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp2_1/chp2_1.html" >Next Section - Chapter 2 Part 1</a>
 
 <script type="text/javascript">
 
