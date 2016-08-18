@@ -1,16 +1,25 @@
-=====================
-This Is A New Project
-=====================
+=================
+STAT 110 Textbook
+=================
 
 
 SECTION 1: Introduction
 :::::::::::::::::::::::
 
-Congratulations!   If you can see this file you have probably successfully run the ``runestone init`` command.  If you are looking at this as a source file you should now run ``runestone build``  to generate html files.   Once you have run the build command you can run ``runestone serve`` and then view this in your browser at ``http://localhost:8000``
+Welcome to the interactive textbook for STAT 110 and Winona State University.
+This textbook was designed to be an interactive resource for the course that 
+contains the material found in a traditional textbook, video lectures on the
+material, as well as problems that assess your understanding.
 
-This is just a sample of what you can do.  The index.rst file is the table of contents for your entire project.  You can put all of your writing in the index, or as you will see in the following section you can include additional rst files.  those files may even be in subdirectories that you can reference using a relative path.
+.. caution::
+    
+    This book is a **work-in-progress** and will be changing and improving as
+    the semester progresses.  Thank you for your patience and I hope that you
+    find these materials useful.
 
-The overview section, which follows is an ideal section to look at both online and at the source.  It is pretty easy to see how to write using any of the interactive features just by looking at the examples in ``overview.rst``
+.. admonition:: Acknowledgments
+
+    This book uses the open source tools made available by [Runestone Interactive](http://interactivepython.org/runestone/static/overview/overview.html) and is based off the course notes developed by [Dr. Tisha Hooks](http://course1.winona.edu/thooks/STAT_110.html).
 
 
 SECTION 2: An Overview of the extensions
