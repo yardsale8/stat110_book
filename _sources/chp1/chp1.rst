@@ -84,8 +84,8 @@ expect from a guessing subject:
     What does each dot/star represent?
 
 .. mchoice:: mc1.1_2
-    :answer_a: Consistent with guessing
-    :answer_b: Answering incorrectly on purpose
+    :answer_a: Answering incorrectly on purpose
+    :answer_b: Consistent with guessing
     :correct: a
     :feedback_a: This answer would not be consistent with guessing, as the number of times that a hearing impaired person would guess 36 or fewer correct is very low.
     :feedback_b: Guessing 36 correct is not a typical result.  Notice that it is very rare to guess 36 or fewer correct. If someone is guessing, it would be much more likely to between 40 and 60 answers correct.
