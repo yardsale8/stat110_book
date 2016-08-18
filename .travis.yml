@@ -9,4 +9,4 @@ script: bash ./deploy.sh
 env:
   global:
       - ENCRYPTION_LABEL: "de098bddbbd8"
-  - COMMIT_AUTHOR_EMAIL: "tiverson@smumn.edu"
+      - COMMIT_AUTHOR_EMAIL: "tiverson@smumn.edu"
