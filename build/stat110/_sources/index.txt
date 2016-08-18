@@ -20,6 +20,15 @@ SECTION 2: An Overview of the extensions
    :maxdepth: 2
 
    chp1/chp1.rst
+   chp1/chp1_with_questions.rst
+   chp2_1/chp2_1.rst
+   chp2_2/chp2_2.rst
+   chp3/chp3.rst
+   chp4/chp4.rst
+   chp5/chp5.rst
+   chp6_1/chp6_1.rst
+   chp6_2/chp6_2.rst
+   chp7/chp7.rst
 
 
 SECTION 2: Add more stuff here

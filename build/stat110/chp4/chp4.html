@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter 4 &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Chapter 5" href="../chp5/chp5.html" />
+    <link rel="prev" title="Chapter 3" href="../chp3/chp3.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp4'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Chapter 4</a><ul>
+<li><a class="reference internal" href="#id7">***</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Chapter 3" data-toggle="tooltip">
+    <a href="../chp3/chp3.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Chapter 5' data-toggle="tooltip" >
+    <a href="../chp5/chp5.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="chapter-4">
+<h1>Chapter 4<a class="headerlink" href="#chapter-4" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter, we will consider descriptive methods appropriate for
+summarizing numerical variables.</p>
+<div class="line-block">
+<div class="line"><strong>*Example 4.1: Summarizing Household Income Levels in Minnesota
+Counties
+*</strong>The data in the file <strong>USQuickFacts.jmp</strong> was recorded by the
+U.S. Census Bureau (<em>Source: http://quickfacts.census.gov)</em>. This file
+includes information on several demographic variables for all counties
+in the U.S. In this example, we will consider only the counties of
+Minnesota.</div>
+<div class="line">To subset the Minnesota counties in JMP, we first must select Analyze
+&gt; Distribution and enter the following:</div>
+<div class="line"><a class="reference internal" href="../_images/image110.png"><img alt="image0" src="../_images/image110.png" style="width: 4.92708in; height: 1.81555in;" /></a><strong>*
+*</strong></div>
+</div>
+<div class="line-block">
+<div class="line">Next, on the resulting bar chart, double-click on the bar for
+Minnesota.</div>
+<div class="line"><a class="reference internal" href="../_images/image213.png"><img alt="image1" src="../_images/image213.png" style="width: 6.41667in; height: 2.47917in;" /></a></div>
+</div>
+<p>A new data table should open in JMP which contains only the 87 counties
+in Minnesota. This is the data file we will consider in this example. We
+will begin by examining the distribution of <em>Median Household Income,
+2007-2011.</em></p>
+<div class="line-block">
+<div class="line">To do this, once again select Analyze &gt; Distribution. Place the
+variable of interest, <em>Median Household Income, 2007-2011,</em> in the Y,
+Columns box as shown below.</div>
+<div class="line"><a class="reference internal" href="../_images/image310.png"><img alt="image2" src="../_images/image310.png" style="width: 4.50000in; height: 1.50240in;" /></a></div>
+</div>
+<p>JMP returns the following output by default:</p>
+<p><a class="reference internal" href="../_images/image412.png"><img alt="image3" src="../_images/image412.png" style="width: 4.61321in; height: 2.07632in;" /></a></p>
+<p>Next, we’ll discuss some of the summary statistics provided in each
+piece of the output.</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Is it necessary that the median be an actual measurement from the
+data set? Explain.</li>
+<li>Is it necessary that the mean be an actual measurement from the data
+set? Explain.</li>
+<li>Suppose the maximum value in this data set was changed from $83,415
+to $100,000. What impact would this have on the mean? What impact
+would this have on the median?</li>
+</ol>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">What percent of counties in Minnesota have a median household income
+of $44,791 or less?</p>
+<ul class="simple">
+<li></li>
+</ul>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a><a class="reference internal" href="../_images/image142.png"><img alt="image4" src="../_images/image142.png" style="width: 4.14066in; height: 1.62264in;" /></a>*
+*</p>
+</li>
+<li><p class="first">What percent of counties in Minnesota have a median household income
+of $52,713 or less?</p>
+</li>
+<li><p class="first">What percent of counties in Minnesota have a median household income
+above $52,713?</p>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+</li>
+<li><p class="first">The 2.5<sup>th</sup> percentile is about ______________
+and the 97.5<sup>th</sup> percentile is _______________.
+What proportion of Minnesota counties has a median household income
+between these two values?</p>
+</li>
+</ol>
+<p><strong>*MEASURES OF LOCATION
+*</strong></p>
+<div class="line-block">
+<div class="line">The summary statistics discussed above are often all referred to as
+measures of location. These summaries give us an idea of where a data
+distribution lies. In particular, the mean and median give us an idea
+of the <em>center</em> (or middle) of the distribution (this summarizes the
+data set with a single value representing a “typical” value in the
+data set).</div>
+<div class="line">The percentiles (called quantiles in JMP) give us an idea of what
+percent of the data distribution lies at or below a particular value.</div>
+<div class="line">What summary (or summaries) we choose to describe the entire data set
+depends on our objective. If the goal is to describe a typical value
+in the data set, then the mean or median may be an appropriate summary
+statistic. However, if interest lies in what value is exceeded by only
+5% of the data distribution, for example, then we would use the
+95<sup>th</sup> percentile.</div>
+</div>
+<p><strong>*MEASURES OF VARIABILITY*</strong></p>
+<p>Sometimes a measure of “center” does not adequately tell a data set’s
+story. For example, consider the median household income across counties
+for three different states (Minnesota, Wisconsin, and Virginia):</p>
+<p><a class="reference internal" href="../_images/image151.png"><img alt="image5" src="../_images/image151.png" style="width: 4.11321in; height: 2.46107in;" /></a></p>
+<p>The following picture shows the average for each state.</p>
+<p><a class="reference internal" href="../_images/image162.png"><img alt="image6" src="../_images/image162.png" style="width: 3.11983in; height: 1.36792in;" /></a></p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What differences exist in the <em>Typical Household Income</em> values
+across these three states? Discuss.</li>
+<li>Suppose that your friend tries to summarize the differences across
+these three states using only the mean (i.e., average) from each
+state. Do you think that this single summary (the mean) tells the
+whole story well? Why or why not?</li>
+</ol>
+<p>To adequately describe a data set, we must also describe the amount of
+variability present in that data set. Some of these measures are
+described below. Also, some of these summary statistics don’t appear by
+default in JMP. To see them, click on the red drop-down arrow next to
+“Summary Statistics” and choose “Customize Summary Statistics” as shown
+below.</p>
+<p><a class="reference internal" href="../_images/image172.png"><img alt="image7" src="../_images/image172.png" style="width: 4.67925in; height: 1.38164in;" /></a></p>
+<p>To get the following output, I requested that JMP display both the
+<strong>Range</strong> and the <strong>Interquartile Range</strong>.</p>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>How many observations from the data set are used in the computation</dt>
+<dd><p class="first last">of the range?</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Outliers (which we will discuss later) are extreme observations which</dt>
+<dd><p class="first last">need to be handled with care in an analysis. How will outliers
+affect the range?</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>What is the smallest possible value for the range? What does it mean</dt>
+<dd><p class="first last">if the range is at this value?</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">What percent of the data lies between Q<sub>1</sub> and Q<sub>3</sub>?</p>
+</li>
+<li><p class="first">Which is more affected by outliers: the range or the IQR? Explain.</p>
+</li>
+</ol>
+<p>Some statisticians advocate that one of the most intuitive ways to
+measure variability is to consider what’s called the <strong>Mean Absolute
+Deviation</strong>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>*
+Mean Absolute Deviation*</strong>: For each measurement, calculate how far away that measurement is from the mean of the data set. The mean absolute deviation is the average of these absolute distances.</td>
+</tr>
+</tbody>
+</table>
+<p>To see how this is calculated, first consider the mean for Minnesota:</p>
+<p><a class="reference internal" href="../_images/image231.png"><img alt="image9" src="../_images/image231.png" style="width: 2.78302in; height: 1.18881in;" /></a></p>
+<div class="line-block">
+<div class="line">Then, consider the distance between each measurement and the mean:</div>
+<div class="line"><a class="reference internal" href="../_images/image242.png"><img alt="image10" src="../_images/image242.png" style="width: 2.83962in; height: 0.90555in;" /></a></div>
+</div>
+<p>Next, we consider the length of each of these distances (i.e., the
+absolute value of each of the distances) on the following plot. The
+average of these lengths is the <strong>mean absolute deviation</strong>.</p>
+<p><a class="reference internal" href="../_images/image252.png"><img alt="image11" src="../_images/image252.png" style="width: 5.68868in; height: 1.22647in;" /></a></p>
+<div class="line-block">
+<div class="line">*
+Question*: Why is it important that we take the absolute value of the
+distances before finding their average?</div>
+<div class="line">JMP doesn’t compute this measure of variability, which tells you how
+often it’s used in practice. This concept is worth considering,
+however, because it helps you understand how both the <strong>variance</strong> and
+the <strong>standard deviation</strong> are computed (these measures are commonly
+used to describe the amount of variability in a data set).</div>
+<div class="line">For example, like the mean absolute deviation, the variance also
+measures how far a “typical” observation is from the mean.</div>
+<div class="line"><a class="reference internal" href="../_images/image242.png"><img alt="image12" src="../_images/image242.png" style="width: 2.59434in; height: 0.82733in;" /></a></div>
+<div class="line">Instead of working with the <strong>absolute value</strong> of these distances,
+however, the variance works with the <strong>squared</strong> distances (note that
+this still prevents positive distances from cancelling out negative
+distances).</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first"><strong>*
+Variance*</strong>: For each data point, calculate how far away that value is from the mean of the data set. Then, square each of these distances and add them up. Finally, divide by n-1.</p>
+<div class="last line-block">
+<div class="line">Variance:</div>
+<div class="line">*
+Note: We divide by n –1 because dividing by n tends to underestimate the true population variance.
+So, our estimate of the variance is better when we divide by n-1.
+*</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Finally, because the original distances were squared, the variance is in
+terms of squared units. To get back into the original scale of our data
+set, we take the square root of the variance.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first"><strong>*
+Standard Deviation*</strong>: The square root of the variance.</p>
+<p class="last">Standard deviation:</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following output shows both the variance and the standard deviation.</p>
+<p>Next, reconsider the following three states.</p>
+<p><a class="reference internal" href="../_images/image151.png"><img alt="image13" src="../_images/image151.png" style="width: 3.18868in; height: 1.90789in;" /></a></p>
+<p>JMP was used to obtained summary statistics for all three:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Virginia</strong></th>
+<th class="head"><a class="reference internal" href="../_images/image322.png"><img alt="image14" src="../_images/image322.png" style="width: 3.13208in; height: 1.56604in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Wisconsin</strong></td>
+<td><a class="reference internal" href="../_images/image331.png"><img alt="image15" src="../_images/image331.png" style="width: 3.14151in; height: 1.51738in;" /></a></td>
+</tr>
+<tr class="row-odd"><td><strong>Minnesota</strong></td>
+<td><a class="reference internal" href="../_images/image341.png"><img alt="image16" src="../_images/image341.png" style="width: 3.03774in; height: 1.51887in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Compare each of the aforementioned statistics appropriate for
+summarizing variability across the three states.</li>
+<li>Which state has the <em>most</em> variability in its county-level median
+household incomes? The <em>least</em>? How did you decide this?</li>
+</ol>
+<div class="section" id="id7">
+<h2><a href="#id3"><span class="problematic" id="id4">**</span></a><a href="#id5"><span class="problematic" id="id6">*</span></a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>*Example 4.2: Comparing Household Income Levels Across States
+*</strong></div>
+<div class="line">Next, suppose we want to determine which states tend to have the
+highest household income levels. To do this, we will go back to our
+original data set, <strong>QuickFacts.jmp</strong>. Recall that the data were
+collected at the county level, so we will begin by summarizing the
+household incomes for each state.</div>
+<div class="line">For example, we could use JMP to find the mean of <em>Median household
+income</em> for each state as follows. Select Tables &gt; Summary and enter
+the following:</div>
+</div>
+<p><a class="reference internal" href="../_images/image351.png"><img alt="image17" src="../_images/image351.png" style="width: 4.10417in; height: 2.18543in;" /></a></p>
+<p>JMP will then open a new data table of which a portion is shown below:</p>
+<p><a class="reference internal" href="../_images/image361.png"><img alt="image18" src="../_images/image361.png" style="width: 3.28125in; height: 1.26202in;" /></a></p>
+<p>This will allow us to make comparisons across states. Note that you can
+select Tables &gt; Sort to sort the results in numerical order. After
+sorting, we see that the five states with the lowest household incomes
+as measured by the mean are shown below:</p>
+<p><a class="reference internal" href="../_images/image371.png"><img alt="image19" src="../_images/image371.png" style="width: 3.43750in; height: 1.30587in;" /></a></p>
+<p>The top five states are shown here:</p>
+<p><a class="reference internal" href="../_images/image381.png"><img alt="image20" src="../_images/image381.png" style="width: 3.09375in; height: 1.42708in;" /></a></p>
+<p>Instead of sorting the data, you could also use Graph Builder to create
+graphs such as the following. This makes a visual comparison of
+household incomes across states much easier.</p>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/image391.png"><img alt="image21" src="../_images/image391.png" style="width: 6.50000in; height: 4.03472in;" /></a></div>
+<div class="line">Note that you could create similar maps with other summary statistics
+such as the median or percentiles of the household income data, as
+well.</div>
+</div>
+<ul class="simple">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>Next, suppose that instead of identifying the highest-earning states,
+you were more interested in which states have the most problems with
+<em>income inequality</em>.</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">The map from the previous page will <em>not</em> help you investigate this
+question. Why not?</p>
+</li>
+<li><p class="first">What summary statistics <em>will</em> help you investigate income inequality
+within each state? Explain your reasoning.</p>
+</li>
+<li><p class="first">Use the following map to identify a few states that appear to have
+the most problems with income inequality and a few states that appear
+to have the least problems with income inequality.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image401.png"><img alt="image22" src="../_images/image401.png" style="width: 5.83333in; height: 3.56232in;" /></a></p>
+</div></blockquote>
+</li>
+</ol>
+<p>Another look at the household income levels by county in a few
+individual states:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Hawaii</th>
+<th class="head">Virginia</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Questions*:</p>
+<ol class="arabic">
+<li><p class="first">Suppose a researcher claims there will obviously be less variability
+in incomes in Hawaii than in Virginia simply because Hawaii has only
+5 counties versus Virginia’s 134 counties. In other words, he or she
+is arguing that the measures of variability are smaller for Hawaii
+simply because we have a smaller sample size in that state. Why is
+this reasoning <em>incorrect</em>? What is the real reason there is less
+variability in Hawaii?</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Note that when I used JMP to compute the standard deviation for
+each state to create the map on page 124, JMP did not report this
+summary statistic for the District of Columbia.</div>
+<div class="line"><a class="reference internal" href="../_images/image431.png"><img alt="image23" src="../_images/image431.png" style="width: 4.77083in; height: 1.80170in;" /></a></div>
+<div class="line">Why did this happen?</div>
+</div>
+</li>
+</ol>
+<p><strong>*GRAPHICAL SUMMARIES OF NUMERICAL DATA
+*</strong></p>
+<p>In this section, we will discuss common methods for graphing numerical
+data. Graphs conveniently allow us to examine both the location and the
+variability in a data set. Moreover, we gain insight into the <em>shape</em> of
+a data distribution.</p>
+<p><strong>*Example 4.3: Graphing Household Income Levels in Minnesota
+Counties*</strong></p>
+<p>In this example, we will once again consider summarizing the median
+household incomes of all 87 counties in Minnesota. Recall that we’ve
+already seen a dotplot of these data:<strong>*
+*</strong></p>
+<p>JMP does not create dotplots, but JMP can be used to create the
+following graphics.</p>
+<div class="line-block">
+<div class="line"><strong>*Histogram*</strong></div>
+<div class="line">A histogram is created by dividing the range of the data distribution
+into class intervals and then counting the number of observations that
+fall in each interval. A rectangular column is plotted in each
+interval, and the height of the column is proportional to the
+frequency of observations within the interval. The y-axis can be
+labeled with either the count or the percentage of the observations
+that fall in each interval.</div>
+</div>
+<p>To see this, note that we could start with our dotplot and divide the
+data distribution into the following classes. Then, we can count the
+number of data points in each interval.</p>
+<p><a class="reference internal" href="../_images/image451.png"><img alt="image24" src="../_images/image451.png" style="width: 5.43750in; height: 1.93750in;" /></a></p>
+<div class="line-block">
+<div class="line">When you use the Analyze &gt; Distribution platform, JMP provides the
+histogram by default. You can select “Histogram Options &gt; Show counts”
+to display the counts for each interval.</div>
+<div class="line"><a class="reference internal" href="../_images/image461.png"><img alt="image25" src="../_images/image461.png" style="width: 3.59375in; height: 2.32593in;" /></a></div>
+</div>
+<p><strong>*Density Smoother*</strong></p>
+<p>You can use JMP to overlay a density smoother on the histogram. To do
+this, select “Continuous Fit &gt; Smooth Curve” from the red drop-down
+arrow next to the variable name. You can control the amount of smoothing
+with the slider bar.</p>
+<p><a class="reference internal" href="../_images/image471.png"><img alt="image26" src="../_images/image471.png" style="width: 5.69792in; height: 2.72255in;" /></a></p>
+<p>This curve ignores some of the minor irregularities that may appear in
+the histogram and provides us with a smooth estimate of the real trends
+in the data.</p>
+<p><strong>*Boxplot*</strong></p>
+<p>The procedure for constructing a boxplot is as follows:</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Draw horizontal lines at Q<sub>1</sub>, Q<sub>2</sub>, and Q<sub>3</sub>.</dt>
+<dd><p class="first last">Enclose these horizontal lines in a box.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Find the lower and upper whiskers:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">- The endpoint of the lower whisker is the larger of the minimum
+and</div>
+<div class="line">(Q:sub:<cite>1</cite> – 1.5*IQR).</div>
+</div>
+<div class="line-block">
+<div class="line">- The endpoint of the upper whisker is the smaller of the maximum
+and</div>
+<div class="line">(Q:sub:<cite>3</cite> + 1.5*IQR).</div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p><em>Comment</em>: Any measurement beyond the endpoint of either whisker is
+classified as a potential outlier (an extreme observation).</p>
+<p>When you use the Analyze &gt; Distribution platform in JMP, the boxplot
+appears by default. You can open and close the boxplot by clicking on
+the red drop-down menu next to the variable name and selecting “Outlier
+Box Plot.”</p>
+<p><a class="reference internal" href="../_images/image481.png"><img alt="image27" src="../_images/image481.png" style="width: 5.00000in; height: 1.55208in;" /></a></p>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Questions*:</p>
+<ol class="arabic simple">
+<li>Are there any counties in Minnesota in which the median household
+income is unusually low? If so, which ones?</li>
+<li>Are there any counties in Minnesota in which the median household
+income is unusually high? If so, which ones?</li>
+</ol>
+<p><strong>*CDF Plot*</strong></p>
+<p>To create a plot of the cumulative distribution function (i.e., a CDF
+plot) in JMP, select this option from the red drop-down arrow next to
+the variable name.</p>
+<p><a class="reference internal" href="../_images/image491.png"><img alt="image28" src="../_images/image491.png" style="width: 3.06250in; height: 2.42173in;" /></a></p>
+<p>This plot allows you to easily determine the percentage of the data that
+falls at or below a given value on the x-axis. To see this, consider
+both a histogram of the data and the percentiles which were discussed
+earlier.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head"><a class="reference internal" href="../_images/image512.png"><img alt="image29" src="../_images/image512.png" style="width: 1.40407in; height: 1.67708in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line">What percentage of counties in Minnesota has a median household
+income level below</div>
+<div class="line">$50,000?</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">What percentage of counties in Minnesota has a median household
+income level above</div>
+<div class="line">$60,000?</div>
+</div>
+</li>
+</ol>
+<p><strong>*A DISCUSSION OF SKEWNESS*</strong></p>
+<p>A data distribution is said to be symmetric if it has the same shape on
+both sides of the center. <strong>Skewness</strong> measures the amount of asymmetry
+in a data distribution.</p>
+<p>The distribution is said to be <em>positively skewed</em> or <em>skewed to the
+right</em> if the measurements tend to trail off to the right. Similarly, a
+distribution is <em>negatively skewed</em> or <em>skewed to the left</em> if the
+measurements trail off to the left.</p>
+<p>JMP provides a numerical measure of skewness, as well. This measure
+takes on the value zero when the data distribution is perfectly
+symmetric; skewness measures greater than zero indicate the data are
+positively skewed, and skewness measures less than zero indicate the
+data are negatively skewed. This skewness measure can be displayed by
+customizing the Summary Statistics section of the output.</p>
+<p>We have already summarized the median household income for counties in
+Minnesota. Next, let’s also consider summaries from two other states,
+Nevada and Maryland.</p>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/image522.png"><img alt="image30" src="../_images/image522.png" style="width: 6.48958in; height: 2.33333in;" /></a></div>
+<div class="line"><a class="reference internal" href="../_images/image531.png"><img alt="image31" src="../_images/image531.png" style="width: 6.48958in; height: 2.32292in;" /></a></div>
+</div>
+<p><a class="reference internal" href="../_images/image541.png"><img alt="image32" src="../_images/image541.png" style="width: 6.48958in; height: 2.31250in;" /></a></p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>How would you describe the shape of the distribution of median
+household incomes in Nevada counties?</li>
+<li>How would you describe the shape of the distribution of median
+household incomes in Maryland counties?</li>
+</ol>
+<p><strong>*Z-SCORES
+*</strong></p>
+<p>A <em>Z-score</em>, often called a standardized value, measures the number of
+standard deviations an observation is away from the mean of the data
+distribution. The z-score can be used to transform observations to a
+dimensionless scale; in addition, it can be used to measure the position
+of an observation. Z-scores are calculated as shown below:</p>
+<p><em>Interpretation of Z-Scores</em>:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>As mentioned, the standardized values transform the data so that the</dt>
+<dd><p class="first last">data is placed on a standard, dimensionless scale that has a mean
+of 0 and a standard deviation of 1.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>If a Z-Score is negative, then the observation is that many standard</dt>
+<dd><p class="first last">deviations below the mean.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>If the Z-Score is positive, then the observation is that many</dt>
+<dd><p class="first last">standard deviations above the mean.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">If the Z-Score is 0, then the data value is the same as the mean.</p>
+</li>
+<li><dl class="first docutils">
+<dt>If the Standard Deviation is 0, then the Z-Score is not defined and</dt>
+<dd><p class="first last">thus cannot be computed.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">To obtain Z-scores for the median household incomes of Minnesota
+counties in JMP, select</div>
+<div class="line"><strong>Save &gt; Standardized</strong> from the red drop-down arrow next to the
+variable name once you’re in the Analyze &gt; Distribution platform.</div>
+</div>
+<div class="line-block">
+<div class="line">The Z-scores will be displayed in the last column of the original data
+set.</div>
+<div class="line"><a class="reference internal" href="../_images/image56.png"><img alt="image33" src="../_images/image56.png" style="width: 4.85833in; height: 1.76389in;" /></a></div>
+</div>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">Show how the Z-score for Winona County was calculated:</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image57.png"><img alt="image34" src="../_images/image57.png" style="width: 1.93777in; height: 1.35436in;" /></a></p>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>What does this tell you about the relative position of Winona County</dt>
+<dd><p class="first last">in the data set?</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p><strong>*THE IDENTIFICATION OF OUTLIERS*</strong></p>
+<p>We have already discussed using boxplots to identify outliers. In
+addition, we can use Z-scores.</p>
+<ul class="simple">
+<li>Any data value whose Z-Score is <strong>below −2 or above 2</strong> is considered
+a potential outlier.</li>
+<li>Any data value whose Z-Score is <strong>below -3 or above 3</strong> is considered
+an outlier and warrants further investigation.</li>
+</ul>
+<p>These guidelines come from the following theories.</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt><strong>*Empirical Rule*</strong>: If the probability distribution is bell-shaped</dt>
+<dd><p class="first last">and symmetric, then the Empirical Rule applies. This rule says
+that APPROXIMATELY…</p>
+</dd>
+</dl>
+</li>
+</ol>
+<ul>
+<li><p class="first">68% of the values fall within one standard deviation of the mean.</p>
+</li>
+<li><p class="first">95% of the values fall within two standard deviations of the mean.</p>
+</li>
+<li><p class="first">99.7% of the values fall within three standard deviations of the
+mean.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image58.png"><img alt="image35" src="../_images/image58.png" style="width: 3.39583in; height: 2.11458in;" /></a></p>
+<p><a href="#id8"><span class="problematic" id="id9">*</span></a>Image Source: <a class="reference external" href="http://threes.com">http://threes.com</a>
+*</p>
+</div></blockquote>
+</li>
+</ul>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt><strong>*Chebyshev’s Rule*</strong>: For ANY probability distribution, Chebyshev’s</dt>
+<dd><p class="first last">Rule tells us that AT LEAST…</p>
+</dd>
+</dl>
+</li>
+</ol>
+<ul class="simple">
+<li>75% of the values fall within two standard deviations of the mean.</li>
+<li>89% of the values fall within three standard deviations of the mean.</li>
+<li>1 - 1/k<sup>2</sup> of the values fall within k standard deviation of
+the mean.</li>
+</ul>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Chapter 3' data-toggle="tooltip">
+    <a href="../chp3/chp3.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp3/chp3.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 5' data-toggle="tooltip" >
+    <a href="../chp5/chp5.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp5/chp5.html" >Next Section - Chapter 5</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

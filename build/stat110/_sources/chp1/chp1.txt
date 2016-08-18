@@ -58,13 +58,6 @@ Identify the following in the context of this example:
 *  Variable of interest:
 *  Data type:
 
-.. dragndrop:: exp1.1_1
-    :feedback: At least one of your items is matched incorrectly.  Please try again.
-    :match_1:  All trials of the experiment|||Population of interest
-    :match_2:  The 100 trials that were observed|||Sample
-    :match_3:  The number of correct answers|||Variable of interest
-    :match_4:  Categorical|||Data type
-
 Recall that we carried out a simulation study to determine whether this
 patient who was suspected of malingering had obtained too few correct
 answers. The results of the simulation study indicate what outcomes we

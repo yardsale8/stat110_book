@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter 2 Part 1 &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Chapter 2 Part 2" href="../chp2_2/chp2_2.html" />
+    <link rel="prev" title="Chapter 1" href="../chp1/chp1_with_questions.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp2_1'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Chapter 2 Part 1</a><ul>
+<li><a class="reference internal" href="#id13">***</a></li>
+<li><a class="reference internal" href="#id18">***</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Chapter 1" data-toggle="tooltip">
+    <a href="../chp1/chp1_with_questions.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Chapter 2 Part 2' data-toggle="tooltip" >
+    <a href="../chp2_2/chp2_2.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="chapter-2-part-1">
+<h1>Chapter 2 Part 1<a class="headerlink" href="#chapter-2-part-1" title="Permalink to this headline">¶</a></h1>
+<p>The general approach used in a statistical investigation is shown in the
+following diagram. Note that every investigation starts with a question
+that gets converted to a research hypothesis. Though we will rarely
+design our own studies in this course, we will discuss good strategies
+and best practices for collecting data throughout the semester. Most of
+our attention will be devoted to descriptive and inferential methods for
+analyzing the data, how we decide whether the data supports the research
+question, and how to write conclusions that appropriately summarize the
+results of the study.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A Statistical Investigation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/image12.png"><img alt="image0" src="../_images/image12.png" style="width: 6.50000in; height: 3.55833in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">In Chapter 2, we will discuss methods for making decisions concerning
+research hypotheses involving only a single categorical variable. Even
+though we’ll be adding lots of terminology and formalities along the
+way, we will use the same logical approach to investigating research
+questions that was introduced in Chapter 1.</div>
+<div class="line">**
+<em>DESCRIPTIVE VS. INFERENTIAL STATISTICS
+**</em></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definitions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li><strong>Descriptive statistics</strong> are methods that describe, show, or summarize the data from our sample in a meaningful way.</li>
+<li><strong>Inferential statistics</strong> are methods that allow us to draw conclusions about the larger population that the sample represents.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>For example, recall the Helper vs. Hinder study from Example 1.2. In the
+sample of 16 infants studied, 14 of the 16 picked the helper. What
+descriptive methods might we use to <em>describe</em> the results of this
+study?</p>
+<p><strong>*
+FORMAL HYPOTHESIS TESTING*</strong></p>
+<div class="line-block">
+<div class="line">You are most likely already familiar with several methods for
+descriptive statistics (e.g., calculating percentages, constructing
+bar charts or pie charts, etc.). Inferential methods, however, may be
+new to you. Again, inferential statistics involves drawing conclusions
+about the larger population that our sample was supposed to represent.
+In several examples introduced in Chapter 1, we used a logical process
+to make statistical decisions concerning a population of interest – we
+were actually using inferential statistics already!</div>
+<div class="line">Now, we will add more structure to these statistical investigations by
+introducing an inferential statistics procedure known as <strong>hypothesis
+testing</strong>. Note that in this chapter, we look at hypothesis testing
+for only research questions involving a single categorical variable.
+Before we discuss this procedure, however, we must introduce a few
+more definitions.</div>
+</div>
+<p><strong>*Population Parameters vs. Sample Statistics*</strong></p>
+<p>In each of the previous examples, we tested a claim about a population
+<strong>parameter</strong> of interest.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definitions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>A <strong>parameter</strong> is a numerical descriptive measure of a population. This value is almost always unknown, and our goal in a statistical investigation is typically to either estimate this parameter or test a claim regarding it.</li>
+<li>A <strong>statistic</strong> is a numerical descriptive measure of a sample. This value is calculated from the observed data.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="66%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Example</strong></th>
+<th class="head"><strong>Statistic</strong></th>
+<th class="head"><strong>Parameter</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Example 1.2: Helper vs. Hinderer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Example 1.3: Are women passed over for managerial training?</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Example 1.4: Font Preference</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Hypothesis testing</em> is a procedure, based on sample evidence and
+probability, used to test a claim regarding a population parameter. The
+test will measure how well our observed sample statistic agrees with
+some assumption about this population parameter.</p>
+<p>Before you begin a hypothesis test, you should clearly state your
+research hypothesis. For instance, let’s reconsider the research
+hypotheses from three of our previous examples.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Example</strong></th>
+<th class="head"><strong>Research Hypothesis</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Example 1.2: Helper vs. Hinderer</td>
+<td>Ten-month-old infants prefer the helper toy over the hinderer toy.</td>
+</tr>
+<tr class="row-odd"><td>Example 1.3: Are women passed over for managerial training?</td>
+<td>This particular company is discriminating against females in the management selection process.</td>
+</tr>
+<tr class="row-even"><td>Example 1.4: Font Preference</td>
+<td>Consumers prefer one font over the other.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*
+*</strong>Once the research hypothesis has been developed, we typically
+formulate what are known as the null and alternative hypotheses. The
+null and alternative hypotheses are both statements about the parameter
+of interest in the study.</p>
+<p><strong>*Setting Up the Null and Alternative Hypothesis*</strong></p>
+<ul class="simple">
+<li>The <em>null hypothesis</em>, H<sub>o</sub>, is what we will assume to be true
+(i.e., we will assume for the time being that whatever effect we want
+to detect doesn’t exist in reality). We will then evaluate the
+observed outcome from our study against what outcomes we expected to
+see under the null hypothesis. This will always contain a statement
+saying that the population parameter is <strong>equal</strong> to some value.</li>
+<li>The <em>alternative hypothesis</em>, H<sub>a</sub>, is what we are trying to
+show. Therefore, the research hypothesis is simply restated here as
+if it were true in the alternative hypothesis. This will always
+contain statements of inequality, saying that the population
+parameter is <strong>less than, greater than, or different from</strong> the value
+in the null hypothesis.</li>
+</ul>
+<p>For our three examples, the null and alternative hypotheses are shown
+below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Research Hypothesis</strong></th>
+<th class="head"><strong>Null and Alternative Hypotheses</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Ten-month-old infants tend to prefer the helper toy over the hinderer toy.</td>
+<td>H<sub>o</sub>: The proportion of all 10-month-old infants
+that prefer the helper toy is only 50%.
+H<sub>a</sub>: The proportion of all 10-month-old infants
+that prefer the helper toy is greater than 50%.</td>
+</tr>
+<tr class="row-odd"><td>This particular company is discriminating against females in the management selection process.</td>
+<td><div class="first last line-block">
+<div class="line">H<sub>o</sub>: The probability of a woman being selected</div>
+<div class="line">for management is 60%.</div>
+<div class="line">H<sub>a</sub>: The probability of a woman being selected</div>
+<div class="line">for management is less than 60%.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Consumers prefer one font over the other.</td>
+<td><div class="first last line-block">
+<div class="line">H<sub>o</sub>: The proportion of all consumers that pick the</div>
+<div class="line">Signet font is equal to 50%.</div>
+<div class="line">H<sub>a</sub>: The proportion of all consumers that pick the</div>
+<div class="line">Salem font is different from 50%.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*
+*</strong>Note that we can also state these hypotheses in terms of the
+population parameter of interest using formal notation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Research Hypothesis</strong></th>
+<th class="head"><strong>Null and Alternative Hypotheses</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Ten-month-old infants tend to prefer the helper toy over the hinderer toy.</td>
+<td><p class="first">H<sub>o</sub>:</p>
+<p class="last">H<sub>a</sub>:</p>
+</td>
+</tr>
+<tr class="row-odd"><td>This particular company is discriminating against females in the management selection process.</td>
+<td><p class="first">H<sub>o</sub>:</p>
+<p class="last">H<sub>a</sub>:</p>
+</td>
+</tr>
+<tr class="row-even"><td>Consumers prefer one font over the other.</td>
+<td><p class="first">H<sub>o</sub>:</p>
+<p class="last">H<sub>a</sub>:</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Evaluating Evidence Using P-Values
+*</strong>In in each of our three examples, we essentially <em>assumed the null
+hypothesis was true</em> when setting up our spinner for the Tinkerplots
+investigation. Then, we used the results simulated under this scenario
+to help us decide whether observing results such as our sample data
+would be an unusual event if the null hypothesis were true.</p>
+<p>Up to this point, whether an observed study result was considered
+unusual (or extreme) has been a rather subjective decision. Now, we will
+discuss the guidelines used by statisticians to determine whether an
+observed study result is extreme enough under the null hypothesis for us
+to conclude that the evidence supports the research hypothesis.</p>
+<p>First, note that in our three examples, we examined different parts of
+the distribution of simulated outcomes when deciding whether the
+observed study data was extreme. Each of these cases is an example of a
+specific type of hypothesis test.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="35%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Research Hypothesis</strong></th>
+<th class="head"><strong>Hypotheses</strong></th>
+<th class="head"><strong>Type of Test</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Ten-month-old infants tend to prefer the helper toy over the hinderer toy.</td>
+<td>H<sub>o</sub>: π = .50
+H<sub>a</sub>: π &gt; .50
+where π = the proportion that choose the helper</td>
+<td>Upper-tailed Test</td>
+</tr>
+<tr class="row-odd"><td>This particular company is discriminating against females in the management selection process.</td>
+<td><div class="first last line-block">
+<div class="line">H<sub>o</sub>: π = .60</div>
+<div class="line">H<sub>a</sub>: π &lt; .60</div>
+<div class="line">where π = the proportion of those selected who are female</div>
+</div>
+</td>
+<td>Lower-tailed Test</td>
+</tr>
+<tr class="row-even"><td>Consumers prefer one font over the other.</td>
+<td><div class="first last line-block">
+<div class="line">H<sub>o</sub>: π = .50</div>
+<div class="line">H<sub>a</sub>: π ≠ .50</div>
+<div class="line">where π = the proportion that choose Signet font</div>
+</div>
+</td>
+<td>Two-tailed Test</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><strong>*
+*</strong>Statisticians typically use the following guidelines to determine
+whether the observed data supports the research question:</div>
+<div class="line"><strong>*
+*</strong></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Research Hypothesis</strong></th>
+<th class="head"><p class="first"><strong>Statistician’s Guideline for When</strong></p>
+<p class="last"><strong>Observed Outcome Supports the Research Question</strong></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Ten-month-old infants tend to prefer the helper toy over the hinderer toy.</td>
+<td><p class="first"><a class="reference internal" href="../_images/image26.png"><img alt="image1" src="../_images/image26.png" style="width: 4.29511in; height: 1.84332in;" /></a></p>
+<p class="last"><em>Upper-tailed test</em>: The observed outcome must fall in the <em>upper</em> 5% of the distribution obtained under the null hypothesis.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>This particular company is discriminating against females in the management selection process.</td>
+<td><blockquote class="first">
+<div><a class="reference internal" href="../_images/image31.png"><img alt="image2" src="../_images/image31.png" style="width: 4.45833in; height: 1.63377in;" /></a></div></blockquote>
+<p class="last"><em>Lower-tailed test</em>: The observed outcome must fall in the <em>lower</em> 5% of the distribution obtained under the null hypothesis.</p>
+</td>
+</tr>
+<tr class="row-even"><td>Consumers prefer one font over the other.</td>
+<td><p class="first"><a class="reference internal" href="../_images/image4.png"><img alt="image3" src="../_images/image4.png" style="width: 4.53774in; height: 1.35987in;" /></a></p>
+<p class="last"><em>Two-tailed test</em>: The observed outcome must fall in either the upper 2.5% or the lower 2.5% of the distribution obtained under the null hypothesis.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Statisticians use what is called a <strong>*p-value*</strong> to quantify the amount
+of evidence that an observed outcome from a set of data provides for a
+research question.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>p-value</em>: The probability of observing an outcome as extreme (or even more extreme in favor of the research hypothesis) than the observed study result, assuming the null hypothesis is true.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that in each of the above examples, we obtained the simulation
+results assuming the null hypothesis was true. Therefore, to <em>estimate</em>
+the p-value, we simply determine how often outcomes as extreme (or even
+more extreme) than the observed study results appeared in our simulation
+study.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="65%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Example</strong></th>
+<th class="head"><strong>Estimate of p-value</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Helper vs. Hinderer? *
+<a href="#id1"><span class="problematic" id="id2">*</span></a><a class="reference internal" href="../_images/image51.png"><img alt="image4" src="../_images/image51.png" style="width: 4.31132in; height: 0.61492in;" /></a>*
+<a href="#id3"><span class="problematic" id="id4">*</span></a><a class="reference internal" href="../_images/image26.png"><img alt="image5" src="../_images/image26.png" style="width: 4.15625in; height: 1.78372in;" /></a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><p class="first">Are Women Passed Over for Managerial Training?</p>
+<ul class="simple">
+<li></li>
+</ul>
+<p><a href="#id5"><span class="problematic" id="id6">*</span></a><a class="reference internal" href="../_images/image6.png"><img alt="image6" src="../_images/image6.png" style="width: 4.48113in; height: 0.46295in;" /></a></p>
+<p class="last"><a class="reference internal" href="../_images/image31.png"><img alt="image7" src="../_images/image31.png" style="width: 4.25000in; height: 1.55743in;" /></a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><div class="first line-block">
+<div class="line">Font Preference?</div>
+<div class="line"><a class="reference internal" href="../_images/image71.png"><img alt="image8" src="../_images/image71.png" style="width: 4.45283in; height: 0.43006in;" /></a></div>
+</div>
+<ul class="simple">
+<li></li>
+</ul>
+<p class="last"><a href="#id7"><span class="problematic" id="id8">*</span></a><a class="reference internal" href="../_images/image4.png"><img alt="image9" src="../_images/image4.png" style="width: 4.42453in; height: 1.32594in;" /></a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Making a Decision with p-values</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>If the p-value is less than .05 (5%), then the data provide enough statistical evidence to support the research question.</li>
+<li>If the p-value is not less than .05 (5%), then the data do not provide enough statistical evidence to support the research question.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">Why does this decision rule work? Consider the “Helper vs. Hinderer”
+example. Because the p-value falls below 5%, the observed result
+<em>must</em> have been in the upper 5% of the reference distribution. As
+stated earlier, this implies that the observed study result is very
+unlikely to happen by chance under the null hypothesis, which supports
+the research question.</div>
+<div class="line">On the other hand, consider the “Are Women Passed Over for Managerial
+Training” example. Because the p-value was larger than 5%, the
+observed result <em>can’</em>t have been in the lower 5% of the reference
+distribution. This implies that the observed study result is not all
+that unusual and could have easily happened by chance under the null
+hypothesis. Therefore, the null hypothesis <em>could</em> be true, and we
+have no evidence to support the research question.</div>
+</div>
+<p>This decision rule is widely accepted for determining whether study
+results are statistically significant; however, some researchers do
+advocate using a more flexible rule similar to the following:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Making a Decision with p-values, Revised</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>If the p-value falls below .05, we have strong statistical evidence to support the alternative hypothesis (i.e., the research question).</li>
+<li>If the p-value falls below .10 but above .05, we have “marginal” statistical evidence to support the alternative hypothesis (i.e., the research question).</li>
+<li>If the p-value is above .10, we have no evidence to support the research question.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Next, we will review the steps involved in a formal hypothesis test for
+each of our three examples. Note that our conclusions are written in the
+context of the problem. Moreover, even a person with no statistical
+background should be able to understand these conclusions (i.e., a
+conclusion should NOT say something like “We reject the null
+hypothesis.”)</p>
+<p>Next, let’s carry out a formal hypothesis test for a few new examples.</p>
+<div class="line-block">
+<div class="line"><strong>*
+Example 2.1: Claims of Numbness after an Automobile Accident
+*</strong></div>
+<div class="line">A 28-year-old white woman developed pain involving the spine and the
+left side of her body after an automobile collision. She was actively
+involved in a personal litigation against the company that owned the
+other vehicle, and she reported constant pain and numbness in the left
+arm. To test her claims, researchers touched her left arm with either
+1 finger or 2 fingers simultaneously while her eyes were closed. The
+word “touch” was said simultaneously with the presentation of the
+tactile stimulus so that the subject knew when to respond. She then
+had to indicate whether she felt 1 single touch or 2 simultaneous
+touches (with the double-touch stimulus, the fingertips were always
+spaced 2 inches apart). The subject received 100 stimuli overall; she
+was correct on 30 of them. Is there statistical evidence that she is
+intentionally answering incorrectly?</div>
+</div>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Identify both the population and sample of interest.</li>
+<li>Identify the single categorical variable of interest.</li>
+<li>Identify both the parameter and statistic of interest.</li>
+<li>Carry out the formal hypothesis test to address the research
+question.</li>
+</ol>
+<p><strong>*Example 2.2: Effectiveness of an Experimental Drug*</strong></p>
+<p>Suppose a commonly prescribed drug for relieving nervous tension is
+believed to be only 70% effective. Experimental results with a <em>new</em>
+drug administered to a random sample of 20 adults who were suffering
+from nervous tension show that 18 received relief. Is there statistical
+evidence that the new experimental drug is more than 70% effective?</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Identify both the population and sample of interest.</li>
+<li>Identify the single categorical variable of interest.</li>
+<li>Identify both the parameter and statistic of interest.</li>
+<li>Carry out the formal hypothesis test to address the research
+question.</li>
+</ol>
+<p><strong>*USING THE BINOMIAL DISTRIBUTION TO FIND EXACT P-VALUES
+*</strong></p>
+<p>There is one caveat regarding our current approach to obtaining a
+p-value. Certainly, different simulations will produce slightly
+different simulated distributions. The general pattern will be the same,
+but variations do exist. For example, consider the Helper vs. Hinderer
+study.</p>
+<p>The study’s observed result was as follows: 14 out of 16 infants chose
+the helper toy. What if two different researchers each carried out their
+own simulation study to estimate the p-value?*
+*</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">p-value</th>
+<th class="head"><div class="first line-block">
+<div class="line">Simulation #1: p-value: _______________</div>
+<div class="line"><a class="reference internal" href="../_images/image111.png"><img alt="image12" src="../_images/image111.png" style="width: 3.70833in; height: 1.56548in;" /></a></div>
+</div>
+<div class="last line-block">
+<div class="line">Simulation #2: p-value: _______________</div>
+<div class="line"><a class="reference internal" href="../_images/image121.png"><img alt="image13" src="../_images/image121.png" style="width: 3.65625in; height: 1.44243in;" /></a></div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Conclusion</td>
+<td>We do have evidence that 10-month-old infants prefer the helper toy.</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">Fortunately, regardless of which simulation study we use in the
+previous example, the final conclusion is the same, and the
+discrepancy between the two estimated p-values is minimal; still, it’s
+not ideal that two different researchers get different results.</div>
+<div class="line">Note that as the number of trials in our simulation study increases,
+we expect less discrepancy between these two estimates of the p-value.
+So, instead of using a simulation study with only 1,000 trials to
+<em>estimate</em> the p-value, we would ideally like to simulate this
+experiment over and over again, say an <em>infinite</em> number of times.
+This would provide us with the theoretical probabilities of interest
+so that can get exact p-values instead of an estimate of the p-value.</div>
+<div class="line">The following graphic shows what the distribution would look like if
+we kept repeating the simulation study over and over again, each time
+counting and plotting the number of infants that chose the helper toy
+(assuming there was no real preference in the population of all
+infants). This theoretical probability distribution is known as the
+<strong>binomial distribution</strong>.</div>
+<div class="line"><a class="reference internal" href="../_images/image13.png"><img alt="image14" src="../_images/image13.png" style="width: 6.50000in; height: 3.06389in;" /></a></div>
+</div>
+<p>We can calculate these probabilities using the Excel file
+<strong>BinomialProbabilities.xls</strong>, which can be found on the course website.</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Does the general pattern in the above graph agree with the simulated
+distributions obtained from the simulation study in Tinkerplots?</li>
+<li>The binomial probability value for 14 is 0.0018, or .18%. What does
+this value mean? Explain.</li>
+<li>When we estimated the p-value using the results of the simulation
+study, we calculated the proportion of dots at 14 or above. How would
+we obtain the p-value using binomial probabilities? Explain.</li>
+<li>What is the p-value using the binomial probabilities?</li>
+</ol>
+<p>Statisticians often use the binomial distribution to calculate p-values
+when testing claims about a population proportion. However, before using
+this distribution, we should check to make sure the following conditions
+are met (note that these same conditions have to be met in order to
+estimate the p-value via a simulation study, as well).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><strong>*The Binomial Distribution - When can we use it?*</strong></p>
+<p>This distribution can be used whenever the following assumptions are met:</p>
+<ul class="last simple">
+<li>The study involves a fixed number of trials, n.</li>
+<li>There are only two possible outcomes on each trial (we call these a “success” or “failure”).</li>
+<li>The probability of “success” (π) remains constant from trial to trial.</li>
+<li>The n trials are independent.</li>
+</ul>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Check whether these assumptions seem reasonable for the Helper vs.
+Hinderer study.</p>
+<ul>
+<li><p class="first">There exist a fixed number of trials, n.</p>
+</li>
+<li><dl class="first docutils">
+<dt>There are only two possible outcomes on each trial (“success” or</dt>
+<dd><p class="first last">“failure”).</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">The probability of success (π) remains constant from trial to trial.</p>
+</li>
+<li><p class="first">The n trials are independent.</p>
+</li>
+</ul>
+<p><strong>*Example: Gender Discrimination
+*</strong></p>
+<p>Recall that we already estimated the probability of observing 9 or fewer
+women selected out of 20 if there was no discrimination (i.e., we
+estimated the p-value with a simulation study).</p>
+<p><a class="reference internal" href="../_images/image31.png"><img alt="image15" src="../_images/image31.png" style="width: 5.82292in; height: 2.13383in;" /></a><strong>*
+*</strong></p>
+<p>Estimated p-value = _____________</p>
+<p>Next, we will use the binomial distribution to find the exact p-value
+for the Gender Discrimination Study. First, check whether the
+assumptions behind the binomial distribution seem reasonable in this
+case.</p>
+<ul>
+<li><p class="first">There exist a fixed number of trials, n.</p>
+</li>
+<li><dl class="first docutils">
+<dt>There are only two possible outcomes on each trial (“success” or</dt>
+<dd><p class="first last">“failure”).</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">The probability of success (π) remains constant from trial to trial.</p>
+</li>
+<li><p class="first">The n trials are independent.</p>
+</li>
+</ul>
+<div class="section" id="id13">
+<h2><a href="#id9"><span class="problematic" id="id10">**</span></a><a href="#id11"><span class="problematic" id="id12">*</span></a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id18">
+<h2><a href="#id14"><span class="problematic" id="id15">**</span></a><a href="#id16"><span class="problematic" id="id17">*</span></a><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p><strong>*Example: Font Preference*</strong></p>
+<p>Finally, we will use the binomial distribution to find the exact p-value
+for the Font Preference Study. Recall that we have already estimated
+this p-value using a simulation study:</p>
+<p><a class="reference internal" href="../_images/image4.png"><img alt="image17" src="../_images/image4.png" style="width: 6.15240in; height: 1.84375in;" /></a></p>
+<p>Estimated p-value = _____________</p>
+<p>Before we use the binomial distribution to find the exact p-value, we
+will first check whether the assumptions behind the binomial
+distribution seem reasonable in this case.</p>
+<ul>
+<li><p class="first">There exist a fixed number of trials, n.</p>
+</li>
+<li><dl class="first docutils">
+<dt>There are only two possible outcomes on each trial (“success” or</dt>
+<dd><p class="first last">“failure”).</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">The probability of success (π) remains constant from trial to trial.</p>
+</li>
+<li><p class="first">The n trials are independent.</p>
+</li>
+</ul>
+<p><strong>*Practice Problems*</strong></p>
+<ol class="arabic simple">
+<li>Consider Example 2.1 (Claims of Numbness after an Automobile
+Accident).<ol class="loweralpha">
+<li>Check the conditions for the binomial distribution in the context
+of this example.</li>
+<li>Find the exact p-value using the binomial distribution.</li>
+</ol>
+</li>
+<li>Consider Example 2.2 (Effectiveness of an Experimental Drug).<ol class="loweralpha">
+<li>Check the conditions for the binomial distribution in the context
+of this example.</li>
+<li>Find the exact p-value using the binomial distribution.</li>
+</ol>
+</li>
+</ol>
+<p><strong>*MORE ON USING P-VALUES TO MAKE DECISIONS
+*</strong></p>
+<p>As mentioned earlier, some researchers advocate using the following
+guidelines:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><ul class="first last simple">
+<li>If the p-value falls below .05, there is strong evidence to support the research hypothesis.</li>
+<li>If the p-value falls below .10 but above .05, there is “marginal” evidence to support the research hypothesis.</li>
+<li>If the p-value is above .10, there is not enough evidence to support the research hypothesis.</li>
+</ul>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">In general, the smaller the p-value, the less likely the results of
+the study are due to random chance; thus, the more evidence we have
+that to support the research hypothesis. In some disciplines, the
+p-value must be much smaller than .05 in order to support a research
+hypothesis. For example, physics journals often like to see p &lt; .001.</div>
+<div class="line">Though the above guidelines allow for claims of “marginal” evidence
+when p-values fall between .05 and .10, some statisticians caution
+against this. For example, Irwin Bross argues that such modifications
+would be detrimental in evaluating evidence.</div>
+</div>
+<blockquote>
+<div><p><em>Anyone familiar with certain areas of the scientific literature
+will be well aware of the need for curtailing language-games. Thus
+if there were no 5% level firmly established, then some persons
+would stretch the level to 6% or 7% to prove their point. Soon
+others would be stretching to 10% and 15% and the jargon would
+become meaningless. Whereas nowadays a phrase such as statistically
+significant difference provides some assurance that the results are
+not merely a manifestation of sampling variation, the phrase would
+mean very little if everyone played language-games. To be sure,
+there are always a few folks who fiddle with significance
+levels&#8211;who will switch from two-tailed to one-tailed tests or from
+one significance test to another in an effort to get positive
+results. However such gamesmanship is severely frowned upon.</em></p>
+<p><a href="#id19"><span class="problematic" id="id20">*</span></a>Source:&nbsp; Bross IDJ (1971), &#8220;Critical Levels, Statistical Language
+and Scientific Inference,&#8221; in Foundations of Statistical Inference.
+*</p>
+</div></blockquote>
+<p>The “.05 rule” is usually attributed to R.A. Fisher. His published
+thoughts on the matter are given below.</p>
+<blockquote>
+<div><p><em>In the investigation of living beings by biological methods
+statistical tests of significance are essential. Their function is
+to prevent us being deceived by accidental occurrences, due not to
+the causes we wish to study, or are trying to detect, but to a
+combination of the many other circumstances which we cannot control.
+An observation is judged significant, if it would rarely have been
+produced, in the absence of a real cause of the kind we are seeking.
+It is a common practice to judge a result significant, if it is of
+such a magnitude that it would have been produced by chance not more
+frequently than once in twenty trials. This is an arbitrary, but
+convenient, level of significance for the practical investigator,
+but it does not mean that he allows himself to be deceived once in
+every twenty experiments. The test of significance only tells him
+what to ignore, namely all experiments in which significant results
+are not obtained. He should only claim that a phenomenon is
+experimentally demonstrable when he knows how to design an
+experiment so that it will rarely fail to give a significant result.
+Consequently, isolated significant results which he does not know
+how to reproduce are left in suspense pending further
+investigation.</em></p>
+<p><em>Source: R.A. Fisher (1929), “The Statistical Method in Psychical
+Research,” from the</em> Proceedings of the Society for Psychical
+Research<a href="#id21"><span class="problematic" id="id22">*</span></a>, 39, 189-191.&nbsp; *</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><strong>*EXAMINING THE EFFECT OF SAMPLE SIZE
+Example 2.3: Gender Discrimination, Revisited
+*</strong></div>
+<div class="line">Once again, consider the Gender discrimination example. Recall that of
+the 20 persons selected for management so far, only 9 (or 9/20 = 45%)
+were female. In an unbiased selection process, we expected to see a
+woman selected 60% of the time. We found that the probability of
+observing 9 or fewer women selected by chance if the company was in
+fact using a fair selection process was .1275.</div>
+<div class="line"><a class="reference internal" href="../_images/image16.png"><img alt="image19" src="../_images/image16.png" style="width: 6.50000in; height: 3.26042in;" /></a></div>
+</div>
+<div class="line-block">
+<div class="line">Now, suppose that the results had actually been as follows: Of the
+last 40 persons selected for management so far, only 18 (or 18/40 =
+45%) were female. How does this change the calculation of the p-value?</div>
+<div class="line">The binomial probabilities for this scenario are shown below.</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Number of &#8220;Successes&#8221;</strong></th>
+<th class="head"><strong>Binomial Probabilities</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>1.20893E-16</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>7.25355E-15</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>2.12166E-13</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>4.03116E-12</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>5.59324E-11</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>6.0407E-10</td>
+</tr>
+<tr class="row-even"><td>6</td>
+<td>5.28561E-09</td>
+</tr>
+<tr class="row-odd"><td>7</td>
+<td>3.85094E-08</td>
+</tr>
+<tr class="row-even"><td>8</td>
+<td>2.38277E-07</td>
+</tr>
+<tr class="row-odd"><td>9</td>
+<td>1.27081E-06</td>
+</tr>
+<tr class="row-even"><td>10</td>
+<td>5.90928E-06</td>
+</tr>
+<tr class="row-odd"><td>11</td>
+<td>2.41743E-05</td>
+</tr>
+<tr class="row-even"><td>12</td>
+<td>8.76319E-05</td>
+</tr>
+<tr class="row-odd"><td>13</td>
+<td>0.000283118</td>
+</tr>
+<tr class="row-even"><td>14</td>
+<td>0.000819021</td>
+</tr>
+<tr class="row-odd"><td>15</td>
+<td>0.002129454</td>
+</tr>
+<tr class="row-even"><td>16</td>
+<td>0.004990908</td>
+</tr>
+<tr class="row-odd"><td>17</td>
+<td>0.010568983</td>
+</tr>
+<tr class="row-even"><td>18</td>
+<td>0.020257217</td>
+</tr>
+<tr class="row-odd"><td>19</td>
+<td>0.035183587</td>
+</tr>
+<tr class="row-even"><td>20</td>
+<td>0.055414149</td>
+</tr>
+<tr class="row-odd"><td>21</td>
+<td>0.07916307</td>
+</tr>
+<tr class="row-even"><td>22</td>
+<td>0.102552159</td>
+</tr>
+<tr class="row-odd"><td>23</td>
+<td>0.120387317</td>
+</tr>
+<tr class="row-even"><td>24</td>
+<td>0.127911524</td>
+</tr>
+<tr class="row-odd"><td>25</td>
+<td>0.122795063</td>
+</tr>
+<tr class="row-even"><td>26</td>
+<td>0.106264959</td>
+</tr>
+<tr class="row-odd"><td>27</td>
+<td>0.082650523</td>
+</tr>
+<tr class="row-even"><td>28</td>
+<td>0.057560186</td>
+</tr>
+<tr class="row-odd"><td>29</td>
+<td>0.035727012</td>
+</tr>
+<tr class="row-even"><td>30</td>
+<td>0.019649857</td>
+</tr>
+<tr class="row-odd"><td>31</td>
+<td>0.009507995</td>
+</tr>
+<tr class="row-even"><td>32</td>
+<td>0.004011185</td>
+</tr>
+<tr class="row-odd"><td>33</td>
+<td>0.001458613</td>
+</tr>
+<tr class="row-even"><td>34</td>
+<td>0.000450454</td>
+</tr>
+<tr class="row-odd"><td>35</td>
+<td>0.000115831</td>
+</tr>
+<tr class="row-even"><td>36</td>
+<td>2.41315E-05</td>
+</tr>
+<tr class="row-odd"><td>37</td>
+<td>3.91321E-06</td>
+</tr>
+<tr class="row-even"><td>38</td>
+<td>4.63406E-07</td>
+</tr>
+<tr class="row-odd"><td>39</td>
+<td>3.56467E-08</td>
+</tr>
+<tr class="row-even"><td>40</td>
+<td>1.33675E-09</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">For this scenario, the p-value is given by
+______________.</div>
+<div class="line">Finally, we can also consider a third study in which of the last 200
+persons selected for management so far, only 90 (or 90/200 = 45%) were
+female. How would you find the p-value for this scenario?</div>
+<div class="line">For this scenario, the p-value is given by
+______________.</div>
+</div>
+<p>Recall that these binomial distributions give us an idea of what
+outcomes occur by chance when the selection process does <em>not</em>
+discriminate based on gender (because we used π = 60%).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="87%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><a href="#id23"><span class="problematic" id="id24">**</span></a>Study #1: **</p>
+<div class="last line-block">
+<div class="line"><a href="#id25"><span class="problematic" id="id26">**</span></a>n = 20 trials
+<a href="#id27"><span class="problematic" id="id28">**</span></a>Observed Result =</div>
+<div class="line">9/20 = 45%</div>
+</div>
+</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first"><a href="#id29"><span class="problematic" id="id30">**</span></a>Study #2: **</p>
+<div class="last line-block">
+<div class="line"><a href="#id31"><span class="problematic" id="id32">**</span></a>n = 40 trials
+<a href="#id33"><span class="problematic" id="id34">**</span></a>Observed Result =</div>
+<div class="line">18/40 = 45%</div>
+</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><strong>Study #3:
+n = 200 trials</strong>
+Observed Result =
+90/200 = 45%</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Question*<a href="#id35"><span class="problematic" id="id36">**</span></a>:
+**</p>
+<p>Which of the following statements is most correct?</p>
+<ol class="lowerroman simple">
+<li>The three studies provide equally convincing statistical evidence
+that the selection process discriminates against women.</li>
+<li>Study #1 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+<li>Study #2 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+<li>Study #3 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+</ol>
+<p>Explain your reasoning.</p>
+<div class="line-block">
+<div class="line"><strong>*
+PRACTICAL SIGNIFICANCE VERSUS STATISTICAL SIGNIFICANCE
+*</strong>Consider the previous example. As discussed earlier, the result
+in Study #1 is not “statistically significant” because the observed
+outcome does not fall in the bottom 5% of simulated outcomes (i.e.,
+the p-value is not below .05). On the contrary, the results in Study
+#2 and Study #3 are “statistically significant.” The previous example
+illustrates that statistical significance depends on the sample size.
+All three studies resulted in an outcome of 45% of those selected for
+management being female, but this result was only statistically
+significant in the studies with the larger sample size.</div>
+<div class="line">This presents a conundrum: If a study’s results are not statistically
+significant, it could be that the effect under study is real, but the
+sample size wasn’t large enough to detect that effect (this relates to
+a concept known as the <em>power</em> of a hypothesis test which is discussed
+in upper-level statistics courses). On the other hand, if the sample
+size is large enough, very small differences between the observed
+results and the expected value in the null hypothesis can lead to
+statistically significant differences.</div>
+<div class="line">To counter this, researchers often consider “practical significance”
+in addition to “statistical significance.” A result is known as
+“practically significant” if the difference between the observed and
+expected result is large enough to be of value in the practical sense.</div>
+</div>
+<p><strong>*Example 2.4: Dukes vs. Wal-mart Stores, Inc.*</strong></p>
+<p>The lead plaintiff in this case, Betty Dukes, was a Wal-Mart employee.
+She and others alleged gender discrimination in promotion policies and
+practices in Wal-Mart stores.</p>
+<p>As the nation’s largest private employer, Wal-Mart makes tens of
+thousands of promotion decisions each year. The following data was
+provided during this trial: Wal-Mart promoted roughly 50,000 individuals
+to management between 1997 and 2002. Female employees constituted about
+60% of the group eligible for these promotions.</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">How many of the 50,000 individuals promoted do you expect to be
+female if Wal-Mart is not discriminating based on gender?</p>
+</li>
+<li><p class="first">Suppose that 29,780 of the individuals promoted were women (note that
+this was not the actual outcome in the court case). What percentage
+is this?</p>
+</li>
+<li><div class="first line-block">
+<div class="line">A simulation study with 100 trials was conducted to see what
+outcomes occur by chance when the selection process is <strong>not</strong>
+discriminatory. The results are shown below.</div>
+<div class="line"><a class="reference internal" href="../_images/image201.png"><img alt="image20" src="../_images/image201.png" style="width: 5.83333in; height: 1.70201in;" /></a></div>
+<div class="line">Recall the hypothetical observed value of 29,780 females being
+selected. The research hypothesis is that Wal-Mart is
+discriminating against women in their promotion policies and
+practices. Based on the results of the simulation study, is this
+result “statistically significant”? Explain.</div>
+</div>
+</li>
+<li><p class="first">In the previous question, you estimated the p-value for this research
+hypothesis. Use the binomial distribution to find the exact p-value.
+Again, is the result “statistically significant”?</p>
+</li>
+<li><p class="first">Is this result “practically significant”? Explain.</p>
+</li>
+<li><p class="first">Do you foresee any problems if we rely on only statistical
+significance when making decisions? Explain.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Chapter 1' data-toggle="tooltip">
+    <a href="../chp1/chp1_with_questions.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp1/chp1_with_questions.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 2 Part 2' data-toggle="tooltip" >
+    <a href="../chp2_2/chp2_2.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp2_2/chp2_2.html" >Next Section - Chapter 2 Part 2</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

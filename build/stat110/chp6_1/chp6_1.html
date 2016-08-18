@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter 6 Part 1 &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Chapter 6 Part 2" href="../chp6_2/chp6_2.html" />
+    <link rel="prev" title="Chapter 5" href="../chp5/chp5.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp6_1'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Chapter 6 Part 1</a><ul>
+<li><a class="reference internal" href="#id5">***</a></li>
+<li><a class="reference internal" href="#id10">***</a></li>
+<li><a class="reference internal" href="#id23">***</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Chapter 5" data-toggle="tooltip">
+    <a href="../chp5/chp5.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Chapter 6 Part 2' data-toggle="tooltip" >
+    <a href="../chp6_2/chp6_2.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="chapter-6-part-1">
+<h1>Chapter 6 Part 1<a class="headerlink" href="#chapter-6-part-1" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><strong>*
+*</strong>In this chapter, we will consider methods that allow us to make
+comparisons on numerical variables between two different groups. In
+general, these methods should be used to address research questions
+involving a categorical predictor variable (with two categories) and a
+numerical response variable.</div>
+<div class="line">Two different cases will be considered: (1) When the samples are
+<em>dependent</em> (also called <em>matched</em> or <em>paired</em>), and (2) when the
+samples are independent.</div>
+<div class="line"><strong>*
+COMPARING TWO POPULATION MEANS: DEPENDENT SAMPLES*</strong></div>
+</div>
+<p>The hypothesis testing procedures presented in this section should be
+used when the observations from the two groups being compared are
+<em>dependent</em>. Whether or not the observations are dependent is determined
+by how the data are collected. To see this, consider the following
+example.</p>
+<div class="line-block">
+<div class="line"><strong>*
+Example 6.1: Thanksgiving Holiday Weight Gain
+*</strong></div>
+<div class="line">In a 2006 study published in <em>Nutrition Journal</em>, researchers were
+interested in assessing potential changes that occur in body weight
+during the Thanksgiving holiday break in college students. This
+paper’s abstract indicates that “a total of 94 college students
+reported to the human body composition laboratory at the University of
+Oklahoma following a 6-hour fast with testing occurring prior to, and
+immediately following the Thanksgiving holiday break. Body weight was
+assessed using a balance beam scale while participants were dressed in
+minimal clothing.”</div>
+<div class="line"><em>Source: Hull et al. The Effects of the Thanksgiving Holiday on Weight
+Gain. Nutrition Journal 2006, **5*</em>:29; doi:10.1186/1475-2891-5-29.*</div>
+</div>
+<p><em>Research Question</em>: On average, does body weight of college students
+increase over the Thanksgiving holiday break?</p>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Questions*:</p>
+<ol class="arabic simple">
+<li>What is the response variable of interest?</li>
+<li>What is the predictor variable of interest?</li>
+</ol>
+<div class="line-block">
+<div class="line">The raw data from this study were not available; however, the data in
+the file <strong>ThanksgivingWeightData.jmp</strong> are similar to the actual
+results obtained by the researchers. A portion of these data is shown
+below:</div>
+<div class="line"><a class="reference internal" href="../_images/image115.png"><img alt="image0" src="../_images/image115.png" style="width: 2.17612in; height: 3.17241in;" /></a></div>
+</div>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What can be said about the weight of Subject #1 as compared to
+Subject #7, for example, regardless of whether the data were
+collected before or after Thanksgiving?</li>
+</ol>
+<p><em>Comment</em>: For these data, the first pre-weight is related to the first
+post-weight (the two measurements were made on the same person). Thus,
+these two samples are <strong>dependent</strong>.</p>
+<p>In other words, some of the variability in the responses might be due to
+differences between time periods (before vs. after), but much of the
+variability in the observations is likely due to differences between
+people! So, to control for this variability in weights from person to
+person (which will help us isolate the effect of Thanksgiving break), we
+will work with the <em>DIFFERENCES</em> on each subject, instead. This will
+remove the structure of dependence between the pre- and
+post-Thanksgiving groups and will control for the fact that some people,
+in general, tend to weigh more (or less) than others. In the end, this
+helps us to isolate the effect of Thanksgiving break (i.e., before vs.
+after).</p>
+<p><strong>*
+Calculating the Difference in JMP*</strong></p>
+<div class="line-block">
+<div class="line">First, open the file called <strong>ThanksgivingWeightData.</strong>. To calculate
+the difference, create an additional column (double click on empty
+column next to “‘Post Weight”) and title it “Difference.” Right-click
+on the new column header and select <strong>Formula</strong>.</div>
+<div class="line"><a class="reference internal" href="../_images/image216.png"><img alt="image1" src="../_images/image216.png" style="width: 2.93750in; height: 1.31304in;" /></a></div>
+</div>
+<p>In the edit window, tell JMP to calculate the difference as follows:</p>
+<p><a class="reference internal" href="../_images/image315.png"><img alt="image2" src="../_images/image315.png" style="width: 1.95833in; height: 0.37500in;" /></a></p>
+<p>Click <strong>Apply</strong> and then <strong>OK</strong>, and JMP returns the following (only the
+results for the first 10 subjects are shown below):</p>
+<p><a class="reference internal" href="../_images/image415.png"><img alt="image3" src="../_images/image415.png" style="width: 2.93750in; height: 1.96546in;" /></a></p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What does a positive difference of 3.9 indicate?</li>
+<li>What does a difference of -1.9 indicate?</li>
+</ol>
+<div class="line-block">
+<div class="line">To determine what the average difference is, we can analyze the
+distribution of the differences using the descriptive methods
+discussed in Chapter 4:</div>
+<div class="line"><a class="reference internal" href="../_images/image513.png"><img alt="image4" src="../_images/image513.png" style="width: 3.82443in; height: 1.69133in;" /></a></div>
+</div>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What is the average difference of the 94 subjects? Interpret this
+value.</li>
+<li>If Thanksgiving break had no effect on body weight, what would you
+expect these differences to be, on average?*
+*</li>
+<li>If the research hypothesis is correct (body weights of college
+students increase over Thanksgiving break), what would you expect
+these differences to be, on average?</li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Comment*: Note that these differences are represented by a single column
+of data. <em>So, instead of viewing this as a problem involving a
+categorical predictor and a numerical response, you could view this as a
+problem involving a single numerical variable – the differences!</em>
+Therefore, the hypothesis testing procedure is <em>exactly</em> the same as the
+procedure for testing a single population mean we discussed in Chapter
+5.</p>
+<p>That is, the parameter of interest is the true population average of the
+differences which we will represent by μ<sub>difference</sub>.</p>
+<ul class="simple">
+<li>Our best estimate for this parameter is the <em>sample mean</em> of the
+observed differences. We’ll call this quantity.</li>
+<li>The sample standard deviation of the differences will be denoted by
+s<sub>difference</sub>.</li>
+</ul>
+<p>We can carry out the hypothesis test as follows to determine whether
+body weights of college students tend to increase over Thanksgiving
+break.</p>
+<p><strong>*Checking the Normality Assumption*:</strong></p>
+<p>Recall that for the t-test to be valid, at least one of the following
+conditions must be met:</p>
+<ul class="simple">
+<li>Either the sample size is sufficiently large (greater than 30 or so),
+or</li>
+<li>The distribution of the observed data is approximately normal (which
+would indicate that the population is normally distributed so that
+the Central Limit Theorem would apply even with a small sample size)</li>
+</ul>
+<p><em>Question</em>: Does the t-test appear to be a valid approach for testing
+this research question? Justify your reasoning.</p>
+<p><strong>*Step 1: Set up the null and alternative hypotheses*</strong></p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>*Step 2: Find the t-statistic and the p-value*</strong></p>
+<p>=</p>
+<div class="line-block">
+<div class="line">To calculate this test statistic and its associated p-value in JMP,
+use the methods discussed in Chapter 5:</div>
+<div class="line"><a class="reference internal" href="../_images/image84.png"><img alt="image5" src="../_images/image84.png" style="width: 4.49080in; height: 1.81695in;" /></a></div>
+</div>
+<p>p-value =</p>
+<p><strong>*
+Step 3: Write a conclusion in the context of the problem*</strong></p>
+<p><strong>*
+Interpreting the 95% confidence interval for the mean difference*</strong></p>
+<div class="section" id="id5">
+<h2><a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><em>Comment</em>: Suppose that when calculating the difference, you switched
+the order of the categories:</div>
+<div class="line"><a class="reference internal" href="../_images/image93.png"><img alt="image6" src="../_images/image93.png" style="width: 2.00000in; height: 0.43750in;" /></a></div>
+</div>
+<p>What effect would this have had on the analysis?</p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p>=</p>
+<p><a class="reference internal" href="../_images/image103.png"><img alt="image7" src="../_images/image103.png" style="width: 6.50000in; height: 2.66736in;" /></a></p>
+<p>p-value =</p>
+<p>Conclusion:</p>
+<p>95% confidence interval for the mean difference:</p>
+</div>
+<div class="section" id="id10">
+<h2><a href="#id6"><span class="problematic" id="id7">**</span></a><a href="#id8"><span class="problematic" id="id9">*</span></a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>*Example 6.2: Systolic Blood Pressure and Captopril*
+**The data in the file **Captopril.jmp</strong> give the systolic and
+diastolic blood pressures for 15 patients with moderate essential
+hypertension, immediately before and two hours after taking a drug,
+captopril. Our interest is in investigating the response to the drug
+treatment.</p>
+<p><em>Research Question</em>: Is there a change in systolic blood pressure after
+taking captopril?</p>
+<p><em>Question</em>: Are these samples dependent or independent? Explain.</p>
+<p><strong>*Check the assumptions behind the test
+*</strong></p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image116.png"><img alt="image8" src="../_images/image116.png" style="width: 1.67485in; height: 1.23861in;" /></a></th>
+<th class="head"><a class="reference internal" href="../_images/image125.png"><img alt="image9" src="../_images/image125.png" style="width: 1.44785in; height: 1.14507in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Step 1: Set up the null and alternative hypotheses*</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>*Step 2: Find the test statistic and the p-value
+*</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image133.png"><img alt="image10" src="../_images/image133.png" style="width: 1.33129in; height: 0.94782in;" /></a></th>
+<th class="head">=</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Using JMP:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><a class="reference internal" href="../_images/image144.png"><img alt="image11" src="../_images/image144.png" style="width: 3.09375in; height: 1.35265in;" /></a></p>
+<p class="last">p-value:</p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image153.png"><img alt="image12" src="../_images/image153.png" style="width: 1.47239in; height: 2.13978in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Step 3: Write a conclusion in the context of the problem*</strong></p>
+<ul class="simple">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>Finally, construct a 95% confidence interval for the average difference
+in systolic blood pressure means.</p>
+<p><a class="reference internal" href="../_images/image133.png"><img alt="image13" src="../_images/image133.png" style="width: 1.58015in; height: 1.12500in;" /></a></p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Interpret this confidence interval.</li>
+<li>Does this interval agree with the results of the hypothesis test?
+Explain.</li>
+</ol>
+<p><a href="#id11"><span class="problematic" id="id12">**</span></a><em>Example 6.3: Systolic Blood Pressure and Captopril, Revisited</em>
+<a href="#id13"><span class="problematic" id="id14">**</span></a>As we saw in Example 6.2, patients with moderate essential
+hypertension saw a decrease in systolic blood pressure. Note that we
+could also investigate the following question.</p>
+<p><em>Research Question</em>: Does the systolic blood pressure decrease by more
+than 10 mmHg?</p>
+<p><a href="#id15"><span class="problematic" id="id16">*</span></a>Check the assumptions behind the test
+*</p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image116.png"><img alt="image14" src="../_images/image116.png" style="width: 1.45977in; height: 1.07955in;" /></a></th>
+<th class="head"><a class="reference internal" href="../_images/image125.png"><img alt="image15" src="../_images/image125.png" style="width: 1.31609in; height: 1.04086in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Step 1: Set up the null and alternative hypotheses*</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>*Step 2: Find the test statistic and the p-value
+*</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image133.png"><img alt="image16" src="../_images/image133.png" style="width: 1.29885in; height: 0.92473in;" /></a></th>
+<th class="head">=</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li></li>
+</ul>
+<p><a href="#id17"><span class="problematic" id="id18">*</span></a>Using JMP:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="76%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><a class="reference internal" href="../_images/image164.png"><img alt="image17" src="../_images/image164.png" style="width: 2.63793in; height: 1.16139in;" /></a></p>
+<p><a class="reference internal" href="../_images/image174.png"><img alt="image18" src="../_images/image174.png" style="width: 1.61069in; height: 2.35583in;" /></a></p>
+<p class="last">p-value:</p>
+</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Step 3: Write a conclusion in the context of the problem*</strong></p>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p>Recall the 95% confidence interval for the average difference in
+systolic blood pressure means:</p>
+<p><a class="reference internal" href="../_images/image133.png"><img alt="image19" src="../_images/image133.png" style="width: 1.58015in; height: 1.12500in;" /></a></p>
+<p>Does this interval agree with the results of the hypothesis test?
+Explain.</p>
+</div>
+<div class="section" id="id23">
+<h2><a href="#id19"><span class="problematic" id="id20">**</span></a><a href="#id21"><span class="problematic" id="id22">*</span></a><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id24"><span class="problematic" id="id25">**</span></a>*
+Example 6.4: Diastolic Blood Pressure and Captopril*
+<a href="#id26"><span class="problematic" id="id27">**</span></a>Finally, we will use the Captopril data to investigate the following
+question.</p>
+<p><em>Research Question</em>: Does the diastolic blood pressure decrease by more
+than 5 mmHg?</p>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Step 0: Check the assumptions behind the test
+*</p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image182.png"><img alt="image20" src="../_images/image182.png" style="width: 2.01042in; height: 1.41372in;" /></a></th>
+<th class="head"><a class="reference internal" href="../_images/image194.png"><img alt="image21" src="../_images/image194.png" style="width: 1.82292in; height: 1.48638in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p><strong>*Step 1: Set up the null and alternative hypotheses*</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>*Step 2: Find the test statistic and the p-value
+*</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image203.png"><img alt="image22" src="../_images/image203.png" style="width: 1.75000in; height: 1.28397in;" /></a></th>
+<th class="head">=</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Using JMP:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><a class="reference internal" href="../_images/image217.png"><img alt="image23" src="../_images/image217.png" style="width: 3.26415in; height: 1.46349in;" /></a></p>
+<p class="last">p-value:</p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image222.png"><img alt="image24" src="../_images/image222.png" style="width: 1.64151in; height: 2.20063in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>*Step 3: Write a conclusion in the context of the problem*</strong></p>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p>Find the 95% confidence interval for the average difference in systolic
+blood pressure means:</p>
+<p><a class="reference internal" href="../_images/image203.png"><img alt="image25" src="../_images/image203.png" style="width: 1.75000in; height: 1.28397in;" /></a></p>
+<p>Does this interval agree with the results of the hypothesis test?
+Explain.</p>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Chapter 5' data-toggle="tooltip">
+    <a href="../chp5/chp5.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp5/chp5.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 6 Part 2' data-toggle="tooltip" >
+    <a href="../chp6_2/chp6_2.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp6_2/chp6_2.html" >Next Section - Chapter 6 Part 2</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
