@@ -29,15 +29,16 @@ SECTION 2: Table of Contents
    :maxdepth: 2
 
    chp1/chp1.rst
-   chp1/chp1malone.rst
-   chp2_1/chp2_1.rst
-   chp2_2/chp2_2.rst
-   chp3/chp3.rst
-   chp4/chp4.rst
-   chp5/chp5.rst
-   chp6_1/chp6_1.rst
-   chp6_2/chp6_2.rst
-   chp7/chp7.rst
+   chp1/lab1.rst
+   chp1/lab2.rst
+..    chp2_1/chp2_1.rst
+..    chp2_2/chp2_2.rst
+..    chp3/chp3.rst
+..    chp4/chp4.rst
+..    chp5/chp5.rst
+..    chp6_1/chp6_1.rst
+..    chp6_2/chp6_2.rst
+..    chp7/chp7.rst
 
 .. _Runestone Interactive: http://interactivepython.org/runestone/static/overview/overview.html
 .. _Tisha Hooks: http://course1.winona.edu/thooks/STAT_110.html

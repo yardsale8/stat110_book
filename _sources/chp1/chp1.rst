@@ -1,6 +1,12 @@
 Chapter 1
 =========
 
+.. admonition:: Lab
+
+    Our first task will be to investigate whether or not we can confidently claim 
+    that a claim of hearing loss was based on a lie.  Please complete 
+    `Lab 1 - Evaluating a Claim of Hearing Loss <./lab1.html>`_.
+
 In the *“Evaluating a Claim of Hearing Loss”* activity, we encountered
 several basic examples that required us to think statistically in order
 to investigate a question of interest. Before we move on to slightly
