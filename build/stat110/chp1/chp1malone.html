@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter 1 Malone &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Chapter 2 Part 1" href="../chp2_1/chp2_1.html" />
+    <link rel="prev" title="Chapter 1" href="chp1.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp1malone'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Chapter 1 Malone</a><ul>
+<li><a class="reference internal" href="#id7">***</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Chapter 1" data-toggle="tooltip">
+    <a href="chp1.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Chapter 2 Part 1' data-toggle="tooltip" >
+    <a href="../chp2_1/chp2_1.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="chapter-1-malone">
+<h1>Chapter 1 Malone<a class="headerlink" href="#chapter-1-malone" title="Permalink to this headline">¶</a></h1>
+<p>Chapter 1: Introduction to Statistical Thinking</p>
+<p>Section 1.1: Evaluating a Claim of Hearing Loss</p>
+<p><em>Example 1.1</em>: Insurance Fraud - Deafness</p>
+<p><em>Source: http://www.independent.co.uk</em></p>
+<p>Consider the following case study centered on potential insurance fraud
+regarding deafness. This case study was presented in an article by
+Pankratz, Fausti, and Peed titled “A Forced-Choice Technique to Evaluate
+Deafness in the Hysterical or Malingering Patient.” <em>Source: Journal of
+Consulting and Clinical Psychology, 1975, Vol. 43, pg. 421-422.</em> The
+following is an excerpt from the article:</p>
+<blockquote>
+<div><a href="#id1"><span class="problematic" id="id2">*</span></a>The patient was a 27-year-old male with a history of multiple
+hospitalizations for idiopathic convulsive disorder, functional
+disabilities, accidents, and personality problems. His hospital
+records indicated that he was manipulative, exaggerated his symptoms
+to his advantage, and that he was a generally disruptive patient. He
+made repeated attempts to obtain compensation for his disabilities.
+During his present hospitalization he complained of bilateral
+hearing loss, left-sided weakness, left-sided numbness, intermittent
+speech difficulty, and memory deficit. There were few consistent or
+objective findings for these complaints. All of his symptoms
+disappeared quickly with the exception of the alleged hearing loss.
+*</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="99%" />
+<col width="1%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">To assess his alleged hearing loss, testing was conducted through earphones with the subject seated in a sound-treated audiology testing chamber. Visual stimuli utilized during the investigation were produced by a red and a blue light bulb, which were mounted behind a one-way mirror so that the subject could see the bulbs only when they were illuminated by the examiner. The subject was presented several trials on each of which the red and then the blue light were turned on consecutively for 2 seconds each. On each trial, a 1,000-Hz tone was randomly paired with the illumination of either the blue or red light bulb, and the subject was instructed to indicate with which light bulb the tone was paired. Because the researchers were implementing a “forced-choice” technique, the subject was forced to answer each time with either “red” or “blue.”</th>
+<th class="head"><a class="reference internal" href="../_images/image418.png"><img alt="image3" src="../_images/image418.png" style="width: 1.30171in; height: 1.45833in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Understanding Outcomes</strong></p>
+<div class="line-block">
+<div class="line">Suppose an individual was asked to participate in the hearing
+evaluation experiment presented above.</div>
+<div class="line">A total of 20 trials of the experiment were conducted.</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Situation A</th>
+<th class="head"><table border="1" class="first last docutils">
+<colgroup>
+<col width="92%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Outcome</th>
+<th class="head">Number</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Number of times an individual was able to <strong>correctly</strong> associate the light with the playing of the sound</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Number <strong>incorrect</strong></td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>Situation B</td>
+<td><table border="1" class="first last docutils">
+<colgroup>
+<col width="92%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Outcome</th>
+<th class="head">Number</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Number of times an individual was able to <strong>correctly</strong> associate the light with the playing of the sound</td>
+<td>10</td>
+</tr>
+<tr class="row-odd"><td>Number <strong>incorrect</strong></td>
+<td>10</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What can be said about an individual whose outcomes are similar to
+Situation A? Discuss.</li>
+<li>What can be said about an individual whose outcomes are similar to
+Situation B? Discuss.</li>
+</ol>
+<p><a class="reference internal" href="../_images/image515.png"><img alt="image4" src="../_images/image515.png" style="width: 4.80189in; height: 0.40426in;" /></a></p>
+<p>Consider one final set of outcomes.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Situation C</th>
+<th class="head"><table border="1" class="first last docutils">
+<colgroup>
+<col width="92%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Outcome</th>
+<th class="head">Number</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Number of times an individual was able to <strong>correctly</strong> associate the light with the playing of the sound</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>Number <strong>incorrect</strong></td>
+<td>20</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Question</em>:</p>
+<ol class="arabic simple">
+<li>What can be said about this individual in terms of their ability to
+hear? Discuss.</li>
+</ol>
+<p>Statistical methods can be used to help fight against insurance fraud.
+In this situation, it is necessary to determine whether or not the
+subject in this investigation is intentionally giving the wrong answers.
+In order to make a determination of this nature, we must first gain an
+understanding of <em>likely</em> versus <em>unlikely</em> outcomes. A simulation model
+can be used to identify likely outcomes given a particular situation.</p>
+<p><strong>Modeling Deaf Outcomes</strong></p>
+<p>A simulation model will be constructed to mimic the outcomes of a deaf
+person. This model requires the identification of two pieces of
+information.</p>
+<ul class="simple">
+<li>Number of completed trials</li>
+<li>The likelihood or chance of obtaining a correct response</li>
+</ul>
+<p>For our example, the number of completed trials is 20, and the chance of
+obtaining a correct response for a deaf person is 1 out of 2, or 50%.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="61%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Necessary information for building a model</th>
+<th class="head">Deaf Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>Number of completed trials</li>
+</ul>
+</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>The likelihood or chance of obtaining a correct response</li>
+</ul>
+</td>
+<td>1 out of 2; i.e., <span class="math">\frac{1}{2}</span></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>The <strong>*expected*</strong> outcome is the outcome which is identified as the <em>most</em> likely outcome.</td>
+</tr>
+</tbody>
+</table>
+<p>The expected outcome for the number of correct responses for 20 trials
+with each trial having a <span class="math">\frac{1}{2}</span> chance of being correct is
+10.</p>
+<div class="math">
+\[\begin{split}\begin{matrix}
+\text{Expected} &amp; = &amp; 20*\frac{1}{2} \\
+ &amp; &amp; 10 \\
+\end{matrix}\end{split}\]</div>
+<p>The expected value for a model with a <span class="math">\frac{1}{2}</span> chance of
+being correct will be in the middle; i.e., halfway across the number
+line representing the number correct.</p>
+<p><a class="reference internal" href="../_images/image612.png"><img alt="image5" src="../_images/image612.png" style="width: 3.79245in; height: 0.47913in;" /></a></p>
+<p>The most important element that a statistical approach provides to
+solving a problem of this nature is an understanding of the inherent
+variation that exists in the outcomes from the simulation model. In
+particular, there is inherent variation (i.e., randomness) present in
+the number of correct responses over repeated trials. The amount of
+inherent variation depends on the model being used. In this situation,
+the number of trials and the likelihood of a correct response determine
+the amount of inherent variation.</p>
+<p>The amount of inherent variation can be discovered using an
+appropriately selected random device. A variety of software technologies
+have been developed to construct simulation models, and some type of
+random device is a necessary part of their development. For this simple
+type of experiment, however, a fair coin is sufficient for determining
+the amount of inherent variation in the outcomes of interest.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">(Optional) Constructing the simulation model via fair coins</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><table border="1" class="first last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">A fair coin can be used to simulate the outcomes from a deaf person. In particular, in this forced choice scenario, a deaf person would simply have to guess which light is associated with the sound on each of the 20 trials. Each trial results in one of two possible outcomes: the subject answering <em>correctly</em> or <em>incorrectly</em>. Since the subject is guessing between two lights, the chance of obtaining a correct response is 1 out of 2, or <span class="math">\frac{1}{2}</span> .</p>
+<table border="1" class="last docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image86.png"><img alt="image7" src="../_images/image86.png" style="width: 0.68829in; height: 0.64583in;" /></a></th>
+<th class="head">Deaf person guesses <em>correctly</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/image96.png"><img alt="image8" src="../_images/image96.png" style="width: 0.68686in; height: 0.67676in;" /></a></td>
+<td>Deaf person guesses <em>incorrectly</em></td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>As an alternative to repeatedly flipping a fair coin, an applet has been
+constructed so that you can conduct your own repeated trials of this
+hearing experiment.</p>
+<p>Applet Link: <a class="reference external" href="http://course1.winona.edu/cmalone/afc_hearing/">http://course1.winona.edu/cmalone/afc_hearing/</a></p>
+<p>Recall that the goal is to mimic the outcomes of a deaf person.
+Therefore, when conducting this experiment, you should mute the speakers
+on your computer.</p>
+<p><em>Task</em>: Conduct 20 repeated trials of the hearing experiment. Record the
+number of correct results below.</p>
+<p>Collect the simulation outcomes from everybody in the class. Place a dot
+for each outcome on the following number line.</p>
+<p><a class="reference internal" href="../_images/image515.png"><img alt="image49" src="../_images/image515.png" style="width: 4.80189in; height: 0.40426in;" /></a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><em>Example dotplot</em></p>
+<p class="last"><a class="reference internal" href="../_images/image127.png"><img alt="image50" src="../_images/image127.png" style="width: 4.93750in; height: 1.13542in;" /></a></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>Circle your dot on the plot above. Answer the following regarding
+your dot.<ol class="loweralpha">
+<li>How many correct did you get? How many could you have gotten
+correct?</li>
+<li>Is your dot (i.e., outcome) similar to the others in your class?
+Discuss.</li>
+</ol>
+</li>
+<li>Which of the following is true about these dots?<ol class="loweralpha">
+<li>These dots are meant to mimic the outcomes of deaf people.</li>
+<li>These dots are meant to mimic the outcomes of people who are
+thought to be lying about their ability to hear.</li>
+</ol>
+</li>
+<li>Given the simulation results on the above dotplot, what would you
+think about a subject’s claim that he suffers hearing loss if he
+answered<ol class="loweralpha">
+<li>7 correctly?</li>
+<li>0 or 1 correctly?</li>
+<li>3 or 4 correctly?</li>
+</ol>
+</li>
+</ol>
+<p><strong>Evaluating Evidence</strong></p>
+<p>In the actual study, the subject was asked to complete 100 trials
+(instead of 20 trials as was done above). The graphic below was obtained
+using a computer to simulate the possible outcomes of a deaf person
+(i.e., a guessing subject). Each time the experiment was simulated the
+number of correct trials was counted and recorded. This process was
+repeated several times, and the results are shown below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="75%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">Outcome from</p>
+<p class="last">Study</p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image136.png"><img alt="image51" src="../_images/image136.png" style="width: 4.86458in; height: 0.19792in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Likely Outcomes from a Deaf Person</td>
+<td><a class="reference internal" href="../_images/image146.png"><img alt="image52" src="../_images/image146.png" style="width: 4.88679in; height: 1.04644in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions:</em></p>
+<ol class="arabic simple">
+<li>The subject gave the correct answer in 36 of the 100 trials. What do
+you think about the subject’s claim that he suffers from hearing
+loss?</li>
+<li>Complete the following fictitious medical records form for this
+subject. Provide a written justification to support your decision.</li>
+</ol>
+<ol class="arabic simple">
+<li>Your friend makes the following statement. “This subject got too few
+correct in this hearing test. So, obviously, this person suffers from
+complete hearing loss!” Why is this statement incorrect?</li>
+</ol>
+<p>Section 1.2: Applications of 2-AFC in Forensic Sciences</p>
+<div class="line-block">
+<div class="line">A suspected serial-rape murderer, an ex-con with a history of sex
+crimes, was interrogated by police after he was overheard bragging to
+others that he raped, killed, and buried a young woman victim in an
+isolated valley outside of the city in which he resided. He told
+police that he had never met the victim and that he had never been to
+the valley. A series of 20 binary (yes/no) questions embedded within
+the interrogation was designed to test his knowledge of victim
+characteristics that only the perpetrator would know.</div>
+<div class="line"><em>Source: Harold V. Hall and Jane Thompson. “Explicit Alternative
+Testing: Applications of the Binominal Probability Distribution to
+Clinical-Forensic Evaluations.” The Forensic Examiner, Spring 2007.</em></div>
+</div>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">Suppose the suspect had no knowledge of the victim and thus was
+merely guessing the answers to the 20 questions. How many questions
+would you expect the suspect to answer correctly?</p>
+</li>
+<li><div class="first line-block">
+<div class="line">At what point would you start to believe the suspect was
+intentionally giving incorrect answers in order to make the
+investigators believe they had no knowledge of the crime?</div>
+<div class="line"><a class="reference internal" href="../_images/image156.png"><img alt="image53" src="../_images/image156.png" style="width: 5.49758in; height: 0.40625in;" /></a></div>
+</div>
+</li>
+</ol>
+<p>Note that the even if the observed number of correct answers is less
+than would be expected, this is not necessarily enough statistical
+evidence to support the suspect’s guilt.</p>
+<p>A key question is how to determine whether an individual’s score on the
+20-question binary type quiz is surprising under the assumption that
+they are simply guessing on each question. To answer this question, we
+will <em>simulate</em> the process of guessing on 20 binary outcomes several
+times. Each time we simulate the process, we’ll keep track of how many
+questions the suspect answered <strong>*correctly*</strong> (note that you could also
+keep track of the number of incorrect answers). Once we’ve repeated this
+process several times, we’ll have a pretty good sense for what outcomes
+would be very surprising, or somewhat surprising, or not so surprising
+under the situation that an individual is really guessing.</p>
+<p>Various technologies can be used for these simulations. For example, the
+web page</p>
+<p><a class="reference external" href="http://course1.winona.edu/cmalone/2afc/">http://course1.winona.edu/cmalone/2afc/</a></p>
+<p>has been specifically set up for 2-alterative forced choice simulations.
+For this simulation, you should specify the labels for the two outcomes
+and specify the number of repeated trials.</p>
+<p><a class="reference internal" href="../_images/image166.png"><img alt="image54" src="../_images/image166.png" style="width: 2.99016in; height: 2.16506in;" /></a></p>
+<p>Click Run &gt; to obtain the outcome from a single simulation.</p>
+<p>Use the simulation on this web page to obtain 20 outcomes. For each
+simulation, record the number of correct and plot the result on the
+number line below.</p>
+<p><a class="reference internal" href="../_images/image176.png"><img alt="image55" src="../_images/image176.png" style="width: 5.64151in; height: 0.83598in;" /></a></p>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><p class="first">How many simulations (i.e. dots) are represented in the above plot?</p>
+</li>
+<li><p class="first">What outcomes would be very surprising to observe if the suspect is
+really guessing?</p>
+</li>
+<li><p class="first">What outcomes would be NOT very surprising to observe if the suspect
+is really guessing?</p>
+</li>
+<li><p class="first">Using the results from your 20 simulation, how many of the 20
+questions would an individual have to answer correctly in order for
+you to be convinced they were intentionally giving the wrong answers?</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Ask some of your neighbors at what point they would become
+convinced that an individual is trying to “throw the police off”?</div>
+<div class="line">Neighbor 1: ___________ Neighbor 2:
+_____________</div>
+</div>
+<p>Neighbor 3: ___________ Neighbor 4:
+_____________</p>
+</li>
+<li><p class="first">How these cutoff values compare to the one you obtained from your
+simulation? Discuss.</p>
+</li>
+</ol>
+<p>Consider the following graph from 20 trials.</p>
+<p><a class="reference internal" href="../_images/image185.png"><img alt="image56" src="../_images/image185.png" style="width: 5.14151in; height: 1.45087in;" /></a></p>
+<ol class="arabic simple">
+<li>Is your graph the same as the one presented above? Should it be
+exactly the same? Explain why or why not?</li>
+<li>Your friend makes the following statement regarding the graph above.
+“If the Number of Correct Answers is around 2, 3, 4, or 5; then I
+believe an individual is intentionally giving wrong answers. Your
+simulation did not produce any values in this region, so you must
+have done something wrong in the setup of your simulation.” Do you
+agree or disagree with this statement? Explain.</li>
+<li>Your friend makes the following statement regarding the graph above.
+“Ten is the expected number and should be the most common outcome.
+However, this simulation resulted in eleven being the most common;
+thus, you must have done something wrong in the setup of your
+simulation.” Do you agree or disagree with this statement? Explain.</li>
+</ol>
+<p>Section 1.3: Using Technologies to Construct Simulation Models</p>
+<p>To save time and to gather more simulated results more quickly, a
+software package called Tinkerplots<sup>®</sup> can be used to simulate
+the outcomes obtained in class in Example 1.1. The results from the
+simulation model can then be used to help us understand what outcomes
+are likely (or unlikely) to occur. This simulation model will be
+constructed using the following parameters (i.e., under these
+conditions).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="61%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Necessary information for building a model</th>
+<th class="head">Deaf Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>Number of completed trials</li>
+</ul>
+</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>The likelihood or chance of obtaining a correct response</li>
+</ul>
+</td>
+<td>1 out of 2; i.e., <span class="math">\frac{1}{2}</span></td>
+</tr>
+</tbody>
+</table>
+<p><em>Setting up the Spinner in Tinkerplots</em></p>
+<p>Open Tinkerkplots<sup>®</sup> on your computer. Drag a new <strong>Sampler</strong>
+from the tool shelf into your blank document, as shown below.</p>
+<p><a class="reference internal" href="../_images/image197.png"><img alt="image57" src="../_images/image197.png" style="width: 1.91510in; height: 1.23182in;" /></a></p>
+<p>The default sampler is called a <strong>Mixer</strong> sampler which simply is a
+“hat” that contains three objects (two objects labeled as “a” and one
+object labeled as “b”). Tinkerkplots<sup>®</sup> gives you various options
+for the type of sampler to use. For this example, a <strong>Spinner</strong> sampler
+will be utilized.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="87%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">Mixer Sampler (Default)</p>
+<p class="last"><a class="reference internal" href="../_images/image206.png"><img alt="image58" src="../_images/image206.png" style="width: 2.18868in; height: 1.84773in;" /></a></p>
+</th>
+<th class="head"><p class="first">Spinner Sampler</p>
+<p class="last"><a class="reference internal" href="../_images/image2111.png"><img alt="image59" src="../_images/image2111.png" style="width: 2.10337in; height: 1.84906in;" /></a></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>The default labeling for the outcomes on the Spinner are <em>a</em> and <em>b</em>. Re-label the outcomes as <strong>Correct</strong> and <strong>Incorrect</strong>.</td>
+<td><a class="reference internal" href="../_images/image224.png"><img alt="image60" src="../_images/image224.png" style="width: 2.16038in; height: 1.80869in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="97%" />
+<col width="3%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Recall that the chance of a deaf person correctly identifying the correct color light bulb is 1 out of 2, or 50%. This value must be specified on our spinner so that the correct simulation model is used. To change the percentages on the spinner, select <strong>Show Percent</strong> from the drop-down menu in the lower left-hand corner of the spinner and enter the desired percentages.</th>
+<th class="head"><a class="reference internal" href="../_images/image234.png"><img alt="image61" src="../_images/image234.png" style="width: 2.14151in; height: 1.85088in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Two additional changes must be made to the Spinner sampler.</p>
+<ul class="simple">
+<li>The <strong>Repeat</strong> value indicates the number of trials to be completed
+(change this to 20)</li>
+<li>Change the <strong>Draw</strong> from 2 to 1</li>
+</ul>
+<p>The final setup of the spinner should look as follows.</p>
+<p><a class="reference internal" href="../_images/image244.png"><img alt="image62" src="../_images/image244.png" style="width: 3.04717in; height: 2.63461in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>Which of the following is true about the setup of this spinner?<ol class="loweralpha">
+<li>This spinner is meant to mimic the outcomes of a deaf person.</li>
+<li>This spinner is meant to mimic the outcomes of a person who is
+thought to be lying about their ability to hear.</li>
+</ol>
+</li>
+</ol>
+<p>Click Run a few more times. Count the number of Correct (out of 20) for
+each iteration of the simulation and plot this outcome on the number
+line below. Gather the outcomes from a few classmates in class. Does the
+overall trend appear to mimic the outcomes we obtained in class?</p>
+<p><a class="reference internal" href="../_images/image515.png"><img alt="image64" src="../_images/image515.png" style="width: 4.80189in; height: 0.40426in;" /></a></p>
+<p>Tinkerplots<sup>®</sup> has the ability to keep a “history” of the number
+of correct trials obtained over repeated iterations of the simulation.
+This feature allows us to more easily record or keep track of the
+outcomes over several iterations. In order to use this feature in
+Tinkerplots<sup>®</sup>, we must first obtain a summary of the outcomes. A
+plot and count will be used as our summary here.</p>
+<p>Drag a new <strong>Plot</strong> into an open space.</p>
+<p><a class="reference internal" href="../_images/image262.png"><img alt="image65" src="../_images/image262.png" style="width: 2.16981in; height: 0.63560in;" /></a></p>
+<p>Next, drag the variable to be summarized (i.e., DeafExample) onto the
+x-axis of the plot as is shown below on the right.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="83%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><div class="first line-block">
+<div class="line">A plot summarizing the results is shown below. This</div>
+<div class="line">plot simply separates out the number of Correct responses.</div>
+</div>
+<p class="last"><a class="reference internal" href="../_images/image274.png"><img alt="image66" src="../_images/image274.png" style="width: 2.24528in; height: 2.13124in;" /></a></p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image282.png"><img alt="image67" src="../_images/image282.png" style="width: 2.37892in; height: 2.39623in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Tinkerplots has the ability to automatically count the number of Correct
+and Incorrect outcomes. Select the “N” icon from the menu bar.</p>
+<p><a class="reference internal" href="../_images/image294.png"><img alt="image68" src="../_images/image294.png" style="width: 2.70528in; height: 2.52830in;" /></a></p>
+<p><em>Recording the Outcomes over Repeated Iterations
+*To record the total number of Correct responses for each iteration of
+the simulation, right-click on the value for the number of Correct in
+your plot and select **Collect Statistic*</em>.</p>
+<p><a class="reference internal" href="../_images/image302.png"><img alt="image69" src="../_images/image302.png" style="width: 3.85862in; height: 2.26415in;" /></a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>The <strong>*statistic*</strong> is a summary measurement computed from collected data.</td>
+</tr>
+</tbody>
+</table>
+<p>The number of Correct responses will now be recorded in the History
+table provided. To run additional iterations of this simulation, say 27
+more to mimic our class size, put 27 in the Collect box and click
+<em>Collect</em>. This will record the statistic for an additional 27
+iterations.</p>
+<p><a class="reference internal" href="../_images/image318.png"><img alt="image70" src="../_images/image318.png" style="width: 2.80189in; height: 1.22004in;" /></a></p>
+<p><em>Comment</em>: The Collect box is used to identify the number of additional
+times the simulation will be repeated. Each row in the History table
+represents the number of correct outcomes (out of 20).</p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>The number correct for Iteration 1 is 11. Verify this quantity by
+counting the number of correct guess for this iteration.</li>
+<li>What is the smallest number of correct? For which iteration did this
+occur? What is the largest number of correct responses?</li>
+<li>The values in the history table should be centered around 10. Why?</li>
+</ol>
+<div class="section" id="id7">
+<h2><a href="#id3"><span class="problematic" id="id4">**</span></a><a href="#id5"><span class="problematic" id="id6">*</span></a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><em>Plotting the Outcomes over Repeated Iterations</em></p>
+<p>Although we can see each individual outcome in the table shown above, it
+may be better to organize and display these outcomes using a plot.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="94%" />
+<col width="6%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Drag a new Plot onto your workspace. Next, click on the variable name from your collection in which the outcomes from the repeated iterations are stored and drag this onto the x-axis of the new plot.</th>
+<th class="head"><a class="reference internal" href="../_images/image353.png"><img alt="image75" src="../_images/image353.png" style="width: 2.60377in; height: 1.55253in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="96%" />
+<col width="4%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">In order to see the number of 8’s, 9’s, etc. from each iteration, you should drag any point all the way to the right so that the plot displays the individual numbers. The vertical Stack button can be used to neatly stack the points. Also, the size of the plotting symbol can be reduced with the slider on the bottom of the plot.</th>
+<th class="head"><a class="reference internal" href="../_images/image363.png"><img alt="image76" src="../_images/image363.png" style="width: 2.76415in; height: 2.06148in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>A dotplot showing the outcomes from the 28 repeated iterations from this
+simulation is shown below.</p>
+<p><a class="reference internal" href="../_images/image373.png"><img alt="image77" src="../_images/image373.png" style="width: 6.50000in; height: 1.09097in;" /></a></p>
+<ul class="simple">
+<li></li>
+</ul>
+<p>Comment:* The lower and upper limit on the number line should be set to
+0 and 20, respectively. This communicates the fact that values from 0 to
+20 are possible outcomes. The axis limits can be set by double clicking
+on the smallest axis label and entering 0 for Axis starts at. The upper
+limit can be set to 20 by double clicking on the largest axis label.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="96%" />
+<col width="4%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">The Collect box can be used to obtain additional outcomes from this simulation model. For example, if the value 100 is entered in the Collect box, the graph will display a total of 128 outcomes. Each dot in this graph corresponds to the number of correct responses out of a possible 20 trials.</p>
+<p class="last">The outcomes from my simulation model are shown below.</p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image383.png"><img alt="image78" src="../_images/image383.png" style="width: 1.49211in; height: 0.33962in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="../_images/image392.png"><img alt="image79" src="../_images/image392.png" style="width: 6.50000in; height: 2.37014in;" /></a></p>
+<p>On the number line below, give a rough sketch of the outcomes from your
+simulation model.</p>
+<p><a class="reference internal" href="../_images/image403.png"><img alt="image80" src="../_images/image403.png" style="width: 6.50000in; height: 2.28611in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>What does each dot on your graph represent? Discuss.</li>
+<li>If an individual is really deaf, what outcomes are we likely to
+observe?</li>
+<li>What is the smallest value in your dotplot?
+________________<ol class="loweralpha">
+<li>Is it possible to obtain a value smaller than this if more
+simulations were carried out?</li>
+<li>If one additional simulation is done, is this outcome likely to be
+smaller, larger, or about the same as the previous smallest value?
+Discuss.</li>
+</ol>
+</li>
+<li>A statistician might argue that a plot based on 128 iterations of the
+simulation is <em>better</em> than a plot based on 28 iterations. Do you
+agree? Explain.</li>
+</ol>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>What are the similarities amongst these four graphs?</li>
+<li>What would you consider an <em>unusual</em> outcome (i.e., outlier) to be in
+Graph A? How about Graph B?</li>
+</ol>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Developing a Rule for Identifying Outliers</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>An <strong>*outlier rule*</strong> determines the location on the distribution for which you begin to believe observations are unlikely.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#id8"><span class="problematic" id="id9">*</span></a>Comments: *</p>
+<ul class="simple">
+<li>A statistician might argue that the determination of what constitutes
+an outlier should not be adversely affected by the number of
+iterations conducted in the simulation. In fact, if enough iterations
+of the simulation model are completed, eventually all possible values
+will appear on the dotplot.</li>
+<li>An outlier rule is used to separate <em>likely</em> from <em>unlikely</em>
+observations. This is the main goal of obtaining the distribution for
+the number of correct responses. For example, a statistician might
+say that a value of <strong>6 or less</strong> would be a reasonable outlier rule.
+Such a rule can and should be applied consistently with any of the
+graphs shown above.</li>
+<li>In Tinkerplots<sup>®</sup>, the Divider icon from the tool shelf can be
+used to count the number of outcomes in a particular region in the
+graph. For example, there are 539 outcomes at 6 or less.</li>
+</ul>
+<p><a class="reference internal" href="../_images/image432.png"><img alt="image85" src="../_images/image432.png" style="width: 4.66038in; height: 1.64557in;" /></a></p>
+<p>Suppose a statistician decides to use 6 or less as the rule for
+determining when somebody is lying about their ability to hear. This
+rule would result in accusing a deaf person of lying about
+<span class="math">\frac{539}{10000} = 0.0539 \approx 5\%</span> , which is about 1 out of
+every 20 times.</p>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>Suppose instead of using 6 or less as the rule, 7 or less was used.
+Would this result in more or less deaf people being identified as
+lying? Would you advocate changing the rule to 7? Discuss.</li>
+<li>Would an insurance company who fears insurance fraud rather a
+statistician use the rule of 6 or less or 7 or less? Discuss.</li>
+</ol>
+<p><em>Task</em>:</p>
+<p>Set up a spinner in Tinkerplots<sup>®</sup> as follows to evaluate the
+subject presented in the article by Pankratz, Fausti, and Peed titled “A
+Forced-Choice Technique to Evaluate Deafness in the Hysterical or
+Malingering Patient.” <a href="#id10"><span class="problematic" id="id11">*</span></a>Source: Journal of Consulting and Clinical
+Psychology, 1975, Vol. 43, pg. 421-422. *</p>
+<p>In this study, the subject was asked to complete 100 trials (instead of
+20 as used above). The Repeat value on the spinner should thus be set to
+100.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="75%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><table border="1" class="first docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Necessary information for building a model</th>
+<th class="head">Deaf Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>Number of completed trials</li>
+</ul>
+</td>
+<td>100</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>The likelihood or chance of obtaining a correct response <em>assuming</em> the subject cannot hear</li>
+</ul>
+</td>
+<td>1 out of 2; i.e., <span class="math">\frac{1}{2}</span></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Sketch the final graph obtained in Tinkerplots<sup>®</sup> for your simulation.</p>
+</th>
+<th class="head"><a class="reference internal" href="../_images/image442.png"><img alt="image86" src="../_images/image442.png" style="width: 1.86245in; height: 1.67049in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first">Outcome from</p>
+<p class="last">Study</p>
+</td>
+<td><a class="reference internal" href="../_images/image452.png"><img alt="image87" src="../_images/image452.png" style="width: 5.51886in; height: 0.27358in;" /></a></td>
+</tr>
+<tr class="row-odd"><td>Likely Outcomes from a Deaf Person</td>
+<td><p class="first"><a class="reference internal" href="../_images/image462.png"><img alt="image88" src="../_images/image462.png" style="width: 5.55858in; height: 0.33019in;" /></a></p>
+<p class="last">Number of Correct Responses for a Deaf Person</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>If a person is truly deaf, how likely is it that they would obtain 36
+or less correct out of 100 trials?</li>
+</ol>
+<p>NOT VERY LIKELY | SOMEWHAT LIKELY | LIKELY | VERY LIKELY</p>
+<ol class="arabic simple">
+<li>Does your investigation support or refute the notion that the subject
+under investigation is most likely lying about his ability to hear?
+Discuss.</li>
+</ol>
+<p>Section 1.4: Additional Applications of Two-Alternative Forced Choice
+Models</p>
+<p><em>Example 1.4.1</em>: Gender Discrimination</p>
+<p>This fictitious example involves an evaluation of possible
+discrimination against female employees. Suppose a large supermarket
+chain occasionally selects employees to receive management training. A
+group of female employees has claimed that they are less likely than
+male employees of similar qualifications to be chosen for this training.</p>
+<p>The large employee pool that can be tapped for management training is
+60% female and 40% male; however, since the management program began, 9
+of the 20 employees chosen for management training were female (only
+45%).</p>
+<p><em>Question of Interest</em>: Is there evidence of gender discrimination for
+those chosen for management training? **
+**</p>
+<p><strong>*Setting up the Simulation Study*</strong></p>
+<p>To investigate this research question, we will carry out a simulation in
+Tinkerplots 2®. Once again, note that you will have to revise a few
+elements of the simulation that relate to the following questions:</p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>What are the two possible outcomes for each trial?</li>
+<li>What is the chance or probability for each outcome, given that there
+is no discrimination?</li>
+<li>How many employees were selected for management training?</li>
+</ol>
+<p>Use the answer to the above questions to setup the appropriate spinner
+in Tinkerplots.</p>
+<p><a class="reference internal" href="../_images/image472.png"><img alt="image89" src="../_images/image472.png" style="width: 2.80168in; height: 2.39028in;" /></a></p>
+<p>For this problem, it is necessary to change the chance or probability on
+the spinner to match the situation presented here.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">To specify a proportion different than 50/50, select Show Proportion from the drop down menu on the lower left of the spinner. This is shown here.</th>
+<th class="head">Next, change the proportion to the appropriate values.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/image482.png"><img alt="image90" src="../_images/image482.png" style="width: 3.23427in; height: 1.14151in;" /></a></td>
+<td><a class="reference internal" href="../_images/image492.png"><img alt="image91" src="../_images/image492.png" style="width: 2.14287in; height: 1.65919in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following shows the outcome from one trial.</p>
+<p><a class="reference internal" href="../_images/image501.png"><img alt="image92" src="../_images/image501.png" style="width: 2.25472in; height: 2.44567in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>In this study 20 individuals were selected for management training.
+The anticipated number of females is *not* 10. It actually larger
+than 10? What is the anticipated number of females? Explain.</li>
+<li>Propose a formula for determining the anticipated number of females.
+Use your formula to determine the anticipated number of females if 50
+individuals were selected for management training.</li>
+</ol>
+<p>The following plot shows the outcomes from 1000 trials.</p>
+<p>**
+<a href="#id12"><span class="problematic" id="id13">**</span></a><a class="reference internal" href="../_images/image516.png"><img alt="image93" src="../_images/image516.png" style="width: 6.50000in; height: 3.03889in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>Under which situation were these dots generated?</li>
+</ol>
+<ol class="lowerroman simple">
+<li>These dots were generated under the situation of possible
+discrimination against women and that this discrimination was
+intentional.</li>
+<li>These dots were generated under the situation of possible
+discrimination against women, but believe the discrimination was
+unintentional.</li>
+<li>These dots were generated under the situation of no discrimination
+against women.</li>
+</ol>
+<p>Explain your reasoning.</p>
+<ol class="arabic">
+<li><p class="first">What does each dot on the graph represent?</p>
+</li>
+<li><p class="first">Using the outcomes from the above simulation of 1000 trials, how many
+women (out of 20) would you have to see in order to say
+discrimination is likely occurring? Sketch this cutoff value on the
+number line below. Explain how you obtained this cutoff value.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image523.png"><img alt="image94" src="../_images/image523.png" style="width: 5.73585in; height: 0.36768in;" /></a></p>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic simple">
+<li>The outcome from this study had 9 women out of 20 selected for
+management training? Does this outcome provide evidence to suggest
+discrimination against women is occurring? Explain.</li>
+</ol>
+<p><em>Example 1.4.2</em>: Ear Infections (Source: Rosner)**
+<a href="#id14"><span class="problematic" id="id15">**</span></a>A common symptom of otitis media (ear infection) in young children
+is the prolonged presence of fluid in the middle ear. The hypothesis has
+been proposed that babies who are breast-fed for at least 1 month may
+build up some immunity against the effects of the condition. A small
+study of 24 pairs of babies is set up, where the babies are matched on a
+one-to-one basis according to age, sex, socioeconomic status, and type
+of medications taken. One member of the matched pair is a breast-fed
+baby and the other was bottle-fed.</p>
+<p>The primary outcome measurement recorded in this study was the duration
+(in days) of fluid in the middle ear after the first episode of otitis
+media. The results from the 24 pairs are below. Of interest is to make
+comparisons between the breast-fed and bottle-fed babies. These
+comparisons should be done <em>within each pair</em> of babies because of the
+auxiliary factors that were considered in this study.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Who did better in head-to-head comparisons?</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/image532.png"><img alt="image95" src="../_images/image532.png" style="width: 1.84847in; height: 3.96709in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li><em>Response Variable</em>: The primary outcome or measurement of interest in an analysis.<ul>
+<li>Also known as: Dependent Variable or Y-Variable</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Count the number of times breast-fed and bottle-fed babies did better
+and complete the following table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Outcome</th>
+<th class="head">Number of Pairs</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Bottle-fed did better</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Breast-fed did better</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Tie</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Total</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<p>Question</p>
+<ol class="arabic simple">
+<li>Pair #8 is a tie, what does this mean in the context of this problem?
+Does Pair #8 provide evidence for bottle-fed doing better, breast-fed
+doing better, or neither? Explain.</li>
+</ol>
+<p>Consider the following pamphlet on Ear Infections in Children from the
+Department of Health from the State of New York.</p>
+<p>Link to Pamphlet:
+<a class="reference external" href="http://www.health.state.ny.us/nysdoh/antibiotic/4815.pdf">*http://www.health.state.ny.us/nysdoh/antibiotic/4815.pdf*</a></p>
+<p><a class="reference internal" href="../_images/image542.png"><img alt="image96" src="../_images/image542.png" style="width: 6.50000in; height: 3.57358in;" /></a></p>
+<p>Do a Google search and identify other factors (i.e. called Risk Factors)
+that are thought to influence the likelihood of a child getting an ear
+infection.</p>
+<p>Mayo Clinic Link:
+<a class="reference external" href="http://www.mayoclinic.com/health/ear-infections/DS00303/DSECTION=risk-factors">*http://www.mayoclinic.com/health/ear-infections/DS00303/DSECTION=risk-factors*</a></p>
+<p>Question</p>
+<ol class="arabic simple">
+<li>What are some of these risk factors? Discuss their potential
+influence.</li>
+</ol>
+<p><em>Setting Up an Experiment of this Type</em></p>
+<p>Consider the following mock situation. A researcher has obtained 48
+volunteers for their study. They have obtained important demographic
+variables for each of these 48 study participants and ask you to
+determine how to best match-up these two sets of participants so that
+comparisons will be done most fairly.</p>
+<p><em>Goal</em>: Propose a matching strategy for this study using the demographic
+information provided below. (This data is provided on course web site.)</p>
+<p><a class="reference internal" href="../_images/image551.png"><img alt="image97" src="../_images/image551.png" style="width: 6.50000in; height: 2.53001in;" /></a></p>
+<p>Question</p>
+<ol class="arabic simple">
+<li>Discuss the process used for matching these pairs of babies for this
+mock experiment.</li>
+</ol>
+<p>Consider the following mock study participants. Notice the ages for the
+bottle-fed babies is considerably higher than the ages for the
+breast-fed babies.</p>
+<p><a class="reference internal" href="../_images/image561.png"><img alt="image98" src="../_images/image561.png" style="width: 6.50000in; height: 2.46389in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>Suppose Age is known to influence the occurrence of ear infections.
+Explain why the differences in the ages between the two groups
+hinders our ability to compare these two groups.</li>
+</ol>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li><em>Confounding Variable</em>: A variable that cannot be delineated from another variable when attempting to establish a relationship with the response variable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p>In all our analyses thus far, we have been restricted to only two
+outcomes. Recall, for this example we have three outcomes: 1) breast-fed
+better, bottle-fed better, and one tie; as a result, when we construct
+our spinner in Tinkerplots, we will not include the outcome from the
+tie.</p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>If the tie is removed, how many pairs do we have in our sample?</li>
+<li>If there is no difference in the duration of ear infection between
+breast-fed and bottle-fed, for how many pairs should the bottle-fed
+babies do better than the breast-fed babies?</li>
+</ol>
+<p>Set up a simulation in Tinkerplots to investigate the situation for
+which there is no difference between the bottle-fed and breast-fed
+babies. In your simulation, you should track the number of breast-fed
+pairs.</p>
+<p><a class="reference internal" href="../_images/image571.png"><img alt="image99" src="../_images/image571.png" style="width: 6.50000in; height: 2.39306in;" /></a></p>
+<p><em>Questions</em></p>
+<ol class="arabic simple">
+<li>What would it mean in the context of this problem, if the outcome
+from our sample was at the smallest possible value on our graph?</li>
+<li>What would it mean in the context of this problem, if the outcome
+from our sample was at the largest possible value on our graph?</li>
+<li>Is the outcome from our sample (i.e. 16 pairs for which breast-fed
+doing better) an outlier? Discuss.</li>
+<li>For this example, we will have two cutoff values. The reason we have
+two cutoff values is because the original question asked if there was
+a simply a difference (i.e. no preference to bottle-fed or breast-fed
+was given).</li>
+</ol>
+<ul class="simple">
+<li>Upper cutoff value: _______________</li>
+<li>Lower cutoff value: _______________</li>
+</ul>
+<ol class="arabic simple">
+<li>Does the observed outcome from our sample provide enough
+<em>statistical</em> evidence to suggest breast or bottle fed babies have a
+lower duration of fluid in their inner ear? Explain.</li>
+</ol>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Chapter 1' data-toggle="tooltip">
+    <a href="chp1.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="chp1.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 2 Part 1' data-toggle="tooltip" >
+    <a href="../chp2_1/chp2_1.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp2_1/chp2_1.html" >Next Section - Chapter 2 Part 1</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

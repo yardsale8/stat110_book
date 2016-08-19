@@ -29,7 +29,7 @@ SECTION 2: Table of Contents
    :maxdepth: 2
 
    chp1/chp1.rst
-   chp1/chp1_with_questions.rst
+   chp1/chp1malone.rst
    chp2_1/chp2_1.rst
    chp2_2/chp2_2.rst
    chp3/chp3.rst
