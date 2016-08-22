@@ -1,0 +1,83 @@
+The Components of Data
+======================
+
+What is data?  To answer this question, we will first focus on an individual
+piece of data and then think about a collection of data.
+
+Understanding Data Individually
+-------------------------------
+
+Data consists of a **measurement** taken on **something**.  In statistics, we
+call the measurement a *variable* and the item being measured an *individual* or
+*unit*.
+
+.. glossary::
+    Individual or Unit
+        The object or person being measured.  
+    Variable
+        The specific measurement that is being taken on an individual.
+
+.. note::
+
+    When determining the **variable** related to a study, it is helpful the
+    think of the question that we would ask about the individual.
+
+Here are some examples of data from my own life
+
+    * I rated the last movie I streamed online as 3 stars (out of 5 stars).
+    * My current phone has 64 GB of flash memory.
+    * This morning I consumed two 20 oz. glasses of iced tea.
+
+In each case, we can think of the description as a measurement on some
+individual unit.
+
+Examples: Identify the individuals (What is the unit being measured?)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. mchoice::     data_mc1
+    :answer_a:   A movie I streamed online
+    :answer_b:   All movies I streamed online
+    :answer_c:   3 stars (out of 5 stars)
+    :answer_d:   The average rating of all movies I have streamed
+    :correct:    a
+    :feedback_a: When discussing a movie rating, the unit being measured is a movie
+    :feedback_b: This answer is related to a <i>collection</i> of data
+    :feedback_c: You have identified <i>what</i> is measured, not <i>who</i>
+    :feedback_d: This answer is related to a <i>collection</i> of data
+
+    I rated the last movie I streamed online as 3 stars (out of 5 stars).
+    Identify the individual.
+
+Test
+
+.. mchoice::     data_mc2
+    :answer_a:   64 GB of flash storage
+    :answer_b:   My phone
+    :answer_c:   The amount of memory in my current phone
+    :correct:    b
+    :feedback_a: This is measurement taken, not the thing being measured
+    :feedback_b: The amount of memory is a measurement on a phone
+    :feedback_c: This is a good description of the amount being measured.  Who/what is being measured?
+
+    My current phone has 64 GB of flash memory.
+
+.. caution::
+
+    While it might be possible to think of the individual here as *me* and not
+    *my phone*, there could be problems with this designation.  For example,
+    what if I own two phones.  We need to be very careful and specific when
+    defining an individual.
+
+.. mchoice::     data_mc3
+    :answer_a:   A morning
+    :answer_b:   Amount of iced tea consumed in a morning.
+    :answer_c:   two 20oz. glasses
+    :answer_d:   20 ounces 
+    :correct:    
+    :feedback_a: But we should be more specific.  Perhaps a weekend morning in August would be more specific.
+    :feedback_b: This is a good description of what is being measure. Who/what is being measured?
+    :feedback_c: This is the specific value of a measurement.  Who/what is being measured?
+    :feedback_d: This is the unit of measurement. Who/what is being measured?
+
+
+    This morning I consumed two 20 oz. glasses of iced tea.
