@@ -149,7 +149,7 @@ individual unit.
         :feedback_d: This is the unit of measurement. Who/what is being measured?
 
 
-        This morning I consumed two 20 oz. glasses of iced tea. Identify the variable.
+        This morning I consumed two 20 oz. glasses of iced tea. 
         Identify the variable.
 
 
@@ -220,3 +220,116 @@ the important components.  These include
     Be careful about confusing the summary method with the variable.  The
     variable describes what we collect **individually** and the summary method
     is how we **combine the data** into one number.
+
+
+.. admonition:: Determine if the given summary method is a *parameter* or *statistic*.
+
+   .. mchoice:: mc_parastat_1
+        :answer_a: Parameter
+        :answer_b: Statistic
+        :correct: b
+
+        In a survey of 318 Winona State students, it was found that 53.8% of the
+        students selected a PC for their laptop.
+
+   .. mchoice:: mc_parastat_2
+        :answer_a: Parameter
+        :answer_b: Statistic
+        :correct: a
+
+        The average salary of all 50 United States govenors in 2015 was
+        $135,000.
+
+Types of Variables
+------------------
+
+There are two main types of data that are very different from each other.
+First, we have *quantitative* data.  Based on the fact that the root of quantitative is
+quantity, you might not be surprised at the definition of quantitative data.
+
+.. glossary::
+    Quantitative Data
+        Data that is
+        1. numerical
+        2. Represents a quantity of something
+        (Technically, we need a quantity measured in some form of standard unit, 
+        like inches or kilograms)
+
+The important thing about quantitative data is that most arithmetic on this type
+of data is meaningful.  
+
+.. admonition:: Example 1 - Height
+    The height of a person is *quantitative* because, 1) it is numerical and 2) it
+    represents a quantity (say in inches).  The difference between my height and the
+    height of my wife is 9 inches.  Those subtracting these two values gave you some
+    meaningful information.
+
+On the other hand, there is some data that is numerical but not quantitative.
+In this case, subtracting two values does not give meaningful information.
+
+.. admonition:: Example 2 - Jersey number
+    An example of data that is numerical, but not quantitative is the number on
+    a football players jersey.  Clay Matthews and Aaron Rodgers are wear numbers 
+    52 and 12, respectively.  The fact that the difference between there numbers 
+    is 40 isn't very meaningful.
+    meaningful
+
+All data that is not quantitative is called either *categorical* or
+*qualitative*.
+
+.. glossary::
+    Categorical Data
+       Data that is not quantitative.  Instead that data can be broken into a
+       number of categories or labeled qroups.
+
+.. admonition:: Determine if each variable is *quantitative* or *categorical*.
+
+    .. mchoice:: mc_type_1
+        :answer_a: Quantitative
+        :answer_b: Categorical
+        :correct: a
+        :feedback_a: This variable is bother numerical and represents a quanity in GB
+        :feedback_b: Think of an example value.  Ask yourself (1) is it numerical and (2) does it represent a quantity.
+
+         The amount of flash memory in a smartphone.
+
+
+    .. mchoice:: mc_type_2
+        :answer_a: Quantitative
+        :answer_b: Categorical
+        :correct: b
+        :feedback_a: Think of an example value.  Ask yourself (1) is it numerical and (2) does it represent a quantity.
+        :feedback_b: This variable is not numeric 
+
+         The color of a smart phone.
+
+Sources of Bias
+---------------
+
+In the first activity, we observed that hand selecting our samples lead to
+*bias*, which is defined as follows.
+
+.. glossary::
+    Bias
+        The tendency to over- or under-estimate the value of a parameter over
+        many sample estimates.
+
+There are three main sources of bias in discussed below.
+
+.. glossary::
+    Sample Bias
+        The tendency to select some values more than others.  The best (only) method of
+        combating this form of bias is *using random sampling*.
+    Nonresponse Bias
+        When performing a survey of people, we typically get a very small
+        percent of people responding.  Furthermore, people with strong opinions
+        or interest in the topic are more likely to respond, which can lead to
+        biased estimates.
+    Response Bias
+       This form of bias occurs when the participants answers do not match the
+       true feelings of the participants.  This can happen when, for example, a
+       survey consists of *leading questions*.
+
+.. note::
+    The most important point here is that we prefer random samples, as they
+    guarantee unbiased samples (in terms of sampling bias).
