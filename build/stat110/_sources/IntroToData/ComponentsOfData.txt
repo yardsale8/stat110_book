@@ -5,10 +5,9 @@ What is data?  To answer this question, we will first focus on an individual
 piece of data and then think about a collection of data.  Please watch
 the video of the corresponding lecture on this material
 
-.. .. video:: 
-    https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_bwdvy73u&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_qh18rsyf
+.. raw:: html
 
-.. .. _Lecture on Components of Data: https://mediaspace.mnscu.edu/media/ComponentsOfDaya/0_bwdvy73u
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_bwdvy73u&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_eh9w5znp" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" align="center"></iframe>
 
 `Lecture on Components of Data <https://mediaspace.mnscu.edu/media/ComponentsOfDaya/0_bwdvy73u>`_
 
@@ -27,7 +26,7 @@ call the measurement a *variable* and the item being measured an *individual* or
 
 .. note::
 
-    When determining the **variable** related to a study, it is helpful the
+    When determining the **variable** related to a study, it is helpful to
     think of the question that we would ask about the individual.
 
 Here are some examples of data from my own life
@@ -180,7 +179,7 @@ A very important idea in statistics is the following
     1. The type of collection we have
     2. The manner in which the collection was calculated.
 
-If the our data collection constitutes a sample, **bias** is our primary concern 
+If our data collection constitutes a sample, **bias** is our primary concern 
 and **the only way to ensure unbiased guesses is to use random sampling.** 
 If, on the other hand,  we have the entire population, then we don't need to 
 worry about *guesses* being biased based on selection, but we still need to 
@@ -237,7 +236,7 @@ the important components.  These include
         :answer_b: Statistic
         :correct: a
 
-        The average salary of all 50 United States govenors in 2015 was
+        The average salary of all 50 United States governors in 2015 was
         $135,000.
 
 Types of Variables
@@ -333,3 +332,30 @@ There are three main sources of bias in discussed below.
 .. note::
     The most important point here is that we prefer random samples, as they
     guarantee unbiased samples (in terms of sampling bias).
+
+Types of Studies
+----------------
+
+.. raw:: html
+
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_c97uowgw&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_lltpbwrd" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+    
+There are two main types of studies that we will be considering this semester,
+*observational studies* and *experiments*.
+
+.. glossary::
+    Observational Study
+       A study in which no variable is manipulated or affected by the researcher
+       and instead the variables are observed in their natural state.
+    Experiment
+        A study where some of the variables (called explanatory variables) are
+        controlled and manipulated by the researcher and the effect of these
+        changes is measured on another variable (called the response variable).
+    Explanatory Variable
+        A variable that we think might cause a change in another variable
+        (called the *response variable*).  In an experiment, the research will
+        control and manipulate the response variable.
+    Response Variable
+        A variable that is not manipulated in any way.  We are looking for an
+        effect that the explanatory variable might have on the response 
+
