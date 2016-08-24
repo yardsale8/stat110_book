@@ -305,6 +305,10 @@ All data that is not quantitative is called either *categorical* or
 Sources of Bias
 ---------------
 
+.. raw:: html
+
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_a1nfnich&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_8v29u397" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+
 In the first activity, we observed that hand selecting our samples lead to
 *bias*, which is defined as follows.
 
@@ -332,6 +336,38 @@ There are three main sources of bias in discussed below.
 .. note::
     The most important point here is that we prefer random samples, as they
     guarantee unbiased samples (in terms of sampling bias).
+
+.. mchoice:: mc_bias_1
+    :answer_a: Sampling Bias
+    :answer_b: Non-response Bias
+    :answer_c: Response Bias
+    :correct: a
+    :feedback_a: The survey only collected data on readers of *Literary Digest*, leading to other segments of the population being under-represented.
+    :feedback_b: With more than 2.4 million people responding, non-response wouldn't be an issue.
+    :feedback_c: There is nothing in the problem to suggest a problem with response bias (such as leading questions etc.)
+
+    In 1936, *Literary Digest* magazine conducted a survey of their readers, 
+    asking their readers if they would votes for Roosevelt or Landon.  More than
+    2.4 million people responded, and more that 57% responded that they would
+    vote for Landon.  In the actual election, Roosevelt won by a landslide,
+    earning more than 63% of the popular vote.  Determine the source of bias in
+    this sampling procedure.
+
+.. admonition:: Source
+   
+    *Workshop Statistics*, Rossman and Chance, Key College Publishing, 2008
+
+.. mchoice:: mc_bias_2
+    :answer_a: ... surveys.
+    :answer_b: ... studies of nature in biology.
+    :answer_c: ... computer simulations.
+    :correct: a
+    :feedback_a:  Non-response is generally related with low response rates in surveys.
+    :feedback_b:  Biologists don't have to worry about this form of bias, as they aren't asking people to voluntarily respond.
+    :feedback_c: Computers don't get to choose when to respond.
+
+    Non-response bias can occur in
+..  
 
 Types of Studies
 ----------------
