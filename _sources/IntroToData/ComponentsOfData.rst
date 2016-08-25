@@ -347,8 +347,8 @@ There are three main sources of bias in discussed below.
     :feedback_c: There is nothing in the problem to suggest a problem with response bias (such as leading questions etc.)
 
     In 1936, *Literary Digest* magazine conducted a survey of their readers, 
-    asking their readers if they would votes for Roosevelt or Landon.  More than
-    2.4 million people responded, and more that 57% responded that they would
+    asking their readers if they would vote for Roosevelt or Landon.  More than
+    2.4 million people responded, and more than 57% responded that they would
     vote for Landon.  In the actual election, Roosevelt won by a landslide,
     earning more than 63% of the popular vote.  Determine the source of bias in
     this sampling procedure.

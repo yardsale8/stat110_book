@@ -29,6 +29,7 @@ SECTION 2: Table of Contents
    :maxdepth: 2
 
    IntroToData/ComponentsOfData.rst
+   IntroToData/SummarizingData/SummarizingData.rst
    chp1/chp1.rst
    chp1/lab1.rst
    chp1/lab2.rst
