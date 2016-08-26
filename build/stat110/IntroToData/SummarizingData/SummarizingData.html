@@ -263,11 +263,13 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Summarizing Data</a><ul>
-<li><a class="reference internal" href="#graphing-distributions-dotplots-and-histograms">Graphing Distributions - Dotplots and Histograms</a></li>
-<li><a class="reference internal" href="#unsual-values-and-the-p-value">Unsual Values and the p-Value</a></li>
+<li><a class="reference internal" href="#graphing-distributions-dotplots-and-histograms">Graphing Distributions - Dotplots and Histograms</a><ul>
+<li><a class="reference internal" href="#shapes-of-a-distribution">Shapes of a Distribution</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#measures-of-center-finding-a-typical-value">Measures of Center - Finding a Typical Value</a></li>
+<li><a class="reference internal" href="#unsual-values-and-the-p-value">Unsual Values and the p-Value</a></li>
 <li><a class="reference internal" href="#measures-of-spread-finding-the-amount-of-concentration-or-spread">Measures of Spread - Finding the Amount of Concentration or Spread</a></li>
-<li><a class="reference internal" href="#boxplots-and-the-five-number-summary">Boxplots and the Five Number Summary</a></li>
 </ul>
 </li>
 </ul>
@@ -316,28 +318,142 @@
   
   <div class="section" id="summarizing-data">
 <h1>Summarizing Data<a class="headerlink" href="#summarizing-data" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter, we will present some basic methods for summarizing a
+distribution, both numerically and graphically.</p>
 <div class="section" id="graphing-distributions-dotplots-and-histograms">
 <h2>Graphing Distributions - Dotplots and Histograms<a class="headerlink" href="#graphing-distributions-dotplots-and-histograms" title="Permalink to this headline">¶</a></h2>
-<p>Video Goes Here</p>
-<p>Reading Goes Here</p>
-</div>
-<div class="section" id="unsual-values-and-the-p-value">
-<h2>Unsual Values and the p-Value<a class="headerlink" href="#unsual-values-and-the-p-value" title="Permalink to this headline">¶</a></h2>
-<p>Video Goes Here</p>
-<p>Reading Goes Here</p>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_6ynkx72e&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_f75efnqr" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe><div class="section" id="shapes-of-a-distribution">
+<h3>Shapes of a Distribution<a class="headerlink" href="#shapes-of-a-distribution" title="Permalink to this headline">¶</a></h3>
+<p>One of the important features of a distribution is the shape of the
+distribution.  In this class, we will describe the shape of the distribution in
+words using terms like <em>symmetric</em>, <em>skewed left</em>, <em>skewed right</em>, and
+<em>bimodal</em>.</p>
+<dl class="glossary docutils">
+<dt id="term-symmetric">Symmetric</dt>
+<dd>A distribution is described as <em>symmetric</em> if portion of the graph to
+the left of the mean/average is approximately a <em>mirror image</em> of the
+portion of the graph to the right side of the mean/average.</dd>
+</dl>
+<p><a class="reference internal" href="../../_images/symmetric.png"><img alt="image0" src="../../_images/symmetric.png" style="width: 2.51873in; height: 3.30189in;" /></a></p>
+<p>We will distinguish between symmetric graphs that are <em>bell-shaped</em> or <em>not
+bell-shaped</em>.</p>
+<p>On the other hand, when a distribution is <strong>not</strong> symmetric, we focus on the
+<em>tails</em> of the distribution.</p>
+<dl class="glossary docutils">
+<dt id="term-skewed-left">Skewed Left</dt>
+<dd>A distribution is <em>skewed left</em> when it has a long left tail, that is
+its left tail is much longer than its right tail.</dd>
+<dt id="term-skewed-right">Skewed Right</dt>
+<dd>A distribution is <em>skewed right</em> when it has a long left tail, that is
+its right tail is much longer than its left tail.</dd>
+</dl>
+<p><a class="reference internal" href="../../_images/skewed_left_right.png"><img alt="image1" src="../../_images/skewed_left_right.png" style="width: 2.51873in; height: 3.30189in;" /></a></p>
+<p>Finally, it is possible that we might have a graph with two peaks.</p>
+<dl class="glossary docutils">
+<dt id="term-bimodal">Bimodal</dt>
+<dd>A distribution is <em>bimodal</em> if it has two distinct peaks.  (The term
+bimodal literally means <em>two modes</em>, where a mode is a peak.)</dd>
+</dl>
+<p><a class="reference internal" href="../../_images/bimodal.png"><img alt="image2" src="../../_images/bimodal.png" style="width: 2.51876in; height: 1.30189in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_shape_1">
+            Q-266: A distribution with two similar tails is ...
+            <li data-component="answer" data-correct id="mc_shape_1_opt_a">(A) Symmetric</li><li data-component="feedback" id="mc_shape_1_opt_a">A symmetric graph has two tails that are about the same.</li>
+            
+            <li data-component="answer"  id="mc_shape_1_opt_b">(B) Skewed left</li><li data-component="feedback" id="mc_shape_1_opt_b">A skewed left graph has a longer left tail.</li>
+            
+            <li data-component="answer"  id="mc_shape_1_opt_c">(C) Skewed right</li><li data-component="feedback" id="mc_shape_1_opt_c">A skewed right graph has a longer right tail.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_shape_2">
+            Q-267: A distribution with long left tail is ...
+            <li data-component="answer"  id="mc_shape_2_opt_a">(A) Symmetric</li><li data-component="feedback" id="mc_shape_2_opt_a">A symmetric graph has two tails that are about the same.</li>
+            
+            <li data-component="answer" data-correct id="mc_shape_2_opt_b">(B) Skewed left</li><li data-component="feedback" id="mc_shape_2_opt_b">A skewed left graph has a longer left tail.</li>
+            
+            <li data-component="answer"  id="mc_shape_2_opt_c">(C) Skewed right</li><li data-component="feedback" id="mc_shape_2_opt_c">A skewed right graph has a longer right tail.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_shape_3">
+            Q-268: A distribution with long right tail is ...
+            <li data-component="answer"  id="mc_shape_3_opt_a">(A) Symmetric</li><li data-component="feedback" id="mc_shape_3_opt_a">A symmetric graph has two tails that are about the same.</li>
+            
+            <li data-component="answer"  id="mc_shape_3_opt_b">(B) Skewed left</li><li data-component="feedback" id="mc_shape_3_opt_b">A skewed left graph has a longer left tail.</li>
+            
+            <li data-component="answer" data-correct id="mc_shape_3_opt_c">(C) Skewed right</li><li data-component="feedback" id="mc_shape_3_opt_c">A skewed right graph has a longer right tail.</li>
+            
+
+            </ul>
+            </div>
 </div>
 <div class="section" id="measures-of-center-finding-a-typical-value">
 <h2>Measures of Center - Finding a Typical Value<a class="headerlink" href="#measures-of-center-finding-a-typical-value" title="Permalink to this headline">¶</a></h2>
-<p>Video Goes Here</p>
-<p>Reading Goes Here</p>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_z1rwp030&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_o0p0im2f" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe><dl class="glossary docutils">
+<dt id="term-mean-or-average">Mean or Average</dt>
+<dd>This is the (arithmetic) average of the data.  It is caluculated by
+all the values of the variable and dividing by the number of
+individuals.</dd>
+<dt id="term-median">Median</dt>
+<dd>A value that splits the data into groups that consist of approximately
+half of the data.  It is computed by (1) Putting the data in order and
+(2) Finding the middle value.  If the data set has an even number of
+values, the average of the middle two values is used for the median.</dd>
+</dl>
+<p>While being able to compute the value of a summary statistic is important, <a href="#id1"><span class="problematic" id="id2">*</span></a>it
+is even more important to understand what each number tells us about the
+distribution.  Here are the standard interpretations for these statistics.</p>
+<div class="admonition-standard-interpretation-of-the-mean admonition">
+<p class="first admonition-title">Standard Interpretation of the Mean</p>
+<p class="last">The mean is the balance point or center of mass of the distribution, that
+is, it is the location at which the dot plot would balance on your finger.</p>
+</div>
+<div class="admonition-standard-interpretation-of-the-median admonition">
+<p class="first admonition-title">Standard Interpretation of the Median</p>
+<p class="last">The median splits the data in half.  Approximately 50% of the data will be
+above and below the median. (The only situation where this is not exactly 50%
+is when there are multiple values stacked at the median.)</p>
+</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_mean">
+            <p>Q-269: The following values are the serum cholesterol levels (mg/dLi) of six men with
+high cholesterol.</p>
+<p>366 327 230 274 292 274</p>
+<p>Compute the <strong>mean</strong> of these data.</p>
+
+            <li data-component="answer"  id="mc_mean_opt_a">(A) 252.0</li><li data-component="feedback" id="mc_mean_opt_a">You need to add up all the values and divide by the number of individuals.</li>
+            
+            <li data-component="answer"  id="mc_mean_opt_b">(B) 283.0</li><li data-component="feedback" id="mc_mean_opt_b">You need to add up all the values and divide by the number of individuals.</li>
+            
+            <li data-component="answer" data-correct id="mc_mean_opt_c">(C) 293.8</li><li data-component="feedback" id="mc_mean_opt_c"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_median">
+            <p>Q-270: The following values are the serum cholesterol levels (mg/dLi) of six men with
+high cholesterol.</p>
+<p>366 327 230 274 292 274</p>
+<p>Compute the <strong>median</strong> of these data.</p>
+
+            <li data-component="answer"  id="mc_median_opt_a">(A) 252.0</li><li data-component="feedback" id="mc_median_opt_a">Make sure you reorder the data, *then* find the middle value.</li>
+            
+            <li data-component="answer" data-correct id="mc_median_opt_b">(B) 283.0</li><li data-component="feedback" id="mc_median_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_median_opt_c">(C) 293.8</li><li data-component="feedback" id="mc_median_opt_c">Sort the data and find the middle value.</li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="unsual-values-and-the-p-value">
+<h2>Unsual Values and the p-Value<a class="headerlink" href="#unsual-values-and-the-p-value" title="Permalink to this headline">¶</a></h2>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_b91c7frv&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_0ep0lw91" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe><p>Reading Goes Here</p>
 </div>
 <div class="section" id="measures-of-spread-finding-the-amount-of-concentration-or-spread">
 <h2>Measures of Spread - Finding the Amount of Concentration or Spread<a class="headerlink" href="#measures-of-spread-finding-the-amount-of-concentration-or-spread" title="Permalink to this headline">¶</a></h2>
-<p>Video Goes Here</p>
-<p>Reading Goes Here</p>
-</div>
-<div class="section" id="boxplots-and-the-five-number-summary">
-<h2>Boxplots and the Five Number Summary<a class="headerlink" href="#boxplots-and-the-five-number-summary" title="Permalink to this headline">¶</a></h2>
 <p>Video Goes Here</p>
 <p>Reading Goes Here</p>
 </div>
