@@ -1,3 +1,6 @@
+.. role:: math(raw)
+   :format: html latex
+
 Summarizing Data
 ================
 
@@ -155,7 +158,133 @@ Unsual Values and the p-Value
 
     <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_b91c7frv&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_0ep0lw91" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
-Reading Goes Here
+We will spend a considerable amount of time in this course trying to decide if a
+value is unusually large or unusually small.  For example, if we were trying to determine if the
+hiring practices in a school disctrict are discriminatory, we will need to
+determine if the school hires an unusually low number of African-American
+teachers.
+
+Before we can determine if a value is unusual, we need a good definition of what it
+means to be unusually large or unusually small in a statistical sense.
+
+.. glossary::
+
+    Unusually large values
+        A value is considered unusually large if it is in the largest 5% of the
+        distribution.
+    Unsuaually small values
+        A value is considered unusually small if it is in the smallest 5% of the
+        distribution.
+
+.. note::
+
+     There is nothing special about picking 5%, and in fact later in the course
+     we will see that adjusting this value gives us some control over a certain
+     type of error. For now, we will stick to 5% and call this **the 5% rule**.
+
+|image3|
+
+Now that we know what it means to be unusually large or small, we
+need a method of determining if a specific value of interest is unusually large.  
+For example, I have a friend that is 78 inches tall (6' 6").  I know that he is
+fairly tall, but is he unusually tall, in the staistical sense?
+
+When answering this question intuitively, I believe that it is natural to
+compare my friend to other tall people, asking *What
+percentage of the time do I meet men that is 78 inches tall or taller*.  This
+is the exact intuition that leads to our definition of an *upper p-value*.  
+
+On the other side of the coin (or in this case distribution), we might ask if
+someone that is 63.5 inches tall, like my wife, is unusually short. Again in 
+a statistical sense.  This time it is natural to compare someone on the small side of
+the distribution with other small values, leading to what I like to call a
+*lower p-value*.
+
+.. glossary::
+    Upper p-value
+        The upper p-value of a given value :math:`x` is the proportion of the 
+        distribution that is at or above the value.  This measurement is useful
+        in determining if a value is unusually large.
+    Lower p-value
+        The lower p-value of a given value :math:`x` is the proportion of the 
+        distribution that is at or below the value. This measurement is useful
+        in determining if a value is unusually large.
+
+Example: Using a lower p-value to determine if 4 is unusually small.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Consider the distribution shown below.  There are 117 dots on the graph, and we
+want to answer the question *Is the value 4 unusually small*.  Because we are
+focusing on small values, we will use a *lower p-value*, because it makes sense
+to compare a potentially small value to other small values.  There are 7 dots
+that are at or below 4, so the lower p-value of 4 rounds up to 0.06 or 6%. Since 
+there is more than 5% of the distribution below 4, **4 is not in the smallest 5%
+of the distribution** and therefore is not unusually small.
+
+|image4|
+
+Thus, a value is only unusually small if its lower p-value is smaller than 5%
+(when using the 5% rule).  The same is true for an upper p-value.  
+
+
+Example: Using a upper p-value to determine if 12 is unusually large.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+This time, consider the question *Is 12 unusually large?*  In this case the 
+upper p-value is a little less that 1%.  Since less than 5% of the distribution 
+is above 12, we see that
+
+    1. 12 is in the largest 1%, and
+    2. 12 is unusually large, according to the 5% rule.
+
+|image5|
+
+.. mchoice:: mc_pvalues_1
+    :answer_a: lower p-value.
+    :answer_b: upper p-value.
+    :correct: a
+    :feedback_a: When looking at a potentially small value, compare it to other small values.
+    :feedback_b: Focus on the smallest part of the distribution, i.e. the left tail.
+
+    When deciding if a value is unusually small, use a ...
+
+
+.. mchoice:: mc_pvalues_2
+    :answer_a: lower p-value.
+    :answer_b: upper p-value.
+    :correct: b
+    :feedback_a: Focus on the largest part of the distribution, i.e. the right tail.
+    :feedback_b: When looking at a potentially large value, compare it to other large values.
+
+    When deciding if a value is unusually large, use a ...
+
+.. mchoice:: mc_pvalues_3 
+    :answer_a: Yes
+    :answer_b: No
+    :correct: a
+    :feedback_a: If the lower p-value is smaller that 5%, the value is in the smallest 5% and thus unusually smallest.
+    :feedback_b: Consider the fact that the value has only 2.3% of the distribution below it.  Is it in the smallest 5% of the distribution?
+
+    Suppose that a value has an lower p-value of 2.3%.  According to the 5% rule, is this value unusually small?
+
+.. mchoice:: mc_pvalues_4 
+    :answer_a: Yes
+    :answer_b: No
+    :correct: b
+    :feedback_a: Consider the fact that the value more than 12.7% of the distribution above it.  Is it in the largest 5% of the distribution?
+    :feedback_b: If the upper p-value is larger that 5%, the value is NOT in the largest 5% and thus NOT unusually large.
+
+    Suppose that a value has an upper p-value of 12.7%.  According to the 5% rule, is this value unusually large?
+
+.. admonition:: General P-value Rule
+
+    A value is unusually small when the lower p-value is less than 5% (when
+    using the 5% rule). 
+
+    A value is unusually large when the upper p-value is less than 5% (when
+    using the 5% rule).
+
+    **In both cases, small p-values mean unusual values**.
 
 Measures of Spread - Finding the Amount of Concentration or Spread
 ------------------------------------------------------------------
@@ -174,3 +303,12 @@ Reading Goes Here
 .. |image2| image:: img/bimodal.png
    :width: 2.51876in
    :height: 1.30189in
+.. |image3| image:: img/unusual_values.png
+   :width: 5.51876in
+   :height: 2.30189in
+.. |image4| image:: img/lower_pvalue.png
+   :width: 4.51876in
+   :height: 4.30189in
+.. |image5| image:: img/upper_pvalue.png
+   :width: 3.51876in
+   :height: 4.30189in
