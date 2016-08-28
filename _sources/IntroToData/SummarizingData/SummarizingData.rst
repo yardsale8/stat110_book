@@ -291,8 +291,82 @@ Measures of Spread - Finding the Amount of Concentration or Spread
 
 Video Goes Here
 
-Reading Goes Here
+In an earlier section, we took on the task of determining a value for a "typical
+value".  The answer was to use a measurement in the center of the distribution
+of like the mean and median.  Unfortunately, knowing the location of the center
+of the distribution is not enough information.
 
+|image5|
+
+For example, the two graphs shown above have centers that are very similar, but
+one graph has data that is more concentrated than another.  This difference is
+very important in many fields.  In manufacturing, creating products that are
+very similar is can reduced waste, and in statistics, having estimates that are
+more concentrated, or less spread out, means that we are making better guesses.
+
+The most basic measurement of spread is the *range* of the data.
+
+.. glossary::
+    Range
+        The difference/distance between the largest and smallest value in the
+        data set.
+
+Unfortunately, the range is very susceptible to outliers, making it a poor
+measrue of spread.  We will instead use two other measures of spread, the
+*interquantile range (IQR)* and the *standard deviation (from the mean)*.
+
+.. glossary::
+    Interquartile range (IQR)
+        The range of the middle 50% of the data.  Is is found by (a) finding the
+        medians of the lower and upper halves of the data, called Q1 and Q3,
+        respectively.  Then the :math:`IQR = Q3 - Q1`.
+    Standard Deviation (SD)
+        The standard deviation is computed using the formula given below.  It
+        can be thought of as the distance of a typical/average value to the
+        mean.
+
+.. math::
+
+    SD = \sqrt{\frac{\sum (x - \bar{x})^2}{n-1}}
+
+For both statistics, the value tells us how concentrated or spread out the
+data is.
+
+1. A larger value of the SD or IQR means that the data is more spread out.
+2. A smaller value of the SD or IQR means that the data is more concentrated.
+
+As before, understanding how to interpret the value of a statistic is perhaps
+more important than being able to compute the value.  Here are the standard
+interpretations of each of these statistics.
+
+.. admonition:: Standard Intrepretation of the Standard Deviation
+
+    The standard deviation tells us how far a typical value is from the mean.
+
+.. admonition:: Standard Interpretation of the Interquartile Range
+
+    The interquartile range measure the spread of the middle 50% of the data.
+
+.. admonition:: Resistance
+
+    The IQR is more resistant to the effects of outliers than the standard
+    deviation.
+
+.. mchoice:: mc_spread_1
+    :answer_a: The difference between the smallest and largest values in the data.
+    :answer_b: The distance between a typical/average value and the mean.
+    :answer_c: The the range of the middle 50% of the data.
+    :correct: b
+
+    The standard deviation can be through of as ...
+
+.. mchoice:: mc_spread_2
+    :answer_a: The difference between the smallest and largest values in the data.
+    :answer_b: The distance between a typical/average value and the mean.
+    :answer_c: The the range of the middle 50% of the data.
+    :correct: c
+
+    The interquartile range can be through of as ...
 
 .. |image0| image:: img/symmetric.png
    :width: 2.51873in
@@ -310,5 +384,8 @@ Reading Goes Here
    :width: 4.51876in
    :height: 4.30189in
 .. |image5| image:: img/upper_pvalue.png
+   :width: 3.51876in
+   :height: 4.30189in
+.. |image5| image:: img/different_spreads.png
    :width: 3.51876in
    :height: 4.30189in
