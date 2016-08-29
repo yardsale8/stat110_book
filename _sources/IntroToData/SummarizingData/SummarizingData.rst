@@ -41,7 +41,7 @@ On the other hand, when a distribution is **not** symmetric, we focus on the
         A distribution is *skewed left* when it has a long left tail, that is
         its left tail is much longer than its right tail.
     Skewed Right
-        A distribution is *skewed right* when it has a long left tail, that is
+        A distribution is *skewed right* when it has a long right tail, that is
         its right tail is much longer than its left tail.
 |image1|
 
