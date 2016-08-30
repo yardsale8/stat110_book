@@ -41,7 +41,7 @@ On the other hand, when a distribution is **not** symmetric, we focus on the
         A distribution is *skewed left* when it has a long left tail, that is
         its left tail is much longer than its right tail.
     Skewed Right
-        A distribution is *skewed right* when it has a long left tail, that is
+        A distribution is *skewed right* when it has a long right tail, that is
         its right tail is much longer than its left tail.
 |image1|
 
@@ -208,7 +208,7 @@ the distribution with other small values, leading to what I like to call a
     Lower p-value
         The lower p-value of a given value :math:`x` is the proportion of the 
         distribution that is at or below the value. This measurement is useful
-        in determining if a value is unusually large.
+        in determining if a value is unusually small.
 
 Example: Using a lower p-value to determine if 4 is unusually small.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -296,7 +296,7 @@ value".  The answer was to use a measurement in the center of the distribution
 of like the mean and median.  Unfortunately, knowing the location of the center
 of the distribution is not enough information.
 
-|image5|
+|image6|
 
 For example, the two graphs shown above have centers that are very similar, but
 one graph has data that is more concentrated than another.  This difference is
@@ -358,7 +358,7 @@ interpretations of each of these statistics.
     :answer_c: The the range of the middle 50% of the data.
     :correct: b
 
-    The standard deviation can be through of as ...
+    The standard deviation can be thought of as ...
 
 .. mchoice:: mc_spread_2
     :answer_a: The difference between the smallest and largest values in the data.
@@ -386,6 +386,6 @@ interpretations of each of these statistics.
 .. |image5| image:: img/upper_pvalue.png
    :width: 3.51876in
    :height: 4.30189in
-.. |image5| image:: img/different_spreads.png
+.. |image6| image:: img/different_spreads.png
    :width: 3.51876in
    :height: 4.30189in
