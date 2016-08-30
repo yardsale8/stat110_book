@@ -317,7 +317,7 @@ measrue of spread.  We will instead use two other measures of spread, the
 
 .. glossary::
     Interquartile range (IQR)
-        The range of the middle 50% of the data.  Is is found by (a) finding the
+        The range of the middle 50% of the data.  It is found by (a) finding the
         medians of the lower and upper halves of the data, called Q1 and Q3,
         respectively.  Then the :math:`IQR = Q3 - Q1`.
     Standard Deviation (SD)
