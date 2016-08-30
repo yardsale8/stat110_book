@@ -172,7 +172,7 @@ means to be unusually large or unusually small in a statistical sense.
     Unusually large values
         A value is considered unusually large if it is in the largest 5% of the
         distribution.
-    Unsuaually small values
+    Unusually small values
         A value is considered unusually small if it is in the smallest 5% of the
         distribution.
 
@@ -262,7 +262,7 @@ is above 12, we see that
     :answer_a: Yes
     :answer_b: No
     :correct: a
-    :feedback_a: If the lower p-value is smaller that 5%, the value is in the smallest 5% and thus unusually smallest.
+    :feedback_a: If the lower p-value is smaller than 5%, the value is in the smallest 5% and thus unusually smallest.
     :feedback_b: Consider the fact that the value has only 2.3% of the distribution below it.  Is it in the smallest 5% of the distribution?
 
     Suppose that a value has an lower p-value of 2.3%.  According to the 5% rule, is this value unusually small?
@@ -272,7 +272,7 @@ is above 12, we see that
     :answer_b: No
     :correct: b
     :feedback_a: Consider the fact that the value more than 12.7% of the distribution above it.  Is it in the largest 5% of the distribution?
-    :feedback_b: If the upper p-value is larger that 5%, the value is NOT in the largest 5% and thus NOT unusually large.
+    :feedback_b: If the upper p-value is larger than 5%, the value is NOT in the largest 5% and thus NOT unusually large.
 
     Suppose that a value has an upper p-value of 12.7%.  According to the 5% rule, is this value unusually large?
 
@@ -289,7 +289,9 @@ is above 12, we see that
 Measures of Spread - Finding the Amount of Concentration or Spread
 ------------------------------------------------------------------
 
-Video Goes Here
+.. raw:: html
+    
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_u4kvlahh&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_668gzijs" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
 In an earlier section, we took on the task of determining a value for a "typical
 value".  The answer was to use a measurement in the center of the distribution
