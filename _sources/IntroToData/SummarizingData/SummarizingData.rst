@@ -303,7 +303,7 @@ of the distribution is not enough information.
 For example, the two graphs shown above have centers that are very similar, but
 one graph has data that is more concentrated than another.  This difference is
 very important in many fields.  In manufacturing, creating products that are
-very similar is can reduced waste, and in statistics, having estimates that are
+very similar can reduced waste, and in statistics, having estimates that are
 more concentrated, or less spread out, means that we are making better guesses.
 
 The most basic measurement of spread is the *range* of the data.
@@ -314,7 +314,14 @@ The most basic measurement of spread is the *range* of the data.
         data set.
 
 Unfortunately, the range is very susceptible to outliers, making it a poor
-measrue of spread.  We will instead use two other measures of spread, the
+measure of spread.  We will instead use two other measures of spread, the
+.. mchoice:: 
+    :answer_a: The difference between the smallest and largest values in the data.
+    :answer_b: The distance between a typical/average value and the mean.
+    :answer_c: The the range of the middle 50% of the data.
+    :correct: b
+
+    The standard deviation can be through of as ...
 *interquantile range (IQR)* and the *standard deviation (from the mean)*.
 
 .. glossary::
