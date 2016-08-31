@@ -7,7 +7,7 @@ Summarizing Data
 In this chapter, we will present some basic methods for summarizing a
 distribution, both numerically and graphically.
 
-Graphing Distributions - Dotplots and Histograms
+Graphing Distributions - Dot Plots and Histograms
 ------------------------------------------------
 
 .. raw:: html
@@ -96,7 +96,7 @@ Measures of Center - Finding a Typical Value
 
 .. glossary::
     Mean or Average
-        This is the (arithmetic) average of the data.  It is caluculated by
+        This is the (arithmetic) average of the data.  It is calculated by
         all the values of the variable and dividing by the number of
         individuals.
     Median
@@ -160,7 +160,7 @@ Unsual Values and the p-Value
 
 We will spend a considerable amount of time in this course trying to decide if a
 value is unusually large or unusually small.  For example, if we were trying to determine if the
-hiring practices in a school disctrict are discriminatory, we will need to
+hiring practices in a school district are discriminatory, we will need to
 determine if the school hires an unusually low number of African-American
 teachers.
 
@@ -187,7 +187,7 @@ means to be unusually large or unusually small in a statistical sense.
 Now that we know what it means to be unusually large or small, we
 need a method of determining if a specific value of interest is unusually large.  
 For example, I have a friend that is 78 inches tall (6' 6").  I know that he is
-fairly tall, but is he unusually tall, in the staistical sense?
+fairly tall, but is he unusually tall, in the statistical sense?
 
 When answering this question intuitively, I believe that it is natural to
 compare my friend to other tall people, asking *What
@@ -348,7 +348,7 @@ As before, understanding how to interpret the value of a statistic is perhaps
 more important than being able to compute the value.  Here are the standard
 interpretations of each of these statistics.
 
-.. admonition:: Standard Intrepretation of the Standard Deviation
+.. admonition:: Standard Interpretation of the Standard Deviation
 
     The standard deviation tells us how far a typical value is from the mean.
 
@@ -364,7 +364,7 @@ interpretations of each of these statistics.
 .. mchoice:: mc_spread_1
     :answer_a: The difference between the smallest and largest values in the data.
     :answer_b: The distance between a typical/average value and the mean.
-    :answer_c: The the range of the middle 50% of the data.
+    :answer_c: The range of the middle 50% of the data.
     :correct: b
 
     The standard deviation can be thought of as ...
@@ -372,7 +372,7 @@ interpretations of each of these statistics.
 .. mchoice:: mc_spread_2
     :answer_a: The difference between the smallest and largest values in the data.
     :answer_b: The distance between a typical/average value and the mean.
-    :answer_c: The the range of the middle 50% of the data.
+    :answer_c: The range of the middle 50% of the data.
     :correct: c
 
     The interquartile range can be through of as ...

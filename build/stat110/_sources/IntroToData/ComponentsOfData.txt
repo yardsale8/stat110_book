@@ -75,7 +75,7 @@ individual unit.
 
         While it might be possible to think of the individual here as *me* and not
         *my phone*, there could be problems with this designation.  For example,
-        what if I own two phones.  We need to be very careful and specific when
+        what if I own two phones?  We need to be very careful and specific when
         defining an individual.
 
     .. mchoice::     data_mc3
@@ -167,7 +167,7 @@ individuals.
         impossible to collect data on the entire population.
 
     Sample
-        A sample is a subset of a population and is much more managable to
+        A sample is a subset of a population and is much more manageable to
         obtain.  In statistics we use samples to make guesses about populations.
 
 A very important idea in statistics is the following
@@ -268,8 +268,8 @@ In this case, subtracting two values does not give meaningful information.
 
 .. admonition:: Example 2 - Jersey number
     An example of data that is numerical, but not quantitative is the number on
-    a football players jersey.  Clay Matthews and Aaron Rodgers are wear numbers 
-    52 and 12, respectively.  The fact that the difference between there numbers 
+    a football player's jersey.  Clay Matthews and Aaron Rodgers are wear numbers 
+    52 and 12, respectively.  The fact that the difference between their numbers 
     is 40 isn't very meaningful.
     meaningful
 
@@ -279,7 +279,7 @@ All data that is not quantitative is called either *categorical* or
 .. glossary::
     Categorical Data
        Data that is not quantitative.  Instead that data can be broken into a
-       number of categories or labeled qroups.
+       number of categories or labeled groups.
 
 .. admonition:: Determine if each variable is *quantitative* or *categorical*.
 
@@ -287,7 +287,7 @@ All data that is not quantitative is called either *categorical* or
         :answer_a: Quantitative
         :answer_b: Categorical
         :correct: a
-        :feedback_a: This variable is bother numerical and represents a quanity in GB
+        :feedback_a: This variable is bother numerical and represents a quantity in GB
         :feedback_b: Think of an example value.  Ask yourself (1) is it numerical and (2) does it represent a quantity.
 
          The amount of flash memory in a smartphone.
@@ -395,3 +395,130 @@ There are two main types of studies that we will be considering this semester,
         A variable that is not manipulated in any way.  We are looking for an
         effect that the explanatory variable might have on the response 
 
+Evaluating Studies
+------------------
+
+.. raw:: html
+
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_1iqsp4zw&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_j21dy1gf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+
+In class, we conducted some simulations to identifty the effect on two forms of
+randomization, *randomized selection of individual units* and *random assignment
+of treatments* in an experiment.  Based on these activities in class, we 
+identified two main effects of randomization.
+
+.. admonition:: The effect of random selection of individuals in sampling
+
+    Using a random sampling technique to select individuals resulted in
+    **unbiased estimates** of parameters.  In other words, our statistics did not
+    tend to over- or under-estimate the parameter, but balanced these errors
+    instead.
+
+.. admonition:: The effect of using random assignment of treatments in an experiment.
+
+    Using random assignment of treatments tended to balance out other factors
+    between the groups.  Therefore, other factors are not a likely cause of the
+    differences between the groups and the most likely cause of any difference
+    in the groups is the differences in treatments.
+    
+When evaluating a statistical study, the first thing that should be considered
+is the *appropriate scope of the conclusions*, that is to say the types of
+conclusions that are justified for this type of study.  The following table
+gives some advice on what conclusions can be drawn based on
+
+    1. Whether or not there was random sampling.
+    2. Whether of not it was an experiment with random assignment of treatments.
+
+.. figure:: img/evaluating_studies.png
+
+    Evaluating studies cheat sheet
+
+.. admonition:: A study on flossing and gum disease (experiment)
+
+    A recent study was conducted to determine the effectiveness of flossing on
+    gum disease.  A group of 500 volunteers were randomly split into two groups.
+    The first group was asked to floss once a day and the second group was asked
+    to floss after each meal.  Suppose that the group that flossed after every
+    meal was much less likely to have gum disease as the group that flossed
+    once per day.
+
+    .. mchoice:: mc_evaluate_1
+        :answer_a: Yes
+        :answer_b: No
+        :correct: b
+        :feedback_a: Note that the description mentioned that the participants were volunteers.
+        :feedback_b: The participants volunteered and were not randomly selected.
+
+        Did this study use random sampling?
+
+    .. mchoice:: mc_evaluate_2
+        :answer_a: Yes, the effects the flossing treatments would be the same for the general population.
+        :answer_b: No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.
+        :correct: b
+        :feedback_a: The participants in the study were volunteers and not a randomly selected sample.
+        :feedback_b: The lack of a randomly selected sample means that we are in danger of biased estimates.
+
+        Is it safe to generalize the results of this study?
+
+    .. mchoice:: mc_evaluate_3
+        :answer_a: Yes
+        :answer_b: No
+        :correct: a
+        :feedback_b: Note that the text mentions that the participants were randomly split into groups.
+
+        Did this study use random assignment of treatments?
+
+    .. mchoice:: mc_evaluate_4
+        :answer_a: Yes, the treatments are the only *likely* explanation for the differences.
+        :answer_b: No, other factors are likely to have contributed to the difference.
+        :correct: a
+        :feedback_a: Random assignment of the treatments will likely balance all other factors leading to gum disease.
+        :feedback_b: Consider the effect of randomly assigning the flossing treatments on the other likely factors.
+
+        Based on the fact that there was a large difference between the groups, is 
+        it safe to say that the difference in flossing frequency was the most likely 
+        cause of these differences?
+
+.. admonition:: Another study on flossing and gum disease (observational study)
+
+    In another study on flossing and gum disease, a random sample of 500 people
+    were surveyed on their flossing habits and whether or not they suffered from
+    gum disease.  Suppose that it was estimated that the people that flossed 
+    after every meal was much less likely to have gum disease as the group 
+    that flossed once per day.
+
+    .. mchoice:: mc_evaluate_5
+        :answer_a: Yes
+        :answer_b: No
+        :correct: a
+        :feedback_b: The text explicitly mentioned a random sample.
+
+        Did this study use random sampling?
+
+    .. mchoice:: mc_evaluate_6
+        :answer_a: Yes, the effects the flossing treatments will be the same for the general population.
+        :answer_b: No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.
+        :correct: a
+        :feedback_a: Because we are taking a random sample, our statistics should be unbiased and not over- or under-estimate the rates of gum disease in each group.
+        :feedback_b: What is the effect of random sampling on bias and a statistics ability to estimate a parameter?
+
+        Is it safe to generalize the results of this study?
+
+    .. mchoice:: mc_evaluate_7
+        :answer_a: Yes
+        :answer_b: No
+        :correct: b
+        :feedback_a: Note that the participants were not randomly assigned a flossing treatment, but were able to decide on their own flossing habits.
+
+        Did this study use random assignment of treatments?
+
+    .. mchoice:: mc_evaluate_8
+        :answer_a: Yes, the differences in flossing habits of the participants are the only *likely* explanation for the differences.
+        :answer_b: No, other factors are likely to have contributed to the difference.
+        :correct: b
+        :feedback_a: The lack of random assignment of the treatments gives us no protection against other factors (like genetics) that effect gum disease.
+        :feedback_b: The lack of random assignment of the treatments gives us no protection against other factors (like genetics) that effect gum disease.
+
+        Based on the fact that there was a large difference between the groups, is 
+        it safe to say that the difference in flossing frequency was the most likely 
+        cause of these differences?

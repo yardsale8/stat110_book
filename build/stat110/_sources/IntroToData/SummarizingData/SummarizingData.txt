@@ -7,7 +7,7 @@ Summarizing Data
 In this chapter, we will present some basic methods for summarizing a
 distribution, both numerically and graphically.
 
-Graphing Distributions - Dotplots and Histograms
+Graphing Distributions - Dot Plots and Histograms
 ------------------------------------------------
 
 .. raw:: html
@@ -96,7 +96,7 @@ Measures of Center - Finding a Typical Value
 
 .. glossary::
     Mean or Average
-        This is the (arithmetic) average of the data.  It is caluculated by
+        This is the (arithmetic) average of the data.  It is calculated by
         all the values of the variable and dividing by the number of
         individuals.
     Median
@@ -160,7 +160,7 @@ Unsual Values and the p-Value
 
 We will spend a considerable amount of time in this course trying to decide if a
 value is unusually large or unusually small.  For example, if we were trying to determine if the
-hiring practices in a school disctrict are discriminatory, we will need to
+hiring practices in a school district are discriminatory, we will need to
 determine if the school hires an unusually low number of African-American
 teachers.
 
@@ -172,7 +172,7 @@ means to be unusually large or unusually small in a statistical sense.
     Unusually large values
         A value is considered unusually large if it is in the largest 5% of the
         distribution.
-    Unsuaually small values
+    Unusually small values
         A value is considered unusually small if it is in the smallest 5% of the
         distribution.
 
@@ -187,7 +187,7 @@ means to be unusually large or unusually small in a statistical sense.
 Now that we know what it means to be unusually large or small, we
 need a method of determining if a specific value of interest is unusually large.  
 For example, I have a friend that is 78 inches tall (6' 6").  I know that he is
-fairly tall, but is he unusually tall, in the staistical sense?
+fairly tall, but is he unusually tall, in the statistical sense?
 
 When answering this question intuitively, I believe that it is natural to
 compare my friend to other tall people, asking *What
@@ -262,7 +262,7 @@ is above 12, we see that
     :answer_a: Yes
     :answer_b: No
     :correct: a
-    :feedback_a: If the lower p-value is smaller that 5%, the value is in the smallest 5% and thus unusually smallest.
+    :feedback_a: If the lower p-value is smaller than 5%, the value is in the smallest 5% and thus unusually smallest.
     :feedback_b: Consider the fact that the value has only 2.3% of the distribution below it.  Is it in the smallest 5% of the distribution?
 
     Suppose that a value has an lower p-value of 2.3%.  According to the 5% rule, is this value unusually small?
@@ -272,7 +272,7 @@ is above 12, we see that
     :answer_b: No
     :correct: b
     :feedback_a: Consider the fact that the value more than 12.7% of the distribution above it.  Is it in the largest 5% of the distribution?
-    :feedback_b: If the upper p-value is larger that 5%, the value is NOT in the largest 5% and thus NOT unusually large.
+    :feedback_b: If the upper p-value is larger than 5%, the value is NOT in the largest 5% and thus NOT unusually large.
 
     Suppose that a value has an upper p-value of 12.7%.  According to the 5% rule, is this value unusually large?
 
@@ -303,7 +303,7 @@ of the distribution is not enough information.
 For example, the two graphs shown above have centers that are very similar, but
 one graph has data that is more concentrated than another.  This difference is
 very important in many fields.  In manufacturing, creating products that are
-very similar is can reduced waste, and in statistics, having estimates that are
+very similar can reduced waste, and in statistics, having estimates that are
 more concentrated, or less spread out, means that we are making better guesses.
 
 The most basic measurement of spread is the *range* of the data.
@@ -314,7 +314,14 @@ The most basic measurement of spread is the *range* of the data.
         data set.
 
 Unfortunately, the range is very susceptible to outliers, making it a poor
-measrue of spread.  We will instead use two other measures of spread, the
+measure of spread.  We will instead use two other measures of spread, the
+.. mchoice:: 
+    :answer_a: The difference between the smallest and largest values in the data.
+    :answer_b: The distance between a typical/average value and the mean.
+    :answer_c: The the range of the middle 50% of the data.
+    :correct: b
+
+    The standard deviation can be through of as ...
 *interquantile range (IQR)* and the *standard deviation (from the mean)*.
 
 .. glossary::
@@ -341,7 +348,7 @@ As before, understanding how to interpret the value of a statistic is perhaps
 more important than being able to compute the value.  Here are the standard
 interpretations of each of these statistics.
 
-.. admonition:: Standard Intrepretation of the Standard Deviation
+.. admonition:: Standard Interpretation of the Standard Deviation
 
     The standard deviation tells us how far a typical value is from the mean.
 
@@ -357,7 +364,7 @@ interpretations of each of these statistics.
 .. mchoice:: mc_spread_1
     :answer_a: The difference between the smallest and largest values in the data.
     :answer_b: The distance between a typical/average value and the mean.
-    :answer_c: The the range of the middle 50% of the data.
+    :answer_c: The range of the middle 50% of the data.
     :correct: b
 
     The standard deviation can be thought of as ...
@@ -365,7 +372,7 @@ interpretations of each of these statistics.
 .. mchoice:: mc_spread_2
     :answer_a: The difference between the smallest and largest values in the data.
     :answer_b: The distance between a typical/average value and the mean.
-    :answer_c: The the range of the middle 50% of the data.
+    :answer_c: The range of the middle 50% of the data.
     :correct: c
 
     The interquartile range can be through of as ...
