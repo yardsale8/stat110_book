@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction to Confidence Intervals &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="Summarizing Data" href="../IntroToData/SummarizingData/SummarizingData.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=IntroToCI'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Introduction to Confidence Intervals</a><ul>
+<li><a class="reference internal" href="#overview-of-statistical-inference">Overview of Statistical Inference</a><ul>
+<li><a class="reference internal" href="#notation-for-parameters-and-statistics">Notation for Parameters and Statistics</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sampling-distributions">Sampling Distributions</a></li>
+<li><a class="reference internal" href="#id1">Introduction to Confidence Intervals</a><ul>
+<li><a class="reference internal" href="#point-estimates-and-interval-estimates-for-parameters">Point Estimates and Interval Estimates for Parameters</a></li>
+<li><a class="reference internal" href="#approximating-the-standard-error-of-a-statistic">Approximating the Standard Error of a Statistic</a></li>
+<li><a class="reference internal" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">Plus or Minus Two Standard Error and the Middle 95% of Statistics</a></li>
+<li><a class="reference internal" href="#being-95-confident">Being (95%) Confident</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bootstrap-confidence-intervals">Bootstrap Confidence Intervals</a></li>
+<li><a class="reference internal" href="#confidence-intervals-in-jmp">Confidence Intervals in JMP</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Summarizing Data" data-toggle="tooltip">
+    <a href="../IntroToData/SummarizingData/SummarizingData.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="introduction-to-confidence-intervals">
+<h1>Introduction to Confidence Intervals<a class="headerlink" href="#introduction-to-confidence-intervals" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter we will introduce the some important ideas from statistics.  We
+will be focusing on quantitative data and in particular <em>estimation</em> of a
+population parameter.</p>
+<div class="section" id="overview-of-statistical-inference">
+<h2>Overview of Statistical Inference<a class="headerlink" href="#overview-of-statistical-inference" title="Permalink to this headline">¶</a></h2>
+<p>When asking questions about some population of individuals, the ideal situation
+is collecting information on all of the individual of interest.  This is referred
+to as <em>taking a census</em> of the population.  Most of the time, it is not feasible
+to collect information on the entire population.  In this case we collect data
+on a sample of the population and use this information to make educated guesses
+about the population.  This is referred to as <strong>statistical inference</strong>.  More
+specifically, in statistical inference, we use <em>sample statistics</em> to make
+inferences (guesses) about <em>population parameters</em>.</p>
+<dl class="glossary docutils">
+<dt id="term-statistical-inference">Statistical Inference</dt>
+<dd>The process of making educated guess about population parameters using
+information collected from a random sample, e.g. a sample statistic.</dd>
+</dl>
+<p><a class="reference internal" href="../_images/inference.png"><img alt="image0" src="../_images/inference.png" style="width: 5.51873in; height: 4.30189in;" /></a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The federal government of the United States takes a &#8220;census&#8221; every 10 years,
+but there are a number of reasons this census falls short of the statistical
+definition.</p>
+<ol class="last arabic simple">
+<li>The population is defined over <em>households</em> not <em>individual citizens</em>.</li>
+<li>The Census Bureau only attempts to collect a small amount of information on all households.  The long form is collected on a sample of households.</li>
+<li>There is a fraction of the population for which it is nearly impossible to survey</li>
+</ol>
+</div>
+<div class="section" id="notation-for-parameters-and-statistics">
+<h3>Notation for Parameters and Statistics<a class="headerlink" href="#notation-for-parameters-and-statistics" title="Permalink to this headline">¶</a></h3>
+<p>In statistics there is a very big distinction between parameters (number
+describing a population) and statistics (numbers describing a sample).</p>
+<div class="admonition-distinction-between-parameters-and-statistics admonition">
+<p class="first admonition-title">Distinction between Parameters and Statistics</p>
+<ol class="last arabic simple">
+<li>Parameters are thought of a the exact values that we would like to make guesses about.  They are generally too expensive to find exactly and are almost always unknown.</li>
+<li>Statistics are thought of as a guess of the value of a parameter.  They are not particularly interesting in their own right.</li>
+</ol>
+</div>
+<p>The difference between parameters and statistics is so important that we use
+difference symbols to represent each.  The first summary method that we will
+focus on is the mean or average of quantitative data.  The symbol that we use
+for a population mean (parameter) is <span class="math">\mu</span>, while the symbol we use for a
+sample mean (statistic) is <span class="math">\bar{x}</span>.  The following table gives the
+symbols for various parameters and statistics we will work with in this
+course.</p>
+<p><a class="reference internal" href="../_images/notation.png"><img alt="image1" src="../_images/notation.png" style="width: 8.22in; height: 3.22in;" /></a></p>
+</div>
+</div>
+<div class="section" id="sampling-distributions">
+<h2>Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this headline">¶</a></h2>
+<p>The first and most important fact that you need to realize when working with
+statistics is <strong>statistics vary from sample to sample</strong>.  This is known as
+<em>sampling variability</em> and most of the procedures in statistics are methods for
+dealing with sampling variability.</p>
+<dl class="glossary docutils">
+<dt id="term-sampling-variability">Sampling Variability</dt>
+<dd>Sampling variability refers to the natural variation in statistics taken
+from different samples. It is very important to quantify this variability.</dd>
+<dt id="term-standard-error">Standard Error</dt>
+<dd>The <strong>standard error</strong> is the estimated standard deviation of the
+sample statistics.  It is an important measure of sampling variability.</dd>
+</dl>
+<p>To get an idea of the typical location of (center) and variability between
+(spread) sample statistics, we study the <em>sampling distribution</em>.</p>
+<dl class="glossary docutils">
+<dt id="term-sampling-distribution">Sampling Distribution</dt>
+<dd>The distribution of a statistic when repeatedly sampled from the same
+population with the same sample size.</dd>
+</dl>
+<p>The next figure shows a simulated sampling distribution for the sample mean.
+Each of the 40 dots represents a sample mean from a sample of 10 individuals
+and together these statistics for the sampling distribution.  We are
+interested in the properties of this distribution, in particular the
+<em>shape</em>, <em>center</em>, and <em>spread</em> of the statistics.  To get a better idea of
+these qualities of the sampling distribution, we would need to sample many more
+statistics.</p>
+<p><a class="reference internal" href="../_images/a_sampling_distribution.png"><img alt="image2" src="../_images/a_sampling_distribution.png" style="width: 4.05in; height: 1.75in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_samp_dist_definition">
+            Q-983: The sampling distribution is ...
+            <li data-component="answer"  id="mc_samp_dist_definition_opt_a">(A) The distribution of the sample.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_a">This answer is not specific enough, what exactly do we collect from each sample?</li>
+            
+            <li data-component="answer"  id="mc_samp_dist_definition_opt_b">(B) The distribution of population parameter.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_b">The parameter is one fixed value and doesn't vary.  Talking about the distribution of a parameter is therefore pointless.</li>
+            
+            <li data-component="answer" data-correct id="mc_samp_dist_definition_opt_c">(C) The distribution of the sample statistic.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_c"></li>
+            
+
+            </ul>
+            <p>We have seen examples of a sampling distribution earlier in many of the
+activities so far in the course.  We will use the <a class="reference external" href="http://www.lock5stat.com/StatKey/index.html">StatKey Website</a> to explore the sampling
+distribution of the sample mean.  The image below illustrates the various
+components of the <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey&#8217;s Sampling Distribution for a Mean page</a>.</p>
+<p><a class="reference internal" href="../_images/statkey_sampling_distribution_mean.png"><img alt="image3" src="../_images/statkey_sampling_distribution_mean.png" style="width: 4.05in; height: 3.05in;" /></a></p>
+<div class="admonition-check-your-understanding admonition">
+<p class="first admonition-title">Check your Understanding</p>
+<p>The following graph uses capital letters to label various elements of the
+StatKey sampling distribution page.  Use these designations to answer each
+of the following questions.</p>
+<p><a class="reference internal" href="../_images/test_parts_of_sampling_distribution.png"><img alt="image4" src="../_images/test_parts_of_sampling_distribution.png" style="width: 8.05in; height: 4.55in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_1">
+            Q-984: The mean and standard error (standard deviation) of the sampling distribution are located
+at ....
+            <li data-component="answer"  id="mc_parts_samp_dist_1_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_1_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_b"></li>
+            
+            <li data-component="answer" data-correct id="mc_parts_samp_dist_1_opt_c">(C) C</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_1_opt_d">(D) D</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_2">
+            Q-985: The sampling distribution is illustrated by ...
+            <li data-component="answer"  id="mc_parts_samp_dist_2_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_a"></li>
+            
+            <li data-component="answer" data-correct id="mc_parts_samp_dist_2_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_2_opt_c">(C) C</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_2_opt_d">(D) D</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_3">
+            Q-986: A sample statistic (in this case a sample mean) is illustrated by ...
+            <li data-component="answer" data-correct id="mc_parts_samp_dist_3_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_3_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_3_opt_c">(C) C</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_3_opt_d">(D) D</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_4">
+            Q-987: A population parameter (in this case a population mean) is located at ...
+            <li data-component="answer"  id="mc_parts_samp_dist_4_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_4_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_parts_samp_dist_4_opt_c">(C) C</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_c"></li>
+            
+            <li data-component="answer" data-correct id="mc_parts_samp_dist_4_opt_d">(D) D</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_d"></li>
+            
+
+            </ul>
+            </div>
+</div>
+<div class="section" id="id1">
+<h2>Introduction to Confidence Intervals<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Recall that statistical inference is the process of using sample statistics to
+make guesses/inferences about a population parameter.  One of the primary
+examples of this type of inference is <em>estimating the value of a parameter</em>.</p>
+<p>In this section, we discuss the two types of estimates we can make (point and
+interval estimates), explore the proportion of sample means in a sampling
+distribution that fall within 2 standard errors of the mean, leverage this
+proportion to develop a good margin of error for a sample mean, put this all
+together to construct a confidence interval for the mean, and investigate what
+a statistician means when claiming to be &#8220;95% confident.&#8221;</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <em>other</em> standard type of statistical inference involves testing a
+hypothesis about a parameter, a topic that we will devote more time on later
+in the course.</p>
+</div>
+<div class="section" id="point-estimates-and-interval-estimates-for-parameters">
+<h3>Point Estimates and Interval Estimates for Parameters<a class="headerlink" href="#point-estimates-and-interval-estimates-for-parameters" title="Permalink to this headline">¶</a></h3>
+<p>When estimating the value of a parameter, we can chose between one of two types
+of estimates.</p>
+<dl class="glossary docutils">
+<dt id="term-point-estimate">Point Estimate</dt>
+<dd>A <strong>point estimate</strong> is a single values estimate of the parameter (i.e.
+one number).  Examples of point estimates are sample statistics like the
+sample mean and sample standard deviation that are used as point
+estimates for the population mean and population standard deviation,
+respectively.</dd>
+<dt id="term-interval-estimate">Interval Estimate</dt>
+<dd>An <strong>interval estimate</strong> consists of a range of values that we believe
+are likely to contain the actual parameter.  Interval estimates usually
+come with a measure of how confident we are in the estimate (e.g. 95%
+confident).</dd>
+</dl>
+<p>When possible, it is best to use an interval estimate, because</p>
+<ol class="arabic simple">
+<li>We get a measurement of accuracy, as in how often the interval will
+successfully contain the parameter.  This is called the <em>confidence level</em>
+of the interval. An interval that comes with a confidence level is called a
+<em>confidence interval</em>.</li>
+<li>We get a sense of the precision of the estimate, which can be seen in the
+width of the interval.  Specifically, more precise estimates have narrower
+confidence intervals.</li>
+</ol>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_1">
+            Q-988: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
+            <li data-component="answer" data-correct id="mc_type_estimate_1_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_type_estimate_1_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_b"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_2">
+            Q-989: We are estimate that the population mean height of all Winona State students is between 65 and 69 inches.
+            <li data-component="answer"  id="mc_type_estimate_2_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_a"></li>
+            
+            <li data-component="answer" data-correct id="mc_type_estimate_2_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_b"></li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="approximating-the-standard-error-of-a-statistic">
+<h3>Approximating the Standard Error of a Statistic<a class="headerlink" href="#approximating-the-standard-error-of-a-statistic" title="Permalink to this headline">¶</a></h3>
+<p>When constructing a confidence interval for the population mean, we will
+construct the interval by creating a buffer around the sample mean.  To create
+this buffer, we add and subtract the <em>margin of error</em> to/from the sample mean.
+The right width of buffer is dependent on how
+spread out the sample means tend to be, i.e. the spread of the sampling
+distribution.  The specific measure of spread that we use is the estimated
+standard deviation of the sample means, which is referred to as the
+<em>standard error of the mean</em>.</p>
+<dl class="glossary docutils">
+<dt id="term-margin-of-error">Margin of Error</dt>
+<dd>The <strong>margin of error</strong> is the buffer that is added to and subtracted
+from the sample mean to construct an interval with a good chance of
+containing the population mean.</dd>
+<dt id="term-standard-error-of-the-mean">Standard Error of the Mean</dt>
+<dd>Our estimate of the standard deviation of all sample means, taken from
+random samples of the same size, is called <strong>the standard error of the
+mean</strong> and demoted with SE.</dd>
+</dl>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_definition_SE">
+            Q-990: The standard error of the mean is ...
+            <li data-component="answer"  id="mc_definition_SE_opt_a">(A) the amount of buffer that is added to and subtracted from the sample mean.</li><li data-component="feedback" id="mc_definition_SE_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_definition_SE_opt_b">(B) a common mistake made by students in a statistics class when calculating the mean.</li><li data-component="feedback" id="mc_definition_SE_opt_b"></li>
+            
+            <li data-component="answer" data-correct id="mc_definition_SE_opt_c">(C) the estimated standard deviation of the distribution of sample means.</li><li data-component="feedback" id="mc_definition_SE_opt_c"></li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">
+<h3>Plus or Minus Two Standard Error and the Middle 95% of Statistics<a class="headerlink" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics" title="Permalink to this headline">¶</a></h3>
+<p>For simplicity, we will focus on constructing a 95% confidence interval.  It
+turns out that when the distribution of a statistic is symmetric and
+bell-shaped, going out 2 SE from the population mean will cover about 95% of the
+sample means.</p>
+<p>To illustrate this fact, we have simulated the distribution of the sample mean
+using the <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey Website</a>,
+which is depicted in the figure shown below.  The middle 95% of the sample means
+are shown with block dots, and we have colored the largest and smallest 2.5% of
+the sample means red.  Furthermore, we can use this distribution to estimate the
+SE of the mean, which can be found in the top right of the graph. Notice the
+adding and subtracting 2 SE to the population mean leads to upper and lower
+bounds that are very close to the cut offs for the middle 95% of the
+distribution.</p>
+<p><a class="reference internal" href="../_images/middle95percent.png"><img alt="image5" src="../_images/middle95percent.png" style="width: 8.05in; height: 4.55in;" /></a></p>
+<p>In the above figure we see that the limits generated by adding and subtracting 2
+SEs from the population mean (5.79 and 8.93) are very close to the cut-offs of
+the middle 95% of the distribution (5.83 and 8.93).</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">The above result will only work for distributions that are symmetric and
+bell shaped.  We will need a different approach for skewed distributions.</p>
+</div>
+<p>Due to the fact that about 95% of the sample means are within 2 standard errors
+of the population mean, it makes sense to use this distance as the margin of
+error for a 95% confidence interval.</p>
+<div class="admonition-the-margin-of-error-for-a-95-confidence-interval-for-the-mean admonition">
+<p class="first admonition-title">The Margin of Error for a 95% Confidence Interval for the Mean</p>
+<p>The <strong>margin of error</strong> for a 95% confidence interval is given by</p>
+<div class="math">
+\[MoE = 2*SE\]</div>
+<p>This margin of error works because</p>
+<ol class="last arabic simple">
+<li>&#8220;A sample mean is in the middle 95% of the sample means&#8221; implies that the
+population mean will be within 2 SE of the sample mean.</li>
+<li>Only the sample means in the lowest and highest 2.5% of the distribution
+will fail to capture the population mean in an interval using this
+margin of error.</li>
+</ol>
+</div>
+<p>In other words, if the sample mean is <em>close enough</em> to the population mean, the
+population mean is <em>close enough</em> to the sample mean.</p>
+<div class="admonition-the-main-point admonition">
+<p class="first admonition-title">The Main Point</p>
+<p class="last">If the sample mean is <em>close enough</em> to the population mean, the population
+mean is <em>close enough</em> to the sample mean.  Using a margin of error of 2
+standard errors means that about 95% of sample means are <em>close enough</em>.</p>
+</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_margin_95_percent">
+            <dl class="docutils">
+<dt>Q-991:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
+<dd>population mean will contain X% of the sample means.  Identify the value of
+X.</dd>
+</dl>
+
+            <li data-component="answer"  id="mc_margin_95_percent_opt_a">(A) 100%</li><li data-component="feedback" id="mc_margin_95_percent_opt_a">You are too *confident* (that is a statistics joke)</li>
+            
+            <li data-component="answer" data-correct id="mc_margin_95_percent_opt_b">(B) 95%</li><li data-component="feedback" id="mc_margin_95_percent_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_margin_95_percent_opt_c">(C) We can't determine X, as the samples were randomly selected.</li><li data-component="feedback" id="mc_margin_95_percent_opt_c">While random samples are uncertain in the short term, they are predicitable in the long run.</li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="being-95-confident">
+<h3>Being (95%) Confident<a class="headerlink" href="#being-95-confident" title="Permalink to this headline">¶</a></h3>
+<p>Let&#8217;s make sure it is clear what it means to be 95% confident by considering the
+following figure, again created using <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey Website</a>.  Each of the dots is a sample mean and each of the
+line segments extends out 2 standard errors.  The population mean is
+located at the solid vertical line, recall that our goal in using constructing
+such an interval is to capture the population mean.</p>
+<p><a class="reference internal" href="../_images/many_intervals.png"><img alt="image6" src="../_images/many_intervals.png" style="width: 3.05in; height: 4.55in;" /></a></p>
+<p>The intervals that are green successfully captured
+the population mean, and the intervals that failed to capture the population
+mean are colored red.  Notice that about 95% of the intervals successfully
+capture the population mean.</p>
+<div class="admonition-being-95-confident admonition">
+<p class="first admonition-title">Being &#8220;95% confident&#8221;</p>
+<p class="last">When a statistician says that she is &#8220;95% confident&#8221;, she means that she is
+using a procedure, that when used repeatedly on many random samples, will
+work 95% of the time.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">We purposely avoid the phrase &#8220;95% probability&#8221;.  This is because each
+specific interval is either works 100% of the time (captured the mean) or
+fails 100% of the time (fails to capture the mean).  Using &#8220;95% probability&#8221;
+in place of &#8220;95% confidence&#8221; makes it sound like this specific interval
+only works some of the time, when in fact it either always works or never
+works.</p>
+</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_meaning_of_confidence">
+            Q-992: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
+            <li data-component="answer"  id="mc_meaning_of_confidence_opt_a">(A) We are really pretty sure of the result.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_a">This answer is too vague, try being more specific.</li>
+            
+            <li data-component="answer"  id="mc_meaning_of_confidence_opt_b">(B) The interval we constructed from a specific sample will work 95% of the time.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_b">Unfortunately, any single interval either works 100% of the time or 0% of the time.</li>
+            
+            <li data-component="answer" data-correct id="mc_meaning_of_confidence_opt_c">(C) We are using a procedure that works 95% of the time, when applied to many, many samples.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_c">Statisticians define success "in the long run."</li>
+            
+
+            </ul>
+            </div>
+</div>
+<div class="section" id="bootstrap-confidence-intervals">
+<h2>Bootstrap Confidence Intervals<a class="headerlink" href="#bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="confidence-intervals-in-jmp">
+<h2>Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Summarizing Data' data-toggle="tooltip">
+    <a href="../IntroToData/SummarizingData/SummarizingData.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../IntroToData/SummarizingData/SummarizingData.html" ></a>
+  
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

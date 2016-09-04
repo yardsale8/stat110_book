@@ -10,7 +10,6 @@
     - Dotplot/Histogram Worksheet TW Group
     - P-value Worksheet WTh 
     - Measures of Spread Activity ThF Group
-    - Evaluating Studies ThF 
     - Quiz 1 ThF
 
 # Today

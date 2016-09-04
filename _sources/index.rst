@@ -30,9 +30,10 @@ SECTION 2: Table of Contents
 
    IntroToData/ComponentsOfData.rst
    IntroToData/SummarizingData/SummarizingData.rst
-   chp1/chp1.rst
-   chp1/lab1.rst
-   chp1/lab2.rst
+   IntroToCI/IntroToCI.rst
+..   chp1/chp1.rst
+..   chp1/lab1.rst
+..   chp1/lab2.rst
 ..    chp2_1/chp2_1.rst
 ..    chp2_2/chp2_2.rst
 ..    chp3/chp3.rst
