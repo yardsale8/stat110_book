@@ -4,7 +4,7 @@
 Introduction to Confidence Intervals
 ====================================
 
-In this chapter we will introduce the some important ideas from statistics.  We
+In this chapter we will introduce some important ideas from statistics.  We
 will be focusing on quantitative data and in particular *estimation* of a 
 population parameter.
 
@@ -16,9 +16,9 @@ Overview of Statistical Inference
     <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_avjiobd9&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_gftztrz5" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
 When asking questions about some population of individuals, the ideal situation
-is collecting information on all of the individual of interest.  This is referred
+is collecting information on all of the individuals of interest.  This is referred
 to as *taking a census* of the population.  Most of the time, it is not feasible
-to collect information on the entire population.  In this case we collect data
+to collect information on the entire population.  In this case, we collect data
 on a sample of the population and use this information to make educated guesses
 about the population.  This is referred to as **statistical inference**.  More
 specifically, in statistical inference, we use *sample statistics* to make
@@ -49,15 +49,15 @@ describing a population) and statistics (numbers describing a sample).
 
 .. admonition:: Distinction between Parameters and Statistics
 
-    1. Parameters are thought of a the exact values that we would like to make guesses about.  They are generally too expensive to find exactly and are almost always unknown.
+    1. Parameters are thought of as the exact values that we would like to make guesses about.  They are generally too expensive to find exactly and are almost always unknown.
     2. Statistics are thought of as a guess of the value of a parameter.  They are not particularly interesting in their own right. 
 
 The difference between parameters and statistics is so important that we use
-difference symbols to represent each.  The first summary method that we will 
+different symbols to represent each.  The first summary method that we will 
 focus on is the mean or average of quantitative data.  The symbol that we use
 for a population mean (parameter) is :math:`\mu`, while the symbol we use for a
 sample mean (statistic) is :math:`\bar{x}`.  The following table gives the
-symbols for various parameters and statistics we will work with in this
+symbols for various parameters and statistics we will work within this
 course.
 
 |image1|
@@ -76,23 +76,24 @@ dealing with sampling variability.
 
 .. glossary::
     Sampling Variability
-        Sampling variability refers to the natural variation in statistics taken
+        **Sampling variability** refers to the natural variation in statistics taken
         from different samples. It is very important to quantify this variability.
     Standard Error
         The **standard error** is the estimated standard deviation of the
         sample statistics.  It is an important measure of sampling variability.
 
-To get an idea of the typical location of (center) and variability between
-(spread) sample statistics, we study the *sampling distribution*.
+To get an idea of the typical location of and variability between
+ sample statistics (i.e. center and spread), we study the *sampling distribution*.
 
 .. glossary::
     Sampling Distribution
-        The distribution of a statistic when repeatedly sampled from the same
-        population with the same sample size.
+        The **sampling distribution** is the distribution of a statistic
+        constructed by repeatedly sampling from the same population using 
+        the same sample size.
 
 The next figure shows a simulated sampling distribution for the sample mean.
 Each of the 40 dots represents a sample mean from a sample of 10 individuals 
-and together these statistics for the sampling distribution.  We are 
+and together these statistics form the sampling distribution.  We are 
 interested in the properties of this distribution, in particular the 
 *shape*, *center*, and *spread* of the statistics.  To get a better idea of
 these qualities of the sampling distribution, we would need to sample many more
@@ -170,7 +171,7 @@ Introduction to Confidence Intervals
 
 .. raw:: html
 
-   <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_uavvslod&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7t0i2d8n" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe><Paste> 
+   <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_uavvslod&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7t0i2d8n" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
 Recall that statistical inference is the process of using sample statistics to
 make guesses/inferences about a population parameter.  One of the primary
