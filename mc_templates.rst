@@ -24,3 +24,9 @@
     :feedback_b:
     :feedback_c:
     :feedback_d:
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    ...embed code goes here
+    </div>
