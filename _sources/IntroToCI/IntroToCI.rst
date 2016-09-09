@@ -368,11 +368,13 @@ that about 95% of the intervals successfully capture the population mean.
 .. caution::
 
     We purposely avoid the phrase "95% probability".  This is because each
-    specific interval is either works 100% of the time (captured the mean) or
-    fails 100% of the time (fails to capture the mean).  Using "95% probability"
-    in place of "95% confidence" makes it sound like this specific interval 
-    only works some of the time, when in fact it either always works or never 
-    works.
+    specific interval either works 100% of the time (captured the mean) or fails
+    100% of the time (fails to capture the mean).  For example, suppose we take
+    a sample and construct an interval, which turns out to be from 2.4 to 7.6.
+    The population mean is either between these numbers or it is not.  Using
+    "95% probability" in place of "95% confidence" makes it sound like this
+    specific interval only works some of the time, when in fact it either always
+    works or never works.
 
 .. mchoice:: mc_meaning_of_confidence
     :answer_a: We are really pretty sure of the result.
@@ -398,23 +400,25 @@ steps:
 
 Unfortunately, there is a big problem with this approach.
 
-.. admonition:: Problem with the Current Approach
+.. caution:: 
+
+    **Problem with the Current Approach**
 
     We need to know the whole population to produce the standard error.  This
-    approach is very impractical (impossible), as taking a census is either very
-    expensive and many times impossible.
+    approach is very impractical, as taking a census is either very expensive
+    and many times impossible.
 
 Our solution will be to use a bootstrap sample, which is acquired by sampling the
 sample.
 
-Bootstraps Sample
+Bootstrap Samples
 +++++++++++++++++
 
-Since we can't be expected to have the entire population at our disposal, we will
-use the best tool at our disposal: the sample.  Instead of taking many samples
-from the population to simulate the sampling distribution, we will take many
-*bootstrap samples* from the sample, allowing use to simulate the *bootstrap
-distribution*.
+Since we can't be expected to have the entire population at our disposal, we
+will use the best tool at our disposal: the sample.  Instead of taking many
+samples from the population to simulate the sampling distribution, we will take
+many *bootstrap samples* from the sample, allowing us to simulate the
+*bootstrap distribution*.
 
 .. glossary::
     Bootstrap Samples
@@ -424,16 +428,20 @@ distribution*.
         2. The same sample size as the original sample.
     Bootstrap Statistic
         A **bootstrap statistic**  is a statistic taken from a bootstrap
-        sample.
+        sample.  
     Bootstrap Distribution
         The **bootstrap distribution** is the distribution of many, many
         bootstrap statistics.
+    Bootstrap Standard Error
+        The **bootstrap standard error** is the standard deviation of bootstrap
+        distribution, which can be used as an estimate of the actual standard
+        error of a statistic.
 
 Using sampling with replacement allows for some variability from one bootstrap
-sample to the next.  This is because some values will be selected more than
-once, leaving other values out of the sample.  It turns out that the variability
-between bootstrap statistics is very similar to the variability between the
-actual statistics in the sampling distribution.
+sample to the next, as some values will be selected more than once and other
+values will be left out of the sample.  It turns out that the variability between
+bootstrap statistics is very similar to the variability between the actual
+statistics in the sampling distribution.
 
 Another way to understand bootstrap samples is to imagine that we are sampling
 from a population where we have *huge* stacks of copies of each item in the
@@ -442,8 +450,10 @@ we have available.
 
 |image7|
 
-In the next image, we illustrate this process using the `StatKey's Confidence Intervals for a Mean page
+In the next image, we illustrate the process of constructing the bootstrap
+distribution using the `StatKey's Confidence Intervals for a Mean page
 <http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html>`_.
+The bootstrap distribution is constructed by repeating steps 1-3 many times.
 
 |image8|
 
@@ -454,6 +464,42 @@ centered at the population mean and the bootstrap distribution is centered at
 the original sample mean.
 
 |image9|
+
+.. mchoice:: mc_bootstrap_1
+    :answer_a: a sample of the sample.
+    :answer_b: a statistic from a sample of a sample.
+    :answer_c: a collection of statistics from a sample of a sample.
+    :answer_d: the standard deviation of statistics from a sample of a sample.
+    :correct: a
+    
+    The bootstrap sample is ...
+
+.. mchoice:: mc_bootstrap_2
+    :answer_a: a sample of the sample.
+    :answer_b: a statistic from a sample of a sample.
+    :answer_c: a collection of statistics from a sample of a sample.
+    :answer_d: the standard deviation of statistics from a sample of a sample.
+    :correct: b
+    
+    The bootstrap statistic is ...
+
+.. mchoice:: mc_bootstrap_3
+    :answer_a: a sample of the sample.
+    :answer_b: a statistic from a sample of a sample.
+    :answer_c: a collection of statistics from a sample of a sample.
+    :answer_d: the standard deviation of statistics from a sample of a sample.
+    :correct: c
+    
+    The bootstrap distribution is ...
+
+.. mchoice:: mc_bootstrap_4
+    :answer_a: a sample of the sample.
+    :answer_b: a statistic from a sample of a sample.
+    :answer_c: a collection of statistics from a sample of a sample.
+    :answer_d: the standard deviation of statistics from a sample of a sample.
+    :correct: d
+    
+    The bootstrap standard error is ...
 
 Constructing Bootstrap Confidence Intervals
 +++++++++++++++++++++++++++++++++++++++++++
@@ -478,8 +524,25 @@ would need to figure out how many standard errors to use for the margin of
 error.  There is a theoretical solution to this problem, which we will highlight
 in the next section.
 
-Confidence Intervals in JMP
----------------------------
+.. TODO:: Add an example from the statkey website.
+
+Confidence Intervals Based on the Bell Curve
+--------------------------------------------
+
+The Central Limit Theorem for the Mean
+++++++++++++++++++++++++++++++++++++++
+
+Confidence Intervals for the Mean for Normal Data
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Confidence Intervals for the Mean in JMP
+++++++++++++++++++++++++++++++++++++++++
+
+Confidence Intervals for the Standard Deviation for Normal Data
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Confidence Intervals for the Standard Deviation in JMP
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. |image0| image:: img/inference.png
    :width: 5.51873in

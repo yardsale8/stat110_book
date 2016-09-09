@@ -275,11 +275,18 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#bootstrap-confidence-intervals">Bootstrap Confidence Intervals</a><ul>
-<li><a class="reference internal" href="#bootstraps-sample">Bootstraps Sample</a></li>
+<li><a class="reference internal" href="#bootstrap-samples">Bootstrap Samples</a></li>
 <li><a class="reference internal" href="#constructing-bootstrap-confidence-intervals">Constructing Bootstrap Confidence Intervals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-intervals-in-jmp">Confidence Intervals in JMP</a></li>
+<li><a class="reference internal" href="#confidence-intervals-based-on-the-bell-curve">Confidence Intervals Based on the Bell Curve</a><ul>
+<li><a class="reference internal" href="#the-central-limit-theorem-for-the-mean">The Central Limit Theorem for the Mean</a></li>
+<li><a class="reference internal" href="#confidence-intervals-for-the-mean-for-normal-data">Confidence Intervals for the Mean for Normal Data</a></li>
+<li><a class="reference internal" href="#confidence-intervals-for-the-mean-in-jmp">Confidence Intervals for the Mean in JMP</a></li>
+<li><a class="reference internal" href="#confidence-intervals-for-the-standard-deviation-for-normal-data">Confidence Intervals for the Standard Deviation for Normal Data</a></li>
+<li><a class="reference internal" href="#confidence-intervals-for-the-standard-deviation-in-jmp">Confidence Intervals for the Standard Deviation in JMP</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -413,7 +420,7 @@ statistics.</p>
 <p><a class="reference internal" href="../_images/a_sampling_distribution.png"><img alt="image2" src="../_images/a_sampling_distribution.png" style="width: 4.05in; height: 1.75in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_samp_dist_definition">
-            Q-1324: The sampling distribution is ...
+            Q-1378: The sampling distribution is ...
             <li data-component="answer"  id="mc_samp_dist_definition_opt_a">(A) The distribution of the sample.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_a">This answer is not specific enough, what exactly do we collect from each sample?</li>
             
             <li data-component="answer"  id="mc_samp_dist_definition_opt_b">(B) The distribution of population parameter.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_b">The parameter is one fixed value and doesn't vary.  Talking about the distribution of a parameter is therefore pointless.</li>
@@ -435,7 +442,7 @@ of the following questions.</p>
 <p><a class="reference internal" href="../_images/test_parts_of_sampling_distribution.png"><img alt="image4" src="../_images/test_parts_of_sampling_distribution.png" style="width: 8.05in; height: 4.55in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_1">
-            Q-1325: The mean and standard error (standard deviation) of the sampling distribution are located
+            Q-1379: The mean and standard error (standard deviation) of the sampling distribution are located
 at ....
             <li data-component="answer"  id="mc_parts_samp_dist_1_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_a"></li>
             
@@ -449,7 +456,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_2">
-            Q-1326: The sampling distribution is illustrated by ...
+            Q-1380: The sampling distribution is illustrated by ...
             <li data-component="answer"  id="mc_parts_samp_dist_2_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="mc_parts_samp_dist_2_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_b"></li>
@@ -462,7 +469,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_3">
-            Q-1327: A sample statistic (in this case a sample mean) is illustrated by ...
+            Q-1381: A sample statistic (in this case a sample mean) is illustrated by ...
             <li data-component="answer" data-correct id="mc_parts_samp_dist_3_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_3_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_b"></li>
@@ -475,7 +482,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_4">
-            Q-1328: A population parameter (in this case a population mean) is located at ...
+            Q-1382: A population parameter (in this case a population mean) is located at ...
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_b"></li>
@@ -536,7 +543,7 @@ confidence intervals.</li>
 </ol>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_1">
-            Q-1329: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
+            Q-1383: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
             <li data-component="answer" data-correct id="mc_type_estimate_1_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_a"></li>
             
             <li data-component="answer"  id="mc_type_estimate_1_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_b"></li>
@@ -545,7 +552,7 @@ confidence intervals.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_2">
-            Q-1330: We estimate that the population mean height of all Winona State students is between 65 and 69 inches.
+            Q-1384: We estimate that the population mean height of all Winona State students is between 65 and 69 inches.
             <li data-component="answer"  id="mc_type_estimate_2_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="mc_type_estimate_2_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_b"></li>
@@ -575,7 +582,7 @@ mean</strong> and demoted with SE.</dd>
 </dl>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_definition_SE">
-            Q-1331: The standard error of the mean is ...
+            Q-1385: The standard error of the mean is ...
             <li data-component="answer"  id="mc_definition_SE_opt_a">(A) the amount of buffer that is added to and subtracted from the sample mean.</li><li data-component="feedback" id="mc_definition_SE_opt_a"></li>
             
             <li data-component="answer"  id="mc_definition_SE_opt_b">(B) a common mistake made by students in a statistics class when calculating the mean.</li><li data-component="feedback" id="mc_definition_SE_opt_b"></li>
@@ -637,7 +644,7 @@ standard errors means that about 95% of sample means are <em>close enough</em>.<
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_margin_95_percent">
             <dl class="docutils">
-<dt>Q-1332:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
+<dt>Q-1386:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
 <dd>population mean will contain X% of the sample means.  Identify the value of
 X.</dd>
 </dl>
@@ -672,15 +679,17 @@ work 95% of the time.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">We purposely avoid the phrase &#8220;95% probability&#8221;.  This is because each
-specific interval is either works 100% of the time (captured the mean) or
-fails 100% of the time (fails to capture the mean).  Using &#8220;95% probability&#8221;
-in place of &#8220;95% confidence&#8221; makes it sound like this specific interval
-only works some of the time, when in fact it either always works or never
-works.</p>
+specific interval either works 100% of the time (captured the mean) or fails
+100% of the time (fails to capture the mean).  For example, suppose we take
+a sample and construct an interval, which turns out to be from 2.4 to 7.6.
+The population mean is either between these numbers or it is not.  Using
+&#8220;95% probability&#8221; in place of &#8220;95% confidence&#8221; makes it sound like this
+specific interval only works some of the time, when in fact it either always
+works or never works.</p>
 </div>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_meaning_of_confidence">
-            Q-1333: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
+            Q-1387: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
             <li data-component="answer"  id="mc_meaning_of_confidence_opt_a">(A) We are really pretty sure of the result.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_a">This answer is too vague, try being more specific.</li>
             
             <li data-component="answer"  id="mc_meaning_of_confidence_opt_b">(B) The interval we constructed from a specific sample will work 95% of the time.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_b">Unfortunately, any single interval either works 100% of the time or 0% of the time.</li>
@@ -703,21 +712,22 @@ in the simulated distribution.</li>
 <li>Add and subtract 2 times this value to get a 95% confidence interval.</li>
 </ol>
 <p>Unfortunately, there is a big problem with this approach.</p>
-<div class="admonition-problem-with-the-current-approach admonition">
-<p class="first admonition-title">Problem with the Current Approach</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p><strong>Problem with the Current Approach</strong></p>
 <p class="last">We need to know the whole population to produce the standard error.  This
-approach is very impractical (impossible), as taking a census is either very
-expensive and many times impossible.</p>
+approach is very impractical, as taking a census is either very expensive
+and many times impossible.</p>
 </div>
 <p>Our solution will be to use a bootstrap sample, which is acquired by sampling the
 sample.</p>
-<div class="section" id="bootstraps-sample">
-<h3>Bootstraps Sample<a class="headerlink" href="#bootstraps-sample" title="Permalink to this headline">¶</a></h3>
-<p>Since we can&#8217;t be expected to have the entire population at our disposal, we will
-use the best tool at our disposal: the sample.  Instead of taking many samples
-from the population to simulate the sampling distribution, we will take many
-<em>bootstrap samples</em> from the sample, allowing use to simulate the <em>bootstrap
-distribution</em>.</p>
+<div class="section" id="bootstrap-samples">
+<h3>Bootstrap Samples<a class="headerlink" href="#bootstrap-samples" title="Permalink to this headline">¶</a></h3>
+<p>Since we can&#8217;t be expected to have the entire population at our disposal, we
+will use the best tool at our disposal: the sample.  Instead of taking many
+samples from the population to simulate the sampling distribution, we will take
+many <em>bootstrap samples</em> from the sample, allowing us to simulate the
+<em>bootstrap distribution</em>.</p>
 <dl class="glossary docutils">
 <dt id="term-bootstrap-samples">Bootstrap Samples</dt>
 <dd><p class="first">A <strong>bootstrap sample</strong> is a sample of the sample that uses</p>
@@ -732,18 +742,24 @@ sample.</dd>
 <dt id="term-bootstrap-distribution">Bootstrap Distribution</dt>
 <dd>The <strong>bootstrap distribution</strong> is the distribution of many, many
 bootstrap statistics.</dd>
+<dt id="term-bootstrap-standard-error">Bootstrap Standard Error</dt>
+<dd>The <strong>bootstrap standard error</strong> is the standard deviation of bootstrap
+distribution which can be used as an estimate of the actual standard
+error of a statistic.</dd>
 </dl>
 <p>Using sampling with replacement allows for some variability from one bootstrap
-sample to the next.  This is because some values will be selected more than
-once, leaving other values out of the sample.  It turns out that the variability
-between bootstrap statistics is very similar to the variability between the
-actual statistics in the sampling distribution.</p>
+sample to the next, as some values will be selected more than once and other
+values will be left out of the sample.  It turns out that the variability between
+bootstrap statistics is very similar to the variability between the actual
+statistics in the sampling distribution.</p>
 <p>Another way to understand bootstrap samples is to imagine that we are sampling
 from a population where we have <em>huge</em> stacks of copies of each item in the
 sample.  In effect we are using the best approximation for the population that
 we have available.</p>
 <p><a class="reference internal" href="../_images/pretend_population.png"><img alt="image7" src="../_images/pretend_population.png" style="width: 6.92in; height: 2.90in;" /></a></p>
-<p>In the next image, we illustrate this process using the <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html">StatKey&#8217;s Confidence Intervals for a Mean page</a>.</p>
+<p>In the next image, we illustrate the process of constructing the bootstrap
+distribution using the <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html">StatKey&#8217;s Confidence Intervals for a Mean page</a>.
+The bootstrap distribution is constructed by repeating steps 1-3 many times.</p>
 <p><a class="reference internal" href="../_images/bootstrap_distribution.png"><img alt="image8" src="../_images/bootstrap_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
 <p>Finally, we will compare and contrast the sampling distribution and the
 bootstrap distribution.  The two distributions tend to have the same shape and
@@ -751,7 +767,59 @@ spread, but different centers.  In particular, the sampling distribution is
 centered at the population mean and the bootstrap distribution is centered at
 the original sample mean.</p>
 <p><a class="reference internal" href="../_images/bootstrap_vs_sampling_distribution.png"><img alt="image9" src="../_images/bootstrap_vs_sampling_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
-</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_1">
+            Q-1388: The bootstrap sample is ...
+            <li data-component="answer" data-correct id="mc_bootstrap_1_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_2">
+            Q-1389: The bootstrap statistic is ...
+            <li data-component="answer"  id="mc_bootstrap_2_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_a"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_2_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_2_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_2_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_3">
+            Q-1390: The bootstrap distribution is ...
+            <li data-component="answer"  id="mc_bootstrap_3_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_3_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_b"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_3_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_3_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_4">
+            Q-1391: The bootstrap standard error is ...
+            <li data-component="answer"  id="mc_bootstrap_4_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_4_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_4_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_c"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_4_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_d"></li>
+            
+
+            </ul>
+            </div>
 <div class="section" id="constructing-bootstrap-confidence-intervals">
 <h3>Constructing Bootstrap Confidence Intervals<a class="headerlink" href="#constructing-bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h3>
 <p>Now we have two choices for making a confidence interval using the bootstrap
@@ -774,8 +842,23 @@ error.  There is a theoretical solution to this problem, which we will highlight
 in the next section.</p>
 </div>
 </div>
-<div class="section" id="confidence-intervals-in-jmp">
-<h2>Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="confidence-intervals-based-on-the-bell-curve">
+<h2>Confidence Intervals Based on the Bell Curve<a class="headerlink" href="#confidence-intervals-based-on-the-bell-curve" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-central-limit-theorem-for-the-mean">
+<h3>The Central Limit Theorem for the Mean<a class="headerlink" href="#the-central-limit-theorem-for-the-mean" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="confidence-intervals-for-the-mean-for-normal-data">
+<h3>Confidence Intervals for the Mean for Normal Data<a class="headerlink" href="#confidence-intervals-for-the-mean-for-normal-data" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="confidence-intervals-for-the-mean-in-jmp">
+<h3>Confidence Intervals for the Mean in JMP<a class="headerlink" href="#confidence-intervals-for-the-mean-in-jmp" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="confidence-intervals-for-the-standard-deviation-for-normal-data">
+<h3>Confidence Intervals for the Standard Deviation for Normal Data<a class="headerlink" href="#confidence-intervals-for-the-standard-deviation-for-normal-data" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="confidence-intervals-for-the-standard-deviation-in-jmp">
+<h3>Confidence Intervals for the Standard Deviation in JMP<a class="headerlink" href="#confidence-intervals-for-the-standard-deviation-in-jmp" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
