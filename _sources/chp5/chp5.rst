@@ -9,7 +9,10 @@ the *mean*, or average. In this chapter, we will consider inferential
 methods (hypothesis tests and confidence intervals) for the mean of a
 single numerical variable. Consider the following example.
 
-**Example 5.1:** A study conducted by researchers at Pennsylvania State
+Example 5.1: 
+-------------
+
+A study conducted by researchers at Pennsylvania State
 University investigated whether time perception, a simple indication of
 a person’s ability to concentrate, is impaired during nicotine
 withdrawal. The study results were presented in the paper “Smoking
@@ -21,25 +24,25 @@ elapsed time (in seconds) were analyzed as shown below (these results
 are artificial but are similar to the actual findings). The data can be
 found in the file **Nicotine1.JMP**.
 
-**
-**\ We can use JMP to summarize the data as follows:
+We can use JMP to summarize the data as follows:
 
 |image0|
 
-*Questions*:
+.. admonition:: Questions:
 
-1. What is the mean of the observed data? The standard deviation?
+    1. What is the mean of the observed data? The standard deviation?
 
-2. If another sample of n=20 subjects were obtained, would these new
-       subjects have a mean exactly the same as the mean from this
-       sample? Why or why not?
+    2. If another sample of n=20 subjects were obtained, would these new
+           subjects have a mean exactly the same as the mean from this
+           sample? Why or why not?
 
-3. Given your answer to the previous question, do you think it is
-       appropriate to use only this sample mean to make inferences about
-       the mean perceived elapsed time in the greater population of all
-       smokers subjected to nicotine withdrawal? Explain.
+    3. Given your answer to the previous question, do you think it is
+           appropriate to use only this sample mean to make inferences about
+           the mean perceived elapsed time in the greater population of all
+           smokers subjected to nicotine withdrawal? Explain.
 
-***THE DISTRIBUTION OF THE SAMPLE MEAN***
+THE DISTRIBUTION OF THE SAMPLE MEAN
+-----------------------------------
 
 The sample mean is a random quantity; that is, it changes from sample to
 sample. Therefore, the sample mean actually has its own distribution.
@@ -53,7 +56,8 @@ This distribution is referred to as the *distribution of the sample
 mean*. An understanding of this distribution allows us to make decisions
 about a population mean for a single numerical variable.
 
-***Exploring the Distribution of the Sample Mean***
+Exploring the Distribution of the Sample Mean
+---------------------------------------------
 
 Before we discuss the procedure for inference, let’s consider the next
 example to gain a better understanding of how the distribution of sample
@@ -61,10 +65,13 @@ means works and how we use this distribution to make a decision
 concerning our research question.
 
 **Example 5.2:** Another “simulation study”….
++++++++++++++++++++++++++++++++++++++++++++++
 
 Suppose we set up a hypothetical population of smokers suffering from
 nicotine withdrawal. This population has been purposefully created so
-that the mean perceived elapsed time is exactly 45 seconds.\ |image1|
+that the mean perceived elapsed time is exactly 45 seconds. 
+
+|image1|
 
 In this simulation study, what is our value of μ, the true population
 mean?
@@ -89,29 +96,35 @@ Click Run to randomly select our first sample of 20 subjects, and we can
 then create a plot of their perceived elapsed times. Note that the mean
 of these 20 subjects is shown on this plot.
 
-| Sample # 1:
-| |image3|
+Sample # 1:
++++++++++++
 
-*
-Questions*:
+|image3|
 
-1. What is the average (or mean) perceived elapsed time of the 20
-   subjects in this study?
 
-2. Does this necessarily mean that the average perceived elapsed time is
-   greater than 45 seconds for *all* smokers suffering from nicotine
-   withdrawal? What would you say to a researcher who tried to use only
-   this sample mean to draw this conclusion?
+.. admonition:: Questions:
 
-| Even though in reality we would carry out a study only once, we will
-  use Tinkerplots to take a sample of 20 subjects from this population
-  over and over again so that we get an idea of how much the sample mean
-  *could* change from sample to sample. Our second and third random
-  samples of 20 subjects and their sample means are shown below:
-| Sample #2:
-| |image4|
+    1. What is the average (or mean) perceived elapsed time of the 20
+       subjects in this study?
+
+    2. Does this necessarily mean that the average perceived elapsed time is
+       greater than 45 seconds for *all* smokers suffering from nicotine
+       withdrawal? What would you say to a researcher who tried to use only
+       this sample mean to draw this conclusion?
+
+Even though in reality we would carry out a study only once, we will
+use Tinkerplots to take a sample of 20 subjects from this population
+over and over again so that we get an idea of how much the sample mean
+*could* change from sample to sample. Our second and third random
+samples of 20 subjects and their sample means are shown below:
+
+Sample #2:
+++++++++++
+
+|image4|
 
 Sample #3:
+++++++++++
 
 |image5|
 
@@ -136,17 +149,17 @@ perceived elapsed time of 45 seconds. So, this distribution gives us a
 good idea of what sample means from 20 subjects are likely (or unlikely)
 to occur by chance if the true mean is 45 seconds.
 
-| Next, note that the researchers wanted to show that the mean perceived
-  elapsed time for smokers suffering from nicotine withdrawal was in
-  fact *greater* than 45 seconds. The null and alternative hypotheses to
-  address this research question are given as follows.
-| H\ :sub:`o`: The mean perceived elapsed time for smokers suffering
-  from nicotine withdrawal is equal
-| to 45 seconds.
+Next, note that the researchers wanted to show that the mean perceived
+elapsed time for smokers suffering from nicotine withdrawal was in
+fact *greater* than 45 seconds. The null and alternative hypotheses to
+address this research question are given as follows.
+H\ :sub:`o`: The mean perceived elapsed time for smokers suffering
+from nicotine withdrawal is equal
+to 45 seconds.
 
-| H\ :sub:`a`: The mean perceived elapsed time for smokers suffering
-  from nicotine withdrawal is greater
-| than 45 seconds.
+H\ :sub:`a`: The mean perceived elapsed time for smokers suffering
+from nicotine withdrawal is greater
+than 45 seconds.
 
 Note that the distribution of sample means was created assuming the null
 hypothesis is true. To test this hypothesis, we compare our actual
@@ -168,18 +181,17 @@ time perception is not impaired (i.e., the true mean is actually 45
 seconds) and the sample mean was greater than 45 seconds simply because
 of random chance.
 
-*Questions*:
+.. admonition:: Questions:
 
-1. Was a sample mean of 55.05 seconds likely to occur by chance if the
-   true population mean is actually 45 seconds? What does this imply
-   about the research question?
+    1. Was a sample mean of 55.05 seconds likely to occur by chance if the
+       true population mean is actually 45 seconds? What does this imply
+       about the research question?
 
-2. Give an approximate p-value based on this simulation study.
+    2. Give an approximate p-value based on this simulation study.
 
-***
-***
 
-***THE CENTRAL LIMIT THEOREM***
+THE CENTRAL LIMIT THEOREM
+-------------------------
 
 Note that a statistician would not necessarily carry out a simulation
 study such as this to answer a research question. Instead, one could use
@@ -222,14 +234,15 @@ The only question that remains is this: How large does n (the number of
 subjects in a study) have to be in order for us to use the short-cut
 provided by the Central Limit Theorem?
 
-*
-Question*: How large does n have to be?\ *
-*
+
+.. admonition:: Question: 
+
+    How large does n have to be?
 
 -  If the original population is normally distributed, then the sampling
-       distribution of the mean will also be normally distributed even
-       if the sample size n is very small (verify this using Tinkerplots
-       as shown in class).
+   distribution of the mean will also be normally distributed even
+   if the sample size n is very small (verify this using Tinkerplots
+   as shown in class).
 
 +-----------------------------------+--------------------------------------------+
 | Distribution of the Population:   | Distribution of Sample Means when n = 2:   |
@@ -285,31 +298,32 @@ This works because:
 In the next section, we put all of the pieces together to create what is
 known as the **t-test**.
 
-***
 THE T-TEST FOR A SINGLE POPULATION MEAN
-***
+---------------------------------------
 
-**Back to Example 5.1:** Recall that the researchers wanted to show that
+Back to Example 5.1:
+++++++++++++++++++++
+
+Recall that the researchers wanted to show that
 the mean perceived elapsed time for smokers suffering from nicotine
 withdrawal was greater than the actual 45 seconds that had elapsed. The
 data collected in the study were summarized as follows:
 
 |image18|
 
-***Step 1: Set up the null and alternative hypotheses***
+**Step 1:** Set up the null and alternative hypotheses
 
 H\ :sub:`o`:
 
 H\ :sub:`a`:
 
-***Step 2: Find the t-statistic and the p-value***
+**Step 2:** Find the t-statistic and the p-value
 
 To determine whether or not the distance between µ (the hypothesized
 population mean) and (the mean from our observed sample) is larger than
 what we would expect by random chance, we will use the following
 statistic:
 
-=
 
 Why use this statistic? Because this quantity measures the position of
 our observed sample mean on the null model, just like the Z-score
@@ -326,7 +340,8 @@ greater the sample size, the smaller the standard deviation of the
 distribution of sample means). Therefore, this distribution is indexed
 by its *degrees of freedom* (df).
 
-**For inference on a single mean, df = n - 1.**
+.. note:: 
+    **For inference on a single mean, df = n - 1.**
 
 To find the p-value associated with this test statistic, we must
 remember that this is an upper-tailed test (we are trying to find

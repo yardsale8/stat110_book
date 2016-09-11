@@ -263,12 +263,27 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Chapter 5</a><ul>
-<li><a class="reference internal" href="#id7">***</a></li>
-<li><a class="reference internal" href="#id12">***</a></li>
-<li><a class="reference internal" href="#id15">**</a></li>
-<li><a class="reference internal" href="#id20">***</a></li>
-<li><a class="reference internal" href="#id25">***</a></li>
-<li><a class="reference internal" href="#id30">***</a></li>
+<li><a class="reference internal" href="#example-5-1">Example 5.1:</a></li>
+<li><a class="reference internal" href="#the-distribution-of-the-sample-mean">THE DISTRIBUTION OF THE SAMPLE MEAN</a></li>
+<li><a class="reference internal" href="#exploring-the-distribution-of-the-sample-mean">Exploring the Distribution of the Sample Mean</a><ul>
+<li><a class="reference internal" href="#example-5-2-another-simulation-study"><strong>Example 5.2:</strong> Another “simulation study”….</a></li>
+<li><a class="reference internal" href="#sample-1">Sample # 1:</a></li>
+<li><a class="reference internal" href="#sample-2">Sample #2:</a></li>
+<li><a class="reference internal" href="#sample-3">Sample #3:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-central-limit-theorem">THE CENTRAL LIMIT THEOREM</a></li>
+<li><a class="reference internal" href="#the-t-test-for-a-single-population-mean">THE T-TEST FOR A SINGLE POPULATION MEAN</a><ul>
+<li><a class="reference internal" href="#back-to-example-5-1">Back to Example 5.1:</a><ul>
+<li><a class="reference internal" href="#id5">***</a></li>
+<li><a class="reference internal" href="#id8">**</a></li>
+<li><a class="reference internal" href="#id13">***</a></li>
+<li><a class="reference internal" href="#id18">***</a></li>
+<li><a class="reference internal" href="#id23">***</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -324,7 +339,9 @@ numerical variable, however, we typically end up testing claims about
 the <em>mean</em>, or average. In this chapter, we will consider inferential
 methods (hypothesis tests and confidence intervals) for the mean of a
 single numerical variable. Consider the following example.</p>
-<p><strong>Example 5.1:</strong> A study conducted by researchers at Pennsylvania State
+<div class="section" id="example-5-1">
+<h2>Example 5.1:<a class="headerlink" href="#example-5-1" title="Permalink to this headline">¶</a></h2>
+<p>A study conducted by researchers at Pennsylvania State
 University investigated whether time perception, a simple indication of
 a person’s ability to concentrate, is impaired during nicotine
 withdrawal. The study results were presented in the paper “Smoking
@@ -335,11 +352,11 @@ during a 45-second period. Suppose the resulting data on perceived
 elapsed time (in seconds) were analyzed as shown below (these results
 are artificial but are similar to the actual findings). The data can be
 found in the file <strong>Nicotine1.JMP</strong>.</p>
-<p>**
-<a href="#id1"><span class="problematic" id="id2">**</span></a>We can use JMP to summarize the data as follows:</p>
+<p>We can use JMP to summarize the data as follows:</p>
 <p><a class="reference internal" href="../_images/image114.png"><img alt="image0" src="../_images/image114.png" style="width: 4.73105in; height: 2.12936in;" /></a></p>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic">
 <li><p class="first">What is the mean of the observed data? The standard deviation?</p>
 </li>
 <li><dl class="first docutils">
@@ -358,7 +375,10 @@ smokers subjected to nicotine withdrawal? Explain.</p>
 </dl>
 </li>
 </ol>
-<p><strong>*THE DISTRIBUTION OF THE SAMPLE MEAN*</strong></p>
+</div>
+</div>
+<div class="section" id="the-distribution-of-the-sample-mean">
+<h2>THE DISTRIBUTION OF THE SAMPLE MEAN<a class="headerlink" href="#the-distribution-of-the-sample-mean" title="Permalink to this headline">¶</a></h2>
 <p>The sample mean is a random quantity; that is, it changes from sample to
 sample. Therefore, the sample mean actually has its own distribution.
 This distribution will tell us two things:</p>
@@ -369,15 +389,19 @@ This distribution will tell us two things:</p>
 <p>This distribution is referred to as the <em>distribution of the sample
 mean</em>. An understanding of this distribution allows us to make decisions
 about a population mean for a single numerical variable.</p>
-<p><strong>*Exploring the Distribution of the Sample Mean*</strong></p>
+</div>
+<div class="section" id="exploring-the-distribution-of-the-sample-mean">
+<h2>Exploring the Distribution of the Sample Mean<a class="headerlink" href="#exploring-the-distribution-of-the-sample-mean" title="Permalink to this headline">¶</a></h2>
 <p>Before we discuss the procedure for inference, let’s consider the next
 example to gain a better understanding of how the distribution of sample
 means works and how we use this distribution to make a decision
 concerning our research question.</p>
-<p><strong>Example 5.2:</strong> Another “simulation study”….</p>
+<div class="section" id="example-5-2-another-simulation-study">
+<h3><strong>Example 5.2:</strong> Another “simulation study”….<a class="headerlink" href="#example-5-2-another-simulation-study" title="Permalink to this headline">¶</a></h3>
 <p>Suppose we set up a hypothetical population of smokers suffering from
 nicotine withdrawal. This population has been purposefully created so
-that the mean perceived elapsed time is exactly 45 seconds.<a class="reference internal" href="../_images/image214.png"><img alt="image1" src="../_images/image214.png" style="width: 5.88000in; height: 2.21941in;" /></a></p>
+that the mean perceived elapsed time is exactly 45 seconds.</p>
+<p><a class="reference internal" href="../_images/image214.png"><img alt="image1" src="../_images/image214.png" style="width: 5.88000in; height: 2.21941in;" /></a></p>
 <p>In this simulation study, what is our value of μ, the true population
 mean?</p>
 <p>Note that in reality, the true population mean is usually an unknown
@@ -396,15 +420,13 @@ select 20 subjects from the population for our study.</p>
 <p>Click Run to randomly select our first sample of 20 subjects, and we can
 then create a plot of their perceived elapsed times. Note that the mean
 of these 20 subjects is shown on this plot.</p>
-<div class="line-block">
-<div class="line">Sample # 1:</div>
-<div class="line"><a class="reference internal" href="../_images/image413.png"><img alt="image3" src="../_images/image413.png" style="width: 5.21875in; height: 1.28125in;" /></a></div>
 </div>
-<ul class="simple">
-<li></li>
-</ul>
-<p>Questions*:</p>
-<ol class="arabic simple">
+<div class="section" id="sample-1">
+<h3>Sample # 1:<a class="headerlink" href="#sample-1" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image413.png"><img alt="image3" src="../_images/image413.png" style="width: 5.21875in; height: 1.28125in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>What is the average (or mean) perceived elapsed time of the 20
 subjects in this study?</li>
 <li>Does this necessarily mean that the average perceived elapsed time is
@@ -412,16 +434,19 @@ greater than 45 seconds for <em>all</em> smokers suffering from nicotine
 withdrawal? What would you say to a researcher who tried to use only
 this sample mean to draw this conclusion?</li>
 </ol>
-<div class="line-block">
-<div class="line">Even though in reality we would carry out a study only once, we will
+</div>
+<p>Even though in reality we would carry out a study only once, we will
 use Tinkerplots to take a sample of 20 subjects from this population
 over and over again so that we get an idea of how much the sample mean
 <em>could</em> change from sample to sample. Our second and third random
-samples of 20 subjects and their sample means are shown below:</div>
-<div class="line">Sample #2:</div>
-<div class="line"><a class="reference internal" href="../_images/image510.png"><img alt="image4" src="../_images/image510.png" style="width: 4.79452in; height: 1.28425in;" /></a></div>
+samples of 20 subjects and their sample means are shown below:</p>
 </div>
-<p>Sample #3:</p>
+<div class="section" id="sample-2">
+<h3>Sample #2:<a class="headerlink" href="#sample-2" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image510.png"><img alt="image4" src="../_images/image510.png" style="width: 4.79452in; height: 1.28425in;" /></a></p>
+</div>
+<div class="section" id="sample-3">
+<h3>Sample #3:<a class="headerlink" href="#sample-3" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image64.png"><img alt="image5" src="../_images/image64.png" style="width: 4.84247in; height: 1.14563in;" /></a></p>
 <p>We can start to collect these sample means in a new plot to create the
 distribution of sample means:</p>
@@ -438,20 +463,16 @@ the means of 1,000 random samples.</p>
 perceived elapsed time of 45 seconds. So, this distribution gives us a
 good idea of what sample means from 20 subjects are likely (or unlikely)
 to occur by chance if the true mean is 45 seconds.</p>
-<div class="line-block">
-<div class="line">Next, note that the researchers wanted to show that the mean perceived
+<p>Next, note that the researchers wanted to show that the mean perceived
 elapsed time for smokers suffering from nicotine withdrawal was in
 fact <em>greater</em> than 45 seconds. The null and alternative hypotheses to
-address this research question are given as follows.</div>
-<div class="line">H<sub>o</sub>: The mean perceived elapsed time for smokers suffering
-from nicotine withdrawal is equal</div>
-<div class="line">to 45 seconds.</div>
-</div>
-<div class="line-block">
-<div class="line">H<sub>a</sub>: The mean perceived elapsed time for smokers suffering
-from nicotine withdrawal is greater</div>
-<div class="line">than 45 seconds.</div>
-</div>
+address this research question are given as follows.
+H<sub>o</sub>: The mean perceived elapsed time for smokers suffering
+from nicotine withdrawal is equal
+to 45 seconds.</p>
+<p>H<sub>a</sub>: The mean perceived elapsed time for smokers suffering
+from nicotine withdrawal is greater
+than 45 seconds.</p>
 <p>Note that the distribution of sample means was created assuming the null
 hypothesis is true. To test this hypothesis, we compare our actual
 observed mean to this null model. If the sample mean from the actual
@@ -468,16 +489,19 @@ from nicotine withdrawal really is greater than 45 seconds, or (2) their
 time perception is not impaired (i.e., the true mean is actually 45
 seconds) and the sample mean was greater than 45 seconds simply because
 of random chance.</p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Was a sample mean of 55.05 seconds likely to occur by chance if the
 true population mean is actually 45 seconds? What does this imply
 about the research question?</li>
 <li>Give an approximate p-value based on this simulation study.</li>
 </ol>
-<div class="section" id="id7">
-<h2><a href="#id3"><span class="problematic" id="id4">**</span></a><a href="#id5"><span class="problematic" id="id6">*</span></a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p><strong>*THE CENTRAL LIMIT THEOREM*</strong></p>
+</div>
+</div>
+</div>
+<div class="section" id="the-central-limit-theorem">
+<h2>THE CENTRAL LIMIT THEOREM<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
 <p>Note that a statistician would not necessarily carry out a simulation
 study such as this to answer a research question. Instead, one could use
 a “short-cut” known as a t-test to investigate a research question
@@ -512,20 +536,15 @@ assumes the null hypothesis is true.</p>
 <p>The only question that remains is this: How large does n (the number of
 subjects in a study) have to be in order for us to use the short-cut
 provided by the Central Limit Theorem?</p>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p class="last">How large does n have to be?</p>
+</div>
 <ul class="simple">
-<li></li>
-</ul>
-<p>Question*: How large does n have to be?*
-*</p>
-<ul>
-<li><dl class="first docutils">
-<dt>If the original population is normally distributed, then the sampling</dt>
-<dd><p class="first last">distribution of the mean will also be normally distributed even
+<li>If the original population is normally distributed, then the sampling
+distribution of the mean will also be normally distributed even
 if the sample size n is very small (verify this using Tinkerplots
-as shown in class).</p>
-</dd>
-</dl>
-</li>
+as shown in class).</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -615,23 +634,24 @@ larger, which we can see in the above examples).</li>
 </ol>
 <p>In the next section, we put all of the pieces together to create what is
 known as the <strong>t-test</strong>.</p>
-<p><strong>*
-THE T-TEST FOR A SINGLE POPULATION MEAN
-*</strong></p>
-<p><strong>Back to Example 5.1:</strong> Recall that the researchers wanted to show that
+</div>
+<div class="section" id="the-t-test-for-a-single-population-mean">
+<h2>THE T-TEST FOR A SINGLE POPULATION MEAN<a class="headerlink" href="#the-t-test-for-a-single-population-mean" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="back-to-example-5-1">
+<h3>Back to Example 5.1:<a class="headerlink" href="#back-to-example-5-1" title="Permalink to this headline">¶</a></h3>
+<p>Recall that the researchers wanted to show that
 the mean perceived elapsed time for smokers suffering from nicotine
 withdrawal was greater than the actual 45 seconds that had elapsed. The
 data collected in the study were summarized as follows:</p>
 <p><a class="reference internal" href="../_images/image114.png"><img alt="image18" src="../_images/image114.png" style="width: 5.21875in; height: 2.34886in;" /></a></p>
-<p><strong>*Step 1: Set up the null and alternative hypotheses*</strong></p>
+<p><strong>Step 1:</strong> Set up the null and alternative hypotheses</p>
 <p>H<sub>o</sub>:</p>
 <p>H<sub>a</sub>:</p>
-<p><strong>*Step 2: Find the t-statistic and the p-value*</strong></p>
+<p><strong>Step 2:</strong> Find the t-statistic and the p-value</p>
 <p>To determine whether or not the distance between µ (the hypothesized
 population mean) and (the mean from our observed sample) is larger than
 what we would expect by random chance, we will use the following
 statistic:</p>
-<p>=</p>
 <p>Why use this statistic? Because this quantity measures the position of
 our observed sample mean on the null model, just like the Z-score
 discussed in the previous chapter.</p>
@@ -644,7 +664,10 @@ of variability in a t-distribution depends on the sample size n (the
 greater the sample size, the smaller the standard deviation of the
 distribution of sample means). Therefore, this distribution is indexed
 by its <em>degrees of freedom</em> (df).</p>
-<p><strong>For inference on a single mean, df = n - 1.</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>For inference on a single mean, df = n - 1.</strong></p>
+</div>
 <p>To find the p-value associated with this test statistic, we must
 remember that this is an upper-tailed test (we are trying to find
 evidence that the mean is <em>greater</em> than 45 seconds). So, the p-value
@@ -665,9 +688,8 @@ next to the variable name, and select <strong>Test Mean.</strong></p>
 <div class="line"><a class="reference internal" href="../_images/image293.png"><img alt="image22" src="../_images/image293.png" style="width: 2.20833in; height: 3.03125in;" /></a></div>
 </div>
 <p><strong>*Step 3: Write a conclusion in the context of the problem*</strong></p>
-</div>
-<div class="section" id="id12">
-<h2><a href="#id8"><span class="problematic" id="id9">**</span></a><a href="#id10"><span class="problematic" id="id11">*</span></a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h4><a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <p><strong>*
 Checking the Normality Assumption*:</strong></p>
 <p>For the t-test to be valid, at least one of the following conditions
@@ -691,8 +713,8 @@ select this option from the red drop-down arrow next to the variable
 name.</p>
 <p><a class="reference internal" href="../_images/image314.png"><img alt="image24" src="../_images/image314.png" style="width: 2.83333in; height: 2.09375in;" /></a></p>
 </div>
-<div class="section" id="id15">
-<h2><a href="#id13"><span class="problematic" id="id14">**</span></a><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h4><a href="#id6"><span class="problematic" id="id7">**</span></a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <p>**
 Example 5.3:** For the data given in Example 5.1, we found evidence that
 the mean perceived elapsed was in fact greater than the actual 45
@@ -726,8 +748,8 @@ Step 2: Find the t-statistic and the p-value*</strong></p>
 <div class="line"><strong>*Step 3: Write a conclusion in the context of the problem*</strong></div>
 </div>
 </div>
-<div class="section" id="id20">
-<h2><a href="#id16"><span class="problematic" id="id17">**</span></a><a href="#id18"><span class="problematic" id="id19">*</span></a><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h4><a href="#id9"><span class="problematic" id="id10">**</span></a><a href="#id11"><span class="problematic" id="id12">*</span></a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <p><strong>*
 Checking the Normality Assumption*:</strong></p>
 <p>For the t-test to be valid, at least one of the following conditions
@@ -761,8 +783,8 @@ choose this option when you select <strong>Test Mean</strong>:</div>
 <div class="line"><a class="reference internal" href="../_images/image372.png"><img alt="image32" src="../_images/image372.png" style="width: 2.38542in; height: 3.09375in;" /></a></div>
 </div>
 </div>
-<div class="section" id="id25">
-<h2><a href="#id21"><span class="problematic" id="id22">**</span></a><a href="#id23"><span class="problematic" id="id24">*</span></a><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h4><a href="#id14"><span class="problematic" id="id15">**</span></a><a href="#id16"><span class="problematic" id="id17">*</span></a><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <p><strong>*
 CONFIDENCE INTERVAL FOR A SINGLE POPULATION MEAN*</strong></p>
 <p>In Example 5.1, we found evidence that the mean perceived elapsed time
@@ -844,8 +866,8 @@ test? Explain.</li>
 confidence interval, instead?</li>
 </ol>
 </div>
-<div class="section" id="id30">
-<h2><a href="#id26"><span class="problematic" id="id27">**</span></a><a href="#id28"><span class="problematic" id="id29">*</span></a><a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h4><a href="#id19"><span class="problematic" id="id20">**</span></a><a href="#id21"><span class="problematic" id="id22">*</span></a><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
 <p><strong>*
 More on the Interpretation of Confidence Intervals*</strong></p>
 <p>The 95% refers to the process of constructing the confidence interval.
@@ -1003,6 +1025,8 @@ size n = 5. Construct a confidence interval for each of the samples.</p>
 with a mean of 10. How many of the confidence intervals captured this
 true mean? What does it mean to say that we are 90% confident?</li>
 </ol>
+</div>
+</div>
 </div>
 </div>
 
