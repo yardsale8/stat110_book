@@ -434,7 +434,7 @@ many *bootstrap samples* from the sample, allowing us to simulate the
         bootstrap statistics.
     Bootstrap Standard Error
         The **bootstrap standard error** is the standard deviation of bootstrap
-        distribution which can be used as an estimate of the actual standard
+        distribution, which can be used as an estimate of the actual standard
         error of a statistic.
 
 Using sampling with replacement allows for some variability from one bootstrap
@@ -523,6 +523,8 @@ bootstrap standard error for a confidence level that is different than 95%, we
 would need to figure out how many standard errors to use for the margin of
 error.  There is a theoretical solution to this problem, which we will highlight
 in the next section.
+
+.. TODO:: Add an example from the statkey website.
 
 Confidence Intervals Based on the Bell Curve
 --------------------------------------------
