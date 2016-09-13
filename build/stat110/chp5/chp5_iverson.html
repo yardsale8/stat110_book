@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Confidence Intervals Based on the Normal Distribution &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="Introduction to Confidence Intervals" href="../IntroToCI/IntroToCI.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp5_iverson'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Confidence Intervals Based on the Normal Distribution</a><ul>
+<li><a class="reference internal" href="#example-5-1">Example 5.1:</a><ul>
+<li><a class="reference internal" href="#example-5-2-another-simulation-study"><strong>Example 5.2:</strong> Another “simulation study”….</a></li>
+<li><a class="reference internal" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional">Simulating the Bootstrap Distribution in Tinkerplots (Optional)</a></li>
+<li><a class="reference internal" href="#sample-1">Sample # 1:</a></li>
+<li><a class="reference internal" href="#sample-2">Sample #2:</a></li>
+<li><a class="reference internal" href="#sample-3">Sample #3:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-central-limit-theorem">The Central Limit Theorem</a><ul>
+<li><a class="reference internal" href="#how-large-does-n-have-to-be">How large does n have to be?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#confidence-interval-for-a-single-population-mean">Confidence Interval for a Single Population Mean</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Introduction to Confidence Intervals" data-toggle="tooltip">
+    <a href="../IntroToCI/IntroToCI.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="confidence-intervals-based-on-the-normal-distribution">
+<h1>Confidence Intervals Based on the Normal Distribution<a class="headerlink" href="#confidence-intervals-based-on-the-normal-distribution" title="Permalink to this headline">¶</a></h1>
+<p>We in our bootstrap activities we have seen some common result.</p>
+<div class="admonition-important-points admonition">
+<p class="first admonition-title">Important Points</p>
+<ol class="last arabic simple">
+<li>The distribution of the sample mean was often (but not always) a
+bell-shaped curve.</li>
+<li>Using a margin of error of 2 standard errors resulted in intervals that
+worked about 95% of the time.</li>
+</ol>
+</div>
+<p>In this section, we leverage these facts and introduce a theoretical
+approach to confidence intervals that will save us the work of running a
+simulation every time we want an interval.</p>
+<div class="section" id="example-5-1">
+<h2>Example 5.1:<a class="headerlink" href="#example-5-1" title="Permalink to this headline">¶</a></h2>
+<p>A study conducted by researchers at Pennsylvania State
+University investigated whether time perception, a simple indication of
+a person’s ability to concentrate, is impaired during nicotine
+withdrawal. The study results were presented in the paper “Smoking
+Abstinence Impairs Time Estimation Accuracy in Cigarette Smokers”
+(<em>Psychopharmacology Bulletin</em> [2003]: 90-95). After a 24-hour smoking
+abstinence, 20 smokers were asked to estimate how much time had passed
+during a 45-second period. Suppose the resulting data on perceived
+elapsed time (in seconds) were analyzed as shown below (these results
+are artificial but are similar to the actual findings). The data can be
+found in the file <strong>Nicotine1.JMP</strong>.</p>
+<p>We can use JMP to summarize the data as follows:</p>
+<p><a class="reference internal" href="../_images/image128.png"><img alt="image500" src="../_images/image128.png" style="width: 4.73105in; height: 2.12936in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_1">
+            Q-177: What is the mean of the observed data?
+            <li data-component="answer" data-correct id="mc_example5.1_1_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_1_opt_a">That is the mean of the data.</li>
+            
+            <li data-component="answer"  id="mc_example5.1_1_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_1_opt_b">That is the standard deviation of the data.</li>
+            
+            <li data-component="answer"  id="mc_example5.1_1_opt_c">(C) 2.09</li><li data-component="feedback" id="mc_example5.1_1_opt_c">That is the standard error of the mean.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_2">
+            Q-178: What is the mean of the observed data?
+            <li data-component="answer"  id="mc_example5.1_2_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_2_opt_a">That is the mean of the data.</li>
+            
+            <li data-component="answer" data-correct id="mc_example5.1_2_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_2_opt_b">That is the standard deviation of the data.</li>
+            
+            <li data-component="answer"  id="mc_example5.1_2_opt_c">(C) 2.09</li><li data-component="feedback" id="mc_example5.1_2_opt_c">That is the standard error of the mean.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5_1_3">
+            Q-179: If another sample of (n = 20) subjects were obtained, would these new
+subjects have a mean exactly the same as the mean from this
+sample? Why or why not?
+            <li data-component="answer"  id="mc_example5_1_3_opt_a">(A) Yes</li><li data-component="feedback" id="mc_example5_1_3_opt_a">We would expect some variability from one sample the the next.</li>
+            
+            <li data-component="answer" data-correct id="mc_example5_1_3_opt_b">(B) No</li><li data-component="feedback" id="mc_example5_1_3_opt_b">We would expect some variability from one sample the the next.</li>
+            
+
+            </ul>
+            <div class="section" id="example-5-2-another-simulation-study">
+<h3><strong>Example 5.2:</strong> Another “simulation study”….<a class="headerlink" href="#example-5-2-another-simulation-study" title="Permalink to this headline">¶</a></h3>
+<p>Suppose we set up a hypothetical population of smokers suffering from nicotine
+withdrawal, which was created using bootstrap samples from the original sample.
+This population has been purposefully created so that the mean perceived elapsed
+time is exactly 45 seconds.</p>
+<p><a class="reference internal" href="../_images/image226.png"><img alt="image501" src="../_images/image226.png" style="width: 5.88000in; height: 2.21941in;" /></a></p>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">In this simulation study, what is our value of μ, the true population
+mean?</p>
+</div>
+<p>Note that in reality, the true population mean is usually an unknown
+quantity which we are trying to estimate. Since it is not feasible to
+collect data on the entire population of smokers suffering from nicotine
+withdrawal, the researchers took a random sample of 20 subjects in order
+to estimate the average perceived elapsed time. We will illustrate how to take
+bootstrap samples from this sample using Tinkerplots.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We could have also used the StatKey website to simulate this distribution,
+but we use this example as a chance to introduce Tinkerplot&#8217;s functionality.</p>
+</div>
+</div>
+<div class="section" id="simulating-the-bootstrap-distribution-in-tinkerplots-optional">
+<h3>Simulating the Bootstrap Distribution in Tinkerplots (Optional)<a class="headerlink" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional" title="Permalink to this headline">¶</a></h3>
+<p>Each of the elements in the mixer represents the perceived elapsed time for a
+smoker suffering from nicotine withdrawal in the population (e.g., the
+highlighted subject thought that 50 seconds had passed during a 45-second
+period). We set the repeat value to 20 in order to randomly select 20 subjects
+from the population for our study.</p>
+<p><a class="reference internal" href="../_images/image320.png"><img alt="image502" src="../_images/image320.png" style="width: 5.44792in; height: 3.50089in;" /></a></p>
+<p>Click Run to randomly select our first sample of 20 subjects, and we can
+then create a plot of their perceived elapsed times. Note that the mean
+of these 20 subjects is shown on this plot.</p>
+</div>
+<div class="section" id="sample-1">
+<h3>Sample # 1:<a class="headerlink" href="#sample-1" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image420.png"><img alt="image503" src="../_images/image420.png" style="width: 5.21875in; height: 1.28125in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the average (or mean) perceived elapsed time of the 20
+subjects in this study?</li>
+<li>Does this necessarily mean that the average perceived elapsed time is
+greater than 45 seconds for <em>all</em> smokers suffering from nicotine
+withdrawal? What would you say to a researcher who tried to use only
+this sample mean to draw this conclusion?</li>
+</ol>
+</div>
+<p>Even though in reality we would carry out a study only once, we will
+use Tinkerplots to take a sample of 20 subjects from this population
+over and over again so that we get an idea of how much the sample mean
+<em>could</em> change from sample to sample. Our second and third random
+samples of 20 subjects and their sample means are shown below:</p>
+</div>
+<div class="section" id="sample-2">
+<h3>Sample #2:<a class="headerlink" href="#sample-2" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image518.png"><img alt="image504" src="../_images/image518.png" style="width: 4.79452in; height: 1.28425in;" /></a></p>
+</div>
+<div class="section" id="sample-3">
+<h3>Sample #3:<a class="headerlink" href="#sample-3" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image612.png"><img alt="image505" src="../_images/image612.png" style="width: 4.84247in; height: 1.14563in;" /></a></p>
+<p>We can start to collect these sample means in a new plot to create the
+distribution of sample means:</p>
+<p><a class="reference internal" href="../_images/image710.png"><img alt="image506" src="../_images/image710.png" style="width: 3.00685in; height: 1.48201in;" /></a></p>
+<p>To get a really good idea of what values are likely to occur by chance
+when taking random samples of size 20 from the population, we should
+take more than just three samples. The graphic below shows the process
+we used to create the distribution of sample means and the final plot of
+the means of 1,000 random samples.</p>
+<p><a class="reference internal" href="../_images/image87.png"><img alt="image507" src="../_images/image87.png" style="width: 6.24657in; height: 4.04893in;" /></a></p>
+<p><a class="reference internal" href="../_images/image97.png"><img alt="image508" src="../_images/image97.png" style="width: 5.80208in; height: 2.16973in;" /></a></p>
+<p>This is a distribution of sample means. Recall that these 1,000 samples
+(each consisting of 20 subjects) came from a population with a true mean
+perceived elapsed time of 45 seconds. So, this distribution gives us a
+good idea of what sample means from 20 subjects are likely (or unlikely)
+to occur by chance if the true mean is 45 seconds.</p>
+</div>
+</div>
+<div class="section" id="the-central-limit-theorem">
+<h2>The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
+<p>Note that a statistician would not necessarily carry out a simulation study such
+as this to answer a research question. Instead, one could use “short-cuts”
+known as a t-test or confidence interval to investigate a research question
+concerning a single population mean. These short-cuts are results of something
+known as the <em>central limit theorem</em>, which states the following:</p>
+<div class="admonition-the-central-limit-theorem-for-the-mean admonition">
+<p class="first admonition-title">The Central Limit Theorem for the Mean</p>
+<p class="last">Consider a random sample of n observations from ANY population with mean µ and
+standard deviation σ. The distribution of sample means will have a <em>mean</em> of
+<span class="math">\(\mu\)</span> and a <em>standard deviation</em> of <span class="math">\(\sigma/\sqrt{n}\)</span>. When
+<span class="math">\(n\)</span> (the number of subjects in the sample) is sufficiently large, this
+distribution will be approximately <em>NORMAL</em>; moreover, this approximation gets
+better as the sample size (<span class="math">\(n\)</span>) increases.</p>
+</div>
+<p>We can see the Central Limit Theorem applied to the sample means
+calculated from our hypothetical population from Example 5.2 as follows:</p>
+<p><a class="reference internal" href="../_images/image129.png"><img alt="image5010" src="../_images/image129.png" style="width: 4.48663in; height: 1.70378in;" /></a></p>
+<ul class="simple">
+<li>We see that this normal distribution is centered at the true
+population <em>mean</em>, <span class="math">\(\mu = 45\)</span>.</li>
+<li>The standard deviation of all observations in our hypothetical
+population is <span class="math">\(\sigma = 9.4\)</span> seconds. According to the central limit
+theorem, then, the <em>standard deviation</em> of the distribution of sample
+means is given by <span class="math">\(\sigma/\sqrt{n} = 9.4/\sqrt{20}=2.1\)</span></li>
+<li>We see that the distribution of sample means is approximately
+<em>normal</em>.</li>
+</ul>
+<p>Finally, recall from the previous chapter that given the mean and
+standard deviation of a distribution, we can determine whether a given
+observation is an outlier or not based on its position on this
+distribution. This will help us decide whether the sample mean actually
+observed in the research study is an outlier on the distribution that
+assumes the null hypothesis is true.</p>
+<p>The only question that remains is this: How large does n (the number of
+subjects in a study) have to be in order for us to use the short-cut
+provided by the Central Limit Theorem?</p>
+<div class="section" id="how-large-does-n-have-to-be">
+<h3>How large does n have to be?<a class="headerlink" href="#how-large-does-n-have-to-be" title="Permalink to this headline">¶</a></h3>
+<p>We have seen that the distibution of the sample mean will not always be
+bell-shaped and often retains from of the features of the original population,
+such as a skewed shape.  Next, we give some guidance on when it is reasonable to
+assume that the distribution of sample means will be normal.</p>
+<div class="admonition-normal-population admonition">
+<p class="first admonition-title">Normal Population</p>
+<p class="last">If the original population is normally distributed, then the sampling
+distribution of the mean will also be normally distributed even
+if the sample size n is very small</p>
+</div>
+<p>(verify this using Tinkerplots as shown in class).</p>
+<div class="admonition-skewed-population admonition">
+<p class="first admonition-title">Skewed Population</p>
+<p class="last">The more skewed the distribution, the larger the sample size must be
+before the normal approximation fits the distribution of sample
+means well.</p>
+</div>
+<div class="admonition-general-rule admonition">
+<p class="first admonition-title">General Rule</p>
+<p class="last">For almost all populations, samples of size n ≥ 30 or 40 subjects
+will be sufficient to say that the distribution of sample means
+is approximately normal. However, if the distribution is very
+skewed, the sample size may have to be much larger than 30 in
+order for the central limit theorem to apply.</p>
+</div>
+<p>In summary, we can use the Central Limit Theorem to help us create a
+procedure for comparing a population mean to some hypothesized value.
+This works because:</p>
+<ol class="arabic simple">
+<li>We know the distribution of sample means will be approximately normal
+if either (i) the original population is normally distributed, or
+(ii) our sample size is sufficiently large.</li>
+<li>We know the distribution of sample means will be centered at the true
+population mean (which we can set to some hypothesized value in the
+null hypothesis).</li>
+<li>We know that the variability in the distribution of sample means is
+given by (i.e., the variability decreases as the sample size gets
+larger, which we can see in the above examples).</li>
+</ol>
+<p>In the next section, we put all of the pieces together to create what is
+known as the <strong>t-test</strong>.</p>
+</div>
+</div>
+<div class="section" id="confidence-interval-for-a-single-population-mean">
+<h2>Confidence Interval for a Single Population Mean<a class="headerlink" href="#confidence-interval-for-a-single-population-mean" title="Permalink to this headline">¶</a></h2>
+<p>In Example 5.1, we found evidence that the mean perceived elapsed time
+for smokers suffering from nicotine withdrawal significantly differed
+from the actual 45 seconds of time that had elapsed. Our next question
+is obvious: HOW MUCH does it differ? To answer this question, we must
+construct a <em>confidence interval</em>.</p>
+<p>Recall our discussion of confidence intervals from earlier in the
+semester:</p>
+<p>This procedure does NOT require any hypotheses concerning our population
+parameter of interest (the mean, in this case). We will use both our
+sample data (in particular, the observed mean) and what we know about
+the distribution of sample means to obtain a range of likely values for
+our population mean.</p>
+<div class="admonition-comments admonition">
+<p class="first admonition-title">Comments</p>
+<ol class="last arabic">
+<li><dl class="first docutils">
+<dt>A confidence interval allows us to estimate the population parameter</dt>
+<dd><p class="first last">of interest (recall that the hypothesis test does NOT allow us to
+do this). Therefore, when available, a confidence interval should
+always accompany the hypothesis test.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>The confidence interval does not require any hypothesized value for</dt>
+<dd><p class="first last">the population parameter. Instead, we center the confidence
+interval on the sample mean. Consider the following example.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<p><strong>Example 5.4:</strong> Our goal is to construct a 95% confidence interval for
+the mean perceived elapsed time for smokers suffering from nicotine
+withdrawal. To do this, we will center our distribution of sample means
+on the observed mean. Then, we will find the lower and upper endpoints
+that separate the middle 95% of the distribution from the rest (since we
+are constructing a 95% confidence interval).</p>
+<blockquote>
+<div><a class="reference internal" href="../_images/image384.png"><img alt="image5033" src="../_images/image384.png" style="width: 3.27083in; height: 1.70121in;" /></a></div></blockquote>
+<p>The formula for calculating the endpoints of this confidence interval is
+given as follows:</p>
+<div class="math">
+\[\bar{x} \pm t_{quantile}\frac{s}{\sqrt{n}}\]</div>
+<p>The appropriate t-quantile can be found using JMP. To find this value,
+you need the following information:</p>
+<ul class="simple">
+<li>confidence level =</li>
+<li>df =</li>
+</ul>
+<p>Open a new JMP data table and choose <strong>Probability &gt; t Quantile</strong> from
+the Formula editor. Enter the following:</p>
+<p><a class="reference internal" href="../_images/image404.png"><img alt="image5034" src="../_images/image404.png" style="width: 1.73958in; height: 0.42708in;" /></a></p>
+<p>For this example, JMP returns the following t-quantile:</p>
+<p><a class="reference internal" href="../_images/image4110.png"><img alt="image5035" src="../_images/image4110.png" style="width: 1.89583in; height: 0.65625in;" /></a></p>
+<p>Also, recall from Example 5.1 that the mean and standard deviation are
+as follows:</p>
+<p><a class="reference internal" href="../_images/image128.png"><img alt="image5036" src="../_images/image128.png" style="width: 5.21875in; height: 2.34886in;" /></a></p>
+<p>Use this information to find the endpoints of the confidence interval:</p>
+<p>Lower endpoint (<span class="math">\(\bar{x}-t_{quantile}\left(s/\sqrt{n}\right)\)</span>): =</p>
+<p>Upper endpoint (<span class="math">\(\bar{x}-t_{quantile}\left(s/\sqrt{n}\right)\)</span>): =</p>
+<p>Note that JMP automatically provides the endpoints of the 95% confidence
+interval for this mean when you analyze the distribution of the variable
+of interest.</p>
+<p><a class="reference internal" href="../_images/image128.png"><img alt="image5037" src="../_images/image128.png" style="width: 5.17123in; height: 2.32748in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Interpret the meaning of this interval. What does this interval tell
+us about the true mean perceived elapsed time for <em>all</em> smokers that
+are suffering from nicotine withdrawal?</li>
+<li>Does this interval agree with what you learned from the hypothesis
+test? Explain.</li>
+<li>How would your calculations change if you wanted to obtain a 90%
+confidence interval, instead?</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Introduction to Confidence Intervals' data-toggle="tooltip">
+    <a href="../IntroToCI/IntroToCI.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../IntroToCI/IntroToCI.html" ></a>
+  
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
