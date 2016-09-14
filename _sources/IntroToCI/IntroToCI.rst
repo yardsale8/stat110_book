@@ -1,6 +1,3 @@
-.. role:: math(raw)
-   :format: html latex
-
 Introduction to Confidence Intervals
 ====================================
 
