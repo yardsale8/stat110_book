@@ -171,6 +171,8 @@ components of the `StatKey's Sampling Distribution for a Mean page
 
         A population parameter (in this case a population mean) is located at ...
 
+.. TODO:: Add examples of computing the p-value using StatKey on the sampling distribution
+
 .. TODO:: Add in a section on the central limit theorem either here or in the theory section.
 Introduction to Confidence Intervals
 ------------------------------------

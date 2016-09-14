@@ -35,7 +35,7 @@ Here are some examples of data from my own life
 
     * I rated the last movie I streamed online as 3 stars (out of 5 stars).
     * My current phone has 64 GB of flash memory.
-    * This morning I consumed two 20 oz. glasses of iced tea.
+    * This morning I consumed two 20 oz glasses of iced tea.
 
 In each case, we can think of the description as a measurement on some
 individual unit.
@@ -413,7 +413,7 @@ Evaluating Studies
     <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_1iqsp4zw&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_j21dy1gf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
     </div>
 
-In class, we conducted some simulations to identifty the effect on two forms of
+In class, we conducted some simulations to identity the effect on two forms of
 randomization, *randomized selection of individual units* and *random assignment
 of treatments* in an experiment.  Based on these activities in class, we 
 identified two main effects of randomization.
