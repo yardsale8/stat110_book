@@ -203,7 +203,7 @@ a statistician means when claiming to be "95% confident."
 Point Estimates and Interval Estimates for Parameters
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-When estimating the value of a parameter, we can chose between one of two types
+When estimating the value of a parameter, we can choose between one of two types
 of estimates.
 
 .. glossary::
