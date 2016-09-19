@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Confidence Interval for a Single Population Mean &mdash; Runestone Interactive Overview</title>
+    <title>Assessing the Normality of a Data Set &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -245,7 +245,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=stat110&page=confidence_interval_single_mean'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=assessing_normality'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -260,11 +260,10 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Confidence Interval for a Single Population Mean</a><ul>
-<li><a class="reference internal" href="#confidence-intervals-for-the-mean-in-jmp">Confidence Intervals for the Mean in JMP</a></li>
+<li><a class="reference internal" href="#">Assessing the Normality of a Data Set</a><ul>
+<li><a class="reference internal" href="#creating-a-normal-quantile-plot-in-jmp">Creating a Normal Quantile Plot in JMP</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-intervals-for-the-population-standard-deviation">Confidence Intervals for the Population Standard Deviation</a></li>
 </ul>
 </ul>
 </li>
@@ -297,118 +296,70 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="confidence-interval-for-a-single-population-mean">
-<h1>Confidence Interval for a Single Population Mean<a class="headerlink" href="#confidence-interval-for-a-single-population-mean" title="Permalink to this headline">¶</a></h1>
-<p>In Example 5.1, we found evidence that the mean perceived elapsed time
-for smokers suffering from nicotine withdrawal significantly differed
-from the actual 45 seconds of time that had elapsed. Our next question
-is obvious: HOW MUCH does it differ? To answer this question, we must
-construct a <em>confidence interval</em>.</p>
-<p>Recall our discussion of confidence intervals from earlier in the
-semester:</p>
-<p>This procedure does NOT require any hypotheses concerning our population
-parameter of interest (the mean, in this case). We will use both our
-sample data (in particular, the observed mean) and what we know about
-the distribution of sample means to obtain a range of likely values for
-our population mean.</p>
-<div class="admonition-comments admonition">
-<p class="first admonition-title">Comments</p>
-<ol class="last arabic">
-<li><dl class="first docutils">
-<dt>A confidence interval allows us to estimate the population parameter</dt>
-<dd><p class="first last">of interest (recall that the hypothesis test does NOT allow us to
-do this). Therefore, when available, a confidence interval should
-always accompany the hypothesis test.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>The confidence interval does not require any hypothesized value for</dt>
-<dd><p class="first last">the population parameter. Instead, we center the confidence
-interval on the sample mean. Consider the following example.</p>
-</dd>
-</dl>
-</li>
-</ol>
+  <div class="section" id="assessing-the-normality-of-a-data-set">
+<h1>Assessing the Normality of a Data Set<a class="headerlink" href="#assessing-the-normality-of-a-data-set" title="Permalink to this headline">¶</a></h1>
+<p>The application of the central limit theorem (CLT) for means highlights the need for
+determining if a given data set is &#8220;normal.&#8221;  In particular, we need to be
+careful about the application of the CLT to a small data set and <em>a
+normal quantile plot</em> will give us the needed tool.</p>
+<p>A first attempt at trying to determine that a data set is normal might involve
+drawing a normal curve over a dot plot or histogram.  Unfortunately, is
+difficult to determine how close an given histogram is to the curve.</p>
+<p><a href="#id1"><span class="problematic" id="id2">|image510|</span></a></p>
+<p>A better solution is to use a normal quantile plot.  These plots are
+designed to provide a simple distinction between data that is fairly normal and
+data that is not.</p>
+<div class="section" id="creating-a-normal-quantile-plot-in-jmp">
+<h2>Creating a Normal Quantile Plot in JMP<a class="headerlink" href="#creating-a-normal-quantile-plot-in-jmp" title="Permalink to this headline">¶</a></h2>
+<p>The following GIF illustrates the process for constructing a normal quantile
+plot in JMP.</p>
+<p><a href="#id3"><span class="problematic" id="id4">|image516|</span></a></p>
+<div class="admonition-reading-a-normal-quantile-plot admonition">
+<p class="first admonition-title">Reading a Normal Quantile Plot</p>
+<p><strong>Normal data is straight</strong></p>
+<p>A quantile plot with points that are close to a straight line indicate data
+that is fairly normal.</p>
+<p><strong>Non-normal data is curved</strong></p>
+<p class="last">The presense of curvature in a quantile plot is an indication of the
+presence of tails that are longer or shorter than expected for data that
+comes from the normal distribution.</p>
 </div>
-<p><strong>Example 5.4:</strong> Our goal is to construct a 95% confidence interval for
-the mean perceived elapsed time for smokers suffering from nicotine
-withdrawal. To do this, we will center our distribution of sample means
-on the observed mean. Then, we will find the lower and upper endpoints
-that separate the middle 95% of the distribution from the rest (since we
-are constructing a 95% confidence interval).</p>
-<blockquote>
-<div><a href="#id1"><span class="problematic" id="id2">|image5033|</span></a></div></blockquote>
-<p>The formula for calculating the endpoints of this confidence interval is
-given as follows:</p>
-<div class="math">
-\[\bar{x} \pm t_{quantile}\frac{s}{\sqrt{n}}\]</div>
-<p>The appropriate t-quantile can be found using JMP. To find this value,
-you need the following information:</p>
-<ul class="simple">
-<li>confidence level =</li>
-<li>df =</li>
-</ul>
-<p>Open a new JMP data table and choose <strong>Probability &gt; t Quantile</strong> from
-the Formula editor. Enter the following:</p>
-<p><a href="#id3"><span class="problematic" id="id4">|image5034|</span></a></p>
-<p>Here is an animated GIF of the process.</p>
-<p><a href="#id5"><span class="problematic" id="id6">|image515|</span></a></p>
-<p>For this example, JMP returns the following t-quantile:</p>
-<p><a href="#id7"><span class="problematic" id="id8">|image5035|</span></a></p>
-<p>Also, recall from Example 5.1 that the mean and standard deviation are
-as follows:</p>
-<p><a href="#id9"><span class="problematic" id="id10">|image5036|</span></a></p>
-<p>Use this information to find the endpoints of the confidence interval:</p>
-<p>Lower endpoint: <span class="math">\(\bar{x}-t_{quantile}\left(s/\sqrt{n}\right) = 55.05 - 2.093*\frac{9.327}{\sqrt{20}} = 50.68\)</span></p>
-<p>Upper endpoint: <span class="math">\(\bar{x}+t_{quantile}\left(s/\sqrt{n}\right) = 55.05 + 2.093*\frac{9.327}{\sqrt{20}} = 59.42\)</span></p>
-<div class="section" id="confidence-intervals-for-the-mean-in-jmp">
-<h2>Confidence Intervals for the Mean in JMP<a class="headerlink" href="#confidence-intervals-for-the-mean-in-jmp" title="Permalink to this headline">¶</a></h2>
-<p>Note that JMP automatically provides the endpoints of the 95% confidence
-interval for this mean when you analyze the distribution of the variable
-of interest.</p>
-<p><a href="#id11"><span class="problematic" id="id12">|image5037|</span></a></p>
-<div class="admonition-questions admonition">
-<p class="first admonition-title">Questions:</p>
-<ol class="last arabic simple">
-<li>Interpret the meaning of this interval. What does this interval tell
-us about the true mean perceived elapsed time for <em>all</em> smokers that
-are suffering from nicotine withdrawal?</li>
-<li>Does this interval agree with what you learned from the hypothesis
-test? Explain.</li>
-<li>How would your calculations change if you wanted to obtain a 90%
-confidence interval, instead?</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="section" id="confidence-intervals-for-the-population-standard-deviation">
-<h1>Confidence Intervals for the Population Standard Deviation<a class="headerlink" href="#confidence-intervals-for-the-population-standard-deviation" title="Permalink to this headline">¶</a></h1>
-<p>If the original population is bell-shaped, then there is also a formula for the
-population standard deviation.  This is due to the fact that, for normal data,
-the distribution of the standard deviation squared (also known as the variance)
-has a chi-square distribution.</p>
-<p><a href="#id13"><span class="problematic" id="id14">|image513|</span></a></p>
-<p>While it is certainly possible to compute a confidence interval using the
-formula, it is more convenient to compute these intervals using the built-in JMP
-functions.  We can generate a confidence interval for both the population mean
-and standard deviation as follows.</p>
-<div class="admonition-constructing-confidence-intervals-for-the-mean-and-standard-deviation-in-jmp admonition">
-<p class="first admonition-title">Constructing Confidence Intervals for the Mean and Standard Deviation in JMP</p>
-<ol class="last arabic simple">
-<li>Enter the sample data in a new data table.</li>
-<li>Perform ANALYZE &gt; DISTRIBUTION on the column of interest.</li>
-<li>Click on the triangle above the distribution and select confidence intervals.</li>
-</ol>
-</div>
-<p><a href="#id15"><span class="problematic" id="id16">|image514|</span></a></p>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p class="last">We need to make sure that the original data is fairly normal before relying
-on the formula for the confidence interval for a standard deviation.  If
-there is any doubt about this normality, we would be better off using the
-bootstrap interval instead.</p>
-</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a href="#id5"><span class="problematic" id="id6">|image511|</span></a></td>
+<td><a href="#id7"><span class="problematic" id="id8">|image512|</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>As a consequence of the random nature of data, we need to allow for some
+flexibility in our interpretations of such graphs.  Notice that each probability
+plot shown above includes curved confidence bands.  These bands aid by giving
+us a visual cue about how picky we should be when determining the normality of a
+plot, only claiming <em>the data is clearly non-normal</em> when at least 5% of the
+points fall outside the bands.</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_1">
+            Q-214: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
+            <li data-component="answer" data-correct id="assess_normal_1_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_a"></li>
+            
+            <li data-component="answer"  id="assess_normal_1_opt_b">(B) points that roughly form a stright line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_b"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_2">
+            Q-215: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
+            <li data-component="answer"  id="assess_normal_2_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_a"></li>
+            
+            <li data-component="answer" data-correct id="assess_normal_2_opt_b">(B) points that roughly form a stright line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_b"></li>
+            
+
+            </ul>
+            </div>
 </div>
 
 

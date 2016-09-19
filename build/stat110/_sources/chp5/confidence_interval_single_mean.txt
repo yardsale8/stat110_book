@@ -55,6 +55,10 @@ the Formula editor. Enter the following:
 
 |image5034|
 
+Here is an animated GIF of the process.
+
+|image515|
+
 For this example, JMP returns the following t-quantile:
 
 |image5035|
@@ -66,9 +70,12 @@ as follows:
 
 Use this information to find the endpoints of the confidence interval:
 
-Lower endpoint (:math:`\bar{x}-t_{quantile}\left(s/\sqrt{n}\right)`): =
+Lower endpoint: :math:`\bar{x}-t_{quantile}\left(s/\sqrt{n}\right) = 55.05 - 2.093*\frac{9.327}{\sqrt{20}} = 50.68`
 
-Upper endpoint (:math:`\bar{x}-t_{quantile}\left(s/\sqrt{n}\right)`): =
+Upper endpoint: :math:`\bar{x}+t_{quantile}\left(s/\sqrt{n}\right) = 55.05 + 2.093*\frac{9.327}{\sqrt{20}} = 59.42`
+
+Confidence Intervals for the Mean in JMP
+++++++++++++++++++++++++++++++++++++++++
 
 Note that JMP automatically provides the endpoints of the 95% confidence
 interval for this mean when you analyze the distribution of the variable
@@ -89,16 +96,32 @@ of interest.
        confidence interval, instead?
 
 
-Confidence Intervals in JMP
----------------------------
+Confidence Intervals for the Population Standard Deviation
+----------------------------------------------------------
+
+If the original population is bell-shaped, then there is also a formula for the
+population standard deviation.  This is due to the fact that, for normal data,
+the distribution of the standard deviation squared (also known as the variance)
+has a chi-square distribution.
+
+|image513|
 
 While it is certainly possible to compute a confidence interval using the
-formula and the t-quantiles, it is more convenient to compute these intervals
-using the built-in JMP functions.  We can generate a confidence interval for the
-population mean and standard deviation as follows.
+formula, it is more convenient to compute these intervals using the built-in JMP
+functions.  We can generate a confidence interval for both the population mean
+and standard deviation as follows.
 
 .. admonition:: Constructing Confidence Intervals for the Mean and Standard Deviation in JMP
 
     1. Enter the sample data in a new data table.
     2. Perform ANALYZE > DISTRIBUTION on the column of interest.
-    3. 
+    3. Click on the triangle above the distribution and select confidence intervals. 
+
+|image514|
+
+.. caution::
+
+    We need to make sure that the original data is fairly normal before relying
+    on the formula for the confidence interval for a standard deviation.  If
+    there is any doubt about this normality, we would be better off using the
+    bootstrap interval instead.

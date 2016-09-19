@@ -23,6 +23,8 @@ simulation every time we want an interval.
 
 .. include:: central_limit_theorem.rst
 
+.. include:: assessing_normality.rst
+
 .. include:: confidence_interval_single_mean.rst
 
 
@@ -146,3 +148,25 @@ simulation every time we want an interval.
 .. |image5039| image:: ../chp5/img/media/t_statistic.png
    :width: 5.18in
    :height: 0.69in
+.. |image510| image:: img/histogram_normal_curve.png
+   :width: 5.02in
+   :height: 3.47in
+.. |image511| image:: img/normal_data.png
+   :width: 3.40in
+   :height: 5.11in
+.. |image512| image:: img/non_normal_data.png
+   :width: 3.38in
+   :height: 5.20in
+.. |image513| image:: img/chi_square.png
+   :width: 6.96in
+   :height: 6.12in
+.. .. |image514| image:: img/CI_in_JMP_sm.gif
+.. |image514| image:: img/CI_in_JMP.gif
+   :width: 6.36in
+   :height: 3.21in
+.. |image515| image:: img/t_quantile.gif
+   :width: 7.23in
+   :height: 4.41in
+.. |image516| image:: img/normal_quantile_plot.gif
+   :width: 7.23in
+   :height: 4.41in
