@@ -1,5 +1,6 @@
-.. role:: math(raw)
-   :format: html latex
+ .. raw:: html
+ 
+     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 Introduction to Confidence Intervals
 ====================================
@@ -171,6 +172,8 @@ components of the `StatKey's Sampling Distribution for a Mean page
 
         A population parameter (in this case a population mean) is located at ...
 
+.. TODO:: Add examples of computing the p-value using StatKey on the sampling distribution
+
 .. TODO:: Add in a section on the central limit theorem either here or in the theory section.
 Introduction to Confidence Intervals
 ------------------------------------
@@ -201,7 +204,7 @@ a statistician means when claiming to be "95% confident."
 Point Estimates and Interval Estimates for Parameters
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-When estimating the value of a parameter, we can chose between one of two types
+When estimating the value of a parameter, we can choose between one of two types
 of estimates.
 
 .. glossary::

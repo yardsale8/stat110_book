@@ -100,8 +100,11 @@ assume that the distribution of sample means will be normal.
    skewed, the sample size may have to be much larger than 30 in
    order for the central limit theorem to apply.
 
-In summary, we can use the Central Limit Theorem to help us create a
-procedure for comparing a population mean to some hypothesized value.
+In summary, we can use the Central Limit Theorem to help us create procedures
+for answering questions about the population mean, be it comparing the mean to
+some hypothesized value or estimating the value of the population mean with an
+interval.
+
 This works because:
 
 1. We know the distribution of sample means will be approximately normal
@@ -109,12 +112,13 @@ This works because:
    (ii) our sample size is sufficiently large.
 
 2. We know the distribution of sample means will be centered at the true
-   population mean (which we can set to some hypothesized value in the
-   null hypothesis).
+   population mean 
+..    (which we can set to some hypothesized value in the null hypothesis).
 
 3. We know that the variability in the distribution of sample means is
-   given by (i.e., the variability decreases as the sample size gets
+   given by :math:`\sigma/\sqrt{n}` (i.e., the variability decreases as the sample size gets
    larger, which we can see in the above examples).
 
 In the next section, we put all of the pieces together to create what is
-known as the **t-test**.
+a t-confidence interval.
+.. known as the **t-test**.

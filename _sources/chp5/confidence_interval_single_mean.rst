@@ -89,3 +89,16 @@ of interest.
        confidence interval, instead?
 
 
+Confidence Intervals in JMP
+---------------------------
+
+While it is certainly possible to compute a confidence interval using the
+formula and the t-quantiles, it is more convenient to compute these intervals
+using the built-in JMP functions.  We can generate a confidence interval for the
+population mean and standard deviation as follows.
+
+.. admonition:: Constructing Confidence Intervals for the Mean and Standard Deviation in JMP
+
+    1. Enter the sample data in a new data table.
+    2. Perform ANALYZE > DISTRIBUTION on the column of interest.
+    3. 

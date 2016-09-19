@@ -155,7 +155,7 @@ distribution.  Here are the standard interpretations for these statistics.
     Compute the **median** of these data.
 
 
-Unsual Values and the p-Value
+Unusual Values and the p-Value
 -----------------------------
 
 .. raw:: html
@@ -330,7 +330,7 @@ measure of spread.  We will instead use two other measures of spread, the
     :correct: b
 
     The standard deviation can be through of as ...
-*interquantile range (IQR)* and the *standard deviation (from the mean)*.
+*interquartile range (IQR)* and the *standard deviation (from the mean)*.
 
 .. glossary::
     Interquartile range (IQR)

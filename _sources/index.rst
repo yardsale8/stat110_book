@@ -32,6 +32,7 @@ SECTION 2: Table of Contents
    IntroToData/SummarizingData/SummarizingData.rst
    IntroToCI/IntroToCI.rst
    chp5/chp5_iverson.rst
+   IntroToCI/assessing_normality.rst
 ..   chp1/chp1.rst
 ..   chp1/lab1.rst
 ..   chp1/lab2.rst

@@ -39,14 +39,14 @@ We can use JMP to summarize the data as follows:
     :feedback_b: That is the standard deviation of the data.
     :feedback_c: That is the standard error of the mean.
 
-    What is the mean of the observed data?
+    What is the standard error of the mean?
 
 .. mchoice:: mc_example5_1_3
     :answer_a: Yes
     :answer_b: No
     :correct: b
-    :feedback_a: We would expect some variability from one sample the the next.
-    :feedback_b: We would expect some variability from one sample the the next.
+    :feedback_a: We would expect some variability from one sample to the next.
+    :feedback_b: We would expect some variability from one sample to the next.
 
     If another sample of \(n = 20\) subjects were obtained, would these new
     subjects have a mean exactly the same as the mean from this

@@ -9,7 +9,12 @@ time is exactly 45 seconds.
 
 |image501|
 
-.. admonition:: Question
+.. mchoice:: exp.5.2_1
+    :answer_a: The population mean can be found in the center (mean) of all of
+    the sample means.
+    :answer_b: Each dot represents the value of a potential population mean.
+    :answer_c: The population mean is unknown.
+    :correct: a
 
     In this simulation study, what is our value of μ, the true population
     mean?
