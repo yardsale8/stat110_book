@@ -34,7 +34,7 @@ We can use JMP to summarize the data as follows:
     :answer_a: 55.05
     :answer_b: 9.33
     :answer_c: 2.09
-    :correct: b
+    :correct: c
     :feedback_a: That is the mean of the data.
     :feedback_b: That is the standard deviation of the data.
     :feedback_c: That is the standard error of the mean.
