@@ -170,3 +170,6 @@ simulation every time we want an interval.
 .. |image516| image:: img/normal_quantile_plot.gif
    :width: 7.23in
    :height: 4.41in
+.. |image517| image:: img/picking_correct_procedure.png
+   :width: 8.64in
+   :height: 6.01in

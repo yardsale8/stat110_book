@@ -8,7 +8,7 @@ normal quantile plot* will give us the needed tool.
 
 A first attempt at trying to determine that a data set is normal might involve
 drawing a normal curve over a dot plot or histogram.  Unfortunately, is
-difficult to determine how close an given histogram is to the curve.
+difficult to determine how close a given histogram is to the curve.
 
 |image510|
 
@@ -33,7 +33,7 @@ plot in JMP.
     
     **Non-normal data is curved** 
     
-    The presense of curvature in a quantile plot is an indication of the
+    The presence of curvature in a quantile plot is an indication of the
     presence of tails that are longer or shorter than expected for data that
     comes from the normal distribution.
 
@@ -50,7 +50,7 @@ points fall outside the bands.
 
 .. mchoice:: assess_normal_1
     :answer_a: points with obvious curvature with a number of points outside the confidence bands.
-    :answer_b: points that roughly form a stright line with almost all points falling inside the confidence bands.
+    :answer_b: points that roughly form a straight line with almost all points falling inside the confidence bands.
     :correct: a
 
     A quantile plot of data that is clearly not from a normal distribution is characterized by ...

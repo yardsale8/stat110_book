@@ -48,7 +48,7 @@ provided by the Central Limit Theorem?
 How large does n have to be?
 ++++++++++++++++++++++++++++
 
-We have seen that the distibution of the sample mean will not always be
+We have seen that the distribution of the sample mean will not always be
 bell-shaped and often retains from of the features of the original population,
 such as a skewed shape.  Next, we give some guidance on when it is reasonable to
 assume that the distribution of sample means will be normal.

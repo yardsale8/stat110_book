@@ -287,6 +287,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#confidence-intervals-for-the-population-standard-deviation">Confidence Intervals for the Population Standard Deviation</a></li>
+<li><a class="reference internal" href="#picking-the-correct-procedure">Picking the Correct Procedure</a></li>
 <li><a class="reference internal" href="#more-on-the-interpretation-of-confidence-intervals">More on the Interpretation of Confidence Intervals</a><ul>
 <li><a class="reference internal" href="#example-5-5">Example 5.5:</a></li>
 </ul>
@@ -351,7 +352,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
 <p><a class="reference internal" href="../_images/image119.png"><img alt="image500" src="../_images/image119.png" style="width: 4.73105in; height: 2.12936in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_1">
-            Q-223: What is the mean of the observed data?
+            Q-288: What is the mean of the observed data?
             <li data-component="answer" data-correct id="mc_example5.1_1_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_1_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_1_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_1_opt_b">That is the standard deviation of the data.</li>
@@ -362,7 +363,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_2">
-            Q-224: What is the standard error of the mean?
+            Q-289: What is the standard error of the mean?
             <li data-component="answer"  id="mc_example5.1_2_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_2_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_2_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_2_opt_b">That is the standard deviation of the data.</li>
@@ -373,7 +374,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5_1_3">
-            Q-225: If another sample of (n = 20) subjects were obtained, would these new
+            Q-290: If another sample of (n = 20) subjects were obtained, would these new
 subjects have a mean exactly the same as the mean from this
 sample? Why or why not?
             <li data-component="answer"  id="mc_example5_1_3_opt_a">(A) Yes</li><li data-component="feedback" id="mc_example5_1_3_opt_a">We would expect some variability from one sample to the next.</li>
@@ -508,7 +509,7 @@ subjects in a study) have to be in order for us to use the short-cut
 provided by the Central Limit Theorem?</p>
 <div class="section" id="how-large-does-n-have-to-be">
 <h3>How large does n have to be?<a class="headerlink" href="#how-large-does-n-have-to-be" title="Permalink to this headline">¶</a></h3>
-<p>We have seen that the distibution of the sample mean will not always be
+<p>We have seen that the distribution of the sample mean will not always be
 bell-shaped and often retains from of the features of the original population,
 such as a skewed shape.  Next, we give some guidance on when it is reasonable to
 assume that the distribution of sample means will be normal.</p>
@@ -804,6 +805,79 @@ there is any doubt about this normality, we would be better off using the
 bootstrap interval instead.</p>
 </div>
 </div>
+<div class="section" id="picking-the-correct-procedure">
+<h2>Picking the Correct Procedure<a class="headerlink" href="#picking-the-correct-procedure" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have a choice between using the bootstrap and using the JMP
+intervals, we need some rules on which procedure is the right procedure for a
+given data set.  The advantage of JMP is the ease of use, but the JMP procedures
+require normality in some form (either normality of the original data or
+normality through a large sample in the case of estimating <span class="math">\(\mu\)</span>).</p>
+<div class="admonition-using-jmp-is-viable-when admonition">
+<p class="first admonition-title">Using JMP is viable when</p>
+<ul class="last">
+<li><p class="first">Estimating <span class="math">\(\mu\)</span>:</p>
+<blockquote>
+<div><p>Using JMP to contruct a confidence interval for <span class="math">\(\mu\)</span> is viable when</p>
+<ol class="arabic simple">
+<li>The original data is normal, or</li>
+<li>The sample size is large (<span class="math">\(n \ge 40\)</span>)</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Estimating <span class="math">\(\sigma\)</span>:</p>
+<blockquote>
+<div><p>Using JMP to contruct a confidence interval for <span class="math">\(\sigma\)</span> is viable
+the original data is normal.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<p>Luckily, the bootstrap confidence intervals don&#8217;t require any assumptions about
+normality and can be used when the JMP intervals are not viable.  The following
+flow chart illustrates the decision process involved in deciding which procedure
+is correct for a given data set.</p>
+<p><a href="#id28"><span class="problematic" id="id29">|image517|</span></a></p>
+<p>Recall that we use a normal probability plot to decide if the original data is
+normal.  Consequently, we will perform the following steps when constructing a
+confidence interval.</p>
+<div class="admonition-main-steps-in-constructing-a-confidence-interval-for-math-mu-or-math-sigma admonition">
+<p class="first admonition-title">Main Steps in Constructing a Confidence Interval for <span class="math">\(\mu\)</span> or <span class="math">\(\sigma\)</span></p>
+<ol class="last arabic simple">
+<li>Use JMP to construct a normal quantile plot and check the normality of the
+original data.</li>
+<li>Determine the correct procedure based on normality and the sample size.</li>
+<li>Construct your confidence interval.</li>
+<li>Write a sentence summarizing your interval in the context of the problem.</li>
+</ol>
+</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_1">
+            Q-291: Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            <li data-component="answer" data-correct id="mc_picking_correct_1_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_a">Since the original data is normal, it is safe to use JMP.</li>
+            
+            <li data-component="answer"  id="mc_picking_correct_1_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_2">
+            Q-292: Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            <li data-component="answer" data-correct id="mc_picking_correct_2_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_a">Since the original data is normal, it is safe to use JMP.</li>
+            
+            <li data-component="answer"  id="mc_picking_correct_2_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_3">
+            Q-293: Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
+            <li data-component="answer"  id="mc_picking_correct_3_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_a">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>
+            
+            <li data-component="answer" data-correct id="mc_picking_correct_3_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_b">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>
+            
+
+            </ul>
+            </div>
 <div class="section" id="more-on-the-interpretation-of-confidence-intervals">
 <h2>More on the Interpretation of Confidence Intervals<a class="headerlink" href="#more-on-the-interpretation-of-confidence-intervals" title="Permalink to this headline">¶</a></h2>
 <p>The 95% refers to the process of constructing the confidence interval.

@@ -125,3 +125,75 @@ and standard deviation as follows.
     on the formula for the confidence interval for a standard deviation.  If
     there is any doubt about this normality, we would be better off using the
     bootstrap interval instead.
+
+Picking the Correct Procedure
+-----------------------------
+
+Now that we have a choice between using the bootstrap and using the JMP
+intervals, we need some rules on which procedure is the right procedure for a
+given data set.  The advantage of JMP is the ease of use, but the JMP procedures
+require normality in some form (either normality of the original data or
+normality through a large sample in the case of estimating :math:`\mu`).
+
+.. admonition:: Using JMP is viable when
+
+    - Estimating :math:`\mu`:
+
+        Using JMP to contruct a confidence interval for :math:`\mu` is viable when
+
+        1. The original data is normal, or
+        2. The sample size is large (:math:`n \ge 40`)
+
+    - Estimating :math:`\sigma`:
+
+        Using JMP to contruct a confidence interval for :math:`\sigma` is viable
+        the original data is normal.
+
+Luckily, the bootstrap confidence intervals don't require any assumptions about
+normality and can be used when the JMP intervals are not viable.  The following
+flow chart illustrates the decision process involved in deciding which procedure
+is correct for a given data set.
+
+|image517|
+
+Recall that we use a normal probability plot to decide if the original data is
+normal.  Consequently, we will perform the following steps when constructing a
+confidence interval.
+
+.. admonition:: Main Steps in Constructing a Confidence Interval for :math:`\mu` or :math:`\sigma` 
+
+    1. Use JMP to construct a normal quantile plot and check the normality of the
+       original data.
+    2. Determine the correct procedure based on normality and the sample size.
+    3. Construct your confidence interval.
+    4. Write a sentence summarizing your interval in the context of the problem.
+
+
+
+.. mchoice:: mc_picking_correct_1
+    :answer_a: JMP interval
+    :answer_b: Boostrap interval
+    :correct: a
+    :feedback_a: Since the original data is normal, it is safe to use JMP.
+    :feedback_b: Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.
+
+    Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+
+.. mchoice:: mc_picking_correct_2
+    :answer_a: JMP interval
+    :answer_b: Boostrap interval
+    :correct: a
+    :feedback_a: Since the original data is normal, it is safe to use JMP.
+    :feedback_b: Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.
+
+    Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+
+
+.. mchoice:: mc_picking_correct_3
+    :answer_a: JMP interval
+    :answer_b: Boostrap interval
+    :correct: b
+    :feedback_a: Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.
+    :feedback_b: Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.
+
+    Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
