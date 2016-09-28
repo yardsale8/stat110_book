@@ -1,17 +1,19 @@
-Chapter 7
-=========
+Chapter 7 - Methods for Two Numerical Variables
+===============================================
 
-| In this chapter, we will discuss methods for comparing two numerical
-  variables. We will introduce the concept of correlation and the basic
-  idea behind a regression analysis.
-| ***Example 7.1: Lions’ Age and Proportion of Nose Blackness***
+In this chapter, we will discuss methods for comparing two numerical
+variables. We will introduce the concept of correlation and the basic
+idea behind a regression analysis.
 
-It has been suggested that the amount of black pigmentation on the nose
-of male lions increases with age. `Whitman et al.
-(2004) <http://www.savannasforever.org/docs/naturetrophy.pdf>`__
-measured the proportion of black on the noses of lions of known ages in
-, . These proportions were obtained from photos and digitally analyzed,
-and a subset of the original data is given in the file **Lions.JMP**.
+Example 7.1: Lions’ Age and Proportion of Nose Blackness
+--------------------------------------------------------
+
+It has been suggested that the amount of black pigmentation on the nose of male
+lions increases with age. `Whitman et al.  (2004)
+<http://www.savannasforever.org/docs/naturetrophy.pdf>`__ measured the
+proportion of black on the noses of lions of known ages in Tanzania, East
+Africa. These proportions were obtained from photos and digitally analyzed, and
+a subset of the original data is given in the file **Lions.JMP**.
 
     Close-up colour photographs were taken of known-aged lions from the
     and , between 1999 and 2002. Each photograph was first digitized at
@@ -24,20 +26,14 @@ and a subset of the original data is given in the file **Lions.JMP**.
     ‘mapped’ and quantified for the percentage of readable pixels that
     contained ‘black’.
 
-+----------------------------------------------------------+-------------------------------------+
-| |image0|                                                 | |image1|                            |
-|                                                          |                                     |
-| Identification photograph of a 3-yr-old Serengeti male   | Excised photo of nose tip           |
-+==========================================================+=====================================+
-|                                                          | |image2|                            |
-|                                                          |                                     |
-|                                                          | GIS rendering of nose colouration   |
-+----------------------------------------------------------+-------------------------------------+
+|image0|
 
-| A portion of the data is shown below:
-| |image3|
+A portion of the data is shown below:
 
-***PEARSON CORRELATION COEFFICIENT***
+|image3|
+
+Pearson Correlation Coefficient
+-------------------------------
 
 The Pearson correlation coefficient (denoted by *r*) is used to describe
 and measure the relationship between two numerical variables. It is
@@ -47,54 +43,52 @@ appropriate to use when the following are true:
 
 -  Both variables are measured on interval or ratio scales
 
-+--------------------------------------------------------------------------------------+
-| The formula for the Pearson product-moment correlation coefficient is given below:   |
-+======================================================================================+
-+--------------------------------------------------------------------------------------+
+.. admonition:: Formula for the Correlation Coefficient
 
-**
-**\ We can also use JMP to directly calculate the Pearson correlation
-coefficient. Select **Analyze > Multivariate Methods > Multivariate**.
+    The formula for the Pearson product-moment correlation coefficient is given
+    below:
+
+    .. math::
+        
+         r = \frac{\sum_{i=1}^n \left( x_i - \bar{x}\right)\left( y_i - \bar{y}\right)}{s_x s_y(n-1)}
+
+.. admonition:: Calculating Correlation in JMP
+
+    We can also use JMP to directly calculate the Pearson correlation
+    coefficient. Select **Analyze > Multivariate Methods > Multivariate**.
 
 |image4|
 
-| Place both variables in the Y, columns box, and JMP returns the
-  following:
-| |image5|
-| |image6|
+Place both variables in the Y, columns box, and JMP returns the
+following:
+|image5|
+|image6|
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| *                                                                                                                                                                        |
-| Interpreting the Pearson Correlation Coefficient*:                                                                                                                       |
-|                                                                                                                                                                          |
-| 1. A positive correlation coefficient indicates a positive association between the two numerical variables, and negative correlation indicates a negative association.   |
-|                                                                                                                                                                          |
-| 2. The correlation coefficient is always between -1 and 1 (-1 ≤ *r* ≤ 1).                                                                                                |
-|                                                                                                                                                                          |
-|    -  Values near zero indicate a very weak relationship exists.                                                                                                         |
-|                                                                                                                                                                          |
-|    -  Values close to 1 indicate a very strong positive relationship exists.                                                                                             |
-|                                                                                                                                                                          |
-|    -  Values close to -1 indicate a very strong negative relationship exists.                                                                                            |
-+==========================================================================================================================================================================+
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. admonition:: Interpreting the Pearson Correlation Coefficient
 
-*Questions*:
+    1. A positive correlation coefficient indicates a positive association between the two numerical variables, and negative correlation indicates a negative association.
 
-1. What does this correlation coefficient say about the direction of the
-   relationship between a lion’s age and its proportion of nose
-   blackness?
+    2. The correlation coefficient is always between -1 and 1 (-1 ≤ *r* ≤ 1).
 
-2. What does this correlation coefficient say about the strength of the
-   relationship between a lion’s age and its proportion of nose
-   blackness?
+       -  Values near zero indicate a very weak relationship exists.
+       -  Values close to 1 indicate a very strong positive relationship exists.
+       -  Values close to -1 indicate a very strong negative relationship exists.
 
-***Caution Regarding Pearson’s Correlation Coefficient***
+.. admonition:: Questions
 
-***
-***\ You should never use a correlation coefficient without also looking
-at a scatterplot of the data. Why? Consider the data in the file
-**Anscombe\_Example.JMP**.
+    1. What does this correlation coefficient say about the direction of the
+       relationship between a lion’s age and its proportion of nose
+       blackness?
+
+    2. What does this correlation coefficient say about the strength of the
+       relationship between a lion’s age and its proportion of nose
+       blackness?
+
+.. caution:: 
+
+    You should never use a correlation coefficient without also looking
+    at a scatterplot of the data. Why? Consider the data in the file
+    **Anscombe\_Example.JMP**.
 
 +-----------------+---------------------------------------------+-------------------+
 | **Variables**   | **Pearson Correlation Coefficient (*r*)**   | **Scatterplot**   |
@@ -112,18 +106,20 @@ To avoid misinterpreting a correlation, always accompany the correlation
 coefficient with a scatterplot of the data and make sure the assumptions
 behind the Pearson product-moment correlation are met!
 
-***
-INTRODUCTION TO SIMPLE LINEAR REGRESSION ***
+Introduction to Simple Linear Regression
+----------------------------------------
 
 Next, we will explore the basic idea behind regression analysis. A
 simple linear regression model describes the relationship between a
 numerical response variable (y) and a single predictor variable (x).
 
-*Response variable*: The dependent variable, or the variable to be
-modeled.
+.. glossary::
 
-*Predictor variable*: The independent variable used as a predictor of
-the response.
+    Response variable 
+        The dependent variable, or the variable to be modeled.
+
+    Predictor variable 
+        The independent variable used as a predictor of the response.
 
 To carry out a simple linear regression analysis in JMP, you can use the
 **Analyze > Fit Y by X** menu\ **.** Place the y-variable in the **Y,
@@ -133,36 +129,37 @@ Response** box and the x-variable in the **X, Factor** box.
 
 JMP returns the following output:
 
-|image12|\ *
-*
+|image12|
 
 Click on the red drop-down arrow and select “Fit line” to see the
 following output:
 
 |image13|
 
-***
-Writing the Regression Equation***
+.. admonition:: Task
 
-***
-***
+    Writing the Regression Equation
 
-***Predicting the Mean of Y Given X***
 
-To use the lion’s age to predict the proportion of nose blackness, we
-simply use the equation. For example, predict the proportion of nose
-blackness for a 4-year-old lion:
+.. admonition:: Task - Predicting the Mean of Y Given X
 
-***
-***
+    To use the lion’s age to predict the proportion of nose blackness, we
+    simply use the equation. For example, predict the proportion of nose
+    blackness for a 4-year-old lion:
 
-***Caution*:** Note that there are several underlying assumptions that
-must be met in order for us to use this regression model. These are
-discussed in detail in STAT 310.
+.. caution::
 
-***ANOTHER EXAMPLE***
+    Note that there are several underlying assumptions that
+    must be met in order for us to use this regression model. These are
+    discussed in detail in STAT 310.
 
-**Example 7.2:** Consider the data found in the file **FEV.jmp**. This
+Another Example
+---------------
+
+Example 7.2 
+++++++++++++
+
+Consider the data found in the file **FEV.jmp**. This
 data is from an investigation which concerns measuring the subjects'
 respiratory function, as well as whether the subjects themselves smoke.
 In this problem, the measured outcome of interest is forced expiratory
@@ -187,16 +184,15 @@ discussed earlier in the semester.
 
 |image14|
 
-*
-Questions*:
+.. admonition:: Questions
 
-1. What do these summaries indicate concerning the relationship between
-   smoking and lung function?
+    1. What do these summaries indicate concerning the relationship between
+       smoking and lung function?
 
-2. Do you really believe that this is the case? If not, can you think of
-   any potential problems with either the study itself or our
-   descriptive methods which might cause the data to display this
-   relationship?
+    2. Do you really believe that this is the case? If not, can you think of
+       any potential problems with either the study itself or our
+       descriptive methods which might cause the data to display this
+       relationship?
 
 Next, let’s consider another variable in the study, Age. We can use a
 scatterplot to describe how FEV changes across Age:
@@ -206,21 +202,20 @@ scatterplot to describe how FEV changes across Age:
 Let’s calculate the correlation coefficient and the regression line in
 JMP:
 
-| |image16|
-| |image17|
+|image16|
+|image17|
 
-*
-Questions*:
+.. admonition:: Questions
 
-1. Interpret the intercept of the regression line in the context of the
-   problem.
+    1. Interpret the intercept of the regression line in the context of the
+       problem.
 
-2. Interpret the slope of the regression line in the context of the
-   problem.
+    2. Interpret the slope of the regression line in the context of the
+       problem.
 
-3. What can you say about the relationship between Age and lung
-   function? How does this affect the summaries we observed at the
-   beginning of this example?
+    3. What can you say about the relationship between Age and lung
+       function? How does this affect the summaries we observed at the
+       beginning of this example?
 
 Finally, let’s examine the relationship between Smoking Status and FEV
 after accounting for Age. From the red drop-down arrow next to
@@ -231,23 +226,23 @@ appear as follows.
 
 |image18|
 
-    |image19|
+|image19|
 
-    |image20|
+|image20|
 
-*Questions*:
+.. admonition:: Questions
 
-1. Does it appear that the rate at which a nonsmoker’s FEV increases
-   with Age differs from the rate at which a smoker’s FEV increases with
-   Age? Explain.
+    1. Does it appear that the rate at which a nonsmoker’s FEV increases
+       with Age differs from the rate at which a smoker’s FEV increases with
+       Age? Explain.
 
-2. Based on this information, do you think it is fair to examine the
-   relationship between FEV and Smoking Status without accounting for
-   Age? Explain.
+    2. Based on this information, do you think it is fair to examine the
+       relationship between FEV and Smoking Status without accounting for
+       Age? Explain.
 
-.. |image0| image:: img/media/image1.emf
-   :width: 2.37500in
-   :height: 2.38301in
+.. |image0| image:: img/media/image1.png
+   :width: 7.16in
+   :height: 4.92in
 .. |image1| image:: img/media/image2.png
    :width: 1.71875in
    :height: 0.95833in
