@@ -1,5 +1,5 @@
-Chapter 7 - Methods for Two Numerical Variables
-===============================================
+Methods for Two Numerical Variables
+===================================
 
 In this chapter, we will discuss methods for comparing two numerical
 variables. We will introduce the concept of correlation and the basic
@@ -9,7 +9,16 @@ idea behind a regression analysis.
 
 .. include:: ../chp7/association_between_two_variables.rst
 
-.. include:: ../chp7/correlation_coefficient.rst
+Video Lecture on Correlation
+----------------------------
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_qkfhij1g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7mh85sm3" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+    </div>
+
+.. include:: ../chp7/correlation_coefficient_iverson.rst
 
 .. include:: ../chp7/simple_linear_regression.rst
 
