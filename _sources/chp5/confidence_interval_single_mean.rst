@@ -139,15 +139,15 @@ normality through a large sample in the case of estimating :math:`\mu`).
 
     - Estimating :math:`\mu`:
 
-        Using JMP to contruct a confidence interval for :math:`\mu` is viable when
+        Using JMP to construct a confidence interval for :math:`\mu` is viable when
 
         1. The original data is normal, or
         2. The sample size is large (:math:`n \ge 40`)
 
     - Estimating :math:`\sigma`:
 
-        Using JMP to contruct a confidence interval for :math:`\sigma` is viable
-        the original data is normal.
+        Using JMP to construct a confidence interval for :math:`\sigma` is viable
+        when the original data is normal.
 
 Luckily, the bootstrap confidence intervals don't require any assumptions about
 normality and can be used when the JMP intervals are not viable.  The following

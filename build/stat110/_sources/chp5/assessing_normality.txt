@@ -7,7 +7,7 @@ careful about the application of the CLT to a small data set and *a
 normal quantile plot* will give us the needed tool.
 
 A first attempt at trying to determine that a data set is normal might involve
-drawing a normal curve over a dot plot or histogram.  Unfortunately, is
+drawing a normal curve over a dot plot or histogram.  Unfortunately, it is
 difficult to determine how close a given histogram is to the curve.
 
 |image510|

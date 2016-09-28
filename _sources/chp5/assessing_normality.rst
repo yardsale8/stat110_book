@@ -7,7 +7,7 @@ careful about the application of the CLT to a small data set and *a
 normal quantile plot* will give us the needed tool.
 
 A first attempt at trying to determine that a data set is normal might involve
-drawing a normal curve over a dot plot or histogram.  Unfortunately, is
+drawing a normal curve over a dot plot or histogram.  Unfortunately, it is
 difficult to determine how close a given histogram is to the curve.
 
 |image510|
@@ -57,7 +57,7 @@ points fall outside the bands.
 
 .. mchoice:: assess_normal_2
     :answer_a: points with obvious curvature with a number of points outside the confidence bands.
-    :answer_b: points that roughly form a stright line with almost all points falling inside the confidence bands.
+    :answer_b: points that roughly form a straight line with almost all points falling inside the confidence bands.
     :correct: b
 
     A quantile plot of data that is from a distribution that is approximately normal is characterized by ...

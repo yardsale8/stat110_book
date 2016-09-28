@@ -37,7 +37,7 @@ Finally, recall from the previous chapter that given the mean and
 standard deviation of a distribution, we can determine whether a given
 observation is an outlier or not based on its position on this
 distribution. This will help us decide whether the sample mean actually
-observed in the research study is an outlier on the distribution that
+observed in the research study is an outlier based on the distribution that
 assumes the null hypothesis is true.
 
 The only question that remains is this: How large does n (the number of
@@ -49,7 +49,7 @@ How large does n have to be?
 ++++++++++++++++++++++++++++
 
 We have seen that the distribution of the sample mean will not always be
-bell-shaped and often retains from of the features of the original population,
+bell-shaped and often retains some of the features of the original population,
 such as a skewed shape.  Next, we give some guidance on when it is reasonable to
 assume that the distribution of sample means will be normal.
 

@@ -4,7 +4,7 @@
 Confidence Intervals Based on the Normal Distribution
 =====================================================
 
-We in our bootstrap activities we have seen some common result.
+In our bootstrap activities we have seen some common results.
 
 .. admonition:: Important Points
 
