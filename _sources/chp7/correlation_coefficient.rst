@@ -57,17 +57,7 @@ following:
     at a scatterplot of the data. Why? Consider the data in the file
     **Anscombe\_Example.JMP**.
 
-+-----------------+---------------------------------------------+-------------------+
-| **Variables**   | **Pearson Correlation Coefficient (*r*)**   | **Scatterplot**   |
-+=================+=============================================+===================+
-| X1, Y1          | r = 0.82                                    | |image707|          |
-+-----------------+---------------------------------------------+-------------------+
-| X2, Y2          | r = 0.82                                    | |image708|          |
-+-----------------+---------------------------------------------+-------------------+
-| X3, Y3          | r = 0.82                                    | |image709|          |
-+-----------------+---------------------------------------------+-------------------+
-| X4, Y4          | r = 0.82                                    | |image7010|         |
-+-----------------+---------------------------------------------+-------------------+
+|image707|
 
 To avoid misinterpreting a correlation, always accompany the correlation
 coefficient with a scatterplot of the data and make sure the assumptions
