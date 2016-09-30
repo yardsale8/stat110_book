@@ -1,16 +1,15 @@
 Interpreting Slope and the :math:`y`-intercept
 ----------------------------------------------
 
-To write out an interpretation of the values of the slope and
-:math:`y`-intercept, we use the standard interpretations that are taught in
-mathematics.  Recall that the slope is the amount of change in :math:`y` when
-adding one unit to :math:`x`.  Since the relationships are rarely perfect in
-regression, but instead a general tendency, we change this interpretation as
-follows.
+To write out an interpretation for the slope and :math:`y`-intercept, we start
+with the standard interpretations that are taught in mathematics.  Recall that
+the slope is the amount of change in :math:`y` when adding one unit to
+:math:`x`.  Since the relationships in regression are rarely perfect, but
+instead describe a general tendency, we change this interpretation as follows.
 
-.. admonition:: The standard interpretation of the slope of the regression line
+.. admonition:: The standard interpretation of the slope of a regression line
 
-    The **slope of the regression line** is the *average* amount of change in
+    The slope of the regression line is the *average* amount of change in
     :math:`y` when adding one unit to :math:`x`.
 
 It is, as always, important to add the context to our interpretations and the
@@ -23,9 +22,9 @@ The :math:`y`-intercept is the value of the :math:`y` variable when :math:`x` is
 zero.  Adjusting to the inexact nature of regression, we get the following
 interpretation of the :math:`y`-intercept.
 
-.. admonition:: The standard interpretation of the slope of the regression line
+.. admonition:: The standard interpretation of the :math:`y`-intercept of a regression line
 
-    The **:math:`y`-intercept of the regression line** is the *average* value of 
+    The :math:`y`-intercept of the regression line  is the *average* value of 
     :math:`y` when the :math:`x` variable is zero.
 
 The following figure contains a template for and example of adding context to
@@ -34,16 +33,17 @@ our interpretation.
 |image7025|
 
 We need to be careful to only apply these interpretations when they are viable.
-In the case of the slope, it is important that the association is fairly linear
-when applying this interpretation.  Non-linear associations will have a variable
-rate of change, and assigning a fixed amount of change in :math:`y` for a given
-value of :math:`x` would be misleading.
+In the case of the slope, it is important that the association is fairly linear.
+Non-linear associations will have a variable rate of change, and assigning a
+fixed amount of change in :math:`y` for a given value of :math:`x` would be
+misleading.
 
 In terms of the :math:`y`-intercept, we need to assure that an :math:`x` value
 of zero is meaningful.  If :math:`x` represents *the profit of a business*, a
 value of zero is meaningful as it is definitely conceivable for a business to
 have a profit of zero. On the other hand, if the :math:`x` values represent the
-height of people, then a :math:`x` value of zero is nonsensical.
+heights of people, then an :math:`x` value of zero is nonsensical: A height of
+zero is inconceivable.
 
 Another consideration when applying these interpretations is the scope of the
 data.  We have no idea what is happening outside our data window and it would be
