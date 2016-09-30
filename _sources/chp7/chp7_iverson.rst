@@ -22,7 +22,11 @@ Video Lecture on Correlation
 
 .. include:: ../chp7/simple_linear_regression.rst
 
+.. include:: ../chp7/interpreting_slope_intercept.rst
+
 .. include:: ../chp7/another_example.rst
+
+.. include:: ../chp7/bootstrap_intervals_for_regression.rst
 
 .. |image700| image:: img/media/image1.png
    :width: 7.16in
@@ -90,3 +94,15 @@ Video Lecture on Correlation
 .. |image7021| image:: img/media/image23.png
    :width: 7.72in
    :height: 6.12in
+.. |image7022| image:: img/media/image24.png
+   :width: 5.72in
+   :height: 2.07in
+.. |image7023| image:: img/media/bootstrap_correlation.gif
+   :width: 9.58in
+   :height: 4.85in
+.. |image7024| image:: img/media/interpret_slope.png
+   :width: 5.13in
+   :height: 2.57in
+.. |image7025| image:: img/media/interpret_intercept.png
+   :width: 5.42in
+   :height: 2.64in

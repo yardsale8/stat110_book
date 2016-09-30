@@ -270,10 +270,14 @@
 </li>
 <li><a class="reference internal" href="#video-lecture-on-correlation">Video Lecture on Correlation</a></li>
 <li><a class="reference internal" href="#introduction-to-simple-linear-regression">Introduction to Simple Linear Regression</a></li>
+<li><a class="reference internal" href="#interpreting-slope-and-the-intercept">Interpreting Slope and the <span class="math">\(y\)</span>-intercept</a></li>
 <li><a class="reference internal" href="#another-example">Another Example</a><ul>
 <li><a class="reference internal" href="#example-7-2">Example 7.2</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#inference-for-regression">Inference for Regression</a></li>
+<li><a class="reference internal" href="#notation-for-regression">Notation for Regression</a></li>
+<li><a class="reference internal" href="#bootstrap-intervals-for-regression">Bootstrap Intervals for Regression</a></li>
 </ul>
 </li>
 </ul>
@@ -510,6 +514,68 @@ must be met in order for us to use this regression model. These are
 discussed in detail in STAT 310.</p>
 </div>
 </div>
+<div class="section" id="interpreting-slope-and-the-intercept">
+<h2>Interpreting Slope and the <span class="math">\(y\)</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-intercept" title="Permalink to this headline">¶</a></h2>
+<p>To write out an interpretation of the values of the slope and
+<span class="math">\(y\)</span>-intercept, we use the standard interpretations that are taught in
+mathematics.  Recall that the slope is the amount of change in <span class="math">\(y\)</span> when
+adding one unit to <span class="math">\(x\)</span>.  Since the relationships are rarely perfect in
+regression, but instead a general tendency, we change this interpretation as
+follows.</p>
+<div class="admonition-the-standard-interpretation-of-the-slope-of-the-regression-line admonition">
+<p class="first admonition-title">The standard interpretation of the slope of the regression line</p>
+<p class="last">The <strong>slope of the regression line</strong> is the <em>average</em> amount of change in
+<span class="math">\(y\)</span> when adding one unit to <span class="math">\(x\)</span>.</p>
+</div>
+<p>It is, as always, important to add the context to our interpretations and the
+following figure shows a basic template for writing about the slope, along with
+an example.</p>
+<p><a class="reference internal" href="chp7/img/media/interpret_slope.png"><img alt="image7024" src="chp7/img/media/interpret_slope.png" style="width: 5.13in; height: 2.57in;" /></a></p>
+<p>The <span class="math">\(y\)</span>-intercept is the value of the <span class="math">\(y\)</span> variable when <span class="math">\(x\)</span> is
+zero.  Adjusting to the inexact nature of regression, we get the following
+interpretation of the <span class="math">\(y\)</span>-intercept.</p>
+<div class="admonition-the-standard-interpretation-of-the-slope-of-the-regression-line admonition">
+<p class="first admonition-title">The standard interpretation of the slope of the regression line</p>
+<p class="last">The <strong>:math:`y`-intercept of the regression line</strong> is the <em>average</em> value of
+<span class="math">\(y\)</span> when the <span class="math">\(x\)</span> variable is zero.</p>
+</div>
+<p>The following figure contains a template for and example of adding context to
+our interpretation.</p>
+<p><a class="reference internal" href="../_images/interpret_intercept.png"><img alt="image7025" src="../_images/interpret_intercept.png" style="width: 5.42in; height: 2.64in;" /></a></p>
+<p>We need to be careful to only apply these interpretations when they are viable.
+In the case of the slope, it is important that the association is fairly linear
+when applying this interpretation.  Non-linear associations will have a variable
+rate of change, and assigning a fixed amount of change in <span class="math">\(y\)</span> for a given
+value of <span class="math">\(x\)</span> would be misleading.</p>
+<p>In terms of the <span class="math">\(y\)</span>-intercept, we need to assure that an <span class="math">\(x\)</span> value
+of zero is meaningful.  If <span class="math">\(x\)</span> represents <em>the profit of a business</em>, a
+value of zero is meaningful as it is definitely conceivable for a business to
+have a profit of zero. On the other hand, if the <span class="math">\(x\)</span> values represent the
+height of people, then a <span class="math">\(x\)</span> value of zero is nonsensical.</p>
+<p>Another consideration when applying these interpretations is the scope of the
+data.  We have no idea what is happening outside our data window and it would be
+a mistake to assume that the pattern that we see will continue past the largest
+and/or smallest data values.  For example, the slope might start to change if we
+push past our maximum y-value.  Similarly, if we do not have any data with
+<span class="math">\(x\)</span> values around zero, we should not interpret the value of the
+intercept.</p>
+<p>To summarize, use the following advise before interpreting the slope or
+intercept.</p>
+<div class="admonition-interpreting-the-slope-of-the-regression-line-is-viable-when admonition">
+<p class="first admonition-title">Interpreting the slope of the regression line is viable when ...</p>
+<ol class="last arabic simple">
+<li>the <span class="math">\(x\)</span> value is between the minimum and maximum values of <span class="math">\(x\)</span></li>
+<li>the association is fairly linear.</li>
+</ol>
+</div>
+<div class="admonition-interpreting-the-math-y-intercept-is-viable-when admonition">
+<p class="first admonition-title">Interpreting the <span class="math">\(y\)</span>-intercept is viable when ...</p>
+<ol class="last arabic simple">
+<li>there is data with <span class="math">\(x\)</span> values around zero.</li>
+<li>a <span class="math">\(x\)</span> value of zero is meaningful.</li>
+</ol>
+</div>
+</div>
 <div class="section" id="another-example">
 <h2>Another Example<a class="headerlink" href="#another-example" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="example-7-2">
@@ -584,6 +650,54 @@ Age? Explain.</li>
 </ol>
 </div>
 </div>
+</div>
+<div class="section" id="inference-for-regression">
+<h2>Inference for Regression<a class="headerlink" href="#inference-for-regression" title="Permalink to this headline">¶</a></h2>
+<p>Recall that statistical inference it the process of making guesses about
+population parameters using a random sample.  We can apply the same ideas we
+used earlier in the book to linear regression, estimating the values of
+the population correlation coefficient and/or the slope of the regression line
+fit to the entire population.  In this section, we will apply the bootstrap
+process to regression to obtain confidence intervals for these quantities.</p>
+</div>
+<div class="section" id="notation-for-regression">
+<h2>Notation for Regression<a class="headerlink" href="#notation-for-regression" title="Permalink to this headline">¶</a></h2>
+<p>The following figure gives the common symbols used for the sample and population
+correlation coefficients and slopes.  Once again, greek letters are used for the
+parameters, in this case <span class="math">\(\rho\)</span> and <span class="math">\(\beta\)</span> for the correlation
+coefficient and slope, respectively.  The sample correlation coefficient and
+sample slope are respectively denoted by <span class="math">\(r\)</span> and <span class="math">\(b\)</span>.</p>
+<p><a class="reference internal" href="../_images/image245.png"><img alt="image7022" src="../_images/image245.png" style="width: 5.72in; height: 2.07in;" /></a></p>
+</div>
+<div class="section" id="bootstrap-intervals-for-regression">
+<h2>Bootstrap Intervals for Regression<a class="headerlink" href="#bootstrap-intervals-for-regression" title="Permalink to this headline">¶</a></h2>
+<p>Our goal is to use the sample values of <span class="math">\(r\)</span> and <span class="math">\(b\)</span> to estimate
+<span class="math">\(\rho\)</span> and <span class="math">\(\beta\)</span>.  We can again estimate the sampling variability
+in these statistics by using the bootstrap.  Let&#8217;s review the process of
+generating the bootstrap distribution of a statistic.</p>
+<div class="admonition-generating-the-bootstrap-distribution-of-a-statistic admonition">
+<p class="first admonition-title">Generating the bootstrap distribution of a statistic</p>
+<ol class="last arabic">
+<li><p class="first">Generate many samples of the sample (at least 1000) by taking samples
+that</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>use the same size as the original sample</li>
+<li>use sampling with replacement</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">For each sample, compute the value of the bootstrap statistic.</p>
+</li>
+<li><p class="first">Collect all of these bootstrap statistics into the bootstrap
+distribution. We can construct C% confidence intervals using
+the middle C% of this distribution.</p>
+</li>
+</ol>
+</div>
+<p>Once again, we will use the StatKey Website, this time in the section titled
+<a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_2_quant/bootstrap_2_quant.html">Confidence Interval for a Slope, Correlation</a></p>
+<p><a class="reference internal" href="../_images/bootstrap_correlation.gif"><img alt="image7023" src="../_images/bootstrap_correlation.gif" style="width: 9.58in; height: 4.85in;" /></a></p>
 </div>
 </div>
 
