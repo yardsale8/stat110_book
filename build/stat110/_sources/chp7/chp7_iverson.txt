@@ -106,3 +106,6 @@ Video Lecture on Correlation
 .. |image7025| image:: img/media/interpret_intercept.png
    :width: 5.42in
    :height: 2.64in
+.. |image7026| image:: img/media/image23.png
+   :width: 3.32in
+   :height: 3.06in

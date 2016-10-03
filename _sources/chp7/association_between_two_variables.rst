@@ -132,6 +132,42 @@ and *form* of the association.
     would I use?  Did I need a curve to cover the points or was a straight line
     sufficient?
 
+.. admonition:: Check your understanding
+
+   |image7026|
+
+   Use the graph shown above to answer each of the following questions.
+
+
+    .. mchoice:: describe_direction_1
+        :answer_a: Positive
+        :answer_b: Negative
+        :answer_c: No direction
+        :correct: a
+        :feedback_b: Notice that the heights tend to rise as you scan from left to right.
+        :feedback_c: Notice that the heights tend to rise as you scan from left to right.
+
+        Which of the following best describes the direction of the association
+        shown above?
+
+    .. mchoice:: describe_strength_1
+        :answer_a: Strong
+        :answer_b: Moderately strong
+        :answer_c: Weak
+        :correct: a, b
+        :feedback_b: Although most points would be within about 0.05, or 5%, ot the line.  This is bordering on a strong prediction.
+        :feedback_c: Notice that most points would be within about 0.05, or 5%, ot the line.  This is bordering on a strong prediction.
+
+        Which of the following best describes the strength of the association?
+
+    .. mchoice:: describe_form_1
+        :answer_a: Linear
+        :answer_b: Non-linear
+        :correct: a
+        :feedback_b: There is no need to use a curve here, a line does just as well.
+
+        Which of the following best describes the form of the association?
+
 I find that the strength of the association is the most difficult trait to
 describe, especially to someone that is new to statistics.  In the next section,
 we will introduce a summary method that will help us determine the strength of a

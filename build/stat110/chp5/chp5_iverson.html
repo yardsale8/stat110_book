@@ -101,6 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Methods for Two Numerical Variables" href="../chp7/chp7_iverson.html" />
     <link rel="prev" title="Introduction to Confidence Intervals" href="../IntroToCI/IntroToCI.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -299,8 +300,12 @@
     </a>
   </li>
   
-    <li class="divider-vertical"></li>
-  
+  <li id="relations-next" title='Next Chapter - Methods for Two Numerical Variables' data-toggle="tooltip" >
+    <a href="../chp7/chp7_iverson.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -358,7 +363,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
 <p><a class="reference internal" href="../_images/image120.png"><img alt="image500" src="../_images/image120.png" style="width: 4.73105in; height: 2.12936in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_1">
-            Q-130: What is the mean of the observed data?
+            Q-200: What is the mean of the observed data?
             <li data-component="answer" data-correct id="mc_example5.1_1_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_1_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_1_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_1_opt_b">That is the standard deviation of the data.</li>
@@ -369,7 +374,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_2">
-            Q-131: What is the standard error of the mean?
+            Q-201: What is the standard error of the mean?
             <li data-component="answer"  id="mc_example5.1_2_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_2_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_2_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_2_opt_b">That is the standard deviation of the data.</li>
@@ -380,7 +385,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5_1_3">
-            Q-132: If another sample of (n = 20) subjects were obtained, would these new
+            Q-202: If another sample of (n = 20) subjects were obtained, would these new
 subjects have a mean exactly the same as the mean from this
 sample? Why or why not?
             <li data-component="answer"  id="mc_example5_1_3_opt_a">(A) Yes</li><li data-component="feedback" id="mc_example5_1_3_opt_a">We would expect some variability from one sample to the next.</li>
@@ -598,7 +603,7 @@ plot, only claiming <em>the data is clearly non-normal</em> when at least 5% of 
 points fall outside the bands.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_1">
-            Q-133: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
+            Q-203: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
             <li data-component="answer" data-correct id="assess_normal_1_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_a"></li>
             
             <li data-component="answer"  id="assess_normal_1_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_b"></li>
@@ -607,7 +612,7 @@ points fall outside the bands.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_2">
-            Q-134: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
+            Q-204: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
             <li data-component="answer"  id="assess_normal_2_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="assess_normal_2_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_b"></li>
@@ -776,7 +781,7 @@ original data.</li>
 </div>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_1">
-            Q-135: Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            Q-205: Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
             <li data-component="answer" data-correct id="mc_picking_correct_1_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_a">Since the original data is normal, it is safe to use JMP.</li>
             
             <li data-component="answer"  id="mc_picking_correct_1_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
@@ -785,7 +790,7 @@ original data.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_2">
-            Q-136: Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            Q-206: Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
             <li data-component="answer" data-correct id="mc_picking_correct_2_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_a">Since the original data is normal, it is safe to use JMP.</li>
             
             <li data-component="answer"  id="mc_picking_correct_2_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
@@ -794,7 +799,7 @@ original data.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_3">
-            Q-137: Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
+            Q-207: Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
             <li data-component="answer"  id="mc_picking_correct_3_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_a">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>
             
             <li data-component="answer" data-correct id="mc_picking_correct_3_opt_b">(B) Boostrap interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_b">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>
@@ -814,6 +819,12 @@ original data.</li>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../IntroToCI/IntroToCI.html" ></a>
   
+  <li id="relations-next" class="navLink" title='Next Section - Methods for Two Numerical Variables' data-toggle="tooltip" >
+    <a href="../chp7/chp7_iverson.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp7/chp7_iverson.html" >Next Section - Methods for Two Numerical Variables</a>
 
 <script type="text/javascript">
 
