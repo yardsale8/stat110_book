@@ -18,7 +18,7 @@ quantitative variables.  Consequently, we will be analyzing *bivariate data*.
        use the value of one variable to improve out prediction of a second
        variable.
     Bivariate data
-       **Biavariate data** consists of data that include two measurements on
+       **Bivariate data** consists of data that include two measurements on
        each individual.  Note that *bivariate* literally means "two variables."
 
 Scatterplots and Displaying an Association
@@ -75,7 +75,7 @@ association.
 Describing an Association Between Variables
 +++++++++++++++++++++++++++++++++++++++++++
 
-As always, interpretions in statistics are just as important as calculations or
+As always, interpretations in statistics are just as important as calculations or
 the construction of graphical displays of data.  When describing a possible
 association between two variables, we will focus on the *direction*, *strength*,
 and *form* of the association.
