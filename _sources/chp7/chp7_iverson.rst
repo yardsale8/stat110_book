@@ -22,6 +22,8 @@ Video Lecture on Correlation
 
 .. include:: ../chp7/simple_linear_regression.rst
 
+.. include:: ../chp7/regression_in_JMP.rst
+
 .. include:: ../chp7/interpreting_slope_intercept.rst
 
 .. include:: ../chp7/another_example.rst
