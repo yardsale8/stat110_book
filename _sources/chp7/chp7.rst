@@ -34,7 +34,7 @@ idea behind a regression analysis.
 .. |image706| image:: img/media/image8.png
    :width: 3.22917in
    :height: 3.21418in
-.. |image707| image:: img/media/image23.png
+.. |image707| image:: img/media/image25.png
    :width: 9.44in
    :height: 9.29in
 .. |image708| image:: img/media/image10.png
