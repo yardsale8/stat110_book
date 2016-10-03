@@ -20,7 +20,7 @@ Video Lecture on Correlation
 
 .. include:: ../chp7/correlation_coefficient.rst
 
-.. include:: ..chp7/least_squares_line.rst
+.. include:: ../chp7/least_squares_line.rst
 
 .. include:: ../chp7/simple_linear_regression.rst
 
