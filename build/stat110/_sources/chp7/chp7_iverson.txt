@@ -26,6 +26,8 @@ Video Lecture on Correlation
 
 .. include:: ../chp7/another_example.rst
 
+.. include:: ../chp7/check_correlation_regression.rst
+
 .. include:: ../chp7/bootstrap_intervals_for_regression.rst
 
 .. |image700| image:: img/media/image1.png
