@@ -27,7 +27,7 @@
         :feedback_b: A correlation coefficient over about 0.7 indicates a strong relationship
         :feedback_c: A correlation coefficient over about 0.7 indicates a strong relationship
 
-        Based on the correlation coefficient, how would to rate the strength of this linear association?
+        Based on the correlation coefficient, how would you rate the strength of this linear association?
 
     .. mchoice:: interpret_correlation_2
         :answer_a: Positive

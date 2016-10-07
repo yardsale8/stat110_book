@@ -27,8 +27,8 @@ interpretation of the :math:`y`-intercept.
     The :math:`y`-intercept of the regression line  is the *average* value of 
     :math:`y` when the :math:`x` variable is zero.
 
-The following figure contains a template for and example of adding context to
-our interpretation.
+The following figure contains a template for adding context to our
+interpretation, along with an example of the application of the template.
 
 |image7025|
 
@@ -53,7 +53,7 @@ push past our maximum y-value.  Similarly, if we do not have any data with
 :math:`x` values around zero, we should not interpret the value of the
 intercept.
 
-To summarize, use the following advise before interpreting the slope or
+To summarize, use the following advice before interpreting the slope or
 intercept.
 
 .. admonition:: Interpreting the slope of the regression line is viable when ...
