@@ -1,0 +1,61 @@
+
+Example 5.1: 
+-------------
+
+A study conducted by researchers at Pennsylvania State
+University investigated whether time perception, a simple indication of
+a person’s ability to concentrate, is impaired during nicotine
+withdrawal. The study results were presented in the paper “Smoking
+Abstinence Impairs Time Estimation Accuracy in Cigarette Smokers”
+(*Psychopharmacology Bulletin* [2003]: 90-95). After a 24-hour smoking
+abstinence, 20 smokers were asked to estimate how much time had passed
+during a 45-second period. Suppose the resulting data on perceived
+elapsed time (in seconds) were analyzed as shown below (these results
+are artificial but are similar to the actual findings). The data can be
+found in the file **Nicotine1.JMP**.
+
+We can use JMP to summarize the data as follows:
+
+|image500|
+
+
+.. mchoice:: mc_example5.1_1
+    :answer_a: 55.05
+    :answer_b: 9.33
+    :answer_c: 2.09
+    :correct: a
+    :feedback_a: That is the mean of the data.
+    :feedback_b: That is the standard deviation of the data.
+    :feedback_c: That is the standard error of the mean.
+
+    What is the mean of the observed data?
+
+.. mchoice:: mc_example5.1_2
+    :answer_a: 55.05
+    :answer_b: 9.33
+    :answer_c: 2.09
+    :correct: c
+    :feedback_a: That is the mean of the data.
+    :feedback_b: That is the standard deviation of the data.
+    :feedback_c: That is the standard error of the mean.
+
+    What is the standard error of the mean?
+
+.. mchoice:: mc_example5_1_3
+    :answer_a: Yes
+    :answer_b: No
+    :correct: b
+    :feedback_a: We would expect some variability from one sample to the next.
+    :feedback_b: We would expect some variability from one sample to the next.
+
+    If another sample of \(n = 20\) subjects were obtained, would these new
+    subjects have a mean exactly the same as the mean from this
+    sample? Why or why not?
+
+.. .. admonition:: Questions:
+.. 
+..     3. Given your answer to the previous question, do you think it is
+..            appropriate to use only this sample mean to make inferences about
+..            the mean perceived elapsed time in the greater population of all
+..            smokers subjected to nicotine withdrawal? Explain.
+
