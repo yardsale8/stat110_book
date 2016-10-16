@@ -1,1 +1,0 @@
-$(pyenv which runestone) build
