@@ -1,12 +1,12 @@
 Inference for Regression
 ---------------------------------------------
 
-Recall that statistical inference it the process of making guesses about
+Recall that statistical inference is the process of making guesses about
 population parameters using a random sample.  We can apply the same ideas we
-used earlier in the book to linear regression, estimating the values of
-the population correlation coefficient and/or the slope of the regression line
-fit to the entire population.  In this section, we will apply the bootstrap
-process to regression to obtain confidence intervals for these quantities.
+used earlier in the book to linear regression, estimating the values of the
+population correlation coefficient and/or the slope of the population regression
+line.  In this section, we will apply the bootstrap process to regression to
+obtain confidence intervals for these quantities.
 
 Notation for Regression
 -----------------------

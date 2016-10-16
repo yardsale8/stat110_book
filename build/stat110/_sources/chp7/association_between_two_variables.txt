@@ -15,17 +15,17 @@ quantitative variables.  Consequently, we will be analyzing *bivariate data*.
 
     Association between two variables
        We say that there is an **association between two variables** when we can
-       use the value of one variable to improve out prediction of a second
+       use the value of one variable to improve our prediction of a second
        variable.
     Bivariate data
-       **Bivariate data** consists of data that include two measurements on
+       **Bivariate data** consists of data that includes two measurements on
        each individual.  Note that *bivariate* literally means "two variables."
 
 Scatterplots and Displaying an Association
 ++++++++++++++++++++++++++++++++++++++++++
 
 Creating a scatterplot is always the first step in determining if two variables
-are associated.  A scatterplot is a constructed by plotting a point at each of
+are associated.  A scatterplot is constructed by plotting a point at each of
 the :math:`(x,y)` pairs, where :math:`x` and :math:`y` are the values of the x
 and y variables for each individual, respectively.  Here is the scatterplot for
 the data from example 7.1, which was created in JMP.

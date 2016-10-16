@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Interpreting Slope and the y-intercept &mdash; Runestone Interactive Overview</title>
+    <title>Interpreting Slope and the \(y\)-intercept &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -260,7 +260,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Interpreting Slope and the <span class="math">y</span>-intercept</a></li>
+<li><a class="reference internal" href="#">Interpreting Slope and the <span class="math">\(y\)</span>-intercept</a></li>
 </ul>
 </ul>
 </li>
@@ -293,65 +293,65 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="interpreting-slope-and-the-y-intercept">
-<h1>Interpreting Slope and the <span class="math">y</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-y-intercept" title="Permalink to this headline">¶</a></h1>
-<p>To write out an interpretation for the slope and <span class="math">y</span>-intercept, we start
+  <div class="section" id="interpreting-slope-and-the-intercept">
+<h1>Interpreting Slope and the <span class="math">\(y\)</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-intercept" title="Permalink to this headline">¶</a></h1>
+<p>To write out an interpretation for the slope and <span class="math">\(y\)</span>-intercept, we start
 with the standard interpretations that are taught in mathematics.  Recall that
-the slope is the amount of change in <span class="math">y</span> when adding one unit to
-<span class="math">x</span>.  Since the relationships in regression are rarely perfect, but
+the slope is the amount of change in <span class="math">\(y\)</span> when adding one unit to
+<span class="math">\(x\)</span>.  Since the relationships in regression are rarely perfect, but
 instead describe a general tendency, we change this interpretation as follows.</p>
 <div class="admonition-the-standard-interpretation-of-the-slope-of-a-regression-line admonition">
 <p class="first admonition-title">The standard interpretation of the slope of a regression line</p>
 <p class="last">The slope of the regression line is the <em>average</em> amount of change in
-<span class="math">y</span> when adding one unit to <span class="math">x</span>.</p>
+<span class="math">\(y\)</span> when adding one unit to <span class="math">\(x\)</span>.</p>
 </div>
 <p>It is, as always, important to add the context to our interpretations and the
 following figure shows a basic template for writing about the slope, along with
 an example.</p>
 <p><a href="#id1"><span class="problematic" id="id2">|image7024|</span></a></p>
-<p>The <span class="math">y</span>-intercept is the value of the <span class="math">y</span> variable when <span class="math">x</span> is
+<p>The <span class="math">\(y\)</span>-intercept is the value of the <span class="math">\(y\)</span> variable when <span class="math">\(x\)</span> is
 zero.  Adjusting to the inexact nature of regression, we get the following
-interpretation of the <span class="math">y</span>-intercept.</p>
+interpretation of the <span class="math">\(y\)</span>-intercept.</p>
 <div class="admonition-the-standard-interpretation-of-the-math-y-intercept-of-a-regression-line admonition">
-<p class="first admonition-title">The standard interpretation of the <span class="math">y</span>-intercept of a regression line</p>
-<p class="last">The <span class="math">y</span>-intercept of the regression line  is the <em>average</em> value of
-<span class="math">y</span> when the <span class="math">x</span> variable is zero.</p>
+<p class="first admonition-title">The standard interpretation of the <span class="math">\(y\)</span>-intercept of a regression line</p>
+<p class="last">The <span class="math">\(y\)</span>-intercept of the regression line  is the <em>average</em> value of
+<span class="math">\(y\)</span> when the <span class="math">\(x\)</span> variable is zero.</p>
 </div>
-<p>The following figure contains a template for and example of adding context to
-our interpretation.</p>
+<p>The following figure contains a template for adding context to our
+interpretation, along with an example of the application of the template.</p>
 <p><a href="#id3"><span class="problematic" id="id4">|image7025|</span></a></p>
 <p>We need to be careful to only apply these interpretations when they are viable.
 In the case of the slope, it is important that the association is fairly linear.
 Non-linear associations will have a variable rate of change, and assigning a
-fixed amount of change in <span class="math">y</span> for a given value of <span class="math">x</span> would be
+fixed amount of change in <span class="math">\(y\)</span> for a given value of <span class="math">\(x\)</span> would be
 misleading.</p>
-<p>In terms of the <span class="math">y</span>-intercept, we need to assure that an <span class="math">x</span> value
-of zero is meaningful.  If <span class="math">x</span> represents <em>the profit of a business</em>, a
+<p>In terms of the <span class="math">\(y\)</span>-intercept, we need to assure that an <span class="math">\(x\)</span> value
+of zero is meaningful.  If <span class="math">\(x\)</span> represents <em>the profit of a business</em>, a
 value of zero is meaningful as it is definitely conceivable for a business to
-have a profit of zero. On the other hand, if the <span class="math">x</span> values represent the
-heights of people, then an <span class="math">x</span> value of zero is nonsensical: A height of
+have a profit of zero. On the other hand, if the <span class="math">\(x\)</span> values represent the
+heights of people, then an <span class="math">\(x\)</span> value of zero is nonsensical: A height of
 zero is inconceivable.</p>
 <p>Another consideration when applying these interpretations is the scope of the
 data.  We have no idea what is happening outside our data window and it would be
 a mistake to assume that the pattern that we see will continue past the largest
 and/or smallest data values.  For example, the slope might start to change if we
 push past our maximum y-value.  Similarly, if we do not have any data with
-<span class="math">x</span> values around zero, we should not interpret the value of the
+<span class="math">\(x\)</span> values around zero, we should not interpret the value of the
 intercept.</p>
-<p>To summarize, use the following advise before interpreting the slope or
+<p>To summarize, use the following advice before interpreting the slope or
 intercept.</p>
 <div class="admonition-interpreting-the-slope-of-the-regression-line-is-viable-when admonition">
 <p class="first admonition-title">Interpreting the slope of the regression line is viable when ...</p>
 <ol class="last arabic simple">
-<li>the <span class="math">x</span> value is between the minimum and maximum values of <span class="math">x</span></li>
+<li>the <span class="math">\(x\)</span> value is between the minimum and maximum values of <span class="math">\(x\)</span></li>
 <li>the association is fairly linear.</li>
 </ol>
 </div>
 <div class="admonition-interpreting-the-math-y-intercept-is-viable-when admonition">
-<p class="first admonition-title">Interpreting the <span class="math">y</span>-intercept is viable when ...</p>
+<p class="first admonition-title">Interpreting the <span class="math">\(y\)</span>-intercept is viable when ...</p>
 <ol class="last arabic simple">
-<li>there is data with <span class="math">x</span> values around zero.</li>
-<li>a <span class="math">x</span> value of zero is meaningful.</li>
+<li>there is data with <span class="math">\(x\)</span> values around zero.</li>
+<li>a <span class="math">\(x\)</span> value of zero is meaningful.</li>
 </ol>
 </div>
 </div>

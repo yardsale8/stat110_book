@@ -36,8 +36,8 @@ SECTION 2: Table of Contents
 ..   chp1/chp1.rst
 ..   chp1/lab1.rst
 ..   chp1/lab2.rst
-..    chp2_1/chp2_1.rst
-..    chp2_2/chp2_2.rst
+..   chp2_1/chp2_1.rst
+..   chp2_2/chp2_2.rst
 ..    chp3/chp3.rst
 ..    chp4/chp4.rst
 ..    chp5/chp5.rst

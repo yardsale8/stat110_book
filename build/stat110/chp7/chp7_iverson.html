@@ -101,6 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Chapter 1" href="../chp1/chp1.html" />
     <link rel="prev" title="Confidence Intervals Based on the Normal Distribution" href="../chp5/chp5_iverson.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -296,8 +297,12 @@
     </a>
   </li>
   
-    <li class="divider-vertical"></li>
-  
+  <li id="relations-next" title='Next Chapter - Chapter 1' data-toggle="tooltip" >
+    <a href="../chp1/chp1.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -358,16 +363,16 @@ quantitative variables.  Consequently, we will be analyzing <em>bivariate data</
 <dl class="glossary docutils">
 <dt id="term-association-between-two-variables">Association between two variables</dt>
 <dd>We say that there is an <strong>association between two variables</strong> when we can
-use the value of one variable to improve out prediction of a second
+use the value of one variable to improve our prediction of a second
 variable.</dd>
 <dt id="term-bivariate-data">Bivariate data</dt>
-<dd><strong>Bivariate data</strong> consists of data that include two measurements on
+<dd><strong>Bivariate data</strong> consists of data that includes two measurements on
 each individual.  Note that <em>bivariate</em> literally means &#8220;two variables.&#8221;</dd>
 </dl>
 <div class="section" id="scatterplots-and-displaying-an-association">
 <h3>Scatterplots and Displaying an Association<a class="headerlink" href="#scatterplots-and-displaying-an-association" title="Permalink to this headline">¶</a></h3>
 <p>Creating a scatterplot is always the first step in determining if two variables
-are associated.  A scatterplot is a constructed by plotting a point at each of
+are associated.  A scatterplot is constructed by plotting a point at each of
 the <span class="math">\((x,y)\)</span> pairs, where <span class="math">\(x\)</span> and <span class="math">\(y\)</span> are the values of the x
 and y variables for each individual, respectively.  Here is the scatterplot for
 the data from example 7.1, which was created in JMP.</p>
@@ -475,7 +480,7 @@ sufficient?</p>
 <blockquote class="last">
 <div>
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_direction_1">
-            Q-170: Which of the following best describes the direction of the association
+            Q-186: Which of the following best describes the direction of the association
 shown above?
             <li data-component="answer" data-correct id="describe_direction_1_opt_a">(A) Positive</li><li data-component="feedback" id="describe_direction_1_opt_a"></li>
             
@@ -487,7 +492,7 @@ shown above?
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_strength_1">
-            Q-171: Which of the following best describes the strength of the association?
+            Q-187: Which of the following best describes the strength of the association?
             <li data-component="answer" data-correct id="describe_strength_1_opt_a">(A) Strong</li><li data-component="feedback" id="describe_strength_1_opt_a"></li>
             
             <li data-component="answer" data-correct id="describe_strength_1_opt_b">(B) Moderately strong</li><li data-component="feedback" id="describe_strength_1_opt_b">Although most points would be within about 0.05, or 5%, ot the line.  This is bordering on a strong prediction.</li>
@@ -498,7 +503,7 @@ shown above?
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_form_1">
-            Q-172: Which of the following best describes the form of the association?
+            Q-188: Which of the following best describes the form of the association?
             <li data-component="answer" data-correct id="describe_form_1_opt_a">(A) Linear</li><li data-component="feedback" id="describe_form_1_opt_a"></li>
             
             <li data-component="answer"  id="describe_form_1_opt_b">(B) Non-linear</li><li data-component="feedback" id="describe_form_1_opt_b">There is no need to use a curve here, a line does just as well.</li>
@@ -653,8 +658,8 @@ interpretation of the <span class="math">\(y\)</span>-intercept.</p>
 <p class="last">The <span class="math">\(y\)</span>-intercept of the regression line  is the <em>average</em> value of
 <span class="math">\(y\)</span> when the <span class="math">\(x\)</span> variable is zero.</p>
 </div>
-<p>The following figure contains a template for and example of adding context to
-our interpretation.</p>
+<p>The following figure contains a template for adding context to our
+interpretation, along with an example of the application of the template.</p>
 <p><a class="reference internal" href="../_images/interpret_intercept.png"><img alt="image7025" src="../_images/interpret_intercept.png" style="width: 5.42in; height: 2.64in;" /></a></p>
 <p>We need to be careful to only apply these interpretations when they are viable.
 In the case of the slope, it is important that the association is fairly linear.
@@ -674,7 +679,7 @@ and/or smallest data values.  For example, the slope might start to change if we
 push past our maximum y-value.  Similarly, if we do not have any data with
 <span class="math">\(x\)</span> values around zero, we should not interpret the value of the
 intercept.</p>
-<p>To summarize, use the following advise before interpreting the slope or
+<p>To summarize, use the following advice before interpreting the slope or
 intercept.</p>
 <div class="admonition-interpreting-the-slope-of-the-regression-line-is-viable-when admonition">
 <p class="first admonition-title">Interpreting the slope of the regression line is viable when ...</p>
@@ -772,7 +777,7 @@ Age? Explain.</li>
 answer the following questions.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_correlation_1">
-            Q-173: What is the correlation coefficient for these data?
+            Q-189: What is the correlation coefficient for these data?
             <li data-component="answer"  id="check_correlation_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_correlation_1_opt_a">Line up FEV and Age in the correlation table.</li>
             
             <li data-component="answer"  id="check_correlation_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_correlation_1_opt_b">Line up FEV and Age in the correlation table.</li>
@@ -785,7 +790,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="interpret_correlation_1">
-            Q-174: Based on the correlation coefficient, how would to rate the strength of this linear association?
+            Q-190: Based on the correlation coefficient, how would you rate the strength of this linear association?
             <li data-component="answer" data-correct id="interpret_correlation_1_opt_a">(A) Strong</li><li data-component="feedback" id="interpret_correlation_1_opt_a"></li>
             
             <li data-component="answer"  id="interpret_correlation_1_opt_b">(B) Moderately Strong</li><li data-component="feedback" id="interpret_correlation_1_opt_b">A correlation coefficient over about 0.7 indicates a strong relationship</li>
@@ -796,7 +801,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="interpret_correlation_2">
-            Q-175: Based on the correlation coefficient, determine the direction of the association.
+            Q-191: Based on the correlation coefficient, determine the direction of the association.
             <li data-component="answer" data-correct id="interpret_correlation_2_opt_a">(A) Positive</li><li data-component="feedback" id="interpret_correlation_2_opt_a">A positive correlation coefficient indicates a positive direction.</li>
             
             <li data-component="answer"  id="interpret_correlation_2_opt_b">(B) Negative</li><li data-component="feedback" id="interpret_correlation_2_opt_b">A negative direction is indicated by a negative correlation coefficient.</li>
@@ -807,7 +812,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_slope_1">
-            Q-176: What is the slope of the least-squares regression line?
+            Q-192: What is the slope of the least-squares regression line?
             <li data-component="answer"  id="check_slope_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_slope_1_opt_a">The slope is the coefficient that is multiplied by Age</li>
             
             <li data-component="answer" data-correct id="check_slope_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_slope_1_opt_b"></li>
@@ -820,7 +825,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_intercept_1">
-            Q-177: What is the y-intercept of the least-squares regression line?
+            Q-193: What is the y-intercept of the least-squares regression line?
             <li data-component="answer" data-correct id="check_intercept_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_intercept_1_opt_a"></li>
             
             <li data-component="answer"  id="check_intercept_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_intercept_1_opt_b">The y-intercept is the constant in the equation.</li>
@@ -836,12 +841,12 @@ answer the following questions.</p>
 </div>
 <div class="section" id="inference-for-regression">
 <h2>Inference for Regression<a class="headerlink" href="#inference-for-regression" title="Permalink to this headline">¶</a></h2>
-<p>Recall that statistical inference it the process of making guesses about
+<p>Recall that statistical inference is the process of making guesses about
 population parameters using a random sample.  We can apply the same ideas we
-used earlier in the book to linear regression, estimating the values of
-the population correlation coefficient and/or the slope of the regression line
-fit to the entire population.  In this section, we will apply the bootstrap
-process to regression to obtain confidence intervals for these quantities.</p>
+used earlier in the book to linear regression, estimating the values of the
+population correlation coefficient and/or the slope of the population regression
+line.  In this section, we will apply the bootstrap process to regression to
+obtain confidence intervals for these quantities.</p>
 </div>
 <div class="section" id="notation-for-regression">
 <h2>Notation for Regression<a class="headerlink" href="#notation-for-regression" title="Permalink to this headline">¶</a></h2>
@@ -894,6 +899,12 @@ the middle C% of this distribution.</p>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../chp5/chp5_iverson.html" ></a>
   
+  <li id="relations-next" class="navLink" title='Next Section - Chapter 1' data-toggle="tooltip" >
+    <a href="../chp1/chp1.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp1/chp1.html" >Next Section - Chapter 1</a>
 
 <script type="text/javascript">
 
