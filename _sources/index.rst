@@ -33,7 +33,7 @@ SECTION 2: Table of Contents
    IntroToCI/IntroToCI.rst
    chp5/chp5_iverson.rst
    chp7/chp7_iverson.rst
-..   chp1/chp1.rst
+   chp1/chp1_iverson.rst
 ..   chp1/lab1.rst
 ..   chp1/lab2.rst
 ..   chp2_1/chp2_1.rst
