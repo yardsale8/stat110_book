@@ -3,8 +3,8 @@ Simulating the Guessing Distribution
 
 In each of the examples in this chapter, we will be using TinkerPlots to
 simulate a distribution that is in contrast to our research hypothesis.  In the
-case of evaluating the truthfullness of the claimant in the hearing loss
-example, our hypothesis is that the claimant was being purposefully mistruthful
+case of evaluating the truthfulness of the claimant in the hearing loss
+example, our hypothesis is that the claimant was being purposefully dishonest
 when answering the questions.  To test this claim, we will simulate the opposite
 distribution, that is the distribution of someone that cannot hear and is simply
 guessing which color is associated with the sound.  We are looking for evidence

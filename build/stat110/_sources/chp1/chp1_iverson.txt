@@ -6,12 +6,12 @@ population parameter using the information from a sample.  One important type of
 statistical inference is the testing of a hypothesis about a population
 parameter and in this chapter we will explore some important statistical
 concepts related to hypothesis test.  This is accomplished by considering a
-number of examples that use simulatation to determine if there is strong
+number of examples that use simulation to determine if there is strong
 evidence of a difference from the ideal situation.
 
 In the first example, we investigate a claim about hearing loss, trying to
 determine if claimant is purposefully being dishonest.  This example is
-introduced below and will be explored in a number of inclass activities.
+introduced below and will be explored in a number of in-class activities.
 
 .. include:: ../chp1/intro_example1.1.rst
 
