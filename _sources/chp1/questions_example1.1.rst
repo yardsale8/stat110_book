@@ -3,7 +3,7 @@ Questions about Example 1.1
 
 Recall that the subject was correct on 36 out of 100 trials when he
 was asked to identify whether the tone played with either the red or
-the blue lightbulb.
+the blue light bulb.
 
 .. admonition:: Check your understanding
 
@@ -12,7 +12,7 @@ the blue lightbulb.
         :answer_b: The 100 answer of a hearing impaired person that were observed.
         :answer_c: Whether or not the hearing impaired person answered correctly.
         :correct: a
-        :feedback_a: Here we are imagining giving the survey to a claimant many, many times.  This allows us to imagine what the number of correct answers should be if a person was truely guessing.
+        :feedback_a: Here we are imagining giving the survey to a claimant many, many times.  This allows us to imagine what the number of correct answers should be if a person was truly guessing.
 
          What is the population of interest?
 
