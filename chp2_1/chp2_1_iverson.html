@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Methods for a Single Categorical Variable &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="Introduction to Hypothesis Tests" href="../chp1/chp1_iverson.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp2_1_iverson'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Methods for a Single Categorical Variable</a><ul>
+<li><a class="reference internal" href="#formal-hypothesis-testing">Formal Hypothesis Testing</a></li>
+<li><a class="reference internal" href="#the-null-and-alternative-hypotheses">The Null and Alternative Hypotheses</a></li>
+<li><a class="reference internal" href="#evaluating-evidence-using-p-values">Evaluating Evidence Using P-Values</a><ul>
+<li><a class="reference internal" href="#example-1-helper-vs-hinderer">Example 1 - Helper vs. Hinderer?</a></li>
+<li><a class="reference internal" href="#example-2-are-women-passed-over-for-managerial-training">Example 2 - Are Women Passed Over for Managerial Training?</a></li>
+<li><a class="reference internal" href="#example-3-font-preference">Example 3 - Font Preference?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Introduction to Hypothesis Tests" data-toggle="tooltip">
+    <a href="../chp1/chp1_iverson.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="methods-for-a-single-categorical-variable">
+<h1>Methods for a Single Categorical Variable<a class="headerlink" href="#methods-for-a-single-categorical-variable" title="Permalink to this headline">¶</a></h1>
+<p>The general approach used in a statistical investigation is shown in the
+following diagram. Note that every investigation starts with a question
+that gets converted to a research hypothesis. Though we will rarely
+design our own studies in this course, we will discuss good strategies
+and best practices for collecting data throughout the semester. Most of
+our attention will be devoted to descriptive and inferential methods for
+analyzing the data, how we decide whether the data supports the research
+question, and how to write conclusions that appropriately summarize the
+results of the study.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A Statistical Investigation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/image110.png"><img alt="image0" src="../_images/image110.png" style="width: 6.50000in; height: 3.55833in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>In Chapter 2, we will discuss methods for making decisions concerning
+research hypotheses involving only a single categorical variable. Even
+though we’ll be adding lots of terminology and formalities along the
+way, we will use the same logical approach to investigating research
+questions that was introduced in Chapter 1.</p>
+<div class="section" id="formal-hypothesis-testing">
+<h2>Formal Hypothesis Testing<a class="headerlink" href="#formal-hypothesis-testing" title="Permalink to this headline">¶</a></h2>
+<p>You are most likely already familiar with several methods for descriptive
+statistics (e.g., calculating percentages, constructing bar charts or pie
+charts, etc.). Inferential methods, however, may be new to you. Again,
+inferential statistics involves drawing conclusions about the larger population
+that our sample was supposed to represent.  In several examples introduced in
+Chapter 1, we used a logical process to make statistical decisions concerning a
+population of interest – we were actually using inferential statistics already!
+Now, we will add more structure to these statistical investigations by
+introducing an inferential statistics procedure known as <strong>hypothesis testing</strong>.
+Note that in this chapter, we look at hypothesis testing for only research
+questions involving a single categorical variable.  Before we discuss this
+procedure, however, we must introduce a few more definitions.</p>
+<dl class="glossary docutils">
+<dt id="term-hypothesis-testing">Hypothesis Testing</dt>
+<dd><em>Hypothesis testing</em> is a procedure, based on sample evidence and
+probability, used to test a claim regarding a population parameter. The
+test will measure how well our observed sample statistic agrees with
+some assumption about this population parameter.</dd>
+</dl>
+<p>Before you begin a hypothesis test, you should clearly state your
+research hypothesis. For instance, let’s reconsider the research
+hypotheses from three of our previous examples.</p>
+<p><a class="reference internal" href="../_images/image222.png"><img alt="image22" src="../_images/image222.png" style="width: 4.89in; height: 1.31in;" /></a></p>
+<p>Once the research hypothesis has been developed, we typically
+formulate what are known as the null and alternative hypotheses. The
+null and alternative hypotheses are both statements about the parameter
+of interest in the study.</p>
+</div>
+<div class="section" id="the-null-and-alternative-hypotheses">
+<h2>The Null and Alternative Hypotheses<a class="headerlink" href="#the-null-and-alternative-hypotheses" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/29032992/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_70u4ovgr&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_ujixme8m" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+</div><div class="admonition-setting-up-the-null-and-alternative-hypothesis admonition">
+<p class="first admonition-title">Setting Up the Null and Alternative Hypothesis</p>
+<ul class="last simple">
+<li>The <em>null hypothesis</em>, H<sub>o</sub>, is what we will assume to be true
+(i.e., we will assume for the time being that whatever effect we want
+to detect doesn’t exist in reality). We will then evaluate the
+observed outcome from our study against what outcomes we expected to
+see under the null hypothesis. This will always contain a statement
+saying that the population parameter is <strong>equal</strong> to some value.</li>
+<li>The <em>alternative hypothesis</em>, H<sub>a</sub>, is what we are trying to
+show. Therefore, the research hypothesis is simply restated here as
+if it were true in the alternative hypothesis. This will always
+contain statements of inequality, saying that the population
+parameter is <strong>less than, greater than, or different from</strong> the value
+in the null hypothesis.</li>
+</ul>
+</div>
+<p>For our three examples, the null and alternative hypotheses are shown
+below.</p>
+<p><a class="reference internal" href="../_images/image232.png"><img alt="image23" src="../_images/image232.png" style="width: 5.81in; height: 2.34in;" /></a></p>
+<p>Note that we can also state these hypotheses in terms of the
+population parameter of interest using formal notation:</p>
+<p><a class="reference internal" href="../_images/image242.png"><img alt="image24" src="../_images/image242.png" style="width: 5.33in; height: 2.50in;" /></a></p>
+</div>
+<div class="section" id="evaluating-evidence-using-p-values">
+<h2>Evaluating Evidence Using P-Values<a class="headerlink" href="#evaluating-evidence-using-p-values" title="Permalink to this headline">¶</a></h2>
+<p>In in each of our three examples, we essentially <em>assumed the null
+hypothesis was true</em> when setting up our spinner for the Tinkerplots
+investigation. Then, we used the results simulated under this scenario
+to help us decide whether observing results such as our sample data
+would be an unusual event if the null hypothesis were true.</p>
+<p>Up to this point, whether an observed study result was considered
+unusual (or extreme) has been a rather subjective decision. Now, we will
+discuss the guidelines used by statisticians to determine whether an
+observed study result is extreme enough under the null hypothesis for us
+to conclude that the evidence supports the research hypothesis.</p>
+<p>First, note that in our three examples, we examined different parts of
+the distribution of simulated outcomes when deciding whether the
+observed study data was extreme. Each of these cases is an example of a
+specific type of hypothesis test.</p>
+<p><a class="reference internal" href="../_images/image252.png"><img alt="image25" src="../_images/image252.png" style="width: 4.42in; height: 3.48in;" /></a></p>
+<p>Statisticians typically use the following guidelines to determine
+whether the observed data supports the research question:</p>
+<p><a class="reference internal" href="../_images/image261.png"><img alt="image26" src="../_images/image261.png" style="width: 5.31in; height: 6.21in;" /></a></p>
+<p>Statisticians use what is called a <strong>p-value</strong> to quantify the amount
+of evidence that an observed outcome from a set of data provides for a
+research question.</p>
+<div class="admonition-making-a-decision-with-p-values admonition">
+<p class="first admonition-title">Making a Decision with p-values</p>
+<ul class="last simple">
+<li>If the p-value is less than .05 (5%), then the data provide enough statistical evidence to support the research question.</li>
+<li>If the p-value is not less than .05 (5%), then the data do not provide enough statistical evidence to support the research question.</li>
+</ul>
+</div>
+<p>Why does this decision rule work? Consider the “Helper vs. Hinderer”
+example. Because the p-value falls below 5%, the observed result
+<em>must</em> have been in the upper 5% of the reference distribution. As
+stated earlier, this implies that the observed study result is very
+unlikely to happen by chance under the null hypothesis, which supports
+the research question.</p>
+<p>On the other hand, consider the “Are Women Passed Over for Managerial
+Training” example. Because the p-value was larger than 5%, the
+observed result <em>can’t</em> have been in the lower 5% of the reference
+distribution. This implies that the observed study result is not all
+that unusual and could have easily happened by chance under the null
+hypothesis. Therefore, the null hypothesis <em>could</em> be true, and we
+have no evidence to support the research question.</p>
+<p>This decision rule is widely accepted for determining whether study
+results are statistically significant; however, some researchers do
+advocate using a more flexible rule similar to the following:</p>
+<div class="admonition-making-a-decision-with-p-values-revised admonition">
+<p class="first admonition-title">Making a Decision with p-values, Revised</p>
+<ul class="last simple">
+<li>If the p-value falls below .05, we have strong statistical evidence to support the alternative hypothesis (i.e., the research question).</li>
+<li>If the p-value falls below .10 but above .05, we have “marginal” statistical evidence to support the alternative hypothesis (i.e., the research question).</li>
+<li>If the p-value is above .10, we have no evidence to support the research question.</li>
+</ul>
+</div>
+<div class="section" id="example-1-helper-vs-hinderer">
+<h3>Example 1 - Helper vs. Hinderer?<a class="headerlink" href="#example-1-helper-vs-hinderer" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image59.png"><img alt="image4" src="../_images/image59.png" style="width: 4.31132in; height: 0.61492in;" /></a>
+<a class="reference internal" href="../_images/image213.png"><img alt="image5" src="../_images/image213.png" style="width: 4.15625in; height: 1.78372in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_1">
+            Q-126: Estimate the p-value using the simulation pictured above.
+            <li data-component="answer"  id="p_value_questions_1_opt_a">(A) 0/1000</li><li data-component="feedback" id="p_value_questions_1_opt_a">Remember that the upper p-value is the percent AT or above the value.</li>
+            
+            <li data-component="answer" data-correct id="p_value_questions_1_opt_b">(B) 1/1000</li><li data-component="feedback" id="p_value_questions_1_opt_b">This is an upper tail test, so the upper p-value is the fraction of the data that is at 14 (1 out of 1000) and above 14 (0 out of 1000).</li>
+            
+            <li data-component="answer"  id="p_value_questions_1_opt_c">(C) 999/1000</li><li data-component="feedback" id="p_value_questions_1_opt_c">This is an upper-tail test, use a upper p-value.</li>
+            
+            <li data-component="answer"  id="p_value_questions_1_opt_d">(D) 1000/1000</li><li data-component="feedback" id="p_value_questions_1_opt_d">This is an upper-tail test, use a upper p-value.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_1">
+            Q-127: Based on the p-value from the last question, what is the correct conclusion?
+            <li data-component="answer" data-correct id="conclusion_questions_1_opt_a">(A) There is strong evidence supporting the claim that the proportion of the ten-month-old infants tend to prefer the helper toy over the hinderer toy is greater than 50%.</li><li data-component="feedback" id="conclusion_questions_1_opt_a">Since the p-value = 1/1000 = 0.001 < 0.05, we have strong evidence in favor of the alternative hypothesis.</li>
+            
+            <li data-component="answer"  id="conclusion_questions_1_opt_b">(B) There is not enough evidence to claim that the proportion of the ten-month-old infants tend to prefer the helper toy over the hinderer toy is greater than 50%.</li><li data-component="feedback" id="conclusion_questions_1_opt_b">A small p-value is always strong evidence in favor of the alternative.</li>
+            
+            <li data-component="answer"  id="conclusion_questions_1_opt_c">(C) There is strong evidence supporting the claim that the proportion of the ten-month-old infants tend to prefer the helper toy over the hinderer toy is equal to 50%.</li><li data-component="feedback" id="conclusion_questions_1_opt_c">We never have strong evidence FOR the null hypothesis, only AGAINST the null and for the alternative.</li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="example-2-are-women-passed-over-for-managerial-training">
+<h3>Example 2 - Are Women Passed Over for Managerial Training?<a class="headerlink" href="#example-2-are-women-passed-over-for-managerial-training" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image61.png"><img alt="image6" src="../_images/image61.png" style="width: 4.48113in; height: 0.46295in;" /></a>
+<a class="reference internal" href="../_images/image310.png"><img alt="image7" src="../_images/image310.png" style="width: 4.25000in; height: 1.55743in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_2">
+            Q-128: Estimate the p-value using the simulation pictured above.
+            <li data-component="answer"  id="p_value_questions_2_opt_a">(A) 56/1000</li><li data-component="feedback" id="p_value_questions_2_opt_a">Remember that the lower p-value is the percent AT or below the value.</li>
+            
+            <li data-component="answer" data-correct id="p_value_questions_2_opt_b">(B) 121/1000</li><li data-component="feedback" id="p_value_questions_2_opt_b">This is a lower tail test, so the lower p-value is the fraction at 9 (65 out of 1000) or below 9 (56 out of 1000).</li>
+            
+            <li data-component="answer"  id="p_value_questions_2_opt_c">(C) 879/1000</li><li data-component="feedback" id="p_value_questions_2_opt_c">This is an lower-tail test, use a lower p-value.</li>
+            
+            <li data-component="answer"  id="p_value_questions_2_opt_d">(D) 944/1000</li><li data-component="feedback" id="p_value_questions_2_opt_d">This is an lower-tail test, use a lower p-value.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_2">
+            Q-129: Based on the p-value from the last question, what is the correct conclusion?
+            <li data-component="answer"  id="conclusion_questions_2_opt_a">(A) There is strong evidence supporting the claim that the proportion of women selected is less than 60%.</li><li data-component="feedback" id="conclusion_questions_2_opt_a">A large p-value never strong evidence in favor of the alternative.</li>
+            
+            <li data-component="answer" data-correct id="conclusion_questions_2_opt_b">(B) There is not enough evidence to claim that the proportion of women selected is less than 60%.</li><li data-component="feedback" id="conclusion_questions_2_opt_b">The p-value = 121/1000 = 0.121 > 0.05, so we do not have strong evidence in favor of the alternative hypothesis.</li>
+            
+            <li data-component="answer"  id="conclusion_questions_2_opt_c">(C) There is strong evidence supporting the claim that the proportion of women selected is equal to 60%.</li><li data-component="feedback" id="conclusion_questions_2_opt_c">We never have strong evidence FOR the null hypothesis, only AGAINST the null and for the alternative.</li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="example-3-font-preference">
+<h3>Example 3 - Font Preference?<a class="headerlink" href="#example-3-font-preference" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../_images/image72.png"><img alt="image8" src="../_images/image72.png" style="width: 4.45283in; height: 0.43006in;" /></a>
+<a class="reference internal" href="../_images/image410.png"><img alt="image9" src="../_images/image410.png" style="width: 4.42453in; height: 1.32594in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_3">
+            Q-130: Estimate the p-value using the simulation pictured above.
+            <li data-component="answer" data-correct id="p_value_questions_3_opt_a">(A) 0/1000</li><li data-component="feedback" id="p_value_questions_3_opt_a">The upper p-value is twice the percent of data at or in the direction of the closest tail.</li>
+            
+            <li data-component="answer"  id="p_value_questions_3_opt_b">(B) 1000/1000</li><li data-component="feedback" id="p_value_questions_3_opt_b">The upper p-value is twice the percent of data at or in the direction of the closest tail.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_3">
+            Q-131: Based on the p-value from the last question, what is the correct conclusion?
+            <li data-component="answer" data-correct id="conclusion_questions_3_opt_a">(A) There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is different than 50%</li><li data-component="feedback" id="conclusion_questions_3_opt_a">This is a two-tail test, so the p-value = 2*0 = 0 < 0.05, so there is strong evidence in favor of the alternative hypothesis. In this case, we measure toward the upper tail, then double the value.</li>
+            
+            <li data-component="answer"  id="conclusion_questions_3_opt_b">(B) There is not enough evidence to claim that the proportion of all consumers that select the Signet font is different than 50%</li><li data-component="feedback" id="conclusion_questions_3_opt_b">A small p-value is always strong evidence in favor of the alternative.</li>
+            
+            <li data-component="answer"  id="conclusion_questions_3_opt_c">(C) There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is different than 50%</li><li data-component="feedback" id="conclusion_questions_3_opt_c">We never have strong evidence FOR the null hypothesis, only AGAINST the null and for the alternative.</li>
+            
+
+            </ul>
+            </div>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Introduction to Hypothesis Tests' data-toggle="tooltip">
+    <a href="../chp1/chp1_iverson.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp1/chp1_iverson.html" ></a>
+  
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

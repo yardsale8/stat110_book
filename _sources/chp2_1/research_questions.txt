@@ -1,0 +1,17 @@
+.. glossary::
+    Hypothesis Testing
+        *Hypothesis testing* is a procedure, based on sample evidence and
+        probability, used to test a claim regarding a population parameter. The
+        test will measure how well our observed sample statistic agrees with
+        some assumption about this population parameter.
+
+Before you begin a hypothesis test, you should clearly state your
+research hypothesis. For instance, let’s reconsider the research
+hypotheses from three of our previous examples.
+
+|image22|
+
+Once the research hypothesis has been developed, we typically
+formulate what are known as the null and alternative hypotheses. The
+null and alternative hypotheses are both statements about the parameter
+of interest in the study.
