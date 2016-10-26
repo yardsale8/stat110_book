@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Examining the Effect of Sample Size &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=effect_sample_size'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Examining the Effect of Sample Size</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="examining-the-effect-of-sample-size">
+<h1>Examining the Effect of Sample Size<a class="headerlink" href="#examining-the-effect-of-sample-size" title="Permalink to this headline">¶</a></h1>
+<p><strong>Example 2.3: Gender Discrimination, Revisited</strong></p>
+<p>Once again, consider the Gender discrimination example. Recall that of
+the 20 persons selected for management so far, only 9 (or 9/20 = 45%)
+were female. In an unbiased selection process, we expected to see a
+woman selected 60% of the time. We found that the probability of
+observing 9 or fewer women selected by chance if the company was in
+fact using a fair selection process was .1275.</p>
+<p><a href="#id1"><span class="problematic" id="id2">|image19|</span></a></p>
+<p>Now, suppose that the results had actually been as follows: Of the
+last 40 persons selected for management so far, only 18 (or 18/40 =
+45%) were female. How does this change the calculation of the p-value?
+The binomial probabilities for this scenario are shown below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Number of &#8220;Successes&#8221;</strong></th>
+<th class="head"><strong>Binomial Probabilities</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>1.20893E-16</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>7.25355E-15</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>2.12166E-13</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>4.03116E-12</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>5.59324E-11</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>6.0407E-10</td>
+</tr>
+<tr class="row-even"><td>6</td>
+<td>5.28561E-09</td>
+</tr>
+<tr class="row-odd"><td>7</td>
+<td>3.85094E-08</td>
+</tr>
+<tr class="row-even"><td>8</td>
+<td>2.38277E-07</td>
+</tr>
+<tr class="row-odd"><td>9</td>
+<td>1.27081E-06</td>
+</tr>
+<tr class="row-even"><td>10</td>
+<td>5.90928E-06</td>
+</tr>
+<tr class="row-odd"><td>11</td>
+<td>2.41743E-05</td>
+</tr>
+<tr class="row-even"><td>12</td>
+<td>8.76319E-05</td>
+</tr>
+<tr class="row-odd"><td>13</td>
+<td>0.000283118</td>
+</tr>
+<tr class="row-even"><td>14</td>
+<td>0.000819021</td>
+</tr>
+<tr class="row-odd"><td>15</td>
+<td>0.002129454</td>
+</tr>
+<tr class="row-even"><td>16</td>
+<td>0.004990908</td>
+</tr>
+<tr class="row-odd"><td>17</td>
+<td>0.010568983</td>
+</tr>
+<tr class="row-even"><td>18</td>
+<td>0.020257217</td>
+</tr>
+<tr class="row-odd"><td>19</td>
+<td>0.035183587</td>
+</tr>
+<tr class="row-even"><td>20</td>
+<td>0.055414149</td>
+</tr>
+<tr class="row-odd"><td>21</td>
+<td>0.07916307</td>
+</tr>
+<tr class="row-even"><td>22</td>
+<td>0.102552159</td>
+</tr>
+<tr class="row-odd"><td>23</td>
+<td>0.120387317</td>
+</tr>
+<tr class="row-even"><td>24</td>
+<td>0.127911524</td>
+</tr>
+<tr class="row-odd"><td>25</td>
+<td>0.122795063</td>
+</tr>
+<tr class="row-even"><td>26</td>
+<td>0.106264959</td>
+</tr>
+<tr class="row-odd"><td>27</td>
+<td>0.082650523</td>
+</tr>
+<tr class="row-even"><td>28</td>
+<td>0.057560186</td>
+</tr>
+<tr class="row-odd"><td>29</td>
+<td>0.035727012</td>
+</tr>
+<tr class="row-even"><td>30</td>
+<td>0.019649857</td>
+</tr>
+<tr class="row-odd"><td>31</td>
+<td>0.009507995</td>
+</tr>
+<tr class="row-even"><td>32</td>
+<td>0.004011185</td>
+</tr>
+<tr class="row-odd"><td>33</td>
+<td>0.001458613</td>
+</tr>
+<tr class="row-even"><td>34</td>
+<td>0.000450454</td>
+</tr>
+<tr class="row-odd"><td>35</td>
+<td>0.000115831</td>
+</tr>
+<tr class="row-even"><td>36</td>
+<td>2.41315E-05</td>
+</tr>
+<tr class="row-odd"><td>37</td>
+<td>3.91321E-06</td>
+</tr>
+<tr class="row-even"><td>38</td>
+<td>4.63406E-07</td>
+</tr>
+<tr class="row-odd"><td>39</td>
+<td>3.56467E-08</td>
+</tr>
+<tr class="row-even"><td>40</td>
+<td>1.33675E-09</td>
+</tr>
+</tbody>
+</table>
+<p>For this scenario, the p-value is given by
+______________.</p>
+<p>Finally, we can also consider a third study in which of the last 200
+persons selected for management so far, only 90 (or 90/200 = 45%) were
+female. How would you find the p-value for this scenario?</p>
+<p>For this scenario, the p-value is given by
+______________.</p>
+<p>Recall that these binomial distributions give us an idea of what
+outcomes occur by chance when the selection process does <em>not</em>
+discriminate based on gender (because we used π = 60%).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Study #1:</strong></th>
+<th class="head">n = 20 trials
+Observed Result = 9/20 = 45%</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Study #2:</strong></td>
+<td>n = 40 trials
+Observed Result = 18/40 = 45%</td>
+</tr>
+<tr class="row-odd"><td><strong>Study #3:</strong></td>
+<td>n = 200 trials
+Observed Result = 90/200 = 45%</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p>Which of the following statements is most correct?</p>
+<ol class="lowerroman simple">
+<li>The three studies provide equally convincing statistical evidence
+that the selection process discriminates against women.</li>
+<li>Study #1 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+<li>Study #2 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+<li>Study #3 provides the most convincing statistical evidence that the
+selection process discriminates against women.</li>
+</ol>
+<p class="last">Explain your reasoning.</p>
+</div>
+</div>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
