@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Inference for a Categorical Variable with More than Two Categories &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=inference_more_categories'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Inference for a Categorical Variable with More than Two Categories</a><ul>
+<li><a class="reference internal" href="#example-2-7-minnesota-crime-data">Example 2.7: Minnesota Crime Data</a></li>
+<li><a class="reference internal" href="#measuring-distance-between-observed-and-expected-with-several-categories">Measuring Distance between Observed and Expected with Several Categories</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="inference-for-a-categorical-variable-with-more-than-two-categories">
+<h1>Inference for a Categorical Variable with More than Two Categories<a class="headerlink" href="#inference-for-a-categorical-variable-with-more-than-two-categories" title="Permalink to this headline">¶</a></h1>
+<p>The analyses we have completed up to this point in the semester were
+for a single categorical variable with only <em>two</em> outcomes. For
+example, in the helper/hinderer study, the babies were choosing either
+one toy or the other. In the gender discrimination example, each
+employee selected for management was either male or female. Next,
+we’ll consider problems involving a single categorical variable which
+has more than two categories.</p>
+<div class="section" id="example-2-7-minnesota-crime-data">
+<h2>Example 2.7: Minnesota Crime Data<a class="headerlink" href="#example-2-7-minnesota-crime-data" title="Permalink to this headline">¶</a></h2>
+<p>The Minneapolis Police Department posts regular updates on crime statistics on
+their website. A colleague of mine has collected this data for the past few
+years on all neighborhoods in Minneapolis. A portion of the data set and the
+precinct map are shown below.</p>
+<p><a href="#id1"><span class="problematic" id="id2">|image2219|</span></a></p>
+<p>Source: <a class="reference external" href="http://www.minneapolismn.gov/police/crime-statistics/">http://www.minneapolismn.gov/police/crime-statistics/</a></p>
+<p>Suppose the police chief for Precinct #2 has received a complaint from a
+permanent resident who lives in a neighborhood near the University of
+Minnesota. This resident has asked for additional patrol to take place
+in his neighborhood as he believes that crime rates vary over the course
+of the year.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Is there evidence to suggest that crime patterns in the University of Minnesota neighborhood differ over the four seasons of the year?</p>
+</div>
+<p>Crime rates are reported by month, so we will use the following
+definitions for the Seasons:</p>
+<ul class="simple">
+<li>Fall: September, October, and November</li>
+<li>Winter: December, January, and February</li>
+<li>Spring: March, April, and May</li>
+<li>Summer: June, July, and August</li>
+</ul>
+<p>Crimes classified as Murder, Rape, Robbery, Aggravated Assault,
+Burglary, Larceny, Auto Theft, and Arson are used in reporting the
+<strong>Total</strong>.</p>
+<p>The Minneapolis Police Department reported that a total of 103 crimes
+occurred in the University of Minnesota neighborhood last year.</p>
+<p><a href="#id3"><span class="problematic" id="id4">|image2220|</span></a></p>
+<p>The approach we take here to address the research question is very
+similar to what we have done previously. We will <em>assume</em> the crime
+patterns are occurring equally across the four seasons (i.e., that the
+null hypothesis is true) and then get a good idea of what outcomes we
+would expect to see if this were really the case. Then, we will check to
+see if the observed outcomes given in the data are consistent (or
+inconsistent) with what we expected to see under the null hypothesis. If
+the observed data are inconsistent with the outcomes expected under the
+null, then we have sufficient statistical evidence to say crime rates
+vary across the four seasons.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="arabic simple">
+<li>Find the expected number of total crimes for each season under the
+assumption that crimes are occurring equally over the four seasons.
+How did you obtain these values?</li>
+</ol>
+<p class="last"><a href="#id5"><span class="problematic" id="id6">|image2241|</span></a></p>
+</div>
+<p>Note that we must allow for some slight variations in the crime patterns
+over the four seasons because we do not anticipate the numbers to come
+out exactly at the expected number for each season. Over repeated
+samples, slight variations will occur in the crime patterns. We could
+use Tinkerplots to give us an idea of how much deviation from the
+expected counts we should anticipate.</p>
+<blockquote>
+<div><a href="#id7"><span class="problematic" id="id8">|image2221|</span></a></div></blockquote>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+<ol class="last arabic simple" start="2">
+<li>Why is the spinner set up with 25% for each season? Explain.</li>
+<li>Why is the repeat value set to 103? Explain.</li>
+</ol>
+</div>
+<p>Suppose that after running the first trial of the simulation, you
+obtained the following results:</p>
+<p><a href="#id9"><span class="problematic" id="id10">|image2222|</span></a></p>
+<p>To keep track of the count for the number of crimes in each season
+over repeated trials of this simulation, we can right-click on <em>each</em>
+season’s count and select <strong>Collect Statistic</strong>. Note that this needs
+to be repeated for each season. Tinkerplots then creates a table as
+follows:</p>
+<p><a href="#id11"><span class="problematic" id="id12">|image2223|</span></a></p>
+<p>Note that I have placed 99 in the Collect box so that we end up with a
+total of 100 simulated trials.</p>
+<p><a href="#id13"><span class="problematic" id="id14">|image2224|</span></a></p>
+<p>The following plot shows what outcomes our simulation study suggests we
+would anticipate for each season, assuming that crimes are equally
+likely to occur in any of the four seasons.</p>
+<p><a href="#id15"><span class="problematic" id="id16">|image2225|</span></a></p>
+<p>Next, consider the actual crime statistics for the University of
+Minnesota neighborhood for the past year.</p>
+<p><a href="#id17"><span class="problematic" id="id18">|image2242|</span></a></p>
+<p>Plot these observed outcomes on the above graph. What do you think?
+Recall that our goal is to determine whether this observed result is
+consistent or not with what our simulation tells us we should see if
+there is really no difference in the crime rate across seasons.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="4">
+<li>Why is it more difficult to determine whether or not our data is
+considered an outlier in this situation than in the problems we dealt
+with previously?</li>
+</ol>
+</div>
+</div>
+<div class="section" id="measuring-distance-between-observed-and-expected-with-several-categories">
+<h2>Measuring Distance between Observed and Expected with Several Categories<a class="headerlink" href="#measuring-distance-between-observed-and-expected-with-several-categories" title="Permalink to this headline">¶</a></h2>
+<p>One way to address this problem is to consider the overall distance
+between the Observed and Expected counts for all four seasons
+combined. This is shown below.</p>
+<p><a href="#id19"><span class="problematic" id="id20">|image2226|</span></a></p>
+<p>Compute the distance from the Observed to the Expected for the Spring
+and Summer seasons.</p>
+<p><a href="#id21"><span class="problematic" id="id22">|image2243|</span></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="5">
+<li>Find the sum of the Distance for all four seasons. What is this total
+distance? Does this value make sense for total distance? How might we
+overcome this issue?</li>
+</ol>
+</div>
+<p>So that the negative distances do not cancel out the positive ones,
+we will square each distance before adding them up. <em>Note that the
+absolute value could have been used, as well, but the statistical
+hypothesis testing procedure we will soon be discussing uses the
+squared distances, so that’s what we’re considering here.</em></p>
+<p><a href="#id23"><span class="problematic" id="id24">|image2244|</span></a></p>
+<p>The total squared distances summed up across all four seasons is about
+137. Note that we cannot determine whether or not this 137 is an outlier
+using our previous graphs because the previous graphs considered each
+season individually. Our new measure is the squared distance between the
+Observed and Expected counts summed over four seasons, so we now need a
+new graph that shows this value for all of our 100 simulated results in
+Tinkerplots to determine whether or not 137 is an outlier.</p>
+<p><a href="#id25"><span class="problematic" id="id26">|image2227|</span></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic" start="6">
+<li><p class="first">What would a value of 0 imply on the above number line? Explain why a
+value less than 0 is not possible when the distances are squared and
+summed across the categories.</p>
+</li>
+<li><p class="first">What would a large value imply? Is this evidence for or against the
+original research question? Explain.</p>
+</li>
+<li><dl class="first docutils">
+<dt>When squared distances are computed and summed across all categories,</dt>
+<dd><p class="first last">the appropriate test is an upper-tailed test. Explain why this is the
+case.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<p>In Tinkerplots, a formula can be used in the History table to compute
+the squared distance between the simulated outcome for a single trial
+and the expected count for each season. These squared distance values
+are then summed across the four seasons.</p>
+<p>The outcomes from the first 5 trials are shown here.</p>
+<p><a href="#id27"><span class="problematic" id="id28">|image2228|</span></a></p>
+<p>A graph of the total squared distances from all 100 trials in
+Tinkerplots is given below. The p-value is determined using the
+proportion of dots greater than or equal to 137, the “observed outcome”
+from the study.</p>
+<p><a href="#id29"><span class="problematic" id="id30">|image2229|</span></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="9">
+<li>What is the approximate p-value from the above graph? What is the
+appropriate statistical decision for our research question?</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

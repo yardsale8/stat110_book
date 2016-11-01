@@ -38,19 +38,68 @@ What Constitutes Strong Evidence?
 .. 
 .. .. include:: example2.2.rst
 .. 
-.. .. include:: exact_binomial_p_values.rst
-.. 
-.. .. include:: exact_p_value_example_gender.rst
-.. 
-.. .. include:: exact_p_value_example_font.rst
-.. 
+.. include:: exact_binomial_p_values.rst
+ 
+.. include:: exact_p_value_example_gender.rst
+
+.. include:: exact_p_value_example_font.rst
+
+Using JMP to Find p-values for the Binomial Exact Test
+------------------------------------------------------
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_wopi2m0g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_1jye2j7d" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+    </div>
+
+.. include:: ../chp2_2/data_table_raw_data.rst
+
+.. include:: ../chp2_2/test_probability_p_value.rst
+
+.. include:: ../chp2_2/alternate_data_table.rst
+
+.. include:: ../chp2_2/test_probability_p_value.rst
+
+
+.. mchoice:: JMP_exact_pvalue_1
+    :answer_a: 0.8750
+    :answer_b: 0.1250
+    :answer_c: 0.5000
+    :answer_d: 0.0021
+    :correct: d
+    :feedback_a: Look in the bottom right part of the picture.
+    :feedback_b: Look in the bottom right part of the picture.
+    :feedback_c: Look in the bottom right part of the picture.
+
+    What is the p-value in the picture shown above?
+
+.. mchoice:: JMP_exact_pvalue_2
+    :answer_a: Yes, since the p-value is less than 0.05 (5%).
+    :answer_b: No, because the p-value is no large enough.
+    :correct: a
+    :feedback_a: Small p-values mean unsual values!
+    :feedback_b: Small p-values mean unsual values!
+
+    Is the statistic unusually large? Why?
+
+
+.. mchoice:: JMP_exact_pvalues_3
+    :answer_a: There is strong evidence supporting the claim that the infants prefer the helper toy.
+    :answer_b: There is not enough evidence to claim that the infants prefer the helper toy.
+    :correct: a
+    :feedback_a: Since it would be rare to get a statistic this large when there is no preference, we are confident that the infant DO prefer the helper toy.
+    :feedback_b: Since it would be rare to get a statistic this large when there is no preference, we are confident that the infant DO prefer the helper toy.
+
+    What is the correct conclusion in this case?
+
 .. .. include:: pracice_problems.rst
-.. 
-.. .. include:: more_on_p_values.rst
-.. 
-.. .. include:: effect_sample_size.rst
-.. 
-.. .. include:: practical_statistical_significance.rst
+
+.. include:: more_on_p_values.rst
+ 
+.. include:: effect_sample_size.rst
+ 
+.. include:: practical_statistical_significance.rst
 
 .. |image0| image:: img/media/image1.png
    :width: 6.50000in
@@ -157,3 +206,24 @@ What Constitutes Strong Evidence?
 .. |image34| image:: img/media/image34.png
    :width: 5.0in
    :height: 5.4in
+.. |image220| image:: ../chp2_2/img/media/image1.png
+   :width: 1.23803in
+   :height: 2.42626in
+.. |image221| image:: ../chp2_2/img/media/image2.png
+   :width: 3.50000in
+   :height: 1.35417in
+.. |image222| image:: ../chp2_2/img/media/image3.png
+   :width: 1.70000in
+   :height: 1.80000in
+.. |image223| image:: ../chp2_2/img/media/image4.png
+   :width: 3.40625in
+   :height: 1.58175in
+.. |image224| image:: ../chp2_2/img/media/image5.png
+   :width: 2.85417in
+   :height: 1.16409in
+.. |image225| image:: ../chp2_2/img/media/image6.png
+   :width: 2.30208in
+   :height: 0.67181in
+.. |image226| image:: ../chp2_2/img/media/image7.png
+   :width: 3.84375in
+   :height: 1.50075in
