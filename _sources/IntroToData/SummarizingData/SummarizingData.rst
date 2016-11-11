@@ -311,7 +311,7 @@ of the distribution is not enough information.
 For example, the two graphs shown above have centers that are very similar, but
 one graph has data that is more concentrated than another.  This difference is
 very important in many fields.  In manufacturing, creating products that are
-very similar can reduced waste, and in statistics, having estimates that are
+very similar can reduce waste, and in statistics, having estimates that are
 more concentrated, or less spread out, means that we are making better guesses.
 
 The most basic measurement of spread is the *range* of the data.
@@ -362,7 +362,7 @@ interpretations of each of these statistics.
 
 .. admonition:: Standard Interpretation of the Interquartile Range
 
-    The interquartile range measure the spread of the middle 50% of the data.
+    The interquartile range measures the spread of the middle 50% of the data.
 
 .. admonition:: Resistance
 
