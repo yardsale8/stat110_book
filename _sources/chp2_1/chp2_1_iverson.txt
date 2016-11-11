@@ -105,6 +105,8 @@ Using JMP to Find p-values for the Binomial Exact Test
 Confidence Interval for a Proportion
 ------------------------------------
 
+.. include:: ../chp2_2/confidence_interval_simulation.rst
+
 .. include:: ../chp2_2/confidence_interval_simulation_iverson.rst
 
 .. .. include:: ../chp2_2/confidence_interval_wald.rst

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana &mdash; Runestone Interactive Overview</title>
+    <title>Confidence Intervals with StatKey &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -260,7 +260,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana</a></li>
+<li><a class="reference internal" href="#">Confidence Intervals with StatKey</a></li>
 </ul>
 </ul>
 </li>
@@ -293,53 +293,17 @@
 
 <div class="container" id="main-content">
   
-  <p>When carrying out hypothesis tests, we are testing claims about
-population parameters. Sometimes, however, our goal is to <em>estimate</em> a
-parameter of interest. Statisticians typically do this with a
-<strong>confidence interval,</strong> which is simply a range of likely values for
-the parameter of interest. The big difference between <em>hypothesis
-testing</em> and <em>confidence intervals</em> is as follows: the construction of a
-confidence interval does NOT require any hypotheses concerning our
-population parameter of interest.</p>
-<div class="section" id="example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana">
-<h1>Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana<a class="headerlink" href="#example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana" title="Permalink to this headline">¶</a></h1>
-<p>In February of 2014, a Star Tribune Minnesota poll asked a random
-sample of adults in Minnesota, “Do you support or oppose legalizing
-marijuana for medical purposes in Minnesota?” Of the 800 adults
-surveyed, 408 (51%) answered that they would support this.</p>
-<p><a href="#id1"><span class="problematic" id="id2">|image227|</span></a></p>
-<p>Source: <a class="reference external" href="http://www.startribune.com/politics/statelocal/245910931.html">http://www.startribune.com/politics/statelocal/245910931.html</a></p>
-<div class="admonition-questions admonition">
-<p class="first admonition-title">Questions:</p>
-<p>Ultimately, the Star Tribune conducted this poll because they wanted to
-estimate the proportion of adults in Minnesota that felt (at the time of
-the survey) that medical marijuana should be legalized. Keep this in
-mind as you answer the following questions.</p>
-<ol class="last arabic simple">
-<li>What is the population of interest?</li>
-<li>What is the parameter of interest?</li>
-<li>What is the sample?</li>
-<li>What is the sample statistic of interest?</li>
-</ol>
-</div>
-<p>Based on the results of this poll, our best guess for the proportion
-of all Minnesotans that feel medical marijuana should be legalized is
-= 408/800 = 51%. This is called a <strong>point estimate</strong>.</p>
+  <div class="section" id="confidence-intervals-with-statkey">
+<h1>Confidence Intervals with StatKey<a class="headerlink" href="#confidence-intervals-with-statkey" title="Permalink to this headline">¶</a></h1>
 <p>In <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_cat/bootstrap_1_cat.html">StatKey&#8217;s Confidence Interval for a Single Proportion</a> ,
 we need to enter the statistic by clicking <strong>Edit Data</strong> and entering the
 statistic, as shown below.</p>
-<p><a href="#id3"><span class="problematic" id="id4">|image2250|</span></a></p>
-<p>We know, however, that if a different sample of 800 Minnesotan adults had been
-polled, this point estimate would likely change. So, instead of using only this
-point estimate, we’ll also use statistical methods to estimate the parameter of
-interest with a <em>range</em> of likely values (this range is called the <strong>confidence
-interval</strong>).  To get this range of likely values, we’ll start with our point
-estimate (i.e., the sample statistic, = 51%). This is our best guess so far.
-Then, we can use StatKey to get an idea of how much we expect this statistic
-to change from one random sample to the next because of natural sampling
-variation. The distribution of sample proportions obtained by repeated sampling
-is shown below.</p>
-<p><a href="#id5"><span class="problematic" id="id6">|image2251|</span></a></p>
+<p><a href="#id1"><span class="problematic" id="id2">|image2250|</span></a></p>
+<p>Then, we can use StatKey to get an idea of how much we expect this statistic to
+change from one random sample to another. Similar to the TinkerPlots simulation,
+The distribution of sample proportions obtained by repeated sampling is shown
+below.</p>
+<p><a href="#id3"><span class="problematic" id="id4">|image2251|</span></a></p>
 <p>To get a 95% confidence interval for the parameter of interest, we find
 both the <em>lower endpoint</em> and the <em>upper endpoint</em> that separate the
 “middle” 95% of this distribution from the outer 5%. As before, this is
@@ -356,15 +320,6 @@ Minnesotans that feel medical marijuana should be legalized is between
 0.475 and 0.546</em></div></blockquote>
 <p class="last">Note that we are trying to estimate the value for the whole population,
 <strong>not</strong> the sample.</p>
-</div>
-<div class="admonition-questions admonition">
-<p class="first admonition-title">Questions:</p>
-<ol class="last arabic simple" start="5">
-<li>Find the lower and upper endpoints for a confidence interval for the
-parameter of interest, π = the proportion of all Minnesotan adults
-that felt medical marijuana should be legalized.</li>
-<li>Interpret this confidence interval.</li>
-</ol>
 </div>
 </div>
 
