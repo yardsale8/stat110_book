@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter 6 - Comparing a Numerical Variable Across Two Groups &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp6_iverson'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Chapter 6 - Comparing a Numerical Variable Across Two Groups</a></li>
+<li><a class="reference internal" href="#start">START</a></li>
+<li><a class="reference internal" href="#comparing-a-numerical-variable-across-two-groups">Comparing a Numerical Variable Across Two Groups</a><ul>
+<li><a class="reference internal" href="#comparing-two-population-means-dependent-samples">Comparing Two Population Means: Dependent Samples</a><ul>
+<li><a class="reference internal" href="#example-6-1-thanksgiving-holiday-weight-gain">Example 6.1: Thanksgiving Holiday Weight Gain</a></li>
+<li><a class="reference internal" href="#calculating-the-difference-in-jmp">Calculating the Difference in JMP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bootstrap-confidence-interval-for-the-difference">Bootstrap Confidence Interval for the Difference</a></li>
+<li><a class="reference internal" href="#using-the-bootstrap-to-test-a-hypothesis">Using the Bootstrap to Test a Hypothesis</a></li>
+<li><a class="reference internal" href="#paired-t-test-in-jmp">Paired T-Test in JMP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stop">STOP</a><ul>
+<li><a class="reference internal" href="#id1">Comparing Two Population Means: Dependent Samples</a><ul>
+<li><a class="reference internal" href="#id2">Example 6.1: Thanksgiving Holiday Weight Gain</a></li>
+<li><a class="reference internal" href="#id3">Calculating the Difference in JMP</a></li>
+<li><a class="reference internal" href="#checking-the-normality-assumption">Checking the Normality Assumption:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#comparing-two-population-means-independent-samples">Comparing Two Population Means: Independent Samples</a><ul>
+<li><a class="reference internal" href="#example-6-5-smoking-and-birth-weight">Example 6.5: Smoking and Birth Weight</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">Characteristics of the Sampling Distribution for the Difference in Means</a></li>
+<li><a class="reference internal" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples">Testing for a Difference in Two Population Means (Assuming Independent Samples)</a></li>
+<li><a class="reference internal" href="#constructing-a-confidence-interval-for-the-difference-in-means">Constructing a Confidence Interval for the Difference in Means</a></li>
+<li><a class="reference internal" href="#example-6-6-time-perception">Example 6.6: Time Perception</a></li>
+<li><a class="reference internal" href="#nonparametric-tests">Nonparametric Tests</a></li>
+<li><a class="reference internal" href="#the-t-test-for-independent-samples-assuming-equal-variances">The t-Test for Independent Samples Assuming Equal Variances</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="chapter-6-comparing-a-numerical-variable-across-two-groups">
+<h1>Chapter 6 - Comparing a Numerical Variable Across Two Groups<a class="headerlink" href="#chapter-6-comparing-a-numerical-variable-across-two-groups" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter, we will consider methods that allow us to make
+comparisons on numerical variables between two different groups. In
+general, these methods should be used to address research questions
+involving a categorical predictor variable (with two categories) and a
+numerical response variable.</p>
+<p>Two different cases will be considered:</p>
+<ol class="arabic simple">
+<li>When the samples are <em>dependent</em> (also called <em>matched</em> or <em>paired</em>), and</li>
+<li>when the samples are independent.</li>
+</ol>
+</div>
+<div class="section" id="start">
+<h1>START<a class="headerlink" href="#start" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="comparing-a-numerical-variable-across-two-groups">
+<h1>Comparing a Numerical Variable Across Two Groups<a class="headerlink" href="#comparing-a-numerical-variable-across-two-groups" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="comparing-two-population-means-dependent-samples">
+<h2>Comparing Two Population Means: Dependent Samples<a class="headerlink" href="#comparing-two-population-means-dependent-samples" title="Permalink to this headline">¶</a></h2>
+<p>The hypothesis testing procedures presented in this section should be
+used when the observations from the two groups being compared are
+<em>dependent</em>. Whether or not the observations are dependent is determined
+by how the data are collected. To see this, consider the following
+example.</p>
+<div class="section" id="example-6-1-thanksgiving-holiday-weight-gain">
+<h3>Example 6.1: Thanksgiving Holiday Weight Gain<a class="headerlink" href="#example-6-1-thanksgiving-holiday-weight-gain" title="Permalink to this headline">¶</a></h3>
+<p>In a 2006 study published in <em>Nutrition Journal</em>, researchers were
+interested in assessing potential changes that occur in body weight
+during the Thanksgiving holiday break in college students. This
+paper’s abstract indicates that “a total of 94 college students
+reported to the human body composition laboratory at the University of
+Oklahoma following a 6-hour fast with testing occurring prior to, and
+immediately following the Thanksgiving holiday break. Body weight was
+assessed using a balance beam scale while participants were dressed in
+minimal clothing.”</p>
+<div class="admonition-source admonition">
+<p class="first admonition-title">Source:</p>
+<p class="last">Hull et al. The Effects of the Thanksgiving Holiday on Weight Gain. Nutrition Journal 2006, <strong>5</strong>:29; doi:10.1186/1475-2891-5-29.</p>
+</div>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">On average, does body weight of college students increase over the Thanksgiving holiday break?</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the response variable of interest?</li>
+<li>What is the predictor variable of interest?</li>
+</ol>
+</div>
+<p>The raw data from this study were not available; however, the data in
+the file <strong>ThanksgivingWeightData.jmp</strong> are similar to the actual
+results obtained by the researchers. A portion of these data is shown
+below:</p>
+<p><a class="reference internal" href="../_images/image120.png"><img alt="image600" src="../_images/image120.png" style="width: 2.17612in; height: 3.17241in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What can be said about the weight of Subject #1 as compared to
+Subject #7, for example, regardless of whether the data were
+collected before or after Thanksgiving?</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For these data, the first pre-weight is related to the first
+post-weight (the two measurements were made on the same person). Thus,
+these two samples are <strong>dependent</strong>.</p>
+</div>
+<p>In other words, some of the variability in the responses might be due to
+differences between time periods (before vs. after), but much of the variability
+in the observations is likely due to differences between people! So, to control
+for this variability in weights from person to person (which will help us
+isolate the effect of Thanksgiving break), we will work with the <em>DIFFERENCES</em>
+on each subject, instead. This will remove the structure of dependence between
+the pre- and post-Thanksgiving groups and will control for the fact that some
+people, in general, tend to weigh more (or less) than others. In the end, this
+helps us to isolate the effect of Thanksgiving break (i.e., before vs.  after).</p>
+</div>
+<div class="section" id="calculating-the-difference-in-jmp">
+<h3>Calculating the Difference in JMP<a class="headerlink" href="#calculating-the-difference-in-jmp" title="Permalink to this headline">¶</a></h3>
+<p>First, open the file called <strong>ThanksgivingWeightData.</strong>. To calculate
+the difference, create an additional column (double click on empty
+column next to “‘Post Weight”) and title it “Difference.” Right-click
+on the new column header and select <strong>Formula</strong>.</p>
+<p><a class="reference internal" href="../_images/image225.png"><img alt="image601" src="../_images/image225.png" style="width: 2.93750in; height: 1.31304in;" /></a></p>
+<p>In the edit window, tell JMP to calculate the difference as follows:</p>
+<p><a class="reference internal" href="../_images/image320.png"><img alt="image602" src="../_images/image320.png" style="width: 1.95833in; height: 0.37500in;" /></a></p>
+<p>Click <strong>Apply</strong> and then <strong>OK</strong>, and JMP returns the following (only the
+results for the first 10 subjects are shown below):</p>
+<p><a class="reference internal" href="../_images/image419.png"><img alt="image603" src="../_images/image419.png" style="width: 2.93750in; height: 1.96546in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What does a positive difference of 3.9 indicate?</li>
+<li>What does a difference of -1.9 indicate?</li>
+</ol>
+</div>
+<p>To determine what the average difference is, we can analyze the
+distribution of the differences using the descriptive methods
+discussed in Chapter 4:</p>
+<p><a class="reference internal" href="../_images/image517.png"><img alt="image604" src="../_images/image517.png" style="width: 3.82443in; height: 1.69133in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="3">
+<li>What is the average difference of the 94 subjects? Interpret this
+value.</li>
+<li>If Thanksgiving break had no effect on body weight, what would you
+expect these differences to be, on average?</li>
+<li>If the research hypothesis is correct (body weights of college
+students increase over Thanksgiving break), what would you expect
+these differences to be, on average?</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Note that these differences are represented by a single column
+of data. <em>So, instead of viewing this as a problem involving a
+categorical predictor and a numerical response, you could view this as a
+problem involving a single numerical variable – the differences!</em>
+Therefore, the hypothesis testing procedure is <em>exactly</em> the same as the
+procedure for testing a single population mean we discussed in Chapter
+5.</p>
+</div>
+<p>That is, the parameter of interest is the true population average of the
+differences which we will represent by <span class="math">\(\mu_{difference}\)</span>.</p>
+<ul class="simple">
+<li>Our best estimate for this parameter is the <em>sample mean</em> of the
+observed differences. We’ll call this quantity <span class="math">\(\bar{x}_{difference}\)</span>.</li>
+<li>The sample standard deviation of the differences will be denoted by
+<span class="math">\(s_{difference}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bootstrap-confidence-interval-for-the-difference">
+<h2>Bootstrap Confidence Interval for the Difference<a class="headerlink" href="#bootstrap-confidence-interval-for-the-difference" title="Permalink to this headline">¶</a></h2>
+<p>We will use a bootstrap confidence interval as a first attempt at analyzing
+these data. To create a bootstrap sample in JMP, you will need to install the
+JMP add-in titled <strong>SampleWithReplacement v0.14.jmpaddin</strong>. Download and double
+click the file. You can now sample with replacement by going to <strong>Add-Ins &gt;
+Sample with Replacement &gt; Sample Now</strong>. Take a bootstrap sample of the
+differences using this add-in as shown below.</p>
+<p><a class="reference internal" href="../_images/image526.png"><img alt="image624" src="../_images/image526.png" style="width: 2.61094in; height: 0.54157in;" /></a> <a class="reference internal" href="../_images/image615.png"><img alt="image625" src="../_images/image615.png" style="width: 2.75884in; height: 1.65019in;" /></a></p>
+<p>The result in a new table that contains the bootstrap sample of the
+differences. Compute the mean and standard deviation of this sample use
+<strong>Analyze &gt; Distribution</strong>.</p>
+<p><a class="reference internal" href="../_images/image714.png"><img alt="image626" src="../_images/image714.png" style="width: 2.17550in; height: 2.00203in;" /></a> <a class="reference internal" href="../_images/image86.png"><img alt="image627" src="../_images/image86.png" style="width: 4.09792in; height: 1.54582in;" /></a></p>
+<p><strong>Task 1: Use JMP to take a few bootstrap samples.</strong></p>
+<ol class="arabic">
+<li><p class="first">Take 10000 bootstrap samples.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="63%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_images/image526.png"><img alt="image624" src="../_images/image526.png" style="width: 2.61094in; height: 0.54157in;" /></a></td>
+<td><a class="reference internal" href="../_images/image95.png"><img alt="image6219" src="../_images/image95.png" style="width: 5.29in; height: 3.38in;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Compute the bootstrap mean difference for each sample and store these means in a new data table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_images/image2111.png"><img alt="image6220" src="../_images/image2111.png" style="width: 2.08in; height: 0.63in;" /></a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../_images/image226.png"><img alt="image6221" src="../_images/image226.png" style="width: 5.64in; height: 2.12in;" /></a></td>
+<td><a class="reference internal" href="../_images/image2312.png"><img alt="image6222" src="../_images/image2312.png" style="width: 7.25in; height: 3.24in;" /></a></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><a class="reference internal" href="../_images/image249.png"><img alt="image6223" src="../_images/image249.png" style="width: 7.63in; height: 4.22in;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">Analyze the distribution.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_images/image259.png"><img alt="image6224" src="../_images/image259.png" style="width: 2.93in; height: 0.63in;" /></a></td>
+<td><a class="reference internal" href="../_images/image266.png"><img alt="image6225" src="../_images/image266.png" style="width: 6.37in; height: 2.77in;" /></a></td>
+</tr>
+<tr class="row-even"><td colspan="2"><a class="reference internal" href="../_images/image2710.png"><img alt="image6226" src="../_images/image2710.png" style="width: 7.78in; height: 3.52in;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Compute a 95% confidence interval for the mean difference between the
+pre- and post-Thanksgiving weights. Paste a screen shot below and
+construct an appropriate sentence for this interval.</p>
+<p><a class="reference internal" href="../_images/image287.png"><img alt="image6227" src="../_images/image287.png" style="width: 2.42in; height: 2.34in;" /></a></p>
+<p><em>&#8220;We are 95% confident that the mean weight gain over Thanksgiving break for
+all college students is between 0.66 lb. and 1.76 lb.&#8221;</em></p>
+</li>
+<li><p class="first">Based on this interval, what can we confidently say about the
+differences between pre-and post-Thanksgiving weights? Are we
+confident that there is, on average, weight gain? Explain.</p>
+<p><em>Since the interval is positive and all of the values are larger than 0.65lb.,
+we are confident that there is positive weight gain that is at least 0.65
+lb.</em></p>
+</li>
+</ol>
+</div>
+<div class="section" id="using-the-bootstrap-to-test-a-hypothesis">
+<h2>Using the Bootstrap to Test a Hypothesis<a class="headerlink" href="#using-the-bootstrap-to-test-a-hypothesis" title="Permalink to this headline">¶</a></h2>
+<p>Note that these differences are represented by a single column of data.
+<em>So, instead of viewing this as a problem involving a categorical
+predictor and a numerical response, you could view this as a problem
+involving a single numerical variable – the differences!</em> That is, the
+parameter of interest is the true population average of the differences
+which we will represent by μ<sub>difference</sub>.</p>
+<ul class="simple">
+<li>Our best estimate for this parameter is the <em>sample mean</em> of the
+observed differences. We’ll call this quantity.</li>
+<li>The sample standard deviation of the differences will be denoted by
+s<sub>difference</sub>.</li>
+</ul>
+<p>Before we discuss using a bootstrap sample to run a hypothesis test,
+let’s set up the null and alternative hypothesis for these data. (For
+convenience, the research questions is given below.)</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">On average, does body weight of college students increase over the
+Thanksgiving holiday break?</p>
+</div>
+<p><strong>Step 1: Set up the null and alternative hypotheses</strong></p>
+<blockquote>
+<div><p>Notice that we subtracted <span class="math">\(After - Before\)</span>.  If the research hypothesis is
+true, then this value will be positive, i.e. larger than 0.  Thus our hypotheses
+are as follows.</p>
+<div class="math">
+\[\begin{split}H_0: \mu_{diff} = 0\\
+H_a: \mu_{diff} &gt; 0\end{split}\]</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To correctly determine the direction of the alternate hypothesis, you need to
+consider both the research question and the order in which we subtracted.</p>
+</div>
+<p>Recall that we run a hypothesis test by performing the following two
+steps.</p>
+<ol class="arabic simple">
+<li>Simulate the null hypothesis</li>
+<li>Determine if our statistic is unusual given this null distribution.</li>
+</ol>
+<p>In this case, the null distribution is the <em>no average weight gain</em>
+distribution. To use the bootstrap distribution to conduct a hypothesis test, we
+shift the distribution to be centered at the correct value, as described below.</p>
+<div class="admonition-steps-in-a-bootstrap-hypothesis-test admonition">
+<p class="first admonition-title">Steps in a Bootstrap Hypothesis Test</p>
+<p>To use the bootstrap to simulate this distribution, we
+will need to shift the mean of our data to simulate no weight gain. This
+is done by performing the following steps.</p>
+<p><strong>Step 1:</strong> Make a new column of differences by subtracting the original
+mean difference from the original differences. (You should verify that
+the resulting column has a mean of 0.)</p>
+<p><strong>Step 2:</strong> Take many bootstrap samples from this theoretical column to
+simulate the null distribution. For each sample compute the bootstrap
+mean.</p>
+<p class="last"><strong>Step 3:</strong> Use the resulting distribution to compute a p-value for the
+original statistic and make the appropriate conclusion to complete the
+testing process.</p>
+</div>
+<p>Luckily, there is a nice JMP add-in that automates this process. Please
+download and install the <strong>Randomization Testing Beta 3.jmpaddin</strong></p>
+<p>Let’s apply this process to the Thanksgiving weight gain data. We will
+use a nice add-in to JMP that automates these steps for use. To use this
+add-in, we need to save our data set <strong>with the differences</strong>.</p>
+<p><a class="reference internal" href="../_images/image105.png"><img alt="image628" src="../_images/image105.png" style="width: 4.00884in; height: 2.50812in;" /></a></p>
+<p>Now run the randomization addin by</p>
+<ol class="arabic">
+<li><p class="first">going to <strong>Add-Ins &gt; Randomization Testing</strong></p>
+<p><a class="reference internal" href="../_images/image1110.png"><img alt="image629" src="../_images/image1110.png" style="width: 2.18125in; height: 0.61201in;" /></a></p>
+</li>
+<li><p class="first">Click <strong>Use Other Data</strong> and open your JMP file <strong>with
+differences</strong>.</p>
+<p><a class="reference internal" href="../_images/image127.png"><img alt="image6210" src="../_images/image127.png" style="width: 2.93125in; height: 1.75576in;" /></a></p>
+</li>
+<li><p class="first">Select the differences column, set the simulation controls to
+simulate <strong>1000</strong> samples by <strong>Resampling</strong> with <strong>Mean =</strong> 0 (The
+null mean).</p>
+<p><a class="reference internal" href="../_images/image134.png"><img alt="image6211" src="../_images/image134.png" style="width: 3.51458in; height: 1.58742in;" /></a></p>
+</li>
+<li><p class="first">Pick the correct tail for this test in <strong>Test Selection</strong> and note
+the p-value.</p>
+<p><a class="reference internal" href="../_images/image146.png"><img alt="image6212" src="../_images/image146.png" style="width: 2.76458in; height: 1.13769in;" /></a></p>
+<p>p-value = 0</p>
+</li>
+</ol>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+<blockquote>
+<div><em>As the p-value (0) is lower than 0.05 (5%), we find that our statistic is
+unusually large.  Thus, we have strong evidence supporting the claim that
+there is an average positive weight gain for all college students over
+Thanksgiving break.</em></div></blockquote>
+</div>
+<div class="section" id="paired-t-test-in-jmp">
+<h2>Paired T-Test in JMP<a class="headerlink" href="#paired-t-test-in-jmp" title="Permalink to this headline">¶</a></h2>
+<p>Recall that we used a t-confidence interval in JMP as an alternative to
+the bootstrap interval. In the same way, we can use a t-test in JMP as
+an alternative to the bootstrap test. We first assess the normality of
+the data set. We can use the JMP test if (a) the original differences
+are normal or (b) the sample size is large enough (at least 30).</p>
+<p>For the Thanksgiving weight gain data, run a JMP t-test by replacing our work
+that used the bootstrap with the following these steps (using JMP).</p>
+<p><strong>Step 2: Make a difference column and assess the normality of the differences</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image155.png"><img alt="image6213" src="../_images/image155.png" style="width: 1.67550in; height: 0.33639in;" /></a> <a class="reference internal" href="../_images/image166.png"><img alt="image6214" src="../_images/image166.png" style="width: 1.59217in; height: 0.99365in;" /></a> <a class="reference internal" href="../_images/image175.png"><img alt="image6215" src="../_images/image175.png" style="width: 1.17550in; height: 1.11056in;" /></a></p>
+<p>Since we have a large sample and the data is relatively normal, it is safe
+to use the t-test in JMP.</p>
+</div></blockquote>
+<p><strong>Step 3: Find the t-statistic and the p-value</strong></p>
+<p>To calculate this associated p-value in JMP, add the test probability
+to the difference distribution.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image183.png"><img alt="image6216" src="../_images/image183.png" style="width: 1.25884in; height: 1.49369in;" /></a> <a class="reference internal" href="../_images/image196.png"><img alt="image6217" src="../_images/image196.png" style="width: 2.09792in; height: 0.86945in;" /></a> <a class="reference internal" href="../_images/image205.png"><img alt="image6218" src="../_images/image205.png" style="width: 1.25331in; height: 1.80163in;" /></a></p>
+<p>p-value &lt; 0.0001</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>When reading the t-test output from JMP, the picked the p-value based on</p>
+<ol class="last arabic simple">
+<li><em>Prob &gt; |t|</em> is for a two-tail test.</li>
+<li><em>Prob &gt;  t</em> is for a greater than test.</li>
+<li><em>Prob &lt;  t</em> is for a less than test.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="stop">
+<h1>STOP<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Comparing Two Population Means: Dependent Samples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The hypothesis testing procedures presented in this section should be
+used when the observations from the two groups being compared are
+<em>dependent</em>. Whether or not the observations are dependent is determined
+by how the data are collected. To see this, consider the following
+example.</p>
+<div class="section" id="id2">
+<h3>Example 6.1: Thanksgiving Holiday Weight Gain<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>In a 2006 study published in <em>Nutrition Journal</em>, researchers were
+interested in assessing potential changes that occur in body weight
+during the Thanksgiving holiday break in college students. This
+paper’s abstract indicates that “a total of 94 college students
+reported to the human body composition laboratory at the University of
+Oklahoma following a 6-hour fast with testing occurring prior to, and
+immediately following the Thanksgiving holiday break. Body weight was
+assessed using a balance beam scale while participants were dressed in
+minimal clothing.”</p>
+<div class="admonition-source admonition">
+<p class="first admonition-title">Source:</p>
+<p class="last">Hull et al. The Effects of the Thanksgiving Holiday on Weight Gain. Nutrition Journal 2006, <strong>5</strong>:29; doi:10.1186/1475-2891-5-29.</p>
+</div>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">On average, does body weight of college students increase over the Thanksgiving holiday break?</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the response variable of interest?</li>
+<li>What is the predictor variable of interest?</li>
+</ol>
+</div>
+<p>The raw data from this study were not available; however, the data in
+the file <strong>ThanksgivingWeightData.jmp</strong> are similar to the actual
+results obtained by the researchers. A portion of these data is shown
+below:</p>
+<p><a class="reference internal" href="../_images/image120.png"><img alt="image600" src="../_images/image120.png" style="width: 2.17612in; height: 3.17241in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What can be said about the weight of Subject #1 as compared to
+Subject #7, for example, regardless of whether the data were
+collected before or after Thanksgiving?</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For these data, the first pre-weight is related to the first
+post-weight (the two measurements were made on the same person). Thus,
+these two samples are <strong>dependent</strong>.</p>
+</div>
+<p>In other words, some of the variability in the responses might be due to
+differences between time periods (before vs. after), but much of the variability
+in the observations is likely due to differences between people! So, to control
+for this variability in weights from person to person (which will help us
+isolate the effect of Thanksgiving break), we will work with the <em>DIFFERENCES</em>
+on each subject, instead. This will remove the structure of dependence between
+the pre- and post-Thanksgiving groups and will control for the fact that some
+people, in general, tend to weigh more (or less) than others. In the end, this
+helps us to isolate the effect of Thanksgiving break (i.e., before vs.  after).</p>
+</div>
+<div class="section" id="id3">
+<h3>Calculating the Difference in JMP<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>First, open the file called <strong>ThanksgivingWeightData.</strong>. To calculate
+the difference, create an additional column (double click on empty
+column next to “‘Post Weight”) and title it “Difference.” Right-click
+on the new column header and select <strong>Formula</strong>.</p>
+<p><a class="reference internal" href="../_images/image225.png"><img alt="image601" src="../_images/image225.png" style="width: 2.93750in; height: 1.31304in;" /></a></p>
+<p>In the edit window, tell JMP to calculate the difference as follows:</p>
+<p><a class="reference internal" href="../_images/image320.png"><img alt="image602" src="../_images/image320.png" style="width: 1.95833in; height: 0.37500in;" /></a></p>
+<p>Click <strong>Apply</strong> and then <strong>OK</strong>, and JMP returns the following (only the
+results for the first 10 subjects are shown below):</p>
+<p><a class="reference internal" href="../_images/image419.png"><img alt="image603" src="../_images/image419.png" style="width: 2.93750in; height: 1.96546in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What does a positive difference of 3.9 indicate?</li>
+<li>What does a difference of -1.9 indicate?</li>
+</ol>
+</div>
+<p>To determine what the average difference is, we can analyze the
+distribution of the differences using the descriptive methods
+discussed in Chapter 4:</p>
+<p><a class="reference internal" href="../_images/image517.png"><img alt="image604" src="../_images/image517.png" style="width: 3.82443in; height: 1.69133in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="3">
+<li>What is the average difference of the 94 subjects? Interpret this
+value.</li>
+<li>If Thanksgiving break had no effect on body weight, what would you
+expect these differences to be, on average?</li>
+<li>If the research hypothesis is correct (body weights of college
+students increase over Thanksgiving break), what would you expect
+these differences to be, on average?</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Note that these differences are represented by a single column
+of data. <em>So, instead of viewing this as a problem involving a
+categorical predictor and a numerical response, you could view this as a
+problem involving a single numerical variable – the differences!</em>
+Therefore, the hypothesis testing procedure is <em>exactly</em> the same as the
+procedure for testing a single population mean we discussed in Chapter
+5.</p>
+</div>
+<p>That is, the parameter of interest is the true population average of the
+differences which we will represent by <span class="math">\(\mu_{difference}\)</span>.</p>
+<ul class="simple">
+<li>Our best estimate for this parameter is the <em>sample mean</em> of the
+observed differences. We’ll call this quantity <span class="math">\(\bar{x}_{difference}\)</span>.</li>
+<li>The sample standard deviation of the differences will be denoted by
+<span class="math">\(s_{difference}\)</span></li>
+</ul>
+<p>We can carry out the hypothesis test as follows to determine whether
+body weights of college students tend to increase over Thanksgiving
+break.</p>
+</div>
+<div class="section" id="checking-the-normality-assumption">
+<h3>Checking the Normality Assumption:<a class="headerlink" href="#checking-the-normality-assumption" title="Permalink to this headline">¶</a></h3>
+<p>Recall that for the t-test to be valid, at least one of the following
+conditions must be met:</p>
+<ul class="simple">
+<li>Either the sample size is sufficiently large (greater than 30 or so),
+or</li>
+<li>The distribution of the observed data is approximately normal (which
+would indicate that the population is normally distributed so that
+the Central Limit Theorem would apply even with a small sample size)</li>
+</ul>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p class="last">Does the t-test appear to be a valid approach for testing this research
+question? Justify your reasoning.</p>
+</div>
+<p><strong>Step 1: Set up the null and alternative hypotheses</strong></p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2: Find the t-statistic and the p-value</strong></p>
+<div class="math">
+\[\begin{split}SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\
+t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}}\end{split}\]</div>
+<p>To calculate this test statistic and its associated p-value in JMP,
+use the methods discussed in Chapter 5:</p>
+<p><a class="reference internal" href="../_images/image812.png"><img alt="image605" src="../_images/image812.png" style="width: 4.49080in; height: 1.81695in;" /></a></p>
+<p>p-value =</p>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+<p>Interpreting the 95% confidence interval for the mean difference**</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>When calculating the difference, you switched the order of the categories:</p>
+<p class="last"><a class="reference internal" href="../_images/image99.png"><img alt="image606" src="../_images/image99.png" style="width: 2.00000in; height: 0.43750in;" /></a></p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p>What effect would this have had on the analysis?</p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<div class="math">
+\[\begin{split}SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\
+t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}}\end{split}\]</div>
+<p><a class="reference internal" href="../_images/image109.png"><img alt="image607" src="../_images/image109.png" style="width: 6.50000in; height: 2.66736in;" /></a></p>
+<p>p-value =</p>
+<p>Conclusion:</p>
+<p class="last">95% confidence interval for the mean difference:</p>
+</div>
+<p><strong>Example 6.2: Systolic Blood Pressure and Captopril</strong></p>
+<p>The data in the file <strong>Captopril.jmp</strong> give the systolic and
+diastolic blood pressures for 15 patients with moderate essential
+hypertension, immediately before and two hours after taking a drug,
+captopril. Our interest is in investigating the response to the drug
+treatment.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Is there a change in systolic blood pressure after taking captopril?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p class="last">Are these samples dependent or independent? Explain.</p>
+</div>
+<p><strong>Check the assumptions behind the test</strong></p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<p><strong>Step 1: Set up the null and alternative hypotheses</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2: Find the test statistic and the p-value</strong></p>
+<p>Using JMP:</p>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+<p>Finally, construct a 95% confidence interval for the average difference
+in systolic blood pressure means.</p>
+<p><a class="reference internal" href="../_images/image1310.png"><img alt="image6013" src="../_images/image1310.png" style="width: 1.58015in; height: 1.12500in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Interpret this confidence interval.</li>
+<li>Does this interval agree with the results of the hypothesis test?
+Explain.</li>
+</ol>
+</div>
+<p><strong>Example 6.3: Systolic Blood Pressure and Captopril, Revisited</strong></p>
+<p>As we saw in Example 6.2, patients with moderate essential hypertension saw a
+decrease in systolic blood pressure. Note that we could also investigate the
+following question.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Does the systolic blood pressure decrease by more than 10 mmHg?</p>
+</div>
+<p><strong>Check the assumptions behind the test</strong></p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<p><strong>Step 1: Set up the null and alternative hypotheses</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2: Find the test statistic and the p-value</strong></p>
+<p><strong>Using JMP:</strong></p>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+<p>Recall the 95% confidence interval for the average difference in
+systolic blood pressure means:</p>
+<p><a class="reference internal" href="../_images/image1310.png"><img alt="image6019" src="../_images/image1310.png" style="width: 1.58015in; height: 1.12500in;" /></a></p>
+<p>Does this interval agree with the results of the hypothesis test?
+Explain.</p>
+<p><strong>Example 6.4: Diastolic Blood Pressure and Captopril</strong></p>
+<p>Finally, we will use the Captopril data to investigate the following
+question.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Does the diastolic blood pressure decrease by more than 5 mmHg?</p>
+</div>
+<p><strong>Step 0: Check the assumptions behind the test</strong></p>
+<ul class="simple">
+<li>Is the number of pairs sufficiently large?</li>
+<li>If not, is it reasonable to assume the differences in systolic and
+diastolic blood pressures are normally distributed?</li>
+</ul>
+<p><strong>Step 1: Set up the null and alternative hypotheses</strong></p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2: Find the test statistic and the p-value</strong></p>
+<p>Using JMP:</p>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+<p>Find the 95% confidence interval for the average difference in systolic
+blood pressure means:</p>
+<p><a class="reference internal" href="../_images/image2010.png"><img alt="image6025" src="../_images/image2010.png" style="width: 1.75000in; height: 1.28397in;" /></a></p>
+<p>Does this interval agree with the results of the hypothesis test?
+Explain.</p>
+</div>
+</div>
+<div class="section" id="comparing-two-population-means-independent-samples">
+<h2>Comparing Two Population Means: Independent Samples<a class="headerlink" href="#comparing-two-population-means-independent-samples" title="Permalink to this headline">¶</a></h2>
+<p>In Chapter 5, we considered inference for a single population mean.  Then, in
+the first part of Chapter 6 we extended these ideas so that comparisons could be
+made between two groups. Such comparisons were made using differences because
+the observations in the two groups were related, or <em>dependent</em>.</p>
+<p>In this section, we will consider making comparisons between two groups when the
+observations in one group are <em>independent</em> of the observations in the other
+group. The methodologies considered here are a bit more involved because it no
+longer makes sense to simply work with differences. Consider the following
+example.</p>
+<div class="section" id="example-6-5-smoking-and-birth-weight">
+<h3>Example 6.5: Smoking and Birth Weight<a class="headerlink" href="#example-6-5-smoking-and-birth-weight" title="Permalink to this headline">¶</a></h3>
+<p>A study was conducted in which the relationship between smoking and birth
+weights of babies was considered. The data can be found in the file
+<strong>LowBirth.JMP</strong>, a portion of which is shown below.</p>
+<p><a class="reference internal" href="../_images/image138.png"><img alt="image610" src="../_images/image138.png" style="width: 5.85600in; height: 0.65942in;" /></a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The first observation for a nonsmoker is in NO WAY related to the first
+observation for a smoker. Therefore, these groups are <em>independent</em>.</p>
+</div>
+<p>Next, let’s examine birth weight across the two groups: smokers and
+nonsmokers.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_images/image237.png"><img alt="image611" src="../_images/image237.png" style="width: 5.14400in; height: 1.72401in;" /></a></td>
+<td><a class="reference internal" href="../_images/image330.png"><img alt="image612" src="../_images/image330.png" style="width: 5.07200in; height: 1.69988in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>In JMP, we can compare the distributions by selecting <strong>Analyze &gt; Fit Y
+by X.</strong> Place the categorical variable (<strong>Smoke</strong>) in the <strong>X, Factor</strong>
+box, and place the numerical variable of interest (<strong>Actual_Weight</strong>)
+in the <strong>Y, Response</strong> box. Select the “Display Options” menu from the
+red drop-down arrow to display the boxplots and mean diamonds.</p>
+<p><a class="reference internal" href="../_images/image427.png"><img alt="image613" src="../_images/image427.png" style="width: 3.53879in; height: 2.60417in;" /></a></p>
+<p><a class="reference internal" href="../_images/image525.png"><img alt="image614" src="../_images/image525.png" style="width: 3.75000in; height: 0.87500in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="arabic simple">
+<li>Identify the following sample statistics from the JMP output:</li>
+</ol>
+<p><a class="reference internal" href="../_images/image306.png"><img alt="image6123" src="../_images/image306.png" style="width: 5.34in; height: 2.36in;" /></a></p>
+<ol class="last arabic simple" start="2">
+<li>We are interested in the true difference between these two population
+means, . Based on the data, what is your best guess for this
+difference, and what does it indicate about birth weights for smokers
+compared to nonsmokers?</li>
+<li>If you were to take another sample, is your “best guess” from the
+previous question likely to change? Explain.</li>
+</ol>
+</div>
+<p>Since the difference will change from sample to sample, in order to make valid
+inferences about the true population difference, we must first understand <em>how</em>
+the difference in sample means is expected to change from sample to sample. That
+is, we must determine what differences in means are likely to happen by chance
+when taking random samples from populations with the same mean. The following
+illustration in Tinkerplots gives us some insight into this.</p>
+<p><a class="reference internal" href="../_images/image96.png"><img alt="image615" src="../_images/image96.png" style="width: 6.79456in; height: 3.60417in;" /></a></p>
+</div>
+</div>
+<div class="section" id="characteristics-of-the-sampling-distribution-for-the-difference-in-means">
+<h2>Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h2>
+<p>The illustration in Tinkerplots helps us understand the intuition behind
+inference for a difference in means, but we don’t really need Tinkerplots to
+determine the characteristics of a distribution of differences in means.
+Instead, we can use what statisticians discovered long ago: as long as the
+samples are independent, the sampling distribution for the <em>difference in means</em>
+can be described as follows.</p>
+<ol class="arabic simple">
+<li>The sampling distribution is centered around <span class="math">\(\mu_1 - \mu_2\)</span>.</li>
+<li>The standard deviation of our sampling distribution (i.e., standard
+error) is given as follows:</li>
+</ol>
+<div class="math">
+\[SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}\]</div>
+<ol class="arabic simple" start="3">
+<li>The shape of the sampling distribution is approximately normal if (1) both
+sample sizes are “sufficiently large” OR (2) if both original populations are
+normally distributed.</li>
+</ol>
+<p>Given these characteristics, the test statistic we will use when testing for
+differences in two population means for INDEPENDENT samples is as follows:</p>
+<div class="math">
+\[t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\]</div>
+<p>This test statistic follows a t-distribution with the following degrees of
+freedom:</p>
+<div class="math">
+\[df = \frac{\left(\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}\right)^2}
+          {\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1}+
+          \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}\]</div>
+<p>Therefore, as long as it is reasonable to assume the shape of the distribution
+of differences in means is approximately normal (see #3 above), we can use the
+t-distribution to find our p-value. This procedure is typically referred to as
+the <strong>two-sample t-test</strong>.</p>
+</div>
+<div class="section" id="testing-for-a-difference-in-two-population-means-assuming-independent-samples">
+<h2>Testing for a Difference in Two Population Means (Assuming Independent Samples)<a class="headerlink" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples" title="Permalink to this headline">¶</a></h2>
+<p><strong>Back to Example 6.5:</strong> Carry out the hypothesis test associated with
+the following research question: Is the average birth weight lower when
+mothers are classified as smokers?</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the t-test is valid.</p>
+<ol class="arabic simple">
+<li>Are the two groups independent? Explain.</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a class="reference internal" href="../_images/image139.png"><img alt="image616" src="../_images/image139.png" style="width: 4.76834in; height: 1.97917in;" /></a></p>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub>.</p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2:</strong> Calculate the <em>test statsitic</em> from your data.</p>
+<p>To do this in JMP, click on the red drop-down arrow next to &#8220;Oneway Analysis...&#8221;
+and select <strong>t-test</strong>.</p>
+<p><a class="reference internal" href="../_images/image1410.png"><img alt="image6124" src="../_images/image1410.png" style="width: 5.63in; height: 2.53in;" /></a></p>
+<p>JMP returns the following:</p>
+<p><a class="reference internal" href="../_images/image158.png"><img alt="image6110" src="../_images/image158.png" style="width: 4.41667in; height: 1.45310in;" /></a></p>
+<p>Verify the value of the test statistic in JMP:</p>
+<p><a class="reference internal" href="../_images/image525.png"><img alt="image618" src="../_images/image525.png" style="width: 4.37561in; height: 1.02098in;" /></a></p>
+<div class="math">
+\[\begin{split}SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}\\
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\end{split}\]</div>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em>.</p>
+<p><a class="reference internal" href="../_images/image158.png"><img alt="image619" src="../_images/image158.png" style="width: 4.81317in; height: 1.58355in;" /></a></p>
+<p><em>p-value</em>:</p>
+<p><strong>Step 4:</strong> Write a conclusion in terms of the original research question.</p>
+<blockquote>
+<div>&#8220;We have evidence that the average birth weight is lower when mothers are classified as smokers (p-value = .0038).&#8221;</div></blockquote>
+</div>
+<div class="section" id="constructing-a-confidence-interval-for-the-difference-in-means">
+<h2>Constructing a Confidence Interval for the Difference in Means<a class="headerlink" href="#constructing-a-confidence-interval-for-the-difference-in-means" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../_images/image158.png"><img alt="image6110" src="../_images/image158.png" style="width: 4.41667in; height: 1.45310in;" /></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>We often write this confidence interval as:</p>
+<p>Interpret the meaning of this 95% confidence interval:</p>
+</div>
+<div class="section" id="example-6-6-time-perception">
+<h2>Example 6.6: Time Perception<a class="headerlink" href="#example-6-6-time-perception" title="Permalink to this headline">¶</a></h2>
+<p>Recall the study conducted by researchers at Pennsylvania State University which
+investigated whether time perception, a simple indication of a person’s ability
+to concentrate, is impaired during nicotine withdrawal. This study was discussed
+in Chapter 5. Twenty smokers were randomly assigned to a 24-hour smoking
+abstinence and were asked to estimate how much time had passed during a
+45-second period. Another 20 smokers were randomly assigned to a group which was
+<em>not</em> forced to abstain from nicotine; they were also asked to estimate how much
+time had passed during a 45-second period. Suppose the resulting data on
+perceived elapsed time (in seconds) were analyzed as shown below (these results
+are artificial but are similar to the actual findings). The data can be found in
+the file <strong>Nicotine_all.JMP</strong>.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Do those smokers suffering from nicotine withdrawal tend to believe that
+more time has elapsed than do those not suffering from nicotine withdrawal?</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the response variable in this study?</li>
+<li>What is the predictor variable in this study?</li>
+</ol>
+</div>
+<p>The data can be summarized using JMP by selecting <strong>Analyze &gt; Fit Y by
+X</strong> and placing the predictor (i.e., explanatory) variable in the <strong>X,
+Factor</strong> box and the response in the <strong>Y, Response</strong> box. Then, use the
+<strong>Display Options</strong> menu from the red drop-down arrow to add the
+boxplots and mean diamonds.</p>
+<blockquote>
+<div><a class="reference internal" href="../_images/image187.png"><img alt="image6111" src="../_images/image187.png" style="width: 3.45833in; height: 2.15022in;" /></a></div></blockquote>
+<p>It is clear that the SAMPLE of smokers suffering from nicotine
+withdrawal has a larger mean perceived elapsed time than those not
+suffering from withdrawal. However, to determine whether there is a
+difference in the POPULATION means, we will carry out a hypothesis test.</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the test is valid.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Are the two groups independent?</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a class="reference internal" href="../_images/image1910.png"><img alt="image6112" src="../_images/image1910.png" style="width: 4.08000in; height: 1.57228in;" /></a></p>
+</div></blockquote>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub></p>
+<blockquote>
+<div><p>H<sub>0</sub></p>
+<p>H<sub>a</sub></p>
+</div></blockquote>
+<p><strong>Step 2:</strong> Calculate a <em>test statistic</em> from your data.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image209.png"><img alt="image6113" src="../_images/image209.png" style="width: 4.20800in; height: 1.37295in;" /></a></p>
+<p>Verify the value of the test statistic from JMP:
+<a class="reference internal" href="../_images/image2112.png"><img alt="image6114" src="../_images/image2112.png" style="width: 4.65833in; height: 0.92004in;" /></a></p>
+<div class="math">
+\[\begin{split}SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}= \\
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}=\end{split}\]</div>
+<p>Recall that this test statistic comes from a t-distribution w</p>
+<div class="math">
+\[df = \frac{\left(\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}\right)^2}
+          {\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1}+
+          \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}=37.9\]</div>
+</div></blockquote>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em></p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image209.png"><img alt="image6115" src="../_images/image209.png" style="width: 4.44792in; height: 1.45123in;" /></a></p>
+<p>p-value =</p>
+</div></blockquote>
+<p><strong>Step 5:</strong> Write a conclusion in terms of the original research question.</p>
+<blockquote>
+<div>“The study provides evidence that the average perceived elapsed time is higher for those smokers suffering from nicotine withdrawal than for those not suffering from nicotine withdrawal (p-value = .0042)</div></blockquote>
+<p>Finally, construct a 95% confidence interval for the difference in
+means:</p>
+<p><a class="reference internal" href="../_images/image209.png"><img alt="image6116" src="../_images/image209.png" style="width: 4.91667in; height: 1.60417in;" /></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>Again, we often write this confidence interval as:</p>
+<p>Interpret the meaning of this confidence interval:</p>
+<p><strong>Example 6.7: Tree Canopy Area</strong></p>
+<p>Consider the data found in the file <strong>NYC_Trees.JMP</strong>.
+Suppose you want to compare the canopy area of the two types of trees.
+Is the average canopy area of a Honey Locust different from the average
+canopy area of a Norway Maple? The data are summarized as follows:</p>
+<p><a class="reference internal" href="../_images/image2310.png"><img alt="image6117" src="../_images/image2310.png" style="width: 3.67404in; height: 3.22917in;" /></a></p>
+<p>It is clear that the SAMPLE of Norway Maple trees has a higher mean
+canopy area than the SAMPLE of Honey Locust trees. However, to determine
+whether the POPULATION mean canopy areas differ between the two groups,
+we will carry out a hypothesis test.</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the test is valid.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Are the two groups independent?</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a class="reference internal" href="../_images/image245.png"><img alt="image6118" src="../_images/image245.png" style="width: 3.80208in; height: 1.52530in;" /></a></p>
+</div></blockquote>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub></p>
+<blockquote>
+<div><p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+</div></blockquote>
+<p><strong>Step 2:</strong> Calculate a <em>test statistic</em> from your data.</p>
+<blockquote>
+<div><a class="reference internal" href="../_images/image255.png"><img alt="image6119" src="../_images/image255.png" style="width: 4.81317in; height: 1.58355in;" /></a></div></blockquote>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em>.</p>
+<blockquote>
+<div>p-value =</div></blockquote>
+<p><strong>Step 4:</strong> Write a conclusion in terms of the original research question.</p>
+<p>Finally, we can construct a confidence interval for the difference in
+means:</p>
+<p><a class="reference internal" href="../_images/image255.png"><img alt="image6120" src="../_images/image255.png" style="width: 4.81317in; height: 1.58355in;" /></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>This confidence interval can also be written as:</p>
+<p>Interpret the meaning of this 95% confidence interval:</p>
+</div>
+<div class="section" id="nonparametric-tests">
+<h2>Nonparametric Tests<a class="headerlink" href="#nonparametric-tests" title="Permalink to this headline">¶</a></h2>
+<p>These tests are an alternative to the two-sample t-test for comparing the
+“average” value of two populations where the samples from each population are
+taken independently. This test is appropriate when the assumption of normality
+is violated (as it may have been in the previous example). To obtain the output
+for these tests, simply select <strong>Nonparametric &gt;</strong> from the drop-down menu in
+the upper left-hand corner of the boxplots.</p>
+<p><a class="reference internal" href="../_images/image263.png"><img alt="image6121" src="../_images/image263.png" style="width: 4.46611in; height: 2.59375in;" /></a></p>
+<p>JMP returns the following output when the Wilcoxon Test is selected:</p>
+<p><a class="reference internal" href="../_images/image277.png"><img alt="image6122" src="../_images/image277.png" style="width: 4.92777in; height: 2.33366in;" /></a></p>
+<p>The decision based on Wilcoxon’s test is the same decision that we arrived at
+using the standard two-sample t-test above. Often, these procedures will agree
+each other because the above t-test is robust to (i.e. not greatly affected by)
+departures from normality.</p>
+</div>
+<div class="section" id="the-t-test-for-independent-samples-assuming-equal-variances">
+<h2>The t-Test for Independent Samples Assuming Equal Variances<a class="headerlink" href="#the-t-test-for-independent-samples-assuming-equal-variances" title="Permalink to this headline">¶</a></h2>
+<p>The two-sample t-test that we discussed in the previous section uses the
+following test statistic:</p>
+<div class="math">
+\[\begin{split}SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}\\
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\end{split}\]</div>
+<p>Many statisticians use this version of the t-test only when they feel that the
+variances of the two populations of interest are significantly different from
+one another (hence it is often called the two-sample t-test assuming unequal
+variances).</p>
+<p>If, however, it is reasonable to assume that the amount of variability in the
+two populations is about the same, then statisticians often use a slightly
+different version of the t-test. Assuming the two variances are equal, we can
+obtain a common estimate of this equal variance (this is called a <em>pooled</em>
+estimate).</p>
+<div class="math">
+\[SE_{pooled} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{(n_1 - 1) + (n_2 - 1)}}\]</div>
+<p>Then, the test statistic for the t-test is calculated as follows:</p>
+<div class="math">
+\[t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{pooled}}\]</div>
+<p>Assuming the two variances are equal, this test statistic comes from a
+t-distribution with <span class="math">\(df = (n_1 – 1) + (n_2 – 1)\)</span>.  In practice, the
+two-sample t-test that was introduced earlier and used throughout the previous
+section works well, even if the two distributions being compared have the same
+amount of variability.  Therefore, it’s my opinion that instead of worrying
+about which one to use, just go with the test assuming unequal variances.</p>
+</div>
+</div>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

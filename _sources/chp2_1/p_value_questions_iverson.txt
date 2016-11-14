@@ -75,7 +75,7 @@ Example 3 - Font Preference?
 .. mchoice:: conclusion_questions_3
     :answer_a: There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is different than 50%
     :answer_b: There is not enough evidence to claim that the proportion of all consumers that select the Signet font is different than 50%
-    :answer_c: There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is different than 50%
+    :answer_c: There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is equal to than 50%
     :correct: a
     :feedback_a: This is a two-tail test, so the p-value = 2*0 = 0 < 0.05, so there is strong evidence in favor of the alternative hypothesis. In this case, we measure toward the upper tail, then double the value.  
     :feedback_b: A small p-value is always strong evidence in favor of the alternative.
