@@ -1,17 +1,19 @@
-Chapter 6 Part 1
-================
+Chapter 6 - Comparing a Numerical Variable Across Two Groups
+============================================================
 
-| ***
-  ***\ In this chapter, we will consider methods that allow us to make
-  comparisons on numerical variables between two different groups. In
-  general, these methods should be used to address research questions
-  involving a categorical predictor variable (with two categories) and a
-  numerical response variable.
-| Two different cases will be considered: (1) When the samples are
-  *dependent* (also called *matched* or *paired*), and (2) when the
-  samples are independent.
-| ***
-  COMPARING TWO POPULATION MEANS: DEPENDENT SAMPLES***
+In this chapter, we will consider methods that allow us to make
+comparisons on numerical variables between two different groups. In
+general, these methods should be used to address research questions
+involving a categorical predictor variable (with two categories) and a
+numerical response variable.
+
+Two different cases will be considered: 
+
+1. When the samples are *dependent* (also called *matched* or *paired*), and 
+2. when the samples are independent.
+
+Comparing Two Population Means: Dependent Samples
+-------------------------------------------------
 
 The hypothesis testing procedures presented in this section should be
 used when the observations from the two groups being compared are
@@ -19,67 +21,71 @@ used when the observations from the two groups being compared are
 by how the data are collected. To see this, consider the following
 example.
 
-| ***
-  Example 6.1: Thanksgiving Holiday Weight Gain
-  ***
-| In a 2006 study published in *Nutrition Journal*, researchers were
-  interested in assessing potential changes that occur in body weight
-  during the Thanksgiving holiday break in college students. This
-  paper’s abstract indicates that “a total of 94 college students
-  reported to the human body composition laboratory at the University of
-  Oklahoma following a 6-hour fast with testing occurring prior to, and
-  immediately following the Thanksgiving holiday break. Body weight was
-  assessed using a balance beam scale while participants were dressed in
-  minimal clothing.”
-| *Source: Hull et al. The Effects of the Thanksgiving Holiday on Weight
-  Gain. Nutrition Journal 2006, **5**:29; doi:10.1186/1475-2891-5-29.*
+Example 6.1: Thanksgiving Holiday Weight Gain
++++++++++++++++++++++++++++++++++++++++++++++
 
-*Research Question*: On average, does body weight of college students
-increase over the Thanksgiving holiday break?
+In a 2006 study published in *Nutrition Journal*, researchers were
+interested in assessing potential changes that occur in body weight
+during the Thanksgiving holiday break in college students. This
+paper’s abstract indicates that “a total of 94 college students
+reported to the human body composition laboratory at the University of
+Oklahoma following a 6-hour fast with testing occurring prior to, and
+immediately following the Thanksgiving holiday break. Body weight was
+assessed using a balance beam scale while participants were dressed in
+minimal clothing.”
 
-*
-Questions*:
+.. admonition:: Source: 
 
-1. What is the response variable of interest?
+    Hull et al. The Effects of the Thanksgiving Holiday on Weight Gain. Nutrition Journal 2006, **5**:29; doi:10.1186/1475-2891-5-29.
 
-2. What is the predictor variable of interest?
+.. admonition:: Research Question: 
 
-| The raw data from this study were not available; however, the data in
-  the file **ThanksgivingWeightData.jmp** are similar to the actual
-  results obtained by the researchers. A portion of these data is shown
-  below:
-| |image0|
+    On average, does body weight of college students increase over the Thanksgiving holiday break?
 
-*Questions*:
+.. admonition:: Questions:
 
-1. What can be said about the weight of Subject #1 as compared to
-   Subject #7, for example, regardless of whether the data were
-   collected before or after Thanksgiving?
+    1. What is the response variable of interest?
 
-*Comment*: For these data, the first pre-weight is related to the first
-post-weight (the two measurements were made on the same person). Thus,
-these two samples are **dependent**.
+    2. What is the predictor variable of interest?
+
+The raw data from this study were not available; however, the data in
+the file **ThanksgivingWeightData.jmp** are similar to the actual
+results obtained by the researchers. A portion of these data is shown
+below:
+
+|image0|
+
+.. admonition:: Questions:
+
+    1. What can be said about the weight of Subject #1 as compared to
+       Subject #7, for example, regardless of whether the data were
+       collected before or after Thanksgiving?
+
+.. note::
+
+    For these data, the first pre-weight is related to the first
+    post-weight (the two measurements were made on the same person). Thus,
+    these two samples are **dependent**.
 
 In other words, some of the variability in the responses might be due to
-differences between time periods (before vs. after), but much of the
-variability in the observations is likely due to differences between
-people! So, to control for this variability in weights from person to
-person (which will help us isolate the effect of Thanksgiving break), we
-will work with the *DIFFERENCES* on each subject, instead. This will
-remove the structure of dependence between the pre- and
-post-Thanksgiving groups and will control for the fact that some people,
-in general, tend to weigh more (or less) than others. In the end, this
-helps us to isolate the effect of Thanksgiving break (i.e., before vs.
-after).
+differences between time periods (before vs. after), but much of the variability
+in the observations is likely due to differences between people! So, to control
+for this variability in weights from person to person (which will help us
+isolate the effect of Thanksgiving break), we will work with the *DIFFERENCES*
+on each subject, instead. This will remove the structure of dependence between
+the pre- and post-Thanksgiving groups and will control for the fact that some
+people, in general, tend to weigh more (or less) than others. In the end, this
+helps us to isolate the effect of Thanksgiving break (i.e., before vs.  after).
 
-***
-Calculating the Difference in JMP***
+Calculating the Difference in JMP
+---------------------------------
 
-| First, open the file called **ThanksgivingWeightData.**. To calculate
-  the difference, create an additional column (double click on empty
-  column next to “‘Post Weight”) and title it “Difference.” Right-click
-  on the new column header and select **Formula**.
-| |image1|
+First, open the file called **ThanksgivingWeightData.**. To calculate
+the difference, create an additional column (double click on empty
+column next to “‘Post Weight”) and title it “Difference.” Right-click
+on the new column header and select **Formula**.
+
+|image1|
 
 In the edit window, tell JMP to calculate the difference as follows:
 
@@ -90,53 +96,55 @@ results for the first 10 subjects are shown below):
 
 |image3|
 
-*Questions*:
+.. admonition:: Questions:
 
-1. What does a positive difference of 3.9 indicate?
+    1. What does a positive difference of 3.9 indicate?
 
-2. What does a difference of -1.9 indicate?
+    2. What does a difference of -1.9 indicate?
 
-| To determine what the average difference is, we can analyze the
-  distribution of the differences using the descriptive methods
-  discussed in Chapter 4:
-| |image4|
+To determine what the average difference is, we can analyze the
+distribution of the differences using the descriptive methods
+discussed in Chapter 4:
 
-*Questions*:
+|image4|
 
-1. What is the average difference of the 94 subjects? Interpret this
-   value.
+.. admonition:: Questions:
 
-2. If Thanksgiving break had no effect on body weight, what would you
-   expect these differences to be, on average?\ *
-   *
+    3. What is the average difference of the 94 subjects? Interpret this
+       value.
 
-3. If the research hypothesis is correct (body weights of college
-   students increase over Thanksgiving break), what would you expect
-   these differences to be, on average?
+    4. If Thanksgiving break had no effect on body weight, what would you
+       expect these differences to be, on average?
 
-*
-Comment*: Note that these differences are represented by a single column
-of data. *So, instead of viewing this as a problem involving a
-categorical predictor and a numerical response, you could view this as a
-problem involving a single numerical variable – the differences!*
-Therefore, the hypothesis testing procedure is *exactly* the same as the
-procedure for testing a single population mean we discussed in Chapter
-5.
+    5. If the research hypothesis is correct (body weights of college
+       students increase over Thanksgiving break), what would you expect
+       these differences to be, on average?
+
+.. note::
+
+    Note that these differences are represented by a single column
+    of data. *So, instead of viewing this as a problem involving a
+    categorical predictor and a numerical response, you could view this as a
+    problem involving a single numerical variable – the differences!*
+    Therefore, the hypothesis testing procedure is *exactly* the same as the
+    procedure for testing a single population mean we discussed in Chapter
+    5.
 
 That is, the parameter of interest is the true population average of the
-differences which we will represent by μ\ :sub:`difference`.
+differences which we will represent by :math:`\mu_{difference}`.
 
 -  Our best estimate for this parameter is the *sample mean* of the
-   observed differences. We’ll call this quantity.
+   observed differences. We’ll call this quantity :math:`\bar{x}_{difference}`.
 
 -  The sample standard deviation of the differences will be denoted by
-   s\ :sub:`difference`.
+   :math:`s_{difference}`
 
 We can carry out the hypothesis test as follows to determine whether
 body weights of college students tend to increase over Thanksgiving
 break.
 
-***Checking the Normality Assumption*:**
+Checking the Normality Assumption:
+++++++++++++++++++++++++++++++++++
 
 Recall that for the t-test to be valid, at least one of the following
 conditions must be met:
@@ -148,71 +156,81 @@ conditions must be met:
    would indicate that the population is normally distributed so that
    the Central Limit Theorem would apply even with a small sample size)
 
-*Question*: Does the t-test appear to be a valid approach for testing
-this research question? Justify your reasoning.
+.. admonition:: Question: 
 
-***Step 1: Set up the null and alternative hypotheses***
+    Does the t-test appear to be a valid approach for testing this research
+    question? Justify your reasoning.
 
-H\ :sub:`o`:
-
-H\ :sub:`a`:
-
-***Step 2: Find the t-statistic and the p-value***
-
-=
-
-| To calculate this test statistic and its associated p-value in JMP,
-  use the methods discussed in Chapter 5:
-| |image5|
-
-p-value =
-
-***
-Step 3: Write a conclusion in the context of the problem***
-
-***
-Interpreting the 95% confidence interval for the mean difference***
-
-***
-***
-
-| *Comment*: Suppose that when calculating the difference, you switched
-  the order of the categories:
-| |image6|
-
-What effect would this have had on the analysis?
+**Step 1: Set up the null and alternative hypotheses**
 
 H\ :sub:`o`:
 
 H\ :sub:`a`:
 
-=
+**Step 2: Find the t-statistic and the p-value**
 
-|image7|
+.. math::
+
+    SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\
+    t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}}
+
+To calculate this test statistic and its associated p-value in JMP,
+use the methods discussed in Chapter 5:
+
+|image5|
 
 p-value =
 
-Conclusion:
+**Step 3: Write a conclusion in the context of the problem**
 
-95% confidence interval for the mean difference:
+Interpreting the 95% confidence interval for the mean difference**
 
-***
-***
 
-***Example 6.2: Systolic Blood Pressure and Captopril*
-**\ The data in the file **Captopril.jmp** give the systolic and
+.. note:: 
+
+    When calculating the difference, you switched the order of the categories:
+
+    |image6|
+
+.. admonition:: Question:
+
+    What effect would this have had on the analysis?
+
+    H\ :sub:`o`:
+
+    H\ :sub:`a`:
+
+    .. math::
+
+        SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\
+        t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}}
+
+    |image7|
+
+    p-value =
+
+    Conclusion:
+
+    95% confidence interval for the mean difference:
+
+
+**Example 6.2: Systolic Blood Pressure and Captopril**
+
+The data in the file **Captopril.jmp** give the systolic and
 diastolic blood pressures for 15 patients with moderate essential
 hypertension, immediately before and two hours after taking a drug,
 captopril. Our interest is in investigating the response to the drug
 treatment.
 
-*Research Question*: Is there a change in systolic blood pressure after
-taking captopril?
+.. admonition:: Research Question: 
 
-*Question*: Are these samples dependent or independent? Explain.
+    Is there a change in systolic blood pressure after taking captopril?
 
-***Check the assumptions behind the test
-***
+.. admonition:: Question: 
+
+    Are these samples dependent or independent? Explain.
+
+**Check the assumptions behind the test**
 
 -  Is the number of pairs sufficiently large?
 
@@ -224,19 +242,21 @@ taking captopril?
 +============+============+
 +------------+------------+
 
-***Step 1: Set up the null and alternative hypotheses***
+**Step 1: Set up the null and alternative hypotheses**
 
 H\ :sub:`0`:
 
 H\ :sub:`a`:
 
-***Step 2: Find the test statistic and the p-value
-***
+**Step 2: Find the test statistic and the p-value**
 
-+-------------+-----+
-| |image10|   | =   |
-+=============+=====+
-+-------------+-----+
++------------------------------+------------------------------------------------------------------------+
+| |image10|                    | .. math::                                                              |
+|                              |                                                                        |
+|                              |    SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\                 |
+|                              |    t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}} |
++==============================+========================================================================+
++------------------------------+------------------------------------------------------------------------+
 
 Using JMP:
 
@@ -247,36 +267,32 @@ Using JMP:
 +=============+=============+
 +-------------+-------------+
 
-***Step 3: Write a conclusion in the context of the problem***
+**Step 3: Write a conclusion in the context of the problem**
 
-*
-*
-
-*
-*
 
 Finally, construct a 95% confidence interval for the average difference
 in systolic blood pressure means.
 
 |image13|
 
-*Questions*:
+.. admonition:: Questions:
 
-1. Interpret this confidence interval.
+    1. Interpret this confidence interval.
 
-2. Does this interval agree with the results of the hypothesis test?
-   Explain.
+    2. Does this interval agree with the results of the hypothesis test?
+       Explain.
 
-***Example 6.3: Systolic Blood Pressure and Captopril, Revisited*
-**\ As we saw in Example 6.2, patients with moderate essential
-hypertension saw a decrease in systolic blood pressure. Note that we
-could also investigate the following question.
+**Example 6.3: Systolic Blood Pressure and Captopril, Revisited**
 
-*Research Question*: Does the systolic blood pressure decrease by more
-than 10 mmHg?
+As we saw in Example 6.2, patients with moderate essential hypertension saw a
+decrease in systolic blood pressure. Note that we could also investigate the
+following question.
 
-*Check the assumptions behind the test
-*
+.. admonition:: Research Question: 
+
+    Does the systolic blood pressure decrease by more than 10 mmHg?
+
+**Check the assumptions behind the test**
 
 -  Is the number of pairs sufficiently large?
 
@@ -288,22 +304,24 @@ than 10 mmHg?
 +=============+=============+
 +-------------+-------------+
 
-***Step 1: Set up the null and alternative hypotheses***
+**Step 1: Set up the null and alternative hypotheses**
 
 H\ :sub:`0`:
 
 H\ :sub:`a`:
 
-***Step 2: Find the test statistic and the p-value
-***
+**Step 2: Find the test statistic and the p-value**
 
-+-------------+-----+
-| |image16|   | =   |
-+=============+=====+
-+-------------+-----+
++------------------------------+------------------------------------------------------------------------+
+| |image16|                    | .. math::                                                              |
+|                              |                                                                        |
+|                              |    SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\                 |
+|                              |    t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}} |
++==============================+========================================================================+
++------------------------------+------------------------------------------------------------------------+
 
-*
-*\ Using JMP:
+
+**Using JMP:**
 
 +-------------+----+
 | |image17|   |    |
@@ -314,10 +332,7 @@ H\ :sub:`a`:
 +=============+====+
 +-------------+----+
 
-***Step 3: Write a conclusion in the context of the problem***
-
-*
-*
+**Step 3: Write a conclusion in the context of the problem**
 
 Recall the 95% confidence interval for the average difference in
 systolic blood pressure means:
@@ -327,20 +342,16 @@ systolic blood pressure means:
 Does this interval agree with the results of the hypothesis test?
 Explain.
 
-***
-***
+**Example 6.4: Diastolic Blood Pressure and Captopril**
 
-***
-Example 6.4: Diastolic Blood Pressure and Captopril*
-**\ Finally, we will use the Captopril data to investigate the following
+Finally, we will use the Captopril data to investigate the following
 question.
 
-*Research Question*: Does the diastolic blood pressure decrease by more
-than 5 mmHg?
+.. admonition:: Research Question: 
 
-*
-Step 0: Check the assumptions behind the test
-*
+    Does the diastolic blood pressure decrease by more than 5 mmHg?
+
+**Step 0: Check the assumptions behind the test**
 
 -  Is the number of pairs sufficiently large?
 
@@ -352,22 +363,22 @@ Step 0: Check the assumptions behind the test
 +=============+=============+
 +-------------+-------------+
 
-*
-*
 
-***Step 1: Set up the null and alternative hypotheses***
+**Step 1: Set up the null and alternative hypotheses**
 
 H\ :sub:`0`:
 
 H\ :sub:`a`:
 
-***Step 2: Find the test statistic and the p-value
-***
+**Step 2: Find the test statistic and the p-value**
 
-+-------------+-----+
-| |image22|   | =   |
-+=============+=====+
-+-------------+-----+
++------------------------------+------------------------------------------------------------------------+
+| |image22|                    | .. math::                                                              |
+|                              |                                                                        |
+|                              |    SE_{difference} = \frac{s_{difference}}{\sqrt{n}}\\                 |
+|                              |    t = \frac{\bar{x}_{difference} - \mu_{difference}}{SE_{difference}} |
++==============================+========================================================================+
++------------------------------+------------------------------------------------------------------------+
 
 Using JMP:
 
@@ -378,10 +389,7 @@ Using JMP:
 +=============+=============+
 +-------------+-------------+
 
-***Step 3: Write a conclusion in the context of the problem***
-
-*
-*
+**Step 3: Write a conclusion in the context of the problem**
 
 Find the 95% confidence interval for the average difference in systolic
 blood pressure means:
