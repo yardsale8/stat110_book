@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Chapter 3 &mdash; Runestone Interactive Overview</title>
+    <title>Chapter 3 - Methods for Two Categorical Variables &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -260,11 +260,53 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Chapter 3</a><ul>
-<li><a class="reference internal" href="#id29">***</a></li>
-<li><a class="reference internal" href="#id34">***</a></li>
-<li><a class="reference internal" href="#id39">***</a></li>
-<li><a class="reference internal" href="#id50">***</a></li>
+<li><a class="reference internal" href="#">Chapter 3 - Methods for Two Categorical Variables</a><ul>
+<li><a class="reference internal" href="#example-3-1-mythbusters-and-the-yawning-experiment">Example 3.1: MythBusters and the Yawning Experiment</a><ul>
+<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards">Statistical Inference: Conducting a Simulation Study with Playing Cards</a></li>
+<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots">Statistical Inference: Conducting a Simulation Study with Tinkerplots</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values">Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values</a><ul>
+<li><a class="reference internal" href="#carrying-out-fishers-exact-test">Carrying out Fisher’s Exact Test</a></li>
+<li><a class="reference internal" href="#example-3-2-vested-interest-and-task-performance">Example 3.2: Vested Interest and Task Performance</a><ul>
+<li><a class="reference internal" href="#fishers-exact-test-to-obtain-exact-p-values">Fisher’s Exact Test to Obtain Exact p-values</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-3-3-claritin-and-nervousness">Example 3.3: Claritin and Nervousness</a></li>
+<li><a class="reference internal" href="#observational-studies-vs-designed-experiments">Observational Studies vs. Designed Experiments</a></li>
+<li><a class="reference internal" href="#example-3-4-alcoholism-and-depression">Example 3.4: Alcoholism and Depression</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#chi-square-test-alternative-to-fishers-exact-test">Chi-Square Test (Alternative to Fisher’s Exact Test)</a><ul>
+<li><a class="reference internal" href="#find-the-p-value">Find the p-value:</a></li>
+<li><a class="reference internal" href="#example-3-5-mice-and-tobacco-smoke">Example 3.5: Mice and Tobacco Smoke</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#confidence-interval-for-the-difference-in-proportions">Confidence Interval for the Difference in Proportions</a><ul>
+<li><a class="reference internal" href="#example-3-6-gender-and-health-insurance">Example 3.6: Gender and Health Insurance</a></li>
+<li><a class="reference internal" href="#example-3-7-adoption-and-suicide-attempts">Example 3.7: Adoption and Suicide Attempts</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#calculating-risks-and-the-relative-risk">Calculating Risks and the Relative Risk</a></li>
+<li><a class="reference internal" href="#calculating-odds-and-the-odds-ratio">Calculating Odds and the Odds Ratio</a><ul>
+<li><a class="reference internal" href="#example-3-8-smoking-and-lung-cancer">Example 3.8: Smoking and Lung Cancer</a></li>
+<li><a class="reference internal" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio">Example 3.9: When is the Relative Risk Close to the Odds Ratio?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#relative-risk-and-odds-ratios-in-jmp">Relative Risk and Odds Ratios in JMP</a><ul>
+<li><a class="reference internal" href="#example-3-10-importance-of-considering-absolute-risk">Example 3.10: Importance of Considering Absolute Risk</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence">Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence</a><ul>
+<li><a class="reference internal" href="#example-3-11-support-for-iraq-war-and-political-affiliation">Example 3.11: Support for Iraq War and Political Affiliation</a></li>
+<li><a class="reference internal" href="#carrying-out-the-chi-square-test-of-independence">Carrying out the chi-square test of independence:</a></li>
+<li><a class="reference internal" href="#finding-the-p-value">Finding the p-value:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity">Chi-square Test of Independence versus Chi-square Test of Homogeneity</a><ul>
+<li><a class="reference internal" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s">Example 3.12: Opinions on Disciplining Children across Regions of U.S.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -299,10 +341,10 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="chapter-3">
-<h1>Chapter 3<a class="headerlink" href="#chapter-3" title="Permalink to this headline">¶</a></h1>
-<p><strong>*
-Example 3.1: MythBusters and the Yawning Experiment*</strong></p>
+  <div class="section" id="chapter-3-methods-for-two-categorical-variables">
+<h1>Chapter 3 - Methods for Two Categorical Variables<a class="headerlink" href="#chapter-3-methods-for-two-categorical-variables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-3-1-mythbusters-and-the-yawning-experiment">
+<h2>Example 3.1: MythBusters and the Yawning Experiment<a class="headerlink" href="#example-3-1-mythbusters-and-the-yawning-experiment" title="Permalink to this headline">¶</a></h2>
 <p>MythBusters, a popular television program on the Discovery Channel, once
 conducted an experiment to investigate whether or not yawning is
 contagious. The premise of the experiment was to invite a stranger to
@@ -338,92 +380,61 @@ observed and recorded the results which are given below.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>*Research Hypothesis*: Those “seeded” with a yawn are more likely to
-actually yawn than those who are not seeded.</strong></p>
+<div class="admonition-research-hypothesis admonition">
+<p class="first admonition-title">Research Hypothesis:</p>
+<p class="last">Those “seeded” with a yawn are more likely to actually yawn than those who are not seeded.</p>
+</div>
 <p>When we analyze data on two variables, our first step is to distinguish
 between the <strong>response</strong> variable and the <strong>explanatory</strong> (or
 <strong>predictor</strong>) variable.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><strong>Response variable:</strong> The outcome variable on which comparisons are made.</p>
-<p class="last"><strong>Explanatory (or Predictor) variable:</strong> This defines the groups to be compared.</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
-<li></li>
-</ul>
-<p>Questions*:</p>
-<ol class="arabic simple">
+<dl class="glossary docutils">
+<dt id="term-response-variable">Response variable:</dt>
+<dd>The <strong>response variable</strong> is the outcome variable on which comparisons are made.</dd>
+<dt id="term-explanatory-or-predictor-variable">Explanatory (or Predictor) variable:</dt>
+<dd>The <strong>expanatory variable</strong> defines the groups to be compared.</dd>
+</dl>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>What variables must be measured in the MythBusters Yawning experiment
 in order to investigate the research hypothesis? Are these variables
 categorical or numerical?</li>
 <li>Which is the response variable? Which is the explanatory variable?</li>
 </ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><strong>Descriptive Methods for Two Categorical Variables:</strong></p>
-<blockquote class="last">
-<div><p>A <strong>*contingency table*</strong> shows the joint frequencies of two categorical variables. The rows of the table denote the categories of the first variable, and the columns denote the categories of the second variable.</p>
-<p>A <strong>*mosaic plot*</strong> gives a visual representation of the relationship between two categorical variables. A mosaic plot graphically presents the information given in the contingency table.</p>
-</div></blockquote>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div class="admonition-descriptive-methods-for-two-categorical-variables admonition">
+<p class="first admonition-title">Descriptive Methods for Two Categorical Variables:</p>
+<ul class="last simple">
+<li>A <strong>contingency table</strong> shows the joint frequencies of two categorical
+variables. The rows of the table denote the categories of the first
+variable, and the columns denote the categories of the second variable.</li>
+<li>A <strong>mosaic plot</strong> gives a visual representation of the relationship
+between two categorical variables. A mosaic plot graphically presents
+the information given in the contingency table.</li>
+</ul>
+</div>
 <p>To obtain these descriptive summaries from JMP, the data should be
 entered as follows:</p>
-<p><a class="reference internal" href="../_images/image115.png"><img alt="image0" src="../_images/image115.png" style="width: 4.39583in; height: 1.87500in;" /></a></p>
+<p><a class="reference internal" href="../_images/image115.png"><img alt="image300" src="../_images/image115.png" style="width: 4.39583in; height: 1.87500in;" /></a></p>
 <p>Select <strong>Analyze &gt; Fit Y by X</strong>. Place the response variable in the <strong>Y,
 Response</strong> box and the explanatory variable in the <strong>X, Factor</strong> box.</p>
-<p><a class="reference internal" href="../_images/image215.png"><img alt="image1" src="../_images/image215.png" style="width: 4.99386in; height: 2.68750in;" /></a></p>
+<p><a class="reference internal" href="../_images/image215.png"><img alt="image301" src="../_images/image215.png" style="width: 4.99386in; height: 2.68750in;" /></a></p>
 <p>Click OK, and JMP returns the following:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head"><a class="reference internal" href="../_images/image413.png"><img alt="image2" src="../_images/image413.png" style="width: 3.52083in; height: 2.53270in;" /></a></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">Find the proportion that yawned in the Seeded group.</p>
-</li>
-<li><p class="first">Find the proportion that yawned in the Not Seeded group.</p>
-</li>
-<li><p class="first">Find the difference in the proportion that yawned between these two
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Find the proportion that yawned in the Seeded group.</li>
+<li>Find the proportion that yawned in the Not Seeded group.</li>
+<li>Find the difference in the proportion that yawned between these two
 groups. Do these proportions differ in the direction conjectured by
-the researchers?</p>
-</li>
-<li><p class="first">Even if the seeding of a yawn had absolutely no effect on whether or
+the researchers?</li>
+<li>Even if the seeding of a yawn had absolutely no effect on whether or
 not a subject actually yawned, is it <em>possible</em> to have obtained a
-difference such as this by random chance alone? Explain.</p>
-<p><strong>*Statistical Inference: Conducting a Simulation Study with Playing
-Cards*</strong></p>
+difference such as this by random chance alone? Explain.</li>
+</ol>
+</div>
+<div class="section" id="statistical-inference-conducting-a-simulation-study-with-playing-cards">
+<h3>Statistical Inference: Conducting a Simulation Study with Playing Cards<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards" title="Permalink to this headline">¶</a></h3>
 <p>The above <em>descriptive analysis</em> tells us what we have learned about
 the 50 subjects in the study. Our next goal is to make <em>inferences</em>
 beyond what happened in the study (i.e., we want to make general
@@ -447,40 +458,7 @@ out 34 to be the seeded group. This is the first run of our
 simulation study. Construct the contingency table to show the number
 of yawners and non-yawners in each group from the first run of our
 simulation study.</p>
-</li>
-</ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="43%" />
-<col width="16%" />
-<col width="26%" />
-<col width="15%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head">Yawned</th>
-<th class="head">Did not Yawn</th>
-<th class="head">Total</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Seeded with a yawn</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>34</td>
-</tr>
-<tr class="row-odd"><td>Not seeded with a yawn</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>16</td>
-</tr>
-<tr class="row-even"><td>Total</td>
-<td>14</td>
-<td>36</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
+<p><a class="reference internal" href="../_images/image406.png"><img alt="image3044" src="../_images/image406.png" style="width: 6.09in; height: 1.90in;" /></a></p>
 <p>Next, note that if you know the number of yawners in the Seeded group,
 then you can fill in the rest of the cells in the contingency table. So,
 for the rest of the simulated runs, <strong>we need only keep track of the
@@ -488,75 +466,32 @@ number of yawners in the Seeded group</strong>. Record the number of yawners in
 the Seeded group from your first simulated experiment in the table
 below. Then, repeat this randomization process nine more times,
 recording your results in the table.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="32%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="7%" />
-<col width="8%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Simulated Experiment</th>
-<th class="head">1</th>
-<th class="head">2</th>
-<th class="head">3</th>
-<th class="head">4</th>
-<th class="head">5</th>
-<th class="head">6</th>
-<th class="head">7</th>
-<th class="head">8</th>
-<th class="head">9</th>
-<th class="head">10</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Number of Yawners in
-Seeded Group</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<p><a class="reference internal" href="../_images/image413.png"><img alt="image3045" src="../_images/image413.png" style="width: 8.18in; height: 0.99in;" /></a></p>
 <p>Next, create a dotplot of the results:</p>
-<p><a class="reference internal" href="../_images/image513.png"><img alt="image3" src="../_images/image513.png" style="width: 5.57292in; height: 0.50000in;" /></a></p>
+<p><a class="reference internal" href="../_images/image425.png"><img alt="image3046" src="../_images/image425.png" style="width: 8.55in; height: 2.00in;" /></a></p>
 <p>Number of Yawners Randomly Assigned to the Seeded Group</p>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">How many randomizations were performed by the class as a whole? What
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>How many randomizations were performed by the class as a whole? What
 proportion gave results <em>at least as extreme</em> as the actual study (10
-or more yawners in the seeded group)?</p>
-</li>
-<li><p class="first">Note that the random process used in the simulation study models the
+or more yawners in the seeded group)?</li>
+<li>Note that the random process used in the simulation study models the
 situation where the yawn seeding has no effect on whether the subject
 actually yawns—we simply assume there are 14 people who will yawn no
 matter what group they are in, and they are assigned to the two
 groups at random . Based on this simulation study, does it appear
 that random assignment of yawners to groups will result in 10 or more
-yawners in the seeded group just by chance? Explain.</p>
-</li>
-<li><p class="first">Recall that the MythBusters obtained 10 yawners in the Seeded group.
+yawners in the seeded group just by chance? Explain.</li>
+<li>Recall that the MythBusters obtained 10 yawners in the Seeded group.
 Given your answer to Question 2, would you say that the data provide
 convincing statistical evidence to support the research question?
-Explain.</p>
-<p><strong>*Statistical Inference: Conducting a Simulation Study with
-Tinkerplots*</strong></p>
-</li>
+Explain.</li>
 </ol>
+</div>
+</div>
+<div class="section" id="statistical-inference-conducting-a-simulation-study-with-tinkerplots">
+<h3>Statistical Inference: Conducting a Simulation Study with Tinkerplots<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots" title="Permalink to this headline">¶</a></h3>
 <p>Note that we could use technology to simulate this process much more
 efficiently. This will enable us to easily obtain many more simulated
 results so that we can be more confident in our answer to Question 3
@@ -568,17 +503,13 @@ group and 16 in the Non-seeded group.</p>
 <p>Make sure the <strong>Repeat</strong> value is set to 50 (the number of subjects in
 the study), and set BOTH mixers to sample <strong>Without Replacement</strong> (as
 shown below).</p>
-<p><a class="reference internal" href="../_images/image63.png"><img alt="image4" src="../_images/image63.png" style="width: 5.07739in; height: 4.50000in;" /></a></p>
-<div class="line-block">
-<div class="line">Click Run, and you will see the results of the first simulated trial:</div>
-<div class="line"><a class="reference internal" href="../_images/image74.png"><img alt="image5" src="../_images/image74.png" style="width: 3.18750in; height: 2.69792in;" /></a></div>
-</div>
-<div class="line-block">
-<div class="line">To plot these results, drag a new <strong>Plot</strong> to the workspace. Drag the
+<p><a class="reference internal" href="../_images/image63.png"><img alt="image304" src="../_images/image63.png" style="width: 5.07739in; height: 4.50000in;" /></a></p>
+<p>Click Run, and you will see the results of the first simulated trial:</p>
+<p><a class="reference internal" href="../_images/image74.png"><img alt="image305" src="../_images/image74.png" style="width: 3.18750in; height: 2.69792in;" /></a></p>
+<p>To plot these results, drag a new <strong>Plot</strong> to the workspace. Drag the
 predictor variable (Group) to the x-axis and the response variable
-(Yawn) to the y-axis, as shown below.</div>
-<div class="line"><a class="reference internal" href="../_images/image83.png"><img alt="image6" src="../_images/image83.png" style="width: 2.51042in; height: 2.52854in;" /></a></div>
-</div>
+(Yawn) to the y-axis, as shown below.</p>
+<p><a class="reference internal" href="../_images/image83.png"><img alt="image306" src="../_images/image83.png" style="width: 2.51042in; height: 2.52854in;" /></a></p>
 <p>Click on <strong>n</strong> to count the number in each cell, and you can also
 vertically stack the dots using the <strong>Stack</strong> tool.</p>
 <p>Note that we are interested in recording the number of yawners in the
@@ -586,7 +517,7 @@ Seeded group. Place your cursor over this number (circled in red on the
 below graph), right-click, and choose <strong>Collect Statistic.</strong> Set the
 <strong>Collect</strong> value to 99 in order to obtain a total of 100 simulated
 results, and click <strong>Collect</strong>.</p>
-<p><a class="reference internal" href="../_images/image92.png"><img alt="image7" src="../_images/image92.png" style="width: 2.86458in; height: 2.91667in;" /></a></p>
+<p><a class="reference internal" href="../_images/image92.png"><img alt="image307" src="../_images/image92.png" style="width: 2.86458in; height: 2.91667in;" /></a></p>
 <p>Finally, to graph these outcomes, highlight the
 “count_Yawn_yes_Group_Seeded” column and drag a new plot into the
 workspace. Drag a point all the way to the right to organize the dots,
@@ -594,30 +525,32 @@ and use the <strong>Stack</strong> tool to vertically stack the dots. Finally,
 right-click on either endpoint on the x-axis and set “Bin Width” to 1,
 and use the count tool (<strong>n</strong>) to count the dots in each bin.</p>
 <p>You should see something similar to the following:</p>
-<p><a class="reference internal" href="../_images/image102.png"><img alt="image8" src="../_images/image102.png" style="width: 4.20833in; height: 2.17006in;" /></a></p>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">What does each dot on the above plot represent?</p>
-</li>
-<li><p class="first">What value(s) occurred most often by chance under the null model?
-Explain why this makes sense.</p>
-</li>
-<li><p class="first">How often did we see results at least as extreme as the observed data
+<p><a class="reference internal" href="../_images/image102.png"><img alt="image308" src="../_images/image102.png" style="width: 4.20833in; height: 2.17006in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What does each dot on the above plot represent?</li>
+<li>What value(s) occurred most often by chance under the null model?
+Explain why this makes sense.</li>
+<li>How often did we see results at least as extreme as the observed data
 (10 or more yawners in the seeded group) under the null model?
 Calculate the proportion of simulated results in which we observed 10
 or more yawners in the seeded group. Note that this is an approximate
-p-value!</p>
-</li>
-<li><p class="first">The MythBusters reported the following results: 25% yawned of those
+p-value!</li>
+<li>The MythBusters reported the following results: 25% yawned of those
 not given a yawn seed, and 29% yawned of those given a yawn seed.
 Then, they cited the &#8220;large sample size&#8221; and the 4% difference in the
 proportion that yawned between the seeded and non-seeded group to
 confidently conclude that yawn seed had a significant effect on the
 subjects. Therefore, they concluded that the yawn is decisively
 contagious. Do you agree or disagree with their answer? Justify your
-reasoning.</p>
-<p><strong>*Statistical Inference: Fisher’s Exact Test to Obtain Exact
-p-values*</strong></p>
+reasoning.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="statistical-inference-fishers-exact-test-to-obtain-exact-p-values">
+<h2>Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h2>
 <p>We just used a simulation study to investigate the Mythbusters’
 research hypothesis. This is a valid analysis; however, it provides
 only an approximate p-value. We can obtain the exact p-value using
@@ -628,60 +561,25 @@ Exact Test</strong> which uses the hypergeometric distribution to calculate
 p-values. This is easily carried out in JMP.</p>
 <p>Note the output obtained when you used the <strong>Analyze &gt; Fit Y by X</strong>
 option:</p>
-<p><a class="reference internal" href="../_images/image116.png"><img alt="image9" src="../_images/image116.png" style="width: 5.75000in; height: 2.45833in;" /></a></p>
+<p><a class="reference internal" href="../_images/image116.png"><img alt="image309" src="../_images/image116.png" style="width: 5.75000in; height: 2.45833in;" /></a></p>
 <p>JMP has already used the hypergeometric probability distribution to
 calculate the probability of observing results at least as extreme as
 those observed in the MythBusters actual experiment. Now, you can use
 this output to carry out the test.</p>
-</li>
-</ol>
-<p><strong>*Carrying out Fisher’s Exact Test*</strong></p>
+<div class="section" id="carrying-out-fishers-exact-test">
+<h3>Carrying out Fisher’s Exact Test<a class="headerlink" href="#carrying-out-fishers-exact-test" title="Permalink to this headline">¶</a></h3>
 <p>This test is based on the probability of observing data at least as
 extreme as the actual observed data. The procedure is carried out as
 follows.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><em>Step 1</em>:</th>
-<th class="head"><p class="first">Convert the research hypothesis into H<sub>o</sub> and H<sub>a</sub>.</p>
-<p>H<sub>0</sub>: Yawn seeding has no effect on whether or not a person yawns.</p>
-<p>H<sub>a</sub>: Those seeded with a yawn are more likely to yawn.</p>
-<div class="line-block">
-<div class="line">We can also state the hypotheses in terms of the following parameters:</div>
-<div class="line">π <sub>yawn | seeded</sub> = the proportion that yawn (i.e., the probability of yawning)</div>
-<div class="line">when Seeded</div>
+<p><a class="reference internal" href="../_images/image434.png"><img alt="image3047" src="../_images/image434.png" style="width: 8.43in; height: 7.93in;" /></a></p>
 </div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">π <sub>yawn | seeded</sub> = the proportion that yawn (i.e., the probability of yawning)</div>
-<div class="line">when Not Seeded</div>
-</div>
-</div></blockquote>
-<p>H<sub>0</sub>:</p>
-<p class="last">H<sub>a</sub>:</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><em>Step 2</em>:</td>
-<td><p class="first">Determine the <em>p-value</em>.</p>
-<p class="last"><em>p-value</em>:</p>
-</td>
-</tr>
-<tr class="row-odd"><td><em>Step 3</em>:</td>
-<td>Write a conclusion addressing the original research hypothesis.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="#id1"><span class="problematic" id="id2">**</span></a><em>Example 3.2: Vested Interest and Task Performance</em>
-<a href="#id3"><span class="problematic" id="id4">**</span></a>*
-This example is from Investigating Statistical Concepts, Applications,
+<div class="section" id="example-3-2-vested-interest-and-task-performance">
+<h3>Example 3.2: Vested Interest and Task Performance<a class="headerlink" href="#example-3-2-vested-interest-and-task-performance" title="Permalink to this headline">¶</a></h3>
+<p>This example is from Investigating Statistical Concepts, Applications,
 and Methods by Beth Chance and Allan Rossman. 2006.
 Thomson-Brooks/Cole.*</p>
-<p>“A study published in the <em>Journal of Personality and Social Psychology</em>
+<blockquote>
+<div>“A study published in the <em>Journal of Personality and Social Psychology</em>
 (Butler and Baumeister, 1998) investigated a conjecture that having an
 observer with a vested interest would decrease subjects’ performance on
 a skill-based task. Subjects were given time to practice playing a video
@@ -694,83 +592,41 @@ $3 if the participant beat a certain threshold time, and the other group
 threshold were beaten. The threshold was chosen to be a time that they
 beat in 30% of their practice turns. The following results are very
 similar to those found in the experiment: 3 of the 12 subjects in group
-A beat the threshold, and 8 of 12 subjects in group B achieved success.”</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="33%" />
-<col width="27%" />
-<col width="30%" />
-<col width="11%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head">A: Vested Interest</th>
-<th class="head">B: No Vested Interest</th>
-<th class="head">Total</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Achieved success</td>
-<td>3</td>
-<td>8</td>
-<td>11</td>
-</tr>
-<tr class="row-odd"><td>Did not achieve success</td>
-<td>9</td>
-<td>4</td>
-<td>13</td>
-</tr>
-<tr class="row-even"><td>Total</td>
-<td>12</td>
-<td>12</td>
-<td>24</td>
-</tr>
-</tbody>
-</table>
-<p><a href="#id5"><span class="problematic" id="id6">**</span></a><em>Research Hypothesis</em>: Having an observer with a vested interest
-decreases performance on a skill-based task.
-**</p>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">What variables must be measured in order to address the research
-question? Are they categorical or numerical?</p>
-</li>
-<li><p class="first">Which is the response variable? Which is the explanatory variable?</p>
+A beat the threshold, and 8 of 12 subjects in group B achieved success.”</div></blockquote>
+<p><a class="reference internal" href="../_images/image445.png"><img alt="image3048" src="../_images/image445.png" style="width: 6.96in; height: 1.29in;" /></a></p>
+<div class="admonition-research-hypothesis admonition">
+<p class="first admonition-title">Research Hypothesis:</p>
+<p class="last">Having an observer with a vested interest decreases performance on a skill-based task.</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What variables must be measured in order to address the research
+question? Are they categorical or numerical?</li>
+<li>Which is the response variable? Which is the explanatory variable?</li>
+</ol>
+</div>
 <p>The data can be entered into JMP as follows:</p>
-<p><a class="reference internal" href="../_images/image124.png"><img alt="image10" src="../_images/image124.png" style="width: 3.15010in; height: 1.35321in;" /></a></p>
+<p><a class="reference internal" href="../_images/image124.png"><img alt="image3010" src="../_images/image124.png" style="width: 3.15010in; height: 1.35321in;" /></a></p>
 <p>To create the contingency table and the mosaic plot in JMP, select
 <strong>Analyze &gt; Fit Y by X</strong>. As always, place the response variable in
 the <strong>Y, Response</strong> box and the explanatory variable in the <strong>X,
 Factor</strong> box.</p>
-<p><a class="reference internal" href="../_images/image133.png"><img alt="image11" src="../_images/image133.png" style="width: 3.37500in; height: 1.86685in;" /></a></p>
+<p><a class="reference internal" href="../_images/image133.png"><img alt="image3011" src="../_images/image133.png" style="width: 3.37500in; height: 1.86685in;" /></a></p>
 <p>Click OK, and JMP returns the following:</p>
-</li>
-</ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">What is the proportion of successes (beating the threshold) for each
-group?</p>
-</li>
-<li><p class="first">What is the difference in the proportion of successes between these
+<p><a class="reference internal" href="../_images/image454.png"><img alt="image3049" src="../_images/image454.png" style="width: 8.61in; height: 3.66in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="arabic simple" start="3">
+<li>What is the proportion of successes (beating the threshold) for each
+group?</li>
+<li>What is the difference in the proportion of successes between these
 two groups? Do these proportions differ in the direction conjectured
-by the researchers?</p>
-</li>
-<li><p class="first">Even if the observer’s interest had absolutely no effect on subjects’
+by the researchers?</li>
+<li>Even if the observer’s interest had absolutely no effect on subjects’
 performance, is it <em>possible</em> to have obtained a difference such as
-this by random chance alone? Explain.</p>
-</li>
-<li><p class="first">Next, let’s think about some outcomes that might occur by chance even
+this by random chance alone? Explain.</li>
+<li>Next, let’s think about some outcomes that might occur by chance even
 if having an observer with a vested interest has no real effect on
 the success rate. We will assume that 11 of the 24 subjects are going
 to succeed, no matter what group they’re in. Then, we’ll randomly
@@ -779,110 +635,41 @@ successes end up in each group purely by chance. Note that this
 implies that the row and column totals are fixed. What would the
 counts for the “most extreme” table look like in this case? That is,
 what possible outcome would give us the most convincing evidence in
-support of the research hypothesis?</p>
-<blockquote>
-<div><p><a class="reference internal" href="../_images/image162.png"><img alt="image12" src="../_images/image162.png" style="width: 1.94230in; height: 1.89583in;" /></a></p>
-</div></blockquote>
-</li>
+support of the research hypothesis?</li>
 </ol>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image162.png"><img alt="image3012" src="../_images/image162.png" style="width: 1.94230in; height: 1.89583in;" /></a></p>
+<ol class="last arabic simple" start="7">
 <li>Give a few more examples of tables that are <em>more extreme</em> than the
 observed data but not <em>as extreme</em> as the “most extreme” table shown
 above.</li>
 </ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image162.png"><img alt="image13" src="../_images/image162.png" style="width: 1.94230in; height: 1.89583in;" /></a></th>
-<th class="head"><a class="reference internal" href="../_images/image162.png"><img alt="image14" src="../_images/image162.png" style="width: 1.94230in; height: 1.89583in;" /></a></th>
-<th class="head"><a class="reference internal" href="../_images/image162.png"><img alt="image15" src="../_images/image162.png" style="width: 1.94230in; height: 1.89583in;" /></a></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils">
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line">Keep in mind that a p-value is always the probability of seeing
+</div>
+<p>Keep in mind that a p-value is always the probability of seeing
 results at least as extreme as the observed data. So, JMP uses what is
 known as the hypergeometric distribution to find the probability of
 seeing the observed data table and EACH table that is more extreme,
 assuming that there is no difference in the two groups being compared.
 The sum of these probabilities is the p-value from Fisher’s exact
-test.</div>
-<div class="line"><strong>*Fisher’s Exact Test to Obtain Exact p-values*</strong></div>
+test.</p>
+<div class="section" id="fishers-exact-test-to-obtain-exact-p-values">
+<h4>Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference internal" href="../_images/image464.png"><img alt="image3050" src="../_images/image464.png" style="width: 5.93in; height: 7.62in;" /></a></p>
 </div>
-<table border="1" class="docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><em>Step 1</em>:</th>
-<th class="head"><p class="first">Convert the research hypothesis into H<sub>o</sub> and H<sub>a</sub>.</p>
-<p>H<sub>0</sub>: Whether the observer has a vested interest or not has no impact on performance on a skill-based task.</p>
-<p>H<sub>a</sub>: Having an observer with a vested interest tends to decrease a subjects’ performance on a skill-based task.</p>
-<div class="line-block">
-<div class="line">State the hypotheses in terms of the following parameters:</div>
-<div class="line">π <sub>succeed | vested</sub> = the proportion that succeed (i.e., the probability of</div>
-<div class="line">succeeding) when Vested</div>
 </div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">π <sub>succeed | not vested</sub> = the proportion that succeed (i.e., the probability of</div>
-<div class="line">succeeding) when Not Vested</div>
-</div>
-</div></blockquote>
-<p>H<sub>0</sub>:</p>
-<p class="last">H<sub>a</sub>:</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><em>Step 2</em>:</td>
-<td><p class="first">Determine the <em>p-value</em>.</p>
-<p><a class="reference internal" href="../_images/image171.png"><img alt="image16" src="../_images/image171.png" style="width: 3.95833in; height: 1.89554in;" /></a></p>
-<p class="last"><em>p-value</em>:</p>
-</td>
-</tr>
-<tr class="row-odd"><td><em>Step 3</em>:</td>
-<td>Write a conclusion addressing the original research hypothesis.</td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line"><a href="#id7"><span class="problematic" id="id8">**</span></a>*
-Example 3.3: Claritin and Nervousness*
-**</div>
-<div class="line">An advertisement by the Schering Corporation in 1999 for the allergy
+<div class="section" id="example-3-3-claritin-and-nervousness">
+<h3>Example 3.3: Claritin and Nervousness<a class="headerlink" href="#example-3-3-claritin-and-nervousness" title="Permalink to this headline">¶</a></h3>
+<p>An advertisement by the Schering Corporation in 1999 for the allergy
 drug Claritin mentioned that in a pediatric randomized clinical trial,
 symptoms of nervousness were shown by 4 of 188 patients on Claritin
-and 2 of 262 patients taking a placebo.</div>
+and 2 of 262 patients taking a placebo.</p>
+<div class="admonition-research-hypothesis admonition">
+<p class="first admonition-title">Research Hypothesis:</p>
+<p class="last">The proportion who experience nervousness is <em>greater</em> for those who take Claritin than for those who take the placebo.</p>
 </div>
-<p><strong>*Research Hypothesis*: The proportion who experience nervousness is
-*greater* for those who take Claritin than for those who take the
-placebo.</strong></p>
 <p>The data can be found in the file <strong>Claritin.JMP</strong>.</p>
-<p><a class="reference internal" href="../_images/image182.png"><img alt="image17" src="../_images/image182.png" style="width: 2.88542in; height: 1.00362in;" /></a></p>
-<p><em>Questions</em>:</p>
+<p><a class="reference internal" href="../_images/image182.png"><img alt="image3017" src="../_images/image182.png" style="width: 2.88542in; height: 1.00362in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
 <ol class="arabic simple">
 <li>What variables must be measured in order to address the research
 hypothesis?</li>
@@ -890,77 +677,44 @@ hypothesis?</li>
 <li>Fill in the following contingency table based on the data table from
 JMP.</li>
 </ol>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image474.png"><img alt="image3051" src="../_images/image474.png" style="width: 5.13in; height: 1.98in;" /></a></p>
+<ol class="last arabic simple" start="4">
 <li>Find the proportion that experience nervousness in each group.</li>
 </ol>
-<p>Next, use JMP to carry out Fisher’s Exact Test for these data.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="16%" />
-<col width="84%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><em>Step 1</em>:</th>
-<th class="head"><p class="first">Convert the research hypothesis into H<sub>0</sub> and H<sub>a</sub>.</p>
-<p>H<sub>0</sub>:</p>
-<p class="last">H<sub>a</sub>:</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><em>Step 2</em>:</td>
-<td><p class="first">Determine the <em>p-value</em>.</p>
-<p class="last">p-value:</p>
-</td>
-</tr>
-<tr class="row-odd"><td><em>Step 3</em>:</td>
-<td>Write a conclusion addressing the original research hypothesis.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>*
-Observational Studies vs. Designed Experiments*</strong></p>
-<div class="line-block">
-<div class="line">Reconsider the “Vested Interest and Task Performance” example.
-Fisher’s exact test provided evidence that the proportion of successes
-was in fact smaller for the vested interest group</div>
-<div class="line">(p-value = .0498). Now, the question is this: can we conclude that
-having a vested interest really is the <em>cause</em> of the decreased
-performance?</div>
 </div>
+<p>Next, use JMP to carry out Fisher’s Exact Test for these data.</p>
+<p><a class="reference internal" href="../_images/image484.png"><img alt="image3052" src="../_images/image484.png" style="width: 5.97in; height: 5.03in;" /></a></p>
+</div>
+<div class="section" id="observational-studies-vs-designed-experiments">
+<h3>Observational Studies vs. Designed Experiments<a class="headerlink" href="#observational-studies-vs-designed-experiments" title="Permalink to this headline">¶</a></h3>
+<p>Reconsider the “Vested Interest and Task Performance” example.  Fisher’s exact
+test provided evidence that the proportion of successes was in fact smaller for
+the vested interest group (p-value = .0498). Now, the question is this: can we
+conclude that having a vested interest really is the <em>cause</em> of the decreased
+performance?</p>
 <p>The answer to this question lies in whether the experiment itself was a
 designed experiment or an observational study.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first">An <strong>*observational study*</strong> involves collecting and analyzing data <em>without randomly</em> assigning treatments to experimental units.</p>
-<p class="last">On the other hand, in a <strong>*designed experiment*</strong>, a treatment is <em>randomly</em> imposed on individual subjects in order to observe whether the treatment causes a change in the response.</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><strong>*Key statistical idea*:</strong></p>
-<p>The random assignment of treatments used by researchers in a designed experiment should balance out between the treatment groups any other factors that might be related to the response variable. Therefore, designed experiments <em>can</em> be used to establish a cause-and-effect relationship (as long as the p-value is small).</p>
-<p class="last">On the other hand, observational studies establish only that an association exists between the predictor and response variable. With observational studies, it is always possible that there are other lurking variables not controlled for in the study that may be impacting the response. Since we can’t be certain these other factors are balanced out between treatment groups, it is possible that these other factors could explain the difference between treatment groups.</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<dl class="glossary docutils">
+<dt id="term-observational-study">Observational Study</dt>
+<dd>An <strong>*observational study*</strong> involves collecting and analyzing data <em>without randomly</em> assigning treatments to experimental units.</dd>
+<dt id="term-designed-experiment">Designed Experiment</dt>
+<dd>On the other hand, in a <strong>*designed experiment*</strong>, a treatment is <em>randomly</em> imposed on individual subjects in order to observe whether the treatment causes a change in the response.</dd>
+</dl>
+<div class="admonition-key-statistical-idea admonition">
+<p class="first admonition-title">Key statistical idea:</p>
+<p>The random assignment of treatments used by researchers in a designed
+experiment should balance out between the treatment groups any other factors
+that might be related to the response variable. Therefore, designed
+experiments <em>can</em> be used to establish a cause-and-effect relationship (as
+long as the p-value is small).</p>
+<p class="last">On the other hand, observational studies establish only that an association
+exists between the predictor and response variable. With observational
+studies, it is always possible that there are other lurking variables not
+controlled for in the study that may be impacting the response. Since we
+can’t be certain these other factors are balanced out between treatment
+groups, it is possible that these other factors could explain the difference
+between treatment groups.</p>
+</div>
 <p>Note that the “Vested Interest and Task Performance” study is an example
 of a designed experiment since participants were randomly assigned to
 the two groups. We were trying to show that having a vested interest
@@ -970,29 +724,34 @@ by chance, and the randomization of subjects to treatment groups should
 have balanced out any other factors that might explain the difference.
 So, the most likely explanation left is that having a vested interest
 really is the cause of the decreased task performance.</p>
-<p><a href="#id9"><span class="problematic" id="id10">**</span></a>*
-Example 3.4: Alcoholism and Depression*
-<a href="#id11"><span class="problematic" id="id12">**</span></a>Past research has suggested a high rate of alcoholism in families of
-patients with primary unipolar depression. A study of 210 families of
-females with primary unipolar depression found that 89 had alcoholism
-present. A set of 299 control families found 94 present.</p>
-<p><strong>*Research Hypothesis*</strong>: <strong>The proportion of families afflicted by
-alcoholism *differs* depending on whether or not the female in the
-family had primary unipolar depression.</strong></p>
+</div>
+<div class="section" id="example-3-4-alcoholism-and-depression">
+<h3>Example 3.4: Alcoholism and Depression<a class="headerlink" href="#example-3-4-alcoholism-and-depression" title="Permalink to this headline">¶</a></h3>
+<p>Past research has suggested a high rate of alcoholism in families of patients
+with primary unipolar depression. A study of 210 families of females with
+primary unipolar depression found that 89 had alcoholism present. A set of 299
+control families found 94 present.</p>
+<div class="admonition-research-hypothesis admonition">
+<p class="first admonition-title">Research Hypothesis:</p>
+<p class="last">The proportion of families afflicted by alcoholism <em>differs</em> depending on whether or not the female in the family had primary unipolar depression.</p>
+</div>
 <p>The data can be found in the file <strong>Depression.JMP</strong>:</p>
-<p><a class="reference internal" href="../_images/image192.png"><img alt="image18" src="../_images/image192.png" style="width: 2.77083in; height: 0.97942in;" /></a></p>
+<p><a class="reference internal" href="../_images/image192.png"><img alt="image3018" src="../_images/image192.png" style="width: 2.77083in; height: 0.97942in;" /></a></p>
 <p>To analyze these data, choose <strong>Analyze &gt; Fit Y by X.</strong></p>
-<p><a class="reference internal" href="../_images/image204.png"><img alt="image19" src="../_images/image204.png" style="width: 4.05208in; height: 2.32292in;" /></a></p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image204.png"><img alt="image3019" src="../_images/image204.png" style="width: 4.05208in; height: 2.32292in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Which is the response variable?</li>
 <li>Which is the explanatory variable?</li>
 </ol>
+</div>
 <p>The JMP output is shown below:</p>
-<p><a class="reference internal" href="../_images/image216.png"><img alt="image20" src="../_images/image216.png" style="width: 2.67708in; height: 1.94089in;" /></a></p>
-<p><a class="reference internal" href="../_images/image224.png"><img alt="image21" src="../_images/image224.png" style="width: 4.94792in; height: 2.06239in;" /></a></p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image216.png"><img alt="image3020" src="../_images/image216.png" style="width: 2.67708in; height: 1.94089in;" /></a></p>
+<p><a class="reference internal" href="../_images/image224.png"><img alt="image3021" src="../_images/image224.png" style="width: 4.94792in; height: 2.06239in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Identify the proportion of families with alcoholism in both groups.</li>
 <li>Is there evidence that the proportion of families afflicted by
 alcoholism <em>differs</em> depending on whether or not the female in the
@@ -1001,15 +760,16 @@ this question.</li>
 <li>Can we say that a female having unipolar depression <em>causes</em>
 alcoholism in her family? Explain your reasoning.</li>
 </ol>
-<p><strong>*
-CHI-SQUARE TEST (ALTERNATIVE TO FISHER’S EXACT TEST)*</strong></p>
-<p><strong>*
-*</strong>Fisher’s exact test from the previous section can be used for
-either upper-tailed, lower-tailed, or two-tailed hypothesis tests for
-differences in two proportions. The <em>Chi-square test</em> is another
-procedure we can use to test for differences between two proportions.
-However, this procedure can be used for <strong>ONLY TWO-SIDED TESTS</strong>!
-Consider the data from Example 4.4.</p>
+</div>
+</div>
+</div>
+<div class="section" id="chi-square-test-alternative-to-fishers-exact-test">
+<h2>Chi-Square Test (Alternative to Fisher’s Exact Test)<a class="headerlink" href="#chi-square-test-alternative-to-fishers-exact-test" title="Permalink to this headline">¶</a></h2>
+<p>Fisher’s exact test from the previous section can be used for either
+upper-tailed, lower-tailed, or two-tailed hypothesis tests for differences in
+two proportions. The <em>Chi-square test</em> is another procedure we can use to test
+for differences between two proportions.  However, this procedure can be used
+for <strong>ONLY TWO-SIDED TESTS</strong>!  Consider the data from Example 4.4.</p>
 <blockquote>
 <div><div class="line-block">
 <div class="line">H<sub>0</sub>: The proportion of families afflicted by alcoholism is
@@ -1025,37 +785,29 @@ depression.</div>
 </div></blockquote>
 <p>With the chi-square test, the evidence from our sample will consist of a
 <em>test statistic</em>, which for this test is given as follows:</p>
-<p>Test Statistic =</p>
-<p><em>Question</em>: Where do we get the expected counts?</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">The Observed Counts</th>
-<th class="head">The Expected Counts</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<div class="math">
+\[\mathrm{Test\,Statistic} = \sum \frac{\left(\mathrm{Observed} - \mathrm{Expected}\right)^2}{\mathrm{Expected}}\]</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<p>Where do we get the expected counts?</p>
+<p class="last"><a class="reference internal" href="../_images/image494.png"><img alt="image3053" src="../_images/image494.png" style="width: 5.80in; height: 2.04in;" /></a></p>
+</div>
 <p>We can also use JMP to calculate the expected counts, deviances, and
 cell contributions to find the test statistic:</p>
-<p><a class="reference internal" href="../_images/image274.png"><img alt="image22" src="../_images/image274.png" style="width: 1.92708in; height: 2.22137in;" /></a></p>
-<p>Test Statistic = =</p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image274.png"><img alt="image3022" src="../_images/image274.png" style="width: 1.92708in; height: 2.22137in;" /></a></p>
+<div class="math">
+\[\mathrm{Test\,Statistic} = \sum \frac{\left(\mathrm{Observed} - \mathrm{Expected}\right)^2}{\mathrm{Expected}}=\]</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>What does it mean when the test statistic is “large”?</li>
 <li>At what point does the test statistic provide evidence to support our
 research question?</li>
 </ol>
-<p><em>Find the p-value</em>:</p>
-<blockquote>
-<div><p>Recall that the Chi-Square test uses a distribution known as the
+</div>
+<div class="section" id="find-the-p-value">
+<h3>Find the p-value:<a class="headerlink" href="#find-the-p-value" title="Permalink to this headline">¶</a></h3>
+<p>Recall that the Chi-Square test uses a distribution known as the
 chi-square (χ:sup:<cite>2</cite>) distribution. The chi-square distribution
 takes on only positive numbers and is a continuous distribution. In
 addition, this distribution is indexed by its degrees of freedom (or
@@ -1066,42 +818,23 @@ distribution with df = (r - 1)(c - 1). .</p>
 The p-value is found by plotting the chi-square test statistic on
 the x-axis and calculating the area under the curve above the test
 statistic.</p>
-</div></blockquote>
-<table border="1" class="docutils">
-<colgroup>
-<col width="76%" />
-<col width="24%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><a class="reference internal" href="../_images/image294.png"><img alt="image23" src="../_images/image294.png" style="width: 2.52083in; height: 2.12578in;" /></a></th>
-<th class="head">&nbsp;</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
 <p>Note that the output for the chi-square test automatically appears when
 you select <strong>Analyze &gt; Fit Y by X.</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><em>Assumptions behind the Chi-Square Test</em>:</p>
-<p>The chi-square test for independence may be inappropriate for tables with very small expected cell frequencies. One rule of thumb suggests that most of the expected cell frequencies in the table should be 5 or more; otherwise, the chi-square approximation may not be reliable. JMP and most other statistical software packages will warn you when the results of the chi-square test are suspect.</p>
-<p class="last">Also, each observation in the study can be classified into only one cell of the contingency table, and the observations must be independent.</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>*Example 3.5: Mice and Tobacco Smoke*</strong></p>
+<p><a class="reference internal" href="../_images/image503.png"><img alt="image3054" src="../_images/image503.png" style="width: 4.38in; height: 2.31in;" /></a></p>
+<div class="admonition-assumptions-behind-the-chi-square-test admonition">
+<p class="first admonition-title">Assumptions behind the Chi-Square Test:</p>
+<p>The chi-square test for independence may be inappropriate for tables with
+very small expected cell frequencies. One rule of thumb suggests that most
+of the expected cell frequencies in the table should be 5 or more;
+otherwise, the chi-square approximation may not be reliable. JMP and most
+other statistical software packages will warn you when the results of the
+chi-square test are suspect.</p>
+<p class="last">Also, each observation in the study can be classified into only one cell
+of the contingency table, and the observations must be independent.</p>
+</div>
+</div>
+<div class="section" id="example-3-5-mice-and-tobacco-smoke">
+<h3>Example 3.5: Mice and Tobacco Smoke<a class="headerlink" href="#example-3-5-mice-and-tobacco-smoke" title="Permalink to this headline">¶</a></h3>
 <p>Ten mice (6–8 weeks old) were randomly assigned to one of two groups;
 five were exposed to simulated environmental tobacco smoke for 6 h/day,
 5 days/week for 5 months. The other 5 mice were kept in clean air during
@@ -1131,10 +864,11 @@ lung tumor incidence. The results are shown below.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Research hypothesis</em>: The proportion of mice that develop a lung tumor
-differs between those exposed to tobacco smoke and the control group.</p>
-<p><strong>*Step 1: Convert the Research Hypothesis into H:sub:`o` and
-H:sub:`a`*.</strong></p>
+<div class="admonition-research-hypothesis admonition">
+<p class="first admonition-title">Research hypothesis:</p>
+<p class="last">The proportion of mice that develop a lung tumor differs between those exposed to tobacco smoke and the control group.</p>
+</div>
+<p><strong>Step 1: Convert the Research Hypothesis into H:sub:`o` and H:sub:`a`.</strong></p>
 <blockquote>
 <div><p>H<sub>0</sub>: The proportion of mice that develop a lung tumor when
 exposed to tobacco does not differ from the proportion that develop
@@ -1146,37 +880,34 @@ exposed.</p>
 <p>H<sub>0</sub>:</p>
 <p>H<sub>a</sub>:</p>
 </div></blockquote>
-<p><a href="#id13"><span class="problematic" id="id14">**</span></a><em>Step 2: Find the p-value for the data</em>.
-<a href="#id15"><span class="problematic" id="id16">**</span></a><a class="reference internal" href="../_images/image314.png"><img alt="image24" src="../_images/image314.png" style="width: 5.22917in; height: 2.68750in;" /></a></p>
+<p><strong>Step 2: Find the p-value for the data.</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/image314.png"><img alt="image3024" src="../_images/image314.png" style="width: 5.22917in; height: 2.68750in;" /></a></p>
 <p>p-value from Fisher’s exact test: _____________</p>
 <p>p-value from Chi-Square test: _____________</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><em>Keep the assumptions behind the chi-square test in mind</em>:</p>
-<div class="last line-block">
-<div class="line">The chi-square test for independence may be inappropriate for tables with very small expected cell frequencies. One rule of thumb suggests that most of the expected cell frequencies in the table should be 5 or more; otherwise, the chi-square approximation may not be reliable.</div>
-<div class="line">Also, each observation in the study can be classified into only one cell of the contingency table, and the observations must be independent.</div>
+</div></blockquote>
+<div class="admonition-keep-the-assumptions-behind-the-chi-square-test-in-mind admonition">
+<p class="first admonition-title">Keep the assumptions behind the chi-square test in mind:</p>
+<p>The chi-square test for independence may be inappropriate for tables with
+very small expected cell frequencies. One rule of thumb suggests that most
+of the expected cell frequencies in the table should be 5 or more;
+otherwise, the chi-square approximation may not be reliable.</p>
+<p class="last">Also, each observation in the study can be classified into only one cell of
+the contingency table, and the observations must be independent.</p>
 </div>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Do the assumptions behind the chi-square test appear to be met?
 Explain.</li>
 <li>Which test should we use – Fisher’s exact or Chi-square? Explain.</li>
 </ol>
-<p><strong>*Step 3: Write a conclusion addressing the original research
-hypothesis*.</strong></p>
-<p><strong>*CONFIDENCE INTERVAL FOR THE DIFFERENCE IN PROPORTIONS*</strong></p>
+</div>
+<p><strong>Step 3: Write a conclusion addressing the original research hypothesis.</strong></p>
+</div>
+</div>
+<div class="section" id="confidence-interval-for-the-difference-in-proportions">
+<h2>Confidence Interval for the Difference in Proportions<a class="headerlink" href="#confidence-interval-for-the-difference-in-proportions" title="Permalink to this headline">¶</a></h2>
 <p>Recall our conclusion from Example 3.4 after conducting a hypothesis
 test: “We have evidence the proportion of families afflicted by
 alcoholism differs depending on whether or not the female in the family
@@ -1185,11 +916,14 @@ follows: how large is the difference in these proportions?</p>
 <p>We can start by finding the difference in these proportions obtained
 from the sample:</p>
 <ul class="simple">
-<li><sub>Alcoholism|Depression</sub> =</li>
-<li><sub>Alcoholism|Control</sub> =</li>
-<li><sub>Alcoholism|Depression</sub> - <sub>Alcoholism|Control</sub> =</li>
+<li><span class="math">\hat{\pi}_{\mathrm{Alcoholism|Depression}}</span> =</li>
+<li><span class="math">\hat{\pi}_{\mathrm{Alcoholism|Control}}</span> =</li>
+<li><span class="math">\hat{\pi}_{\mathrm{Alcoholism|Depression}}</span> - <span class="math">\hat{\pi}_{\mathrm{Alcoholism|Control}}</span> =</li>
 </ul>
-<p>Interpret this difference in the sample proportions:</p>
+<div class="admonition-task admonition">
+<p class="first admonition-title">Task</p>
+<p class="last">Interpret this difference in the sample proportions:</p>
+</div>
 <p>Next, note that when discussing the results of the Alcoholism and
 Depression example, we want to make conclusions that allow us to compare
 the alcoholism rate in the POPULATION of families of all females
@@ -1199,21 +933,18 @@ obtained in our SAMPLE. To generalize these results to the population,
 we must calculate a confidence interval for the risk difference.</p>
 <p>To find the confidence interval of interest for the previous example, we
 need the following.</p>
-<p>Let = <sub>Alcoholism|Depression</sub> and = <sub>Alcoholism|Control</sub>.</p>
+<p>Let <span class="math">\hat{\pi}_1 = \hat{\pi}_{\mathrm{Alcoholism\,Depression}}</span>
+and <span class="math">\hat{\pi}_2 = \hat{\pi}_{\mathrm{Alcoholism\|Control}}</span> .</p>
 <ol class="arabic">
-<li><div class="first line-block">
-<div class="line"><em>An **ESTIMATE*</em> of the difference in the two proportions (i.e.,
-the risk difference)*:</div>
-<div class="line">- =</div>
-</div>
+<li><p class="first">An <strong>ESTIMATE</strong> of the difference in the two proportions (i.e., the risk
+difference):</p>
+<div class="math">
+\[\hat{\pi}_1 - \hat{\pi}_2\]</div>
 </li>
-<li><p class="first"><em>An appropriate **QUANTILE**</em>:</p>
+<li><p class="first">An appropriate <strong>QUANTILE</strong>:</p>
 <blockquote>
 <div><p>This confidence interval requires quantiles from the standard normal
 distribution which will vary depending on the level of confidence.</p>
-</div></blockquote>
-</li>
-</ol>
 <table border="1" class="docutils">
 <colgroup>
 <col width="48%" />
@@ -1237,64 +968,60 @@ distribution which will vary depending on the level of confidence.</p>
 </tbody>
 </table>
 <p>For a 95% confidence interval, z-Quantile =</p>
-<ol class="arabic">
-<li><p class="first"><em>The **STANDARD DEVIATION OF THE ESTIMATE*</em> (i.e., the standard
-error)*:</p>
+</div></blockquote>
+</li>
+<li><p class="first">The <strong>STANDARD DEVIATION OF THE ESTIMATE</strong> (i.e., the standard error):</p>
 <blockquote>
-<div><div class="line-block">
-<div class="line">The standard deviation of the difference between two proportions
-is calculated as follows.</div>
-<div class="line">=</div>
-</div>
+<div><p>The standard deviation of the difference between two proportions
+is calculated as follows.</p>
+<div class="math">
+\[\sqrt{\frac{\hat{\pi}_1(1-\hat{\pi}_1)}{n_1} +\frac{\hat{\pi}_2(1-\hat{\pi}_2)}{n_2}}\]</div>
 </div></blockquote>
 </li>
 </ol>
 <p>The 95% confidence interval for the risk difference is then calculated
 as follows:</p>
-<div class="line-block">
-<div class="line">Note that we could have also reversed the order of the proportions
-when finding the difference:</div>
-<div class="line">- = <sub>Alcoholism|Control</sub> - <sub>Alcoholism|Depression</sub> =</div>
-</div>
+<blockquote>
+<div><div class="math">
+\[\hat{\pi}_1 - \hat{\pi}_2 \pm 1.96\sqrt{\frac{\hat{\pi}_1(1-\hat{\pi}_1)}{n_1} +\frac{\hat{\pi}_2(1-\hat{\pi}_2)}{n_2}}\]</div>
+</div></blockquote>
+<p>Note that we could have also reversed the order of the proportions
+when finding the difference:</p>
+<blockquote>
+<div><div class="math">
+\[\hat{\pi}_2 - \hat{\pi}_1 = \hat{\pi}_{\mathrm{Alcoholism|Control}} - \hat{\pi}_{\mathrm{Alcoholism|Depression}}\]</div>
+</div></blockquote>
 <p>The 95% confidence interval for the risk difference is then calculated
 as follows:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><a href="#id17"><span class="problematic" id="id18">**</span></a>Guidelines for Interpreting a Confidence Interval for a Difference in Proportions:
-**</p>
-<ol class="last arabic">
-<li><p class="first">Check whether zero falls in the interval or not. If it does, it is <em>plausible</em> (but not proof!) that the two proportions are equal.</p>
-</li>
-<li><p class="first">If all values in a 95% confidence interval for π <sub>1</sub> – π <sub>2</sub> are positive, then you can infer that π<sub>1</sub> &gt; π <sub>2</sub>. The interval tells you how much bigger (with 95% certainty) π <sub>1</sub> is.</p>
-<p>Similarly, if all values in a confidence interval for π <sub>1</sub> – π <sub>2</sub> are negative, then you can infer that π <sub>1</sub> &lt; π <sub>2</sub>. The interval tells you how much bigger π <sub>2</sub> is.</p>
-</li>
+<blockquote>
+<div><div class="math">
+\[\hat{\pi}_2 - \hat{\pi}_1 \pm 1.96\sqrt{\frac{\hat{\pi}_1(1-\hat{\pi}_1)}{n_1} +\frac{\hat{\pi}_2(1-\hat{\pi}_2)}{n_2}}\]</div>
+</div></blockquote>
+<div class="admonition-guidelines-for-interpreting-a-confidence-interval-for-a-difference-in-proportions admonition">
+<p class="first admonition-title">Guidelines for Interpreting a Confidence Interval for a Difference in Proportions:</p>
+<ol class="arabic simple">
+<li>Check whether zero falls in the interval or not. If it does, it is
+<em>plausible</em> (but not proof!) that the two proportions are equal.</li>
+<li>If all values in a 95% confidence interval for <span class="math">\pi_1 - \pi_2</span>
+are positive, then you can infer that <span class="math">\pi_1 > \pi_2</span>
+interval tells you how much bigger (with 95% certainty) <span class="math">\pi_1</span>
+is.  Similarly, if all values in a confidence interval for <span class="math">\pi_1 - \pi_2</span>
+are negative, then you can infer that <span class="math">\pi_1 < \pi_2</span>.
+The interval tells you how much bigger <span class="math">\pi_2</span> is.</li>
 </ol>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><em>Questions</em>:</p>
-<ol class="arabic">
-<li><p class="first">Interpret the 95% confidence interval for the difference in
-proportions in this problem.</p>
-</li>
-<li><div class="first line-block">
-<div class="line">Does this confidence interval agree with the results of the
-hypothesis test? Explain.</div>
-<div class="line"><strong>*
-*</strong></div>
+<p class="last"><a class="reference internal" href="../_images/image513.png"><img alt="image3055" src="../_images/image513.png" style="width: 5.08in; height: 1.46in;" /></a></p>
 </div>
-</li>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Interpret the 95% confidence interval for the difference in
+proportions in this problem.</li>
+<li>Does this confidence interval agree with the results of the
+hypothesis test? Explain.</li>
 </ol>
-<p><strong>*
-Example 3.6: Gender and Health Insurance*</strong></p>
+</div>
+<div class="section" id="example-3-6-gender-and-health-insurance">
+<h3>Example 3.6: Gender and Health Insurance<a class="headerlink" href="#example-3-6-gender-and-health-insurance" title="Permalink to this headline">¶</a></h3>
 <p>In 2010, the U.S. Congress passed the historic health care reform bill
 that will provide some type of coverage for the 32 million Americans
 currently without health care insurance. Prior to this, several studies
@@ -1330,20 +1057,25 @@ Survey</em>, and the results are shown below.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Find the proportion of females that are uninsured.</li>
 <li>Find the proportion of males that are uninsured.</li>
 <li>Find the difference in the sample proportions.</li>
 <li>Find a 95% confidence interval for this difference.</li>
 <li>Interpret the confidence interval from the previous question.</li>
 </ol>
-<p><strong>*Example 3.7: Adoption and Suicide Attempts*</strong></p>
+</div>
+</div>
+<div class="section" id="example-3-7-adoption-and-suicide-attempts">
+<h3>Example 3.7: Adoption and Suicide Attempts<a class="headerlink" href="#example-3-7-adoption-and-suicide-attempts" title="Permalink to this headline">¶</a></h3>
 <p>In September of 2013, researchers from the University of Minnesota
 published a study in the journal <em>Pediatrics.</em> This study was described
 in a <em>Fox News</em> article titled “Adopted teens may be at higher risk of
 suicide.” This article described the results as follows:</p>
-<p><a href="#id19"><span class="problematic" id="id20">*</span></a>[The researchers] examined data from an existing University of
+<blockquote>
+<div>[The researchers] examined data from an existing University of
 Minnesota study of 692 adopted children and 540 non-adopted siblings in
 Minnesota… All of the adopted kids, who were between 11 and 21 years old
 during the study period, had been taken in by their families before age
@@ -1355,9 +1087,9 @@ years later, the researchers asked participating families if the
 children had made a suicide attempt. Over the three years of the study,
 56 children attempted suicide at least once, according to the family
 members&#8217; reports. Of those kids, 47 were adopted and nine were not
-adopted.
-*</p>
-<p><em>Questions</em>:</p>
+adopted.</div></blockquote>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
 <ol class="arabic simple">
 <li>Create a table of counts based on the data obtained in this study:</li>
 </ol>
@@ -1393,25 +1125,22 @@ adopted.
 </tr>
 </tbody>
 </table>
-<ol class="arabic">
-<li><p class="first">Find the proportion of adopted children that attempted suicide.</p>
-</li>
-<li><p class="first">Find the proportion of non-adopted children that attempted suicide.</p>
-</li>
-<li><div class="first line-block">
-<div class="line">Find and interpret a 95% confidence interval for the difference in
-proportions.</div>
-<div class="line"><strong>*
-*</strong></div>
-</div>
-</li>
+<ol class="last arabic simple" start="2">
+<li>Find the proportion of adopted children that attempted suicide.</li>
+<li>Find the proportion of non-adopted children that attempted suicide.</li>
+<li>Find and interpret a 95% confidence interval for the difference in
+proportions.</li>
 </ol>
-<p><strong>*CALCULATING RISKS AND THE RELATIVE RISK*</strong></p>
+</div>
+</div>
+</div>
+<div class="section" id="calculating-risks-and-the-relative-risk">
+<h2>Calculating Risks and the Relative Risk<a class="headerlink" href="#calculating-risks-and-the-relative-risk" title="Permalink to this headline">¶</a></h2>
 <p>The confidence interval calculated above helps us to quantify the
 discrepancy in the proportion of adopted versus non-adopted that had
 attempted suicide. We could also measure the amount of discrepancy
-between these two proportions based on something called <strong>*relative
-risk*</strong>. This involves taking the <em>ratio</em> of the two proportions instead
+between these two proportions based on something called <strong>relative
+risk</strong>. This involves taking the <em>ratio</em> of the two proportions instead
 of the <em>difference</em>.</p>
 <p>Note that in the previous example, our estimate of the <em>proportion</em> of
 adopted children that had attempted suicide could be viewed as an
@@ -1454,47 +1183,46 @@ both groups in this study as follows:</p>
 </ul>
 <p>The <strong>relative risk</strong> (also called the risk ratio) is then computed as
 follows:</p>
-<p>**
-*
-<a href="#id21"><span class="problematic" id="id22">**</span></a><a href="#id23"><span class="problematic" id="id24">*</span></a></p>
-<p><em>Comments</em>:</p>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>We interpret this number by saying that in this study, the risk of</dt>
-<dd><p class="first last">suicide attempt for adopted children was ______ times as
+<div class="math">
+\[\mathrm{Relative\,Risk} = \frac{\hat{\pi}_{\mathrm{Suicide|Adopted}}}{\hat{\pi}_{\mathrm{Suicide|Not\,Adopted}}}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="last arabic">
+<li><p class="first">We interpret this number by saying that in this study, the risk of
+suicide attempt for adopted children was ______ times as
 large as the risk of suicide attempt for children who were not
 adopted. In other words, adopted children were ______ times
 as likely to attempt suicide as were non-adopted children.</p>
-</dd>
-</dl>
 </li>
-<li><dl class="first docutils">
-<dt>A relative risk value of 1.0 is the reference value for making</dt>
-<dd><p class="first last">comparisons. That is, a relative risk of 1.0 says that there is
+<li><p class="first">A relative risk value of 1.0 is the reference value for making
+comparisons. That is, a relative risk of 1.0 says that there is
 no difference in the two proportions of interest.</p>
-</dd>
-</dl>
 </li>
-<li><dl class="first docutils">
-<dt>When you are interpreting a relative risk, you MUST consider which</dt>
-<dd><p class="first last">value you have in the numerator. For example, we could have also
+<li><p class="first">When you are interpreting a relative risk, you MUST consider which
+value you have in the numerator. For example, we could have also
 calculated the relative risk as follows:</p>
-</dd>
-</dl>
+<div class="math">
+\[\mathrm{Relative\,Risk} = \frac{\hat{\pi}_{\mathrm{Suicide|Not\,Adopted}}}{\hat{\pi}_{\mathrm{Suicide|Adopted}}}\]</div>
+<p>How would we interpret this value?</p>
 </li>
 </ol>
-<p>How would we interpret this value?</p>
-<p><strong>*CALCULATING ODDS AND THE ODDS RATIO*</strong></p>
+</div>
+</div>
+<div class="section" id="calculating-odds-and-the-odds-ratio">
+<h2>Calculating Odds and the Odds Ratio<a class="headerlink" href="#calculating-odds-and-the-odds-ratio" title="Permalink to this headline">¶</a></h2>
 <p>Another quantity that is often used to describe differences in
 categorical outcomes between groups is the <em>odds ratio</em>. This ratio is
 used more commonly in practice than the relative risk ratio; however, it
 is more difficult to interpret and is sometimes harder to understand.</p>
 <p>Before computing an odds ratio, we first need to compute the <em>odds</em> for
 both groups:</p>
-<p><strong>*Odds*</strong>: Consider our Adoption and Suicide Attempt example. For each
-group (Adopted and Not Adopted), the odds of attempting suicide is
+<dl class="glossary docutils">
+<dt id="term-odds">Odds</dt>
+<dd>Consider our Adoption and Suicide Attempt example. For each
+group (Adopted and Not Adopted), the <strong>odds</strong> of attempting suicide is
 computed as the number of subjects in that group that attempted suicide
-divided by the number in that group that did not attempt suicide.</p>
+divided by the number in that group that did not attempt suicide.</dd>
+</dl>
 <p>Recall the contingency table for this example.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -1526,26 +1254,37 @@ divided by the number in that group that did not attempt suicide.</p>
 <p>Find the odds of attempting suicide for both groups:</p>
 <ul class="simple">
 <li>Odds of Attempting Suicide in the Adopted Group:</li>
+</ul>
+<div class="math">
+\[\frac{\mathrm{Number\,that\,attempted\,Suicide\,in\,the\,Adopted\,Group}}
+     {\mathrm{Number\,that\,DID\,NOT\,attempted\,Suicide\,in\,the\,Adopted\,Group}}=\]</div>
+<ul class="simple">
 <li>Odds of Attempting Suicide in the Non-adopted Group:</li>
 </ul>
-<p>The <strong>*odds ratio*</strong> is then simply the ratio of the odds for the two
+<div class="math">
+\[\frac{\mathrm{Number\,that\,attempted\,Suicide\,in\,the\,Nonadopted\,Group}}
+     {\mathrm{Number\,that\,DID\,NOT\,attempted\,Suicide\,in\,the\,Nonadopted\,Group}}=\]</div>
+<p>The <strong>odds ratio</strong> is then simply the ratio of the odds for the two
 groups:</p>
+<div class="math">
+\[\mathrm{Odds\,Ratio} = \frac{\mathrm{Odds\,of\,attempting\,Suicide\,in\,the\,Adopted\,Group}}
+     {\mathrm{Odds\,of\,attempting\,Suicide\,in\,the\,Nonadopted\,Group}}\]</div>
 <p>We interpret this quantity by saying that in this study, the odds of
 attempting suicide were about ________ times as high for adopted
 children as for non-adopted children.</p>
 <p>We could also have calculated the odds ratio as follows:</p>
+<div class="math">
+\[\mathrm{Odds\,Ratio} = \frac
+     {\mathrm{Odds\,of\,attempting\,Suicide\,in\,the\,Nonadopted\,Group}}
+     {\mathrm{Odds\,of\,attempting\,Suicide\,in\,the\,Adopted\,Group}}\]</div>
 <p>How would we interpret this value?</p>
-<p><em>Comments</em>:</p>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>An odds ratio of 1.0 implies that there is no observable difference</dt>
-<dd><p class="first last">between the two odds. This is always the reference value!</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Odds ratios are often used in health care experiments when we want to</dt>
-<dd><p class="first last">determine how much more likely a subject is to develop a disease
+<div class="admonition-comments admonition">
+<p class="first admonition-title">Comments:</p>
+<ol class="last arabic simple">
+<li>An odds ratio of 1.0 implies that there is no observable difference
+between the two odds. This is always the reference value!</li>
+<li>Odds ratios are often used in health care experiments when we want to
+determine how much more likely a subject is to develop a disease
 when they have some risk factor as opposed to not having that
 risk factor. In a <em>retrospective study (</em>also called a
 <em>case-control study)</em>, samples are drawn from those who have the
@@ -1557,28 +1296,23 @@ for those without the risk factor (see the Example 3.8 for
 clarification on this). So, we must use the odds ratio instead of
 the relative risk for these studies. This is why statisticians
 put so much emphasis on the odds ratio even though the relative
-risk is easier to understand and interpret.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>If the probability of the outcome under study in the general</dt>
-<dd><p class="first last">population is very low, then the odds ratio is typically close to
+risk is easier to understand and interpret.</li>
+<li>If the probability of the outcome under study in the general
+population is very low, then the odds ratio is typically close to
 the relative risk and can thus be used as an <em>estimate</em> of the
-relative risk (see Example 3.9 for clarification on this). <strong>*
-*</strong></p>
-</dd>
-</dl>
-</li>
+relative risk (see Example 3.9 for clarification on this). <a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a></li>
 </ol>
-<p><strong>*Example 3.8: Smoking and Lung Cancer*</strong></p>
-<div class="line-block">
-<div class="line">The data in the contingency table shown below are the results of a
+</div>
+<div class="section" id="example-3-8-smoking-and-lung-cancer">
+<h3>Example 3.8: Smoking and Lung Cancer<a class="headerlink" href="#example-3-8-smoking-and-lung-cancer" title="Permalink to this headline">¶</a></h3>
+<p>The data in the contingency table shown below are the results of a
 case-control study published back in 1950 (this was one of the first
 studies linking smoking to lung cancer). Note that in this study, the
 researchers found one control subject for every case of lung cancer in
-their study.</div>
-<div class="line"><em>Source: Doll and Hill, British Medical Journal, 1950, p. 739-748.</em></div>
+their study.</p>
+<div class="admonition-source admonition">
+<p class="first admonition-title">Source:</p>
+<p class="last">Doll and Hill, British Medical Journal, 1950, p. 739-748.</p>
 </div>
 <table border="1" class="docutils">
 <colgroup>
@@ -1612,18 +1346,15 @@ their study.</div>
 </tr>
 </tbody>
 </table>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Even though it is not appropriate to calculate relative risk of
 having lung cancer with this case-control study, do this for
 illustrative purposes only.</li>
 <li>Calculate the odds ratio for having lung cancer.</li>
 </ol>
-<div class="section" id="id29">
-<h2><a href="#id25"><span class="problematic" id="id26">**</span></a><a href="#id27"><span class="problematic" id="id28">*</span></a><a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="id34">
-<h2><a href="#id30"><span class="problematic" id="id31">**</span></a><a href="#id32"><span class="problematic" id="id33">*</span></a><a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
 <p>Now, suppose that the researchers had found two control subjects for
 every case and that the results were as shown below.</p>
 <table border="1" class="docutils">
@@ -1658,29 +1389,22 @@ every case and that the results were as shown below.</p>
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li></li>
-</ul>
-<p>Questions*:</p>
-<ol class="arabic">
-<li><p class="first">Once again, calculate the relative risk of having lung cancer with
-this case-control study, even though it is not appropriate.</p>
-</li>
-<li><p class="first">Compare your answers to Questions 1 and 3 from above and use them to
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple" start="3">
+<li>Once again, calculate the relative risk of having lung cancer with
+this case-control study, even though it is not appropriate.</li>
+<li>Compare your answers to Questions 1 and 3 from above and use them to
 explain why it is not appropriate to calculate relative risk with
-case-control studies.</p>
-</li>
-<li><div class="first line-block">
-<div class="line">Calculate the odds ratio for having lung cancer. How does this
-answer compare to your</div>
-<div class="line">answer to Question 2 from above?</div>
-</div>
-</li>
+case-control studies.</li>
+<li>Calculate the odds ratio for having lung cancer. How does this
+answer compare to your
+answer to Question 2 from above?</li>
 </ol>
 </div>
-<div class="section" id="id39">
-<h2><a href="#id35"><span class="problematic" id="id36">**</span></a><a href="#id37"><span class="problematic" id="id38">*</span></a><a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
-<p><strong>*Example 3.9: When is the Relative Risk Close to the Odds Ratio?*</strong></p>
+</div>
+<div class="section" id="example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio">
+<h3>Example 3.9: When is the Relative Risk Close to the Odds Ratio?<a class="headerlink" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following hypothetical example comparing survival rates
 between two groups.</p>
 <table border="1" class="docutils">
@@ -1710,13 +1434,15 @@ between two groups.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Compute the relative risk of death.</li>
 <li>Compute the odds ratio for death.</li>
 <li>What do you notice about the overall probability of death? In this
 case, how close are the relative risk and the odds ratios?</li>
 </ol>
+</div>
 <p>Now, suppose the results were as shown below, instead.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -1745,59 +1471,56 @@ case, how close are the relative risk and the odds ratios?</li>
 </tr>
 </tbody>
 </table>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Compute the relative risk of death.</li>
 <li>Compute the odds ratio for death.</li>
 <li>What do you notice about the overall probability of death? In this
 case, how close are the relative risk and the odds ratios?</li>
 </ol>
-<p><strong>*Relative Risk and Odds Ratios in JMP
-*</strong></p>
-<div class="line-block">
-<div class="line">To discuss the calculation of the relative risk and the odds ratio in
-JMP, let’s once again consider the Adoption and Suicide Attempt
-example. The data should be entered in JMP as follows.</div>
-<div class="line"><a class="reference internal" href="../_images/image591.png"><img alt="image25" src="../_images/image591.png" style="width: 1.99160in; height: 0.83403in;" /></a></div>
 </div>
-<p>In JMP, select <strong>Analyze &gt; Fit Y by X</strong> and enter the following:<strong>*
-*</strong><a class="reference internal" href="../_images/image60.png"><img alt="image26" src="../_images/image60.png" style="width: 3.22689in; height: 1.92641in;" /></a></p>
+</div>
+</div>
+<div class="section" id="relative-risk-and-odds-ratios-in-jmp">
+<h2>Relative Risk and Odds Ratios in JMP<a class="headerlink" href="#relative-risk-and-odds-ratios-in-jmp" title="Permalink to this headline">¶</a></h2>
+<p>To discuss the calculation of the relative risk and the odds ratio in
+JMP, let’s once again consider the Adoption and Suicide Attempt
+example. The data should be entered in JMP as follows.</p>
+<p><a class="reference internal" href="../_images/image591.png"><img alt="image3025" src="../_images/image591.png" style="width: 1.99160in; height: 0.83403in;" /></a></p>
+<p>In JMP, select <strong>Analyze &gt; Fit Y by X</strong> and enter the following:</p>
+<p><a class="reference internal" href="../_images/image60.png"><img alt="image3026" src="../_images/image60.png" style="width: 3.22689in; height: 1.92641in;" /></a></p>
 <p>Click OK. On the output that appears, click on the red drop-down arrow
 next to <strong>Contingency Analysis…</strong> and select <strong>Relative Risk</strong>.</p>
-<div class="line-block">
-<div class="line"><a class="reference internal" href="../_images/image611.png"><img alt="image27" src="../_images/image611.png" style="width: 2.89916in; height: 1.45811in;" /></a></div>
-<div class="line">Enter the following and click OK.</div>
-<div class="line"><a class="reference internal" href="../_images/image621.png"><img alt="image28" src="../_images/image621.png" style="width: 2.17081in; height: 1.21006in;" /></a></div>
-</div>
-<div class="line-block">
-<div class="line">JMP returns the following:</div>
-<div class="line"><a class="reference internal" href="../_images/image631.png"><img alt="image29" src="../_images/image631.png" style="width: 3.96639in; height: 0.60042in;" /></a></div>
-</div>
-<div class="line-block">
-<div class="line">If you also ask for the <strong>Odds Ratio</strong> from this red drop-down arrow,
-JMP returns this quantity:</div>
-<div class="line"><a class="reference internal" href="../_images/image65.png"><img alt="image30" src="../_images/image65.png" style="width: 1.94118in; height: 0.55462in;" /></a></div>
-</div>
+<p><a class="reference internal" href="../_images/image611.png"><img alt="image3027" src="../_images/image611.png" style="width: 2.89916in; height: 1.45811in;" /></a></p>
+<p>Enter the following and click OK.</p>
+<p><a class="reference internal" href="../_images/image621.png"><img alt="image3028" src="../_images/image621.png" style="width: 2.17081in; height: 1.21006in;" /></a></p>
+<p>JMP returns the following:</p>
+<p><a class="reference internal" href="../_images/image631.png"><img alt="image3029" src="../_images/image631.png" style="width: 3.96639in; height: 0.60042in;" /></a></p>
+<p>If you also ask for the <strong>Odds Ratio</strong> from this red drop-down arrow,
+JMP returns this quantity:</p>
+<p><a class="reference internal" href="../_images/image65.png"><img alt="image3030" src="../_images/image65.png" style="width: 1.94118in; height: 0.55462in;" /></a></p>
 <p>Note that JMP is by default computing the odds of NOT attempting suicide
 since this column appears first in the contingency table. It is then
 computing the odds ratio with the Adopted Group in the numerator, since
 this row appears first in the table.</p>
-<p><a class="reference internal" href="../_images/image66.png"><img alt="image31" src="../_images/image66.png" style="width: 1.93108in; height: 0.94958in;" /></a>*
-*</p>
+<p><a class="reference internal" href="../_images/image66.png"><img alt="image3031" src="../_images/image66.png" style="width: 1.93108in; height: 0.94958in;" /></a></p>
 <p>After re-ordering the columns for the <em>Suicide Attempt?</em> variable we
 obtain the following:</p>
-<p><a class="reference internal" href="../_images/image67.png"><img alt="image32" src="../_images/image67.png" style="width: 1.89577in; height: 0.93222in;" /></a>*
-*</p>
-<p><a class="reference internal" href="../_images/image68.png"><img alt="image33" src="../_images/image68.png" style="width: 2.08403in; height: 0.59544in;" /></a></p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<p><a class="reference internal" href="../_images/image67.png"><img alt="image3032" src="../_images/image67.png" style="width: 1.89577in; height: 0.93222in;" /></a></p>
+<p><a class="reference internal" href="../_images/image68.png"><img alt="image3033" src="../_images/image68.png" style="width: 2.08403in; height: 0.59544in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Verify that the relative risk and odds ratio shown match our
 calculations.</li>
 <li>Note that JMP gives a confidence interval for both the relative risk
 and the odds ratio. What would it imply if either of these confidence
 intervals was to include the value one? Explain.</li>
 </ol>
-<p><strong>*Example 3.10: Importance of Considering Absolute Risk*</strong></p>
+</div>
+<div class="section" id="example-3-10-importance-of-considering-absolute-risk">
+<h3>Example 3.10: Importance of Considering Absolute Risk<a class="headerlink" href="#example-3-10-importance-of-considering-absolute-risk" title="Permalink to this headline">¶</a></h3>
 <p>In 1995, the UK Committee on Safety of Medicines issued a warning that
 birth control pills increased the risk of life-threating blood clots.
 The data on which these conclusions were drawn were very similar to the
@@ -1834,9 +1557,9 @@ following outcomes.</p>
 </tr>
 </tbody>
 </table>
-<p><a href="#id40"><span class="problematic" id="id41">**</span></a>*
-<a href="#id42"><span class="problematic" id="id43">**</span></a>Questions*:</p>
-<ol class="arabic simple">
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>Find the risk of blood clots for those using birth control pills.</li>
 <li>Find the risk of blood clots for those not using birth control pills.</li>
 <li>Find and interpret the relative risk.</li>
@@ -1848,68 +1571,40 @@ any potential negative consequences to this? Explain.</li>
 <li>What do you suppose would have happened had patients also considered
 the absolute risk of blood clots for those using birth control pills?</li>
 </ol>
-<p><strong>*INFERENCES FOR COMPARING TWO OR MORE PROPORTIONS *</strong></p>
-<p><strong>*Chi-Square Test of Independence*</strong></p>
-<div class="line-block">
-<div class="line">In this section, we will once again discuss a hypothesis testing
-procedure that uses the chi-square distribution. Specifically, this is
-known as the <em>Chi-Square Test of Independence</em>.</div>
-<div class="line"><strong>*
-Example 3.11: Support for Iraq War and Political Affiliation
-*</strong></div>
 </div>
-<div class="line-block">
-<div class="line">In March of 2003, the Pew Internet &amp; American Life Project
+</div>
+</div>
+<div class="section" id="inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence">
+<h2>Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence<a class="headerlink" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h2>
+<p>In this section, we will once again discuss a hypothesis testing
+procedure that uses the chi-square distribution. Specifically, this is
+known as the <em>Chi-Square Test of Independence</em>.</p>
+<div class="section" id="example-3-11-support-for-iraq-war-and-political-affiliation">
+<h3>Example 3.11: Support for Iraq War and Political Affiliation<a class="headerlink" href="#example-3-11-support-for-iraq-war-and-political-affiliation" title="Permalink to this headline">¶</a></h3>
+<p>In March of 2003, the Pew Internet &amp; American Life Project
 commissioned Princeton Survey Research Associates to develop and carry
 out a survey of what Americans thought about the recent war in Iraq.
 Some of the results of this survey of over 1,400 American adults are
 given in the JMP data file <strong>IraqWar.JMP</strong>. (<em>Source:</em> <em>McClave &amp;
-Sincich, Problem 13.33</em>)</div>
-<div class="line">Responses to the following questions were recorded:</div>
-</div>
-<ol class="arabic">
-<li><p class="first">Do you support or oppose the Iraq War?</p>
-</li>
-<li><p class="first">Do you ever go online to access the Internet or World Wide Web?</p>
-</li>
-<li><p class="first">Do you consider yourself a Republican, Democrat, or Independent?</p>
-</li>
-<li><dl class="first docutils">
-<dt>In general, would you describe your political views as very</dt>
-<dd><p class="first last">conservative, conservative, moderate, liberal, or very liberal?</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">What is your race?</p>
-</li>
-<li><p class="first">Do you live in a suburban, rural, or urban community?</p>
-</li>
+Sincich, Problem 13.33</em>)
+Responses to the following questions were recorded:</p>
+<ol class="arabic simple">
+<li>Do you support or oppose the Iraq War?</li>
+<li>Do you ever go online to access the Internet or World Wide Web?</li>
+<li>Do you consider yourself a Republican, Democrat, or Independent?</li>
+<li>In general, would you describe your political views as very
+conservative, conservative, moderate, liberal, or very liberal?</li>
+<li>What is your race?</li>
+<li>Do you live in a suburban, rural, or urban community?</li>
 </ol>
-<p><a href="#id44"><span class="problematic" id="id45">**</span></a><em>Research Question</em>: Is there a significant association between
-Support for the Iraq War and Political Affiliation? **</p>
 <p>Note that this investigation requires us to focus on only two of the
 measured variables: <em>Support for the Iraq War</em> and <em>Political
 Affiliation</em>. First, let’s summarize the data using JMP. Select
 <strong>Analyze &gt; Fit Y by X</strong> and enter the following:</p>
-<p><a class="reference internal" href="../_images/image69.png"><img alt="image34" src="../_images/image69.png" style="width: 3.03808in; height: 1.97084in;" /></a></p>
+<p><a class="reference internal" href="../_images/image69.png"><img alt="image3034" src="../_images/image69.png" style="width: 3.03808in; height: 1.97084in;" /></a></p>
 <p>JMP returns the contingency table and mosaic plot:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="24%" />
-<col width="76%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head"><a class="reference internal" href="../_images/image711.png"><img alt="image35" src="../_images/image711.png" style="width: 2.71648in; height: 1.97391in;" /></a></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><em>Questions</em>:</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
 <ol class="arabic">
 <li><dl class="first docutils">
 <dt>What can you say about the association between Support for the Iraq</dt>
@@ -1918,143 +1613,81 @@ sample?</p>
 </dd>
 </dl>
 </li>
+<li><p class="first">On the graphs below, sketch hypothetical examples of each of the following situations.</p>
+</li>
 </ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="97%" />
-<col width="3%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><ol class="first arabic simple">
-<li>On the graphs below, sketch hypothetical examples of each of the following situations.</li>
-</ol>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="39%" />
-<col width="61%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first">Political Affiliation <em>IS Associated</em> with</p>
-<p class="last">Support for the Iraq War</p>
-</th>
-<th class="head">Political Affiliation <em>IS NOT Associated</em> with Support for the Iraq War</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</th>
-<th class="head">&nbsp;</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-odd"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<p class="last"><a class="reference internal" href="../_images/image524.png"><img alt="image3056" src="../_images/image524.png" style="width: 5.78in; height: 2.67in;" /></a></p>
 </div>
-<div class="section" id="id50">
-<h2><a href="#id46"><span class="problematic" id="id47">**</span></a><a href="#id48"><span class="problematic" id="id49">*</span></a><a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
-<p><strong>*Carrying out the chi-square test of independence:*</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first"><em>Assumptions behind the Chi-square Test</em>:</p>
-<p class="last">The chi-square test of independence may be inappropriate for tables with very small expected cell frequencies. One rule of thumb suggests that most of the expected cell frequencies in the table should be 5 or more; otherwise, the chi-square approximation may not be reliable. Also, all observations that are counted in the contingency table should be independent of each other.</p>
-</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>*Step 1: Convert the research question into H:sub:`o` and
-H:sub:`a`:*</strong></p>
+</div>
+<div class="section" id="carrying-out-the-chi-square-test-of-independence">
+<h3>Carrying out the chi-square test of independence:<a class="headerlink" href="#carrying-out-the-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-assumptions-behind-the-chi-square-test admonition">
+<p class="first admonition-title">Assumptions behind the Chi-square Test:</p>
+<p class="last">The chi-square test of independence may be inappropriate for tables with
+very small expected cell frequencies. One rule of thumb suggests that most
+of the expected cell frequencies in the table should be 5 or more;
+otherwise, the chi-square approximation may not be reliable. Also, all
+observations that are counted in the contingency table should be independent
+of each other.</p>
+</div>
+<p><strong>Step 1</strong>: Convert the research question into <span class="math">H_0</span> and <span class="math">H_a</span>:</p>
 <p>H<sub>o</sub>:</p>
 <p>H<sub>a</sub>:</p>
-<p><strong>*Step 2: Calculate a test statistic and p-value from the data.*</strong></p>
-<p>Test Statistic =</p>
+<p><strong>Step 2</strong>: Calculate a test statistic and p-value from the data.</p>
+<div class="math">
+\[\mathrm{Test\,Statistic} = \sum \frac{\left(\mathrm{Observed} - \mathrm{Expected}\right)^2}{\mathrm{Expected}}=\]</div>
 <p>Observed counts:</p>
+<p><a class="reference internal" href="../_images/image534.png"><img alt="image3057" src="../_images/image534.png" style="width: 1.99in; height: 1.09in;" /></a></p>
 <p>Finding the expected counts:</p>
+<p><a class="reference internal" href="../_images/image544.png"><img alt="image3058" src="../_images/image544.png" style="width: 1.99in; height: 1.09in;" /></a></p>
 <p>Once we have the expected counts, we can calculate the test statistic as
 follows:</p>
-<p>Test Statistic =</p>
-<p><em>Questions</em>:</p>
-<ol class="arabic simple">
+<div class="math">
+\[\mathrm{Test\,Statistic} = \sum \frac{\left(\mathrm{Observed} - \mathrm{Expected}\right)^2}{\mathrm{Expected}}=\]</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
 <li>What does it mean when the test statistic is “large”?</li>
 <li>At what point does the test statistic provide evidence to support our
 research question?</li>
 </ol>
-<p><em>Finding the p-value</em>:</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">The Chi-Square test uses a distribution known as the chi-square
-(χ:sup:<cite>2</cite>) distribution.</div>
-<div class="line">The chi-square distribution takes on only positive numbers and is
-a <em>continuous</em> distribution. In addition, this distribution is
-indexed by its degrees of freedom (or df).</div>
-<div class="line">For this test, this is given by df = (r - 1)(c - 1).</div>
 </div>
+</div>
+<div class="section" id="finding-the-p-value">
+<h3>Finding the p-value:<a class="headerlink" href="#finding-the-p-value" title="Permalink to this headline">¶</a></h3>
+<p>The Chi-Square test uses a distribution known as the chi-square <span class="math">\chi^2</span>
+distribution.  The chi-square distribution takes on only positive numbers and is
+a <em>continuous</em> distribution. In addition, this distribution is indexed by its
+degrees of freedom (or df).  For this test, this is given by</p>
+<div class="math">
+\[df = (r - 1)(c - 1).\]</div>
 <p>You can use the following function in EXCEL to find the p-value:
 <strong>=CHIDIST(test statistic, df).</strong></p>
 <p>The following graph shows the chi-square distribution with df = 2.
 The p-value is found by plotting the chi-square test statistic on
 the x-axis and calculating the area under the curve above the test
 statistic.</p>
-<p><a class="reference internal" href="../_images/image76.png"><img alt="image36" src="../_images/image76.png" style="width: 3.41868in; height: 3.19638in;" /></a></p>
-</div></blockquote>
+<p><a class="reference internal" href="../_images/image76.png"><img alt="image3036" src="../_images/image76.png" style="width: 3.41868in; height: 3.19638in;" /></a></p>
 <p>The output for the chi-square test is also given in the JMP output:</p>
-<div class="line-block">
-<div class="line"><strong>*
-Step 3: Write a conclusion in the context of the problem
-*</strong></div>
-<div class="line">Finally, since we have determined that there is a significant
+<p><a class="reference internal" href="../_images/image553.png"><img alt="image3059" src="../_images/image553.png" style="width: 1.99in; height: 1.09in;" /></a></p>
+<p><strong>Step 3</strong>: Write a conclusion in the context of the problem</p>
+<p>Finally, since we have determined that there is a significant
 association between support for the Iraq war and political
 affiliation, we can describe this relationship based on the patterns
-displayed in the mosaic plot.</div>
+displayed in the mosaic plot.</p>
+<p><a class="reference internal" href="../_images/image711.png"><img alt="image3037" src="../_images/image711.png" style="width: 2.73268in; height: 1.98958in;" /></a></p>
 </div>
-<p><a class="reference internal" href="../_images/image711.png"><img alt="image37" src="../_images/image711.png" style="width: 2.73268in; height: 1.98958in;" /></a></p>
-<p><strong>*
-Chi-square Test of Independence versus Chi-square Test of Homogeneity*</strong></p>
+</div>
+<div class="section" id="chi-square-test-of-independence-versus-chi-square-test-of-homogeneity">
+<h2>Chi-square Test of Independence versus Chi-square Test of Homogeneity<a class="headerlink" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity" title="Permalink to this headline">¶</a></h2>
 <p>In the context of our Iraq War example, some statisticians might
 differentiate between these two versions of the chi-square test as
 follows.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="8%" />
-<col width="23%" />
-<col width="70%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name of Test</th>
-<th class="head">Research Question</th>
-<th class="head">When is it Appropriate?</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Chi-Square Test of Homogeneity</td>
-<td>Does the proportion that supports the Iraq War <em>differ</em> across Political Affiliation?</td>
-<td>When the data are collected from separate random samples (e.g., the researchers take separate random samples of Democrats, Republicans, and Independents and then measure the response variable on each subject). In general, this tests whether the response variable differs across two (or more) populations.</td>
-</tr>
-<tr class="row-odd"><td>Chi-Square Test of Independence</td>
-<td>Is there a significant <em>association</em> between Support for the Iraq War and Political Affiliation?</td>
-<td>When the data are collected on a single random sample and the groupings are then retrospectively determined (e.g., the researchers take a single random sample and then classify each subject according to both political affiliation and support for the war).
-In general, this tests whether there is an association between two variables in a single population.</td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line">Note that the choice of homogeneity versus independence depends on
+<p><a class="reference internal" href="../_images/image564.png"><img alt="image3060" src="../_images/image564.png" style="width: 6.33in; height: 3.38in;" /></a></p>
+<p>Note that the choice of homogeneity versus independence depends on
 only the study design and that the phrasing of the research question
-is slightly different between the two versions.</div>
-<div class="line">The actual study described here in Example 3.11 involved a single
+is slightly different between the two versions.
+The actual study described here in Example 3.11 involved a single
 random sample, so this is technically a chi-square test of
 independence. If the researchers had taken separate random samples of
 U.S. citizens from each political affiliation group, how would our
@@ -2064,21 +1697,17 @@ have obtained the same test statistic and the same p-value. Our
 conclusion might have focused on there being a significant difference
 in the proportion that supports the war across political affiliation
 instead of focusing on there being a significant relationship between
-the two variables, but the overall story would have remained the same.</div>
-</div>
-<p><strong>*
-Example 3.12: Opinions on Disciplining Children across Regions of
-U.S.*</strong></p>
-<div class="line-block">
-<div class="line">On September 16-17, 2014, an NBC News/Marist Poll surveyed a random
+the two variables, but the overall story would have remained the same.</p>
+<div class="section" id="example-3-12-opinions-on-disciplining-children-across-regions-of-u-s">
+<h3>Example 3.12: Opinions on Disciplining Children across Regions of U.S.<a class="headerlink" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s" title="Permalink to this headline">¶</a></h3>
+<p>On September 16-17, 2014, an NBC News/Marist Poll surveyed a random
 sample of 606 adults nationwide. Respondents were asked the following
 question: “Do you think it is right or wrong for parents to discipline
 their children by striking them - either with a paddle, switch, or
-belt?”</div>
-<div class="line">The results were separated according to the Region of the U.S. in
+belt?”</p>
+<p>The results were separated according to the Region of the U.S. in
 which the respondent lived (Northeast, Midwest, South, or West). The
-data are summarized in the following table.</div>
-</div>
+data are summarized in the following table.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="25%" />
@@ -2128,37 +1757,38 @@ data are summarized in the following table.</div>
 </tr>
 </tbody>
 </table>
-<p>The research question is as follows: <strong>Is there a statistically
-significant association between *Region* and *Opinion on this Discipline
-Issue*?</strong></p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Is there a statistically significant association between <em>Region</em> and
+<em>Opinion on this Discipline Issue</em>?</p>
+</div>
 <p>First, since we don’t have access to the raw data, we can enter the data
 from the contingency table into JMP as follows (see the file
 <strong>Discipline.jmp</strong> posted on the course website).</p>
-<p><a class="reference internal" href="../_images/image78.png"><img alt="image38" src="../_images/image78.png" style="width: 1.67240in; height: 1.73824in;" /></a></p>
+<p><a class="reference internal" href="../_images/image78.png"><img alt="image3038" src="../_images/image78.png" style="width: 1.67240in; height: 1.73824in;" /></a></p>
 <p>We can then use the <strong>Analyze &gt; Fit Y by X</strong> menu to obtain the desired
 output:</p>
-<p><a class="reference internal" href="../_images/image79.png"><img alt="image39" src="../_images/image79.png" style="width: 2.71304in; height: 1.74463in;" /></a></p>
-<p><strong>*
-Step 1: Convert the research question into H:sub:`o` and
-H:sub:`a`*.</strong></p>
+<p><a class="reference internal" href="../_images/image79.png"><img alt="image3039" src="../_images/image79.png" style="width: 2.71304in; height: 1.74463in;" /></a></p>
+<p><strong>Step 1</strong>: Convert the research question into <span class="math">H_0</span> and <span class="math">H_a</span>:</p>
 <p>H<sub>o</sub>:</p>
 <p>H<sub>a</sub>:</p>
-<p><strong>*Step 2: Find the test statistic and p-value from the data*.</strong></p>
-<p><a class="reference internal" href="../_images/image80.png"><img alt="image40" src="../_images/image80.png" style="width: 2.11304in; height: 1.05271in;" /></a></p>
-<p><a href="#id51"><span class="problematic" id="id52">**</span></a>Note: The chi-square distribution with df = 6 is shown below. Do you
-see why the p-value is so small?
-**</p>
-<p><a class="reference internal" href="../_images/image811.png"><img alt="image41" src="../_images/image811.png" style="width: 2.41179in; height: 2.23478in;" /></a></p>
-<p><strong>*Step 3: Write a conclusion in the context of the problem*.</strong></p>
+<p><strong>Step 2</strong>: Find the test statistic and p-value from the data.</p>
+<p><a class="reference internal" href="../_images/image80.png"><img alt="image3040" src="../_images/image80.png" style="width: 2.11304in; height: 1.05271in;" /></a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The chi-square distribution with df = 6 is shown below. Do you see why the
+p-value is so small?</p>
+</div>
+<p><a class="reference internal" href="../_images/image811.png"><img alt="image3041" src="../_images/image811.png" style="width: 2.41179in; height: 2.23478in;" /></a></p>
+<p><strong>Step 3</strong>: Write a conclusion in the context of the problem.</p>
 <p>Finally, note that if we determine a significant relationship exists
 between the two variables of interest, we should take the time to
 describe this relationship.</p>
-<p><a class="reference internal" href="../_images/image79.png"><img alt="image42" src="../_images/image79.png" style="width: 2.96522in; height: 1.90679in;" /></a></p>
-<div class="line-block">
-<div class="line">Also, we can look at each cell’s contribution to the test statistic to
+<p><a class="reference internal" href="../_images/image79.png"><img alt="image3042" src="../_images/image79.png" style="width: 2.96522in; height: 1.90679in;" /></a></p>
+<p>Also, we can look at each cell’s contribution to the test statistic to
 informally determine what is driving the significance of this
-relationship:</div>
-<div class="line"><a class="reference internal" href="../_images/image821.png"><img alt="image43" src="../_images/image821.png" style="width: 2.57187in; height: 3.03180in;" /></a></div>
+relationship:</p>
+<p><a class="reference internal" href="../_images/image821.png"><img alt="image3043" src="../_images/image821.png" style="width: 2.57187in; height: 3.03180in;" /></a></p>
 </div>
 </div>
 </div>
