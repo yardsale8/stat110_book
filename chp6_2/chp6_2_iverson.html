@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Comparing Two Population Means: Independent Samples &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp6_2_iverson'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Comparing Two Population Means: Independent Samples</a><ul>
+<li><a class="reference internal" href="#example-6-5-smoking-and-birth-weight">Example 6.5: Smoking and Birth Weight</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bootstrap-test-for-two-independent-means">Bootstrap Test for Two Independent Means</a></li>
+<li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">Characteristics of the Sampling Distribution for the Difference in Means</a></li>
+<li><a class="reference internal" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples">Testing for a Difference in Two Population Means (Assuming Independent Samples)</a></li>
+<li><a class="reference internal" href="#constructing-a-confidence-interval-for-the-difference-in-means">Constructing a Confidence Interval for the Difference in Means</a></li>
+<li><a class="reference internal" href="#example-6-6-time-perception">Example 6.6: Time Perception</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="comparing-two-population-means-independent-samples">
+<h1>Comparing Two Population Means: Independent Samples<a class="headerlink" href="#comparing-two-population-means-independent-samples" title="Permalink to this headline">¶</a></h1>
+<p>In Chapter 5, we considered inference for a single population mean.  Then, in
+the first part of Chapter 6 we extended these ideas so that comparisons could be
+made between two groups. Such comparisons were made using differences because
+the observations in the two groups were related, or <em>dependent</em>.</p>
+<p>In this section, we will consider making comparisons between two groups when the
+observations in one group are <em>independent</em> of the observations in the other
+group. The methodologies considered here are a bit more involved because it no
+longer makes sense to simply work with differences. Consider the following
+example.</p>
+<div class="section" id="example-6-5-smoking-and-birth-weight">
+<h2>Example 6.5: Smoking and Birth Weight<a class="headerlink" href="#example-6-5-smoking-and-birth-weight" title="Permalink to this headline">¶</a></h2>
+<p>A study was conducted in which the relationship between smoking and birth
+weights of babies was considered. The data can be found in the file
+<strong>LowBirth.JMP</strong>, a portion of which is shown below.</p>
+<p><a href="#id1"><span class="problematic" id="id2">|image610|</span></a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The first observation for a nonsmoker is in NO WAY related to the first
+observation for a smoker. Therefore, these groups are <em>independent</em>.</p>
+</div>
+<p>Next, let’s examine birth weight across the two groups: smokers and
+nonsmokers.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a href="#id3"><span class="problematic" id="id4">|image611|</span></a></td>
+<td><a href="#id5"><span class="problematic" id="id6">|image612|</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>In JMP, we can compare the distributions by selecting <strong>Analyze &gt; Fit Y
+by X.</strong> Place the categorical variable (<strong>Smoke</strong>) in the <strong>X, Factor</strong>
+box, and place the numerical variable of interest (<strong>Actual_Weight</strong>)
+in the <strong>Y, Response</strong> box. Select the “Display Options” menu from the
+red drop-down arrow to display the boxplots and mean diamonds.</p>
+<p><a href="#id7"><span class="problematic" id="id8">|image613|</span></a></p>
+<p><a href="#id9"><span class="problematic" id="id10">|image614|</span></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="arabic simple">
+<li>Identify the following sample statistics from the JMP output:</li>
+</ol>
+<p><a href="#id11"><span class="problematic" id="id12">|image6123|</span></a></p>
+<ol class="last arabic simple" start="2">
+<li>We are interested in the true difference between these two population
+means, . Based on the data, what is your best guess for this
+difference, and what does it indicate about birth weights for smokers
+compared to nonsmokers?</li>
+<li>If you were to take another sample, is your “best guess” from the
+previous question likely to change? Explain.</li>
+</ol>
+</div>
+<p>Since the difference will change from sample to sample, in order to make valid
+inferences about the true population difference, we must first understand <em>how</em>
+the difference in sample means is expected to change from sample to sample. That
+is, we must determine what differences in means are likely to happen by chance
+when taking random samples from populations with the same mean. The following
+illustration in Tinkerplots gives us some insight into this.</p>
+<p><a href="#id13"><span class="problematic" id="id14">|image615|</span></a></p>
+</div>
+</div>
+<div class="section" id="bootstrap-test-for-two-independent-means">
+<h1>Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h1>
+<p>Researchers at Pennsylvania State University investigated whether
+time perception, a simple indication of a person’s ability to
+concentrate, is impaired during nicotine withdrawal. Twenty smokers
+were randomly assigned to a 24-hour smoking abstinence and were
+asked to estimate how much time had passed during a 45-second
+period. Another 20 smokers were randomly assigned to a group which
+was <em>not</em> forced to abstain from nicotine; they were also asked to
+estimate how much time had passed during a 45-second period. Suppose
+the resulting data on perceived elapsed time (in seconds) were
+analyzed as shown below (these results are artificial but are
+similar to the actual findings). The data can be found in the file
+<strong>Nicotine_all.JMP</strong>.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Do those smokers suffering from nicotine withdrawal tend to believe that
+more time has elapsed than do those not suffering from nicotine withdrawal?</p>
+</div>
+<ol class="arabic simple">
+<li>What is the response variable in this study?</li>
+<li>What is the predictor variable in this study?</li>
+<li>Explain why the null hypothesis would be
+<span class="math">\(H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0\)</span></li>
+</ol>
+<p>To use the boostrap distribution to run a hypothesis test, we need to generate
+the bootstrap distribution then move the distribution so that the mean is
+centered at the hypothetical mean.</p>
+<p>In JMP, we can use the bootstrap to perform a test for the difference in means, by
+following these steps.</p>
+<div class="admonition-bootstrap-test-in-jmp admonition">
+<p class="first admonition-title">Bootstrap Test in JMP</p>
+<ol class="last loweralpha">
+<li><p class="first">Save the data somewhere that is easy to access.</p>
+</li>
+<li><p class="first">Open the <strong>Randomized Test</strong> add-in, click <strong>Use Other Data</strong>, and
+open the <strong>Nicotine_all.jmp</strong> data file.</p>
+<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image1.png"><img alt="image640" src="chp6_2/../chp6_iverson/img2/media/image1.png" style="width: 1.92492in; height: 0.53077in;" /></a> <a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image2.png"><img alt="image641" src="chp6_2/../chp6_iverson/img2/media/image2.png" style="width: 3.29992in; height: 2.20606in;" /></a></p>
+</li>
+<li><p class="first">Highlight the Y and X variables.</p>
+<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image3.png"><img alt="image642" src="chp6_2/../chp6_iverson/img2/media/image3.png" style="width: 2.29992in; height: 2.11039in;" /></a></p>
+</li>
+<li><p class="first">Generate the bootstrap distribution centered at 0. This is due to the
+fact that we are testing to see if there is a difference between the groups,
+and consequently the null hypothesis will represent &#8220;no difference.&#8221;</p>
+<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image4.png"><img alt="image643" src="chp6_2/../chp6_iverson/img2/media/image4.png" style="width: 3.59730in; height: 1.16945in;" /></a></p>
+</li>
+<li><p class="first">Note the direction of subtraction on the right hand side. We will
+need to make sure our alternate hypothesis’s direction matches this
+subtraction.</p>
+<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image5.png"><img alt="image644" src="chp6_2/../chp6_iverson/img2/media/image5.png" style="width: 3.54992in; height: 1.13567in;" /></a></p>
+</li>
+<li><p class="first">At this point we can determine the null and alternative hypothesis,
+(including the correct order of substraction.) We do this by considering the
+research hypothesis in light of the order of subtraction.  In this case, the
+research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span class="math">\(\mu_{no}\)</span>, so
+<span class="math">\(H_{a}:\mu_{\text{no}} - \mu_{\text{with}} &lt; 0\)</span>.</p>
+</li>
+<li><p class="first">Pick and record the correct p-value for this test.</p>
+<blockquote>
+<div><p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image6.png"><img alt="image645" src="chp6_2/../chp6_iverson/img2/media/image6.png" style="width: 4.67492in; height: 4.44680in;" /></a></p>
+<p>p-value =</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question:</p>
+<ol class="last arabic simple">
+<li>Based on this p-value, write the correct conclusion for this test.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="characteristics-of-the-sampling-distribution-for-the-difference-in-means">
+<h1>Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h1>
+<p>The illustration in Tinkerplots helps us understand the intuition behind
+inference for a difference in means, but we don’t really need Tinkerplots to
+determine the characteristics of a distribution of differences in means.
+Instead, we can use what statisticians discovered long ago: as long as the
+samples are independent, the sampling distribution for the <em>difference in means</em>
+can be described as follows.</p>
+<ol class="arabic simple">
+<li>The sampling distribution is centered around <span class="math">\(\mu_1 - \mu_2\)</span>.</li>
+<li>The standard deviation of our sampling distribution (i.e., standard
+error) is given as follows:</li>
+</ol>
+<div class="math">
+\[SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}\]</div>
+<ol class="arabic simple" start="3">
+<li>The shape of the sampling distribution is approximately normal if (1) both
+sample sizes are “sufficiently large” OR (2) if both original populations are
+normally distributed.</li>
+</ol>
+<p>Given these characteristics, the test statistic we will use when testing for
+differences in two population means for INDEPENDENT samples is as follows:</p>
+<div class="math">
+\[t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\]</div>
+<p>This test statistic follows a t-distribution with the following degrees of
+freedom:</p>
+<div class="math">
+\[df = \frac{\left(\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}\right)^2}
+          {\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1}+
+          \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}\]</div>
+<p>Therefore, as long as it is reasonable to assume the shape of the distribution
+of differences in means is approximately normal (see #3 above), we can use the
+t-distribution to find our p-value. This procedure is typically referred to as
+the <strong>two-sample t-test</strong>.</p>
+</div>
+<div class="section" id="testing-for-a-difference-in-two-population-means-assuming-independent-samples">
+<h1>Testing for a Difference in Two Population Means (Assuming Independent Samples)<a class="headerlink" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples" title="Permalink to this headline">¶</a></h1>
+<p><strong>Back to Example 6.5:</strong> Carry out the hypothesis test associated with
+the following research question: Is the average birth weight lower when
+mothers are classified as smokers?</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the t-test is valid.</p>
+<ol class="arabic simple">
+<li>Are the two groups independent? Explain.</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a href="#id15"><span class="problematic" id="id16">|image616|</span></a></p>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub>.</p>
+<p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2:</strong> Calculate the <em>test statsitic</em> from your data.</p>
+<p>To do this in JMP, click on the red drop-down arrow next to &#8220;Oneway Analysis...&#8221;
+and select <strong>t-test</strong>.</p>
+<p><a href="#id17"><span class="problematic" id="id18">|image6124|</span></a></p>
+<p>JMP returns the following:</p>
+<p><a href="#id19"><span class="problematic" id="id20">|image6110|</span></a></p>
+<p>Verify the value of the test statistic in JMP:</p>
+<p><a href="#id21"><span class="problematic" id="id22">|image618|</span></a></p>
+<div class="math">
+\[\begin{split}SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}\\
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\end{split}\]</div>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em>.</p>
+<p><a href="#id23"><span class="problematic" id="id24">|image619|</span></a></p>
+<p><em>p-value</em>:</p>
+<p><strong>Step 4:</strong> Write a conclusion in terms of the original research question.</p>
+<blockquote>
+<div>&#8220;We have evidence that the average birth weight is lower when mothers are classified as smokers (p-value = .0038).&#8221;</div></blockquote>
+</div>
+<div class="section" id="constructing-a-confidence-interval-for-the-difference-in-means">
+<h1>Constructing a Confidence Interval for the Difference in Means<a class="headerlink" href="#constructing-a-confidence-interval-for-the-difference-in-means" title="Permalink to this headline">¶</a></h1>
+<p><a href="#id25"><span class="problematic" id="id26">|image6110|</span></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>We often write this confidence interval as:</p>
+<p>Interpret the meaning of this 95% confidence interval:</p>
+</div>
+<div class="section" id="example-6-6-time-perception">
+<h1>Example 6.6: Time Perception<a class="headerlink" href="#example-6-6-time-perception" title="Permalink to this headline">¶</a></h1>
+<p>Recall the study conducted by researchers at Pennsylvania State University which
+investigated whether time perception, a simple indication of a person’s ability
+to concentrate, is impaired during nicotine withdrawal. This study was discussed
+in Chapter 5. Twenty smokers were randomly assigned to a 24-hour smoking
+abstinence and were asked to estimate how much time had passed during a
+45-second period. Another 20 smokers were randomly assigned to a group which was
+<em>not</em> forced to abstain from nicotine; they were also asked to estimate how much
+time had passed during a 45-second period. Suppose the resulting data on
+perceived elapsed time (in seconds) were analyzed as shown below (these results
+are artificial but are similar to the actual findings). The data can be found in
+the file <strong>Nicotine_all.JMP</strong>.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research Question:</p>
+<p class="last">Do those smokers suffering from nicotine withdrawal tend to believe that
+more time has elapsed than do those not suffering from nicotine withdrawal?</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the response variable in this study?</li>
+<li>What is the predictor variable in this study?</li>
+</ol>
+</div>
+<p>The data can be summarized using JMP by selecting <strong>Analyze &gt; Fit Y by
+X</strong> and placing the predictor (i.e., explanatory) variable in the <strong>X,
+Factor</strong> box and the response in the <strong>Y, Response</strong> box. Then, use the
+<strong>Display Options</strong> menu from the red drop-down arrow to add the
+boxplots and mean diamonds.</p>
+<blockquote>
+<div><a href="#id27"><span class="problematic" id="id28">|image6111|</span></a></div></blockquote>
+<p>It is clear that the SAMPLE of smokers suffering from nicotine
+withdrawal has a larger mean perceived elapsed time than those not
+suffering from withdrawal. However, to determine whether there is a
+difference in the POPULATION means, we will carry out a hypothesis test.</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the test is valid.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Are the two groups independent?</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a href="#id29"><span class="problematic" id="id30">|image6112|</span></a></p>
+</div></blockquote>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub></p>
+<blockquote>
+<div><p>H<sub>0</sub></p>
+<p>H<sub>a</sub></p>
+</div></blockquote>
+<p><strong>Step 2:</strong> Calculate a <em>test statistic</em> from your data.</p>
+<blockquote>
+<div><p><a href="#id31"><span class="problematic" id="id32">|image6113|</span></a></p>
+<p>Verify the value of the test statistic from JMP:
+<a href="#id33"><span class="problematic" id="id34">|image6114|</span></a></p>
+<div class="math">
+\[\begin{split}SE_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}}= \\
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}=\end{split}\]</div>
+<p>Recall that this test statistic comes from a t-distribution w</p>
+<div class="math">
+\[df = \frac{\left(\frac{s_1^2}{n_1}+ \frac{s_2^2}{n_2}\right)^2}
+          {\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1}+
+          \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}=37.9\]</div>
+</div></blockquote>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em></p>
+<blockquote>
+<div><p><a href="#id35"><span class="problematic" id="id36">|image6115|</span></a></p>
+<p>p-value =</p>
+</div></blockquote>
+<p><strong>Step 5:</strong> Write a conclusion in terms of the original research question.</p>
+<blockquote>
+<div>“The study provides evidence that the average perceived elapsed time is higher for those smokers suffering from nicotine withdrawal than for those not suffering from nicotine withdrawal (p-value = .0042)</div></blockquote>
+<p>Finally, construct a 95% confidence interval for the difference in
+means:</p>
+<p><a href="#id37"><span class="problematic" id="id38">|image6116|</span></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>Again, we often write this confidence interval as:</p>
+<p>Interpret the meaning of this confidence interval:</p>
+<p><strong>Example 6.7: Tree Canopy Area</strong></p>
+<p>Consider the data found in the file <strong>NYC_Trees.JMP</strong>.
+Suppose you want to compare the canopy area of the two types of trees.
+Is the average canopy area of a Honey Locust different from the average
+canopy area of a Norway Maple? The data are summarized as follows:</p>
+<p><a href="#id39"><span class="problematic" id="id40">|image6117|</span></a></p>
+<p>It is clear that the SAMPLE of Norway Maple trees has a higher mean
+canopy area than the SAMPLE of Honey Locust trees. However, to determine
+whether the POPULATION mean canopy areas differ between the two groups,
+we will carry out a hypothesis test.</p>
+<p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the test is valid.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Are the two groups independent?</li>
+<li>Are both sample sizes sufficiently large? If not, is it reasonable to assume that both populations are normally distributed?</li>
+</ol>
+<p><a href="#id41"><span class="problematic" id="id42">|image6118|</span></a></p>
+</div></blockquote>
+<p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub></p>
+<blockquote>
+<div><p>H<sub>0</sub>:</p>
+<p>H<sub>a</sub>:</p>
+</div></blockquote>
+<p><strong>Step 2:</strong> Calculate a <em>test statistic</em> from your data.</p>
+<blockquote>
+<div><a href="#id43"><span class="problematic" id="id44">|image6119|</span></a></div></blockquote>
+<p><strong>Step 3:</strong> Determine the <em>p-value</em>.</p>
+<blockquote>
+<div>p-value =</div></blockquote>
+<p><strong>Step 4:</strong> Write a conclusion in terms of the original research question.</p>
+<p>Finally, we can construct a confidence interval for the difference in
+means:</p>
+<p><a href="#id45"><span class="problematic" id="id46">|image6120|</span></a></p>
+<p>Lower Endpoint =</p>
+<p>Upper Endpoint =</p>
+<p>This confidence interval can also be written as:</p>
+<p>Interpret the meaning of this 95% confidence interval:</p>
+</div>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
