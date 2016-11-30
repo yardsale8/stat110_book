@@ -86,7 +86,7 @@ which we will represent by μ\ :sub:`difference`.
 
 Before we discuss using a bootstrap sample to run a hypothesis test,
 let’s set up the null and alternative hypothesis for these data. (For
-convenience, the research questions is given below.)
+convenience, the research question is given below.)
 
 .. admonition:: Research Question: 
 
