@@ -100,7 +100,7 @@ individual unit.
 
 .. tip::
 
-    When describing the individual units in a study, be a specific as possible.
+    When describing the individual units in a study, be as specific as possible.
 
 
 .. admonition:: Check your understanding - Variables
@@ -160,7 +160,7 @@ individual unit.
 Understanding Data Collectively
 -------------------------------
 
-Really do we analyze one piece of data, instead we use a collection of data to
+Rarely do we analyze one piece of data, instead we use a collection of data to
 make our conclusions.  In particular, we identify two important collections of
 individuals.
 

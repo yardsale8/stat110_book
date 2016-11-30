@@ -1,0 +1,19 @@
+
+.. |image640| image:: ../chp6_iverson/img2/media/image1.png
+   :width: 1.92492in
+   :height: 0.53077in
+.. |image641| image:: ../chp6_iverson/img2/media/image2.png
+   :width: 3.29992in
+   :height: 2.20606in
+.. |image642| image:: ../chp6_iverson/img2/media/image3.png
+   :width: 2.29992in
+   :height: 2.11039in
+.. |image643| image:: ../chp6_iverson/img2/media/image4.png
+   :width: 3.59730in
+   :height: 1.16945in
+.. |image644| image:: ../chp6_iverson/img2/media/image5.png
+   :width: 3.54992in
+   :height: 1.13567in
+.. |image645| image:: ../chp6_iverson/img2/media/image6.png
+   :width: 4.67492in
+   :height: 4.44680in

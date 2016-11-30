@@ -215,6 +215,8 @@ to the difference distribution.
     2. *Prob >  t* is for a greater than test.
     3. *Prob <  t* is for a less than test.
 
+.. include:: ../chp6_2/chp6_2_iverson.rst
+
 .. Comparing Two Population Means: Independent Samples
 .. ---------------------------------------------------
 .. 
@@ -233,6 +235,7 @@ to the difference distribution.
 .. .. include:: ../chp6_2/sampling_distribution_difference_means.rst
 
 .. include:: ../chp6_1/images.rst
+.. include:: ../chp6_2_iverson/images64.rst
 
 .. |image620| image:: ../chp6_iverson/img/media/image1.png
    :width: 1.60739in
@@ -318,3 +321,21 @@ to the difference distribution.
 .. |image6227| image:: ../chp6_iverson/img/media/image28.png
    :width: 2.42in
    :height: 2.34in
+.. |image640| image:: ../chp6_iverson/img2/media/image1.png
+   :width: 1.92492in
+   :height: 0.53077in
+.. |image641| image:: ../chp6_iverson/img2/media/image2.png
+   :width: 3.29992in
+   :height: 2.20606in
+.. |image642| image:: ../chp6_iverson/img2/media/image3.png
+   :width: 2.29992in
+   :height: 2.11039in
+.. |image643| image:: ../chp6_iverson/img2/media/image4.png
+   :width: 3.59730in
+   :height: 1.16945in
+.. |image644| image:: ../chp6_iverson/img2/media/image5.png
+   :width: 3.54992in
+   :height: 1.13567in
+.. |image645| image:: ../chp6_iverson/img2/media/image6.png
+   :width: 4.67492in
+   :height: 4.44680in

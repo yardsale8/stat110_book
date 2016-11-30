@@ -14,6 +14,8 @@ example.
 
 .. include:: ../chp6_2/example6.5.rst
 
+.. include:: ../chp6_iverson/bootstrap_two_independent_means.rst
+
 .. include:: ../chp6_2/sampling_distribution_difference_means.rst
 
 .. include:: ../chp6_2/test_a_difference.rst

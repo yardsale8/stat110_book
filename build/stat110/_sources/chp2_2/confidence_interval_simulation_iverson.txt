@@ -10,7 +10,7 @@ statistic, as shown below.
 
 Then, we can use StatKey to get an idea of how much we expect this statistic to
 change from one random sample to another. Similar to the TinkerPlots simulation,
-The distribution of sample proportions obtained by repeated sampling is shown
+the distribution of sample proportions obtained by repeated sampling is shown
 below.  
 
 |image2251|

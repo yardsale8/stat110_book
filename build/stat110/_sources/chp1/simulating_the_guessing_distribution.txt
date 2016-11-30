@@ -13,7 +13,7 @@ of correct answers of someone that was just guessing.
 
 .. note:: 
 
-    Recall that we use a p-value to determing if a specified value is unusual.
+    Recall that we use a p-value to determine if a specified value is unusual.
     You might wish to review the section on p-values!
 
 In the following video, we will illustrate simulating the guessing distribution

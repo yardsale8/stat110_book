@@ -1,7 +1,7 @@
 Evaluating Evidence Using P-Values
 ----------------------------------
 
-In in each of our three examples, we essentially *assumed the null
+In each of our three examples, we essentially *assumed the null
 hypothesis was true* when setting up our spinner for the Tinkerplots
 investigation. Then, we used the results simulated under this scenario
 to help us decide whether observing results such as our sample data

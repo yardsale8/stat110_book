@@ -101,6 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="next" title="Comparing a Numerical Variable Across Two Groups" href="../chp6_iverson/paired_test_with_bootstrap.html" />
     <link rel="prev" title="Introduction to Hypothesis Tests" href="../chp1/chp1_iverson.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -308,8 +309,12 @@
     </a>
   </li>
   
-    <li class="divider-vertical"></li>
-  
+  <li id="relations-next" title='Next Chapter - Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -429,7 +434,7 @@ population parameter of interest using formal notation:</p>
 </div></div>
 <div class="section" id="evaluating-evidence-using-p-values">
 <h2>Evaluating Evidence Using P-Values<a class="headerlink" href="#evaluating-evidence-using-p-values" title="Permalink to this headline">¶</a></h2>
-<p>In in each of our three examples, we essentially <em>assumed the null
+<p>In each of our three examples, we essentially <em>assumed the null
 hypothesis was true</em> when setting up our spinner for the Tinkerplots
 investigation. Then, we used the results simulated under this scenario
 to help us decide whether observing results such as our sample data
@@ -487,7 +492,7 @@ advocate using a more flexible rule similar to the following:</p>
 <a class="reference internal" href="../_images/image213.png"><img alt="image5" src="../_images/image213.png" style="width: 4.15625in; height: 1.78372in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_1">
-            Q-264: Estimate the p-value using the simulation pictured above.
+            Q-58: Estimate the p-value using the simulation pictured above.
             <li data-component="answer"  id="p_value_questions_1_opt_a">(A) 0/1000</li><li data-component="feedback" id="p_value_questions_1_opt_a">Remember that the upper p-value is the percent AT or above the value.</li>
             
             <li data-component="answer" data-correct id="p_value_questions_1_opt_b">(B) 1/1000</li><li data-component="feedback" id="p_value_questions_1_opt_b">This is an upper tail test, so the upper p-value is the fraction of the data that is at 14 (1 out of 1000) and above 14 (0 out of 1000).</li>
@@ -500,7 +505,7 @@ advocate using a more flexible rule similar to the following:</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_1">
-            Q-265: Based on the p-value from the last question, what is the correct conclusion?
+            Q-59: Based on the p-value from the last question, what is the correct conclusion?
             <li data-component="answer" data-correct id="conclusion_questions_1_opt_a">(A) There is strong evidence supporting the claim that the proportion of the ten-month-old infants tend to prefer the helper toy over the hinderer toy is greater than 50%.</li><li data-component="feedback" id="conclusion_questions_1_opt_a">Since the p-value = 1/1000 = 0.001 < 0.05, we have strong evidence in favor of the alternative hypothesis.</li>
             
             <li data-component="answer"  id="conclusion_questions_1_opt_b">(B) There is not enough evidence to claim that the proportion of the ten-month-old infants tend to prefer the helper toy over the hinderer toy is greater than 50%.</li><li data-component="feedback" id="conclusion_questions_1_opt_b">A small p-value is always strong evidence in favor of the alternative.</li>
@@ -516,7 +521,7 @@ advocate using a more flexible rule similar to the following:</p>
 <a class="reference internal" href="../_images/image310.png"><img alt="image7" src="../_images/image310.png" style="width: 4.25000in; height: 1.55743in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_2">
-            Q-266: Estimate the p-value using the simulation pictured above.
+            Q-60: Estimate the p-value using the simulation pictured above.
             <li data-component="answer"  id="p_value_questions_2_opt_a">(A) 56/1000</li><li data-component="feedback" id="p_value_questions_2_opt_a">Remember that the lower p-value is the percent AT or below the value.</li>
             
             <li data-component="answer" data-correct id="p_value_questions_2_opt_b">(B) 121/1000</li><li data-component="feedback" id="p_value_questions_2_opt_b">This is a lower tail test, so the lower p-value is the fraction at 9 (65 out of 1000) or below 9 (56 out of 1000).</li>
@@ -529,7 +534,7 @@ advocate using a more flexible rule similar to the following:</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_2">
-            Q-267: Based on the p-value from the last question, what is the correct conclusion?
+            Q-61: Based on the p-value from the last question, what is the correct conclusion?
             <li data-component="answer"  id="conclusion_questions_2_opt_a">(A) There is strong evidence supporting the claim that the proportion of women selected is less than 60%.</li><li data-component="feedback" id="conclusion_questions_2_opt_a">A large p-value never strong evidence in favor of the alternative.</li>
             
             <li data-component="answer" data-correct id="conclusion_questions_2_opt_b">(B) There is not enough evidence to claim that the proportion of women selected is less than 60%.</li><li data-component="feedback" id="conclusion_questions_2_opt_b">The p-value = 121/1000 = 0.121 > 0.05, so we do not have strong evidence in favor of the alternative hypothesis.</li>
@@ -545,7 +550,7 @@ advocate using a more flexible rule similar to the following:</p>
 <a class="reference internal" href="../_images/image410.png"><img alt="image9" src="../_images/image410.png" style="width: 4.42453in; height: 1.32594in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="p_value_questions_3">
-            Q-268: Estimate the p-value using the simulation pictured above.
+            Q-62: Estimate the p-value using the simulation pictured above.
             <li data-component="answer" data-correct id="p_value_questions_3_opt_a">(A) 0/1000</li><li data-component="feedback" id="p_value_questions_3_opt_a">The upper p-value is twice the percent of data at or in the direction of the closest tail.</li>
             
             <li data-component="answer"  id="p_value_questions_3_opt_b">(B) 1000/1000</li><li data-component="feedback" id="p_value_questions_3_opt_b">The upper p-value is twice the percent of data at or in the direction of the closest tail.</li>
@@ -554,7 +559,7 @@ advocate using a more flexible rule similar to the following:</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conclusion_questions_3">
-            Q-269: Based on the p-value from the last question, what is the correct conclusion?
+            Q-63: Based on the p-value from the last question, what is the correct conclusion?
             <li data-component="answer" data-correct id="conclusion_questions_3_opt_a">(A) There is strong evidence supporting the claim that the proportion of all consumers that select the Signet font is different than 50%</li><li data-component="feedback" id="conclusion_questions_3_opt_a">This is a two-tail test, so the p-value = 2*0 = 0 < 0.05, so there is strong evidence in favor of the alternative hypothesis. In this case, we measure toward the upper tail, then double the value.</li>
             
             <li data-component="answer"  id="conclusion_questions_3_opt_b">(B) There is not enough evidence to claim that the proportion of all consumers that select the Signet font is different than 50%</li><li data-component="feedback" id="conclusion_questions_3_opt_b">A small p-value is always strong evidence in favor of the alternative.</li>
@@ -891,36 +896,36 @@ the p-value associated with the binomial exact test. This test is also
 easily implemented in JMP when given the raw data. For example, the
 data from the Helper/Hinderer example could be entered into JMP as
 follows:</p>
-<p><a class="reference internal" href="../_images/image130.png"><img alt="image220" src="../_images/image130.png" style="width: 1.23803in; height: 2.42626in;" /></a></p>
+<p><a class="reference internal" href="../_images/image113.png"><img alt="image220" src="../_images/image113.png" style="width: 1.23803in; height: 2.42626in;" /></a></p>
 <p>To get the test statistic and p-value in JMP, select <strong>Analyze &gt;
 Distribution</strong>. Enter the following:</p>
-<p><a class="reference internal" href="../_images/image230.png"><img alt="image221" src="../_images/image230.png" style="width: 3.50000in; height: 1.35417in;" /></a></p>
+<p><a class="reference internal" href="../_images/image214.png"><img alt="image221" src="../_images/image214.png" style="width: 3.50000in; height: 1.35417in;" /></a></p>
 <p>On the output that appears, select “Test Probabilities” from the red
 drop-down arrow next to the variable name:</p>
-<p><a class="reference internal" href="../_images/image329.png"><img alt="image222" src="../_images/image329.png" style="width: 1.70000in; height: 1.80000in;" /></a></p>
+<p><a class="reference internal" href="../_images/image312.png"><img alt="image222" src="../_images/image312.png" style="width: 1.70000in; height: 1.80000in;" /></a></p>
 <p>Enter the following:</p>
-<p><a class="reference internal" href="../_images/image423.png"><img alt="image223" src="../_images/image423.png" style="width: 3.40625in; height: 1.58175in;" /></a></p>
+<p><a class="reference internal" href="../_images/image411.png"><img alt="image223" src="../_images/image411.png" style="width: 3.40625in; height: 1.58175in;" /></a></p>
 <p>Click “Done” and JMP should return this output:</p>
-<p><a class="reference internal" href="../_images/image519.png"><img alt="image224" src="../_images/image519.png" style="width: 2.85417in; height: 1.16409in;" /></a></p>
+<p><a class="reference internal" href="../_images/image510.png"><img alt="image224" src="../_images/image510.png" style="width: 2.85417in; height: 1.16409in;" /></a></p>
 </div>
 <div class="section" id="an-alternative-method-of-setting-up-the-data-sheet">
 <h3>An Alternative Method of Setting up the Data Sheet<a class="headerlink" href="#an-alternative-method-of-setting-up-the-data-sheet" title="Permalink to this headline">¶</a></h3>
 <p>You can also set up the data as shown below:</p>
-<p><a class="reference internal" href="../_images/image613.png"><img alt="image225" src="../_images/image613.png" style="width: 2.30208in; height: 0.67181in;" /></a></p>
+<p><a class="reference internal" href="../_images/image62.png"><img alt="image225" src="../_images/image62.png" style="width: 2.30208in; height: 0.67181in;" /></a></p>
 <p>If you provide the summarized data to JMP as shown above, then enter
 the following after selecting <strong>Analyze &gt; Distribution</strong>:</p>
-<p><a class="reference internal" href="../_images/image712.png"><img alt="image226" src="../_images/image712.png" style="width: 3.84375in; height: 1.50075in;" /></a></p>
+<p><a class="reference internal" href="../_images/image73.png"><img alt="image226" src="../_images/image73.png" style="width: 3.84375in; height: 1.50075in;" /></a></p>
 <p>From here on out, the steps are the same as shown on the previous page.</p>
 <p>On the output that appears, select “Test Probabilities” from the red
 drop-down arrow next to the variable name:</p>
-<p><a class="reference internal" href="../_images/image329.png"><img alt="image222" src="../_images/image329.png" style="width: 1.70000in; height: 1.80000in;" /></a></p>
+<p><a class="reference internal" href="../_images/image312.png"><img alt="image222" src="../_images/image312.png" style="width: 1.70000in; height: 1.80000in;" /></a></p>
 <p>Enter the following:</p>
-<p><a class="reference internal" href="../_images/image423.png"><img alt="image223" src="../_images/image423.png" style="width: 3.40625in; height: 1.58175in;" /></a></p>
+<p><a class="reference internal" href="../_images/image411.png"><img alt="image223" src="../_images/image411.png" style="width: 3.40625in; height: 1.58175in;" /></a></p>
 <p>Click “Done” and JMP should return this output:</p>
-<p><a class="reference internal" href="../_images/image519.png"><img alt="image224" src="../_images/image519.png" style="width: 2.85417in; height: 1.16409in;" /></a></p>
+<p><a class="reference internal" href="../_images/image510.png"><img alt="image224" src="../_images/image510.png" style="width: 2.85417in; height: 1.16409in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="JMP_exact_pvalue_1">
-            Q-270: What is the p-value in the picture shown above?
+            Q-64: What is the p-value in the picture shown above?
             <li data-component="answer"  id="JMP_exact_pvalue_1_opt_a">(A) 0.8750</li><li data-component="feedback" id="JMP_exact_pvalue_1_opt_a">Look in the bottom right part of the picture.</li>
             
             <li data-component="answer"  id="JMP_exact_pvalue_1_opt_b">(B) 0.1250</li><li data-component="feedback" id="JMP_exact_pvalue_1_opt_b">Look in the bottom right part of the picture.</li>
@@ -933,7 +938,7 @@ drop-down arrow next to the variable name:</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="JMP_exact_pvalue_2">
-            Q-271: Is the statistic unusually large? Why?
+            Q-65: Is the statistic unusually large? Why?
             <li data-component="answer" data-correct id="JMP_exact_pvalue_2_opt_a">(A) Yes, since the p-value is less than 0.05 (5%).</li><li data-component="feedback" id="JMP_exact_pvalue_2_opt_a">Small p-values mean unsual values!</li>
             
             <li data-component="answer"  id="JMP_exact_pvalue_2_opt_b">(B) No, because the p-value is no large enough.</li><li data-component="feedback" id="JMP_exact_pvalue_2_opt_b">Small p-values mean unsual values!</li>
@@ -942,7 +947,7 @@ drop-down arrow next to the variable name:</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="JMP_exact_pvalues_3">
-            Q-272: What is the correct conclusion in this case?
+            Q-66: What is the correct conclusion in this case?
             <li data-component="answer" data-correct id="JMP_exact_pvalues_3_opt_a">(A) There is strong evidence supporting the claim that the infants prefer the helper toy.</li><li data-component="feedback" id="JMP_exact_pvalues_3_opt_a">Since it would be rare to get a statistic this large when there is no preference, we are confident that the infant DO prefer the helper toy.</li>
             
             <li data-component="answer"  id="JMP_exact_pvalues_3_opt_b">(B) There is not enough evidence to claim that the infants prefer the helper toy.</li><li data-component="feedback" id="JMP_exact_pvalues_3_opt_b">Since it would be rare to get a statistic this large when there is no preference, we are confident that the infant DO prefer the helper toy.</li>
@@ -1299,7 +1304,7 @@ population parameter of interest.</p>
 sample of adults in Minnesota, “Do you support or oppose legalizing
 marijuana for medical purposes in Minnesota?” Of the 800 adults
 surveyed, 408 (51%) answered that they would support this.</p>
-<p><a class="reference internal" href="../_images/image88.png"><img alt="image227" src="../_images/image88.png" style="width: 5.10161in; height: 2.51915in;" /></a></p>
+<p><a class="reference internal" href="../_images/image82.png"><img alt="image227" src="../_images/image82.png" style="width: 5.10161in; height: 2.51915in;" /></a></p>
 <p>Source: <a class="reference external" href="http://www.startribune.com/politics/statelocal/245910931.html">http://www.startribune.com/politics/statelocal/245910931.html</a></p>
 <div class="admonition-questions admonition">
 <p class="first admonition-title">Questions:</p>
@@ -1327,11 +1332,11 @@ Then, we can use Tinkerplots to get an idea of how much we expect this statistic
 to change from one random sample to the next because of natural sampling
 variation. The distribution of sample proportions obtained by repeated sampling
 is shown below.</p>
-<p><a class="reference internal" href="../_images/image1112.png"><img alt="image228" src="../_images/image1112.png" style="width: 6.50000in; height: 1.97986in;" /></a></p>
+<p><a class="reference internal" href="../_images/image114.png"><img alt="image228" src="../_images/image114.png" style="width: 6.50000in; height: 1.97986in;" /></a></p>
 <p>To get a 95% confidence interval for the parameter of interest, we find
 both the <em>lower endpoint</em> and the <em>upper endpoint</em> that separate the
 “middle” 95% of this distribution from the outer 5%.</p>
-<p><a class="reference internal" href="../_images/image1211.png"><img alt="image229" src="../_images/image1211.png" style="width: 6.50000in; height: 1.97222in;" /></a></p>
+<p><a class="reference internal" href="../_images/image123.png"><img alt="image229" src="../_images/image123.png" style="width: 6.50000in; height: 1.97222in;" /></a></p>
 <div class="admonition-questions admonition">
 <p class="first admonition-title">Questions:</p>
 <ol class="last arabic simple" start="5">
@@ -1350,7 +1355,7 @@ statistic, as shown below.</p>
 <p><a class="reference internal" href="../_images/statkey_edit_data.png"><img alt="image2250" src="../_images/statkey_edit_data.png" style="width: 3.68in; height: 1.95in;" /></a></p>
 <p>Then, we can use StatKey to get an idea of how much we expect this statistic to
 change from one random sample to another. Similar to the TinkerPlots simulation,
-The distribution of sample proportions obtained by repeated sampling is shown
+the distribution of sample proportions obtained by repeated sampling is shown
 below.</p>
 <p><a class="reference internal" href="../_images/statkey_proportion_interval.png"><img alt="image2251" src="../_images/statkey_proportion_interval.png" style="width: 9.62in; height: 6.27in;" /></a></p>
 <p>To get a 95% confidence interval for the parameter of interest, we find
@@ -1377,14 +1382,14 @@ Minnesotans that feel medical marijuana should be legalized is between
 <p>Note that we could also use JMP to find this confidence interval. JMP
 uses what is known as the <strong>score method</strong> instead of <strong>Wald’s
 method</strong>, which would be more appropriate in this case.</p>
-<p><a class="reference internal" href="../_images/image297.png"><img alt="image2215" src="../_images/image297.png" style="width: 2.55769in; height: 0.91199in;" /></a></p>
+<p><a class="reference internal" href="../_images/image293.png"><img alt="image2215" src="../_images/image293.png" style="width: 2.55769in; height: 0.91199in;" /></a></p>
 <p>Select <strong>Analyze &gt; Distribution</strong> and enter the following:</p>
-<p><a class="reference internal" href="../_images/image305.png"><img alt="image2216" src="../_images/image305.png" style="width: 3.89423in; height: 1.72481in;" /></a></p>
+<p><a class="reference internal" href="../_images/image302.png"><img alt="image2216" src="../_images/image302.png" style="width: 3.89423in; height: 1.72481in;" /></a></p>
 <p>Then, click the red drop-down arrow next to the variable name (in this
 case “Choice”) and select <strong>Confidence Interval &gt; .95.</strong></p>
-<p><a class="reference internal" href="../_images/image3110.png"><img alt="image2217" src="../_images/image3110.png" style="width: 2.83140in; height: 1.86993in;" /></a></p>
+<p><a class="reference internal" href="../_images/image313.png"><img alt="image2217" src="../_images/image313.png" style="width: 2.83140in; height: 1.86993in;" /></a></p>
 <p>JMP returns the following:</p>
-<p><a class="reference internal" href="../_images/image3210.png"><img alt="image2218" src="../_images/image3210.png" style="width: 3.14423in; height: 1.04204in;" /></a></p>
+<p><a class="reference internal" href="../_images/image323.png"><img alt="image2218" src="../_images/image323.png" style="width: 3.14423in; height: 1.04204in;" /></a></p>
 <p>Interpret this confidence interval.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -1404,6 +1409,12 @@ case “Choice”) and select <strong>Confidence Interval &gt; .95.</strong></p>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../chp1/chp1_iverson.html" ></a>
   
+  <li id="relations-next" class="navLink" title='Next Section - Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp6_iverson/paired_test_with_bootstrap.html" >Next Section - Comparing a Numerical Variable Across Two Groups</a>
 
 <script type="text/javascript">
 

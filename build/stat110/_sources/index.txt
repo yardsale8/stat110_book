@@ -36,7 +36,7 @@ SECTION 2: Table of Contents
    chp1/chp1_iverson.rst
    chp2_1/chp2_1_iverson.rst
    chp6_iverson/paired_test_with_bootstrap.rst
-..    chp6_1/chp6_iverson.rst
+..   chp6_2/chp6_2_iverson.rst
 ..   chp1/lab1.rst
 ..   chp1/lab2.rst
 ..   chp2_2/chp2_2.rst
