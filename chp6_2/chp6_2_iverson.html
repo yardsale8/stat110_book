@@ -351,7 +351,7 @@ red drop-down arrow to display the boxplots and mean diamonds.</p>
 <p><a href="#id11"><span class="problematic" id="id12">|image6123|</span></a></p>
 <ol class="last arabic simple" start="2">
 <li>We are interested in the true difference between these two population
-means, . Based on the data, what is your best guess for this
+means. Based on the data, what is your best guess for this
 difference, and what does it indicate about birth weights for smokers
 compared to nonsmokers?</li>
 <li>If you were to take another sample, is your “best guess” from the
@@ -390,9 +390,9 @@ more time has elapsed than do those not suffering from nicotine withdrawal?</p>
 <li>What is the response variable in this study?</li>
 <li>What is the predictor variable in this study?</li>
 <li>Explain why the null hypothesis would be
-<span class="math">\(H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0\)</span></li>
+<span class="math">H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0</span></li>
 </ol>
-<p>To use the boostrap distribution to run a hypothesis test, we need to generate
+<p>To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is
 centered at the hypothetical mean.</p>
 <p>In JMP, we can use the bootstrap to perform a test for the difference in means, by
@@ -404,30 +404,30 @@ following these steps.</p>
 </li>
 <li><p class="first">Open the <strong>Randomized Test</strong> add-in, click <strong>Use Other Data</strong>, and
 open the <strong>Nicotine_all.jmp</strong> data file.</p>
-<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image1.png"><img alt="image640" src="chp6_2/../chp6_iverson/img2/media/image1.png" style="width: 1.92492in; height: 0.53077in;" /></a> <a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image2.png"><img alt="image641" src="chp6_2/../chp6_iverson/img2/media/image2.png" style="width: 3.29992in; height: 2.20606in;" /></a></p>
+<p><a class="reference internal" href="../_images/image159.png"><img alt="image640" src="../_images/image159.png" style="width: 1.92492in; height: 0.53077in;" /></a> <a class="reference internal" href="../_images/image249.png"><img alt="image641" src="../_images/image249.png" style="width: 3.29992in; height: 2.20606in;" /></a></p>
 </li>
 <li><p class="first">Highlight the Y and X variables.</p>
-<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image3.png"><img alt="image642" src="chp6_2/../chp6_iverson/img2/media/image3.png" style="width: 2.29992in; height: 2.11039in;" /></a></p>
+<p><a class="reference internal" href="../_images/image338.png"><img alt="image642" src="../_images/image338.png" style="width: 2.29992in; height: 2.11039in;" /></a></p>
 </li>
 <li><p class="first">Generate the bootstrap distribution centered at 0. This is due to the
 fact that we are testing to see if there is a difference between the groups,
 and consequently the null hypothesis will represent &#8220;no difference.&#8221;</p>
-<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image4.png"><img alt="image643" src="chp6_2/../chp6_iverson/img2/media/image4.png" style="width: 3.59730in; height: 1.16945in;" /></a></p>
+<p><a class="reference internal" href="../_images/image430.png"><img alt="image643" src="../_images/image430.png" style="width: 3.59730in; height: 1.16945in;" /></a></p>
 </li>
 <li><p class="first">Note the direction of subtraction on the right hand side. We will
 need to make sure our alternate hypothesis’s direction matches this
 subtraction.</p>
-<p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image5.png"><img alt="image644" src="chp6_2/../chp6_iverson/img2/media/image5.png" style="width: 3.54992in; height: 1.13567in;" /></a></p>
+<p><a class="reference internal" href="../_images/image530.png"><img alt="image644" src="../_images/image530.png" style="width: 3.54992in; height: 1.13567in;" /></a></p>
 </li>
 <li><p class="first">At this point we can determine the null and alternative hypothesis,
-(including the correct order of substraction.) We do this by considering the
+(including the correct order of subtraction.) We do this by considering the
 research hypothesis in light of the order of subtraction.  In this case, the
-research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span class="math">\(\mu_{no}\)</span>, so
-<span class="math">\(H_{a}:\mu_{\text{no}} - \mu_{\text{with}} &lt; 0\)</span>.</p>
+research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span class="math">\mu_{no}</span>, so
+<span class="math">H_{a}:\mu_{\text{no}} - \mu_{\text{with}} < 0</span>.</p>
 </li>
 <li><p class="first">Pick and record the correct p-value for this test.</p>
 <blockquote>
-<div><p><a class="reference internal" href="chp6_2/../chp6_iverson/img2/media/image6.png"><img alt="image645" src="chp6_2/../chp6_iverson/img2/media/image6.png" style="width: 4.67492in; height: 4.44680in;" /></a></p>
+<div><p><a class="reference internal" href="../_images/image615.png"><img alt="image645" src="../_images/image615.png" style="width: 4.67492in; height: 4.44680in;" /></a></p>
 <p>p-value =</p>
 </div></blockquote>
 </li>
@@ -449,7 +449,7 @@ Instead, we can use what statisticians discovered long ago: as long as the
 samples are independent, the sampling distribution for the <em>difference in means</em>
 can be described as follows.</p>
 <ol class="arabic simple">
-<li>The sampling distribution is centered around <span class="math">\(\mu_1 - \mu_2\)</span>.</li>
+<li>The sampling distribution is centered around <span class="math">\mu_1 - \mu_2</span>.</li>
 <li>The standard deviation of our sampling distribution (i.e., standard
 error) is given as follows:</li>
 </ol>
@@ -489,8 +489,8 @@ mothers are classified as smokers?</p>
 <p><strong>Step 1:</strong> Convert the research question into H<sub>0</sub> and H<sub>a</sub>.</p>
 <p>H<sub>0</sub>:</p>
 <p>H<sub>a</sub>:</p>
-<p><strong>Step 2:</strong> Calculate the <em>test statsitic</em> from your data.</p>
-<p>To do this in JMP, click on the red drop-down arrow next to &#8220;Oneway Analysis...&#8221;
+<p><strong>Step 2:</strong> Calculate the <em>test statistic</em> from your data.</p>
+<p>To do this in JMP, click on the red drop-down arrow next to &#8220;One-way Analysis...&#8221;
 and select <strong>t-test</strong>.</p>
 <p><a href="#id17"><span class="problematic" id="id18">|image6124|</span></a></p>
 <p>JMP returns the following:</p>

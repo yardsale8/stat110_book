@@ -20,9 +20,9 @@ H\ :sub:`0`:
 
 H\ :sub:`a`:
 
-**Step 2:** Calculate the *test statsitic* from your data.
+**Step 2:** Calculate the *test statistic* from your data.
 
-To do this in JMP, click on the red drop-down arrow next to "Oneway Analysis..."
+To do this in JMP, click on the red drop-down arrow next to "One-way Analysis..."
 and select **t-test**.
 
 |image6124|
