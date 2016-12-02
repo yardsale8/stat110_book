@@ -33,7 +33,7 @@ following is an excerpt from the article:
 | which were mounted behind a one-way mirror so that the subject  |            | 
 | could see the bulbs only when they were illuminated by the      |            | 
 | examiner. The subject was presented several trials on each of   |            | 
-| which the red and then the blue light were turned on            |            | 
+| which the red and then the blue light was turned on            |            | 
 | consecutively for 2 seconds each. On each trial, a 1,000-Hz     |            |  
 | tone was randomly paired with the illumination of either the    |            | 
 | blue or red light bulb, and the subject was instructed to       |            | 

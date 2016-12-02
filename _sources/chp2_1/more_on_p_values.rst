@@ -32,7 +32,7 @@ would be detrimental in evaluating evidence.
     there are always a few folks who fiddle with significance
     levels--who will switch from two-tailed to one-tailed tests or from
     one significance test to another in an effort to get positive
-    results. However such gamesmanship is severely frowned upon.*
+    results. However, such gamesmanship is severely frowned upon.*
 
     .. admonition:: Source:  
     

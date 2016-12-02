@@ -233,11 +233,11 @@ Thus, a value is only unusually small if its lower p-value is smaller than 5%
 (when using the 5% rule).  The same is true for an upper p-value.  
 
 
-Example: Using a upper p-value to determine if 12 is unusually large.
+Example: Using an upper p-value to determine if 12 is unusually large.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This time, consider the question *Is 12 unusually large?*  In this case the 
-upper p-value is a little less that 1%.  Since less than 5% of the distribution 
+upper p-value is a little less than 1%.  Since less than 5% of the distribution 
 is above 12, we see that
 
     1. 12 is in the largest 1%, and
@@ -271,7 +271,7 @@ is above 12, we see that
     :feedback_a: If the lower p-value is smaller than 5%, the value is in the smallest 5% and thus unusually smallest.
     :feedback_b: Consider the fact that the value has only 2.3% of the distribution below it.  Is it in the smallest 5% of the distribution?
 
-    Suppose that a value has an lower p-value of 2.3%.  According to the 5% rule, is this value unusually small?
+    Suppose that a value has a lower p-value of 2.3%.  According to the 5% rule, is this value unusually small?
 
 .. mchoice:: mc_pvalues_4 
     :answer_a: Yes

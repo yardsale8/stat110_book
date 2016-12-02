@@ -172,7 +172,7 @@ confidence interval.
 
 .. mchoice:: mc_picking_correct_1
     :answer_a: JMP interval
-    :answer_b: Boostrap interval
+    :answer_b: Bootstrap interval
     :correct: a
     :feedback_a: Since the original data is normal, it is safe to use JMP.
     :feedback_b: Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.
@@ -181,7 +181,7 @@ confidence interval.
 
 .. mchoice:: mc_picking_correct_2
     :answer_a: JMP interval
-    :answer_b: Boostrap interval
+    :answer_b: Bootstrap interval
     :correct: a
     :feedback_a: Since the original data is normal, it is safe to use JMP.
     :feedback_b: Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.
@@ -191,7 +191,7 @@ confidence interval.
 
 .. mchoice:: mc_picking_correct_3
     :answer_a: JMP interval
-    :answer_b: Boostrap interval
+    :answer_b: Bootstrap interval
     :correct: b
     :feedback_a: Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.
     :feedback_b: Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.

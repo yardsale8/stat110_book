@@ -28,7 +28,7 @@ similar to the actual findings). The data can be found in the file
 3. Explain why the null hypothesis would be
    :math:`H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0`
 
-To use the boostrap distribution to run a hypothesis test, we need to generate
+To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is
 centered at the hypothetical mean.  
 
@@ -61,7 +61,7 @@ following these steps.
        |image644|
 
     f. At this point we can determine the null and alternative hypothesis,
-       (including the correct order of substraction.) We do this by considering the
+       (including the correct order of subtraction.) We do this by considering the
        research hypothesis in light of the order of subtraction.  In this case, the
        research hypothesis has :math"`\mu_{with}` bigger than :math:`\mu_{no}`, so
        :math:`H_{a}:\mu_{\text{no}} - \mu_{\text{with}} < 0`.
