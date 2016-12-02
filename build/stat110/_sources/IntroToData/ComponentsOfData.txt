@@ -168,7 +168,7 @@ individuals.
 
     Population
         All of the individuals of interest.  This is the group that we would
-        collect data on if time/money were no concern.  Typically it is
+        collect data on if time/money were no concern.  Typically, it is
         impossible to collect data on the entire population.
 
     Sample
@@ -336,7 +336,7 @@ There are three main sources of bias in discussed below.
         or interest in the topic are more likely to respond, which can lead to
         biased estimates.
     Response Bias
-       This form of bias occurs when the participants answers do not match the
+       This form of bias occurs when the participant's answers do not match the
        true feelings of the participants.  This can happen when, for example, a
        survey consists of *leading questions*.
 
@@ -438,7 +438,7 @@ conclusions that are justified for this type of study.  The following table
 gives some advice on what conclusions can be drawn based on
 
     1. Whether or not there was random sampling.
-    2. Whether of not it was an experiment with random assignment of treatments.
+    2. Whether or not it was an experiment with random assignment of treatments.
 
 .. figure:: img/evaluating_studies.png
 

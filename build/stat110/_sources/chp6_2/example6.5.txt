@@ -37,7 +37,7 @@ red drop-down arrow to display the boxplots and mean diamonds.
     |image6123|
 
     2. We are interested in the true difference between these two population
-       means, . Based on the data, what is your best guess for this
+       means. Based on the data, what is your best guess for this
        difference, and what does it indicate about birth weights for smokers
        compared to nonsmokers?
 
