@@ -26,10 +26,10 @@ SECTION 2: Table of Contents
 ::::::::::::::::::::::::::::
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    IntroToData/ComponentsOfData.rst
-   IntroToData/SummarizingData/SummarizingData.rst
    IntroToCI/IntroToCI.rst
    chp5/chp5_iverson.rst
    chp7/chp7_iverson.rst
