@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Methods for a Single Categorical Variable &mdash; Runestone Interactive Overview</title>
+    <title>6. Methods for a Single Categorical Variable &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -101,8 +101,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Comparing a Numerical Variable Across Two Groups" href="../chp6_iverson/paired_test_with_bootstrap.html" />
-    <link rel="prev" title="Introduction to Hypothesis Tests" href="../chp1/chp1_iverson.html" />
+    <link rel="next" title="7. Comparing a Numerical Variable Across Two Groups" href="../chp6_iverson/paired_test_with_bootstrap.html" />
+    <link rel="prev" title="5. Introduction to Hypothesis Tests" href="../chp1/chp1_iverson.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -262,38 +262,38 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Methods for a Single Categorical Variable</a><ul>
-<li><a class="reference internal" href="#formal-hypothesis-testing">Formal Hypothesis Testing</a></li>
-<li><a class="reference internal" href="#the-null-and-alternative-hypotheses">The Null and Alternative Hypotheses</a></li>
-<li><a class="reference internal" href="#what-constitutes-strong-evidence">What Constitutes Strong Evidence?</a></li>
-<li><a class="reference internal" href="#evaluating-evidence-using-p-values">Evaluating Evidence Using P-Values</a><ul>
-<li><a class="reference internal" href="#example-1-helper-vs-hinderer">Example 1 - Helper vs. Hinderer?</a></li>
-<li><a class="reference internal" href="#example-2-are-women-passed-over-for-managerial-training">Example 2 - Are Women Passed Over for Managerial Training?</a></li>
-<li><a class="reference internal" href="#example-3-font-preference">Example 3 - Font Preference?</a></li>
+<li><a class="reference internal" href="#">6. Methods for a Single Categorical Variable</a><ul>
+<li><a class="reference internal" href="#formal-hypothesis-testing">6.1. Formal Hypothesis Testing</a></li>
+<li><a class="reference internal" href="#the-null-and-alternative-hypotheses">6.2. The Null and Alternative Hypotheses</a></li>
+<li><a class="reference internal" href="#what-constitutes-strong-evidence">6.3. What Constitutes Strong Evidence?</a></li>
+<li><a class="reference internal" href="#evaluating-evidence-using-p-values">6.4. Evaluating Evidence Using P-Values</a><ul>
+<li><a class="reference internal" href="#example-1-helper-vs-hinderer">6.4.1. Example 1 - Helper vs. Hinderer?</a></li>
+<li><a class="reference internal" href="#example-2-are-women-passed-over-for-managerial-training">6.4.2. Example 2 - Are Women Passed Over for Managerial Training?</a></li>
+<li><a class="reference internal" href="#example-3-font-preference">6.4.3. Example 3 - Font Preference?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#using-the-binomial-distribution-to-find-exact-p-values">Using the Binomial Distribution to Find Exact p-Values</a><ul>
-<li><a class="reference internal" href="#example-gender-discrimination">Example: Gender Discrimination</a></li>
-<li><a class="reference internal" href="#example-font-preference">Example: Font Preference</a></li>
+<li><a class="reference internal" href="#using-the-binomial-distribution-to-find-exact-p-values">6.5. Using the Binomial Distribution to Find Exact p-Values</a><ul>
+<li><a class="reference internal" href="#example-gender-discrimination">6.5.1. Example: Gender Discrimination</a></li>
+<li><a class="reference internal" href="#example-font-preference">6.5.2. Example: Font Preference</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#using-jmp-to-find-p-values-for-the-binomial-exact-test">Using JMP to Find p-values for the Binomial Exact Test</a><ul>
-<li><a class="reference internal" href="#analyzing-a-distribution-with-raw-data">Analyzing a Distribution with Raw Data</a></li>
-<li><a class="reference internal" href="#an-alternative-method-of-setting-up-the-data-sheet">An Alternative Method of Setting up the Data Sheet</a></li>
+<li><a class="reference internal" href="#using-jmp-to-find-p-values-for-the-binomial-exact-test">6.6. Using JMP to Find p-values for the Binomial Exact Test</a><ul>
+<li><a class="reference internal" href="#analyzing-a-distribution-with-raw-data">6.6.1. Analyzing a Distribution with Raw Data</a></li>
+<li><a class="reference internal" href="#an-alternative-method-of-setting-up-the-data-sheet">6.6.2. An Alternative Method of Setting up the Data Sheet</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#more-on-using-p-values-to-make-decisions">More on Using p-Values to Make Decisions</a></li>
-<li><a class="reference internal" href="#examining-the-effect-of-sample-size">Examining the Effect of Sample Size</a></li>
-<li><a class="reference internal" href="#practical-significance-versus-statistical-significance">Practical Significance versus Statistical Significance</a><ul>
-<li><a class="reference internal" href="#example-2-4-dukes-vs-wal-mart-stores-inc">Example 2.4: Dukes vs. Wal-mart Stores, Inc.</a></li>
+<li><a class="reference internal" href="#more-on-using-p-values-to-make-decisions">6.7. More on Using p-Values to Make Decisions</a></li>
+<li><a class="reference internal" href="#examining-the-effect-of-sample-size">6.8. Examining the Effect of Sample Size</a></li>
+<li><a class="reference internal" href="#practical-significance-versus-statistical-significance">6.9. Practical Significance versus Statistical Significance</a><ul>
+<li><a class="reference internal" href="#example-2-4-dukes-vs-wal-mart-stores-inc">6.9.1. Example 2.4: Dukes vs. Wal-mart Stores, Inc.</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-interval-for-a-proportion">Confidence Interval for a Proportion</a><ul>
-<li><a class="reference internal" href="#example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana">Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana</a></li>
-<li><a class="reference internal" href="#confidence-intervals-with-statkey">Confidence Intervals with StatKey</a></li>
+<li><a class="reference internal" href="#confidence-interval-for-a-proportion">6.10. Confidence Interval for a Proportion</a><ul>
+<li><a class="reference internal" href="#example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana">6.10.1. Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana</a></li>
+<li><a class="reference internal" href="#confidence-intervals-with-statkey">6.10.2. Confidence Intervals with StatKey</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-intervals-in-jmp">Confidence Intervals in JMP</a></li>
+<li><a class="reference internal" href="#confidence-intervals-in-jmp">6.11. Confidence Intervals in JMP</a></li>
 </ul>
 </li>
 </ul>
@@ -303,13 +303,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Introduction to Hypothesis Tests" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - 5. Introduction to Hypothesis Tests" data-toggle="tooltip">
     <a href="../chp1/chp1_iverson.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - 7. Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
     <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -341,7 +341,7 @@
 <div class="container" id="main-content">
   
   <div class="section" id="methods-for-a-single-categorical-variable">
-<h1>Methods for a Single Categorical Variable<a class="headerlink" href="#methods-for-a-single-categorical-variable" title="Permalink to this headline">¶</a></h1>
+<h1>6. Methods for a Single Categorical Variable<a class="headerlink" href="#methods-for-a-single-categorical-variable" title="Permalink to this headline">¶</a></h1>
 <p>The general approach used in a statistical investigation is shown in the
 following diagram. Note that every investigation starts with a question
 that gets converted to a research hypothesis. Though we will rarely
@@ -370,7 +370,7 @@ though we’ll be adding lots of terminology and formalities along the
 way, we will use the same logical approach to investigating research
 questions that was introduced in Chapter 1.</p>
 <div class="section" id="formal-hypothesis-testing">
-<h2>Formal Hypothesis Testing<a class="headerlink" href="#formal-hypothesis-testing" title="Permalink to this headline">¶</a></h2>
+<h2>6.1. Formal Hypothesis Testing<a class="headerlink" href="#formal-hypothesis-testing" title="Permalink to this headline">¶</a></h2>
 <p>You are most likely already familiar with several methods for descriptive
 statistics (e.g., calculating percentages, constructing bar charts or pie
 charts, etc.). Inferential methods, however, may be new to you. Again,
@@ -400,7 +400,7 @@ null and alternative hypotheses are both statements about the parameter
 of interest in the study.</p>
 </div>
 <div class="section" id="the-null-and-alternative-hypotheses">
-<h2>The Null and Alternative Hypotheses<a class="headerlink" href="#the-null-and-alternative-hypotheses" title="Permalink to this headline">¶</a></h2>
+<h2>6.2. The Null and Alternative Hypotheses<a class="headerlink" href="#the-null-and-alternative-hypotheses" title="Permalink to this headline">¶</a></h2>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/29032992/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_70u4ovgr&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_ujixme8m" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div><div class="admonition-setting-up-the-null-and-alternative-hypothesis admonition">
@@ -428,12 +428,12 @@ population parameter of interest using formal notation:</p>
 <p><a class="reference internal" href="../_images/image242.png"><img alt="image24" src="../_images/image242.png" style="width: 5.33in; height: 2.50in;" /></a></p>
 </div>
 <div class="section" id="what-constitutes-strong-evidence">
-<h2>What Constitutes Strong Evidence?<a class="headerlink" href="#what-constitutes-strong-evidence" title="Permalink to this headline">¶</a></h2>
+<h2>6.3. What Constitutes Strong Evidence?<a class="headerlink" href="#what-constitutes-strong-evidence" title="Permalink to this headline">¶</a></h2>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_b7p3pl07&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_y5zaqdev" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div></div>
 <div class="section" id="evaluating-evidence-using-p-values">
-<h2>Evaluating Evidence Using P-Values<a class="headerlink" href="#evaluating-evidence-using-p-values" title="Permalink to this headline">¶</a></h2>
+<h2>6.4. Evaluating Evidence Using P-Values<a class="headerlink" href="#evaluating-evidence-using-p-values" title="Permalink to this headline">¶</a></h2>
 <p>In each of our three examples, we essentially <em>assumed the null
 hypothesis was true</em> when setting up our spinner for the Tinkerplots
 investigation. Then, we used the results simulated under this scenario
@@ -487,7 +487,7 @@ advocate using a more flexible rule similar to the following:</p>
 </ul>
 </div>
 <div class="section" id="example-1-helper-vs-hinderer">
-<h3>Example 1 - Helper vs. Hinderer?<a class="headerlink" href="#example-1-helper-vs-hinderer" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.1. Example 1 - Helper vs. Hinderer?<a class="headerlink" href="#example-1-helper-vs-hinderer" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image59.png"><img alt="image4" src="../_images/image59.png" style="width: 4.31132in; height: 0.61492in;" /></a>
 <a class="reference internal" href="../_images/image213.png"><img alt="image5" src="../_images/image213.png" style="width: 4.15625in; height: 1.78372in;" /></a></p>
 
@@ -516,7 +516,7 @@ advocate using a more flexible rule similar to the following:</p>
             </ul>
             </div>
 <div class="section" id="example-2-are-women-passed-over-for-managerial-training">
-<h3>Example 2 - Are Women Passed Over for Managerial Training?<a class="headerlink" href="#example-2-are-women-passed-over-for-managerial-training" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.2. Example 2 - Are Women Passed Over for Managerial Training?<a class="headerlink" href="#example-2-are-women-passed-over-for-managerial-training" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image61.png"><img alt="image6" src="../_images/image61.png" style="width: 4.48113in; height: 0.46295in;" /></a>
 <a class="reference internal" href="../_images/image310.png"><img alt="image7" src="../_images/image310.png" style="width: 4.25000in; height: 1.55743in;" /></a></p>
 
@@ -545,7 +545,7 @@ advocate using a more flexible rule similar to the following:</p>
             </ul>
             </div>
 <div class="section" id="example-3-font-preference">
-<h3>Example 3 - Font Preference?<a class="headerlink" href="#example-3-font-preference" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.3. Example 3 - Font Preference?<a class="headerlink" href="#example-3-font-preference" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image72.png"><img alt="image8" src="../_images/image72.png" style="width: 4.45283in; height: 0.43006in;" /></a>
 <a class="reference internal" href="../_images/image410.png"><img alt="image9" src="../_images/image410.png" style="width: 4.42453in; height: 1.32594in;" /></a></p>
 
@@ -571,7 +571,7 @@ advocate using a more flexible rule similar to the following:</p>
             </div>
 </div>
 <div class="section" id="using-the-binomial-distribution-to-find-exact-p-values">
-<h2>Using the Binomial Distribution to Find Exact p-Values<a class="headerlink" href="#using-the-binomial-distribution-to-find-exact-p-values" title="Permalink to this headline">¶</a></h2>
+<h2>6.5. Using the Binomial Distribution to Find Exact p-Values<a class="headerlink" href="#using-the-binomial-distribution-to-find-exact-p-values" title="Permalink to this headline">¶</a></h2>
 <p>There is one caveat regarding our current approach to obtaining a
 p-value. Certainly, different simulations will produce slightly
 different simulated distributions. The general pattern will be the same,
@@ -634,7 +634,7 @@ Hinderer study.</p>
 </li>
 </ul>
 <div class="section" id="example-gender-discrimination">
-<h3>Example: Gender Discrimination<a class="headerlink" href="#example-gender-discrimination" title="Permalink to this headline">¶</a></h3>
+<h3>6.5.1. Example: Gender Discrimination<a class="headerlink" href="#example-gender-discrimination" title="Permalink to this headline">¶</a></h3>
 <p>Recall that we already estimated the probability of observing 9 or fewer
 women selected out of 20 if there was no discrimination (i.e., we
 estimated the p-value with a simulation study).</p>
@@ -689,7 +689,7 @@ selecting employees for management training.</td>
 <p><strong>Conclusion:</strong> We do not have enough evidence that the company is discriminating against females when selecting employees for management training.</p>
 </div>
 <div class="section" id="example-font-preference">
-<h3>Example: Font Preference<a class="headerlink" href="#example-font-preference" title="Permalink to this headline">¶</a></h3>
+<h3>6.5.2. Example: Font Preference<a class="headerlink" href="#example-font-preference" title="Permalink to this headline">¶</a></h3>
 <p>Finally, we will use the binomial distribution to find the exact p-value
 for the Font Preference Study. Recall that we have already estimated
 this p-value using a simulation study:</p>
@@ -886,11 +886,11 @@ over the other (more chose the Signet font).</td>
 </div>
 </div>
 <div class="section" id="using-jmp-to-find-p-values-for-the-binomial-exact-test">
-<h2>Using JMP to Find p-values for the Binomial Exact Test<a class="headerlink" href="#using-jmp-to-find-p-values-for-the-binomial-exact-test" title="Permalink to this headline">¶</a></h2>
+<h2>6.6. Using JMP to Find p-values for the Binomial Exact Test<a class="headerlink" href="#using-jmp-to-find-p-values-for-the-binomial-exact-test" title="Permalink to this headline">¶</a></h2>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_wopi2m0g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_1jye2j7d" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div><div class="section" id="analyzing-a-distribution-with-raw-data">
-<h3>Analyzing a Distribution with Raw Data<a class="headerlink" href="#analyzing-a-distribution-with-raw-data" title="Permalink to this headline">¶</a></h3>
+<h3>6.6.1. Analyzing a Distribution with Raw Data<a class="headerlink" href="#analyzing-a-distribution-with-raw-data" title="Permalink to this headline">¶</a></h3>
 <p>Earlier, we used Excel to calculate binomial probabilities and to find
 the p-value associated with the binomial exact test. This test is also
 easily implemented in JMP when given the raw data. For example, the
@@ -909,7 +909,7 @@ drop-down arrow next to the variable name:</p>
 <p><a class="reference internal" href="../_images/image510.png"><img alt="image224" src="../_images/image510.png" style="width: 2.85417in; height: 1.16409in;" /></a></p>
 </div>
 <div class="section" id="an-alternative-method-of-setting-up-the-data-sheet">
-<h3>An Alternative Method of Setting up the Data Sheet<a class="headerlink" href="#an-alternative-method-of-setting-up-the-data-sheet" title="Permalink to this headline">¶</a></h3>
+<h3>6.6.2. An Alternative Method of Setting up the Data Sheet<a class="headerlink" href="#an-alternative-method-of-setting-up-the-data-sheet" title="Permalink to this headline">¶</a></h3>
 <p>You can also set up the data as shown below:</p>
 <p><a class="reference internal" href="../_images/image62.png"><img alt="image225" src="../_images/image62.png" style="width: 2.30208in; height: 0.67181in;" /></a></p>
 <p>If you provide the summarized data to JMP as shown above, then enter
@@ -957,7 +957,7 @@ drop-down arrow next to the variable name:</p>
             </div>
 </div>
 <div class="section" id="more-on-using-p-values-to-make-decisions">
-<h2>More on Using p-Values to Make Decisions<a class="headerlink" href="#more-on-using-p-values-to-make-decisions" title="Permalink to this headline">¶</a></h2>
+<h2>6.7. More on Using p-Values to Make Decisions<a class="headerlink" href="#more-on-using-p-values-to-make-decisions" title="Permalink to this headline">¶</a></h2>
 <p>As mentioned earlier, some researchers advocate using the following
 guidelines:</p>
 <div class="admonition-p-value-guidelines admonition">
@@ -1026,7 +1026,7 @@ investigation.</em></p>
 </div></blockquote>
 </div>
 <div class="section" id="examining-the-effect-of-sample-size">
-<h2>Examining the Effect of Sample Size<a class="headerlink" href="#examining-the-effect-of-sample-size" title="Permalink to this headline">¶</a></h2>
+<h2>6.8. Examining the Effect of Sample Size<a class="headerlink" href="#examining-the-effect-of-sample-size" title="Permalink to this headline">¶</a></h2>
 <p><strong>Example 2.3: Gender Discrimination, Revisited</strong></p>
 <p>Once again, consider the Gender discrimination example. Recall that of
 the 20 persons selected for management so far, only 9 (or 9/20 = 45%)
@@ -1224,7 +1224,7 @@ selection process discriminates against women.</li>
 </div>
 </div>
 <div class="section" id="practical-significance-versus-statistical-significance">
-<h2>Practical Significance versus Statistical Significance<a class="headerlink" href="#practical-significance-versus-statistical-significance" title="Permalink to this headline">¶</a></h2>
+<h2>6.9. Practical Significance versus Statistical Significance<a class="headerlink" href="#practical-significance-versus-statistical-significance" title="Permalink to this headline">¶</a></h2>
 <p>Consider the previous example. As discussed earlier, the result in Study #1 is
 not “statistically significant” because the observed outcome does not fall in
 the bottom 5% of simulated outcomes (i.e., the p-value is not below .05). On the
@@ -1246,7 +1246,7 @@ to “statistical significance.” A result is known as “practically significa
 the difference between the observed and expected result is large enough to be of
 value in the practical sense.</p>
 <div class="section" id="example-2-4-dukes-vs-wal-mart-stores-inc">
-<h3>Example 2.4: Dukes vs. Wal-mart Stores, Inc.<a class="headerlink" href="#example-2-4-dukes-vs-wal-mart-stores-inc" title="Permalink to this headline">¶</a></h3>
+<h3>6.9.1. Example 2.4: Dukes vs. Wal-mart Stores, Inc.<a class="headerlink" href="#example-2-4-dukes-vs-wal-mart-stores-inc" title="Permalink to this headline">¶</a></h3>
 <p>The lead plaintiff in this case, Betty Dukes, was a Wal-Mart employee.
 She and others alleged gender discrimination in promotion policies and
 practices in Wal-Mart stores.</p>
@@ -1289,7 +1289,7 @@ significance when making decisions? Explain.</p>
 </div>
 </div>
 <div class="section" id="confidence-interval-for-a-proportion">
-<h2>Confidence Interval for a Proportion<a class="headerlink" href="#confidence-interval-for-a-proportion" title="Permalink to this headline">¶</a></h2>
+<h2>6.10. Confidence Interval for a Proportion<a class="headerlink" href="#confidence-interval-for-a-proportion" title="Permalink to this headline">¶</a></h2>
 <p>When carrying out hypothesis tests, we are testing claims about
 population parameters. Sometimes, however, our goal is to <em>estimate</em> a
 parameter of interest. Statisticians typically do this with a
@@ -1299,7 +1299,7 @@ testing</em> and <em>confidence intervals</em> is as follows: the construction o
 confidence interval does NOT require any hypotheses concerning our
 population parameter of interest.</p>
 <div class="section" id="example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana">
-<h3>Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana<a class="headerlink" href="#example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana" title="Permalink to this headline">¶</a></h3>
+<h3>6.10.1. Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana<a class="headerlink" href="#example-2-5-star-tribune-poll-regarding-legalization-of-medical-marijuana" title="Permalink to this headline">¶</a></h3>
 <p>In February of 2014, a Star Tribune Minnesota poll asked a random
 sample of adults in Minnesota, “Do you support or oppose legalizing
 marijuana for medical purposes in Minnesota?” Of the 800 adults
@@ -1348,7 +1348,7 @@ that felt medical marijuana should be legalized.</li>
 </div>
 </div>
 <div class="section" id="confidence-intervals-with-statkey">
-<h3>Confidence Intervals with StatKey<a class="headerlink" href="#confidence-intervals-with-statkey" title="Permalink to this headline">¶</a></h3>
+<h3>6.10.2. Confidence Intervals with StatKey<a class="headerlink" href="#confidence-intervals-with-statkey" title="Permalink to this headline">¶</a></h3>
 <p>In <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_cat/bootstrap_1_cat.html">StatKey&#8217;s Confidence Interval for a Single Proportion</a> ,
 we need to enter the statistic by clicking <strong>Edit Data</strong> and entering the
 statistic, as shown below.</p>
@@ -1378,7 +1378,7 @@ Minnesotans that feel medical marijuana should be legalized is between
 </div>
 </div>
 <div class="section" id="confidence-intervals-in-jmp">
-<h2>Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h2>
+<h2>6.11. Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h2>
 <p>Note that we could also use JMP to find this confidence interval. JMP
 uses what is known as the <strong>score method</strong> instead of <strong>Wald’s
 method</strong>, which would be more appropriate in this case.</p>
@@ -1402,19 +1402,19 @@ case “Choice”) and select <strong>Confidence Interval &gt; .95.</strong></p>
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Introduction to Hypothesis Tests' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - 5. Introduction to Hypothesis Tests' data-toggle="tooltip">
     <a href="../chp1/chp1_iverson.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../chp1/chp1_iverson.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - 7. Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip" >
     <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp6_iverson/paired_test_with_bootstrap.html" >Next Section - Comparing a Numerical Variable Across Two Groups</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp6_iverson/paired_test_with_bootstrap.html" >Next Section - 7. Comparing a Numerical Variable Across Two Groups</a>
 
 <script type="text/javascript">
 

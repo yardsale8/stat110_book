@@ -2,9 +2,10 @@
    :format: html latex
 
 Summarizing Data
-================
+----------------
 
-In this chapter, we will present some basic methods for summarizing a
+
+Next, we will present some basic methods for summarizing a
 distribution, both numerically and graphically.
 
 Graphing Distributions - Dot Plots and Histograms
@@ -30,7 +31,7 @@ words using terms like *symmetric*, *skewed left*, *skewed right*, and
         the left of the mean/average is approximately a *mirror image* of the
         portion of the graph to the right side of the mean/average.
 
-|image0|
+|image-sum0|
 
 We will distinguish between symmetric graphs that are *bell-shaped* or *not
 bell-shaped*.
@@ -45,7 +46,7 @@ On the other hand, when a distribution is **not** symmetric, we focus on the
     Skewed Right
         A distribution is *skewed right* when it has a long right tail, that is
         its right tail is much longer than its left tail.
-|image1|
+|image-sum1|
 
 Finally, it is possible that we might have a graph with two peaks.
 
@@ -54,7 +55,7 @@ Finally, it is possible that we might have a graph with two peaks.
         A distribution is *bimodal* if it has two distinct peaks.  (The term
         bimodal literally means *two modes*, where a mode is a peak.)
 
-|image2|
+|image-sum2|
 
 .. mchoice:: mc_shape_1 
     :answer_a: Symmetric
@@ -188,7 +189,7 @@ means to be unusually large or unusually small in a statistical sense.
      we will see that adjusting this value gives us some control over a certain
      type of error. For now, we will stick to 5% and call this **the 5% rule**.
 
-|image3|
+|image-sum3|
 
 Now that we know what it means to be unusually large or small, we
 need a method of determining if a specific value of interest is unusually large.  
@@ -227,7 +228,7 @@ that are at or below 4, so the lower p-value of 4 rounds up to 0.06 or 6%. Since
 there is more than 5% of the distribution below 4, **4 is not in the smallest 5%
 of the distribution** and therefore is not unusually small.
 
-|image4|
+|image-sum4|
 
 Thus, a value is only unusually small if its lower p-value is smaller than 5%
 (when using the 5% rule).  The same is true for an upper p-value.  
@@ -243,7 +244,7 @@ is above 12, we see that
     1. 12 is in the largest 1%, and
     2. 12 is unusually large, according to the 5% rule.
 
-|image5|
+|image-sum5|
 
 .. mchoice:: mc_pvalues_1
     :answer_a: lower p-value.
@@ -306,7 +307,7 @@ value".  The answer was to use a measurement in the center of the distribution
 of like the mean and median.  Unfortunately, knowing the location of the center
 of the distribution is not enough information.
 
-|image6|
+|image-sum6|
 
 For example, the two graphs shown above have centers that are very similar, but
 one graph has data that is more concentrated than another.  This difference is
@@ -385,24 +386,24 @@ interpretations of each of these statistics.
 
     The interquartile range can be through of as ...
 
-.. |image0| image:: img/symmetric.png
+.. |image-sum0| image:: img/symmetric.png
    :width: 2.51873in
    :height: 3.30189in
-.. |image1| image:: img/skewed_left_right.png
+.. |image-sum1| image:: img/skewed_left_right.png
    :width: 2.51873in
    :height: 3.30189in
-.. |image2| image:: img/bimodal.png
+.. |image-sum2| image:: img/bimodal.png
    :width: 2.51876in
    :height: 1.30189in
-.. |image3| image:: img/unusual_values.png
+.. |image-sum3| image:: img/unusual_values.png
    :width: 5.51876in
    :height: 2.30189in
-.. |image4| image:: img/lower_pvalue.png
+.. |image-sum4| image:: img/lower_pvalue.png
    :width: 4.51876in
    :height: 4.30189in
-.. |image5| image:: img/upper_pvalue.png
+.. |image-sum5| image:: img/upper_pvalue.png
    :width: 3.51876in
    :height: 4.30189in
-.. |image6| image:: img/different_spreads.png
+.. |image-sum6| image:: img/different_spreads.png
    :width: 3.51876in
    :height: 4.30189in
