@@ -30,9 +30,9 @@ SECTION 2: Table of Contents
    :maxdepth: 2
 
    IntroToData/ComponentsOfData.rst
+   chp7/chp7_iverson.rst
    IntroToCI/IntroToCI.rst
    chp5/chp5_iverson.rst
-   chp7/chp7_iverson.rst
    chp1/chp1_iverson.rst
    chp2_1/chp2_1_iverson.rst
    chp6_iverson/paired_test_with_bootstrap.rst
