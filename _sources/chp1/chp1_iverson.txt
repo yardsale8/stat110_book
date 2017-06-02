@@ -13,6 +13,8 @@ In the first example, we investigate a claim about hearing loss, trying to
 determine if claimant is purposefully being dishonest.  This example is
 introduced below and will be explored in a number of in-class activities.
 
+.. include:: ../chp1/evaluating_studies_2.rst
+
 .. include:: ../chp1/intro_example1.1.rst
 
 .. include:: ../chp1/simulating_the_guessing_distribution.rst

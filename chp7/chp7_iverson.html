@@ -274,14 +274,11 @@
 <li><a class="reference internal" href="#the-least-squares-regression-line">2.5. The Least Squares Regression Line</a></li>
 <li><a class="reference internal" href="#introduction-to-simple-linear-regression">2.6. Introduction to Simple Linear Regression</a></li>
 <li><a class="reference internal" href="#fitting-a-regression-line-in-jmp">2.7. Fitting a Regression Line in JMP</a></li>
-<li><a class="reference internal" href="#interpreting-slope-and-the-y-intercept">2.8. Interpreting Slope and the <span class="math">y</span>-intercept</a></li>
+<li><a class="reference internal" href="#interpreting-slope-and-the-intercept">2.8. Interpreting Slope and the <span class="math">\(y\)</span>-intercept</a></li>
 <li><a class="reference internal" href="#another-example">2.9. Another Example</a><ul>
 <li><a class="reference internal" href="#example-7-2">2.9.1. Example 7.2</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#inference-for-regression">2.10. Inference for Regression</a></li>
-<li><a class="reference internal" href="#notation-for-regression">2.11. Notation for Regression</a></li>
-<li><a class="reference internal" href="#bootstrap-intervals-for-regression">2.12. Bootstrap Intervals for Regression</a></li>
 </ul>
 </li>
 </ul>
@@ -373,7 +370,7 @@ each individual.  Note that <em>bivariate</em> literally means &#8220;two variab
 <h3>2.2.1. Scatterplots and Displaying an Association<a class="headerlink" href="#scatterplots-and-displaying-an-association" title="Permalink to this headline">¶</a></h3>
 <p>Creating a scatterplot is always the first step in determining if two variables
 are associated.  A scatterplot is constructed by plotting a point at each of
-the <span class="math">(x,y)</span> pairs, where <span class="math">x</span> and <span class="math">y</span> are the values of the x
+the <span class="math">\((x,y)\)</span> pairs, where <span class="math">\(x\)</span> and <span class="math">\(y\)</span> are the values of the x
 and y variables for each individual, respectively.  Here is the scatterplot for
 the data from example 7.1, which was created in JMP.</p>
 <p><a class="reference internal" href="../_images/image2314.png"><img alt="image7021" src="../_images/image2314.png" style="width: 7.72in; height: 6.12in;" /></a></p>
@@ -404,7 +401,7 @@ fairly strong.</li>
 <p>To create a scatterplot in JMP, you need to</p>
 <ol class="last arabic simple">
 <li>Enter the data in a new data table (<strong>File &gt; New &gt; New Data Table</strong>),
-being careful to keep the <span class="math">(x,y)</span> pairs on the same row.</li>
+being careful to keep the <span class="math">\((x,y)\)</span> pairs on the same row.</li>
 <li>Go to <strong>Analyze &gt; Fit Y by X</strong> and drag-and-drop the x and y variables in
 the correct box.</li>
 <li>Click <strong>OK</strong> and the scatterplot will be displayed.</li>
@@ -480,7 +477,7 @@ sufficient?</p>
 <blockquote class="last">
 <div>
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_direction_1">
-            Q-115: Which of the following best describes the direction of the association
+            Q-123: Which of the following best describes the direction of the association
 shown above?
             <li data-component="answer" data-correct id="describe_direction_1_opt_a">(A) Positive</li><li data-component="feedback" id="describe_direction_1_opt_a"></li>
             
@@ -492,7 +489,7 @@ shown above?
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_strength_1">
-            Q-116: Which of the following best describes the strength of the association?
+            Q-124: Which of the following best describes the strength of the association?
             <li data-component="answer" data-correct id="describe_strength_1_opt_a">(A) Strong</li><li data-component="feedback" id="describe_strength_1_opt_a"></li>
             
             <li data-component="answer" data-correct id="describe_strength_1_opt_b">(B) Moderately strong</li><li data-component="feedback" id="describe_strength_1_opt_b">Although most points would be within about 0.05, or 5%, ot the line.  This is bordering on a strong prediction.</li>
@@ -503,7 +500,7 @@ shown above?
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="describe_form_1">
-            Q-117: Which of the following best describes the form of the association?
+            Q-125: Which of the following best describes the form of the association?
             <li data-component="answer" data-correct id="describe_form_1_opt_a">(A) Linear</li><li data-component="feedback" id="describe_form_1_opt_a"></li>
             
             <li data-component="answer"  id="describe_form_1_opt_b">(B) Non-linear</li><li data-component="feedback" id="describe_form_1_opt_b">There is no need to use a curve here, a line does just as well.</li>
@@ -634,29 +631,29 @@ JMP.</p>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_p0wa5yz0&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_xjrynykz" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div></div>
-<div class="section" id="interpreting-slope-and-the-y-intercept">
-<h2>2.8. Interpreting Slope and the <span class="math">y</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-y-intercept" title="Permalink to this headline">¶</a></h2>
-<p>To write out an interpretation for the slope and <span class="math">y</span>-intercept, we start
+<div class="section" id="interpreting-slope-and-the-intercept">
+<h2>2.8. Interpreting Slope and the <span class="math">\(y\)</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-intercept" title="Permalink to this headline">¶</a></h2>
+<p>To write out an interpretation for the slope and <span class="math">\(y\)</span>-intercept, we start
 with the standard interpretations that are taught in mathematics.  Recall that
-the slope is the amount of change in <span class="math">y</span> when adding one unit to
-<span class="math">x</span>.  Since the relationships in regression are rarely perfect, but
+the slope is the amount of change in <span class="math">\(y\)</span> when adding one unit to
+<span class="math">\(x\)</span>.  Since the relationships in regression are rarely perfect, but
 instead describe a general tendency, we change this interpretation as follows.</p>
 <div class="admonition-the-standard-interpretation-of-the-slope-of-a-regression-line admonition">
 <p class="first admonition-title">The standard interpretation of the slope of a regression line</p>
 <p class="last">The slope of the regression line is the <em>average</em> amount of change in
-<span class="math">y</span> when adding one unit to <span class="math">x</span>.</p>
+<span class="math">\(y\)</span> when adding one unit to <span class="math">\(x\)</span>.</p>
 </div>
 <p>It is, as always, important to add the context to our interpretations and the
 following figure shows a basic template for writing about the slope, along with
 an example.</p>
 <p><a class="reference internal" href="../_images/interpret_slope.png"><img alt="image7024" src="../_images/interpret_slope.png" style="width: 5.13in; height: 2.57in;" /></a></p>
-<p>The <span class="math">y</span>-intercept is the value of the <span class="math">y</span> variable when <span class="math">x</span> is
+<p>The <span class="math">\(y\)</span>-intercept is the value of the <span class="math">\(y\)</span> variable when <span class="math">\(x\)</span> is
 zero.  Adjusting to the inexact nature of regression, we get the following
-interpretation of the <span class="math">y</span>-intercept.</p>
+interpretation of the <span class="math">\(y\)</span>-intercept.</p>
 <div class="admonition-the-standard-interpretation-of-the-math-y-intercept-of-a-regression-line admonition">
-<p class="first admonition-title">The standard interpretation of the <span class="math">y</span>-intercept of a regression line</p>
-<p class="last">The <span class="math">y</span>-intercept of the regression line  is the <em>average</em> value of
-<span class="math">y</span> when the <span class="math">x</span> variable is zero.</p>
+<p class="first admonition-title">The standard interpretation of the <span class="math">\(y\)</span>-intercept of a regression line</p>
+<p class="last">The <span class="math">\(y\)</span>-intercept of the regression line  is the <em>average</em> value of
+<span class="math">\(y\)</span> when the <span class="math">\(x\)</span> variable is zero.</p>
 </div>
 <p>The following figure contains a template for adding context to our
 interpretation, along with an example of the application of the template.</p>
@@ -664,35 +661,35 @@ interpretation, along with an example of the application of the template.</p>
 <p>We need to be careful to only apply these interpretations when they are viable.
 In the case of the slope, it is important that the association is fairly linear.
 Non-linear associations will have a variable rate of change, and assigning a
-fixed amount of change in <span class="math">y</span> for a given value of <span class="math">x</span> would be
+fixed amount of change in <span class="math">\(y\)</span> for a given value of <span class="math">\(x\)</span> would be
 misleading.</p>
-<p>In terms of the <span class="math">y</span>-intercept, we need to assure that an <span class="math">x</span> value
-of zero is meaningful.  If <span class="math">x</span> represents <em>the profit of a business</em>, a
+<p>In terms of the <span class="math">\(y\)</span>-intercept, we need to assure that an <span class="math">\(x\)</span> value
+of zero is meaningful.  If <span class="math">\(x\)</span> represents <em>the profit of a business</em>, a
 value of zero is meaningful as it is definitely conceivable for a business to
-have a profit of zero. On the other hand, if the <span class="math">x</span> values represent the
-heights of people, then an <span class="math">x</span> value of zero is nonsensical: A height of
+have a profit of zero. On the other hand, if the <span class="math">\(x\)</span> values represent the
+heights of people, then an <span class="math">\(x\)</span> value of zero is nonsensical: A height of
 zero is inconceivable.</p>
 <p>Another consideration when applying these interpretations is the scope of the
 data.  We have no idea what is happening outside our data window and it would be
 a mistake to assume that the pattern that we see will continue past the largest
 and/or smallest data values.  For example, the slope might start to change if we
 push past our maximum y-value.  Similarly, if we do not have any data with
-<span class="math">x</span> values around zero, we should not interpret the value of the
+<span class="math">\(x\)</span> values around zero, we should not interpret the value of the
 intercept.</p>
 <p>To summarize, use the following advice before interpreting the slope or
 intercept.</p>
 <div class="admonition-interpreting-the-slope-of-the-regression-line-is-viable-when admonition">
 <p class="first admonition-title">Interpreting the slope of the regression line is viable when ...</p>
 <ol class="last arabic simple">
-<li>the <span class="math">x</span> value is between the minimum and maximum values of <span class="math">x</span></li>
+<li>the <span class="math">\(x\)</span> value is between the minimum and maximum values of <span class="math">\(x\)</span></li>
 <li>the association is fairly linear.</li>
 </ol>
 </div>
 <div class="admonition-interpreting-the-math-y-intercept-is-viable-when admonition">
-<p class="first admonition-title">Interpreting the <span class="math">y</span>-intercept is viable when ...</p>
+<p class="first admonition-title">Interpreting the <span class="math">\(y\)</span>-intercept is viable when ...</p>
 <ol class="last arabic simple">
-<li>there is data with <span class="math">x</span> values around zero.</li>
-<li>a <span class="math">x</span> value of zero is meaningful.</li>
+<li>there is data with <span class="math">\(x\)</span> values around zero.</li>
+<li>a <span class="math">\(x\)</span> value of zero is meaningful.</li>
 </ol>
 </div>
 </div>
@@ -777,7 +774,7 @@ Age? Explain.</li>
 answer the following questions.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_correlation_1">
-            Q-118: What is the correlation coefficient for these data?
+            Q-126: What is the correlation coefficient for these data?
             <li data-component="answer"  id="check_correlation_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_correlation_1_opt_a">Line up FEV and Age in the correlation table.</li>
             
             <li data-component="answer"  id="check_correlation_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_correlation_1_opt_b">Line up FEV and Age in the correlation table.</li>
@@ -790,7 +787,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="interpret_correlation_1">
-            Q-119: Based on the correlation coefficient, how would you rate the strength of this linear association?
+            Q-127: Based on the correlation coefficient, how would you rate the strength of this linear association?
             <li data-component="answer" data-correct id="interpret_correlation_1_opt_a">(A) Strong</li><li data-component="feedback" id="interpret_correlation_1_opt_a"></li>
             
             <li data-component="answer"  id="interpret_correlation_1_opt_b">(B) Moderately Strong</li><li data-component="feedback" id="interpret_correlation_1_opt_b">A correlation coefficient over about 0.7 indicates a strong relationship</li>
@@ -801,7 +798,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="interpret_correlation_2">
-            Q-120: Based on the correlation coefficient, determine the direction of the association.
+            Q-128: Based on the correlation coefficient, determine the direction of the association.
             <li data-component="answer" data-correct id="interpret_correlation_2_opt_a">(A) Positive</li><li data-component="feedback" id="interpret_correlation_2_opt_a">A positive correlation coefficient indicates a positive direction.</li>
             
             <li data-component="answer"  id="interpret_correlation_2_opt_b">(B) Negative</li><li data-component="feedback" id="interpret_correlation_2_opt_b">A negative direction is indicated by a negative correlation coefficient.</li>
@@ -812,7 +809,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_slope_1">
-            Q-121: What is the slope of the least-squares regression line?
+            Q-129: What is the slope of the least-squares regression line?
             <li data-component="answer"  id="check_slope_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_slope_1_opt_a">The slope is the coefficient that is multiplied by Age</li>
             
             <li data-component="answer" data-correct id="check_slope_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_slope_1_opt_b"></li>
@@ -825,7 +822,7 @@ answer the following questions.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="check_intercept_1">
-            Q-122: What is the y-intercept of the least-squares regression line?
+            Q-130: What is the y-intercept of the least-squares regression line?
             <li data-component="answer" data-correct id="check_intercept_1_opt_a">(A) 0.432</li><li data-component="feedback" id="check_intercept_1_opt_a"></li>
             
             <li data-component="answer"  id="check_intercept_1_opt_b">(B) 0.222</li><li data-component="feedback" id="check_intercept_1_opt_b">The y-intercept is the constant in the equation.</li>
@@ -838,54 +835,6 @@ answer the following questions.</p>
             </ul>
             </div>
 </div>
-</div>
-<div class="section" id="inference-for-regression">
-<h2>2.10. Inference for Regression<a class="headerlink" href="#inference-for-regression" title="Permalink to this headline">¶</a></h2>
-<p>Recall that statistical inference is the process of making guesses about
-population parameters using a random sample.  We can apply the same ideas we
-used earlier in the book to linear regression, estimating the values of the
-population correlation coefficient and/or the slope of the population regression
-line.  In this section, we will apply the bootstrap process to regression to
-obtain confidence intervals for these quantities.</p>
-</div>
-<div class="section" id="notation-for-regression">
-<h2>2.11. Notation for Regression<a class="headerlink" href="#notation-for-regression" title="Permalink to this headline">¶</a></h2>
-<p>The following figure gives the common symbols used for the sample and population
-correlation coefficients and slopes.  Once again, greek letters are used for the
-parameters, in this case <span class="math">\rho</span> and <span class="math">\beta</span> for the correlation
-coefficient and slope, respectively.  The sample correlation coefficient and
-sample slope are respectively denoted by <span class="math">r</span> and <span class="math">b</span>.</p>
-<p><a class="reference internal" href="../_images/image2413.png"><img alt="image7022" src="../_images/image2413.png" style="width: 5.72in; height: 2.07in;" /></a></p>
-</div>
-<div class="section" id="bootstrap-intervals-for-regression">
-<h2>2.12. Bootstrap Intervals for Regression<a class="headerlink" href="#bootstrap-intervals-for-regression" title="Permalink to this headline">¶</a></h2>
-<p>Our goal is to use the sample values of <span class="math">r</span> and <span class="math">b</span> to estimate
-<span class="math">\rho</span> and <span class="math">\beta</span>.  We can again estimate the sampling variability
-in these statistics by using the bootstrap.  Let&#8217;s review the process of
-generating the bootstrap distribution of a statistic.</p>
-<div class="admonition-generating-the-bootstrap-distribution-of-a-statistic admonition">
-<p class="first admonition-title">Generating the bootstrap distribution of a statistic</p>
-<ol class="last arabic">
-<li><p class="first">Generate many samples of the sample (at least 1000) by taking samples
-that</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li>use the same size as the original sample</li>
-<li>use sampling with replacement</li>
-</ol>
-</div></blockquote>
-</li>
-<li><p class="first">For each sample, compute the value of the bootstrap statistic.</p>
-</li>
-<li><p class="first">Collect all of these bootstrap statistics into the bootstrap
-distribution. We can construct C% confidence intervals using
-the middle C% of this distribution.</p>
-</li>
-</ol>
-</div>
-<p>Once again, we will use the StatKey Website, this time in the section titled
-<a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_2_quant/bootstrap_2_quant.html">Confidence Interval for a Slope, Correlation</a></p>
-<p><a class="reference internal" href="../_images/bootstrap_correlation.gif"><img alt="image7023" src="../_images/bootstrap_correlation.gif" style="width: 9.58in; height: 4.85in;" /></a></p>
 </div>
 </div>
 

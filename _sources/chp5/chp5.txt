@@ -9,6 +9,8 @@ the *mean*, or average. In this chapter, we will consider inferential
 methods (hypothesis tests and confidence intervals) for the mean of a
 single numerical variable. Consider the following example.
 
+.. include:: evaluating_studies_1.rst
+
 .. include:: example5.1.rst
 
 .. include:: ./distribution_of_the_mean.rst
