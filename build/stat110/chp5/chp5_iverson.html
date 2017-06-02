@@ -263,28 +263,33 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">4. Confidence Intervals Based on the Normal Distribution</a><ul>
-<li><a class="reference internal" href="#example-5-1">4.1. Example 5.1:</a><ul>
-<li><a class="reference internal" href="#example-5-2-another-simulation-study">4.1.1. <strong>Example 5.2:</strong> Another “simulation study”….</a></li>
-<li><a class="reference internal" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional">4.1.2. Simulating the Bootstrap Distribution in Tinkerplots (Optional)</a></li>
-<li><a class="reference internal" href="#sample-1">4.1.3. Sample # 1:</a></li>
-<li><a class="reference internal" href="#sample-2">4.1.4. Sample #2:</a></li>
-<li><a class="reference internal" href="#sample-3">4.1.5. Sample #3:</a></li>
+<li><a class="reference internal" href="#bootstrap-confidence-intervals">4.1. Bootstrap Confidence Intervals</a><ul>
+<li><a class="reference internal" href="#bootstrap-samples">4.1.1. Bootstrap Samples</a></li>
+<li><a class="reference internal" href="#constructing-bootstrap-confidence-intervals">4.1.2. Constructing Bootstrap Confidence Intervals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#the-central-limit-theorem">4.2. The Central Limit Theorem</a><ul>
-<li><a class="reference internal" href="#how-large-does-n-have-to-be">4.2.1. How large does n have to be?</a></li>
+<li><a class="reference internal" href="#example-5-1">4.2. Example 5.1:</a><ul>
+<li><a class="reference internal" href="#example-5-2-another-simulation-study">4.2.1. <strong>Example 5.2:</strong> Another “simulation study”….</a></li>
+<li><a class="reference internal" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional">4.2.2. Simulating the Bootstrap Distribution in Tinkerplots (Optional)</a></li>
+<li><a class="reference internal" href="#sample-1">4.2.3. Sample # 1:</a></li>
+<li><a class="reference internal" href="#sample-2">4.2.4. Sample #2:</a></li>
+<li><a class="reference internal" href="#sample-3">4.2.5. Sample #3:</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#assessing-the-normality-of-a-data-set">4.3. Assessing the Normality of a Data Set</a><ul>
-<li><a class="reference internal" href="#creating-a-normal-quantile-plot-in-jmp">4.3.1. Creating a Normal Quantile Plot in JMP</a></li>
+<li><a class="reference internal" href="#the-central-limit-theorem">4.3. The Central Limit Theorem</a><ul>
+<li><a class="reference internal" href="#how-large-does-n-have-to-be">4.3.1. How large does n have to be?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-interval-for-a-single-population-mean">4.4. Confidence Interval for a Single Population Mean</a><ul>
-<li><a class="reference internal" href="#confidence-intervals-for-the-mean-in-jmp">4.4.1. Confidence Intervals for the Mean in JMP</a></li>
+<li><a class="reference internal" href="#assessing-the-normality-of-a-data-set">4.4. Assessing the Normality of a Data Set</a><ul>
+<li><a class="reference internal" href="#creating-a-normal-quantile-plot-in-jmp">4.4.1. Creating a Normal Quantile Plot in JMP</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-intervals-for-the-population-standard-deviation">4.5. Confidence Intervals for the Population Standard Deviation</a></li>
-<li><a class="reference internal" href="#picking-the-correct-procedure">4.6. Picking the Correct Procedure</a></li>
+<li><a class="reference internal" href="#confidence-interval-for-a-single-population-mean">4.5. Confidence Interval for a Single Population Mean</a><ul>
+<li><a class="reference internal" href="#confidence-intervals-for-the-mean-in-jmp">4.5.1. Confidence Intervals for the Mean in JMP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#confidence-intervals-for-the-population-standard-deviation">4.6. Confidence Intervals for the Population Standard Deviation</a></li>
+<li><a class="reference internal" href="#picking-the-correct-procedure">4.7. Picking the Correct Procedure</a></li>
 </ul>
 </li>
 </ul>
@@ -346,8 +351,154 @@ worked about 95% of the time.</li>
 <p>In this section, we leverage these facts and introduce a theoretical
 approach to confidence intervals that will save us the work of running a
 simulation every time we want an interval.</p>
+<blockquote>
+<div><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script></div></blockquote>
+<div class="section" id="bootstrap-confidence-intervals">
+<h2>4.1. Bootstrap Confidence Intervals<a class="headerlink" href="#bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h2>
+<p>Our current method for finding a confidence interval involves the following
+steps:</p>
+<ol class="arabic simple">
+<li>Simulate the sampling distribution of the mean by taking many samples from
+the population.</li>
+<li>Compute the standard error, i.e. the standard deviation of the statistics
+in the simulated distribution.</li>
+<li>Add and subtract 2 times this value to get a 95% confidence interval.</li>
+</ol>
+<p>Unfortunately, there is a big problem with this approach.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p><strong>Problem with the Current Approach</strong></p>
+<p class="last">We need to know the whole population to produce the standard error.  This
+approach is very impractical, as taking a census is either very expensive
+and many times impossible.</p>
+</div>
+<p>Our solution will be to use a bootstrap sample, which is acquired by sampling the
+sample.</p>
+<div class="section" id="bootstrap-samples">
+<h3>4.1.1. Bootstrap Samples<a class="headerlink" href="#bootstrap-samples" title="Permalink to this headline">¶</a></h3>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_nesk0z7b&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_nturh0wf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+</div><p>Since we can&#8217;t be expected to have the entire population at our disposal, we
+will use the best tool at our disposal: the sample.  Instead of taking many
+samples from the population to simulate the sampling distribution, we will take
+many <em>bootstrap samples</em> from the sample, allowing us to simulate the
+<em>bootstrap distribution</em>.</p>
+<dl class="glossary docutils">
+<dt id="term-bootstrap-samples">Bootstrap Samples</dt>
+<dd><p class="first">A <strong>bootstrap sample</strong> is a sample of the sample that uses</p>
+<ol class="last arabic simple">
+<li>Sampling with replacement.</li>
+<li>The same sample size as the original sample.</li>
+</ol>
+</dd>
+<dt id="term-bootstrap-statistic">Bootstrap Statistic</dt>
+<dd>A <strong>bootstrap statistic</strong>  is a statistic taken from a bootstrap
+sample.</dd>
+<dt id="term-bootstrap-distribution">Bootstrap Distribution</dt>
+<dd>The <strong>bootstrap distribution</strong> is the distribution of many, many
+bootstrap statistics.</dd>
+<dt id="term-bootstrap-standard-error">Bootstrap Standard Error</dt>
+<dd>The <strong>bootstrap standard error</strong> is the standard deviation of bootstrap
+distribution, which can be used as an estimate of the actual standard
+error of a statistic.</dd>
+</dl>
+<p>Using sampling with replacement allows for some variability from one bootstrap
+sample to the next, as some values will be selected more than once and other
+values will be left out of the sample.  It turns out that the variability between
+bootstrap statistics is very similar to the variability between the actual
+statistics in the sampling distribution.</p>
+<p>Another way to understand bootstrap samples is to imagine that we are sampling
+from a population where we have <em>huge</em> stacks of copies of each item in the
+sample.  In effect we are using the best approximation for the population that
+we have available.</p>
+<p><a class="reference internal" href="chp5/img/pretend_population.png"><img alt="image3007" src="chp5/img/pretend_population.png" style="width: 6.92in; height: 2.90in;" /></a></p>
+<p>In the next image, we illustrate the process of constructing the bootstrap
+distribution using the <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html">StatKey&#8217;s Confidence Intervals for a Mean page</a>.
+The bootstrap distribution is constructed by repeating steps 1-3 many times.</p>
+<p><a class="reference internal" href="chp5/img/bootstrap_distribution.png"><img alt="image3008" src="chp5/img/bootstrap_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
+<p>Finally, we will compare and contrast the sampling distribution and the
+bootstrap distribution.  The two distributions tend to have the same shape and
+spread, but different centers.  In particular, the sampling distribution is
+centered at the population mean and the bootstrap distribution is centered at
+the original sample mean.</p>
+<p><a class="reference internal" href="chp5/img/bootstrap_vs_sampling_distribution.png"><img alt="image3009" src="chp5/img/bootstrap_vs_sampling_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_1">
+            Q-439: The bootstrap sample is ...
+            <li data-component="answer" data-correct id="mc_bootstrap_1_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_1_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_2">
+            Q-440: The bootstrap statistic is ...
+            <li data-component="answer"  id="mc_bootstrap_2_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_a"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_2_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_2_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_2_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_3">
+            Q-441: The bootstrap distribution is ...
+            <li data-component="answer"  id="mc_bootstrap_3_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_3_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_b"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_3_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_c"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_3_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_d"></li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_4">
+            Q-442: The bootstrap standard error is ...
+            <li data-component="answer"  id="mc_bootstrap_4_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_4_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_b"></li>
+            
+            <li data-component="answer"  id="mc_bootstrap_4_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_c"></li>
+            
+            <li data-component="answer" data-correct id="mc_bootstrap_4_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_d"></li>
+            
+
+            </ul>
+            </div>
+<div class="section" id="constructing-bootstrap-confidence-intervals">
+<h3>4.1.2. Constructing Bootstrap Confidence Intervals<a class="headerlink" href="#constructing-bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h3>
+<p>Now we have two choices for making a confidence interval using the bootstrap
+distribution.</p>
+<ol class="arabic simple">
+<li>Use the bootstrap standard error to construct a 95% confidence interval by
+adding and subtracting a margin of error of <span class="math">\(2SE\)</span>.</li>
+<li>Use the limits of the middle 95% of the bootstrap statistics as the
+boundaries for our 95% confidence interval.</li>
+</ol>
+<p>The advantage of the second approach is that we can quickly and easily change
+the level of confidence of the interval by changing the middle percentage.  For
+example, if we want a 99% confidence interval, we will highlight the middle 99%
+of the bootstrap statistics and use the lower and upper bounds of this
+collection for our confidence interval.</p>
+<p>On the other hand, if we wanted to construct a confidence interval using the
+bootstrap standard error for a confidence level that is different than 95%, we
+would need to figure out how many standard errors to use for the margin of
+error.  There is a theoretical solution to this problem, which we will highlight
+in the next section.</p>
+</div>
+</div>
 <div class="section" id="example-5-1">
-<h2>4.1. Example 5.1:<a class="headerlink" href="#example-5-1" title="Permalink to this headline">¶</a></h2>
+<h2>4.2. Example 5.1:<a class="headerlink" href="#example-5-1" title="Permalink to this headline">¶</a></h2>
 <p>A study conducted by researchers at Pennsylvania State
 University investigated whether time perception, a simple indication of
 a person’s ability to concentrate, is impaired during nicotine
@@ -363,7 +514,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
 <p><a class="reference internal" href="../_images/image127.png"><img alt="image500" src="../_images/image127.png" style="width: 4.73105in; height: 2.12936in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_1">
-            Q-93: What is the mean of the observed data?
+            Q-443: What is the mean of the observed data?
             <li data-component="answer" data-correct id="mc_example5.1_1_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_1_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_1_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_1_opt_b">That is the standard deviation of the data.</li>
@@ -374,7 +525,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5.1_2">
-            Q-94: What is the standard error of the mean?
+            Q-444: What is the standard error of the mean?
             <li data-component="answer"  id="mc_example5.1_2_opt_a">(A) 55.05</li><li data-component="feedback" id="mc_example5.1_2_opt_a">That is the mean of the data.</li>
             
             <li data-component="answer"  id="mc_example5.1_2_opt_b">(B) 9.33</li><li data-component="feedback" id="mc_example5.1_2_opt_b">That is the standard deviation of the data.</li>
@@ -385,7 +536,7 @@ found in the file <strong>Nicotine1.JMP</strong>.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_example5_1_3">
-            Q-95: If another sample of (n = 20) subjects were obtained, would these new
+            Q-445: If another sample of (n = 20) subjects were obtained, would these new
 subjects have a mean exactly the same as the mean from this
 sample? Why or why not?
             <li data-component="answer"  id="mc_example5_1_3_opt_a">(A) Yes</li><li data-component="feedback" id="mc_example5_1_3_opt_a">We would expect some variability from one sample to the next.</li>
@@ -395,7 +546,7 @@ sample? Why or why not?
 
             </ul>
             <div class="section" id="example-5-2-another-simulation-study">
-<h3>4.1.1. <strong>Example 5.2:</strong> Another “simulation study”….<a class="headerlink" href="#example-5-2-another-simulation-study" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.1. <strong>Example 5.2:</strong> Another “simulation study”….<a class="headerlink" href="#example-5-2-another-simulation-study" title="Permalink to this headline">¶</a></h3>
 <p>Suppose we set up a hypothetical population of smokers suffering from nicotine
 withdrawal, which was created using bootstrap samples from the original sample.
 This population has been purposefully created so that the mean perceived elapsed
@@ -414,7 +565,7 @@ but we use this example as a chance to introduce Tinkerplot&#8217;s functionalit
 </div>
 </div>
 <div class="section" id="simulating-the-bootstrap-distribution-in-tinkerplots-optional">
-<h3>4.1.2. Simulating the Bootstrap Distribution in Tinkerplots (Optional)<a class="headerlink" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.2. Simulating the Bootstrap Distribution in Tinkerplots (Optional)<a class="headerlink" href="#simulating-the-bootstrap-distribution-in-tinkerplots-optional" title="Permalink to this headline">¶</a></h3>
 <p>Each of the elements in the mixer represents the perceived elapsed time for a
 smoker suffering from nicotine withdrawal in the population (e.g., the
 highlighted subject thought that 50 seconds had passed during a 45-second
@@ -426,7 +577,7 @@ then create a plot of their perceived elapsed times. Note that the mean
 of these 20 subjects is shown on this plot.</p>
 </div>
 <div class="section" id="sample-1">
-<h3>4.1.3. Sample # 1:<a class="headerlink" href="#sample-1" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.3. Sample # 1:<a class="headerlink" href="#sample-1" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image420.png"><img alt="image503" src="../_images/image420.png" style="width: 5.21875in; height: 1.28125in;" /></a></p>
 <div class="admonition-questions admonition">
 <p class="first admonition-title">Questions:</p>
@@ -446,11 +597,11 @@ over and over again so that we get an idea of how much the sample mean
 samples of 20 subjects and their sample means are shown below:</p>
 </div>
 <div class="section" id="sample-2">
-<h3>4.1.4. Sample #2:<a class="headerlink" href="#sample-2" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.4. Sample #2:<a class="headerlink" href="#sample-2" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image519.png"><img alt="image504" src="../_images/image519.png" style="width: 4.79452in; height: 1.28425in;" /></a></p>
 </div>
 <div class="section" id="sample-3">
-<h3>4.1.5. Sample #3:<a class="headerlink" href="#sample-3" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.5. Sample #3:<a class="headerlink" href="#sample-3" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../_images/image612.png"><img alt="image505" src="../_images/image612.png" style="width: 4.84247in; height: 1.14563in;" /></a></p>
 <p>We can start to collect these sample means in a new plot to create the
 distribution of sample means:</p>
@@ -470,7 +621,7 @@ to occur by chance if the true mean is 45 seconds.</p>
 </div>
 </div>
 <div class="section" id="the-central-limit-theorem">
-<h2>4.2. The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
+<h2>4.3. The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
 <p>Note that a statistician would not necessarily carry out a simulation study such
 as this to answer a research question. Instead, one could use “short-cuts”
 known as a t-test or confidence interval to investigate a research question
@@ -480,21 +631,21 @@ known as the <em>central limit theorem</em>, which states the following:</p>
 <p class="first admonition-title">The Central Limit Theorem for the Mean</p>
 <p class="last">Consider a random sample of n observations from ANY population with mean µ and
 standard deviation σ. The distribution of sample means will have a <em>mean</em> of
-<span class="math">\mu</span> and a <em>standard deviation</em> of <span class="math">\sigma/\sqrt{n}</span>. When
-<span class="math">n</span> (the number of subjects in the sample) is sufficiently large, this
+<span class="math">\(\mu\)</span> and a <em>standard deviation</em> of <span class="math">\(\sigma/\sqrt{n}\)</span>. When
+<span class="math">\(n\)</span> (the number of subjects in the sample) is sufficiently large, this
 distribution will be approximately <em>NORMAL</em>; moreover, this approximation gets
-better as the sample size (<span class="math">n</span>) increases.</p>
+better as the sample size (<span class="math">\(n\)</span>) increases.</p>
 </div>
 <p>We can see the Central Limit Theorem applied to the sample means
 calculated from our hypothetical population from Example 5.2 as follows:</p>
 <p><a class="reference internal" href="../_images/image128.png"><img alt="image5010" src="../_images/image128.png" style="width: 4.48663in; height: 1.70378in;" /></a></p>
 <ul class="simple">
 <li>We see that this normal distribution is centered at the true
-population <em>mean</em>, <span class="math">\mu = 45</span>.</li>
+population <em>mean</em>, <span class="math">\(\mu = 45\)</span>.</li>
 <li>The standard deviation of all observations in our hypothetical
-population is <span class="math">\sigma = 9.4</span> seconds. According to the central limit
+population is <span class="math">\(\sigma = 9.4\)</span> seconds. According to the central limit
 theorem, then, the <em>standard deviation</em> of the distribution of sample
-means is given by <span class="math">\sigma/\sqrt{n} = 9.4/\sqrt{20}=2.1</span></li>
+means is given by <span class="math">\(\sigma/\sqrt{n} = 9.4/\sqrt{20}=2.1\)</span></li>
 <li>We see that the distribution of sample means is approximately
 <em>normal</em>.</li>
 </ul>
@@ -508,7 +659,7 @@ assumes the null hypothesis is true.</p>
 subjects in a study) have to be in order for us to use the short-cut
 provided by the Central Limit Theorem?</p>
 <div class="section" id="how-large-does-n-have-to-be">
-<h3>4.2.1. How large does n have to be?<a class="headerlink" href="#how-large-does-n-have-to-be" title="Permalink to this headline">¶</a></h3>
+<h3>4.3.1. How large does n have to be?<a class="headerlink" href="#how-large-does-n-have-to-be" title="Permalink to this headline">¶</a></h3>
 <p>We have seen that the distribution of the sample mean will not always be
 bell-shaped and often retains some of the features of the original population,
 such as a skewed shape.  Next, we give some guidance on when it is reasonable to
@@ -548,7 +699,7 @@ population mean</li>
 </ol>
 <ol class="arabic simple" start="3">
 <li>We know that the variability in the distribution of sample means is
-given by <span class="math">\sigma/\sqrt{n}</span> (i.e., the variability decreases as the sample size gets
+given by <span class="math">\(\sigma/\sqrt{n}\)</span> (i.e., the variability decreases as the sample size gets
 larger, which we can see in the above examples).</li>
 </ol>
 <p>In the next section, we put all of the pieces together to create what is
@@ -557,7 +708,7 @@ a t-confidence interval.
 </div>
 </div>
 <div class="section" id="assessing-the-normality-of-a-data-set">
-<h2>4.3. Assessing the Normality of a Data Set<a class="headerlink" href="#assessing-the-normality-of-a-data-set" title="Permalink to this headline">¶</a></h2>
+<h2>4.4. Assessing the Normality of a Data Set<a class="headerlink" href="#assessing-the-normality-of-a-data-set" title="Permalink to this headline">¶</a></h2>
 <p>The application of the central limit theorem (CLT) for means highlights the need for
 determining if a given data set is &#8220;normal.&#8221;  In particular, we need to be
 careful about the application of the CLT to a small data set and <em>a
@@ -570,7 +721,7 @@ difficult to determine how close a given histogram is to the curve.</p>
 designed to provide a simple distinction between data that is fairly normal and
 data that is not.</p>
 <div class="section" id="creating-a-normal-quantile-plot-in-jmp">
-<h3>4.3.1. Creating a Normal Quantile Plot in JMP<a class="headerlink" href="#creating-a-normal-quantile-plot-in-jmp" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.1. Creating a Normal Quantile Plot in JMP<a class="headerlink" href="#creating-a-normal-quantile-plot-in-jmp" title="Permalink to this headline">¶</a></h3>
 <p>The following GIF illustrates the process for constructing a normal quantile
 plot in JMP.</p>
 <p><a class="reference internal" href="../_images/normal_quantile_plot.gif"><img alt="image516" src="../_images/normal_quantile_plot.gif" style="width: 7.23in; height: 4.41in;" /></a></p>
@@ -603,7 +754,7 @@ plot, only claiming <em>the data is clearly non-normal</em> when at least 5% of 
 points fall outside the bands.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_1">
-            Q-96: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
+            Q-446: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
             <li data-component="answer" data-correct id="assess_normal_1_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_a"></li>
             
             <li data-component="answer"  id="assess_normal_1_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_b"></li>
@@ -612,7 +763,7 @@ points fall outside the bands.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_2">
-            Q-97: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
+            Q-447: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
             <li data-component="answer"  id="assess_normal_2_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="assess_normal_2_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_b"></li>
@@ -622,7 +773,7 @@ points fall outside the bands.</p>
             </div>
 </div>
 <div class="section" id="confidence-interval-for-a-single-population-mean">
-<h2>4.4. Confidence Interval for a Single Population Mean<a class="headerlink" href="#confidence-interval-for-a-single-population-mean" title="Permalink to this headline">¶</a></h2>
+<h2>4.5. Confidence Interval for a Single Population Mean<a class="headerlink" href="#confidence-interval-for-a-single-population-mean" title="Permalink to this headline">¶</a></h2>
 <p>In Example 5.1, we found evidence that the mean perceived elapsed time
 for smokers suffering from nicotine withdrawal significantly differed
 from the actual 45 seconds of time that had elapsed. Our next question
@@ -684,10 +835,10 @@ the Formula editor. Enter the following:</p>
 as follows:</p>
 <p><a class="reference internal" href="../_images/image127.png"><img alt="image5036" src="../_images/image127.png" style="width: 5.21875in; height: 2.34886in;" /></a></p>
 <p>Use this information to find the endpoints of the confidence interval:</p>
-<p>Lower endpoint: <span class="math">\bar{x}-t_{quantile}\left(s/\sqrt{n}\right) = 55.05 - 2.093*\frac{9.327}{\sqrt{20}} = 50.68</span></p>
-<p>Upper endpoint: <span class="math">\bar{x}+t_{quantile}\left(s/\sqrt{n}\right) = 55.05 + 2.093*\frac{9.327}{\sqrt{20}} = 59.42</span></p>
+<p>Lower endpoint: <span class="math">\(\bar{x}-t_{quantile}\left(s/\sqrt{n}\right) = 55.05 - 2.093*\frac{9.327}{\sqrt{20}} = 50.68\)</span></p>
+<p>Upper endpoint: <span class="math">\(\bar{x}+t_{quantile}\left(s/\sqrt{n}\right) = 55.05 + 2.093*\frac{9.327}{\sqrt{20}} = 59.42\)</span></p>
 <div class="section" id="confidence-intervals-for-the-mean-in-jmp">
-<h3>4.4.1. Confidence Intervals for the Mean in JMP<a class="headerlink" href="#confidence-intervals-for-the-mean-in-jmp" title="Permalink to this headline">¶</a></h3>
+<h3>4.5.1. Confidence Intervals for the Mean in JMP<a class="headerlink" href="#confidence-intervals-for-the-mean-in-jmp" title="Permalink to this headline">¶</a></h3>
 <p>Note that JMP automatically provides the endpoints of the 95% confidence
 interval for this mean when you analyze the distribution of the variable
 of interest.</p>
@@ -707,7 +858,7 @@ confidence interval, instead?</li>
 </div>
 </div>
 <div class="section" id="confidence-intervals-for-the-population-standard-deviation">
-<h2>4.5. Confidence Intervals for the Population Standard Deviation<a class="headerlink" href="#confidence-intervals-for-the-population-standard-deviation" title="Permalink to this headline">¶</a></h2>
+<h2>4.6. Confidence Intervals for the Population Standard Deviation<a class="headerlink" href="#confidence-intervals-for-the-population-standard-deviation" title="Permalink to this headline">¶</a></h2>
 <p>If the original population is bell-shaped, then there is also a formula for the
 population standard deviation.  This is due to the fact that, for normal data,
 the distribution of the standard deviation squared (also known as the variance)
@@ -735,27 +886,27 @@ bootstrap interval instead.</p>
 </div>
 </div>
 <div class="section" id="picking-the-correct-procedure">
-<h2>4.6. Picking the Correct Procedure<a class="headerlink" href="#picking-the-correct-procedure" title="Permalink to this headline">¶</a></h2>
+<h2>4.7. Picking the Correct Procedure<a class="headerlink" href="#picking-the-correct-procedure" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have a choice between using the bootstrap and using the JMP
 intervals, we need some rules on which procedure is the right procedure for a
 given data set.  The advantage of JMP is the ease of use, but the JMP procedures
 require normality in some form (either normality of the original data or
-normality through a large sample in the case of estimating <span class="math">\mu</span>).</p>
+normality through a large sample in the case of estimating <span class="math">\(\mu\)</span>).</p>
 <div class="admonition-using-jmp-is-viable-when admonition">
 <p class="first admonition-title">Using JMP is viable when</p>
 <ul class="last">
-<li><p class="first">Estimating <span class="math">\mu</span>:</p>
+<li><p class="first">Estimating <span class="math">\(\mu\)</span>:</p>
 <blockquote>
-<div><p>Using JMP to construct a confidence interval for <span class="math">\mu</span> is viable when</p>
+<div><p>Using JMP to construct a confidence interval for <span class="math">\(\mu\)</span> is viable when</p>
 <ol class="arabic simple">
 <li>The original data is normal, or</li>
-<li>The sample size is large (<span class="math">n \ge 40</span>)</li>
+<li>The sample size is large (<span class="math">\(n \ge 40\)</span>)</li>
 </ol>
 </div></blockquote>
 </li>
-<li><p class="first">Estimating <span class="math">\sigma</span>:</p>
+<li><p class="first">Estimating <span class="math">\(\sigma\)</span>:</p>
 <blockquote>
-<div><p>Using JMP to construct a confidence interval for <span class="math">\sigma</span> is viable
+<div><p>Using JMP to construct a confidence interval for <span class="math">\(\sigma\)</span> is viable
 when the original data is normal.</p>
 </div></blockquote>
 </li>
@@ -770,7 +921,7 @@ is correct for a given data set.</p>
 normal.  Consequently, we will perform the following steps when constructing a
 confidence interval.</p>
 <div class="admonition-main-steps-in-constructing-a-confidence-interval-for-math-mu-or-math-sigma admonition">
-<p class="first admonition-title">Main Steps in Constructing a Confidence Interval for <span class="math">\mu</span> or <span class="math">\sigma</span></p>
+<p class="first admonition-title">Main Steps in Constructing a Confidence Interval for <span class="math">\(\mu\)</span> or <span class="math">\(\sigma\)</span></p>
 <ol class="last arabic simple">
 <li>Use JMP to construct a normal quantile plot and check the normality of the
 original data.</li>
@@ -781,7 +932,7 @@ original data.</li>
 </div>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_1">
-            Q-98: Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            Q-448: Suppose that we are estimating the population mean, the original data is normal, and the sample size is 10.  Which type of interval should we use?
             <li data-component="answer" data-correct id="mc_picking_correct_1_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_a">Since the original data is normal, it is safe to use JMP.</li>
             
             <li data-component="answer"  id="mc_picking_correct_1_opt_b">(B) Bootstrap interval</li><li data-component="feedback" id="mc_picking_correct_1_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
@@ -790,7 +941,7 @@ original data.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_2">
-            Q-99: Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
+            Q-449: Suppose that we are estimating the population standard deviation, the original data is normal, and the sample size is 10.  Which type of interval should we use?
             <li data-component="answer" data-correct id="mc_picking_correct_2_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_a">Since the original data is normal, it is safe to use JMP.</li>
             
             <li data-component="answer"  id="mc_picking_correct_2_opt_b">(B) Bootstrap interval</li><li data-component="feedback" id="mc_picking_correct_2_opt_b">Since the original data is normal, it is safe to use JMP.  We might as well pick the procedure that requires less work.</li>
@@ -799,7 +950,7 @@ original data.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_picking_correct_3">
-            Q-100: Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
+            Q-450: Suppose that we are estimating the population mean, the sample size is 10, but the original data is NOT normal.  Which type of interval should we use?
             <li data-component="answer"  id="mc_picking_correct_3_opt_a">(A) JMP interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_a">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>
             
             <li data-component="answer" data-correct id="mc_picking_correct_3_opt_b">(B) Bootstrap interval</li><li data-component="feedback" id="mc_picking_correct_3_opt_b">Since the original data is not normal and the sample size is small, it is safer to use the bootstrap intervals.</li>

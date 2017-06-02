@@ -9,6 +9,87 @@ In this chapter we will introduce some important ideas from statistics.  We
 will be focusing on quantitative data and in particular *estimation* of a 
 population parameter.
 
+Evaluating Studies
+------------------
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_1iqsp4zw&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_j21dy1gf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+    </div>
+
+In class, we conducted some simulations to identity the effect of the first of
+two forms of randomization, *randomized selection of individual units*.  Based
+on these activities, we identified two main effects of randomization.
+
+.. admonition:: The effect of random selection of individuals in sampling
+
+    Using a random sampling technique to select individuals resulted in
+    **unbiased estimates** of parameters.  In other words, our statistics did not
+    tend to over- or under-estimate the parameter, but balanced these errors
+    instead.  (This assumes no other source of bias.)
+    
+When evaluating a statistical study, the first thing that should be considered
+is the *appropriate scope of the conclusions*, that is to say the types of
+conclusions that are justified for this type of study.  The following table
+gives some advice on what conclusions can be drawn based on whether or not there was random sampling.
+
+.. figure:: img/evaluating_studies.png
+
+    Evaluating studies cheat sheet
+
+.. admonition:: A study on flossing and gum disease (experiment)
+
+    A recent study was conducted to determine the effectiveness of flossing on
+    gum disease.  A group of 500 volunteers were randomly split into two groups.
+    The first group was asked to floss once a day and the second group was asked
+    to floss after each meal.  Suppose that the group that flossed after every
+    meal was much less likely to have gum disease as the group that flossed
+    once per day.
+
+    .. mchoice:: mc_evaluate_1
+        :answer_a: Yes
+        :answer_b: No
+        :correct: b
+        :feedback_a: Note that the description mentioned that the participants were volunteers.
+        :feedback_b: The participants volunteered and were not randomly selected.
+
+        Did this study use random sampling?
+
+    .. mchoice:: mc_evaluate_2
+        :answer_a: Yes, the effects the flossing treatments would be the same for the general population.
+        :answer_b: No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.
+        :correct: b
+        :feedback_a: The participants in the study were volunteers and not a randomly selected sample.
+        :feedback_b: The lack of a randomly selected sample means that we are in danger of biased estimates.
+
+        Is it safe to generalize the results of this study?
+
+.. admonition:: Another study on flossing and gum disease (observational study)
+
+    In another study on flossing and gum disease, a random sample of 500 people
+    were surveyed on their flossing habits and whether or not they suffered from
+    gum disease.  Suppose that it was estimated that the people that flossed 
+    after every meal was much less likely to have gum disease as the group 
+    that flossed once per day.
+
+    .. mchoice:: mc_evaluate_5
+        :answer_a: Yes
+        :answer_b: No
+        :correct: a
+        :feedback_b: The text explicitly mentioned a random sample.
+
+        Did this study use random sampling?
+
+    .. mchoice:: mc_evaluate_6
+        :answer_a: Yes, the effects the flossing treatments will be the same for the general population.
+        :answer_b: No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.
+        :correct: a
+        :feedback_a: Because we are taking a random sample, our statistics should be unbiased and not over- or under-estimate the rates of gum disease in each group.
+        :feedback_b: What is the effect of random sampling on bias and a statistics ability to estimate a parameter?
+
+        Is it safe to generalize the results of this study?
+
 Overview of Statistical Inference
 ---------------------------------
 
@@ -32,7 +113,7 @@ inferences (guesses) about *population parameters*.
         The process of making educated guess about population parameters using
         information collected from a random sample, e.g. a sample statistic.
 
-|image0|
+|image3000|
 
 
 .. note::
@@ -64,7 +145,7 @@ sample mean (statistic) is :math:`\bar{x}`.  The following table gives the
 symbols for various parameters and statistics we will work within this
 course.
 
-|image1|
+|image3001|
 
 Sampling Distributions
 ----------------------
@@ -105,7 +186,7 @@ interested in the properties of this distribution, in particular the
 these qualities of the sampling distribution, we would need to sample many more
 statistics.
 
-|image2|
+|image3002|
 
 .. mchoice:: mc_samp_dist_definition
     :answer_a: The distribution of the sample.
@@ -124,7 +205,7 @@ distribution of the sample mean.  The image below illustrates the various
 components of the `StatKey's Sampling Distribution for a Mean page
 <http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html>`_.
 
-|image3|
+|image3003|
 
 .. admonition:: Check your Understanding
 
@@ -132,7 +213,7 @@ components of the `StatKey's Sampling Distribution for a Mean page
     StatKey sampling distribution page.  Use these designations to answer each
     of the following questions.
 
-    |image4|
+    |image3004|
 
 
     .. mchoice:: mc_parts_samp_dist_1
@@ -295,7 +376,7 @@ adding and subtracting 2 SE to the population mean leads to upper and lower
 bounds that are very close to the cut offs for the middle 95% of the
 distribution. 
 
-|image5|
+|image3005|
 
 In the above figure we see that the limits generated by adding and subtracting 2
 standard errors from the population mean (5.79 and 8.93) are very close to the cut-offs of
@@ -359,7 +440,7 @@ standard errors.  The population mean is located at the solid vertical line,
 recall that our goal in constructing such an interval is to capture the
 population mean.
 
-|image6|
+|image3006|
 
 The intervals that are green successfully captured the population mean, and the
 intervals that failed to capture the population mean are colored red.  Notice
@@ -392,227 +473,25 @@ that about 95% of the intervals successfully capture the population mean.
     :feedback_c: Statisticians define success "in the long run."
 
     To a statistician, what does it mean to be "95% confident"?
-Bootstrap Confidence Intervals
-------------------------------
-
-Our current method for finding a confidence interval involves the following
-steps:
-
-1. Simulate the sampling distribution of the mean by taking many samples from
-   the population.
-2. Compute the standard error, i.e. the standard deviation of the statistics 
-   in the simulated distribution. 
-3. Add and subtract 2 times this value to get a 95% confidence interval.
-
-Unfortunately, there is a big problem with this approach.
-
-.. caution:: 
-
-    **Problem with the Current Approach**
-
-    We need to know the whole population to produce the standard error.  This
-    approach is very impractical, as taking a census is either very expensive
-    and many times impossible.
-
-Our solution will be to use a bootstrap sample, which is acquired by sampling the
-sample.
-
-Bootstrap Samples
-+++++++++++++++++
-
-
-.. raw:: html
-
-    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
-    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_nesk0z7b&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_nturh0wf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-    </div>
-
-Since we can't be expected to have the entire population at our disposal, we
-will use the best tool at our disposal: the sample.  Instead of taking many
-samples from the population to simulate the sampling distribution, we will take
-many *bootstrap samples* from the sample, allowing us to simulate the
-*bootstrap distribution*.
-
-.. glossary::
-    Bootstrap Samples
-        A **bootstrap sample** is a sample of the sample that uses
-
-        1. Sampling with replacement.
-        2. The same sample size as the original sample.
-    Bootstrap Statistic
-        A **bootstrap statistic**  is a statistic taken from a bootstrap
-        sample.  
-    Bootstrap Distribution
-        The **bootstrap distribution** is the distribution of many, many
-        bootstrap statistics.
-    Bootstrap Standard Error
-        The **bootstrap standard error** is the standard deviation of bootstrap
-        distribution, which can be used as an estimate of the actual standard
-        error of a statistic.
-
-Using sampling with replacement allows for some variability from one bootstrap
-sample to the next, as some values will be selected more than once and other
-values will be left out of the sample.  It turns out that the variability between
-bootstrap statistics is very similar to the variability between the actual
-statistics in the sampling distribution.
-
-Another way to understand bootstrap samples is to imagine that we are sampling
-from a population where we have *huge* stacks of copies of each item in the
-sample.  In effect we are using the best approximation for the population that
-we have available.
-
-|image7|
-
-In the next image, we illustrate the process of constructing the bootstrap
-distribution using the `StatKey's Confidence Intervals for a Mean page
-<http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html>`_.
-The bootstrap distribution is constructed by repeating steps 1-3 many times.
-
-|image8|
-
-Finally, we will compare and contrast the sampling distribution and the 
-bootstrap distribution.  The two distributions tend to have the same shape and
-spread, but different centers.  In particular, the sampling distribution is
-centered at the population mean and the bootstrap distribution is centered at
-the original sample mean.
-
-|image9|
-
-.. mchoice:: mc_bootstrap_1
-    :answer_a: a sample of the sample.
-    :answer_b: a statistic from a sample of a sample.
-    :answer_c: a collection of statistics from a sample of a sample.
-    :answer_d: the standard deviation of statistics from a sample of a sample.
-    :correct: a
-    
-    The bootstrap sample is ...
-
-.. mchoice:: mc_bootstrap_2
-    :answer_a: a sample of the sample.
-    :answer_b: a statistic from a sample of a sample.
-    :answer_c: a collection of statistics from a sample of a sample.
-    :answer_d: the standard deviation of statistics from a sample of a sample.
-    :correct: b
-    
-    The bootstrap statistic is ...
-
-.. mchoice:: mc_bootstrap_3
-    :answer_a: a sample of the sample.
-    :answer_b: a statistic from a sample of a sample.
-    :answer_c: a collection of statistics from a sample of a sample.
-    :answer_d: the standard deviation of statistics from a sample of a sample.
-    :correct: c
-    
-    The bootstrap distribution is ...
-
-.. mchoice:: mc_bootstrap_4
-    :answer_a: a sample of the sample.
-    :answer_b: a statistic from a sample of a sample.
-    :answer_c: a collection of statistics from a sample of a sample.
-    :answer_d: the standard deviation of statistics from a sample of a sample.
-    :correct: d
-    
-    The bootstrap standard error is ...
-
-Constructing Bootstrap Confidence Intervals
-+++++++++++++++++++++++++++++++++++++++++++
-
-Now we have two choices for making a confidence interval using the bootstrap
-distribution.
-
-1. Use the bootstrap standard error to construct a 95% confidence interval by
-   adding and subtracting a margin of error of :math:`2SE`.  
-2. Use the limits of the middle 95% of the bootstrap statistics as the
-   boundaries for our 95% confidence interval.
-
-The advantage of the second approach is that we can quickly and easily change
-the level of confidence of the interval by changing the middle percentage.  For
-example, if we want a 99% confidence interval, we will highlight the middle 99%
-of the bootstrap statistics and use the lower and upper bounds of this
-collection for our confidence interval.
-
-On the other hand, if we wanted to construct a confidence interval using the
-bootstrap standard error for a confidence level that is different than 95%, we
-would need to figure out how many standard errors to use for the margin of
-error.  There is a theoretical solution to this problem, which we will highlight
-in the next section.
-
-
-
-
-.. TODO:: Add an example from the statkey website.
-
-Bootstrap Confidence Intervals for Other Parameters
----------------------------------------------------
-
-.. raw:: html
-
-    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
-    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_zqujc0rn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_zwrperag" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-    </div>
-
-We can use these bootstrap techniques to find confidence intervals for other
-confidence levels and other parameters
-
-.. admonition:: Other Confidence Levels
-
-    Change the middle percent from 95% to the desired confidence level, which
-    will result in intervals that work (roughly) for that percent of samples.
-    For example, setting the middle percent to 99% will result in intervals that
-    work for approximately 99% of samples.
-
-.. admonition:: Other Parameters
-
-    To construct confidence intervals for other parameters, use the bootstrap
-    technique, collecting the corresponding statistic from each bootstrap
-    sample.  For example, to construct a confidence interval for the population
-    standard deviation we would generate 1000 bootstrap samples and collect the
-    sample standard deviation from each.
-
-.. note::
-
-    The StatKey website allows you to construct confidence intervals for the
-    median and the standard deviation by changing *mean* to the desired
-    parameter in the drop down box, as shown below.
-
-Below we see a 95% confidence interval for the population median price of a used
-Mustang.  This was constructed by taking 1000 bootstrap samples from the
-original sample and collecting the median of each of these bootstrap samples.
-The 95% confidence interval consists of the cut-offs for the middle 95% of all
-bootstrap sample medians.
-
-|image10|
-
-.. |image0| image:: img/inference.png
+ 
+.. |image3000| image:: img/inference.png
    :width: 5.51873in
    :height: 4.30189in
-.. |image1| image:: img/notation.png
+.. |image3001| image:: img/notation.png
    :width: 8.22in
    :height: 3.22in
-.. |image2| image:: img/a_sampling_distribution.png
+.. |image3002| image:: img/a_sampling_distribution.png
    :width: 4.05in
    :height: 1.75in
-.. |image3| image:: img/statkey_sampling_distribution_mean.png
+.. |image3003| image:: img/statkey_sampling_distribution_mean.png
    :width: 4.05in
    :height: 3.05in
-.. |image4| image:: img/test_parts_of_sampling_distribution.png
+.. |image3004| image:: img/test_parts_of_sampling_distribution.png
    :width: 8.05in
    :height: 4.55in
-.. |image5| image:: img/middle95percent.png
+.. |image3005| image:: img/middle95percent.png
    :width: 8.05in
    :height: 4.55in
-.. |image6| image:: img/many_intervals.png
+.. |image3006| image:: img/many_intervals.png
    :width: 3.05in
    :height: 4.55in
-.. |image7| image:: img/pretend_population.png
-   :width: 6.92in
-   :height: 2.90in
-.. |image8| image:: img/bootstrap_distribution.png
-   :width: 6.65in
-   :height: 3.66in
-.. |image9| image:: img/bootstrap_vs_sampling_distribution.png
-   :width: 6.65in
-   :height: 3.66in
-.. |image10| image:: img/bootstrap_median.png
-   :width: 5.02in
-   :height: 3.47in

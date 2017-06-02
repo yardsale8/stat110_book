@@ -263,24 +263,19 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">3. Introduction to Confidence Intervals</a><ul>
-<li><a class="reference internal" href="#overview-of-statistical-inference">3.1. Overview of Statistical Inference</a><ul>
-<li><a class="reference internal" href="#notation-for-parameters-and-statistics">3.1.1. Notation for Parameters and Statistics</a></li>
+<li><a class="reference internal" href="#evaluating-studies">3.1. Evaluating Studies</a></li>
+<li><a class="reference internal" href="#overview-of-statistical-inference">3.2. Overview of Statistical Inference</a><ul>
+<li><a class="reference internal" href="#notation-for-parameters-and-statistics">3.2.1. Notation for Parameters and Statistics</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#sampling-distributions">3.2. Sampling Distributions</a></li>
-<li><a class="reference internal" href="#id1">3.3. Introduction to Confidence Intervals</a><ul>
-<li><a class="reference internal" href="#point-estimates-and-interval-estimates-for-parameters">3.3.1. Point Estimates and Interval Estimates for Parameters</a></li>
-<li><a class="reference internal" href="#approximating-the-standard-error-of-a-statistic">3.3.2. Approximating the Standard Error of a Statistic</a></li>
-<li><a class="reference internal" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">3.3.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics</a></li>
-<li><a class="reference internal" href="#being-95-confident">3.3.4. Being (95%) Confident</a></li>
+<li><a class="reference internal" href="#sampling-distributions">3.3. Sampling Distributions</a></li>
+<li><a class="reference internal" href="#id1">3.4. Introduction to Confidence Intervals</a><ul>
+<li><a class="reference internal" href="#point-estimates-and-interval-estimates-for-parameters">3.4.1. Point Estimates and Interval Estimates for Parameters</a></li>
+<li><a class="reference internal" href="#approximating-the-standard-error-of-a-statistic">3.4.2. Approximating the Standard Error of a Statistic</a></li>
+<li><a class="reference internal" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">3.4.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics</a></li>
+<li><a class="reference internal" href="#being-95-confident">3.4.4. Being (95%) Confident</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#bootstrap-confidence-intervals">3.4. Bootstrap Confidence Intervals</a><ul>
-<li><a class="reference internal" href="#bootstrap-samples">3.4.1. Bootstrap Samples</a></li>
-<li><a class="reference internal" href="#constructing-bootstrap-confidence-intervals">3.4.2. Constructing Bootstrap Confidence Intervals</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#bootstrap-confidence-intervals-for-other-parameters">3.5. Bootstrap Confidence Intervals for Other Parameters</a></li>
 </ul>
 </li>
 </ul>
@@ -334,8 +329,84 @@
 <p>In this chapter we will introduce some important ideas from statistics.  We
 will be focusing on quantitative data and in particular <em>estimation</em> of a
 population parameter.</p>
+<div class="section" id="evaluating-studies">
+<h2>3.1. Evaluating Studies<a class="headerlink" href="#evaluating-studies" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_1iqsp4zw&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_j21dy1gf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+</div><p>In class, we conducted some simulations to identity the effect of the first of
+two forms of randomization, <em>randomized selection of individual units</em>.  Based
+on these activities, we identified two main effects of randomization.</p>
+<div class="admonition-the-effect-of-random-selection-of-individuals-in-sampling admonition">
+<p class="first admonition-title">The effect of random selection of individuals in sampling</p>
+<p class="last">Using a random sampling technique to select individuals resulted in
+<strong>unbiased estimates</strong> of parameters.  In other words, our statistics did not
+tend to over- or under-estimate the parameter, but balanced these errors
+instead.  (This assumes no other source of bias.)</p>
+</div>
+<p>When evaluating a statistical study, the first thing that should be considered
+is the <em>appropriate scope of the conclusions</em>, that is to say the types of
+conclusions that are justified for this type of study.  The following table
+gives some advice on what conclusions can be drawn based on whether or not there was random sampling.</p>
+<div class="figure" id="id4">
+<img alt="../_images/evaluating_studies2.png" src="../_images/evaluating_studies2.png" />
+<p class="caption"><span class="caption-text">Evaluating studies cheat sheet</span></p>
+</div>
+<div class="admonition-a-study-on-flossing-and-gum-disease-experiment admonition">
+<p class="first admonition-title">A study on flossing and gum disease (experiment)</p>
+<p>A recent study was conducted to determine the effectiveness of flossing on
+gum disease.  A group of 500 volunteers were randomly split into two groups.
+The first group was asked to floss once a day and the second group was asked
+to floss after each meal.  Suppose that the group that flossed after every
+meal was much less likely to have gum disease as the group that flossed
+once per day.</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_1">
+            Q-389: Did this study use random sampling?
+            <li data-component="answer"  id="mc_evaluate_1_opt_a">(A) Yes</li><li data-component="feedback" id="mc_evaluate_1_opt_a">Note that the description mentioned that the participants were volunteers.</li>
+            
+            <li data-component="answer" data-correct id="mc_evaluate_1_opt_b">(B) No</li><li data-component="feedback" id="mc_evaluate_1_opt_b">The participants volunteered and were not randomly selected.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_2">
+            Q-390: Is it safe to generalize the results of this study?
+            <li data-component="answer"  id="mc_evaluate_2_opt_a">(A) Yes, the effects the flossing treatments would be the same for the general population.</li><li data-component="feedback" id="mc_evaluate_2_opt_a">The participants in the study were volunteers and not a randomly selected sample.</li>
+            
+            <li data-component="answer" data-correct id="mc_evaluate_2_opt_b">(B) No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.</li><li data-component="feedback" id="mc_evaluate_2_opt_b">The lack of a randomly selected sample means that we are in danger of biased estimates.</li>
+            
+
+            </ul>
+            </div>
+<div class="admonition-another-study-on-flossing-and-gum-disease-observational-study admonition">
+<p class="first admonition-title">Another study on flossing and gum disease (observational study)</p>
+<p>In another study on flossing and gum disease, a random sample of 500 people
+were surveyed on their flossing habits and whether or not they suffered from
+gum disease.  Suppose that it was estimated that the people that flossed
+after every meal was much less likely to have gum disease as the group
+that flossed once per day.</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_5">
+            Q-391: Did this study use random sampling?
+            <li data-component="answer" data-correct id="mc_evaluate_5_opt_a">(A) Yes</li><li data-component="feedback" id="mc_evaluate_5_opt_a"></li>
+            
+            <li data-component="answer"  id="mc_evaluate_5_opt_b">(B) No</li><li data-component="feedback" id="mc_evaluate_5_opt_b">The text explicitly mentioned a random sample.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_6">
+            Q-392: Is it safe to generalize the results of this study?
+            <li data-component="answer" data-correct id="mc_evaluate_6_opt_a">(A) Yes, the effects the flossing treatments will be the same for the general population.</li><li data-component="feedback" id="mc_evaluate_6_opt_a">Because we are taking a random sample, our statistics should be unbiased and not over- or under-estimate the rates of gum disease in each group.</li>
+            
+            <li data-component="answer"  id="mc_evaluate_6_opt_b">(B) No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.</li><li data-component="feedback" id="mc_evaluate_6_opt_b">What is the effect of random sampling on bias and a statistics ability to estimate a parameter?</li>
+            
+
+            </ul>
+            </div>
+</div>
 <div class="section" id="overview-of-statistical-inference">
-<h2>3.1. Overview of Statistical Inference<a class="headerlink" href="#overview-of-statistical-inference" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. Overview of Statistical Inference<a class="headerlink" href="#overview-of-statistical-inference" title="Permalink to this headline">¶</a></h2>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_avjiobd9&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_gftztrz5" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div><p>When asking questions about some population of individuals, the ideal situation
@@ -351,7 +422,7 @@ inferences (guesses) about <em>population parameters</em>.</p>
 <dd>The process of making educated guess about population parameters using
 information collected from a random sample, e.g. a sample statistic.</dd>
 </dl>
-<p><a class="reference internal" href="../_images/inference.png"><img alt="image0" src="../_images/inference.png" style="width: 5.51873in; height: 4.30189in;" /></a></p>
+<p><a class="reference internal" href="../_images/inference.png"><img alt="image3000" src="../_images/inference.png" style="width: 5.51873in; height: 4.30189in;" /></a></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>The federal government of the United States takes a &#8220;census&#8221; every 10 years,
@@ -364,7 +435,7 @@ definition.</p>
 </ol>
 </div>
 <div class="section" id="notation-for-parameters-and-statistics">
-<h3>3.1.1. Notation for Parameters and Statistics<a class="headerlink" href="#notation-for-parameters-and-statistics" title="Permalink to this headline">¶</a></h3>
+<h3>3.2.1. Notation for Parameters and Statistics<a class="headerlink" href="#notation-for-parameters-and-statistics" title="Permalink to this headline">¶</a></h3>
 <p>In statistics there is a very big distinction between parameters (number
 describing a population) and statistics (numbers describing a sample).</p>
 <div class="admonition-distinction-between-parameters-and-statistics admonition">
@@ -381,11 +452,11 @@ for a population mean (parameter) is <span class="math">\(\mu\)</span>, while th
 sample mean (statistic) is <span class="math">\(\bar{x}\)</span>.  The following table gives the
 symbols for various parameters and statistics we will work within this
 course.</p>
-<p><a class="reference internal" href="../_images/notation.png"><img alt="image1" src="../_images/notation.png" style="width: 8.22in; height: 3.22in;" /></a></p>
+<p><a class="reference internal" href="../_images/notation.png"><img alt="image3001" src="../_images/notation.png" style="width: 8.22in; height: 3.22in;" /></a></p>
 </div>
 </div>
 <div class="section" id="sampling-distributions">
-<h2>3.2. Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this headline">¶</a></h2>
+<h2>3.3. Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this headline">¶</a></h2>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_gg1rn336&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_vl739nux" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div><p>The first and most important fact that you need to realize when working with
@@ -417,10 +488,10 @@ interested in the properties of this distribution, in particular the
 <em>shape</em>, <em>center</em>, and <em>spread</em> of the statistics.  To get a better idea of
 these qualities of the sampling distribution, we would need to sample many more
 statistics.</p>
-<p><a class="reference internal" href="../_images/a_sampling_distribution.png"><img alt="image2" src="../_images/a_sampling_distribution.png" style="width: 4.05in; height: 1.75in;" /></a></p>
+<p><a class="reference internal" href="../_images/a_sampling_distribution.png"><img alt="image3002" src="../_images/a_sampling_distribution.png" style="width: 4.05in; height: 1.75in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_samp_dist_definition">
-            Q-1: The sampling distribution is ...
+            Q-393: The sampling distribution is ...
             <li data-component="answer"  id="mc_samp_dist_definition_opt_a">(A) The distribution of the sample.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_a">This answer is not specific enough, what exactly do we collect from each sample?</li>
             
             <li data-component="answer"  id="mc_samp_dist_definition_opt_b">(B) The distribution of population parameter.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_b">The parameter is one fixed value and doesn't vary.  Talking about the distribution of a parameter is therefore pointless.</li>
@@ -433,16 +504,16 @@ statistics.</p>
 activities so far in the course.  We will use the <a class="reference external" href="http://www.lock5stat.com/StatKey/index.html">StatKey Website</a> to explore the sampling
 distribution of the sample mean.  The image below illustrates the various
 components of the <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey&#8217;s Sampling Distribution for a Mean page</a>.</p>
-<p><a class="reference internal" href="../_images/statkey_sampling_distribution_mean.png"><img alt="image3" src="../_images/statkey_sampling_distribution_mean.png" style="width: 4.05in; height: 3.05in;" /></a></p>
+<p><a class="reference internal" href="../_images/statkey_sampling_distribution_mean.png"><img alt="image3003" src="../_images/statkey_sampling_distribution_mean.png" style="width: 4.05in; height: 3.05in;" /></a></p>
 <div class="admonition-check-your-understanding admonition">
 <p class="first admonition-title">Check your Understanding</p>
 <p>The following graph uses capital letters to label various elements of the
 StatKey sampling distribution page.  Use these designations to answer each
 of the following questions.</p>
-<p><a class="reference internal" href="../_images/test_parts_of_sampling_distribution.png"><img alt="image4" src="../_images/test_parts_of_sampling_distribution.png" style="width: 8.05in; height: 4.55in;" /></a></p>
+<p><a class="reference internal" href="../_images/test_parts_of_sampling_distribution.png"><img alt="image3004" src="../_images/test_parts_of_sampling_distribution.png" style="width: 8.05in; height: 4.55in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_1">
-            Q-2: The mean and standard error (standard deviation) of the sampling distribution are located
+            Q-394: The mean and standard error (standard deviation) of the sampling distribution are located
 at ....
             <li data-component="answer"  id="mc_parts_samp_dist_1_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_a"></li>
             
@@ -456,7 +527,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_2">
-            Q-3: The sampling distribution is illustrated by ...
+            Q-395: The sampling distribution is illustrated by ...
             <li data-component="answer"  id="mc_parts_samp_dist_2_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="mc_parts_samp_dist_2_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_b"></li>
@@ -469,7 +540,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_3">
-            Q-4: A sample statistic (in this case a sample mean) is illustrated by ...
+            Q-396: A sample statistic (in this case a sample mean) is illustrated by ...
             <li data-component="answer" data-correct id="mc_parts_samp_dist_3_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_3_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_b"></li>
@@ -482,7 +553,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_4">
-            Q-5: A population parameter (in this case a population mean) is located at ...
+            Q-397: A population parameter (in this case a population mean) is located at ...
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_b"></li>
@@ -496,7 +567,7 @@ at ....
             </div>
 </div>
 <div class="section" id="id1">
-<h2>3.3. Introduction to Confidence Intervals<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>3.4. Introduction to Confidence Intervals<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
  <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_uavvslod&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7t0i2d8n" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
  </div><p>Recall that statistical inference is the process of using sample statistics to
@@ -515,7 +586,7 @@ hypothesis about a parameter, a topic that we will devote more time on later
 in the course.</p>
 </div>
 <div class="section" id="point-estimates-and-interval-estimates-for-parameters">
-<h3>3.3.1. Point Estimates and Interval Estimates for Parameters<a class="headerlink" href="#point-estimates-and-interval-estimates-for-parameters" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.1. Point Estimates and Interval Estimates for Parameters<a class="headerlink" href="#point-estimates-and-interval-estimates-for-parameters" title="Permalink to this headline">¶</a></h3>
 <p>When estimating the value of a parameter, we can choose between one of two types
 of estimates.</p>
 <dl class="glossary docutils">
@@ -543,7 +614,7 @@ confidence intervals.</li>
 </ol>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_1">
-            Q-6: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
+            Q-398: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
             <li data-component="answer" data-correct id="mc_type_estimate_1_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_a"></li>
             
             <li data-component="answer"  id="mc_type_estimate_1_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_b"></li>
@@ -552,7 +623,7 @@ confidence intervals.</li>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_2">
-            Q-7: We estimate that the population mean height of all Winona State students is between 65 and 69 inches.
+            Q-399: We estimate that the population mean height of all Winona State students is between 65 and 69 inches.
             <li data-component="answer"  id="mc_type_estimate_2_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="mc_type_estimate_2_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_b"></li>
@@ -561,7 +632,7 @@ confidence intervals.</li>
             </ul>
             </div>
 <div class="section" id="approximating-the-standard-error-of-a-statistic">
-<h3>3.3.2. Approximating the Standard Error of a Statistic<a class="headerlink" href="#approximating-the-standard-error-of-a-statistic" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.2. Approximating the Standard Error of a Statistic<a class="headerlink" href="#approximating-the-standard-error-of-a-statistic" title="Permalink to this headline">¶</a></h3>
 <p>When constructing a confidence interval for the population mean, we will
 construct the interval by creating a buffer around the sample mean.  To create
 this buffer, we add and subtract the <em>margin of error</em> to/from the sample mean.
@@ -582,7 +653,7 @@ mean</strong> and demoted with SE.</dd>
 </dl>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_definition_SE">
-            Q-8: The standard error of the mean is ...
+            Q-400: The standard error of the mean is ...
             <li data-component="answer"  id="mc_definition_SE_opt_a">(A) the amount of buffer that is added to and subtracted from the sample mean.</li><li data-component="feedback" id="mc_definition_SE_opt_a"></li>
             
             <li data-component="answer"  id="mc_definition_SE_opt_b">(B) a common mistake made by students in a statistics class when calculating the mean.</li><li data-component="feedback" id="mc_definition_SE_opt_b"></li>
@@ -593,7 +664,7 @@ mean</strong> and demoted with SE.</dd>
             </ul>
             </div>
 <div class="section" id="plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">
-<h3>3.3.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics<a class="headerlink" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics<a class="headerlink" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics" title="Permalink to this headline">¶</a></h3>
 <p>For simplicity, we will focus on constructing a 95% confidence interval.  It
 turns out that when the distribution of a statistic is symmetric and
 bell-shaped, going out 2 SE from the population mean will cover about 95% of the
@@ -607,7 +678,7 @@ SE of the mean, which can be found in the top right of the graph. Notice that
 adding and subtracting 2 SE to the population mean leads to upper and lower
 bounds that are very close to the cut offs for the middle 95% of the
 distribution.</p>
-<p><a class="reference internal" href="../_images/middle95percent.png"><img alt="image5" src="../_images/middle95percent.png" style="width: 8.05in; height: 4.55in;" /></a></p>
+<p><a class="reference internal" href="../_images/middle95percent.png"><img alt="image3005" src="../_images/middle95percent.png" style="width: 8.05in; height: 4.55in;" /></a></p>
 <p>In the above figure we see that the limits generated by adding and subtracting 2
 standard errors from the population mean (5.79 and 8.93) are very close to the cut-offs of
 the middle 95% of the distribution (5.83 and 8.93).</p>
@@ -644,7 +715,7 @@ standard errors means that about 95% of sample means are <em>close enough</em>.<
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_margin_95_percent">
             <dl class="docutils">
-<dt>Q-9:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
+<dt>Q-401:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
 <dd>population mean will contain X% of the sample means.  Identify the value of
 X.</dd>
 </dl>
@@ -659,14 +730,14 @@ X.</dd>
             </ul>
             </div>
 <div class="section" id="being-95-confident">
-<h3>3.3.4. Being (95%) Confident<a class="headerlink" href="#being-95-confident" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.4. Being (95%) Confident<a class="headerlink" href="#being-95-confident" title="Permalink to this headline">¶</a></h3>
 <p>Let&#8217;s make sure we are clear on what it means to be 95% confident. Consider the
 following figure, created using <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey Website</a>.
 Each of the dots is a sample mean and each of the line segments extends out 2
 standard errors.  The population mean is located at the solid vertical line,
 recall that our goal in constructing such an interval is to capture the
 population mean.</p>
-<p><a class="reference internal" href="../_images/many_intervals.png"><img alt="image6" src="../_images/many_intervals.png" style="width: 3.05in; height: 4.55in;" /></a></p>
+<p><a class="reference internal" href="../_images/many_intervals.png"><img alt="image3006" src="../_images/many_intervals.png" style="width: 3.05in; height: 4.55in;" /></a></p>
 <p>The intervals that are green successfully captured the population mean, and the
 intervals that failed to capture the population mean are colored red.  Notice
 that about 95% of the intervals successfully capture the population mean.</p>
@@ -689,7 +760,7 @@ works or never works.</p>
 </div>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_meaning_of_confidence">
-            Q-10: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
+            Q-402: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
             <li data-component="answer"  id="mc_meaning_of_confidence_opt_a">(A) We are really pretty sure of the result.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_a">This answer is too vague, try being more specific.</li>
             
             <li data-component="answer"  id="mc_meaning_of_confidence_opt_b">(B) The interval we constructed from a specific sample will work 95% of the time.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_b">Unfortunately, any single interval either works 100% of the time or 0% of the time.</li>
@@ -699,184 +770,6 @@ works or never works.</p>
 
             </ul>
             </div>
-</div>
-<div class="section" id="bootstrap-confidence-intervals">
-<h2>3.4. Bootstrap Confidence Intervals<a class="headerlink" href="#bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h2>
-<p>Our current method for finding a confidence interval involves the following
-steps:</p>
-<ol class="arabic simple">
-<li>Simulate the sampling distribution of the mean by taking many samples from
-the population.</li>
-<li>Compute the standard error, i.e. the standard deviation of the statistics
-in the simulated distribution.</li>
-<li>Add and subtract 2 times this value to get a 95% confidence interval.</li>
-</ol>
-<p>Unfortunately, there is a big problem with this approach.</p>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p><strong>Problem with the Current Approach</strong></p>
-<p class="last">We need to know the whole population to produce the standard error.  This
-approach is very impractical, as taking a census is either very expensive
-and many times impossible.</p>
-</div>
-<p>Our solution will be to use a bootstrap sample, which is acquired by sampling the
-sample.</p>
-<div class="section" id="bootstrap-samples">
-<h3>3.4.1. Bootstrap Samples<a class="headerlink" href="#bootstrap-samples" title="Permalink to this headline">¶</a></h3>
-<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_nesk0z7b&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_nturh0wf" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-</div><p>Since we can&#8217;t be expected to have the entire population at our disposal, we
-will use the best tool at our disposal: the sample.  Instead of taking many
-samples from the population to simulate the sampling distribution, we will take
-many <em>bootstrap samples</em> from the sample, allowing us to simulate the
-<em>bootstrap distribution</em>.</p>
-<dl class="glossary docutils">
-<dt id="term-bootstrap-samples">Bootstrap Samples</dt>
-<dd><p class="first">A <strong>bootstrap sample</strong> is a sample of the sample that uses</p>
-<ol class="last arabic simple">
-<li>Sampling with replacement.</li>
-<li>The same sample size as the original sample.</li>
-</ol>
-</dd>
-<dt id="term-bootstrap-statistic">Bootstrap Statistic</dt>
-<dd>A <strong>bootstrap statistic</strong>  is a statistic taken from a bootstrap
-sample.</dd>
-<dt id="term-bootstrap-distribution">Bootstrap Distribution</dt>
-<dd>The <strong>bootstrap distribution</strong> is the distribution of many, many
-bootstrap statistics.</dd>
-<dt id="term-bootstrap-standard-error">Bootstrap Standard Error</dt>
-<dd>The <strong>bootstrap standard error</strong> is the standard deviation of bootstrap
-distribution, which can be used as an estimate of the actual standard
-error of a statistic.</dd>
-</dl>
-<p>Using sampling with replacement allows for some variability from one bootstrap
-sample to the next, as some values will be selected more than once and other
-values will be left out of the sample.  It turns out that the variability between
-bootstrap statistics is very similar to the variability between the actual
-statistics in the sampling distribution.</p>
-<p>Another way to understand bootstrap samples is to imagine that we are sampling
-from a population where we have <em>huge</em> stacks of copies of each item in the
-sample.  In effect we are using the best approximation for the population that
-we have available.</p>
-<p><a class="reference internal" href="../_images/pretend_population.png"><img alt="image7" src="../_images/pretend_population.png" style="width: 6.92in; height: 2.90in;" /></a></p>
-<p>In the next image, we illustrate the process of constructing the bootstrap
-distribution using the <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_1_quant/bootstrap_1_quant.html">StatKey&#8217;s Confidence Intervals for a Mean page</a>.
-The bootstrap distribution is constructed by repeating steps 1-3 many times.</p>
-<p><a class="reference internal" href="../_images/bootstrap_distribution.png"><img alt="image8" src="../_images/bootstrap_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
-<p>Finally, we will compare and contrast the sampling distribution and the
-bootstrap distribution.  The two distributions tend to have the same shape and
-spread, but different centers.  In particular, the sampling distribution is
-centered at the population mean and the bootstrap distribution is centered at
-the original sample mean.</p>
-<p><a class="reference internal" href="../_images/bootstrap_vs_sampling_distribution.png"><img alt="image9" src="../_images/bootstrap_vs_sampling_distribution.png" style="width: 6.65in; height: 3.66in;" /></a></p>
-
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_1">
-            Q-11: The bootstrap sample is ...
-            <li data-component="answer" data-correct id="mc_bootstrap_1_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_a"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_1_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_b"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_1_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_c"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_1_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_1_opt_d"></li>
-            
-
-            </ul>
-            
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_2">
-            Q-12: The bootstrap statistic is ...
-            <li data-component="answer"  id="mc_bootstrap_2_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_a"></li>
-            
-            <li data-component="answer" data-correct id="mc_bootstrap_2_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_b"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_2_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_c"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_2_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_2_opt_d"></li>
-            
-
-            </ul>
-            
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_3">
-            Q-13: The bootstrap distribution is ...
-            <li data-component="answer"  id="mc_bootstrap_3_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_a"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_3_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_b"></li>
-            
-            <li data-component="answer" data-correct id="mc_bootstrap_3_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_c"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_3_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_3_opt_d"></li>
-            
-
-            </ul>
-            
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_bootstrap_4">
-            Q-14: The bootstrap standard error is ...
-            <li data-component="answer"  id="mc_bootstrap_4_opt_a">(A) a sample of the sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_a"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_4_opt_b">(B) a statistic from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_b"></li>
-            
-            <li data-component="answer"  id="mc_bootstrap_4_opt_c">(C) a collection of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_c"></li>
-            
-            <li data-component="answer" data-correct id="mc_bootstrap_4_opt_d">(D) the standard deviation of statistics from a sample of a sample.</li><li data-component="feedback" id="mc_bootstrap_4_opt_d"></li>
-            
-
-            </ul>
-            </div>
-<div class="section" id="constructing-bootstrap-confidence-intervals">
-<h3>3.4.2. Constructing Bootstrap Confidence Intervals<a class="headerlink" href="#constructing-bootstrap-confidence-intervals" title="Permalink to this headline">¶</a></h3>
-<p>Now we have two choices for making a confidence interval using the bootstrap
-distribution.</p>
-<ol class="arabic simple">
-<li>Use the bootstrap standard error to construct a 95% confidence interval by
-adding and subtracting a margin of error of <span class="math">\(2SE\)</span>.</li>
-<li>Use the limits of the middle 95% of the bootstrap statistics as the
-boundaries for our 95% confidence interval.</li>
-</ol>
-<p>The advantage of the second approach is that we can quickly and easily change
-the level of confidence of the interval by changing the middle percentage.  For
-example, if we want a 99% confidence interval, we will highlight the middle 99%
-of the bootstrap statistics and use the lower and upper bounds of this
-collection for our confidence interval.</p>
-<p>On the other hand, if we wanted to construct a confidence interval using the
-bootstrap standard error for a confidence level that is different than 95%, we
-would need to figure out how many standard errors to use for the margin of
-error.  There is a theoretical solution to this problem, which we will highlight
-in the next section.</p>
-</div>
-</div>
-<div class="section" id="bootstrap-confidence-intervals-for-other-parameters">
-<h2>3.5. Bootstrap Confidence Intervals for Other Parameters<a class="headerlink" href="#bootstrap-confidence-intervals-for-other-parameters" title="Permalink to this headline">¶</a></h2>
-<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_zqujc0rn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_zwrperag" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-</div><p>We can use these bootstrap techniques to find confidence intervals for other
-confidence levels and other parameters</p>
-<div class="admonition-other-confidence-levels admonition">
-<p class="first admonition-title">Other Confidence Levels</p>
-<p class="last">Change the middle percent from 95% to the desired confidence level, which
-will result in intervals that work (roughly) for that percent of samples.
-For example, setting the middle percent to 99% will result in intervals that
-work for approximately 99% of samples.</p>
-</div>
-<div class="admonition-other-parameters admonition">
-<p class="first admonition-title">Other Parameters</p>
-<p class="last">To construct confidence intervals for other parameters, use the bootstrap
-technique, collecting the corresponding statistic from each bootstrap
-sample.  For example, to construct a confidence interval for the population
-standard deviation we would generate 1000 bootstrap samples and collect the
-sample standard deviation from each.</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The StatKey website allows you to construct confidence intervals for the
-median and the standard deviation by changing <em>mean</em> to the desired
-parameter in the drop down box, as shown below.</p>
-</div>
-<p>Below we see a 95% confidence interval for the population median price of a used
-Mustang.  This was constructed by taking 1000 bootstrap samples from the
-original sample and collecting the median of each of these bootstrap samples.
-The 95% confidence interval consists of the cut-offs for the middle 95% of all
-bootstrap sample medians.</p>
-<p><a class="reference internal" href="../_images/bootstrap_median.png"><img alt="image10" src="../_images/bootstrap_median.png" style="width: 5.02in; height: 3.47in;" /></a></p>
 </div>
 </div>
 
