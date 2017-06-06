@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Inference for Regression &mdash; Runestone Interactive Overview</title>
+    <title>Confidence Intervals for Regression &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -260,9 +260,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Inference for Regression</a></li>
+<li><a class="reference internal" href="#">Confidence Intervals for Regression</a><ul>
 <li><a class="reference internal" href="#notation-for-regression">Notation for Regression</a></li>
 <li><a class="reference internal" href="#bootstrap-intervals-for-regression">Bootstrap Intervals for Regression</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -295,28 +297,27 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="inference-for-regression">
-<h1>Inference for Regression<a class="headerlink" href="#inference-for-regression" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="confidence-intervals-for-regression">
+<h1>Confidence Intervals for Regression<a class="headerlink" href="#confidence-intervals-for-regression" title="Permalink to this headline">¶</a></h1>
 <p>Recall that statistical inference is the process of making guesses about
 population parameters using a random sample.  We can apply the same ideas we
 used earlier in the book to linear regression, estimating the values of the
 population correlation coefficient and/or the slope of the population regression
 line.  In this section, we will apply the bootstrap process to regression to
 obtain confidence intervals for these quantities.</p>
-</div>
 <div class="section" id="notation-for-regression">
-<h1>Notation for Regression<a class="headerlink" href="#notation-for-regression" title="Permalink to this headline">¶</a></h1>
+<h2>Notation for Regression<a class="headerlink" href="#notation-for-regression" title="Permalink to this headline">¶</a></h2>
 <p>The following figure gives the common symbols used for the sample and population
 correlation coefficients and slopes.  Once again, greek letters are used for the
-parameters, in this case <span class="math">\rho</span> and <span class="math">\beta</span> for the correlation
+parameters, in this case <span class="math">\(\rho\)</span> and <span class="math">\(\beta\)</span> for the correlation
 coefficient and slope, respectively.  The sample correlation coefficient and
-sample slope are respectively denoted by <span class="math">r</span> and <span class="math">b</span>.</p>
+sample slope are respectively denoted by <span class="math">\(r\)</span> and <span class="math">\(b\)</span>.</p>
 <p><a href="#id1"><span class="problematic" id="id2">|image7022|</span></a></p>
 </div>
 <div class="section" id="bootstrap-intervals-for-regression">
-<h1>Bootstrap Intervals for Regression<a class="headerlink" href="#bootstrap-intervals-for-regression" title="Permalink to this headline">¶</a></h1>
-<p>Our goal is to use the sample values of <span class="math">r</span> and <span class="math">b</span> to estimate
-<span class="math">\rho</span> and <span class="math">\beta</span>.  We can again estimate the sampling variability
+<h2>Bootstrap Intervals for Regression<a class="headerlink" href="#bootstrap-intervals-for-regression" title="Permalink to this headline">¶</a></h2>
+<p>Our goal is to use the sample values of <span class="math">\(r\)</span> and <span class="math">\(b\)</span> to estimate
+<span class="math">\(\rho\)</span> and <span class="math">\(\beta\)</span>.  We can again estimate the sampling variability
 in these statistics by using the bootstrap.  Let&#8217;s review the process of
 generating the bootstrap distribution of a statistic.</p>
 <div class="admonition-generating-the-bootstrap-distribution-of-a-statistic admonition">
@@ -342,6 +343,7 @@ the middle C% of this distribution.</p>
 <p>Once again, we will use the StatKey Website, this time in the section titled
 <a class="reference external" href="http://www.lock5stat.com/StatKey/bootstrap_2_quant/bootstrap_2_quant.html">Confidence Interval for a Slope, Correlation</a></p>
 <p><a href="#id3"><span class="problematic" id="id4">|image7023|</span></a></p>
+</div>
 </div>
 
 

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3. Introduction to Confidence Intervals &mdash; Runestone Interactive Overview</title>
+    <title>3. Introduction to Sampling Distributions &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -101,7 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="4. Confidence Intervals Based on the Normal Distribution" href="../chp5/chp5_iverson.html" />
+    <link rel="next" title="4. Introduction to Confidence Intervals" href="../chp5/chp5_iverson.html" />
     <link rel="prev" title="2. Methods for Two Numerical Variables" href="../chp7/chp7_iverson.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -262,18 +262,19 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">3. Introduction to Confidence Intervals</a><ul>
+<li><a class="reference internal" href="#">3. Introduction to Sampling Distributions</a><ul>
 <li><a class="reference internal" href="#evaluating-studies">3.1. Evaluating Studies</a></li>
 <li><a class="reference internal" href="#overview-of-statistical-inference">3.2. Overview of Statistical Inference</a><ul>
 <li><a class="reference internal" href="#notation-for-parameters-and-statistics">3.2.1. Notation for Parameters and Statistics</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#sampling-distributions">3.3. Sampling Distributions</a></li>
-<li><a class="reference internal" href="#id1">3.4. Introduction to Confidence Intervals</a><ul>
-<li><a class="reference internal" href="#point-estimates-and-interval-estimates-for-parameters">3.4.1. Point Estimates and Interval Estimates for Parameters</a></li>
-<li><a class="reference internal" href="#approximating-the-standard-error-of-a-statistic">3.4.2. Approximating the Standard Error of a Statistic</a></li>
-<li><a class="reference internal" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">3.4.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics</a></li>
-<li><a class="reference internal" href="#being-95-confident">3.4.4. Being (95%) Confident</a></li>
+<li><a class="reference internal" href="#the-central-limit-theorem">3.4. The Central Limit Theorem</a><ul>
+<li><a class="reference internal" href="#how-large-does-n-have-to-be">3.4.1. How large does n have to be?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#assessing-the-normality-of-a-data-set">3.5. Assessing the Normality of a Data Set</a><ul>
+<li><a class="reference internal" href="#creating-a-normal-quantile-plot-in-jmp">3.5.1. Creating a Normal Quantile Plot in JMP</a></li>
 </ul>
 </li>
 </ul>
@@ -291,7 +292,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - 4. Confidence Intervals Based on the Normal Distribution' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - 4. Introduction to Confidence Intervals' data-toggle="tooltip" >
     <a href="../chp5/chp5_iverson.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -324,8 +325,8 @@
   
   <blockquote>
 <div><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script></div></blockquote>
-<div class="section" id="introduction-to-confidence-intervals">
-<h1>3. Introduction to Confidence Intervals<a class="headerlink" href="#introduction-to-confidence-intervals" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-sampling-distributions">
+<h1>3. Introduction to Sampling Distributions<a class="headerlink" href="#introduction-to-sampling-distributions" title="Permalink to this headline">¶</a></h1>
 <p>In this chapter we will introduce some important ideas from statistics.  We
 will be focusing on quantitative data and in particular <em>estimation</em> of a
 population parameter.</p>
@@ -347,8 +348,8 @@ instead.  (This assumes no other source of bias.)</p>
 is the <em>appropriate scope of the conclusions</em>, that is to say the types of
 conclusions that are justified for this type of study.  The following table
 gives some advice on what conclusions can be drawn based on whether or not there was random sampling.</p>
-<div class="figure" id="id4">
-<img alt="../_images/evaluating_studies2.png" src="../_images/evaluating_studies2.png" />
+<div class="figure" id="id1">
+<img alt="../_images/evaluating_studies3.png" src="../_images/evaluating_studies3.png" />
 <p class="caption"><span class="caption-text">Evaluating studies cheat sheet</span></p>
 </div>
 <div class="admonition-a-study-on-flossing-and-gum-disease-experiment admonition">
@@ -361,7 +362,7 @@ meal was much less likely to have gum disease as the group that flossed
 once per day.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_1">
-            Q-389: Did this study use random sampling?
+            Q-952: Did this study use random sampling?
             <li data-component="answer"  id="mc_evaluate_1_opt_a">(A) Yes</li><li data-component="feedback" id="mc_evaluate_1_opt_a">Note that the description mentioned that the participants were volunteers.</li>
             
             <li data-component="answer" data-correct id="mc_evaluate_1_opt_b">(B) No</li><li data-component="feedback" id="mc_evaluate_1_opt_b">The participants volunteered and were not randomly selected.</li>
@@ -370,7 +371,7 @@ once per day.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_2">
-            Q-390: Is it safe to generalize the results of this study?
+            Q-953: Is it safe to generalize the results of this study?
             <li data-component="answer"  id="mc_evaluate_2_opt_a">(A) Yes, the effects the flossing treatments would be the same for the general population.</li><li data-component="feedback" id="mc_evaluate_2_opt_a">The participants in the study were volunteers and not a randomly selected sample.</li>
             
             <li data-component="answer" data-correct id="mc_evaluate_2_opt_b">(B) No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.</li><li data-component="feedback" id="mc_evaluate_2_opt_b">The lack of a randomly selected sample means that we are in danger of biased estimates.</li>
@@ -387,7 +388,7 @@ after every meal was much less likely to have gum disease as the group
 that flossed once per day.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_5">
-            Q-391: Did this study use random sampling?
+            Q-954: Did this study use random sampling?
             <li data-component="answer" data-correct id="mc_evaluate_5_opt_a">(A) Yes</li><li data-component="feedback" id="mc_evaluate_5_opt_a"></li>
             
             <li data-component="answer"  id="mc_evaluate_5_opt_b">(B) No</li><li data-component="feedback" id="mc_evaluate_5_opt_b">The text explicitly mentioned a random sample.</li>
@@ -396,7 +397,7 @@ that flossed once per day.</p>
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_evaluate_6">
-            Q-392: Is it safe to generalize the results of this study?
+            Q-955: Is it safe to generalize the results of this study?
             <li data-component="answer" data-correct id="mc_evaluate_6_opt_a">(A) Yes, the effects the flossing treatments will be the same for the general population.</li><li data-component="feedback" id="mc_evaluate_6_opt_a">Because we are taking a random sample, our statistics should be unbiased and not over- or under-estimate the rates of gum disease in each group.</li>
             
             <li data-component="answer"  id="mc_evaluate_6_opt_b">(B) No, there is a danger that our estimates of the effects of flossing on gum disease is likely biased.</li><li data-component="feedback" id="mc_evaluate_6_opt_b">What is the effect of random sampling on bias and a statistics ability to estimate a parameter?</li>
@@ -491,7 +492,7 @@ statistics.</p>
 <p><a class="reference internal" href="../_images/a_sampling_distribution.png"><img alt="image3002" src="../_images/a_sampling_distribution.png" style="width: 4.05in; height: 1.75in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_samp_dist_definition">
-            Q-393: The sampling distribution is ...
+            Q-956: The sampling distribution is ...
             <li data-component="answer"  id="mc_samp_dist_definition_opt_a">(A) The distribution of the sample.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_a">This answer is not specific enough, what exactly do we collect from each sample?</li>
             
             <li data-component="answer"  id="mc_samp_dist_definition_opt_b">(B) The distribution of population parameter.</li><li data-component="feedback" id="mc_samp_dist_definition_opt_b">The parameter is one fixed value and doesn't vary.  Talking about the distribution of a parameter is therefore pointless.</li>
@@ -513,7 +514,7 @@ of the following questions.</p>
 <p><a class="reference internal" href="../_images/test_parts_of_sampling_distribution.png"><img alt="image3004" src="../_images/test_parts_of_sampling_distribution.png" style="width: 8.05in; height: 4.55in;" /></a></p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_1">
-            Q-394: The mean and standard error (standard deviation) of the sampling distribution are located
+            Q-957: The mean and standard error (standard deviation) of the sampling distribution are located
 at ....
             <li data-component="answer"  id="mc_parts_samp_dist_1_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_1_opt_a"></li>
             
@@ -527,7 +528,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_2">
-            Q-395: The sampling distribution is illustrated by ...
+            Q-958: The sampling distribution is illustrated by ...
             <li data-component="answer"  id="mc_parts_samp_dist_2_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_a"></li>
             
             <li data-component="answer" data-correct id="mc_parts_samp_dist_2_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_2_opt_b"></li>
@@ -540,7 +541,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_3">
-            Q-396: A sample statistic (in this case a sample mean) is illustrated by ...
+            Q-959: A sample statistic (in this case a sample mean) is illustrated by ...
             <li data-component="answer" data-correct id="mc_parts_samp_dist_3_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_3_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_3_opt_b"></li>
@@ -553,7 +554,7 @@ at ....
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_parts_samp_dist_4">
-            Q-397: A population parameter (in this case a population mean) is located at ...
+            Q-960: A population parameter (in this case a population mean) is located at ...
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_a">(A) A</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_a"></li>
             
             <li data-component="answer"  id="mc_parts_samp_dist_4_opt_b">(B) B</li><li data-component="feedback" id="mc_parts_samp_dist_4_opt_b"></li>
@@ -566,206 +567,157 @@ at ....
             </ul>
             </div>
 </div>
-<div class="section" id="id1">
-<h2>3.4. Introduction to Confidence Intervals<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
- <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_uavvslod&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7t0i2d8n" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
- </div><p>Recall that statistical inference is the process of using sample statistics to
-make guesses/inferences about a population parameter.  One of the primary
-examples of this type of inference is <em>estimating the value of a parameter</em>.</p>
-<p>In this section, we discuss the two types of estimates we can make (point and
-interval estimates), explore the proportion of sample means in a sampling
-distribution that fall within 2 standard errors of the mean, leverage this
-proportion to develop a good margin of error for a sample mean, put this all
-together to construct a confidence interval for the mean, and investigate what
-a statistician means when claiming to be &#8220;95% confident.&#8221;</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <em>other</em> standard type of statistical inference involves testing a
-hypothesis about a parameter, a topic that we will devote more time on later
-in the course.</p>
+<div class="section" id="the-central-limit-theorem">
+<h2>3.4. The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_c2amaai4&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_umrypmyc" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" title="Kaltura Player"></iframe>
+</div><p>Note that a statistician would not necessarily carry out a simulation study such
+as this to answer a research question. Instead, one could use “short-cuts”
+known as a t-test or confidence interval to investigate a research question
+concerning a single population mean. These short-cuts are results of something
+known as the <em>central limit theorem</em>, which states the following:</p>
+<div class="admonition-the-central-limit-theorem-for-the-mean admonition">
+<p class="first admonition-title">The Central Limit Theorem for the Mean</p>
+<p class="last">Consider a random sample of n observations from ANY population with mean µ and
+standard deviation σ. The distribution of sample means will have a <em>mean</em> of
+<span class="math">\(\mu\)</span> and a <em>standard deviation</em> of <span class="math">\(\sigma/\sqrt{n}\)</span>. When
+<span class="math">\(n\)</span> (the number of subjects in the sample) is sufficiently large, this
+distribution will be approximately <em>NORMAL</em>; moreover, this approximation gets
+better as the sample size (<span class="math">\(n\)</span>) increases.</p>
 </div>
-<div class="section" id="point-estimates-and-interval-estimates-for-parameters">
-<h3>3.4.1. Point Estimates and Interval Estimates for Parameters<a class="headerlink" href="#point-estimates-and-interval-estimates-for-parameters" title="Permalink to this headline">¶</a></h3>
-<p>When estimating the value of a parameter, we can choose between one of two types
-of estimates.</p>
-<dl class="glossary docutils">
-<dt id="term-point-estimate">Point Estimate</dt>
-<dd>A <strong>point estimate</strong> is a single values estimate of the parameter (i.e.
-one number).  Examples of point estimates are sample statistics like the
-sample mean and sample standard deviation that are used as point
-estimates for the population mean and population standard deviation,
-respectively.</dd>
-<dt id="term-interval-estimate">Interval Estimate</dt>
-<dd>An <strong>interval estimate</strong> consists of a range of values that we believe
-are likely to contain the actual parameter.  Interval estimates usually
-come with a measure of how confident we are in the estimate (e.g. 95%
-confident).</dd>
-</dl>
-<p>When possible, it is best to use an interval estimate, because</p>
+<p>We can see the Central Limit Theorem applied to the sample means
+calculated from our hypothetical population from Example 5.2 as follows:</p>
+<p><a class="reference internal" href="../_images/image1217.png"><img alt="image5010" src="../_images/image1217.png" style="width: 4.48663in; height: 1.70378in;" /></a></p>
+<ul class="simple">
+<li>We see that this normal distribution is centered at the true
+population <em>mean</em>, <span class="math">\(\mu = 45\)</span>.</li>
+<li>The standard deviation of all observations in our hypothetical
+population is <span class="math">\(\sigma = 9.4\)</span> seconds. According to the central limit
+theorem, then, the <em>standard deviation</em> of the distribution of sample
+means is given by <span class="math">\(\sigma/\sqrt{n} = 9.4/\sqrt{20}=2.1\)</span></li>
+<li>We see that the distribution of sample means is approximately
+<em>normal</em>.</li>
+</ul>
+<p>Finally, recall from the previous chapter that given the mean and
+standard deviation of a distribution, we can determine whether a given
+observation is an outlier or not based on its position on this
+distribution. This will help us decide whether the sample mean actually
+observed in the research study is an outlier based on the distribution that
+assumes the null hypothesis is true.</p>
+<p>The only question that remains is this: How large does n (the number of
+subjects in a study) have to be in order for us to use the short-cut
+provided by the Central Limit Theorem?</p>
+<div class="section" id="how-large-does-n-have-to-be">
+<h3>3.4.1. How large does n have to be?<a class="headerlink" href="#how-large-does-n-have-to-be" title="Permalink to this headline">¶</a></h3>
+<p>We have seen that the distribution of the sample mean will not always be
+bell-shaped and often retains some of the features of the original population,
+such as a skewed shape.  Next, we give some guidance on when it is reasonable to
+assume that the distribution of sample means will be normal.</p>
+<div class="admonition-normal-population admonition">
+<p class="first admonition-title">Normal Population</p>
+<p class="last">If the original population is normally distributed, then the sampling
+distribution of the mean will also be normally distributed even
+if the sample size n is very small</p>
+</div>
+<p>(verify this using Tinkerplots as shown in class).</p>
+<div class="admonition-skewed-population admonition">
+<p class="first admonition-title">Skewed Population</p>
+<p class="last">The more skewed the distribution, the larger the sample size must be
+before the normal approximation fits the distribution of sample
+means well.</p>
+</div>
+<div class="admonition-general-rule admonition">
+<p class="first admonition-title">General Rule</p>
+<p class="last">For almost all populations, samples of size n ≥ 30 or 40 subjects
+will be sufficient to say that the distribution of sample means
+is approximately normal. However, if the distribution is very
+skewed, the sample size may have to be much larger than 30 in
+order for the central limit theorem to apply.</p>
+</div>
+<p>In summary, we can use the Central Limit Theorem to help us create procedures
+for answering questions about the population mean, be it comparing the mean to
+some hypothesized value or estimating the value of the population mean with an
+interval.</p>
+<p>This works because:</p>
 <ol class="arabic simple">
-<li>We get a measurement of accuracy, as in how often the interval will
-successfully contain the parameter.  This is called the <em>confidence level</em>
-of the interval. An interval that comes with a confidence level is called a
-<em>confidence interval</em>.</li>
-<li>We get a sense of the precision of the estimate, which can be seen in the
-width of the interval.  Specifically, more precise estimates have narrower
-confidence intervals.</li>
+<li>We know the distribution of sample means will be approximately normal
+if either (i) the original population is normally distributed, or
+(ii) our sample size is sufficiently large.</li>
+<li>We know the distribution of sample means will be centered at the true
+population mean</li>
 </ol>
-
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_1">
-            Q-398: We estimate that the population mean height of all Winona State students to be 67 inches.  This is an example of a ...
-            <li data-component="answer" data-correct id="mc_type_estimate_1_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_a"></li>
-            
-            <li data-component="answer"  id="mc_type_estimate_1_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_1_opt_b"></li>
-            
-
-            </ul>
-            
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_type_estimate_2">
-            Q-399: We estimate that the population mean height of all Winona State students is between 65 and 69 inches.
-            <li data-component="answer"  id="mc_type_estimate_2_opt_a">(A) Point Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_a"></li>
-            
-            <li data-component="answer" data-correct id="mc_type_estimate_2_opt_b">(B) Interval Estimate</li><li data-component="feedback" id="mc_type_estimate_2_opt_b"></li>
-            
-
-            </ul>
-            </div>
-<div class="section" id="approximating-the-standard-error-of-a-statistic">
-<h3>3.4.2. Approximating the Standard Error of a Statistic<a class="headerlink" href="#approximating-the-standard-error-of-a-statistic" title="Permalink to this headline">¶</a></h3>
-<p>When constructing a confidence interval for the population mean, we will
-construct the interval by creating a buffer around the sample mean.  To create
-this buffer, we add and subtract the <em>margin of error</em> to/from the sample mean.
-The right width of buffer is dependent on how
-spread out the sample means tend to be, i.e. the spread of the sampling
-distribution.  The specific measure of spread that we use is the estimated
-standard deviation of the sample means, which is referred to as the
-<em>standard error of the mean</em>.</p>
-<dl class="glossary docutils">
-<dt id="term-margin-of-error">Margin of Error</dt>
-<dd>The <strong>margin of error</strong> is the buffer that is added to and subtracted
-from the sample mean to construct an interval with a good chance of
-containing the population mean.</dd>
-<dt id="term-standard-error-of-the-mean">Standard Error of the Mean</dt>
-<dd>Our estimate of the standard deviation of all sample means, taken from
-random samples of the same size, is called <strong>the standard error of the
-mean</strong> and demoted with SE.</dd>
-</dl>
-
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_definition_SE">
-            Q-400: The standard error of the mean is ...
-            <li data-component="answer"  id="mc_definition_SE_opt_a">(A) the amount of buffer that is added to and subtracted from the sample mean.</li><li data-component="feedback" id="mc_definition_SE_opt_a"></li>
-            
-            <li data-component="answer"  id="mc_definition_SE_opt_b">(B) a common mistake made by students in a statistics class when calculating the mean.</li><li data-component="feedback" id="mc_definition_SE_opt_b"></li>
-            
-            <li data-component="answer" data-correct id="mc_definition_SE_opt_c">(C) the estimated standard deviation of the distribution of sample means.</li><li data-component="feedback" id="mc_definition_SE_opt_c"></li>
-            
-
-            </ul>
-            </div>
-<div class="section" id="plus-or-minus-two-standard-error-and-the-middle-95-of-statistics">
-<h3>3.4.3. Plus or Minus Two Standard Error and the Middle 95% of Statistics<a class="headerlink" href="#plus-or-minus-two-standard-error-and-the-middle-95-of-statistics" title="Permalink to this headline">¶</a></h3>
-<p>For simplicity, we will focus on constructing a 95% confidence interval.  It
-turns out that when the distribution of a statistic is symmetric and
-bell-shaped, going out 2 SE from the population mean will cover about 95% of the
-sample means.</p>
-<p>To illustrate this fact, we have simulated the distribution of the sample mean
-using the <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey Website</a>,
-which is depicted in the figure shown below.  The middle 95% of the sample means
-are shown with black dots, and we have colored the largest and smallest 2.5% of
-the sample means red.  Furthermore, we can use this distribution to estimate the
-SE of the mean, which can be found in the top right of the graph. Notice that
-adding and subtracting 2 SE to the population mean leads to upper and lower
-bounds that are very close to the cut offs for the middle 95% of the
-distribution.</p>
-<p><a class="reference internal" href="../_images/middle95percent.png"><img alt="image3005" src="../_images/middle95percent.png" style="width: 8.05in; height: 4.55in;" /></a></p>
-<p>In the above figure we see that the limits generated by adding and subtracting 2
-standard errors from the population mean (5.79 and 8.93) are very close to the cut-offs of
-the middle 95% of the distribution (5.83 and 8.93).</p>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p class="last">The above result will only work for distributions that are symmetric and
-bell shaped.  We will need a different approach for skewed distributions.</p>
-</div>
-<p>Due to the fact that about 95% of the sample means are within 2 standard errors
-of the population mean, it makes sense to use this distance as the margin of
-error for a 95% confidence interval.</p>
-<div class="admonition-the-margin-of-error-for-a-95-confidence-interval-for-the-mean admonition">
-<p class="first admonition-title">The Margin of Error for a 95% Confidence Interval for the Mean</p>
-<p>The <strong>margin of error</strong> for a 95% confidence interval is given by</p>
-<div class="math">
-\[MoE = 2*SE\]</div>
-<p>This margin of error works because</p>
-<ol class="last arabic simple">
-<li>&#8220;A sample mean is in the middle 95% of the sample means&#8221; implies that the
-population mean will be within 2 SE of the sample mean.</li>
-<li>Only the sample means in the lowest and highest 2.5% of the distribution
-will fail to capture the population mean in an interval using this
-margin of error.</li>
+<ol class="arabic simple" start="3">
+<li>We know that the variability in the distribution of sample means is
+given by <span class="math">\(\sigma/\sqrt{n}\)</span> (i.e., the variability decreases as the sample size gets
+larger, which we can see in the above examples).</li>
 </ol>
+<p>In the next section, we put all of the pieces together to create what is
+a t-confidence interval.
+.. known as the <strong>t-test</strong>.</p>
 </div>
-<p>In other words, if the sample mean is <em>close enough</em> to the population mean, the
-population mean is <em>close enough</em> to the sample mean.</p>
-<div class="admonition-the-main-point admonition">
-<p class="first admonition-title">The Main Point</p>
-<p class="last">If the sample mean is <em>close enough</em> to the population mean, the population
-mean is <em>close enough</em> to the sample mean.  Using a margin of error of 2
-standard errors means that about 95% of sample means are <em>close enough</em>.</p>
 </div>
+<div class="section" id="assessing-the-normality-of-a-data-set">
+<h2>3.5. Assessing the Normality of a Data Set<a class="headerlink" href="#assessing-the-normality-of-a-data-set" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_fnm0wj15&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_n9aapek4" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" title="Kaltura Player"></iframe>
+</div><p>The application of the central limit theorem (CLT) for means highlights the need for
+determining if a given data set is &#8220;normal.&#8221;  In particular, we need to be
+careful about the application of the CLT to a small data set and <em>a
+normal quantile plot</em> will give us the needed tool.</p>
+<p>A first attempt at trying to determine that a data set is normal might involve
+drawing a normal curve over a dot plot or histogram.  Unfortunately, it is
+difficult to determine how close a given histogram is to the curve.</p>
+<p><a class="reference internal" href="../_images/histogram_normal_curve1.png"><img alt="image510" src="../_images/histogram_normal_curve1.png" style="width: 5.02in; height: 3.47in;" /></a></p>
+<p>A better solution is to use a normal quantile plot.  These plots are
+designed to provide a simple distinction between data that is fairly normal and
+data that is not.</p>
+<div class="section" id="creating-a-normal-quantile-plot-in-jmp">
+<h3>3.5.1. Creating a Normal Quantile Plot in JMP<a class="headerlink" href="#creating-a-normal-quantile-plot-in-jmp" title="Permalink to this headline">¶</a></h3>
+<p>The following GIF illustrates the process for constructing a normal quantile
+plot in JMP.</p>
+<p><a class="reference internal" href="../_images/normal_quantile_plot1.gif"><img alt="image516" src="../_images/normal_quantile_plot1.gif" style="width: 7.23in; height: 4.41in;" /></a></p>
+<div class="admonition-reading-a-normal-quantile-plot admonition">
+<p class="first admonition-title">Reading a Normal Quantile Plot</p>
+<p><strong>Normal data is straight</strong></p>
+<p>A quantile plot with points that are close to a straight line indicate data
+that is fairly normal.</p>
+<p><strong>Non-normal data is curved</strong></p>
+<p class="last">The presence of curvature in a quantile plot is an indication of the
+presence of tails that are longer or shorter than expected for data that
+comes from the normal distribution.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_images/normal_data1.png"><img alt="image511" src="../_images/normal_data1.png" style="width: 3.40in; height: 5.11in;" /></a></td>
+<td><a class="reference internal" href="../_images/non_normal_data1.png"><img alt="image512" src="../_images/non_normal_data1.png" style="width: 3.38in; height: 5.20in;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>As a consequence of the random nature of data, we need to allow for some
+flexibility in our interpretations of such graphs.  Notice that each probability
+plot shown above includes curved confidence bands.  These bands aid by giving
+us a visual cue about how picky we should be when determining the normality of a
+plot, only claiming <em>the data is clearly non-normal</em> when at least 5% of the
+points fall outside the bands.</p>
 
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_margin_95_percent">
-            <dl class="docutils">
-<dt>Q-401:  The interval constructed by adding and subtracting 2 SE to/from the</dt>
-<dd>population mean will contain X% of the sample means.  Identify the value of
-X.</dd>
-</dl>
-
-            <li data-component="answer"  id="mc_margin_95_percent_opt_a">(A) 100%</li><li data-component="feedback" id="mc_margin_95_percent_opt_a">You are too *confident* (that is a statistics joke)</li>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_1">
+            Q-961: A quantile plot of data that is clearly not from a normal distribution is characterized by ...
+            <li data-component="answer" data-correct id="assess_normal_1_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_a"></li>
             
-            <li data-component="answer" data-correct id="mc_margin_95_percent_opt_b">(B) 95%</li><li data-component="feedback" id="mc_margin_95_percent_opt_b"></li>
-            
-            <li data-component="answer"  id="mc_margin_95_percent_opt_c">(C) We can't determine X, as the samples were randomly selected.</li><li data-component="feedback" id="mc_margin_95_percent_opt_c">While random samples are uncertain in the short term, they are predicitable in the long run.</li>
+            <li data-component="answer"  id="assess_normal_1_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_1_opt_b"></li>
             
 
             </ul>
-            </div>
-<div class="section" id="being-95-confident">
-<h3>3.4.4. Being (95%) Confident<a class="headerlink" href="#being-95-confident" title="Permalink to this headline">¶</a></h3>
-<p>Let&#8217;s make sure we are clear on what it means to be 95% confident. Consider the
-following figure, created using <a class="reference external" href="http://www.lock5stat.com/StatKey/sampling_1_quant/sampling_1_quant.html">StatKey Website</a>.
-Each of the dots is a sample mean and each of the line segments extends out 2
-standard errors.  The population mean is located at the solid vertical line,
-recall that our goal in constructing such an interval is to capture the
-population mean.</p>
-<p><a class="reference internal" href="../_images/many_intervals.png"><img alt="image3006" src="../_images/many_intervals.png" style="width: 3.05in; height: 4.55in;" /></a></p>
-<p>The intervals that are green successfully captured the population mean, and the
-intervals that failed to capture the population mean are colored red.  Notice
-that about 95% of the intervals successfully capture the population mean.</p>
-<div class="admonition-being-95-confident admonition">
-<p class="first admonition-title">Being &#8220;95% confident&#8221;</p>
-<p class="last">When a statistician says that she is &#8220;95% confident&#8221;, she means that she is
-using a procedure, that when used repeatedly on many random samples, will
-work 95% of the time.</p>
-</div>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p class="last">We purposely avoid the phrase &#8220;95% probability&#8221;.  This is because each
-specific interval either works 100% of the time (captured the mean) or fails
-100% of the time (fails to capture the mean).  For example, suppose we take
-a sample and construct an interval, which turns out to be from 2.4 to 7.6.
-The population mean is either between these numbers or it is not.  Using
-&#8220;95% probability&#8221; in place of &#8220;95% confidence&#8221; makes it sound like this
-specific interval only works some of the time, when in fact it either always
-works or never works.</p>
-</div>
-
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mc_meaning_of_confidence">
-            Q-402: To a statistician, what does it mean to be &#8220;95% confident&#8221;?
-            <li data-component="answer"  id="mc_meaning_of_confidence_opt_a">(A) We are really pretty sure of the result.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_a">This answer is too vague, try being more specific.</li>
             
-            <li data-component="answer"  id="mc_meaning_of_confidence_opt_b">(B) The interval we constructed from a specific sample will work 95% of the time.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_b">Unfortunately, any single interval either works 100% of the time or 0% of the time.</li>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="assess_normal_2">
+            Q-962: A quantile plot of data that is from a distribution that is approximately normal is characterized by ...
+            <li data-component="answer"  id="assess_normal_2_opt_a">(A) points with obvious curvature with a number of points outside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_a"></li>
             
-            <li data-component="answer" data-correct id="mc_meaning_of_confidence_opt_c">(C) We are using a procedure that works 95% of the time, when applied to many, many samples.</li><li data-component="feedback" id="mc_meaning_of_confidence_opt_c">Statisticians define success "in the long run."</li>
+            <li data-component="answer" data-correct id="assess_normal_2_opt_b">(B) points that roughly form a straight line with almost all points falling inside the confidence bands.</li><li data-component="feedback" id="assess_normal_2_opt_b"></li>
             
 
             </ul>
@@ -783,12 +735,12 @@ works or never works.</p>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../chp7/chp7_iverson.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - 4. Confidence Intervals Based on the Normal Distribution' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - 4. Introduction to Confidence Intervals' data-toggle="tooltip" >
     <a href="../chp5/chp5_iverson.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp5/chp5_iverson.html" >Next Section - 4. Confidence Intervals Based on the Normal Distribution</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../chp5/chp5_iverson.html" >Next Section - 4. Introduction to Confidence Intervals</a>
 
 <script type="text/javascript">
 
