@@ -1,5 +1,5 @@
-Inference for Regression
----------------------------------------------
+Confidence Intervals for Regression
+-----------------------------------
 
 Recall that statistical inference is the process of making guesses about
 population parameters using a random sample.  We can apply the same ideas we
@@ -9,7 +9,7 @@ line.  In this section, we will apply the bootstrap process to regression to
 obtain confidence intervals for these quantities.
 
 Notation for Regression
------------------------
++++++++++++++++++++++++
 
 The following figure gives the common symbols used for the sample and population
 correlation coefficients and slopes.  Once again, greek letters are used for the
@@ -20,7 +20,7 @@ sample slope are respectively denoted by :math:`r` and :math:`b`.
 |image7022|
 
 Bootstrap Intervals for Regression
-----------------------------------
+++++++++++++++++++++++++++++++++++
 
 Our goal is to use the sample values of :math:`r` and :math:`b` to estimate 
 :math:`\rho` and :math:`\beta`.  We can again estimate the sampling variability

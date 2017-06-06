@@ -1,5 +1,5 @@
 Confidence Interval for a Single Population Mean
-------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 In Example 5.1, we found evidence that the mean perceived elapsed time
 for smokers suffering from nicotine withdrawal significantly differed
@@ -97,7 +97,7 @@ of interest.
 
 
 Confidence Intervals for the Population Standard Deviation
-----------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 If the original population is bell-shaped, then there is also a formula for the
 population standard deviation.  This is due to the fact that, for normal data,

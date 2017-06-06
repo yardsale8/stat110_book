@@ -1,6 +1,6 @@
 
 Example 5.1: 
--------------
++++++++++++++
 
 A study conducted by researchers at Pennsylvania State
 University investigated whether time perception, a simple indication of
