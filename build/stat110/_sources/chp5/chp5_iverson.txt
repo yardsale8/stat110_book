@@ -422,13 +422,13 @@ simulation every time we want an interval.
 .. |image517| image:: img/picking_correct_procedure.png
    :width: 8.64in
    :height: 6.01in
-.. |image3007| image:: img/pretend_population.png
+.. |image3007| image:: ../IntroToCI/img/pretend_population.png
    :width: 6.92in
    :height: 2.90in
-.. |image3008| image:: img/bootstrap_distribution.png
+.. |image3008| image:: ../IntroToCI/img/bootstrap_distribution.png
    :width: 6.65in
    :height: 3.66in
-.. |image3009| image:: img/bootstrap_vs_sampling_distribution.png
+.. |image3009| image:: ../IntroToCI/img/bootstrap_vs_sampling_distribution.png
    :width: 6.65in
    :height: 3.66in
 .. |image30010| image:: img/bootstrap_median.png
