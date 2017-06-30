@@ -9,7 +9,7 @@ confidence interval does NOT require any hypotheses concerning our
 population parameter of interest.
 
 Example 2.5: Star Tribune Poll Regarding Legalization of Medical Marijuana
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In February of 2014, a Star Tribune Minnesota poll asked a random
 sample of adults in Minnesota, “Do you support or oppose legalizing

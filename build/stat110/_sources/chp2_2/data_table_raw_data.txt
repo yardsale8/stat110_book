@@ -1,5 +1,5 @@
 Analyzing a Distribution with Raw Data
-++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Earlier, we used Excel to calculate binomial probabilities and to find
 the p-value associated with the binomial exact test. This test is also

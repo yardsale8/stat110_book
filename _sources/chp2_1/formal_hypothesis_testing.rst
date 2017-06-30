@@ -1,5 +1,3 @@
-Formal Hypothesis Testing
--------------------------
 
 You are most likely already familiar with several methods for descriptive
 statistics (e.g., calculating percentages, constructing bar charts or pie

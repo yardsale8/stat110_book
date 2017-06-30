@@ -1,5 +1,5 @@
 Example 1 - Helper vs. Hinderer?
-++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |image4|
 |image5|
@@ -29,7 +29,7 @@ Example 1 - Helper vs. Hinderer?
     Based on the p-value from the last question, what is the correct conclusion?
 
 Example 2 - Are Women Passed Over for Managerial Training?
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |image6|
 |image7|
@@ -59,7 +59,7 @@ Example 2 - Are Women Passed Over for Managerial Training?
     Based on the p-value from the last question, what is the correct conclusion?
 
 Example 3 - Font Preference?
-++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 |image8|
 |image9|
 

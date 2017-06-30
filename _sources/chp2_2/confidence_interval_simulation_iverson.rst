@@ -1,5 +1,5 @@
 Confidence Intervals with StatKey
-+++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In `StatKey's Confidence Interval for a Single Proportion
 <http://www.lock5stat.com/StatKey/bootstrap_1_cat/bootstrap_1_cat.html>`_ , 

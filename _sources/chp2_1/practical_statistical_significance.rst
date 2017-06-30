@@ -1,5 +1,5 @@
 Practical Significance versus Statistical Significance
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Consider the previous example. As discussed earlier, the result in Study #1 is
 not “statistically significant” because the observed outcome does not fall in
@@ -25,7 +25,7 @@ the difference between the observed and expected result is large enough to be of
 value in the practical sense.
 
 Example 2.4: Dukes vs. Wal-mart Stores, Inc.
-++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The lead plaintiff in this case, Betty Dukes, was a Wal-Mart employee.
 She and others alleged gender discrimination in promotion policies and

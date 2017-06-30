@@ -1,5 +1,5 @@
 More on Using p-Values to Make Decisions
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As mentioned earlier, some researchers advocate using the following
 guidelines:

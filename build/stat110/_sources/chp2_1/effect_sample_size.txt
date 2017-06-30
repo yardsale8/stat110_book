@@ -1,5 +1,5 @@
 Examining the Effect of Sample Size
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Example 2.3: Gender Discrimination, Revisited**
 

@@ -1,6 +1,6 @@
 
 Confidence Intervals in JMP
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note that we could also use JMP to find this confidence interval. JMP
 uses what is known as the **score method** instead of **Wald’s
