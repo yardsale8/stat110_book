@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>8. Methods for Association Between Two Categorical Variables &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="7. Comparing a Numerical Variable Across Two Groups" href="../chp6_iverson/paired_test_with_bootstrap.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=mosaic'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">8. Methods for Association Between Two Categorical Variables</a><ul>
+<li><a class="reference internal" href="#visualizing-association-with-mosaic-plots">8.1. Visualizing Association With Mosaic Plots</a><ul>
+<li><a class="reference internal" href="#example-3-1-mythbusters-and-the-yawning-experiment">8.1.1. Example 3.1: MythBusters and the Yawning Experiment</a></li>
+<li><a class="reference internal" href="#visualizing-no-association">8.1.2. Visualizing No Association</a></li>
+<li><a class="reference internal" href="#example-3-2-vested-interest-and-task-performance">8.1.3. Example 3.2: Vested Interest and Task Performance</a></li>
+<li><a class="reference internal" href="#example-3-11-support-for-iraq-war-and-political-affiliation">8.1.4. Example 3.11: Support for Iraq War and Political Affiliation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#measuring-the-difference-between-the-observed-data-and-no-association">8.2. Measuring the Difference between the Observed Data and No Association</a><ul>
+<li><a class="reference internal" href="#computing-the-chi-square-statistic">8.2.1. Computing the Chi Square Statistic</a></li>
+<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards">8.2.2. Statistical Inference: Conducting a Simulation Study with Playing Cards</a></li>
+<li><a class="reference internal" href="#chi-square-test-using-jmp">8.2.3. Chi-Square Test Using JMP</a></li>
+<li><a class="reference internal" href="#example-3-4-alcoholism-and-depression">8.2.4. Example 3.4: Alcoholism and Depression</a></li>
+<li><a class="reference internal" href="#id1">8.2.5. Example 3.11: Support for Iraq War and Political Affiliation</a></li>
+<li><a class="reference internal" href="#carrying-out-the-chi-square-test-of-independence">8.2.6. Carrying out the chi-square test of independence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - 7. Comparing a Numerical Variable Across Two Groups" data-toggle="tooltip">
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="methods-for-association-between-two-categorical-variables">
+<h1>8. Methods for Association Between Two Categorical Variables<a class="headerlink" href="#methods-for-association-between-two-categorical-variables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="visualizing-association-with-mosaic-plots">
+<h2>8.1. Visualizing Association With Mosaic Plots<a class="headerlink" href="#visualizing-association-with-mosaic-plots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-3-1-mythbusters-and-the-yawning-experiment">
+<h3>8.1.1. Example 3.1: MythBusters and the Yawning Experiment<a class="headerlink" href="#example-3-1-mythbusters-and-the-yawning-experiment" title="Permalink to this headline">¶</a></h3>
+<p>MythBusters, a popular television program on the Discovery Channel, once
+conducted an experiment to investigate whether or not yawning is
+contagious. The premise of the experiment was to invite a stranger to
+sit in a booth for an extended period of time. Fifty subjects were said
+to be tested in total, of which 34 were &#8220;seeded&#8221; with a yawn by the
+person conducting the experiment. The other 16 were not given a yawn
+seed. Using a two-way mirror and a hidden camera, the experimenters
+observed and recorded the results which are given below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="16%" />
+<col width="26%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">Yawned</th>
+<th class="head">Did not Yawn</th>
+<th class="head">Total</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Seeded with a yawn</td>
+<td>10</td>
+<td>24</td>
+<td>34</td>
+</tr>
+<tr class="row-odd"><td>Not seeded with a yawn</td>
+<td>4</td>
+<td>12</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Research Hypothesis</strong>: Those “seeded” with a yawn are more likely to
+actually yawn than those who are not seeded.</p>
+<p>When we analyze data on two variables, our first step is to distinguish
+between the <strong>response</strong> variable and the <strong>explanatory</strong> (or
+<strong>predictor</strong>) variable.</p>
+<div class="admonition-two-types-of-variables admonition">
+<p class="first admonition-title">Two types of variables</p>
+<p><strong>Response variable:</strong> The outcome variable on which comparisons are made.</p>
+<p class="last"><strong>Explanatory (or Predictor) variable:</strong> This defines the groups to be compared.</p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What variables must be measured in the MythBusters Yawning experiment
+in order to investigate the research hypothesis? Are these variables
+categorical or numerical?</li>
+<li>Which is the response variable? Which is the explanatory variable?</li>
+</ol>
+</div>
+<div class="admonition-descriptive-methods-for-two-categorical-variables admonition">
+<p class="first admonition-title">Descriptive Methods for Two Categorical Variables:</p>
+<p>A <strong>contingency table</strong> shows the joint frequencies of two categorical
+variables. The rows of the table denote the categories of the first
+variable, and the columns denote the categories of the second variable.</p>
+<p class="last">A <strong>mosaic plot</strong> gives a visual representation of the relationship
+between two categorical variables. A mosaic plot graphically presents the
+information given in the contingency table.</p>
+</div>
+<p>To obtain these descriptive summaries from JMP, the data should be
+entered as follows:</p>
+<p><a class="reference internal" href="../_images/image1105.png"><img alt="image0" src="../_images/image1105.png" style="width: 2.72067in; height: 1.16048in;" /></a></p>
+<p>Select <strong>Analyze &gt; Fit Y by X</strong>. Place the response variable in the <strong>Y,
+Response</strong> box and the explanatory variable in the <strong>X, Factor</strong> box.</p>
+<p><a class="reference internal" href="../_images/image290.png"><img alt="image1" src="../_images/image290.png" style="width: 3.04931in; height: 1.64102in;" /></a></p>
+<p>Click OK, and JMP returns the following:</p>
+<p><a class="reference internal" href="../_images/image448.png"><img alt="image2" src="../_images/image448.png" style="width: 2.35375in; height: 1.69316in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Find the proportion that yawned in the Seeded group.</li>
+<li>Find the proportion that yawned in the Not Seeded group.</li>
+<li>Find the difference in the proportion that yawned between these two
+groups. Do these proportions differ in the direction conjectured by
+the researchers?</li>
+<li>Even if the seeding of a yawn had absolutely no effect on whether or
+not a subject actually yawned, is it <em>possible</em> to have obtained a
+difference such as this by random chance alone? Explain.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="visualizing-no-association">
+<h3>8.1.2. Visualizing No Association<a class="headerlink" href="#visualizing-no-association" title="Permalink to this headline">¶</a></h3>
+<p>When interpreting a contingency table and mosaic plot, it is important to be
+able to visualize what these table would look like if there was no connection
+between the variables. To get a feel for how to construct the <em>no association
+table</em> and <em>plot,</em> let’s consider two variables that are clearly unrelated.</p>
+<p><strong>Variable 1:</strong> Whether or not I am wearing a blue shirt.</p>
+<p><strong>Variable 2:</strong> Whether or not it is cloudy.</p>
+<p>Suppose, for the sake of this example, I wear blue shirts 68% of the time.
+Consider the following contingency table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="12%" />
+<col width="25%" />
+<col width="11%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">Cloudy</th>
+<th class="head">Not Cloudy</th>
+<th class="head">Total</th>
+<th class="head">Proportion</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Blue Shirt</td>
+<td>&nbsp;</td>
+<td>36*0.68=24.48</td>
+<td>34</td>
+<td>34/50 = 0.68</td>
+</tr>
+<tr class="row-odd"><td>Shirt of Another Color</td>
+<td>&nbsp;</td>
+<td>36*0.32 = 11.52</td>
+<td>16</td>
+<td>16/50 = 0.32</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>14</td>
+<td>36</td>
+<td>50</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Note that we have illustrated how to compute the proportion of days
+with a shirt of another color. Compute the proportion of the 50
+observations had a blue shirt.</li>
+<li>Note that 32% of days are “not blue days.” If there is no association
+between my shirt color and the weather, argue that 32% of the days
+that are labeled “not cloudy” should also be labeled “not blue”.</li>
+</ol>
+</div>
+<p>In total this would be 36*0.32 = 11.52 days on average. This value is
+known as the <strong>expected count assuming no association</strong> or simply the
+<strong>expected count</strong>. There is a nice short cut for computing the values
+in the no association table. Notice that the 16*36/50 = 11.52. That is
+we can compute the expected value given no association by multiplying
+the row and column totals, then dividing by the grand total.</p>
+<div class="math">
+\[Expect\ Count = \frac{\left( \text{row\ total} \right)*\left( \text{column\ total} \right)}{\text{grand\ total}}\]</div>
+<ol class="arabic simple">
+<li>Fill out the rest of the table, assuming there is no connection
+between my shirt color and whether or not it is cloudy.</li>
+</ol>
+<p>Let’s look at the mosaic plot for the no association table.</p>
+<p><a class="reference internal" href="../_images/image546.png"><img alt="image3" src="../_images/image546.png" style="width: 3.12569in; height: 2.27915in;" /></a></p>
+<p>Notice how the bars line up perfectly with the short bars on the right
+(which represents to marginal distribution of Yes and No). This will
+always be approximately true if there is little or no association
+between the two variables. In this way, we can use the marginal
+distribution on the right to quickly visualize the <em>no association</em>
+plot.</p>
+<p>Let’s return to the original example and illustrate this visualization.</p>
+<div class="admonition-how-to-visualize-the-no-association-plot admonition">
+<p class="first admonition-title">How to visualize the no-association plot</p>
+<ol class="arabic simple">
+<li>Start with the original mosaic plot</li>
+<li>Draw a line straight across from the marginal distribution.</li>
+</ol>
+<p class="last"><a class="reference internal" href="../_images/image448.png"><img alt="image4" src="../_images/image448.png" style="width: 2.33178in; height: 1.67736in;" /></a> <a class="reference internal" href="../_images/image4_2.png"><img alt="image5" src="../_images/image4_2.png" style="width: 2.43990in; height: 1.75513in;" /></a></p>
+</div>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+<ol class="last arabic simple">
+<li>Comment on how the actual plot differs from the no association plot.
+Which groups have more or less value than expected?</li>
+<li>Based on this graph, do think there is an association between whether
+or not a person yawned and whether or not they were seeded with a
+yawn? Explain.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="example-3-2-vested-interest-and-task-performance">
+<h3>8.1.3. Example 3.2: Vested Interest and Task Performance<a class="headerlink" href="#example-3-2-vested-interest-and-task-performance" title="Permalink to this headline">¶</a></h3>
+<p>This example is from Investigating Statistical Concepts, Applications,
+and Methods by Beth Chance and Allan Rossman. 2006.
+Thomson-Brooks/Cole.*</p>
+<p>“A study published in the <em>Journal of Personality and Social Psychology</em>
+(Butler and Baumeister, 1998) investigated a conjecture that having an
+observer with a vested interest would decrease subjects’ performance on
+a skill-based task. Subjects were given time to practice playing a video
+game that required them to navigate an obstacle course as quickly as
+possible. They were then told to play the game one final time with an
+observer present. Subjects were randomly assigned to one of two groups.
+One group (A) was told that the participant and observer would each win
+$3 if the participant beat a certain threshold time, and the other group
+(B) was told only that the participant would win the prize if the
+threshold were beaten. The threshold was chosen to be a time that they
+beat in 30% of their practice turns. The following results are very
+similar to those found in the experiment: 3 of the 12 subjects in group
+A beat the threshold, and 8 of 12 subjects in group B achieved success.”</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="27%" />
+<col width="30%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">A: Vested Interest</th>
+<th class="head">B: No Vested Interest</th>
+<th class="head">Total</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Achieved success</td>
+<td>3</td>
+<td>8</td>
+<td>11</td>
+</tr>
+<tr class="row-odd"><td>Did not achieve success</td>
+<td>9</td>
+<td>4</td>
+<td>13</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>12</td>
+<td>12</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Research Hypothesis</strong>: Having an observer with a vested interest decreases
+performance on a skill-based task.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">What variables must be measured in order to address the research
+question? Are they categorical or numerical?</p>
+</li>
+<li><p class="first">Which is the response variable? Which is the explanatory variable?</p>
+<p>The data can be entered into JMP as follows:</p>
+</li>
+</ol>
+</div></blockquote>
+<p class="last"><a class="reference internal" href="../_images/image622.png"><img alt="image6" src="../_images/image622.png" style="width: 3.15010in; height: 1.35321in;" /></a>
+<a class="reference internal" href="../_images/image716.png"><img alt="image7" src="../_images/image716.png" style="width: 2.65315in; height: 1.46756in;" /></a></p>
+</div>
+<p>To create the contingency table and the mosaic plot in JMP, select <strong>Analyze &gt;
+Fit Y by X</strong>. As always, place the response variable in the <strong>Y, Response</strong> box
+and the explanatory variable in the <strong>X, Factor</strong> box. Click OK, and JMP returns
+the following:</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What is the proportion of successes (beating the threshold) for each
+group?</li>
+<li>Add a line to the mosaic plot that illustrates how this graph would
+look if there was no association between the group and beat
+threshold.</li>
+<li>Which groups are over-represented when compared to the no association
+graph. How different are these graphs?</li>
+<li>Even if the observer’s interest had absolutely no effect on subjects’
+performance, is it <em>likely</em> to have obtained a difference such as
+this by random chance alone? Do you think this difference provides
+strong evidence that there is an association between achievement and
+whether or not the participant has a vest interest? Explain.</li>
+<li>Even if the observer’s interest had absolutely no effect on subjects’
+performance, is it <em>possible</em> to have obtained a difference such as
+this by random chance alone? Explain.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="example-3-11-support-for-iraq-war-and-political-affiliation">
+<h3>8.1.4. Example 3.11: Support for Iraq War and Political Affiliation<a class="headerlink" href="#example-3-11-support-for-iraq-war-and-political-affiliation" title="Permalink to this headline">¶</a></h3>
+<p>In March of 2003, the Pew Internet &amp; American Life Project
+commissioned Princeton Survey Research Associates to develop and carry
+out a survey of what Americans thought about the recent war in Iraq.
+Some of the results of this survey of over 1,400 American adults are
+given in the JMP data file <strong>IraqWar.JMP</strong>. (<em>Source:</em> <em>McClave &amp;
+Sincich, Problem 13.33</em>)
+Responses to the following questions were recorded:</p>
+<ol class="arabic">
+<li><p class="first">Do you support or oppose the Iraq War?</p>
+</li>
+<li><p class="first">Do you ever go online to access the Internet or World Wide Web?</p>
+</li>
+<li><p class="first">Do you consider yourself a Republican, Democrat, or Independent?</p>
+</li>
+<li><dl class="first docutils">
+<dt>In general, would you describe your political views as very</dt>
+<dd><p class="first last">conservative, conservative, moderate, liberal, or very liberal?</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">What is your race?</p>
+</li>
+<li><p class="first">Do you live in a suburban, rural, or urban community?</p>
+</li>
+</ol>
+<p><strong>Research Question</strong>: Is there a significant association between Support for
+the Iraq War and Political Affiliation?</p>
+<p>Note that this investigation requires us to focus on only two of the
+measured variables: <em>Support for the Iraq War</em> and <em>Political
+Affiliation</em>. First, let’s summarize the data using JMP, which returns
+the contingency table and mosaic plot:</p>
+<p><a class="reference internal" href="../_images/image1118.png"><img alt="image8" src="../_images/image1118.png" style="width: 2.71648in; height: 1.97391in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>Draw a line to illustrate the no association graph, that is the
+mosaic plot if there was no association between political
+affiliation and support for the war.</li>
+<li>Identify and comment on the combinations of labels that are
+over-represented, when compared to the no association plot.</li>
+<li>What can you say about the association between Support for the Iraq
+War and Political Affiliation based on the data obtained in the
+sample? Do you think there is evidence of an association between
+political affiliation and support for the war? Explain.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="measuring-the-difference-between-the-observed-data-and-no-association">
+<h2>8.2. Measuring the Difference between the Observed Data and No Association<a class="headerlink" href="#measuring-the-difference-between-the-observed-data-and-no-association" title="Permalink to this headline">¶</a></h2>
+<p>In the last section, we visually inspected the difference between the
+mosaic plot of the observed data and what the plots would look like if
+there were no association. For example, in the case of deciding if yawns
+were contagious, we had the following mosaic plot. <em>In this case there
+isn’t much difference between the plot and what we would expect if there
+was no association.</em></p>
+<p><a class="reference internal" href="../_images/image1104.png"><img alt="image100" src="../_images/image1104.png" style="width: 2.43990in; height: 1.75513in;" /></a></p>
+<p>On the other hand, consider the plot from Example 3.2. <em>In this case,
+there appears to be a large difference between the observed plot and
+what we would expect with no association</em>.</p>
+<p>To formalize this process, we need to take two things into account.</p>
+<ol class="arabic simple">
+<li>Constructing a statistic that measures the difference between the
+observed plot and what we would expect if there was no association.
+We will use the <em>Chi-Square</em> statistic to measure this difference.</li>
+<li>The inherent variability between samples. We will use a random
+simulation to simulate the distribution when assuming no association.</li>
+</ol>
+<div class="section" id="computing-the-chi-square-statistic">
+<h3>8.2.1. Computing the Chi Square Statistic<a class="headerlink" href="#computing-the-chi-square-statistic" title="Permalink to this headline">¶</a></h3>
+<p>We will illustrate the computation of the Chi-Square statistic as
+follows.</p>
+<p>A Chi-Square Test of Independence does a cell-by-cell comparison between
+the observed counts and the expected counts. This formula for this test
+is exactly the same as what was done in Chapter 3.</p>
+<div class="math">
+\[Test\ Statistic = \ \sum_{}^{}{\text{\ \ }\frac{\left( Observed - Expected \right)^{2}}{\text{Expected}}}\]</div>
+<p>Computing the test statistic for the previous example is shown here.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="46%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">Yawned</th>
+<th class="head">No Yawn</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Not Seeded</td>
+<td><span class="math">\(\frac{\left( 12 - 11.52 \right)^{2}}{11.52}\)</span> = 0.0200</td>
+<td><span class="math">\(\frac{\left( 4 - 4.48 \right)^{2}}{4.48}\)</span> = 0.0514</td>
+</tr>
+<tr class="row-odd"><td>Seeded</td>
+<td><span class="math">\(\frac{\left( 24 - 24.48 \right)^{2}}{24.48}\)</span> =0.0094</td>
+<td><span class="math">\(\frac{\left( 10 - 9.52 \right)^{2}}{9.52}\)</span> = 0.0242</td>
+</tr>
+</tbody>
+</table>
+<p>The test statistic is the sum of all the cell, test Statistic = 0.0200 +
+0.0094 + 0.0514 + 0.0242 = 0.105</p>
+<p><strong>Test Statistic</strong> = 0.105</p>
+<div class="admonition-interpreting-the-chi-square admonition">
+<p class="first admonition-title">Interpreting the Chi Square:</p>
+<p class="last">A large value of the Chi Square statistic indicates a large deviation from
+what we would expect with no association. For this reason, we will always
+use a <strong>greater than test</strong> and <strong>upper p-value</strong> for this test.</p>
+</div>
+<p>As this is a sample statistic, we expect this number to change from
+sample to sample. We will deal with this inherent variability by
+simulating the distribution of this statistic under the null hypothesis.</p>
+</div>
+<div class="section" id="statistical-inference-conducting-a-simulation-study-with-playing-cards">
+<h3>8.2.2. Statistical Inference: Conducting a Simulation Study with Playing Cards<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards" title="Permalink to this headline">¶</a></h3>
+<p>The above <em>descriptive analysis</em> tells us what we have learned about the
+50 subjects in the study. Our next goal is to make <em>inferences</em> beyond
+what happened in the study (i.e., we want to make general statements
+about the population). Does the higher proportion of yawners in the
+seeded group provide convincing evidence that being seeded with a yawn
+actually makes a person more likely to yawn? Note that it is possible
+that random chance alone could have led to this large of a difference.
+That is, while it is <em>possible</em> that the yawn seeding had no effect and
+the MythBusters happened to observe more yawners in the seeded group
+just by chance, the key question is whether it is <em>probable</em>.</p>
+<p>We will answer this question by replicating the experiment over and over
+again, but in a situation where we know that yawn seeding has no effect
+(the null model). We’ll start with 14 yawners and 36 non-yawners, and
+we’ll randomly assign 34 of these 50 subjects to the seeded group and
+the remaining 16 to the non-seeded group.</p>
+<p>Note that we could use playing cards to replicate this experiment: let
+14 red cards represent the yawners, and let 36 black cards represent the
+non-yawners. Shuffle the cards well, and randomly deal out 34 to be the
+seeded group. This is the first run of our simulation study. Construct
+the contingency table to show the number of yawners and non-yawners in
+each group from the first run of our simulation study.</p>
+<p>For convenience, we will use the following website to simulate dealing
+out cards
+<a class="reference external" href="http://www.rossmanchance.com/applets/ChisqShuffle.htm?yawning=1">http://www.rossmanchance.com/applets/ChisqShuffle.htm?yawning=1</a></p>
+<ol class="arabic">
+<li><p class="first">Follow the link to the sight.</p>
+</li>
+<li><p class="first">Select the Chi-Square (<span class="math">\(\chi^{2}\)</span>) as the statistic.</p>
+<p><a class="reference internal" href="../_images/image545.png"><img alt="image103" src="../_images/image545.png" style="width: 1.78542in; height: 1.29108in;" /></a></p>
+</li>
+<li><p class="first">Click on <strong>Show Shuffle Options</strong></p>
+</li>
+<li><p class="first">Click shuffle and verify that the simulation is computing and
+recording the chi-square statistic for each shuffle.</p>
+</li>
+<li><p class="first">Generate a large number of statistics by <strong>setting the number of
+shuffles to 1000</strong> and <strong>clicking shuffle.</strong> Paste a screen shot of
+the plot of these statistics below.</p>
+</li>
+<li><p class="first">Recall that we are simulating the distribution of the statistic under
+the null hypothesis, i.e. that there is no association between
+seeding a yawn and a person actually yawning. Furthermore, the
+chi-square statistic measures how far our observed data was from a no
+association plot. We want to know the observed data is unusually far
+away from the no association assumption by checking if our observed
+statistic is unusually larger. Use the <strong>Count Samples</strong> feature of
+the website to compute the upper p-value for our statistic.</p>
+<p><a class="reference internal" href="../_images/image620.png"><img alt="image104" src="../_images/image620.png" style="width: 4.86111in; height: 0.80556in;" /></a></p>
+</li>
+<li><p class="first">Write a conclusion for this test.</p>
+</li>
+<li><p class="first">Switch to the Dolphin Study. In this study, subjects that suffer from
+depression were flown to Honduras and randomly assigned to one of two
+groups. The Dolphin group was provided with therapy involving
+dolphins and the other groups did not receive the therapy and are
+used as a control group. <strong>Research Question:</strong> Is there an
+association between the therapy/control and whether or not the
+depression improved?</p>
+</li>
+</ol>
+<ol class="loweralpha simple">
+<li>Use the applet to compute the p-value for this study.</li>
+<li>Write out your conclusion based on the p-value.</li>
+</ol>
+</div>
+<div class="section" id="chi-square-test-using-jmp">
+<h3>8.2.3. Chi-Square Test Using JMP<a class="headerlink" href="#chi-square-test-using-jmp" title="Permalink to this headline">¶</a></h3>
+<p>The Chi-Square statistic and p-value are computed for us in JMP automatically
+when using <strong>Fit Y by X</strong>. We will be using the Pearson line in the table, as
+illustrated for the Yawn data below.</p>
+<p><a class="reference internal" href="../_images/image715.png"><img alt="image105" src="../_images/image715.png" style="width: 3.96597in; height: 0.70616in;" /></a></p>
+<p>As always, before using JMP to compute p-values, we must make sure that
+we satisfy the assumptions of the related test.</p>
+<div class="admonition-assumptions-behind-the-chi-square-test admonition">
+<p class="first admonition-title">Assumptions behind the Chi-Square Test:</p>
+<p>The chi-square test for independence may be inappropriate for tables
+with very small expected cell frequencies. One rule of thumb
+suggests that most of the expected cell frequencies in the table
+should be 5 or more; otherwise, the chi-square approximation may not
+be reliable. JMP and most other statistical software packages will
+warn you when the results of the chi-square test are suspect.</p>
+<p class="last">Also, each observation in the study can be classified into only one
+cell of the contingency table, and the observations must be
+independent.</p>
+</div>
+</div>
+<div class="section" id="example-3-4-alcoholism-and-depression">
+<h3>8.2.4. Example 3.4: Alcoholism and Depression<a class="headerlink" href="#example-3-4-alcoholism-and-depression" title="Permalink to this headline">¶</a></h3>
+<p>Past research has suggested a high rate of alcoholism in families of
+patients with primary unipolar depression. A study of 210 families of
+females with primary unipolar depression found that 89 had alcoholism
+present. A set of 299 control families found 94 present.</p>
+<p><strong>Research Hypothesis</strong>: The proportion of families afflicted by alcoholism
+<em>differs</em> depending on whether or not the female in the family had primary
+unipolar depression.</p>
+<p>The data can be found in the file <strong>Depression.JMP</strong>:</p>
+<p>H<sub>0</sub>: The proportion of families afflicted by alcoholism is
+the same regardless of whether or
+not the female in the family suffers from primary unipolar
+depression.</p>
+<p>H<sub>a</sub>: The proportion of families afflicted by alcoholism
+<em>differs</em> depending on whether or not
+the female in the family suffers from primary unipolar depression.</p>
+<p>We can also use JMP to calculate the expected counts, deviances, and
+cell contributions to find the test statistic (by right clicking on the
+table and selecting <strong>expected, deviation, and Cell Chi</strong>):</p>
+<p><a class="reference internal" href="../_images/image815.png"><img alt="image106" src="../_images/image815.png" style="width: 1.62901in; height: 1.87778in;" /></a></p>
+<p>Use this information to compute the chi-square statistic.</p>
+<p>Test Statistic = =</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What does it mean when the test statistic is “large”?</li>
+<li>At what point does the test statistic provide evidence to support our
+research question?</li>
+</ol>
+</div>
+<p><strong>Find the p-value:</strong></p>
+<p>Note that the output for the chi-square test automatically appears when
+you select <strong>Analyze &gt; Fit Y by X.</strong></p>
+<p><strong>Based on the p-value, write the appropriate conclusion</strong>:</p>
+</div>
+<div class="section" id="id1">
+<h3>8.2.5. Example 3.11: Support for Iraq War and Political Affiliation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>In March of 2003, the Pew Internet &amp; American Life Project
+commissioned Princeton Survey Research Associates to develop and carry
+out a survey of what Americans thought about the recent war in Iraq.
+Some of the results of this survey of over 1,400 American adults are
+given in the JMP data file <strong>IraqWar.JMP</strong>. (<em>Source:</em> <em>McClave &amp;
+Sincich, Problem 13.33</em>)
+Responses to the following questions were recorded:</p>
+<ol class="arabic">
+<li><p class="first">Do you support or oppose the Iraq War?</p>
+</li>
+<li><p class="first">Do you ever go online to access the Internet or World Wide Web?</p>
+</li>
+<li><p class="first">Do you consider yourself a Republican, Democrat, or Independent?</p>
+</li>
+<li><dl class="first docutils">
+<dt>In general, would you describe your political views as very</dt>
+<dd><p class="first last">conservative, conservative, moderate, liberal, or very liberal?</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">What is your race?</p>
+</li>
+<li><p class="first">Do you live in a suburban, rural, or urban community?</p>
+</li>
+</ol>
+<p><strong>Research Question</strong>: Is there a significant association between
+Support for the Iraq War and Political Affiliation?</p>
+<p>Note that this investigation requires us to focus on only two of the
+measured variables: <em>Support for the Iraq War</em> and <em>Political
+Affiliation</em>. First, let’s summarize the data using JMP. Select
+<strong>Analyze &gt; Fit Y by X</strong> and enter the following:</p>
+<p><a class="reference internal" href="../_images/image1117.png"><img alt="image107" src="../_images/image1117.png" style="width: 3.03808in; height: 1.97084in;" /></a></p>
+<p>JMP returns the contingency table and mosaic plot:</p>
+<p><a class="reference internal" href="../_images/image1318.png"><img alt="image108" src="../_images/image1318.png" style="width: 2.71648in; height: 1.97391in;" /></a></p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic">
+<li><dl class="first docutils">
+<dt>What can you say about the association between Support for the Iraq</dt>
+<dd><p class="first last">War and Political Affiliation based on the data obtained in the
+sample?</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="carrying-out-the-chi-square-test-of-independence">
+<h3>8.2.6. Carrying out the chi-square test of independence<a class="headerlink" href="#carrying-out-the-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-assumptions-behind-the-chi-square-test admonition">
+<p class="first admonition-title">Assumptions behind the Chi-square Test:</p>
+<p class="last">The chi-square test of independence may be inappropriate for tables with
+very small expected cell frequencies. One rule of thumb suggests that most
+of the expected cell frequencies in the table should be 5 or more;
+otherwise, the chi-square approximation may not be reliable. Also, all
+observations that are counted in the contingency table should be independent
+of each other.</p>
+</div>
+<p>In this case, do we satisfy the assumptions for the test for
+independence? Explain.</p>
+<p><strong>Step 1</strong>: Convert the research question into H<sub>o</sub> and
+H<sub>a</sub>:<a href="#id2"><span class="problematic" id="id3">**</span></a><a href="#id4"><span class="problematic" id="id5">*</span></a></p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>Step 2: Calculate a test statistic and p-value from the data.</strong></p>
+<p><a class="reference internal" href="../_images/image1418.png"><img alt="image109" src="../_images/image1418.png" style="width: 2.05625in; height: 2.28611in;" /></a></p>
+<p>Test Statistic = =</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+<ol class="last arabic simple">
+<li>What does it mean when the test statistic is “large”?</li>
+<li>At what point does the test statistic provide evidence to support our
+research question?</li>
+</ol>
+</div>
+<p><strong>Finding the p-value:</strong></p>
+<p>The output for the chi-square test is also given in the JMP output:</p>
+<p>p-value =</p>
+<p><strong>Step 3: Write a conclusion in the context of the problem</strong></p>
+</div>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - 7. Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip">
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp6_iverson/paired_test_with_bootstrap.html" ></a>
+  
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

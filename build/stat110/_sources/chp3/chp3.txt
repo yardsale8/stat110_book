@@ -1,5 +1,5 @@
-Chapter 3 - Methods for Two Categorical Variables
-=================================================
+Methods for Two Categorical Variables
+=====================================
 
 .. include:: ../chp3/example3.1.rst
 
