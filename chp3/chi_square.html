@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>&lt;no title&gt; &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'stat110';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'stat110';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">STAT 110 Book</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/stat110/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/stat110/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chi_square'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul class="simple">
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <p><strong>*Measuring the Difference between the Observed Data and No
+Association*</strong></p>
+<p>In the last section, we visually inspected the difference between the
+mosaic plot of the observed data and what the plots would look like if
+there were no association. For example, in the case of deciding if yawns
+were contagious, we had the following mosaic plot. <em>In this case there
+isn’t much difference between the plot and what we would expect if there
+was no association.</em></p>
+<p><a class="reference internal" href="../_images/image1104.png"><img alt="image0" src="../_images/image1104.png" style="width: 2.43990in; height: 1.75513in;" /></a></p>
+<p>On the other hand, consider the plot from Example 3.2. <em>In this case,
+there appears to be a large difference between the observed plot and
+what we would expect with no association</em>.</p>
+<p>To formalize this process, we need to take two things into account.</p>
+<ol class="arabic simple">
+<li>Constructing a statistic that measures the difference between the
+observed plot and what we would expect if there was no association.
+We will use the <em>Chi-Square</em> statistic to measure this difference.</li>
+<li>The inherent variability between samples. We will use a random
+simulation to simulate the distribution when assuming no association.</li>
+</ol>
+<p><strong>*Computing the Chi Square Statistic*</strong></p>
+<p>We will illustrate the computation of the Chi-Square statistic as
+follows.</p>
+<p>A Chi-Square Test of Independence does a cell-by-cell comparison between
+the observed counts and the expected counts. This formula for this test
+is exactly the same as what was done in Chapter 3.</p>
+<div class="math">
+\[Test\ Statistic = \ \sum_{}^{}{\text{\ \ }\frac{\left( Observed - Expected \right)^{2}}{\text{Expected}}}\]</div>
+<p>Computing the test statistic for the previous example is shown here.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="46%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">Yawned</th>
+<th class="head">No Yawn</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Not Seeded</td>
+<td><span class="math">\(\frac{\left( 12 - 11.52 \right)^{2}}{11.52}\)</span> = 0.0200</td>
+<td><span class="math">\(\frac{\left( 4 - 4.48 \right)^{2}}{4.48}\)</span> = 0.0514</td>
+</tr>
+<tr class="row-odd"><td>Seeded</td>
+<td><span class="math">\(\frac{\left( 24 - 24.48 \right)^{2}}{24.48}\)</span> =0.0094</td>
+<td><span class="math">\(\frac{\left( 10 - 9.52 \right)^{2}}{9.52}\)</span> = 0.0242</td>
+</tr>
+</tbody>
+</table>
+<p>The test statistic is the sum of all the cell, test Statistic = 0.0200 +
+0.0094 + 0.0514 + 0.0242 = 0.105</p>
+<blockquote>
+<div>Test Statistic = <em>0.105</em></div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>*Interpreting the Chi Square*</strong>: A large value of the Chi Square statistic indicates a large deviation from what we would expect with no association. <em>For this reason, we will always use a **greater than test*</em> and <strong>upper p-value</strong> for this test.*</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>As this is a sample statistic, we expect this number to change from
+sample to sample. We will deal with this inherent variability by
+simulating the distribution of this statistic under the null hypothesis.</p>
+<p><strong>*Statistical Inference: Conducting a Simulation Study with Playing
+Cards*</strong></p>
+<p>The above <em>descriptive analysis</em> tells us what we have learned about the
+50 subjects in the study. Our next goal is to make <em>inferences</em> beyond
+what happened in the study (i.e., we want to make general statements
+about the population). Does the higher proportion of yawners in the
+seeded group provide convincing evidence that being seeded with a yawn
+actually makes a person more likely to yawn? Note that it is possible
+that random chance alone could have led to this large of a difference.
+That is, while it is <em>possible</em> that the yawn seeding had no effect and
+the MythBusters happened to observe more yawners in the seeded group
+just by chance, the key question is whether it is <em>probable</em>.</p>
+<p>We will answer this question by replicating the experiment over and over
+again, but in a situation where we know that yawn seeding has no effect
+(the null model). We’ll start with 14 yawners and 36 non-yawners, and
+we’ll randomly assign 34 of these 50 subjects to the seeded group and
+the remaining 16 to the non-seeded group.</p>
+<p>Note that we could use playing cards to replicate this experiment: let
+14 red cards represent the yawners, and let 36 black cards represent the
+non-yawners. Shuffle the cards well, and randomly deal out 34 to be the
+seeded group. This is the first run of our simulation study. Construct
+the contingency table to show the number of yawners and non-yawners in
+each group from the first run of our simulation study.</p>
+<p>For convenience, we will use the following website to simulate dealing
+out cards
+<a class="reference external" href="http://www.rossmanchance.com/applets/ChisqShuffle.htm?yawning=1">http://www.rossmanchance.com/applets/ChisqShuffle.htm?yawning=1</a></p>
+<ol class="arabic">
+<li><p class="first">Follow the link to the sight.</p>
+</li>
+<li><p class="first">Select the Chi-Square (<span class="math">\(\chi^{2}\)</span>) as the statistic.</p>
+<p><a class="reference internal" href="../_images/image545.png"><img alt="image3" src="../_images/image545.png" style="width: 1.78542in; height: 1.29108in;" /></a></p>
+</li>
+<li><p class="first">Click on <strong>Show Shuffle Options</strong></p>
+</li>
+<li><p class="first">Click shuffle and verify that the simulation is computing and
+recording the chi-square statistic for each shuffle.</p>
+</li>
+<li><p class="first">Generate a large number of statistics by <strong>setting the number of
+shuffles to 1000</strong> and <strong>clicking shuffle.</strong> Paste a screen shot of
+the plot of these statistics below.</p>
+</li>
+<li><p class="first">Recall that we are simulating the distribution of the statistic under
+the null hypothesis, i.e. that there is no association between
+seeding a yawn and a person actually yawning. Furthermore, the
+chi-square statistic measures how far our observed data was from a no
+association plot. We want to know the observed data is unusually far
+away from the no association assumption by checking if our observed
+statistic is unusually larger. Use the <strong>Count Samples</strong> feature of
+the website to compute the upper p-value for our statistic.</p>
+<p><a class="reference internal" href="../_images/image620.png"><img alt="image4" src="../_images/image620.png" style="width: 4.86111in; height: 0.80556in;" /></a></p>
+</li>
+<li><p class="first">Write a conclusion for this test.</p>
+</li>
+<li><p class="first">Switch to the Dolphin Study. In this study, subjects that suffer from
+depression were flown to Honduras and randomly assigned to one of two
+groups. The Dolphin group was provided with therapy involving
+dolphins and the other groups did not receive the therapy and are
+used as a control group. <strong>Research Question:</strong> Is there an
+association between the therapy/control and whether or not the
+depression improved?</p>
+</li>
+</ol>
+<ol class="loweralpha simple">
+<li>Use the applet to compute the p-value for this study.</li>
+<li>Write out your conclusion based on the p-value.</li>
+</ol>
+<p><strong>*Chi-Square Test Using JMP*</strong></p>
+<p>The Chi-Square statistic and p-value are computed for us in JMP
+automatically when using <strong>Fit Y by X</strong>. We will be using the Pearson
+line in the table, as illustrated for the Yawn data below.</p>
+<p><a class="reference internal" href="../_images/image715.png"><img alt="image5" src="../_images/image715.png" style="width: 3.96597in; height: 0.70616in;" /></a></p>
+<p>As always, before using JMP to compute p-values, we must make sure that
+we satisfy the assumptions of the related test.</p>
+<p><em>Assumptions behind the Chi-Square Test</em>:</p>
+<blockquote>
+<div><p>The chi-square test for independence may be inappropriate for tables
+with very small expected cell frequencies. One rule of thumb
+suggests that most of the expected cell frequencies in the table
+should be 5 or more; otherwise, the chi-square approximation may not
+be reliable. JMP and most other statistical software packages will
+warn you when the results of the chi-square test are suspect.</p>
+<p>Also, each observation in the study can be classified into only one
+cell of the contingency table, and the observations must be
+independent.</p>
+</div></blockquote>
+<p><strong>*Example 3.4: Alcoholism and Depression*</strong></p>
+<p>Past research has suggested a high rate of alcoholism in families of
+patients with primary unipolar depression. A study of 210 families of
+females with primary unipolar depression found that 89 had alcoholism
+present. A set of 299 control families found 94 present.</p>
+<p><strong>*Research Hypothesis*</strong>: <strong>The proportion of families afflicted by
+alcoholism *differs* depending on whether or not the female in the
+family had primary unipolar depression.</strong></p>
+<p>The data can be found in the file <strong>Depression.JMP</strong>:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">H<sub>0</sub>: The proportion of families afflicted by alcoholism is
+the same regardless of whether or</div>
+<div class="line">not the female in the family suffers from primary unipolar
+depression.</div>
+</div>
+<div class="line-block">
+<div class="line">H<sub>a</sub>: The proportion of families afflicted by alcoholism
+<em>differs</em> depending on whether or not</div>
+<div class="line">the female in the family suffers from primary unipolar depression.</div>
+</div>
+</div></blockquote>
+<p>We can also use JMP to calculate the expected counts, deviances, and
+cell contributions to find the test statistic (by right clicking on the
+table and selecting <strong>expected, deviation, and Cell Chi</strong>):</p>
+<p><a class="reference internal" href="../_images/image815.png"><img alt="image6" src="../_images/image815.png" style="width: 1.62901in; height: 1.87778in;" /></a></p>
+<p>Use this information to compute the chi-square statistic.</p>
+<p>Test Statistic = =</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What does it mean when the test statistic is “large”?</li>
+<li>At what point does the test statistic provide evidence to support our
+research question?</li>
+</ol>
+<p><strong>*Find the p-value*:</strong></p>
+<p>Note that the output for the chi-square test automatically appears when
+you select <strong>Analyze &gt; Fit Y by X.</strong></p>
+<p><strong>*Based on the p-value, write the appropriate conclusion*</strong>:</p>
+<p><strong>*Example 3.11: Support for Iraq War and Political Affiliation
+*</strong></p>
+<div class="line-block">
+<div class="line">In March of 2003, the Pew Internet &amp; American Life Project
+commissioned Princeton Survey Research Associates to develop and carry
+out a survey of what Americans thought about the recent war in Iraq.
+Some of the results of this survey of over 1,400 American adults are
+given in the JMP data file <strong>IraqWar.JMP</strong>. (<em>Source:</em> <em>McClave &amp;
+Sincich, Problem 13.33</em>)</div>
+<div class="line">Responses to the following questions were recorded:</div>
+</div>
+<ol class="arabic">
+<li><p class="first">Do you support or oppose the Iraq War?</p>
+</li>
+<li><p class="first">Do you ever go online to access the Internet or World Wide Web?</p>
+</li>
+<li><p class="first">Do you consider yourself a Republican, Democrat, or Independent?</p>
+</li>
+<li><dl class="first docutils">
+<dt>In general, would you describe your political views as very</dt>
+<dd><p class="first last">conservative, conservative, moderate, liberal, or very liberal?</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">What is your race?</p>
+</li>
+<li><p class="first">Do you live in a suburban, rural, or urban community?</p>
+</li>
+</ol>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a><em>Research Question</em>: Is there a significant association between
+Support for the Iraq War and Political Affiliation? **</p>
+<p>Note that this investigation requires us to focus on only two of the
+measured variables: <em>Support for the Iraq War</em> and <em>Political
+Affiliation</em>. First, let’s summarize the data using JMP. Select
+<strong>Analyze &gt; Fit Y by X</strong> and enter the following:</p>
+<p><a class="reference internal" href="../_images/image1117.png"><img alt="image7" src="../_images/image1117.png" style="width: 3.03808in; height: 1.97084in;" /></a></p>
+<p>JMP returns the contingency table and mosaic plot:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head"><a class="reference internal" href="../_images/image1318.png"><img alt="image8" src="../_images/image1318.png" style="width: 2.71648in; height: 1.97391in;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Questions</em>:</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>What can you say about the association between Support for the Iraq</dt>
+<dd><p class="first last">War and Political Affiliation based on the data obtained in the
+sample?</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p><strong>*Carrying out the chi-square test of independence:*</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first"><em>Assumptions behind the Chi-square Test</em>:</p>
+<p class="last">The chi-square test of independence may be inappropriate for tables with very small expected cell frequencies. One rule of thumb suggests that most of the expected cell frequencies in the table should be 5 or more; otherwise, the chi-square approximation may not be reliable. Also, all observations that are counted in the contingency table should be independent of each other.</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>In this case, do we satisfy the assumptions for the test for
+independence? Explain.</p>
+<p><strong>*Step 1: Convert the research question into H:sub:`o` and
+H:sub:`a`:*</strong></p>
+<p>H<sub>o</sub>:</p>
+<p>H<sub>a</sub>:</p>
+<p><strong>*Step 2: Calculate a test statistic and p-value from the data.*</strong></p>
+<p><a class="reference internal" href="../_images/image1418.png"><img alt="image9" src="../_images/image1418.png" style="width: 2.05625in; height: 2.28611in;" /></a></p>
+<p>Test Statistic = =</p>
+<p><em>Questions</em>:</p>
+<ol class="arabic simple">
+<li>What does it mean when the test statistic is “large”?</li>
+<li>At what point does the test statistic provide evidence to support our
+research question?</li>
+</ol>
+<p><em>Finding the p-value</em>:</p>
+<p>The output for the chi-square test is also given in the JMP output:</p>
+<p>p-value =</p>
+<p><strong>*
+Step 3: Write a conclusion in the context of the problem
+*</strong></p>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 tiverson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

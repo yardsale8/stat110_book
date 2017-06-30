@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Methods for Two Categorical Variables &mdash; Runestone Interactive Overview</title>
+    <title>8. Methods for Two Categorical Variables &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -101,6 +101,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="7. Comparing a Numerical Variable Across Two Groups" href="../chp6_iverson/paired_test_with_bootstrap.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -245,7 +246,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=stat110&page=chp3'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=stat110&page=chp3_iverson'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -260,51 +261,51 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Methods for Two Categorical Variables</a><ul>
-<li><a class="reference internal" href="#example-3-1-mythbusters-and-the-yawning-experiment">Example 3.1: MythBusters and the Yawning Experiment</a><ul>
-<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards">Statistical Inference: Conducting a Simulation Study with Playing Cards</a></li>
-<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots">Statistical Inference: Conducting a Simulation Study with Tinkerplots</a></li>
+<li><a class="reference internal" href="#">8. Methods for Two Categorical Variables</a><ul>
+<li><a class="reference internal" href="#example-3-1-mythbusters-and-the-yawning-experiment">8.1. Example 3.1: MythBusters and the Yawning Experiment</a><ul>
+<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards">8.1.1. Statistical Inference: Conducting a Simulation Study with Playing Cards</a></li>
+<li><a class="reference internal" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots">8.1.2. Statistical Inference: Conducting a Simulation Study with Tinkerplots</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values">Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values</a><ul>
-<li><a class="reference internal" href="#carrying-out-fishers-exact-test">Carrying out Fisher’s Exact Test</a></li>
-<li><a class="reference internal" href="#example-3-2-vested-interest-and-task-performance">Example 3.2: Vested Interest and Task Performance</a><ul>
-<li><a class="reference internal" href="#fishers-exact-test-to-obtain-exact-p-values">Fisher’s Exact Test to Obtain Exact p-values</a></li>
+<li><a class="reference internal" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values">8.2. Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values</a><ul>
+<li><a class="reference internal" href="#carrying-out-fishers-exact-test">8.2.1. Carrying out Fisher’s Exact Test</a></li>
+<li><a class="reference internal" href="#example-3-2-vested-interest-and-task-performance">8.2.2. Example 3.2: Vested Interest and Task Performance</a><ul>
+<li><a class="reference internal" href="#fishers-exact-test-to-obtain-exact-p-values">8.2.2.1. Fisher’s Exact Test to Obtain Exact p-values</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#example-3-3-claritin-and-nervousness">Example 3.3: Claritin and Nervousness</a></li>
-<li><a class="reference internal" href="#observational-studies-vs-designed-experiments">Observational Studies vs. Designed Experiments</a></li>
-<li><a class="reference internal" href="#example-3-4-alcoholism-and-depression">Example 3.4: Alcoholism and Depression</a></li>
+<li><a class="reference internal" href="#example-3-3-claritin-and-nervousness">8.2.3. Example 3.3: Claritin and Nervousness</a></li>
+<li><a class="reference internal" href="#observational-studies-vs-designed-experiments">8.2.4. Observational Studies vs. Designed Experiments</a></li>
+<li><a class="reference internal" href="#example-3-4-alcoholism-and-depression">8.2.5. Example 3.4: Alcoholism and Depression</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#chi-square-test-alternative-to-fishers-exact-test">Chi-Square Test (Alternative to Fisher’s Exact Test)</a><ul>
-<li><a class="reference internal" href="#find-the-p-value">Find the p-value:</a></li>
-<li><a class="reference internal" href="#example-3-5-mice-and-tobacco-smoke">Example 3.5: Mice and Tobacco Smoke</a></li>
+<li><a class="reference internal" href="#chi-square-test-alternative-to-fishers-exact-test">8.3. Chi-Square Test (Alternative to Fisher’s Exact Test)</a><ul>
+<li><a class="reference internal" href="#find-the-p-value">8.3.1. Find the p-value:</a></li>
+<li><a class="reference internal" href="#example-3-5-mice-and-tobacco-smoke">8.3.2. Example 3.5: Mice and Tobacco Smoke</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confidence-interval-for-the-difference-in-proportions">Confidence Interval for the Difference in Proportions</a><ul>
-<li><a class="reference internal" href="#example-3-6-gender-and-health-insurance">Example 3.6: Gender and Health Insurance</a></li>
-<li><a class="reference internal" href="#example-3-7-adoption-and-suicide-attempts">Example 3.7: Adoption and Suicide Attempts</a></li>
+<li><a class="reference internal" href="#confidence-interval-for-the-difference-in-proportions">8.4. Confidence Interval for the Difference in Proportions</a><ul>
+<li><a class="reference internal" href="#example-3-6-gender-and-health-insurance">8.4.1. Example 3.6: Gender and Health Insurance</a></li>
+<li><a class="reference internal" href="#example-3-7-adoption-and-suicide-attempts">8.4.2. Example 3.7: Adoption and Suicide Attempts</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#calculating-risks-and-the-relative-risk">Calculating Risks and the Relative Risk</a></li>
-<li><a class="reference internal" href="#calculating-odds-and-the-odds-ratio">Calculating Odds and the Odds Ratio</a><ul>
-<li><a class="reference internal" href="#example-3-8-smoking-and-lung-cancer">Example 3.8: Smoking and Lung Cancer</a></li>
-<li><a class="reference internal" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio">Example 3.9: When is the Relative Risk Close to the Odds Ratio?</a></li>
+<li><a class="reference internal" href="#calculating-risks-and-the-relative-risk">8.5. Calculating Risks and the Relative Risk</a></li>
+<li><a class="reference internal" href="#calculating-odds-and-the-odds-ratio">8.6. Calculating Odds and the Odds Ratio</a><ul>
+<li><a class="reference internal" href="#example-3-8-smoking-and-lung-cancer">8.6.1. Example 3.8: Smoking and Lung Cancer</a></li>
+<li><a class="reference internal" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio">8.6.2. Example 3.9: When is the Relative Risk Close to the Odds Ratio?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#relative-risk-and-odds-ratios-in-jmp">Relative Risk and Odds Ratios in JMP</a><ul>
-<li><a class="reference internal" href="#example-3-10-importance-of-considering-absolute-risk">Example 3.10: Importance of Considering Absolute Risk</a></li>
+<li><a class="reference internal" href="#relative-risk-and-odds-ratios-in-jmp">8.7. Relative Risk and Odds Ratios in JMP</a><ul>
+<li><a class="reference internal" href="#example-3-10-importance-of-considering-absolute-risk">8.7.1. Example 3.10: Importance of Considering Absolute Risk</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence">Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence</a><ul>
-<li><a class="reference internal" href="#example-3-11-support-for-iraq-war-and-political-affiliation">Example 3.11: Support for Iraq War and Political Affiliation</a></li>
-<li><a class="reference internal" href="#carrying-out-the-chi-square-test-of-independence">Carrying out the chi-square test of independence:</a></li>
-<li><a class="reference internal" href="#finding-the-p-value">Finding the p-value:</a></li>
+<li><a class="reference internal" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence">8.8. Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence</a><ul>
+<li><a class="reference internal" href="#example-3-11-support-for-iraq-war-and-political-affiliation">8.8.1. Example 3.11: Support for Iraq War and Political Affiliation</a></li>
+<li><a class="reference internal" href="#carrying-out-the-chi-square-test-of-independence">8.8.2. Carrying out the chi-square test of independence:</a></li>
+<li><a class="reference internal" href="#finding-the-p-value">8.8.3. Finding the p-value:</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity">Chi-square Test of Independence versus Chi-square Test of Homogeneity</a><ul>
-<li><a class="reference internal" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s">Example 3.12: Opinions on Disciplining Children across Regions of U.S.</a></li>
+<li><a class="reference internal" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity">8.9. Chi-square Test of Independence versus Chi-square Test of Homogeneity</a><ul>
+<li><a class="reference internal" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s">8.9.1. Example 3.12: Opinions on Disciplining Children across Regions of U.S.</a></li>
 </ul>
 </li>
 </ul>
@@ -316,6 +317,14 @@
         
         
           
+  <li id="relations-prev" title="Previous Chapter - 7. Comparing a Numerical Variable Across Two Groups" data-toggle="tooltip">
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -342,9 +351,9 @@
 <div class="container" id="main-content">
   
   <div class="section" id="methods-for-two-categorical-variables">
-<h1>Methods for Two Categorical Variables<a class="headerlink" href="#methods-for-two-categorical-variables" title="Permalink to this headline">¶</a></h1>
+<h1>8. Methods for Two Categorical Variables<a class="headerlink" href="#methods-for-two-categorical-variables" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="example-3-1-mythbusters-and-the-yawning-experiment">
-<h2>Example 3.1: MythBusters and the Yawning Experiment<a class="headerlink" href="#example-3-1-mythbusters-and-the-yawning-experiment" title="Permalink to this headline">¶</a></h2>
+<h2>8.1. Example 3.1: MythBusters and the Yawning Experiment<a class="headerlink" href="#example-3-1-mythbusters-and-the-yawning-experiment" title="Permalink to this headline">¶</a></h2>
 <p>MythBusters, a popular television program on the Discovery Channel, once
 conducted an experiment to investigate whether or not yawning is
 contagious. The premise of the experiment was to invite a stranger to
@@ -434,7 +443,7 @@ difference such as this by random chance alone? Explain.</li>
 </ol>
 </div>
 <div class="section" id="statistical-inference-conducting-a-simulation-study-with-playing-cards">
-<h3>Statistical Inference: Conducting a Simulation Study with Playing Cards<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards" title="Permalink to this headline">¶</a></h3>
+<h3>8.1.1. Statistical Inference: Conducting a Simulation Study with Playing Cards<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-playing-cards" title="Permalink to this headline">¶</a></h3>
 <p>The above <em>descriptive analysis</em> tells us what we have learned about
 the 50 subjects in the study. Our next goal is to make <em>inferences</em>
 beyond what happened in the study (i.e., we want to make general
@@ -491,7 +500,7 @@ Explain.</li>
 </div>
 </div>
 <div class="section" id="statistical-inference-conducting-a-simulation-study-with-tinkerplots">
-<h3>Statistical Inference: Conducting a Simulation Study with Tinkerplots<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots" title="Permalink to this headline">¶</a></h3>
+<h3>8.1.2. Statistical Inference: Conducting a Simulation Study with Tinkerplots<a class="headerlink" href="#statistical-inference-conducting-a-simulation-study-with-tinkerplots" title="Permalink to this headline">¶</a></h3>
 <p>Note that we could use technology to simulate this process much more
 efficiently. This will enable us to easily obtain many more simulated
 results so that we can be more confident in our answer to Question 3
@@ -550,7 +559,7 @@ reasoning.</li>
 </div>
 </div>
 <div class="section" id="statistical-inference-fishers-exact-test-to-obtain-exact-p-values">
-<h2>Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h2>
+<h2>8.2. Statistical Inference: Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#statistical-inference-fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h2>
 <p>We just used a simulation study to investigate the Mythbusters’
 research hypothesis. This is a valid analysis; however, it provides
 only an approximate p-value. We can obtain the exact p-value using
@@ -567,14 +576,14 @@ calculate the probability of observing results at least as extreme as
 those observed in the MythBusters actual experiment. Now, you can use
 this output to carry out the test.</p>
 <div class="section" id="carrying-out-fishers-exact-test">
-<h3>Carrying out Fisher’s Exact Test<a class="headerlink" href="#carrying-out-fishers-exact-test" title="Permalink to this headline">¶</a></h3>
+<h3>8.2.1. Carrying out Fisher’s Exact Test<a class="headerlink" href="#carrying-out-fishers-exact-test" title="Permalink to this headline">¶</a></h3>
 <p>This test is based on the probability of observing data at least as
 extreme as the actual observed data. The procedure is carried out as
 follows.</p>
 <p><a class="reference internal" href="../_images/image433.png"><img alt="image3047" src="../_images/image433.png" style="width: 8.43in; height: 7.93in;" /></a></p>
 </div>
 <div class="section" id="example-3-2-vested-interest-and-task-performance">
-<h3>Example 3.2: Vested Interest and Task Performance<a class="headerlink" href="#example-3-2-vested-interest-and-task-performance" title="Permalink to this headline">¶</a></h3>
+<h3>8.2.2. Example 3.2: Vested Interest and Task Performance<a class="headerlink" href="#example-3-2-vested-interest-and-task-performance" title="Permalink to this headline">¶</a></h3>
 <p>This example is from Investigating Statistical Concepts, Applications,
 and Methods by Beth Chance and Allan Rossman. 2006.
 Thomson-Brooks/Cole.*</p>
@@ -652,12 +661,12 @@ assuming that there is no difference in the two groups being compared.
 The sum of these probabilities is the p-value from Fisher’s exact
 test.</p>
 <div class="section" id="fishers-exact-test-to-obtain-exact-p-values">
-<h4>Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h4>
+<h4>8.2.2.1. Fisher’s Exact Test to Obtain Exact p-values<a class="headerlink" href="#fishers-exact-test-to-obtain-exact-p-values" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference internal" href="../_images/image463.png"><img alt="image3050" src="../_images/image463.png" style="width: 5.93in; height: 7.62in;" /></a></p>
 </div>
 </div>
 <div class="section" id="example-3-3-claritin-and-nervousness">
-<h3>Example 3.3: Claritin and Nervousness<a class="headerlink" href="#example-3-3-claritin-and-nervousness" title="Permalink to this headline">¶</a></h3>
+<h3>8.2.3. Example 3.3: Claritin and Nervousness<a class="headerlink" href="#example-3-3-claritin-and-nervousness" title="Permalink to this headline">¶</a></h3>
 <p>An advertisement by the Schering Corporation in 1999 for the allergy
 drug Claritin mentioned that in a pediatric randomized clinical trial,
 symptoms of nervousness were shown by 4 of 188 patients on Claritin
@@ -686,7 +695,7 @@ JMP.</li>
 <p><a class="reference internal" href="../_images/image483.png"><img alt="image3052" src="../_images/image483.png" style="width: 5.97in; height: 5.03in;" /></a></p>
 </div>
 <div class="section" id="observational-studies-vs-designed-experiments">
-<h3>Observational Studies vs. Designed Experiments<a class="headerlink" href="#observational-studies-vs-designed-experiments" title="Permalink to this headline">¶</a></h3>
+<h3>8.2.4. Observational Studies vs. Designed Experiments<a class="headerlink" href="#observational-studies-vs-designed-experiments" title="Permalink to this headline">¶</a></h3>
 <p>Reconsider the “Vested Interest and Task Performance” example.  Fisher’s exact
 test provided evidence that the proportion of successes was in fact smaller for
 the vested interest group (p-value = .0498). Now, the question is this: can we
@@ -726,7 +735,7 @@ So, the most likely explanation left is that having a vested interest
 really is the cause of the decreased task performance.</p>
 </div>
 <div class="section" id="example-3-4-alcoholism-and-depression">
-<h3>Example 3.4: Alcoholism and Depression<a class="headerlink" href="#example-3-4-alcoholism-and-depression" title="Permalink to this headline">¶</a></h3>
+<h3>8.2.5. Example 3.4: Alcoholism and Depression<a class="headerlink" href="#example-3-4-alcoholism-and-depression" title="Permalink to this headline">¶</a></h3>
 <p>Past research has suggested a high rate of alcoholism in families of patients
 with primary unipolar depression. A study of 210 families of females with
 primary unipolar depression found that 89 had alcoholism present. A set of 299
@@ -764,7 +773,7 @@ alcoholism in her family? Explain your reasoning.</li>
 </div>
 </div>
 <div class="section" id="chi-square-test-alternative-to-fishers-exact-test">
-<h2>Chi-Square Test (Alternative to Fisher’s Exact Test)<a class="headerlink" href="#chi-square-test-alternative-to-fishers-exact-test" title="Permalink to this headline">¶</a></h2>
+<h2>8.3. Chi-Square Test (Alternative to Fisher’s Exact Test)<a class="headerlink" href="#chi-square-test-alternative-to-fishers-exact-test" title="Permalink to this headline">¶</a></h2>
 <p>Fisher’s exact test from the previous section can be used for either
 upper-tailed, lower-tailed, or two-tailed hypothesis tests for differences in
 two proportions. The <em>Chi-square test</em> is another procedure we can use to test
@@ -806,7 +815,7 @@ research question?</li>
 </ol>
 </div>
 <div class="section" id="find-the-p-value">
-<h3>Find the p-value:<a class="headerlink" href="#find-the-p-value" title="Permalink to this headline">¶</a></h3>
+<h3>8.3.1. Find the p-value:<a class="headerlink" href="#find-the-p-value" title="Permalink to this headline">¶</a></h3>
 <p>Recall that the Chi-Square test uses a distribution known as the
 chi-square (χ:sup:<cite>2</cite>) distribution. The chi-square distribution
 takes on only positive numbers and is a continuous distribution. In
@@ -834,7 +843,7 @@ of the contingency table, and the observations must be independent.</p>
 </div>
 </div>
 <div class="section" id="example-3-5-mice-and-tobacco-smoke">
-<h3>Example 3.5: Mice and Tobacco Smoke<a class="headerlink" href="#example-3-5-mice-and-tobacco-smoke" title="Permalink to this headline">¶</a></h3>
+<h3>8.3.2. Example 3.5: Mice and Tobacco Smoke<a class="headerlink" href="#example-3-5-mice-and-tobacco-smoke" title="Permalink to this headline">¶</a></h3>
 <p>Ten mice (6–8 weeks old) were randomly assigned to one of two groups;
 five were exposed to simulated environmental tobacco smoke for 6 h/day,
 5 days/week for 5 months. The other 5 mice were kept in clean air during
@@ -907,7 +916,7 @@ Explain.</li>
 </div>
 </div>
 <div class="section" id="confidence-interval-for-the-difference-in-proportions">
-<h2>Confidence Interval for the Difference in Proportions<a class="headerlink" href="#confidence-interval-for-the-difference-in-proportions" title="Permalink to this headline">¶</a></h2>
+<h2>8.4. Confidence Interval for the Difference in Proportions<a class="headerlink" href="#confidence-interval-for-the-difference-in-proportions" title="Permalink to this headline">¶</a></h2>
 <p>Recall our conclusion from Example 3.4 after conducting a hypothesis
 test: “We have evidence the proportion of families afflicted by
 alcoholism differs depending on whether or not the female in the family
@@ -1021,7 +1030,7 @@ hypothesis test? Explain.</li>
 </ol>
 </div>
 <div class="section" id="example-3-6-gender-and-health-insurance">
-<h3>Example 3.6: Gender and Health Insurance<a class="headerlink" href="#example-3-6-gender-and-health-insurance" title="Permalink to this headline">¶</a></h3>
+<h3>8.4.1. Example 3.6: Gender and Health Insurance<a class="headerlink" href="#example-3-6-gender-and-health-insurance" title="Permalink to this headline">¶</a></h3>
 <p>In 2010, the U.S. Congress passed the historic health care reform bill
 that will provide some type of coverage for the 32 million Americans
 currently without health care insurance. Prior to this, several studies
@@ -1069,7 +1078,7 @@ Survey</em>, and the results are shown below.</p>
 </div>
 </div>
 <div class="section" id="example-3-7-adoption-and-suicide-attempts">
-<h3>Example 3.7: Adoption and Suicide Attempts<a class="headerlink" href="#example-3-7-adoption-and-suicide-attempts" title="Permalink to this headline">¶</a></h3>
+<h3>8.4.2. Example 3.7: Adoption and Suicide Attempts<a class="headerlink" href="#example-3-7-adoption-and-suicide-attempts" title="Permalink to this headline">¶</a></h3>
 <p>In September of 2013, researchers from the University of Minnesota
 published a study in the journal <em>Pediatrics.</em> This study was described
 in a <em>Fox News</em> article titled “Adopted teens may be at higher risk of
@@ -1135,7 +1144,7 @@ proportions.</li>
 </div>
 </div>
 <div class="section" id="calculating-risks-and-the-relative-risk">
-<h2>Calculating Risks and the Relative Risk<a class="headerlink" href="#calculating-risks-and-the-relative-risk" title="Permalink to this headline">¶</a></h2>
+<h2>8.5. Calculating Risks and the Relative Risk<a class="headerlink" href="#calculating-risks-and-the-relative-risk" title="Permalink to this headline">¶</a></h2>
 <p>The confidence interval calculated above helps us to quantify the
 discrepancy in the proportion of adopted versus non-adopted that had
 attempted suicide. We could also measure the amount of discrepancy
@@ -1209,7 +1218,7 @@ calculated the relative risk as follows:</p>
 </div>
 </div>
 <div class="section" id="calculating-odds-and-the-odds-ratio">
-<h2>Calculating Odds and the Odds Ratio<a class="headerlink" href="#calculating-odds-and-the-odds-ratio" title="Permalink to this headline">¶</a></h2>
+<h2>8.6. Calculating Odds and the Odds Ratio<a class="headerlink" href="#calculating-odds-and-the-odds-ratio" title="Permalink to this headline">¶</a></h2>
 <p>Another quantity that is often used to describe differences in
 categorical outcomes between groups is the <em>odds ratio</em>. This ratio is
 used more commonly in practice than the relative risk ratio; however, it
@@ -1304,7 +1313,7 @@ relative risk (see Example 3.9 for clarification on this). <a href="#id1"><span 
 </ol>
 </div>
 <div class="section" id="example-3-8-smoking-and-lung-cancer">
-<h3>Example 3.8: Smoking and Lung Cancer<a class="headerlink" href="#example-3-8-smoking-and-lung-cancer" title="Permalink to this headline">¶</a></h3>
+<h3>8.6.1. Example 3.8: Smoking and Lung Cancer<a class="headerlink" href="#example-3-8-smoking-and-lung-cancer" title="Permalink to this headline">¶</a></h3>
 <p>The data in the contingency table shown below are the results of a
 case-control study published back in 1950 (this was one of the first
 studies linking smoking to lung cancer). Note that in this study, the
@@ -1404,7 +1413,7 @@ answer to Question 2 from above?</li>
 </div>
 </div>
 <div class="section" id="example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio">
-<h3>Example 3.9: When is the Relative Risk Close to the Odds Ratio?<a class="headerlink" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio" title="Permalink to this headline">¶</a></h3>
+<h3>8.6.2. Example 3.9: When is the Relative Risk Close to the Odds Ratio?<a class="headerlink" href="#example-3-9-when-is-the-relative-risk-close-to-the-odds-ratio" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following hypothetical example comparing survival rates
 between two groups.</p>
 <table border="1" class="docutils">
@@ -1483,7 +1492,7 @@ case, how close are the relative risk and the odds ratios?</li>
 </div>
 </div>
 <div class="section" id="relative-risk-and-odds-ratios-in-jmp">
-<h2>Relative Risk and Odds Ratios in JMP<a class="headerlink" href="#relative-risk-and-odds-ratios-in-jmp" title="Permalink to this headline">¶</a></h2>
+<h2>8.7. Relative Risk and Odds Ratios in JMP<a class="headerlink" href="#relative-risk-and-odds-ratios-in-jmp" title="Permalink to this headline">¶</a></h2>
 <p>To discuss the calculation of the relative risk and the odds ratio in
 JMP, let’s once again consider the Adoption and Suicide Attempt
 example. The data should be entered in JMP as follows.</p>
@@ -1520,7 +1529,7 @@ intervals was to include the value one? Explain.</li>
 </ol>
 </div>
 <div class="section" id="example-3-10-importance-of-considering-absolute-risk">
-<h3>Example 3.10: Importance of Considering Absolute Risk<a class="headerlink" href="#example-3-10-importance-of-considering-absolute-risk" title="Permalink to this headline">¶</a></h3>
+<h3>8.7.1. Example 3.10: Importance of Considering Absolute Risk<a class="headerlink" href="#example-3-10-importance-of-considering-absolute-risk" title="Permalink to this headline">¶</a></h3>
 <p>In 1995, the UK Committee on Safety of Medicines issued a warning that
 birth control pills increased the risk of life-threating blood clots.
 The data on which these conclusions were drawn were very similar to the
@@ -1575,12 +1584,12 @@ the absolute risk of blood clots for those using birth control pills?</li>
 </div>
 </div>
 <div class="section" id="inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence">
-<h2>Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence<a class="headerlink" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h2>
+<h2>8.8. Inferences for Comparing Two or More Proportions - Chi-Square Test of Independence<a class="headerlink" href="#inferences-for-comparing-two-or-more-proportions-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h2>
 <p>In this section, we will once again discuss a hypothesis testing
 procedure that uses the chi-square distribution. Specifically, this is
 known as the <em>Chi-Square Test of Independence</em>.</p>
 <div class="section" id="example-3-11-support-for-iraq-war-and-political-affiliation">
-<h3>Example 3.11: Support for Iraq War and Political Affiliation<a class="headerlink" href="#example-3-11-support-for-iraq-war-and-political-affiliation" title="Permalink to this headline">¶</a></h3>
+<h3>8.8.1. Example 3.11: Support for Iraq War and Political Affiliation<a class="headerlink" href="#example-3-11-support-for-iraq-war-and-political-affiliation" title="Permalink to this headline">¶</a></h3>
 <p>In March of 2003, the Pew Internet &amp; American Life Project
 commissioned Princeton Survey Research Associates to develop and carry
 out a survey of what Americans thought about the recent war in Iraq.
@@ -1620,7 +1629,7 @@ sample?</p>
 </div>
 </div>
 <div class="section" id="carrying-out-the-chi-square-test-of-independence">
-<h3>Carrying out the chi-square test of independence:<a class="headerlink" href="#carrying-out-the-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h3>
+<h3>8.8.2. Carrying out the chi-square test of independence:<a class="headerlink" href="#carrying-out-the-chi-square-test-of-independence" title="Permalink to this headline">¶</a></h3>
 <div class="admonition-assumptions-behind-the-chi-square-test admonition">
 <p class="first admonition-title">Assumptions behind the Chi-square Test:</p>
 <p class="last">The chi-square test of independence may be inappropriate for tables with
@@ -1654,7 +1663,7 @@ research question?</li>
 </div>
 </div>
 <div class="section" id="finding-the-p-value">
-<h3>Finding the p-value:<a class="headerlink" href="#finding-the-p-value" title="Permalink to this headline">¶</a></h3>
+<h3>8.8.3. Finding the p-value:<a class="headerlink" href="#finding-the-p-value" title="Permalink to this headline">¶</a></h3>
 <p>The Chi-Square test uses a distribution known as the chi-square <span class="math">\(\chi^2\)</span>
 distribution.  The chi-square distribution takes on only positive numbers and is
 a <em>continuous</em> distribution. In addition, this distribution is indexed by its
@@ -1679,7 +1688,7 @@ displayed in the mosaic plot.</p>
 </div>
 </div>
 <div class="section" id="chi-square-test-of-independence-versus-chi-square-test-of-homogeneity">
-<h2>Chi-square Test of Independence versus Chi-square Test of Homogeneity<a class="headerlink" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity" title="Permalink to this headline">¶</a></h2>
+<h2>8.9. Chi-square Test of Independence versus Chi-square Test of Homogeneity<a class="headerlink" href="#chi-square-test-of-independence-versus-chi-square-test-of-homogeneity" title="Permalink to this headline">¶</a></h2>
 <p>In the context of our Iraq War example, some statisticians might
 differentiate between these two versions of the chi-square test as
 follows.</p>
@@ -1699,7 +1708,7 @@ in the proportion that supports the war across political affiliation
 instead of focusing on there being a significant relationship between
 the two variables, but the overall story would have remained the same.</p>
 <div class="section" id="example-3-12-opinions-on-disciplining-children-across-regions-of-u-s">
-<h3>Example 3.12: Opinions on Disciplining Children across Regions of U.S.<a class="headerlink" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s" title="Permalink to this headline">¶</a></h3>
+<h3>8.9.1. Example 3.12: Opinions on Disciplining Children across Regions of U.S.<a class="headerlink" href="#example-3-12-opinions-on-disciplining-children-across-regions-of-u-s" title="Permalink to this headline">¶</a></h3>
 <p>On September 16-17, 2014, an NBC News/Marist Poll surveyed a random
 sample of 606 adults nationwide. Respondents were asked the following
 question: “Do you think it is right or wrong for parents to discipline
@@ -1796,6 +1805,13 @@ relationship:</p>
 
   
       
+  <li id="relations-prev" class="navLink" title='Previous Section - 7. Comparing a Numerical Variable Across Two Groups' data-toggle="tooltip">
+    <a href="../chp6_iverson/paired_test_with_bootstrap.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../chp6_iverson/paired_test_with_bootstrap.html" ></a>
+  
 
 <script type="text/javascript">
 
