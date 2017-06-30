@@ -271,16 +271,10 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#the-wald-interval">The Wald Interval</a><ul>
-<li><a class="reference internal" href="#example-2-6-helper-vs-hinderer-revisited">Example 2.6: Helper vs. Hinderer, Revisited</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#confidence-intervals-in-jmp">Confidence Intervals in JMP</a></li>
-<li><a class="reference internal" href="#inference-for-a-categorical-variable-with-more-than-two-categories">Inference for a Categorical Variable with More than Two Categories</a><ul>
-<li><a class="reference internal" href="#example-2-7-minnesota-crime-data">Example 2.7: Minnesota Crime Data</a></li>
-<li><a class="reference internal" href="#measuring-distance-between-observed-and-expected-with-several-categories">Measuring Distance between Observed and Expected with Several Categories</a></li>
-<li><a class="reference internal" href="#example-2-8-the-minnesota-student-survey">Example 2.8: The Minnesota Student Survey</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#inference-for-a-categorical-variable-with-more-than-two-categories">Inference for a Categorical Variable with More than Two Categories</a></li>
 <li><a class="reference internal" href="#using-jmp-to-find-p-values-given-the-raw-data">Using JMP to find p-values given the raw data</a></li>
 </ul>
 </li>
@@ -330,7 +324,7 @@ follows:</p>
 <p><a class="reference internal" href="../_images/image115.png"><img alt="image220" src="../_images/image115.png" style="width: 1.23803in; height: 2.42626in;" /></a></p>
 <p>To get the test statistic and p-value in JMP, select <strong>Analyze &gt;
 Distribution</strong>. Enter the following:</p>
-<p><a class="reference internal" href="../_images/image215.png"><img alt="image221" src="../_images/image215.png" style="width: 3.50000in; height: 1.35417in;" /></a></p>
+<p><a class="reference internal" href="../_images/image216.png"><img alt="image221" src="../_images/image216.png" style="width: 3.50000in; height: 1.35417in;" /></a></p>
 <p>On the output that appears, select “Test Probabilities” from the red
 drop-down arrow next to the variable name:</p>
 <p><a class="reference internal" href="../_images/image314.png"><img alt="image222" src="../_images/image314.png" style="width: 1.70000in; height: 1.80000in;" /></a></p>
@@ -425,13 +419,13 @@ calculate a confidence interval for a proportion, a statistician often
 makes use of the <strong>normal distribution</strong> (i.e., the bell-shaped
 curve). Note that the normal curve approximates the distribution of
 sample proportions obtained from Tinkerplots quite well:</p>
-<p><a class="reference internal" href="../_images/image133.png"><img alt="image2210" src="../_images/image133.png" style="width: 5.80800in; height: 1.94531in;" /></a></p>
+<p><a class="reference internal" href="../_images/image134.png"><img alt="image2210" src="../_images/image134.png" style="width: 5.80800in; height: 1.94531in;" /></a></p>
 <p>If we can reasonably assume that this will be the case (later, we’ll
 discuss certain conditions under which the normal approximation may not
 be reasonable), then we don’t even need the “dots” from Tinkerplots to
 find the middle 95%. We can use mathematical theory and a procedure
 known as the <strong>Wald interval</strong>, instead.</p>
-<p><a class="reference internal" href="../_images/image143.png"><img alt="image2211" src="../_images/image143.png" style="width: 5.88800in; height: 1.93623in;" /></a></p>
+<p><a class="reference internal" href="../_images/image144.png"><img alt="image2211" src="../_images/image144.png" style="width: 5.88800in; height: 1.93623in;" /></a></p>
 <p>To find the endpoints for a 95% confidence interval, we need only find
 the values on the x-axis of the above graph that separate the middle
 95% from the rest.</p>
@@ -530,8 +524,6 @@ arrived using the hypothesis test? Explain.</li>
 </li>
 </ol>
 </div>
-<div class="section" id="example-2-6-helper-vs-hinderer-revisited">
-<h3>Example 2.6: Helper vs. Hinderer, Revisited<a class="headerlink" href="#example-2-6-helper-vs-hinderer-revisited" title="Permalink to this headline">¶</a></h3>
 <p>Recall that in this study, 14 of the 16 ten-month-old infants chose the helper
 toy. Suppose that the researcher wants to estimate the parameter of interest, π
 = the proportion of all ten-month-olds that would choose the helper (you could
@@ -561,10 +553,8 @@ errors for a 95% confidence interval.</p>
 </ol>
 <div class="math">
 \[ \begin{align}\begin{aligned}\mathrm{Lower\,endpoint} = \hat{\pi} - 1.96\sqrt{\frac{\hat{\pi}\left(1 - \hat{\pi}\right)}{n}}=0.875-0.162=0.713\\\mathrm{Upper\,endpoint} = \hat{\pi} + 1.96\sqrt{\frac{\hat{\pi}\left(1 - \hat{\pi}\right)}{n}}=0.875+0.162=1.04\end{aligned}\end{align} \]</div>
-</div>
-</div>
 <div class="section" id="confidence-intervals-in-jmp">
-<h2>Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h2>
+<h3>Confidence Intervals in JMP<a class="headerlink" href="#confidence-intervals-in-jmp" title="Permalink to this headline">¶</a></h3>
 <p>Note that we could also use JMP to find this confidence interval. JMP
 uses what is known as the <strong>score method</strong> instead of <strong>Wald’s
 method</strong>, which would be more appropriate in this case.</p>
@@ -583,6 +573,7 @@ case “Choice”) and select <strong>Confidence Interval &gt; .95.</strong></p>
 <p class="last">HOW MUCH GREATER it is!</p>
 </div>
 </div>
+</div>
 <div class="section" id="inference-for-a-categorical-variable-with-more-than-two-categories">
 <h2>Inference for a Categorical Variable with More than Two Categories<a class="headerlink" href="#inference-for-a-categorical-variable-with-more-than-two-categories" title="Permalink to this headline">¶</a></h2>
 <p>The analyses we have completed up to this point in the semester were
@@ -592,8 +583,6 @@ one toy or the other. In the gender discrimination example, each
 employee selected for management was either male or female. Next,
 we’ll consider problems involving a single categorical variable which
 has more than two categories.</p>
-<div class="section" id="example-2-7-minnesota-crime-data">
-<h3>Example 2.7: Minnesota Crime Data<a class="headerlink" href="#example-2-7-minnesota-crime-data" title="Permalink to this headline">¶</a></h3>
 <p>The Minneapolis Police Department posts regular updates on crime statistics on
 their website. A colleague of mine has collected this data for the past few
 years on all neighborhoods in Minneapolis. A portion of the data set and the
@@ -622,7 +611,7 @@ Burglary, Larceny, Auto Theft, and Arson are used in reporting the
 <strong>Total</strong>.</p>
 <p>The Minneapolis Police Department reported that a total of 103 crimes
 occurred in the University of Minnesota neighborhood last year.</p>
-<p><a class="reference internal" href="../_images/image192.png"><img alt="image2220" src="../_images/image192.png" style="width: 7.32in; height: 5.84in;" /></a></p>
+<p><a class="reference internal" href="../_images/image193.png"><img alt="image2220" src="../_images/image193.png" style="width: 7.32in; height: 5.84in;" /></a></p>
 <p>The approach we take here to address the research question is very
 similar to what we have done previously. We will <em>assume</em> the crime
 patterns are occurring equally across the four seasons (i.e., that the
@@ -675,7 +664,7 @@ likely to occur in any of the four seasons.</p>
 <p><a class="reference internal" href="../_images/image392.png"><img alt="image2225" src="../_images/image392.png" style="width: 6.50000in; height: 2.87292in;" /></a></p>
 <p>Next, consider the actual crime statistics for the University of
 Minnesota neighborhood for the past year.</p>
-<p><a class="reference internal" href="../_images/image234.png"><img alt="image2242" src="../_images/image234.png" style="width: 6.44in; height: 1.29in;" /></a></p>
+<p><a class="reference internal" href="../_images/image235.png"><img alt="image2242" src="../_images/image235.png" style="width: 6.44in; height: 1.29in;" /></a></p>
 <p>Plot these observed outcomes on the above graph. What do you think?
 Recall that our goal is to determine whether this observed result is
 consistent or not with what our simulation tells us we should see if
@@ -688,9 +677,6 @@ considered an outlier in this situation than in the problems we dealt
 with previously?</li>
 </ol>
 </div>
-</div>
-<div class="section" id="measuring-distance-between-observed-and-expected-with-several-categories">
-<h3>Measuring Distance between Observed and Expected with Several Categories<a class="headerlink" href="#measuring-distance-between-observed-and-expected-with-several-categories" title="Permalink to this headline">¶</a></h3>
 <p>One way to address this problem is to consider the overall distance
 between the Observed and Expected counts for all four seasons
 combined. This is shown below.</p>
@@ -757,9 +743,6 @@ from the study.</p>
 appropriate statistical decision for our research question?</li>
 </ol>
 </div>
-</div>
-<div class="section" id="example-2-8-the-minnesota-student-survey">
-<h3>Example 2.8: The Minnesota Student Survey<a class="headerlink" href="#example-2-8-the-minnesota-student-survey" title="Permalink to this headline">¶</a></h3>
 <p>The Minnesota Student Survey (MSS) is a survey administered every three years to
 6<sup>th</sup>, 9<sup>th</sup>, and 12<sup>th</sup> grade students. It is also offered
 to students in area learning centers and to youth in juvenile correctional
@@ -897,7 +880,6 @@ quantity called the degrees-of-freedom, typically referred to as the
 <p class="last">This hypothesis testing procedure is often called the <strong>Chi-square
 Goodness of Fit Test</strong> and can easily be carried out using most
 statistical software packages.</p>
-</div>
 </div>
 </div>
 <div class="section" id="using-jmp-to-find-p-values-given-the-raw-data">

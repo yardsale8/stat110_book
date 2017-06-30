@@ -1,5 +1,5 @@
 Evaluating Evidence Using P-Values
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In each of our three examples, we essentially *assumed the null
 hypothesis was true* when setting up our spinner for the Tinkerplots

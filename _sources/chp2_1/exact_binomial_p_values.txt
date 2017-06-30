@@ -1,5 +1,5 @@
 Using the Binomial Distribution to Find Exact p-Values
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is one caveat regarding our current approach to obtaining a
 p-value. Certainly, different simulations will produce slightly

@@ -1,5 +1,5 @@
 Example: Gender Discrimination
-++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Recall that we already estimated the probability of observing 9 or fewer
 women selected out of 20 if there was no discrimination (i.e., we

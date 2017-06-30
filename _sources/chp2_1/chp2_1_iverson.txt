@@ -1,14 +1,21 @@
 Methods for a Single Categorical Variable
 =========================================
 
+Formal Hypothesis Tests With Simulations
+----------------------------------------
+
 .. include:: ../chp2_1/introduction.rst
+
+Formal Hypothesis Testing
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../chp2_1/formal_hypothesis_testing.rst
 
 .. include:: ../chp2_1/research_questions.rst
 
 The Null and Alternative Hypotheses
-----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .. raw:: html
 
@@ -19,7 +26,7 @@ The Null and Alternative Hypotheses
 .. include:: ../chp2_1/setting_up_null_alternative.rst
 
 What Constitutes Strong Evidence?
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. raw:: html
@@ -37,7 +44,10 @@ What Constitutes Strong Evidence?
 .. .. include:: example2.1.rst
 .. 
 .. .. include:: example2.2.rst
-.. 
+
+Finding Exact p-values With JMP
+-------------------------------
+
 .. include:: exact_binomial_p_values.rst
  
 .. include:: exact_p_value_example_gender.rst
@@ -45,7 +55,7 @@ What Constitutes Strong Evidence?
 .. include:: exact_p_value_example_font.rst
 
 Using JMP to Find p-values for the Binomial Exact Test
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -94,6 +104,9 @@ Using JMP to Find p-values for the Binomial Exact Test
     What is the correct conclusion in this case?
 
 .. .. include:: pracice_problems.rst
+
+More Information About Hypothesis Tests
+---------------------------------------
 
 .. include:: more_on_p_values.rst
  

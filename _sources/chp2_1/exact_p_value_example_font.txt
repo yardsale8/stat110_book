@@ -1,5 +1,5 @@
 Example: Font Preference
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally, we will use the binomial distribution to find the exact p-value
 for the Font Preference Study. Recall that we have already estimated

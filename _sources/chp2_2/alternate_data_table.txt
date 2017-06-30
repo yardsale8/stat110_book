@@ -1,6 +1,6 @@
 
 An Alternative Method of Setting up the Data Sheet
-++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can also set up the data as shown below:
 
