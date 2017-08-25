@@ -1,5 +1,5 @@
 Confidence Intervals for Regression
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Recall that statistical inference is the process of making guesses about
 population parameters using a random sample.  We can apply the same ideas we

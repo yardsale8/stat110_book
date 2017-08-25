@@ -5,12 +5,18 @@ In this chapter, we will discuss methods for comparing two numerical
 variables. We will introduce the concept of correlation and the basic
 idea behind a regression analysis.
 
+Displays of Association
+-----------------------
+
 .. include:: ../chp7/example7.1.rst
 
 .. include:: ../chp7/association_between_two_variables.rst
 
+Correlation
+-----------
+
 Video Lecture on Correlation
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -19,6 +25,9 @@ Video Lecture on Correlation
     </div>
 
 .. include:: ../chp7/correlation_coefficient.rst
+
+Linear Regression
+-----------------
 
 .. include:: ../chp7/least_squares_line.rst
 

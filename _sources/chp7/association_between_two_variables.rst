@@ -1,5 +1,5 @@
 Association Between Two Variables
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. raw:: html

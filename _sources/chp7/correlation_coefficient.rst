@@ -1,6 +1,6 @@
 
 Pearson Correlation Coefficient
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Pearson correlation coefficient (denoted by *r*) is used to describe
 and measure the relationship between two numerical variables. It is

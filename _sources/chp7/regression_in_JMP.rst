@@ -1,5 +1,5 @@
 Fitting a Regression Line in JMP
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following video illustrates the process of fitting a regression line in
 JMP.

@@ -1,5 +1,5 @@
 Introduction to Simple Linear Regression
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Next, we will explore the basic idea behind regression analysis. A
 simple linear regression model describes the relationship between a

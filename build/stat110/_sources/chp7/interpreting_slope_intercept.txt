@@ -1,5 +1,5 @@
 Interpreting Slope and the :math:`y`-intercept
-----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To write out an interpretation for the slope and :math:`y`-intercept, we start
 with the standard interpretations that are taught in mathematics.  Recall that

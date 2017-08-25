@@ -1,5 +1,5 @@
 The Least Squares Regression Line
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The lecture in the following video includes a demonstration of the least squares
 regression line.
