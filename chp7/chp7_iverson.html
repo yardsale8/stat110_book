@@ -263,20 +263,29 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">2. Methods for Two Numerical Variables</a><ul>
-<li><a class="reference internal" href="#example-7-1-lions-age-and-proportion-of-nose-blackness">2.1. Example 7.1: Lions’ Age and Proportion of Nose Blackness</a></li>
-<li><a class="reference internal" href="#association-between-two-variables">2.2. Association Between Two Variables</a><ul>
-<li><a class="reference internal" href="#scatterplots-and-displaying-an-association">2.2.1. Scatterplots and Displaying an Association</a></li>
-<li><a class="reference internal" href="#describing-an-association-between-variables">2.2.2. Describing an Association Between Variables</a></li>
+<li><a class="reference internal" href="#displays-of-association">2.1. Displays of Association</a><ul>
+<li><a class="reference internal" href="#example-7-1-lions-age-and-proportion-of-nose-blackness">2.1.1. Example 7.1: Lions’ Age and Proportion of Nose Blackness</a></li>
+<li><a class="reference internal" href="#association-between-two-variables">2.1.2. Association Between Two Variables</a><ul>
+<li><a class="reference internal" href="#scatterplots-and-displaying-an-association">2.1.2.1. Scatterplots and Displaying an Association</a></li>
+<li><a class="reference internal" href="#describing-an-association-between-variables">2.1.2.2. Describing an Association Between Variables</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#video-lecture-on-correlation">2.3. Video Lecture on Correlation</a></li>
-<li><a class="reference internal" href="#pearson-correlation-coefficient">2.4. Pearson Correlation Coefficient</a></li>
-<li><a class="reference internal" href="#the-least-squares-regression-line">2.5. The Least Squares Regression Line</a></li>
-<li><a class="reference internal" href="#introduction-to-simple-linear-regression">2.6. Introduction to Simple Linear Regression</a></li>
-<li><a class="reference internal" href="#fitting-a-regression-line-in-jmp">2.7. Fitting a Regression Line in JMP</a></li>
-<li><a class="reference internal" href="#interpreting-slope-and-the-y-intercept">2.8. Interpreting Slope and the <span class="math">y</span>-intercept</a></li>
-<li><a class="reference internal" href="#another-example">2.9. Another Example</a><ul>
-<li><a class="reference internal" href="#example-7-2">2.9.1. Example 7.2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#correlation">2.2. Correlation</a><ul>
+<li><a class="reference internal" href="#video-lecture-on-correlation">2.2.1. Video Lecture on Correlation</a></li>
+<li><a class="reference internal" href="#pearson-correlation-coefficient">2.2.2. Pearson Correlation Coefficient</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linear-regression">2.3. Linear Regression</a><ul>
+<li><a class="reference internal" href="#the-least-squares-regression-line">2.3.1. The Least Squares Regression Line</a></li>
+<li><a class="reference internal" href="#introduction-to-simple-linear-regression">2.3.2. Introduction to Simple Linear Regression</a></li>
+<li><a class="reference internal" href="#fitting-a-regression-line-in-jmp">2.3.3. Fitting a Regression Line in JMP</a></li>
+<li><a class="reference internal" href="#interpreting-slope-and-the-y-intercept">2.3.4. Interpreting Slope and the <span class="math">y</span>-intercept</a></li>
+<li><a class="reference internal" href="#another-example">2.3.5. Another Example</a><ul>
+<li><a class="reference internal" href="#example-7-2">2.3.5.1. Example 7.2</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -330,8 +339,10 @@
 <p>In this chapter, we will discuss methods for comparing two numerical
 variables. We will introduce the concept of correlation and the basic
 idea behind a regression analysis.</p>
+<div class="section" id="displays-of-association">
+<h2>2.1. Displays of Association<a class="headerlink" href="#displays-of-association" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="example-7-1-lions-age-and-proportion-of-nose-blackness">
-<h2>2.1. Example 7.1: Lions’ Age and Proportion of Nose Blackness<a class="headerlink" href="#example-7-1-lions-age-and-proportion-of-nose-blackness" title="Permalink to this headline">¶</a></h2>
+<h3>2.1.1. Example 7.1: Lions’ Age and Proportion of Nose Blackness<a class="headerlink" href="#example-7-1-lions-age-and-proportion-of-nose-blackness" title="Permalink to this headline">¶</a></h3>
 <p>It has been suggested that the amount of black pigmentation on the nose of male
 lions increases with age. <a class="reference external" href="http://www.savannasforever.org/docs/naturetrophy.pdf">Whitman et al.  (2004)</a> measured the
 proportion of black on the noses of lions of known ages in Tanzania, East
@@ -349,10 +360,10 @@ was used to rasterize each cut-out nose tip and assign each newly created
 quantified for the percentage of readable pixels that contained ‘black’.</div></blockquote>
 <p><a class="reference internal" href="../_images/image1103.png"><img alt="image700" src="../_images/image1103.png" style="width: 7.16in; height: 4.92in;" /></a></p>
 <p>A portion of the data is shown below:</p>
-<p><a class="reference internal" href="../_images/image446.png"><img alt="image703" src="../_images/image446.png" style="width: 2.19792in; height: 1.34461in;" /></a></p>
+<p><a class="reference internal" href="../_images/image447.png"><img alt="image703" src="../_images/image447.png" style="width: 2.19792in; height: 1.34461in;" /></a></p>
 </div>
 <div class="section" id="association-between-two-variables">
-<h2>2.2. Association Between Two Variables<a class="headerlink" href="#association-between-two-variables" title="Permalink to this headline">¶</a></h2>
+<h3>2.1.2. Association Between Two Variables<a class="headerlink" href="#association-between-two-variables" title="Permalink to this headline">¶</a></h3>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_e8grwx35&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_o6byx9c7" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div><p>In this chapter we will be looking to identify any <em>association</em> between two
@@ -367,7 +378,7 @@ variable.</dd>
 each individual.  Note that <em>bivariate</em> literally means &#8220;two variables.&#8221;</dd>
 </dl>
 <div class="section" id="scatterplots-and-displaying-an-association">
-<h3>2.2.1. Scatterplots and Displaying an Association<a class="headerlink" href="#scatterplots-and-displaying-an-association" title="Permalink to this headline">¶</a></h3>
+<h4>2.1.2.1. Scatterplots and Displaying an Association<a class="headerlink" href="#scatterplots-and-displaying-an-association" title="Permalink to this headline">¶</a></h4>
 <p>Creating a scatterplot is always the first step in determining if two variables
 are associated.  A scatterplot is constructed by plotting a point at each of
 the <span class="math">(x,y)</span> pairs, where <span class="math">x</span> and <span class="math">y</span> are the values of the x
@@ -412,7 +423,7 @@ interpretation of a scatterplot, the <em>direction</em>, <em>strength</em>, and 
 association.</p>
 </div>
 <div class="section" id="describing-an-association-between-variables">
-<h3>2.2.2. Describing an Association Between Variables<a class="headerlink" href="#describing-an-association-between-variables" title="Permalink to this headline">¶</a></h3>
+<h4>2.1.2.2. Describing an Association Between Variables<a class="headerlink" href="#describing-an-association-between-variables" title="Permalink to this headline">¶</a></h4>
 <p>As always, interpretations in statistics are just as important as calculations or
 the construction of graphical displays of data.  When describing a possible
 association between two variables, we will focus on the <em>direction</em>, <em>strength</em>,
@@ -515,13 +526,16 @@ we will introduce a summary method that will help us determine the strength of a
 linear association.</p>
 </div>
 </div>
+</div>
+<div class="section" id="correlation">
+<h2>2.2. Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="video-lecture-on-correlation">
-<h2>2.3. Video Lecture on Correlation<a class="headerlink" href="#video-lecture-on-correlation" title="Permalink to this headline">¶</a></h2>
+<h3>2.2.1. Video Lecture on Correlation<a class="headerlink" href="#video-lecture-on-correlation" title="Permalink to this headline">¶</a></h3>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_qkfhij1g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_7mh85sm3" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div></div>
 <div class="section" id="pearson-correlation-coefficient">
-<h2>2.4. Pearson Correlation Coefficient<a class="headerlink" href="#pearson-correlation-coefficient" title="Permalink to this headline">¶</a></h2>
+<h3>2.2.2. Pearson Correlation Coefficient<a class="headerlink" href="#pearson-correlation-coefficient" title="Permalink to this headline">¶</a></h3>
 <p>The Pearson correlation coefficient (denoted by <em>r</em>) is used to describe
 and measure the relationship between two numerical variables. It is
 appropriate to use when the following are true:</p>
@@ -541,11 +555,11 @@ below:</p>
 <p class="last">We can also use JMP to directly calculate the Pearson correlation
 coefficient. Select <strong>Analyze &gt; Multivariate Methods &gt; Multivariate</strong>.</p>
 </div>
-<p><a class="reference internal" href="../_images/image619.png"><img alt="image704" src="../_images/image619.png" style="width: 4.72917in; height: 1.62914in;" /></a></p>
+<p><a class="reference internal" href="../_images/image620.png"><img alt="image704" src="../_images/image620.png" style="width: 4.72917in; height: 1.62914in;" /></a></p>
 <p>Place both variables in the Y, columns box, and JMP returns the
 following:
-<a class="reference internal" href="../_images/image714.png"><img alt="image705" src="../_images/image714.png" style="width: 4.64583in; height: 1.27083in;" /></a>
-<a class="reference internal" href="../_images/image814.png"><img alt="image706" src="../_images/image814.png" style="width: 3.22917in; height: 3.21418in;" /></a></p>
+<a class="reference internal" href="../_images/image715.png"><img alt="image705" src="../_images/image715.png" style="width: 4.64583in; height: 1.27083in;" /></a>
+<a class="reference internal" href="../_images/image815.png"><img alt="image706" src="../_images/image815.png" style="width: 3.22917in; height: 3.21418in;" /></a></p>
 <div class="admonition-interpreting-the-pearson-correlation-coefficient admonition">
 <p class="first admonition-title">Interpreting the Pearson Correlation Coefficient</p>
 <ol class="last arabic simple">
@@ -575,20 +589,23 @@ blackness?</li>
 at a scatterplot of the data. Why? Consider the data in the file
 <strong>Anscombe_Example.JMP</strong>.</p>
 </div>
-<p><a class="reference internal" href="../_images/image2512.png"><img alt="image707" src="../_images/image2512.png" style="width: 9.44in; height: 9.29in;" /></a></p>
+<p><a class="reference internal" href="../_images/image2513.png"><img alt="image707" src="../_images/image2513.png" style="width: 9.44in; height: 9.29in;" /></a></p>
 <p>To avoid misinterpreting a correlation, always accompany the correlation
 coefficient with a scatterplot of the data and make sure the assumptions
 behind the Pearson product-moment correlation are met!</p>
 </div>
+</div>
+<div class="section" id="linear-regression">
+<h2>2.3. Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-least-squares-regression-line">
-<h2>2.5. The Least Squares Regression Line<a class="headerlink" href="#the-least-squares-regression-line" title="Permalink to this headline">¶</a></h2>
+<h3>2.3.1. The Least Squares Regression Line<a class="headerlink" href="#the-least-squares-regression-line" title="Permalink to this headline">¶</a></h3>
 <p>The lecture in the following video includes a demonstration of the least squares
 regression line.</p>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_v4qmrtfh&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_mwafpc39" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div></div>
 <div class="section" id="introduction-to-simple-linear-regression">
-<h2>2.6. Introduction to Simple Linear Regression<a class="headerlink" href="#introduction-to-simple-linear-regression" title="Permalink to this headline">¶</a></h2>
+<h3>2.3.2. Introduction to Simple Linear Regression<a class="headerlink" href="#introduction-to-simple-linear-regression" title="Permalink to this headline">¶</a></h3>
 <p>Next, we will explore the basic idea behind regression analysis. A
 simple linear regression model describes the relationship between a
 numerical response variable (y) and a single predictor variable (x).</p>
@@ -603,10 +620,10 @@ numerical response variable (y) and a single predictor variable (x).</p>
 Response</strong> box and the x-variable in the <strong>X, Factor</strong> box.</p>
 <p><a class="reference internal" href="../_images/image1317.png"><img alt="image7011" src="../_images/image1317.png" style="width: 4.30093in; height: 2.57596in;" /></a></p>
 <p>JMP returns the following output:</p>
-<p><a class="reference internal" href="../_images/image1417.png"><img alt="image7012" src="../_images/image1417.png" style="width: 3.13817in; height: 2.55972in;" /></a></p>
+<p><a class="reference internal" href="../_images/image1418.png"><img alt="image7012" src="../_images/image1418.png" style="width: 3.13817in; height: 2.55972in;" /></a></p>
 <p>Click on the red drop-down arrow and select “Fit line” to see the
 following output:</p>
-<p><a class="reference internal" href="../_images/image1515.png"><img alt="image7013" src="../_images/image1515.png" style="width: 2.67939in; height: 4.65625in;" /></a></p>
+<p><a class="reference internal" href="../_images/image1516.png"><img alt="image7013" src="../_images/image1516.png" style="width: 2.67939in; height: 4.65625in;" /></a></p>
 <div class="admonition-task admonition">
 <p class="first admonition-title">Task</p>
 <p class="last">Writing the Regression Equation</p>
@@ -625,14 +642,14 @@ discussed in detail in STAT 310.</p>
 </div>
 </div>
 <div class="section" id="fitting-a-regression-line-in-jmp">
-<h2>2.7. Fitting a Regression Line in JMP<a class="headerlink" href="#fitting-a-regression-line-in-jmp" title="Permalink to this headline">¶</a></h2>
+<h3>2.3.3. Fitting a Regression Line in JMP<a class="headerlink" href="#fitting-a-regression-line-in-jmp" title="Permalink to this headline">¶</a></h3>
 <p>The following video illustrates the process of fitting a regression line in
 JMP.</p>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=0_p0wa5yz0&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_xjrynykz" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 </div></div>
 <div class="section" id="interpreting-slope-and-the-y-intercept">
-<h2>2.8. Interpreting Slope and the <span class="math">y</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-y-intercept" title="Permalink to this headline">¶</a></h2>
+<h3>2.3.4. Interpreting Slope and the <span class="math">y</span>-intercept<a class="headerlink" href="#interpreting-slope-and-the-y-intercept" title="Permalink to this headline">¶</a></h3>
 <p>To write out an interpretation for the slope and <span class="math">y</span>-intercept, we start
 with the standard interpretations that are taught in mathematics.  Recall that
 the slope is the amount of change in <span class="math">y</span> when adding one unit to
@@ -694,9 +711,9 @@ intercept.</p>
 </div>
 </div>
 <div class="section" id="another-example">
-<h2>2.9. Another Example<a class="headerlink" href="#another-example" title="Permalink to this headline">¶</a></h2>
+<h3>2.3.5. Another Example<a class="headerlink" href="#another-example" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="example-7-2">
-<h3>2.9.1. Example 7.2<a class="headerlink" href="#example-7-2" title="Permalink to this headline">¶</a></h3>
+<h4>2.3.5.1. Example 7.2<a class="headerlink" href="#example-7-2" title="Permalink to this headline">¶</a></h4>
 <p>Consider the data found in the file <strong>FEV.jmp</strong>. This
 data is from an investigation which concerns measuring the subjects&#8217;
 respiratory function, as well as whether the subjects themselves smoke.
@@ -729,7 +746,7 @@ relationship?</li>
 </div>
 <p>Next, let’s consider another variable in the study, Age. We can use a
 scatterplot to describe how FEV changes across Age:</p>
-<p><a class="reference internal" href="../_images/image1712.png"><img alt="image7015" src="../_images/image1712.png" style="width: 2.32407in; height: 1.89262in;" /></a></p>
+<p><a class="reference internal" href="../_images/image1713.png"><img alt="image7015" src="../_images/image1713.png" style="width: 2.32407in; height: 1.89262in;" /></a></p>
 <p>Let’s calculate the correlation coefficient and the regression line in
 JMP:</p>
 <p><a class="reference internal" href="../_images/image1813.png"><img alt="image7016" src="../_images/image1813.png" style="width: 1.15978in; height: 0.73615in;" /></a>
@@ -834,6 +851,7 @@ answer the following questions.</p>
 
             </ul>
             </div>
+</div>
 </div>
 </div>
 </div>

@@ -1,5 +1,5 @@
 Example 7.1: Lions’ Age and Proportion of Nose Blackness
---------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It has been suggested that the amount of black pigmentation on the nose of male
 lions increases with age. `Whitman et al.  (2004)
