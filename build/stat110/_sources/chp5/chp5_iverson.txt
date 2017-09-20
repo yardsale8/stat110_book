@@ -274,6 +274,9 @@ simulation every time we want an interval.
 
 .. include:: confidence_interval_single_mean.rst
 
+Confidence Intervals for Regression
+-----------------------------------
+
 .. include:: ../chp7/bootstrap_intervals_for_regression.rst
 
 
