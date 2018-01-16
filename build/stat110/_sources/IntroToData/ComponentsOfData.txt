@@ -562,7 +562,7 @@ Next, we will present some basic methods for summarizing data both numerically
 and graphically.
 
 In particular, we will be looking to describe the **distribution** of the data,
-which which consists of a list of feasible values for the data along with how
+which consists of a list of feasible values for the data along with how
 often these values tend to occur.  When describing a distribution, we will focus
 on answer four questions.
 
