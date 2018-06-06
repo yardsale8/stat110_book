@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Comparing Two Population Means: Dependent Samples &mdash; Runestone Interactive Overview</title>
+    <title>Paired Versus Unpaired Data &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -260,7 +260,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Comparing Two Population Means: Dependent Samples</a><ul>
+<li><a class="reference internal" href="#">Paired Versus Unpaired Data</a><ul>
+<li><a class="reference internal" href="#finding-the-null-and-alternative-hypotheses">Finding the Null and Alternative Hypotheses</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started-with-paired-data">Getting Started with Paired Data</a><ul>
 <li><a class="reference internal" href="#example-6-1-thanksgiving-holiday-weight-gain">Example 6.1: Thanksgiving Holiday Weight Gain</a></li>
 </ul>
 </li>
@@ -296,11 +300,84 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="comparing-two-population-means-dependent-samples">
-<h1>Comparing Two Population Means: Dependent Samples<a class="headerlink" href="#comparing-two-population-means-dependent-samples" title="Permalink to this headline">¶</a></h1>
+  <p>For paired data, we subtract each pair, then compute the mean of these
+differences. Consequently, the hypotheses for paired data will revolve around
+the population mean of the differences between all pairs, which is denoted
+<cite>mu_{diff}</cite>.</p>
+<div class="section" id="paired-versus-unpaired-data">
+<h1>Paired Versus Unpaired Data<a class="headerlink" href="#paired-versus-unpaired-data" title="Permalink to this headline">¶</a></h1>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_hhkpj6mf&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_rizfu6pg" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+</div><p>In this chapter, we will be comparing groups using two different types of data,
+<em>paired</em> or <em>unpaired</em>.  Data is <strong>paired</strong> if we can pair each measurement of
+one variable with exactly one measurement of the other.  Typical designs that
+result in paired data are before-and-after studies, where measurements are taken
+before a treatment and then again after the treatment.  Another example of a
+design that results in paired data is pairing similar individuals, say siblings
+or identical twins, and applying a different treatment to each member of the
+pair.</p>
+<p>Data is <strong>ungrouped</strong> when there is no way to pair specific measurements from
+each group. Ungrouped data is most commonly acquired through randomization, be
+it either two different random samples or randomly assigned treatments.</p>
+<div class="section" id="finding-the-null-and-alternative-hypotheses">
+<h2>Finding the Null and Alternative Hypotheses<a class="headerlink" href="#finding-the-null-and-alternative-hypotheses" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_kon9dgjs&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_x5z6q0dc" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+</div><p>When running hypothesis test to compare to groups, it is natural to set the null
+hypothesis to represent <em>no difference</em>.  As our statistic, the mean, is
+quantitative, &#8220;no difference&#8221; means (a) we subtracted two values (in some way) and (b) the
+result was 0.  The difference between paired and unpaired data comes in <em>how</em> we
+subtract.</p>
+<p>For paired data, we subtract each pair, then compute the mean of these
+differences. Consequently, the hypotheses for paired data will revolve around
+the population mean of the differences between all pairs, which is denoted</p>
+<div class="math">
+\[\mu_{diff}.\]</div>
+<p>On the other hand, for unpaired data first compute the mean of each group, the
+we subtract these means. In this case, the hypotheses will revolve around the
+difference population mean of the differences between all pairs, which is denoted</p>
+<div class="math">
+\[\mu_{1} - \mu_{2},\]</div>
+<p>where the subscripts (1 and 2) represent the group number and can be replaced
+with the name of the group.  For example, if we were comparing a treatment group
+to a control group, we might use</p>
+<div class="math">
+\[\mu_{treatment} - \mu_{control}.\]</div>
+<p>When determining the alternative hypothesis, it is important to consider the
+research question <strong>and</strong> the direction of subtraction.  Suppose that we have
+the following research question.</p>
+<div class="admonition-research-question admonition">
+<p class="first admonition-title">Research question:</p>
+<p class="last">Is there evidence that the treatment resulted in values that were smaller
+than the control group?</p>
+</div>
+<p>Since we computed <em>treatment - control</em>, smaller numbers for the treatment would
+result in negative numbers (i.e.  <em>small - large</em> would be negative).
+Consequently, the hypotheses would be given by</p>
+<div class="math">
+\[\begin{split}H_0: \mu_{treatment} - \mu_{control} = 0 \\
+H_a: \mu_{treatment} - \mu_{control} &lt; 0\end{split}\]</div>
+<p>Now suppose you have a classmate that chose to compute</p>
+<div class="math">
+\[\mu_{control} - \mu_{treatment}.\]</div>
+<p>In this case, the research question would result in positive values (i.e.  <em>large
+- small</em> would be positive) and the hypotheses become</p>
+<div class="math">
+\[\begin{split}H_0: \mu_{control} - \mu_{treatment} = 0 \\
+H_a: \mu_{control} - \mu_{treatment} &lt; 0\end{split}\]</div>
+<p>This same logic applies to the paired test as well.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Always consider the research question AND the direction of subtraction when
+determining the hypotheses when comparing two groups.</p>
+</div>
+</div>
+</div>
+<div class="section" id="getting-started-with-paired-data">
+<h1>Getting Started with Paired Data<a class="headerlink" href="#getting-started-with-paired-data" title="Permalink to this headline">¶</a></h1>
 <p>The hypothesis testing procedures presented in this section should be
-used when the observations from the two groups being compared are
-<em>dependent</em>. Whether or not the observations are dependent is determined
+used when the observations are paired and the two groups being compared are
+<em>dependent</em>. Whether or not the observations are paired/dependent is determined
 by how the data are collected. To see this, consider the following
 example.</p>
 <div class="section" id="example-6-1-thanksgiving-holiday-weight-gain">

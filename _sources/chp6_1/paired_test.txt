@@ -1,10 +1,124 @@
 
-Comparing Two Population Means: Dependent Samples
--------------------------------------------------
+For paired data, we subtract each pair, then compute the mean of these
+differences. Consequently, the hypotheses for paired data will revolve around
+the population mean of the differences between all pairs, which is denoted
+`\mu_{diff}`.
+
+Paired Versus Unpaired Data
+---------------------------
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_hhkpj6mf&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_rizfu6pg" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+    </div>
+
+.. **
+    
+In this chapter, we will be comparing groups using two different types of data,
+*paired* or *unpaired*.  Data is **paired** if we can pair each measurement of
+one variable with exactly one measurement of the other.  Typical designs that
+result in paired data are before-and-after studies, where measurements are taken
+before a treatment and then again after the treatment.  Another example of a
+design that results in paired data is pairing similar individuals, say siblings
+or identical twins, and applying a different treatment to each member of the
+pair.
+
+Data is **ungrouped** when there is no way to pair specific measurements from
+each group. Ungrouped data is most commonly acquired through randomization, be
+it either two different random samples or randomly assigned treatments.
+
+Finding the Null and Alternative Hypotheses
++++++++++++++++++++++++++++++++++++++++++++
+
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_kon9dgjs&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_x5z6q0dc" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+    </div>
+
+.. **
+
+
+
+When running hypothesis test to compare to groups, it is natural to set the null
+hypothesis to represent *no difference*.  As our statistic, the mean, is
+quantitative, "no difference" means (a) we subtracted two values (in some way) and (b) the
+result was 0.  The difference between paired and unpaired data comes in *how* we
+subtract.
+
+For paired data, we subtract each pair, then compute the mean of these
+differences. Consequently, the hypotheses for paired data will revolve around
+the population mean of the differences between all pairs, which is denoted
+
+.. math::
+
+    \mu_{diff}.
+
+On the other hand, for unpaired data first compute the mean of each group, the
+we subtract these means. In this case, the hypotheses will revolve around the
+difference population mean of the differences between all pairs, which is denoted
+
+.. math::
+
+    \mu_{1} - \mu_{2},
+
+
+where the subscripts (1 and 2) represent the group number and can be replaced
+with the name of the group.  For example, if we were comparing a treatment group
+to a control group, we might use
+
+.. math::
+
+    \mu_{treatment} - \mu_{control}.
+
+When determining the alternative hypothesis, it is important to consider the
+research question **and** the direction of subtraction.  Suppose that we have
+the following research question.
+
+.. admonition:: Research question:
+
+    Is there evidence that the treatment resulted in values that were smaller
+    than the control group?
+
+Since we computed *treatment - control*, smaller numbers for the treatment would
+result in negative numbers (i.e.  *small - large* would be negative).
+Consequently, the hypotheses would be given by
+
+.. math::
+
+    H_0: \mu_{treatment} - \mu_{control} = 0 \\
+    H_a: \mu_{treatment} - \mu_{control} < 0
+
+Now suppose you have a classmate that chose to compute
+
+.. math::
+
+    \mu_{control} - \mu_{treatment}.
+
+In this case, the research question would result in positive values (i.e.  *large
+- small* would be positive) and the hypotheses become 
+
+.. math::
+
+    H_0: \mu_{control} - \mu_{treatment} = 0 \\
+    H_a: \mu_{control} - \mu_{treatment} < 0
+
+This same logic applies to the paired test as well.
+
+.. note::
+
+    Always consider the research question AND the direction of subtraction when
+    determining the hypotheses when comparing two groups.
+
+
+Getting Started with Paired Data
+--------------------------------
 
 The hypothesis testing procedures presented in this section should be
-used when the observations from the two groups being compared are
-*dependent*. Whether or not the observations are dependent is determined
+used when the observations are paired and the two groups being compared are
+*dependent*. Whether or not the observations are paired/dependent is determined
 by how the data are collected. To see this, consider the following
 example.
 
