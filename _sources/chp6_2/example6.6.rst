@@ -1,6 +1,6 @@
 
 Example 6.6: Time Perception 
------------------------------
++++++++++++++++++++++++++++++
 
 Recall the study conducted by researchers at Pennsylvania State University which
 investigated whether time perception, a simple indication of a person’s ability

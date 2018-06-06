@@ -1,6 +1,6 @@
 
 Characteristics of the Sampling Distribution for the Difference in Means 
--------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 The illustration in Tinkerplots helps us understand the intuition behind
 inference for a difference in means, but we don’t really need Tinkerplots to

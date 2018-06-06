@@ -5,15 +5,40 @@ Comparing a Numerical Variable Across Two Groups
 
 .. include:: ../chp6_1/calculate_and_interpret_differences.rst
 
-Bootstrap Confidence Interval for the Difference
-------------------------------------------------
+Bootstrap Confidence Interval for Paired Data
++++++++++++++++++++++++++++++++++++++++++++++
 
-We will use a bootstrap confidence interval as a first attempt at analyzing
-these data. To create a bootstrap sample in JMP, you will need to install the
-JMP add-in titled **SampleWithReplacement v0.14.jmpaddin**. Download and double
-click the file. You can now sample with replacement by going to **Add-Ins >
-Sample with Replacement > Sample Now**. Take a bootstrap sample of the
-differences using this add-in as shown below.
+In this section, we will look at analyzing paired tests using a familiar tool:
+the bootstrap.  The next section will cover using the tools on the StatKey
+website to construct bootstrap confidencentervals for paired data.
+
+Bootstrap Confidence Interval for Paired Data with StatKey
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+The following video will illustrate how to use the bootstrap to construct a
+confidence interval for the average of the differences between pairs.  In the
+video, we will also look at interpreting the meaning of the resulting interval,
+which requires thinking of the numbers as the result of subtraction.
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_h6umzq6q&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_d03bm7ap" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+    </div>
+
+
+.. **
+
+Bootstrap Confidence Interval with JMP (Optional)
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+While we will primarily use StatKey to construct our bootstrap intervals, we can
+also use JMP to perform the bootstrap.  To create a bootstrap sample in JMP, you
+will need to install the JMP add-in titled **SampleWithReplacement
+v0.14.jmpaddin**. Download and double click the file. You can now sample with
+replacement by going to **Add-Ins > Sample with Replacement > Sample Now**. Take
+a bootstrap sample of the differences using this add-in as shown below.
 
 |image624| |image625|
 
@@ -68,8 +93,17 @@ differences. Compute the mean and standard deviation of this sample use
    we are confident that there is positive weight gain that is at least 0.65
    lb.*
 
-Using the Bootstrap to Test a Hypothesis
-----------------------------------------
+Using the Bootstrap to Test a Hypothesis About Paired Data
+----------------------------------------------------------
+
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+        <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_z5web72o&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_hr8s17so" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+    </div>
+
+.. **
 
 Note that these differences are represented by a single column of data.
 *So, instead of viewing this as a problem involving a categorical
@@ -180,7 +214,14 @@ Now run the randomization addin by
     Thanksgiving break.*
 
 Paired T-Test in JMP
---------------------
+++++++++++++++++++++
+
+
+.. raw:: html
+
+    <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+       <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_czc6c8rs&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_d8awtrss" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+    </div>
 
 Recall that we used a t-confidence interval in JMP as an alternative to
 the bootstrap interval. In the same way, we can use a t-test in JMP as

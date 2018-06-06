@@ -262,13 +262,15 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Comparing Two Population Means: Independent Samples</a><ul>
 <li><a class="reference internal" href="#example-6-5-smoking-and-birth-weight">Example 6.5: Smoking and Birth Weight</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#bootstrap-test-for-two-independent-means">Bootstrap Test for Two Independent Means</a></li>
 <li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">Characteristics of the Sampling Distribution for the Difference in Means</a></li>
-<li><a class="reference internal" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples">Testing for a Difference in Two Population Means (Assuming Independent Samples)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-for-a-difference-in-between-two-unpaired-groups">Testing for a Difference in Between Two Unpaired Groups</a><ul>
 <li><a class="reference internal" href="#constructing-a-confidence-interval-for-the-difference-in-means">Constructing a Confidence Interval for the Difference in Means</a></li>
 <li><a class="reference internal" href="#example-6-6-time-perception">Example 6.6: Time Perception</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#nonparametric-tests">Nonparametric Tests</a></li>
 <li><a class="reference internal" href="#the-t-test-for-independent-samples-assuming-equal-variances">The t-Test for Independent Samples Assuming Equal Variances</a></li>
 </ul>
@@ -368,10 +370,11 @@ when taking random samples from populations with the same mean. The following
 illustration in Tinkerplots gives us some insight into this.</p>
 <p><a class="reference internal" href="../_images/image99.png"><img alt="image615" src="../_images/image99.png" style="width: 6.79456in; height: 3.60417in;" /></a></p>
 </div>
-</div>
 <div class="section" id="bootstrap-test-for-two-independent-means">
-<h1>Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h1>
-<p>Researchers at Pennsylvania State University investigated whether
+<h2>Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h2>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_bvqyor6o&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_4ak3xmv5" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+</div><p>Researchers at Pennsylvania State University investigated whether
 time perception, a simple indication of a person’s ability to
 concentrate, is impaired during nicotine withdrawal. Twenty smokers
 were randomly assigned to a 24-hour smoking abstinence and were
@@ -392,7 +395,7 @@ more time has elapsed than do those not suffering from nicotine withdrawal?</p>
 <li>What is the response variable in this study?</li>
 <li>What is the predictor variable in this study?</li>
 <li>Explain why the null hypothesis would be
-<span class="math">H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0</span></li>
+<span class="math">\(H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0\)</span></li>
 </ol>
 <p>To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is
@@ -424,8 +427,8 @@ subtraction.</p>
 <li><p class="first">At this point we can determine the null and alternative hypothesis,
 (including the correct order of subtraction.) We do this by considering the
 research hypothesis in light of the order of subtraction.  In this case, the
-research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span class="math">\mu_{no}</span>, so
-<span class="math">H_{a}:\mu_{\text{no}} - \mu_{\text{with}} < 0</span>.</p>
+research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span class="math">\(\mu_{no}\)</span>, so
+<span class="math">\(H_{a}:\mu_{\text{no}} - \mu_{\text{with}} &lt; 0\)</span>.</p>
 </li>
 <li><p class="first">Pick and record the correct p-value for this test.</p>
 <blockquote>
@@ -443,7 +446,7 @@ research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span cla
 </div>
 </div>
 <div class="section" id="characteristics-of-the-sampling-distribution-for-the-difference-in-means">
-<h1>Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h1>
+<h2>Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h2>
 <p>The illustration in Tinkerplots helps us understand the intuition behind
 inference for a difference in means, but we don’t really need Tinkerplots to
 determine the characteristics of a distribution of differences in means.
@@ -451,7 +454,7 @@ Instead, we can use what statisticians discovered long ago: as long as the
 samples are independent, the sampling distribution for the <em>difference in means</em>
 can be described as follows.</p>
 <ol class="arabic simple">
-<li>The sampling distribution is centered around <span class="math">\mu_1 - \mu_2</span>.</li>
+<li>The sampling distribution is centered around <span class="math">\(\mu_1 - \mu_2\)</span>.</li>
 <li>The standard deviation of our sampling distribution (i.e., standard
 error) is given as follows:</li>
 </ol>
@@ -477,9 +480,12 @@ of differences in means is approximately normal (see #3 above), we can use the
 t-distribution to find our p-value. This procedure is typically referred to as
 the <strong>two-sample t-test</strong>.</p>
 </div>
-<div class="section" id="testing-for-a-difference-in-two-population-means-assuming-independent-samples">
-<h1>Testing for a Difference in Two Population Means (Assuming Independent Samples)<a class="headerlink" href="#testing-for-a-difference-in-two-population-means-assuming-independent-samples" title="Permalink to this headline">¶</a></h1>
-<p><strong>Back to Example 6.5:</strong> Carry out the hypothesis test associated with
+</div>
+<div class="section" id="testing-for-a-difference-in-between-two-unpaired-groups">
+<h1>Testing for a Difference in Between Two Unpaired Groups<a class="headerlink" href="#testing-for-a-difference-in-between-two-unpaired-groups" title="Permalink to this headline">¶</a></h1>
+<div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_omhtbwvj&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_ufgc0n1c" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+</div><p><strong>Back to Example 6.5:</strong> Carry out the hypothesis test associated with
 the following research question: Is the average birth weight lower when
 mothers are classified as smokers?</p>
 <p><strong>Step 0:</strong> Check the assumptions behind the test to be sure that the t-test is valid.</p>
@@ -508,9 +514,8 @@ t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\e
 <p><strong>Step 4:</strong> Write a conclusion in terms of the original research question.</p>
 <blockquote>
 <div>&#8220;We have evidence that the average birth weight is lower when mothers are classified as smokers (p-value = .0038).&#8221;</div></blockquote>
-</div>
 <div class="section" id="constructing-a-confidence-interval-for-the-difference-in-means">
-<h1>Constructing a Confidence Interval for the Difference in Means<a class="headerlink" href="#constructing-a-confidence-interval-for-the-difference-in-means" title="Permalink to this headline">¶</a></h1>
+<h2>Constructing a Confidence Interval for the Difference in Means<a class="headerlink" href="#constructing-a-confidence-interval-for-the-difference-in-means" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../_images/image1511.png"><img alt="image6110" src="../_images/image1511.png" style="width: 4.41667in; height: 1.45310in;" /></a></p>
 <p>Lower Endpoint =</p>
 <p>Upper Endpoint =</p>
@@ -518,7 +523,7 @@ t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{\bar{x}_1-\bar{x}_2}}\e
 <p>Interpret the meaning of this 95% confidence interval:</p>
 </div>
 <div class="section" id="example-6-6-time-perception">
-<h1>Example 6.6: Time Perception<a class="headerlink" href="#example-6-6-time-perception" title="Permalink to this headline">¶</a></h1>
+<h2>Example 6.6: Time Perception<a class="headerlink" href="#example-6-6-time-perception" title="Permalink to this headline">¶</a></h2>
 <p>Recall the study conducted by researchers at Pennsylvania State University which
 investigated whether time perception, a simple indication of a person’s ability
 to concentrate, is impaired during nicotine withdrawal. This study was discussed
@@ -633,6 +638,7 @@ means:</p>
 <p>This confidence interval can also be written as:</p>
 <p>Interpret the meaning of this 95% confidence interval:</p>
 </div>
+</div>
 <div class="section" id="nonparametric-tests">
 <h1>Nonparametric Tests<a class="headerlink" href="#nonparametric-tests" title="Permalink to this headline">¶</a></h1>
 <p>These tests are an alternative to the two-sample t-test for comparing the
@@ -671,7 +677,7 @@ estimate).</p>
 <div class="math">
 \[t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE_{pooled}}\]</div>
 <p>Assuming the two variances are equal, this test statistic comes from a
-t-distribution with <span class="math">df = (n_1 – 1) + (n_2 – 1)</span>.  In practice, the
+t-distribution with <span class="math">\(df = (n_1 – 1) + (n_2 – 1)\)</span>.  In practice, the
 two-sample t-test that was introduced earlier and used throughout the previous
 section works well, even if the two distributions being compared have the same
 amount of variability.  Therefore, it’s my opinion that instead of worrying
