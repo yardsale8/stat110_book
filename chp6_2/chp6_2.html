@@ -262,6 +262,7 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Comparing Two Population Means: Independent Samples</a><ul>
 <li><a class="reference internal" href="#example-6-5-smoking-and-birth-weight">Example 6.5: Smoking and Birth Weight</a></li>
+<li><a class="reference internal" href="#testing-a-hypothesis-and-the-null-distribution">Testing a Hypothesis and the Null Distribution</a></li>
 <li><a class="reference internal" href="#bootstrap-test-for-two-independent-means">Bootstrap Test for Two Independent Means</a></li>
 <li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">Characteristics of the Sampling Distribution for the Difference in Means</a></li>
 </ul>
@@ -364,11 +365,46 @@ previous question likely to change? Explain.</li>
 </div>
 <p>Since the difference will change from sample to sample, in order to make valid
 inferences about the true population difference, we must first understand <em>how</em>
-the difference in sample means is expected to change from sample to sample. That
-is, we must determine what differences in means are likely to happen by chance
-when taking random samples from populations with the same mean. The following
-illustration in Tinkerplots gives us some insight into this.</p>
+the difference in sample means is expected to change from sample to sample.  We
+start by looking at the bootstrap distribution of the difference in means.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+<p><a href="#id1"><span class="problematic" id="id2">|image647|</span></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="unpaired_6_5_bootstrap_CI">
+            Q-952: Note that the difference was computed using No - Yes.  Based on the bootstrap interval shown above, what conclusion should be drawn?
+            <li data-component="answer" data-correct id="unpaired_6_5_bootstrap_CI_opt_a">(A) The birth weights were lower, on average, when the mother smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_a">Lower average weights when the mother smoked would result in No - Yes to be positive (i.e. Large - Small).</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_opt_b">(B) The birth weights were lower, on average, when the mother did not smoke.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_b">Lower average weights when the mother did not smoke would result in No - Yes to be negative (i.e. Small - Large).</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_opt_c">(C) We cannot confidently conclude that the average birth weight was different, when comparing whether or not the mother smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_c">We CAN make a confident conclusion as the interval is all positive.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="unpaired_6_5_bootstrap_CI_interp">
+            Q-953: On average, how different were the weights between the two groups?
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_interp_opt_a">(A) We are 95% confident that, on average, the babies were between 80.9g and 487.8g heavier for the mothers that smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_a">Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.</li>
+            
+            <li data-component="answer" data-correct id="unpaired_6_5_bootstrap_CI_interp_opt_b">(B) We are 95% confident that, on average, the babies were between 80.9g and 487.8g lighter for the mothers that smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_b">Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_interp_opt_c">(C) We cannot confidently conclude that the average birth weight was different, let alone the size of the difference.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_c">We CAN make a confident conclusion as the interval is all positive.</li>
+            
+
+            </ul>
+            </div>
+</div>
+<div class="section" id="testing-a-hypothesis-and-the-null-distribution">
+<h2>Testing a Hypothesis and the Null Distribution<a class="headerlink" href="#testing-a-hypothesis-and-the-null-distribution" title="Permalink to this headline">¶</a></h2>
+<p>If we want to run a formal hypothesis test, we must determine what differences
+in means are likely to happen by chance when taking random samples from
+<strong>populations with the same mean.</strong> The following illustration in Tinkerplots gives
+us some insight into this.</p>
 <p><a class="reference internal" href="../_images/image99.png"><img alt="image615" src="../_images/image99.png" style="width: 6.79456in; height: 3.60417in;" /></a></p>
+<p>This should look familiar and remind you of the bootstrap. There is an important
+difference, in that we need the null distribution to be centered at 0.  In the
+next section, we will look at altering the boostrap distribution to make this
+the case.</p>
 </div>
 <div class="section" id="bootstrap-test-for-two-independent-means">
 <h2>Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h2>
@@ -391,12 +427,53 @@ similar to the actual findings). The data can be found in the file
 <p class="last">Do those smokers suffering from nicotine withdrawal tend to believe that
 more time has elapsed than do those not suffering from nicotine withdrawal?</p>
 </div>
-<ol class="arabic simple">
-<li>What is the response variable in this study?</li>
-<li>What is the predictor variable in this study?</li>
-<li>Explain why the null hypothesis would be
-<span class="math">\(H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0\)</span></li>
-</ol>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_response">
+            Q-954: What is the response variable in this study?
+            <li data-component="answer" data-correct id="chp7_unpaired_time_response_opt_a">(A) The perceived elapsed time for each subject.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_a">The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_response_opt_b">(B) Whether or not the person was suffering from withdrawal.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_b">When comparing groups, the groups label is the explanatory variable.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_response_opt_c">(C) The average perceived elapsed time for all subjects.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_c">This is a summary method, not a variable.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_explanatory">
+            Q-955: What is the explanatory variable in this study?
+            <li data-component="answer"  id="chp7_unpaired_time_explanatory_opt_a">(A) The perceived elapsed time for each subject.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_a">The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.</li>
+            
+            <li data-component="answer" data-correct id="chp7_unpaired_time_explanatory_opt_b">(B) Whether or not the person was suffering from withdrawal.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_b">When comparing groups, the groups label is the explanatory variable.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_explanatory_opt_c">(C) The average perceived elapsed time for all subjects.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_c">This is a summary method, not a variable.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_alternate">
+            Q-956: Which of the following is the correct alternative hypothesis?
+            <li data-component="answer"  id="chp7_unpaired_time_alternate_opt_a">(A) µ_no - µ_with > 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_a">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)</li>
+            
+            <li data-component="answer" data-correct id="chp7_unpaired_time_alternate_opt_b">(B) µ_no - µ_with < 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_b">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_alternate_opt_c">(C) µ_no - µ_with ≠ 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_c">We use not-equal when looking for a difference, either way.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_pvalue">
+            Q-957: What is the correct p-value for this question (when computing No - With)?
+            <li data-component="answer" data-correct id="chp7_unpaired_time_pvalue_opt_a">(A) Lower/left-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_a">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_pvalue_opt_b">(B) Upper/right-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_b">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_pvalue_opt_c">(C) Two-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_c">Two-tail p-values are for questions that are looking for a difference, either way.</li>
+            
+
+            </ul>
+            </div>
 <p>To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is
 centered at the hypothetical mean.</p>

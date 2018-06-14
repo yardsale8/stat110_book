@@ -268,22 +268,25 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#getting-started-with-paired-data">7.2. Getting Started with Paired Data</a><ul>
-<li><a class="reference internal" href="#example-6-1-thanksgiving-holiday-weight-gain">7.2.1. Example 6.1: Thanksgiving Holiday Weight Gain</a></li>
+<li><a class="reference internal" href="#example-thanksgiving-holiday-weight-gain">7.2.1. Example - Thanksgiving Holiday Weight Gain</a></li>
 <li><a class="reference internal" href="#calculating-the-difference-in-jmp">7.2.2. Calculating the Difference in JMP</a></li>
 <li><a class="reference internal" href="#bootstrap-confidence-interval-for-paired-data">7.2.3. Bootstrap Confidence Interval for Paired Data</a></li>
 <li><a class="reference internal" href="#bootstrap-confidence-interval-for-paired-data-with-statkey">7.2.4. Bootstrap Confidence Interval for Paired Data with StatKey</a></li>
-<li><a class="reference internal" href="#bootstrap-confidence-interval-with-jmp-optional">7.2.5. Bootstrap Confidence Interval with JMP (Optional)</a></li>
+<li><a class="reference internal" href="#example-textbook-prices">7.2.5. Example - Textbook Prices</a></li>
+<li><a class="reference internal" href="#bootstrap-confidence-interval-with-jmp-optional">7.2.6. Bootstrap Confidence Interval with JMP (Optional)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#using-the-bootstrap-to-test-a-hypothesis-about-paired-data">7.3. Using the Bootstrap to Test a Hypothesis About Paired Data</a><ul>
-<li><a class="reference internal" href="#paired-t-test-in-jmp">7.3.1. Paired T-Test in JMP</a></li>
+<li><a class="reference internal" href="#id1">7.3.1. Example - Textbook Prices</a></li>
+<li><a class="reference internal" href="#paired-t-test-in-jmp">7.3.2. Paired T-Test in JMP</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#using-the-bootstrap-to-comparing-two-unpaired-groups">7.4. Using the Bootstrap to Comparing Two Unpaired Groups</a><ul>
 <li><a class="reference internal" href="#bootstrap-confidence-intervals-for-unpaired-data">7.4.1. Bootstrap Confidence Intervals for Unpaired Data</a></li>
 <li><a class="reference internal" href="#example-6-5-smoking-and-birth-weight">7.4.2. Example 6.5: Smoking and Birth Weight</a></li>
-<li><a class="reference internal" href="#bootstrap-test-for-two-independent-means">7.4.3. Bootstrap Test for Two Independent Means</a></li>
-<li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">7.4.4. Characteristics of the Sampling Distribution for the Difference in Means</a></li>
+<li><a class="reference internal" href="#testing-a-hypothesis-and-the-null-distribution">7.4.3. Testing a Hypothesis and the Null Distribution</a></li>
+<li><a class="reference internal" href="#bootstrap-test-for-two-independent-means">7.4.4. Bootstrap Test for Two Independent Means</a></li>
+<li><a class="reference internal" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means">7.4.5. Characteristics of the Sampling Distribution for the Difference in Means</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#testing-for-a-difference-in-between-two-unpaired-groups">7.5. Testing for a Difference in Between Two Unpaired Groups</a><ul>
@@ -419,8 +422,8 @@ used when the observations are paired and the two groups being compared are
 <em>dependent</em>. Whether or not the observations are paired/dependent is determined
 by how the data are collected. To see this, consider the following
 example.</p>
-<div class="section" id="example-6-1-thanksgiving-holiday-weight-gain">
-<h3>7.2.1. Example 6.1: Thanksgiving Holiday Weight Gain<a class="headerlink" href="#example-6-1-thanksgiving-holiday-weight-gain" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="example-thanksgiving-holiday-weight-gain">
+<h3>7.2.1. Example - Thanksgiving Holiday Weight Gain<a class="headerlink" href="#example-thanksgiving-holiday-weight-gain" title="Permalink to this headline">¶</a></h3>
 <p>In a 2006 study published in <em>Nutrition Journal</em>, researchers were
 interested in assessing potential changes that occur in body weight
 during the Thanksgiving holiday break in college students. This
@@ -440,11 +443,27 @@ minimal clothing.”</p>
 </div>
 <div class="admonition-questions admonition">
 <p class="first admonition-title">Questions:</p>
-<ol class="last arabic simple">
-<li>What is the response variable of interest?</li>
-<li>What is the predictor variable of interest?</li>
-</ol>
-</div>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_1_paired_unpaired">
+            Q-968: Is this data paired or unpaired?
+            <li data-component="answer" data-correct id="chp7_paired_1_paired_unpaired_opt_a">(A) Paired data</li><li data-component="feedback" id="chp7_paired_1_paired_unpaired_opt_a">It is easy to pair these values, as they are taken on the same individuals.</li>
+            
+            <li data-component="answer"  id="chp7_paired_1_paired_unpaired_opt_b">(B) Unpaired data</li><li data-component="feedback" id="chp7_paired_1_paired_unpaired_opt_b">Since the measurements are taken on the same individuals, the two groups of numbers are paired/connected.  Unpaired data would consist of measurements on two different, randomly selected, groups of individuals.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_1_response">
+            Q-969: What is the response variable of interest?
+            <li data-component="answer"  id="chp7_paired_1_response_opt_a">(A) Body weight after break</li><li data-component="feedback" id="chp7_paired_1_response_opt_a">The weight after break doesn't provide enough information to determine weight gain.</li>
+            
+            <li data-component="answer"  id="chp7_paired_1_response_opt_b">(B) Body weight before break</li><li data-component="feedback" id="chp7_paired_1_response_opt_b">The weight before break doesn't provide enough information to determine weight gain.</li>
+            
+            <li data-component="answer" data-correct id="chp7_paired_1_response_opt_c">(C) The difference in body weight before and after break</li><li data-component="feedback" id="chp7_paired_1_response_opt_c">We are interested in weight gain, which is a difference.</li>
+            
+
+            </ul>
+            </div>
 <p>The raw data from this study were not available; however, the data in
 the file <strong>ThanksgivingWeightData.jmp</strong> are similar to the actual
 results obtained by the researchers. A portion of these data is shown
@@ -543,8 +562,41 @@ which requires thinking of the numbers as the result of subtraction.</p>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_h6umzq6q&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_d03bm7ap" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
 </div></div>
+<div class="section" id="example-textbook-prices">
+<h3>7.2.5. Example - Textbook Prices<a class="headerlink" href="#example-textbook-prices" title="Permalink to this headline">¶</a></h3>
+<p>The following example comes from <cite>Intro Stats with Randomization and Simulation
+&lt;https://www.openintro.org/download.php?file=isrs1_tablet&amp;referrer=/stat/textbook.php&gt;_</cite>.</p>
+<p>Researchers were interested in estimating the differece between the price of
+books at the university bookstore and at Amazon.  A random sample of 73 courses
+were selected and the price of the associated textbook was recorded, both in the
+bookstore and on Amazon.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_2_paired_unpaired">
+            Q-970: Is this data paired or unpaired?
+            <li data-component="answer" data-correct id="chp7_paired_2_paired_unpaired_opt_a">(A) Paired data</li><li data-component="feedback" id="chp7_paired_2_paired_unpaired_opt_a">It is easy to pair these textbook prices, as they are taken on the same book.</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_paired_unpaired_opt_b">(B) Unpaired data</li><li data-component="feedback" id="chp7_paired_2_paired_unpaired_opt_b">Since the measurements are taken on the same books, the two groups of numbers are paired/connected.  Unpaired data would consist of measurements on two different, randomly selected, groups of textbooks.</li>
+            
+
+            </ul>
+            <p><a class="reference internal" href="../_images/image715.png"><img alt="image646" src="../_images/image715.png" style="width: 9in; height: 3in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_2_meaning">
+            Q-971: Note that the differences were computed using <em>bookstore - Amazon</em>.  Based on the image shown above, what conclusion should be drawn?
+            <li data-component="answer"  id="chp7_paired_2_meaning_opt_a">(A) The prices are lower in the bookstore, on average.</li><li data-component="feedback" id="chp7_paired_2_meaning_opt_a">If the bookstore had lower prices, the values would be negative.</li>
+            
+            <li data-component="answer" data-correct id="chp7_paired_2_meaning_opt_b">(B) The prices are lower on Amazon, on average.</li><li data-component="feedback" id="chp7_paired_2_meaning_opt_b">The interval is all positive, we can confidently claim that the bookstore had higher larger prices (i.e. Amazon was lower).</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_meaning_opt_c">(C) We cannot confidently conclude which store has the lowest average prices.</li><li data-component="feedback" id="chp7_paired_2_meaning_opt_c">Since the entire interval had the same sign (positive), we CAN make a confident claim.</li>
+            
+
+            </ul>
+            </div>
+</div>
 <div class="section" id="bootstrap-confidence-interval-with-jmp-optional">
-<h3>7.2.5. Bootstrap Confidence Interval with JMP (Optional)<a class="headerlink" href="#bootstrap-confidence-interval-with-jmp-optional" title="Permalink to this headline">¶</a></h3>
+<h3>7.2.6. Bootstrap Confidence Interval with JMP (Optional)<a class="headerlink" href="#bootstrap-confidence-interval-with-jmp-optional" title="Permalink to this headline">¶</a></h3>
 <p>While we will primarily use StatKey to construct our bootstrap intervals, we can
 also use JMP to perform the bootstrap.  To create a bootstrap sample in JMP, you
 will need to install the JMP add-in titled <strong>SampleWithReplacement
@@ -555,7 +607,7 @@ a bootstrap sample of the differences using this add-in as shown below.</p>
 <p>The result in a new table that contains the bootstrap sample of the
 differences. Compute the mean and standard deviation of this sample use
 <strong>Analyze &gt; Distribution</strong>.</p>
-<p><a class="reference internal" href="../_images/image714.png"><img alt="image626" src="../_images/image714.png" style="width: 2.17550in; height: 2.00203in;" /></a> <a class="reference internal" href="../_images/image813.png"><img alt="image627" src="../_images/image813.png" style="width: 4.09792in; height: 1.54582in;" /></a></p>
+<p><a class="reference internal" href="../_images/image717.png"><img alt="image626" src="../_images/image717.png" style="width: 2.17550in; height: 2.00203in;" /></a> <a class="reference internal" href="../_images/image813.png"><img alt="image627" src="../_images/image813.png" style="width: 4.09792in; height: 1.54582in;" /></a></p>
 <p><strong>Task 1: Use JMP to take a few bootstrap samples.</strong></p>
 <ol class="arabic">
 <li><p class="first">Take 10000 bootstrap samples.</p>
@@ -717,8 +769,51 @@ the p-value.</p>
 unusually large.  Thus, we have strong evidence supporting the claim that
 there is an average positive weight gain for all college students over
 Thanksgiving break.</em></div></blockquote>
+<div class="section" id="id1">
+<h3>7.3.1. Example - Textbook Prices<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Let&#8217;s revisit the textbook data described above.  Recall that the prices of 73
+textbooks were taken, both in the bookstore and at Amazon.  The price difference
+was computed using <em>bookstore - Amazon</em>.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+<p>For each of the research questions given below, determine the correct type of p-value.</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_2_correct_pvalue1">
+            Q-972: <strong>Research Question:</strong> Are the prices lower in Amazon, on average?
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue1_opt_a">(A) Lower/left-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue1_opt_a">Lower prices in the bookstore would result in *bookstore - Amazon* being negative.</li>
+            
+            <li data-component="answer" data-correct id="chp7_paired_2_correct_pvalue1_opt_b">(B) Upper/right-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue1_opt_b">Lower prices on Amazon would result in *bookstore - Amazon* being positive.</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue1_opt_c">(C) Two-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue1_opt_c">A two-tail p-value is used when we are looking for a difference, either way.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_2_correct_pvalue2">
+            Q-973: <strong>Research Question:</strong> Are the prices lower in the bookstore, on average?
+            <li data-component="answer" data-correct id="chp7_paired_2_correct_pvalue2_opt_a">(A) Lower/left-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue2_opt_a">Lower prices in the bookstore would result in *bookstore - Amazon* being negative.</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue2_opt_b">(B) Upper/right-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue2_opt_b">Lower prices on Amazon would result in *bookstore - Amazon* being positive.</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue2_opt_c">(C) Two-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue2_opt_c">A two-tail p-value is used when we are looking for a difference, either way.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_paired_2_correct_pvalue3">
+            Q-974: <strong>Research Question:</strong> Are the prices, on average, either way?
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue3_opt_a">(A) Lower/left-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue3_opt_a">Lower prices in the bookstore would result in *bookstore - Amazon* being negative.</li>
+            
+            <li data-component="answer"  id="chp7_paired_2_correct_pvalue3_opt_b">(B) Upper/right-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue3_opt_b">Lower prices on Amazon would result in *bookstore - Amazon* being positive.</li>
+            
+            <li data-component="answer" data-correct id="chp7_paired_2_correct_pvalue3_opt_c">(C) Two-tail</li><li data-component="feedback" id="chp7_paired_2_correct_pvalue3_opt_c">A two-tail p-value is used when we are looking for a difference, either way.</li>
+            
+
+            </ul>
+            </div>
+</div>
 <div class="section" id="paired-t-test-in-jmp">
-<h3>7.3.1. Paired T-Test in JMP<a class="headerlink" href="#paired-t-test-in-jmp" title="Permalink to this headline">¶</a></h3>
+<h3>7.3.2. Paired T-Test in JMP<a class="headerlink" href="#paired-t-test-in-jmp" title="Permalink to this headline">¶</a></h3>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_czc6c8rs&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_d8awtrss" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
 </div><p>Recall that we used a t-confidence interval in JMP as an alternative to
@@ -820,14 +915,49 @@ previous question likely to change? Explain.</li>
 </div>
 <p>Since the difference will change from sample to sample, in order to make valid
 inferences about the true population difference, we must first understand <em>how</em>
-the difference in sample means is expected to change from sample to sample. That
-is, we must determine what differences in means are likely to happen by chance
-when taking random samples from populations with the same mean. The following
-illustration in Tinkerplots gives us some insight into this.</p>
+the difference in sample means is expected to change from sample to sample.  We
+start by looking at the bootstrap distribution of the difference in means.</p>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions</p>
+<p><a class="reference internal" href="../_images/image814.png"><img alt="image647" src="../_images/image814.png" style="width: 9in; height: 6in;" /></a></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="unpaired_6_5_bootstrap_CI">
+            Q-975: Note that the difference was computed using No - Yes.  Based on the bootstrap interval shown above, what conclusion should be drawn?
+            <li data-component="answer" data-correct id="unpaired_6_5_bootstrap_CI_opt_a">(A) The birth weights were lower, on average, when the mother smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_a">Lower average weights when the mother smoked would result in No - Yes to be positive (i.e. Large - Small).</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_opt_b">(B) The birth weights were lower, on average, when the mother did not smoke.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_b">Lower average weights when the mother did not smoke would result in No - Yes to be negative (i.e. Small - Large).</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_opt_c">(C) We cannot confidently conclude that the average birth weight was different, when comparing whether or not the mother smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_opt_c">We CAN make a confident conclusion as the interval is all positive.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="unpaired_6_5_bootstrap_CI_interp">
+            Q-976: On average, how different were the weights between the two groups?
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_interp_opt_a">(A) We are 95% confident that, on average, the babies were between 80.9g and 487.8g heavier for the mothers that smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_a">Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.</li>
+            
+            <li data-component="answer" data-correct id="unpaired_6_5_bootstrap_CI_interp_opt_b">(B) We are 95% confident that, on average, the babies were between 80.9g and 487.8g lighter for the mothers that smoked.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_b">Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.</li>
+            
+            <li data-component="answer"  id="unpaired_6_5_bootstrap_CI_interp_opt_c">(C) We cannot confidently conclude that the average birth weight was different, let alone the size of the difference.</li><li data-component="feedback" id="unpaired_6_5_bootstrap_CI_interp_opt_c">We CAN make a confident conclusion as the interval is all positive.</li>
+            
+
+            </ul>
+            </div>
+</div>
+<div class="section" id="testing-a-hypothesis-and-the-null-distribution">
+<h3>7.4.3. Testing a Hypothesis and the Null Distribution<a class="headerlink" href="#testing-a-hypothesis-and-the-null-distribution" title="Permalink to this headline">¶</a></h3>
+<p>If we want to run a formal hypothesis test, we must determine what differences
+in means are likely to happen by chance when taking random samples from
+<strong>populations with the same mean.</strong> The following illustration in Tinkerplots gives
+us some insight into this.</p>
 <p><a class="reference internal" href="../_images/image912.png"><img alt="image615" src="../_images/image912.png" style="width: 6.79456in; height: 3.60417in;" /></a></p>
+<p>This should look familiar and remind you of the bootstrap. There is an important
+difference, in that we need the null distribution to be centered at 0.  In the
+next section, we will look at altering the boostrap distribution to make this
+the case.</p>
 </div>
 <div class="section" id="bootstrap-test-for-two-independent-means">
-<h3>7.4.3. Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h3>
+<h3>7.4.4. Bootstrap Test for Two Independent Means<a class="headerlink" href="#bootstrap-test-for-two-independent-means" title="Permalink to this headline">¶</a></h3>
 <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
     <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_bvqyor6o&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_4ak3xmv5" width="420" height="336" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
 </div><p>Researchers at Pennsylvania State University investigated whether
@@ -847,12 +977,53 @@ similar to the actual findings). The data can be found in the file
 <p class="last">Do those smokers suffering from nicotine withdrawal tend to believe that
 more time has elapsed than do those not suffering from nicotine withdrawal?</p>
 </div>
-<ol class="arabic simple">
-<li>What is the response variable in this study?</li>
-<li>What is the predictor variable in this study?</li>
-<li>Explain why the null hypothesis would be
-<span class="math">\(H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0\)</span></li>
-</ol>
+<div class="admonition-questions admonition">
+<p class="first admonition-title">Questions:</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_response">
+            Q-977: What is the response variable in this study?
+            <li data-component="answer" data-correct id="chp7_unpaired_time_response_opt_a">(A) The perceived elapsed time for each subject.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_a">The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_response_opt_b">(B) Whether or not the person was suffering from withdrawal.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_b">When comparing groups, the groups label is the explanatory variable.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_response_opt_c">(C) The average perceived elapsed time for all subjects.</li><li data-component="feedback" id="chp7_unpaired_time_response_opt_c">This is a summary method, not a variable.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_explanatory">
+            Q-978: What is the explanatory variable in this study?
+            <li data-component="answer"  id="chp7_unpaired_time_explanatory_opt_a">(A) The perceived elapsed time for each subject.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_a">The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.</li>
+            
+            <li data-component="answer" data-correct id="chp7_unpaired_time_explanatory_opt_b">(B) Whether or not the person was suffering from withdrawal.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_b">When comparing groups, the groups label is the explanatory variable.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_explanatory_opt_c">(C) The average perceived elapsed time for all subjects.</li><li data-component="feedback" id="chp7_unpaired_time_explanatory_opt_c">This is a summary method, not a variable.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_alternate">
+            Q-979: Which of the following is the correct alternative hypothesis?
+            <li data-component="answer"  id="chp7_unpaired_time_alternate_opt_a">(A) µ_no - µ_with > 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_a">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)</li>
+            
+            <li data-component="answer" data-correct id="chp7_unpaired_time_alternate_opt_b">(B) µ_no - µ_with < 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_b">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_alternate_opt_c">(C) µ_no - µ_with ≠ 0</li><li data-component="feedback" id="chp7_unpaired_time_alternate_opt_c">We use not-equal when looking for a difference, either way.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="chp7_unpaired_time_pvalue">
+            Q-980: What is the correct p-value for this question (when computing No - With)?
+            <li data-component="answer" data-correct id="chp7_unpaired_time_pvalue_opt_a">(A) Lower/left-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_a">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_pvalue_opt_b">(B) Upper/right-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_b">If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.</li>
+            
+            <li data-component="answer"  id="chp7_unpaired_time_pvalue_opt_c">(C) Two-tail</li><li data-component="feedback" id="chp7_unpaired_time_pvalue_opt_c">Two-tail p-values are for questions that are looking for a difference, either way.</li>
+            
+
+            </ul>
+            </div>
 <p>To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is
 centered at the hypothetical mean.</p>
@@ -902,7 +1073,7 @@ research hypothesis has :math&#8221;<cite>mu_{with}</cite> bigger than <span cla
 </div>
 </div>
 <div class="section" id="characteristics-of-the-sampling-distribution-for-the-difference-in-means">
-<h3>7.4.4. Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h3>
+<h3>7.4.5. Characteristics of the Sampling Distribution for the Difference in Means<a class="headerlink" href="#characteristics-of-the-sampling-distribution-for-the-difference-in-means" title="Permalink to this headline">¶</a></h3>
 <p>The illustration in Tinkerplots helps us understand the intuition behind
 inference for a difference in means, but we don’t really need Tinkerplots to
 determine the characteristics of a distribution of differences in means.

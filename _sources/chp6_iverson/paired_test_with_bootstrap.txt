@@ -30,6 +30,44 @@ which requires thinking of the numbers as the result of subtraction.
 
 .. **
 
+Example - Textbook Prices
++++++++++++++++++++++++++
+
+The following example comes from `Intro Stats with Randomization and Simulation
+<https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php>_`.
+
+Researchers were interested in estimating the differece between the price of
+books at the university bookstore and at Amazon.  A random sample of 73 courses
+were selected and the price of the associated textbook was recorded, both in the
+bookstore and on Amazon.
+
+.. admonition:: Questions
+
+    
+    .. mchoice:: chp7_paired_2_paired_unpaired
+        :answer_a: Paired data
+        :answer_b: Unpaired data
+        :correct: a
+        :feedback_a: It is easy to pair these textbook prices, as they are taken on the same book.
+        :feedback_b: Since the measurements are taken on the same books, the two groups of numbers are paired/connected.  Unpaired data would consist of measurements on two different, randomly selected, groups of textbooks.
+
+        Is this data paired or unpaired?
+
+    |image646|
+
+
+    .. mchoice:: chp7_paired_2_meaning
+        :answer_a: The prices are lower in the bookstore, on average.
+        :answer_b: The prices are lower on Amazon, on average.
+        :answer_c: We cannot confidently conclude which store has the lowest average prices.
+        :correct: b
+        :feedback_a: If the bookstore had lower prices, the values would be negative.
+        :feedback_b: The interval is all positive, we can confidently claim that the bookstore had higher larger prices (i.e. Amazon was lower).
+        :feedback_c: Since the entire interval had the same sign (positive), we CAN make a confident claim.
+
+        Note that the differences were computed using *bookstore - Amazon*.  Based on the image shown above, what conclusion should be drawn?  
+
+
 Bootstrap Confidence Interval with JMP (Optional)
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -213,6 +251,55 @@ Now run the randomization addin by
     there is an average positive weight gain for all college students over
     Thanksgiving break.*
 
+
+Example - Textbook Prices
++++++++++++++++++++++++++
+
+Let's revisit the textbook data described above.  Recall that the prices of 73
+textbooks were taken, both in the bookstore and at Amazon.  The price difference
+was computed using *bookstore - Amazon*.
+
+.. admonition:: Questions
+
+    For each of the research questions given below, determine the correct type of p-value.
+
+
+    .. mchoice:: chp7_paired_2_correct_pvalue1
+        :answer_a: Lower/left-tail
+        :answer_b: Upper/right-tail
+        :answer_c: Two-tail
+        :correct: b
+        :feedback_a: Lower prices in the bookstore would result in *bookstore - Amazon* being negative.
+        :feedback_b: Lower prices on Amazon would result in *bookstore - Amazon* being positive.
+        :feedback_c: A two-tail p-value is used when we are looking for a difference, either way.
+         
+        **Research Question:** Are the prices lower in Amazon, on average?
+
+
+    .. mchoice:: chp7_paired_2_correct_pvalue2
+        :answer_a: Lower/left-tail
+        :answer_b: Upper/right-tail
+        :answer_c: Two-tail
+        :correct: a
+        :feedback_a: Lower prices in the bookstore would result in *bookstore - Amazon* being negative.
+        :feedback_b: Lower prices on Amazon would result in *bookstore - Amazon* being positive.
+        :feedback_c: A two-tail p-value is used when we are looking for a difference, either way.
+         
+        **Research Question:** Are the prices lower in the bookstore, on average?
+
+
+    .. mchoice:: chp7_paired_2_correct_pvalue3
+        :answer_a: Lower/left-tail
+        :answer_b: Upper/right-tail
+        :answer_c: Two-tail
+        :correct: c
+        :feedback_a: Lower prices in the bookstore would result in *bookstore - Amazon* being negative.
+        :feedback_b: Lower prices on Amazon would result in *bookstore - Amazon* being positive.
+        :feedback_c: A two-tail p-value is used when we are looking for a difference, either way.
+         
+        **Research Question:** Are the prices, on average, either way?
+
+
 Paired T-Test in JMP
 ++++++++++++++++++++
 
@@ -380,3 +467,9 @@ to the difference distribution.
 .. |image645| image:: ../chp6_iverson/img2/media/image6.png
    :width: 4.67492in
    :height: 4.44680in
+.. |image646| image:: ../chp6_iverson/img2/media/image7.png
+   :width: 9in
+   :height: 3in
+.. |image647| image:: ../chp6_iverson/img2/media/image8.png
+   :width: 9in
+   :height: 6in

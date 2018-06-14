@@ -47,9 +47,47 @@ red drop-down arrow to display the boxplots and mean diamonds.
 
 Since the difference will change from sample to sample, in order to make valid
 inferences about the true population difference, we must first understand *how*
-the difference in sample means is expected to change from sample to sample. That
-is, we must determine what differences in means are likely to happen by chance
-when taking random samples from populations with the same mean. The following
-illustration in Tinkerplots gives us some insight into this.
+the difference in sample means is expected to change from sample to sample.  We
+start by looking at the bootstrap distribution of the difference in means.
+
+.. admonition:: Questions
+
+    |image647|
+    
+    .. mchoice:: unpaired_6_5_bootstrap_CI
+        :answer_a: The birth weights were lower, on average, when the mother smoked.
+        :answer_b: The birth weights were lower, on average, when the mother did not smoke.
+        :answer_c: We cannot confidently conclude that the average birth weight was different, when comparing whether or not the mother smoked.
+        :correct: a
+        :feedback_a: Lower average weights when the mother smoked would result in No - Yes to be positive (i.e. Large - Small).
+        :feedback_b: Lower average weights when the mother did not smoke would result in No - Yes to be negative (i.e. Small - Large).
+        :feedback_c: We CAN make a confident conclusion as the interval is all positive.
+         
+        Note that the difference was computed using No - Yes.  Based on the bootstrap interval shown above, what conclusion should be drawn?
+
+    .. mchoice:: unpaired_6_5_bootstrap_CI_interp
+        :answer_a: We are 95% confident that, on average, the babies were between 80.9g and 487.8g heavier for the mothers that smoked.
+        :answer_b: We are 95% confident that, on average, the babies were between 80.9g and 487.8g lighter for the mothers that smoked.
+        :answer_c: We cannot confidently conclude that the average birth weight was different, let alone the size of the difference.
+        :correct: b
+        :feedback_a: Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.
+        :feedback_b: Remember that positive number, when using No - Yes, indicates a lower average weights when the mother smoked.
+        :feedback_c: We CAN make a confident conclusion as the interval is all positive.
+         
+        On average, how different were the weights between the two groups?
+
+
+Testing a Hypothesis and the Null Distribution
+++++++++++++++++++++++++++++++++++++++++++++++
+
+If we want to run a formal hypothesis test, we must determine what differences
+in means are likely to happen by chance when taking random samples from
+**populations with the same mean.** The following illustration in Tinkerplots gives
+us some insight into this.
 
 |image615|
+
+This should look familiar and remind you of the bootstrap. There is an important
+difference, in that we need the null distribution to be centered at 0.  In the
+next section, we will look at altering the boostrap distribution to make this
+the case.

@@ -30,12 +30,51 @@ similar to the actual findings). The data can be found in the file
 
 .. admonition:: Questions:
 
-1. What is the response variable in this study?
+    .. mchoice:: chp7_unpaired_time_response
+        :answer_a: The perceived elapsed time for each subject.
+        :answer_b: Whether or not the person was suffering from withdrawal.
+        :answer_c: The average perceived elapsed time for all subjects.
+        :correct: a
+        :feedback_a: The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.
+        :feedback_b: When comparing groups, the groups label is the explanatory variable.
+        :feedback_c: This is a summary method, not a variable.
 
-2. What is the predictor variable in this study?
+        What is the response variable in this study?
 
-3. Explain why the null hypothesis would be
-   :math:`H_{0}:\mu_{\text{no}} - \mu_{\text{with}} = 0`
+    .. mchoice:: chp7_unpaired_time_explanatory
+        :answer_a: The perceived elapsed time for each subject.
+        :answer_b: Whether or not the person was suffering from withdrawal.
+        :answer_c: The average perceived elapsed time for all subjects.
+        :correct: b
+        :feedback_a: The groups (withdrawal or not) are compared on perceived elapsed time, making it the response.
+        :feedback_b: When comparing groups, the groups label is the explanatory variable.
+        :feedback_c: This is a summary method, not a variable.
+
+        What is the explanatory variable in this study?
+
+    .. mchoice:: chp7_unpaired_time_alternate
+        :answer_a: µ_no - µ_with > 0
+        :answer_b: µ_no - µ_with < 0
+        :answer_c: µ_no - µ_with ≠ 0
+        :correct: b
+        :feedback_a: If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)
+        :feedback_b: If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger)
+        :feedback_c: We use not-equal when looking for a difference, either way.
+
+        Which of the following is the correct alternative hypothesis?
+
+
+    .. mchoice:: chp7_unpaired_time_pvalue
+        :answer_a: Lower/left-tail
+        :answer_b: Upper/right-tail
+        :answer_c: Two-tail
+        :correct: a
+        :feedback_a: If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.
+        :feedback_b: If withdrawal leads to a larger perceived time, then No - Yes would be negative (i.e. Small - Larger), so we want to use a lower/left-tail p-value.
+        :feedback_c: Two-tail p-values are for questions that are looking for a difference, either way.
+         
+        What is the correct p-value for this question (when computing No - With)?
+
 
 To use the bootstrap distribution to run a hypothesis test, we need to generate
 the bootstrap distribution then move the distribution so that the mean is

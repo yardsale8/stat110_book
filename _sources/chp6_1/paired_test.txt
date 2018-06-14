@@ -122,7 +122,7 @@ used when the observations are paired and the two groups being compared are
 by how the data are collected. To see this, consider the following
 example.
 
-Example 6.1: Thanksgiving Holiday Weight Gain
+Example - Thanksgiving Holiday Weight Gain
 +++++++++++++++++++++++++++++++++++++++++++++
 
 In a 2006 study published in *Nutrition Journal*, researchers were
@@ -145,9 +145,28 @@ minimal clothing.”
 
 .. admonition:: Questions:
 
-    1. What is the response variable of interest?
+    .. mchoice:: chp7_paired_1_paired_unpaired
+        :answer_a: Paired data
+        :answer_b: Unpaired data
+        :correct: a
+        :feedback_a: It is easy to pair these values, as they are taken on the same individuals.
+        :feedback_b: Since the measurements are taken on the same individuals, the two groups of numbers are paired/connected.  Unpaired data would consist of measurements on two different, randomly selected, groups of individuals.
+        
+        Is this data paired or unpaired?
 
-    2. What is the predictor variable of interest?
+
+    .. mchoice:: chp7_paired_1_response
+        :answer_a: Body weight after break
+        :answer_b: Body weight before break
+        :answer_c: The difference in body weight before and after break
+        :correct: c 
+        :feedback_a: The weight after break doesn't provide enough information to determine weight gain.
+        :feedback_b: The weight before break doesn't provide enough information to determine weight gain.
+        :feedback_c: We are interested in weight gain, which is a difference.
+
+        What is the response variable of interest?
+
+     
 
 The raw data from this study were not available; however, the data in
 the file **ThanksgivingWeightData.jmp** are similar to the actual

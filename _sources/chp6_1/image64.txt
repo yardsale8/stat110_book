@@ -17,3 +17,6 @@
 .. |image645| image:: ../chp6_iverson/img2/media/image6.png
    :width: 4.67492in
    :height: 4.44680in
+.. |image646| image:: ../chp6_iverson/img2/media/image7.png
+   :width: 4.67492in
+   :height: 4.44680in
